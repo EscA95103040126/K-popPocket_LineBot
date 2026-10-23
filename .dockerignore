@@ -18,3 +18,4 @@ data/cache/*
 htmlcov
 coverage.xml
 tests
+models

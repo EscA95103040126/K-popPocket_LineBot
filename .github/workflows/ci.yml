@@ -51,8 +51,10 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
+      # Skips the ~2GB bge-m3 download and int8 export (the Space builds it); the
+      # image still starts and AI 入坑 falls back to v1 ranking.
       - name: Build image
-        run: docker build -t kpop-agent .
+        run: docker build --build-arg SEMANTIC_CURATOR=0 -t kpop-agent .
 
       - name: Smoke test /health
         run: |

@@ -47,9 +47,11 @@ from src.bot.features.ai_curator import AiCuratorFeature, _prioritize_members_wi
 from src.bot.llm import GeminiTextClient
 from src.bot.semantic_index import (
     EMBEDDING_MODELS,
+    ONNX_MODEL_KEY,
     SemanticMemberIndex,
     _compact,
     apply_query_rules,
+    build_encoder,
     load_group_documents,
     load_member_documents,
     referenced_artists,
@@ -141,7 +143,7 @@ def _semantic_index(model_key: str, include_enrichment: bool) -> SemanticMemberI
     members = PlayZoneCatalog(PROJECT_ROOT).load_bias_radar_members()
     documents = load_member_documents(PROJECT_ROOT, members, include_enrichment=include_enrichment)
     return SemanticMemberIndex(
-        model_key,
+        build_encoder(model_key, PROJECT_ROOT),
         documents,
         group_documents=load_group_documents(PROJECT_ROOT),
         member_artists={member["id"]: member["artist"] for member in members},
@@ -179,7 +181,7 @@ RANKERS: dict[str, Callable[[int], Ranker]] = {
     "v1-keyword": lambda seed: build_v1_ranker(seed, use_llm=False),
     "v1": lambda seed: build_v1_ranker(seed, use_llm=True),
 }
-for _model_key in EMBEDDING_MODELS:
+for _model_key in [*EMBEDDING_MODELS, ONNX_MODEL_KEY]:
     # (suffix, Grok member enrichment, group weight, query rules)
     _variants = [
         ("-gemini-only", False, 0.0, False),
