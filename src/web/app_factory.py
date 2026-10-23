@@ -72,6 +72,7 @@ def create_app(
             "gemini_mode": _mode(not deps.llm.enabled),
             "line_mode": _mode(line is None),
             "supabase_mode": "real" if radar_repo.enabled else "disabled",
+            "session_store": bot.sessions.status(),
             "supabase": radar_repo.status(),
         }, 200 if status == "ok" else 503
 

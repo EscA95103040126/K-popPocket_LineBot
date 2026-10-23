@@ -972,20 +972,19 @@ def test_weekly_chart_history_quick_reply_orders_oldest_to_newest() -> None:
     ]
 
 
-def test_bias_radar_session_prunes_expired_session() -> None:
-    bias_radar = build_bot(make_deps(clock=lambda: 10_000)).features.bias_radar
-    bias_radar.bias_radar_sessions["expired-user"] = {
-        "question_index": 1,
-        "answers": ["男團"],
-        "updated_at": 1,
-    }
+def test_bias_radar_session_expires_after_thirty_minutes() -> None:
+    now = [1_000.0]
+    bias_radar = build_bot(make_deps(clock=lambda: now[0])).features.bias_radar
+    bias_radar.bias_radar_reply(MessageContext(text="本命雷達測驗", user_id="quiz-user"))
 
-    assert bias_radar.is_bias_radar_quiz_request("普通訊息", "expired-user") is False
-    assert "expired-user" not in bias_radar.bias_radar_sessions
+    now[0] += 30 * 60
+    assert bias_radar.is_bias_radar_quiz_request("普通訊息", "quiz-user") is True
+
+    now[0] += 1
+    assert bias_radar.is_bias_radar_quiz_request("普通訊息", "quiz-user") is False
 
 
 def test_dispatcher_bias_radar_uses_passed_user_id() -> None:
-
     dispatcher = build_bot(make_deps()).dispatcher
 
     first_reply = dispatcher.dispatch(
@@ -999,14 +998,17 @@ def test_dispatcher_bias_radar_uses_passed_user_id() -> None:
     assert second_reply.startswith("本命雷達測驗 Q2/5")
 
 
-def test_ai_curator_reason_context_prunes_expired_context() -> None:
-    ai_curator = build_bot(make_deps(clock=lambda: 10_000)).features.ai_curator
-    ai_curator.ai_curator_reason_contexts["expired-user"] = {
-        "members": [{"artist": "NMIXX", "member": "Sullyoon"}],
-        "stored_at": 1,
-    }
+def test_ai_curator_reason_context_expires_after_thirty_minutes() -> None:
+    now = [1_000.0]
+    ai_curator = build_bot(make_deps(clock=lambda: now[0])).features.ai_curator
+    ai_curator._store_ai_curator_reason_context(
+        "curator-user", [{"artist": "NMIXX", "member": "Sullyoon"}]
+    )
 
-    members = ai_curator._ai_curator_reason_context_members("expired-user")
+    now[0] += 30 * 60
+    assert ai_curator._ai_curator_reason_context_members("curator-user") == [
+        {"artist": "NMIXX", "member": "Sullyoon"}
+    ]
 
-    assert members == []
-    assert "expired-user" not in ai_curator.ai_curator_reason_contexts
+    now[0] += 1
+    assert ai_curator._ai_curator_reason_context_members("curator-user") == []
