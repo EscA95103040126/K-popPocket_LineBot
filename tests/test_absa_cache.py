@@ -3,7 +3,6 @@ from __future__ import annotations
 import json
 from datetime import datetime, timezone
 
-import app as app_module
 import src.agent as agent_module
 import src.tools.absa as absa_module
 from src.agent import DEMO_ARTISTS, KpopAnalysisAgent
@@ -13,6 +12,7 @@ from src.tools.absa import (
     load_absa_cache,
     validate_absa_payload,
 )
+from tests.fakes import make_app, make_deps
 
 
 def _sample_absa_payload(artist: str = "aespa") -> dict:
@@ -127,9 +127,8 @@ def test_analyze_endpoint_uses_local_absa_cache(monkeypatch) -> None:
             }
 
     dummy = DummyAgent()
-    monkeypatch.setattr(app_module, "agent", dummy)
 
-    response = app_module.app.test_client().post(
+    response = make_app(make_deps(agent=dummy)).test_client().post(
         "/analyze",
         json={"message": "分析 aespa"},
     )
