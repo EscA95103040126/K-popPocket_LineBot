@@ -4,13 +4,6 @@ import re
 import unicodedata
 
 
-def safe_float(value: object) -> float:
-    try:
-        return float(value)
-    except (TypeError, ValueError):
-        return 0.0
-
-
 def bias_radar_tag_text(raw_value: str) -> str:
     return " / ".join(tag.strip() for tag in raw_value.split("|") if tag.strip())
 

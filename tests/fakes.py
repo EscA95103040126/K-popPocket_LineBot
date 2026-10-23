@@ -16,6 +16,7 @@ from src.agent import KpopAnalysisAgent
 from src.bot.container import BotDeps
 from src.bot.line_events import LineEventGuard
 from src.bot.llm import GeminiTextClient
+from src.bot.sessions import SessionStore
 from src.config import Settings
 from src.tools.kpop_radar import KpopRadarRepository
 from src.web.app_factory import create_app
@@ -159,6 +160,7 @@ def make_deps(
     llm=None,
     rng: random.Random | None = None,
     clock: Callable[[], float] = time,
+    sessions: SessionStore | None = None,
     **settings_overrides,
 ) -> BotDeps:
     settings = make_settings(base_dir=base_dir, **settings_overrides)
@@ -169,6 +171,7 @@ def make_deps(
         llm=llm or GeminiTextClient(None, settings.gemini_model),
         rng=rng or random.Random(),
         clock=clock,
+        sessions=sessions,
     )
 
 

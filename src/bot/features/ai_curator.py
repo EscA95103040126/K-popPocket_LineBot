@@ -16,7 +16,6 @@ from src.bot.text_utils import (
     contains_lookup_name,
     display_member_name,
     join_nonempty_blocks,
-    safe_float,
     same_lookup_name,
     split_bias_radar_tags,
 )
@@ -25,12 +24,13 @@ from src.utils.response_formatter import fit_line_text
 if TYPE_CHECKING:
     from src.bot.catalog import PlayZoneCatalog
     from src.bot.llm import GeminiTextClient
+    from src.bot.sessions import SessionStore
 
 logger = logging.getLogger(__name__)
 
 
 AI_CURATOR_REASON_CONTEXT_TTL_SECONDS = 60 * 30
-AI_CURATOR_REASON_CONTEXT_MAX_SIZE = 500
+AI_CURATOR_REASON_CONTEXT_NAMESPACE = "ai_curator_reason"
 AI_CURATOR_ENTRY_TRIGGERS = {
     "我的雷達",
     "雷達",
@@ -199,12 +199,6 @@ def ai_curator_entry_reply(context: MessageContext) -> Reply:
         alt_text="AI 入坑",
         fallback_text="請直接輸入你的 K-pop 偏好，例如：我想入坑清冷感、舞台強的女團。",
     )
-
-
-def _context_stored_at(entry: dict[str, object] | list[dict[str, str]]) -> float:
-    if isinstance(entry, list):
-        return 0
-    return safe_float(entry.get("stored_at"))
 
 
 def _clean_ai_curator_query(message: str) -> str:
@@ -587,15 +581,14 @@ class AiCuratorFeature:
         catalog: PlayZoneCatalog,
         llm: GeminiTextClient,
         rng: random.Random,
-        clock: Callable[[], float],
+        sessions: SessionStore,
         is_fixed_command: Callable[[str], bool],
     ) -> None:
         self.catalog = catalog
         self.llm = llm
         self.rng = rng
-        self.clock = clock
+        self.sessions = sessions
         self.is_fixed_command = is_fixed_command
-        self.ai_curator_reason_contexts: dict[str, dict[str, object] | list[dict[str, str]]] = {}
 
     def is_ai_curator_preference_request(self, message: str) -> bool:
         normalized = message.strip().casefold()
@@ -748,8 +741,6 @@ class AiCuratorFeature:
     ) -> None:
         if not user_id:
             return
-        now = self.clock()
-        self._prune_ai_curator_reason_contexts(now=now)
         compact_members = [
             {
                 "artist": recommendation.get("artist", "").strip(),
@@ -759,50 +750,21 @@ class AiCuratorFeature:
             if recommendation.get("artist", "").strip() and recommendation.get("member", "").strip()
         ]
         if compact_members:
-            self.ai_curator_reason_contexts[user_id] = {
-                "members": compact_members,
-                "stored_at": now,
-            }
-            self._trim_ai_curator_reason_contexts()
+            self.sessions.set(
+                AI_CURATOR_REASON_CONTEXT_NAMESPACE,
+                user_id,
+                {"members": compact_members},
+                AI_CURATOR_REASON_CONTEXT_TTL_SECONDS,
+            )
         else:
-            self.ai_curator_reason_contexts.pop(user_id, None)
+            self.sessions.delete(AI_CURATOR_REASON_CONTEXT_NAMESPACE, user_id)
 
     def _ai_curator_reason_context_members(self, user_id: str) -> list[dict[str, str]]:
-        entry = self.ai_curator_reason_contexts.get(user_id)
-        if not entry:
-            return []
-        if isinstance(entry, list):
-            return entry
-
-        stored_at = safe_float(entry.get("stored_at"))
-        if stored_at and self.clock() - stored_at > AI_CURATOR_REASON_CONTEXT_TTL_SECONDS:
-            self.ai_curator_reason_contexts.pop(user_id, None)
-            return []
-
-        members = entry.get("members")
+        entry = self.sessions.get(AI_CURATOR_REASON_CONTEXT_NAMESPACE, user_id)
+        members = entry.get("members") if entry else None
         if not isinstance(members, list):
             return []
         return [member for member in members if isinstance(member, dict)]
-
-    def _prune_ai_curator_reason_contexts(self, now: float | None = None) -> None:
-        current_time = now if now is not None else self.clock()
-        expired_user_ids = []
-        for user_id, entry in self.ai_curator_reason_contexts.items():
-            if isinstance(entry, list):
-                continue
-            stored_at = safe_float(entry.get("stored_at"))
-            if stored_at and current_time - stored_at > AI_CURATOR_REASON_CONTEXT_TTL_SECONDS:
-                expired_user_ids.append(user_id)
-        for user_id in expired_user_ids:
-            self.ai_curator_reason_contexts.pop(user_id, None)
-
-    def _trim_ai_curator_reason_contexts(self) -> None:
-        while len(self.ai_curator_reason_contexts) > AI_CURATOR_REASON_CONTEXT_MAX_SIZE:
-            oldest_user_id = min(
-                self.ai_curator_reason_contexts,
-                key=lambda user_id: _context_stored_at(self.ai_curator_reason_contexts[user_id]),
-            )
-            self.ai_curator_reason_contexts.pop(oldest_user_id, None)
 
     def _build_ai_curator_context(self, query: str) -> dict:
         profile = self._resolve_ai_curator_profile(query)

@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import json
 import random
-from collections.abc import Callable
 from pathlib import Path
 from typing import TYPE_CHECKING
 from urllib.parse import quote
@@ -18,16 +17,17 @@ from src.bot.flex_common import (
     PLAY_ZONE_TEXT_COLOR,
 )
 from src.bot.reply import Reply
-from src.bot.text_utils import safe_float, split_bias_radar_tags
+from src.bot.text_utils import split_bias_radar_tags
 
 if TYPE_CHECKING:
     from src.bot.catalog import PlayZoneCatalog
+    from src.bot.sessions import SessionStore
 
 
 BIAS_RADAR_TRIGGERS = {"本命雷達測驗", "本命雷達", "測本命"}
 BIAS_RADAR_IMAGE_EXTENSIONS = (".jpg", ".jpeg", ".png", ".webp")
 BIAS_RADAR_SESSION_TTL_SECONDS = 60 * 30
-BIAS_RADAR_SESSION_MAX_SIZE = 500
+BIAS_RADAR_SESSION_NAMESPACE = "bias_radar"
 
 
 def _bias_radar_option_button(question_index: int, option: str) -> dict:
@@ -149,12 +149,11 @@ class BiasRadarFeature:
         self,
         catalog: PlayZoneCatalog,
         rng: random.Random,
-        clock: Callable[[], float],
+        sessions: SessionStore,
     ) -> None:
         self.catalog = catalog
         self.rng = rng
-        self.clock = clock
-        self.bias_radar_sessions: dict[str, dict[str, object]] = {}
+        self.sessions = sessions
 
     def _build_bias_radar_question_flex_contents(self, question_index: int) -> dict:
         questions = self._load_bias_radar_questions()
@@ -300,8 +299,7 @@ class BiasRadarFeature:
         return bubble
 
     def is_bias_radar_quiz_request(self, message: str, user_id: str = "analyze-user") -> bool:
-        self._prune_bias_radar_sessions()
-        return is_bias_radar_command(message) or user_id in self.bias_radar_sessions
+        return is_bias_radar_command(message) or self._session(user_id) is not None
 
     def bias_radar_reply(self, context: MessageContext) -> Reply:
         response = self._bias_radar_quiz_response(context.user_id, context.text)
@@ -310,7 +308,6 @@ class BiasRadarFeature:
     def _bias_radar_quiz_response(self, user_id: str, message: str) -> dict:
         normalized = message.strip()
         questions = self._load_bias_radar_questions()
-        self._prune_bias_radar_sessions()
         if normalized in BIAS_RADAR_TRIGGERS:
             self._store_bias_radar_session(user_id, question_index=0, answers=[])
             return {
@@ -318,7 +315,7 @@ class BiasRadarFeature:
                 "flex": self._build_bias_radar_question_flex_contents(0),
             }
 
-        session = self.bias_radar_sessions.get(user_id)
+        session = self._session(user_id)
         if not session:
             self._store_bias_radar_session(user_id, question_index=0, answers=[])
             return {
@@ -344,44 +341,25 @@ class BiasRadarFeature:
                 "flex": self._build_bias_radar_question_flex_contents(question_index),
             }
 
-        self.bias_radar_sessions.pop(user_id, None)
+        self.sessions.delete(BIAS_RADAR_SESSION_NAMESPACE, user_id)
         result = self._score_bias_radar_result(answers)
         return {
             "report": _format_bias_radar_result_text(result),
             "flex": self._build_bias_radar_result_flex_contents(result),
         }
 
+    def _session(self, user_id: str) -> dict[str, object] | None:
+        return self.sessions.get(BIAS_RADAR_SESSION_NAMESPACE, user_id)
+
     def _store_bias_radar_session(
         self, user_id: str, question_index: int, answers: list[str]
     ) -> None:
-        self.bias_radar_sessions[user_id] = {
-            "question_index": question_index,
-            "answers": answers,
-            "updated_at": self.clock(),
-        }
-        self._trim_bias_radar_sessions()
-
-    def _prune_bias_radar_sessions(self, now: float | None = None) -> None:
-        current_time = now if now is not None else self.clock()
-        expired_user_ids = [
-            user_id
-            for user_id, session in self.bias_radar_sessions.items()
-            if current_time - self._session_updated_at(session) > BIAS_RADAR_SESSION_TTL_SECONDS
-        ]
-        for user_id in expired_user_ids:
-            self.bias_radar_sessions.pop(user_id, None)
-
-    def _trim_bias_radar_sessions(self) -> None:
-        while len(self.bias_radar_sessions) > BIAS_RADAR_SESSION_MAX_SIZE:
-            oldest_user_id = min(
-                self.bias_radar_sessions,
-                key=lambda user_id: self._session_updated_at(self.bias_radar_sessions[user_id]),
-            )
-            self.bias_radar_sessions.pop(oldest_user_id, None)
-
-    def _session_updated_at(self, session: dict[str, object]) -> float:
-        updated_at = safe_float(session.get("updated_at"))
-        return updated_at or self.clock()
+        self.sessions.set(
+            BIAS_RADAR_SESSION_NAMESPACE,
+            user_id,
+            {"question_index": question_index, "answers": answers},
+            BIAS_RADAR_SESSION_TTL_SECONDS,
+        )
 
     def _bias_radar_answer_from_message(self, message: str, question_index: int) -> str | None:
         questions = self._load_bias_radar_questions()
