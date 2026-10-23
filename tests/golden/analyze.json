@@ -1,0 +1,4745 @@
+{
+  "ai_curator_entry": [
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#FAF7F4",
+            "contents": [
+              {
+                "color": "#5C4033",
+                "size": "sm",
+                "text": "直接告訴我你的偏好，我會根據本命雷達、每日推薦與藝人資料幫你排入坑路線。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "text": "我想入坑清冷感、舞台強的女團",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "🌙",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#6F5BA7",
+                        "size": "md",
+                        "text": "清冷女團入坑",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#6B4A3E",
+                        "size": "xs",
+                        "text": "適合喜歡清冷感、舞台視覺和概念感的人。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "text": "幫我推薦 vocal 強、現場穩的 K-pop",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "🎤",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#6F5BA7",
+                        "size": "md",
+                        "text": "Vocal 取向推薦",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#6B4A3E",
+                        "size": "xs",
+                        "text": "適合想先看唱功、現場和直拍的人。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "text": "我喜歡霸氣舞台、rap 和 dance，推薦我入坑路線",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "🔥",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#6F5BA7",
+                        "size": "md",
+                        "text": "霸氣舞台路線",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#6B4A3E",
+                        "size": "xs",
+                        "text": "適合偏好 rap、dance 和舞台支配感的人。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "text": "我喜歡甜系、白月光感和好聽 MV，幫我推薦",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "💿",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#6F5BA7",
+                        "size": "md",
+                        "text": "自由描述偏好",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#6B4A3E",
+                        "size": "xs",
+                        "text": "也可以直接輸入：我喜歡...，幫我推薦。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#6F5BA7",
+            "contents": [
+              {
+                "color": "#FDEBD8",
+                "size": "xs",
+                "text": "偏好推薦",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "AI 入坑",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "AI 入坑"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#FAF7F4",
+            "contents": [
+              {
+                "color": "#5C4033",
+                "size": "sm",
+                "text": "直接告訴我你的偏好，我會根據本命雷達、每日推薦與藝人資料幫你排入坑路線。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "text": "我想入坑清冷感、舞台強的女團",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "🌙",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#6F5BA7",
+                        "size": "md",
+                        "text": "清冷女團入坑",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#6B4A3E",
+                        "size": "xs",
+                        "text": "適合喜歡清冷感、舞台視覺和概念感的人。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "text": "幫我推薦 vocal 強、現場穩的 K-pop",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "🎤",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#6F5BA7",
+                        "size": "md",
+                        "text": "Vocal 取向推薦",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#6B4A3E",
+                        "size": "xs",
+                        "text": "適合想先看唱功、現場和直拍的人。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "text": "我喜歡霸氣舞台、rap 和 dance，推薦我入坑路線",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "🔥",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#6F5BA7",
+                        "size": "md",
+                        "text": "霸氣舞台路線",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#6B4A3E",
+                        "size": "xs",
+                        "text": "適合偏好 rap、dance 和舞台支配感的人。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "text": "我喜歡甜系、白月光感和好聽 MV，幫我推薦",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "💿",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#6F5BA7",
+                        "size": "md",
+                        "text": "自由描述偏好",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#6B4A3E",
+                        "size": "xs",
+                        "text": "也可以直接輸入：我喜歡...，幫我推薦。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#6F5BA7",
+            "contents": [
+              {
+                "color": "#FDEBD8",
+                "size": "xs",
+                "text": "偏好推薦",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "AI 入坑",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "AI 入坑"
+      },
+      "status": 200
+    }
+  ],
+  "ai_curator_persona": [
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7F3FF",
+            "contents": [
+              {
+                "action": {
+                  "label": "為什麼推薦 Irene？",
+                  "text": "為什麼推薦 Irene？",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "為什麼推薦 Juun？",
+                  "text": "為什麼推薦 Juun？",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "為什麼推薦 Karina？",
+                  "text": "為什麼推薦 Karina？",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "本命雷達",
+                  "text": "本命雷達測驗",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "抽 MV",
+                  "text": "每日 MV",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "抽直拍",
+                  "text": "每日直拍",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "spacing": "sm",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#6F5BA7",
+            "contents": [
+              {
+                "color": "#FFFFFF",
+                "size": "md",
+                "text": "接下來想看？",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "type": "box"
+          },
+          "size": "kilo",
+          "type": "bubble"
+        },
+        "report": "🧭 AI 入坑\n根據你說的「我喜歡姐系的」，我會這樣排：\n1. Red Velvet IRENE：冷感|清冷，適合先看本命雷達。\n2. Hearts2Hearts JUUN：霸氣|反差，適合先看本命雷達。\n3. aespa KARINA：冷感|霸氣|反差，適合先看本命雷達。\n今日入口：先看 Red Velvet《Chill Kill》\nhttps://youtu.be/xlyrt5eAtKI?si=_GBgJeDhqNomkBM7"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7F3FF",
+            "contents": [
+              {
+                "action": {
+                  "label": "為什麼推薦 THE8？",
+                  "text": "為什麼推薦 THE8？",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "為什麼推薦 Baekhyun？",
+                  "text": "為什麼推薦 Baekhyun？",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "為什麼推薦 Hoshi？",
+                  "text": "為什麼推薦 Hoshi？",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "本命雷達",
+                  "text": "本命雷達測驗",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "抽 MV",
+                  "text": "每日 MV",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "抽直拍",
+                  "text": "每日直拍",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "spacing": "sm",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#6F5BA7",
+            "contents": [
+              {
+                "color": "#FFFFFF",
+                "size": "md",
+                "text": "接下來想看？",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "type": "box"
+          },
+          "size": "kilo",
+          "type": "bubble"
+        },
+        "report": "🧭 AI 入坑\n根據你說的「推薦 vocal 強的男團」，我會這樣排：\n1. SEVENTEEN THE8：清冷|冷感，適合先看本命雷達。\n2. EXO BAEKHYUN：甜系|反差，適合先看本命雷達。\n3. SEVENTEEN HOSHI：霸氣|反差，適合先看本命雷達。\n今日入口：先看 ATEEZ《Ice On My Teeth》\nhttps://youtu.be/5OflOlcHLb8?si=TIvIo0OkBx-iQrUB"
+      },
+      "status": 200
+    }
+  ],
+  "ai_curator_preference": [
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7F3FF",
+            "contents": [
+              {
+                "action": {
+                  "label": "為什麼推薦 Gaeul？",
+                  "text": "為什麼推薦 Gaeul？",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "為什麼推薦 Ruka？",
+                  "text": "為什麼推薦 Ruka？",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "為什麼推薦 Sooin？",
+                  "text": "為什麼推薦 Sooin？",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "本命雷達",
+                  "text": "本命雷達測驗",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "抽 MV",
+                  "text": "每日 MV",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "抽直拍",
+                  "text": "每日直拍",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "spacing": "sm",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#6F5BA7",
+            "contents": [
+              {
+                "color": "#FFFFFF",
+                "size": "md",
+                "text": "接下來想看？",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "type": "box"
+          },
+          "size": "kilo",
+          "type": "bubble"
+        },
+        "report": "🧭 AI 入坑\n根據你說的「我想入坑清冷感、舞台強的女團」，我會這樣排：\n1. IVE GAEUL：冷感|清冷，適合先看本命雷達。\n2. BABYMONSTER RUKA：冷感|霸氣，適合先看本命雷達。\n3. MEOVV SOOIN：霸氣|冷感，適合先看本命雷達。\n今日入口：先看 BABYMONSTER《Love In My Heart》\nhttps://youtu.be/1kXLsrun51s?si=ZLApYdOPu6edpIpy"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "report": "目前本地資料還找不到這位成員，但可以先從本命雷達或每日一首繼續探索。\n\n先補一支每日 MV：Stray Kids - MIROH\nhttps://youtu.be/Dab4EENTW5I?si=lhTz38BRFfb4vY2l"
+      },
+      "status": 200
+    }
+  ],
+  "ai_curator_reason_without_context": [
+    {
+      "body": {
+        "report": "✨ 我會先推 aespa Karina。\n🔎 如果你吃貓咪、狐狸那種第一眼的清透感，Karina 會很容易先對上；再加上冷感、霸氣、反差的反差，會讓人想多看幾支舞台。\n💫 神性、舞台支配感的距離感很適合慢慢被圈進去，入門可以先看能感受到舞台動作、rap 節奏感、鏡頭感和全方位感魅力的直拍。\n📰 補充團體近況：aespa 近期重點是「aespa本週聲量偏強」。\n\n🎬 先用這支直拍確認感覺：aespa Karina - UP\nhttps://youtu.be/PwnHCwC2H9E?si=W947KqWm-lAcrGMO"
+      },
+      "status": 200
+    }
+  ],
+  "artist_picker": [
+    {
+      "body": {
+        "flex": null,
+        "report": "目前支援固定指令：\n1. 分析 aespa\n2. 分析 IVE\n3. 本週榜單\n4. 互動專區\n5. 每日一首\n6. 我的K-pop 口袋\n\n請用「分析 藝人名」取得完整報告。"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": null,
+        "report": "目前支援固定指令：\n1. 分析 aespa\n2. 分析 IVE\n3. 本週榜單\n4. 互動專區\n5. 每日一首\n6. 我的K-pop 口袋\n\n請用「分析 藝人名」取得完整報告。"
+      },
+      "status": 200
+    }
+  ],
+  "artist_report": [
+    {
+      "body": {
+        "cache": {
+          "artist": "aespa",
+          "cached_at": "2026-10-11T00:00:00+00:00",
+          "type": "absa"
+        },
+        "flex": {
+          "body": {
+            "contents": [
+              {
+                "text": "aespa report",
+                "type": "text"
+              }
+            ],
+            "layout": "vertical",
+            "type": "box"
+          },
+          "type": "bubble"
+        },
+        "report": "# aespa 近期市場與輿論分析\n期間：3 個月"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "cache": {
+          "artist": "IVE",
+          "cached_at": "2026-10-11T00:00:00+00:00",
+          "type": "absa"
+        },
+        "flex": {
+          "body": {
+            "contents": [
+              {
+                "text": "IVE report",
+                "type": "text"
+              }
+            ],
+            "layout": "vertical",
+            "type": "box"
+          },
+          "type": "bubble"
+        },
+        "report": "# IVE 近期市場與輿論分析\n期間：3 個月"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "cache": {
+          "artist": "NCT",
+          "cached_at": "2026-10-11T00:00:00+00:00",
+          "type": "absa"
+        },
+        "flex": {
+          "body": {
+            "contents": [
+              {
+                "text": "NCT report",
+                "type": "text"
+              }
+            ],
+            "layout": "vertical",
+            "type": "box"
+          },
+          "type": "bubble"
+        },
+        "report": "# NCT 近期市場與輿論分析\n期間：1 個月"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "cache": {
+          "artist": "ILLIT",
+          "cached_at": "2026-10-11T00:00:00+00:00",
+          "type": "absa"
+        },
+        "flex": {
+          "body": {
+            "contents": [
+              {
+                "text": "ILLIT report",
+                "type": "text"
+              }
+            ],
+            "layout": "vertical",
+            "type": "box"
+          },
+          "type": "bubble"
+        },
+        "report": "# ILLIT 近期市場與輿論分析\n期間：3 個月"
+      },
+      "status": 200
+    }
+  ],
+  "bias_radar_full": [
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "md",
+                "text": "想看：",
+                "type": "text",
+                "weight": "bold",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "本命雷達:0:男團",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "男團",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:0:女團",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "女團",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:0:都可以",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "都可以",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#EAF4EE",
+                "size": "xs",
+                "text": "本命雷達測驗",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "Q1/5",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "本命雷達測驗 Q1/5：請在 LINE 卡片中選擇最符合你的答案。"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "md",
+                "text": "外貌偏好：",
+                "type": "text",
+                "weight": "bold",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "本命雷達:1:貓咪",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "貓咪",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:1:狗狗",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "狗狗",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:1:小兔",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "小兔",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:1:狐狸",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "狐狸",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:1:小鹿",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "小鹿",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#EAF4EE",
+                "size": "xs",
+                "text": "本命雷達測驗",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "Q2/5",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "本命雷達測驗 Q2/5：請在 LINE 卡片中選擇最符合你的答案。"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "md",
+                "text": "喜歡定位：",
+                "type": "text",
+                "weight": "bold",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "本命雷達:2:Vocal",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "Vocal",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:2:Dance",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "Dance",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:2:Rap",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "Rap",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:2:Visual",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "Visual",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:2:All-rounder",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "All-rounder",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#EAF4EE",
+                "size": "xs",
+                "text": "本命雷達測驗",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "Q3/5",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "本命雷達測驗 Q3/5：請在 LINE 卡片中選擇最符合你的答案。"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "md",
+                "text": "喜歡氣質：",
+                "type": "text",
+                "weight": "bold",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "本命雷達:3:冷感",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "冷感",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:3:甜系",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "甜系",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:3:霸氣",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "霸氣",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:3:反差",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "反差",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:3:清冷",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "清冷",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#EAF4EE",
+                "size": "xs",
+                "text": "本命雷達測驗",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "Q4/5",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "本命雷達測驗 Q4/5：請在 LINE 卡片中選擇最符合你的答案。"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "md",
+                "text": "本命關係感：",
+                "type": "text",
+                "weight": "bold",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "本命雷達:4:戀愛感",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "戀愛感",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:4:神性",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "神性",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:4:朋友感",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "朋友感",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:4:白月光感",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "白月光感",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:4:舞台支配感",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "舞台支配感",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#EAF4EE",
+                "size": "xs",
+                "text": "本命雷達測驗",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "Q5/5",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "本命雷達測驗 Q5/5：請在 LINE 卡片中選擇最符合你的答案。"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "sm",
+                "text": "類型：女團",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "color": "#3F554A",
+                "size": "sm",
+                "text": "命中標籤：Dance、甜系、神性",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "color": "#4F665B",
+                "size": "sm",
+                "text": "你偏好Dance、甜系、神性的本命型，所以推薦你關注 BLACKPINK ROSE。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "label": "再測一次",
+                  "text": "本命雷達測驗",
+                  "type": "message"
+                },
+                "color": "#5D6F66",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "回 Play Zone",
+                  "text": "互動專區",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#EAF4EE",
+                "size": "xs",
+                "text": "你的本命雷達結果",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "BLACKPINK ROSE",
+                "type": "text",
+                "weight": "bold",
+                "wrap": true
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "hero": {
+            "aspectMode": "fit",
+            "aspectRatio": "20:13",
+            "size": "full",
+            "type": "image",
+            "url": "http://localhost/play-zone/radar-image/blackpink-rose.webp"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "你的本命雷達結果\n推薦：BLACKPINK ROSE\n類型：女團\n命中標籤：Dance、甜系、神性\n你偏好Dance、甜系、神性的本命型，所以推薦你關注 BLACKPINK ROSE。\nhttps://www.youtube.com/results?search_query=BLACKPINK+Rose"
+      },
+      "status": 200
+    }
+  ],
+  "bias_radar_interrupted": [
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "md",
+                "text": "想看：",
+                "type": "text",
+                "weight": "bold",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "本命雷達:0:男團",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "男團",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:0:女團",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "女團",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:0:都可以",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "都可以",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#EAF4EE",
+                "size": "xs",
+                "text": "本命雷達測驗",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "Q1/5",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "本命雷達測驗 Q1/5：請在 LINE 卡片中選擇最符合你的答案。"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "md",
+                "text": "想看：",
+                "type": "text",
+                "weight": "bold",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "本命雷達:0:男團",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "男團",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:0:女團",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "女團",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:0:都可以",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "都可以",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#EAF4EE",
+                "size": "xs",
+                "text": "本命雷達測驗",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "Q1/5",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "本命雷達測驗 Q1/5：請在 LINE 卡片中選擇最符合你的答案。"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "md",
+                "text": "外貌偏好：",
+                "type": "text",
+                "weight": "bold",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "本命雷達:1:貓咪",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "貓咪",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:1:狗狗",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "狗狗",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:1:小兔",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "小兔",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:1:狐狸",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "狐狸",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:1:小鹿",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "小鹿",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#EAF4EE",
+                "size": "xs",
+                "text": "本命雷達測驗",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "Q2/5",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "本命雷達測驗 Q2/5：請在 LINE 卡片中選擇最符合你的答案。"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#FFF6F0",
+            "contents": [
+              {
+                "color": "#5C3F37",
+                "size": "sm",
+                "text": "收藏 MV、直拍與照片，建立你的專屬 K-pop 收藏庫。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "目前推薦偏好：都可以",
+                    "type": "text",
+                    "wrap": true
+                  },
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "🎬 收藏過的 MV：0 個",
+                    "type": "text",
+                    "wrap": true
+                  },
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "🎥 收藏過的直拍：0 個",
+                    "type": "text",
+                    "wrap": true
+                  },
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "🖼️ 收藏過的照片：0 張",
+                    "type": "text",
+                    "wrap": true
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "spacing": "xs",
+                "type": "box"
+              },
+              {
+                "color": "#7A6258",
+                "size": "xs",
+                "text": "收藏越多，每日推薦會越貼近你的喜好。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "action=view_saved&type=mv",
+                  "label": "查看 MV 收藏",
+                  "type": "postback"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=view_saved&type=fancam",
+                  "label": "查看直拍收藏",
+                  "type": "postback"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=view_saved&type=photo",
+                  "label": "查看照片收藏",
+                  "type": "postback"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=open_pref",
+                  "label": "修改推薦偏好",
+                  "type": "postback"
+                },
+                "color": "#B76E61",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#B76E61",
+            "contents": [
+              {
+                "color": "#FFE9DF",
+                "size": "xs",
+                "text": "收藏庫",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "我的K-pop 口袋",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "我的K-pop 口袋"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "md",
+                "text": "外貌偏好：",
+                "type": "text",
+                "weight": "bold",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "本命雷達:1:貓咪",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "貓咪",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:1:狗狗",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "狗狗",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:1:小兔",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "小兔",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:1:狐狸",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "狐狸",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:1:小鹿",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "小鹿",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#EAF4EE",
+                "size": "xs",
+                "text": "本命雷達測驗",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "Q2/5",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "本命雷達測驗 Q2/5：請在 LINE 卡片中選擇最符合你的答案。"
+      },
+      "status": 200
+    }
+  ],
+  "daily_kpop": [
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F4F8FC",
+            "contents": [
+              {
+                "color": "#314B60",
+                "size": "sm",
+                "text": "每日推薦資料分成 MV、直拍、經典舞台三份 CSV，方便直接補歌名與連結。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "text": "每日 MV",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "🎬",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#4E779A",
+                        "size": "md",
+                        "text": "MV",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#48677E",
+                        "size": "xs",
+                        "text": "官方 MV 或值得補的主打歌。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "text": "每日直拍",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "🎥",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#4E779A",
+                        "size": "md",
+                        "text": "直拍",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#48677E",
+                        "size": "xs",
+                        "text": "舞台表現、成員魅力與飯拍導向。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "text": "每日經典舞台",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "🏆",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#4E779A",
+                        "size": "md",
+                        "text": "經典舞台",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#48677E",
+                        "size": "xs",
+                        "text": "回顧代表性舞台與名場面。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#4E779A",
+            "contents": [
+              {
+                "color": "#EAF3FF",
+                "size": "xs",
+                "text": "今天想看哪一種？",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "每日一首 K-pop",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "每日一首 K-pop"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F4F8FC",
+            "contents": [
+              {
+                "color": "#314B60",
+                "size": "xs",
+                "text": "想再抽哪一種 K-pop 推薦？",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "contents": [
+                  {
+                    "action": {
+                      "label": "MV",
+                      "text": "每日 MV",
+                      "type": "message"
+                    },
+                    "color": "#4E779A",
+                    "height": "sm",
+                    "style": "primary",
+                    "type": "button"
+                  },
+                  {
+                    "action": {
+                      "label": "直拍",
+                      "text": "每日直拍",
+                      "type": "message"
+                    },
+                    "color": "#4E779A",
+                    "height": "sm",
+                    "style": "primary",
+                    "type": "button"
+                  },
+                  {
+                    "action": {
+                      "label": "舞台",
+                      "text": "每日經典舞台",
+                      "type": "message"
+                    },
+                    "color": "#4E779A",
+                    "height": "sm",
+                    "style": "primary",
+                    "type": "button"
+                  }
+                ],
+                "layout": "horizontal",
+                "spacing": "sm",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "action=save_item&item_id=00000000-0000-0000-0000-000000000001",
+                  "label": "收藏至口袋",
+                  "type": "postback"
+                },
+                "color": "#B76E61",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "spacing": "sm",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#4E779A",
+            "contents": [
+              {
+                "color": "#FFFFFF",
+                "size": "md",
+                "text": "再抽一首",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "type": "box"
+          },
+          "size": "kilo",
+          "type": "bubble"
+        },
+        "report": "🎵 今日推薦 MV\n今天推薦的是 NMIXX 的《DASH》。\nhttps://example.com/nmixx-dash"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F4F8FC",
+            "contents": [
+              {
+                "color": "#314B60",
+                "size": "xs",
+                "text": "想再抽哪一種 K-pop 推薦？",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "contents": [
+                  {
+                    "action": {
+                      "label": "MV",
+                      "text": "每日 MV",
+                      "type": "message"
+                    },
+                    "color": "#4E779A",
+                    "height": "sm",
+                    "style": "primary",
+                    "type": "button"
+                  },
+                  {
+                    "action": {
+                      "label": "直拍",
+                      "text": "每日直拍",
+                      "type": "message"
+                    },
+                    "color": "#4E779A",
+                    "height": "sm",
+                    "style": "primary",
+                    "type": "button"
+                  },
+                  {
+                    "action": {
+                      "label": "舞台",
+                      "text": "每日經典舞台",
+                      "type": "message"
+                    },
+                    "color": "#4E779A",
+                    "height": "sm",
+                    "style": "primary",
+                    "type": "button"
+                  }
+                ],
+                "layout": "horizontal",
+                "spacing": "sm",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "spacing": "sm",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#4E779A",
+            "contents": [
+              {
+                "color": "#FFFFFF",
+                "size": "md",
+                "text": "再抽一首",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "type": "box"
+          },
+          "size": "kilo",
+          "type": "bubble"
+        },
+        "report": "🎵 今日推薦 直拍\n今天推薦的是 Hearts2Hearts 的《STYLE》。\n直拍成員：A-NA\nhttps://youtu.be/9xLLggO2Xjc?si=wwgPW9-BLJPTraG8"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F4F8FC",
+            "contents": [
+              {
+                "color": "#314B60",
+                "size": "xs",
+                "text": "想再抽哪一種 K-pop 推薦？",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "contents": [
+                  {
+                    "action": {
+                      "label": "MV",
+                      "text": "每日 MV",
+                      "type": "message"
+                    },
+                    "color": "#4E779A",
+                    "height": "sm",
+                    "style": "primary",
+                    "type": "button"
+                  },
+                  {
+                    "action": {
+                      "label": "直拍",
+                      "text": "每日直拍",
+                      "type": "message"
+                    },
+                    "color": "#4E779A",
+                    "height": "sm",
+                    "style": "primary",
+                    "type": "button"
+                  },
+                  {
+                    "action": {
+                      "label": "舞台",
+                      "text": "每日經典舞台",
+                      "type": "message"
+                    },
+                    "color": "#4E779A",
+                    "height": "sm",
+                    "style": "primary",
+                    "type": "button"
+                  }
+                ],
+                "layout": "horizontal",
+                "spacing": "sm",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "spacing": "sm",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#4E779A",
+            "contents": [
+              {
+                "color": "#FFFFFF",
+                "size": "md",
+                "text": "再抽一首",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "type": "box"
+          },
+          "size": "kilo",
+          "type": "bubble"
+        },
+        "report": "🎵 今日推薦 經典舞台\n今天推薦的是 LEE TEUK, BTS, GFRIEND, TWICE 的《Sorry Sorry》。\nhttps://youtu.be/9oVZDspxn2g?si=G7NK0qeBoD0QWfyw"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F4F8FC",
+            "contents": [
+              {
+                "color": "#314B60",
+                "size": "xs",
+                "text": "想再抽哪一種 K-pop 推薦？",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "contents": [
+                  {
+                    "action": {
+                      "label": "MV",
+                      "text": "每日 MV",
+                      "type": "message"
+                    },
+                    "color": "#4E779A",
+                    "height": "sm",
+                    "style": "primary",
+                    "type": "button"
+                  },
+                  {
+                    "action": {
+                      "label": "直拍",
+                      "text": "每日直拍",
+                      "type": "message"
+                    },
+                    "color": "#4E779A",
+                    "height": "sm",
+                    "style": "primary",
+                    "type": "button"
+                  },
+                  {
+                    "action": {
+                      "label": "舞台",
+                      "text": "每日經典舞台",
+                      "type": "message"
+                    },
+                    "color": "#4E779A",
+                    "height": "sm",
+                    "style": "primary",
+                    "type": "button"
+                  }
+                ],
+                "layout": "horizontal",
+                "spacing": "sm",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "spacing": "sm",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#4E779A",
+            "contents": [
+              {
+                "color": "#FFFFFF",
+                "size": "md",
+                "text": "再抽一首",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "type": "box"
+          },
+          "size": "kilo",
+          "type": "bubble"
+        },
+        "report": "🎵 今日推薦 經典舞台\n今天推薦的是 GOT THE BEAT (BOA, TAEYEON, HYOYEON, SEULGI, WENDY, KARINA, WINTER) 的《STEP BACK》。\nhttps://youtu.be/uBY1AoiF5Vo?si=azdHzif7JGprlpJU"
+      },
+      "status": 200
+    }
+  ],
+  "fallback": [
+    {
+      "body": {
+        "flex": null,
+        "report": "目前支援固定指令：\n1. 分析 aespa\n2. 分析 IVE\n3. 本週榜單\n4. 互動專區\n5. 每日一首\n6. 我的K-pop 口袋\n\n請用「分析 藝人名」取得完整報告。"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": null,
+        "report": "目前支援固定指令：\n1. 分析 aespa\n2. 分析 IVE\n3. 本週榜單\n4. 互動專區\n5. 每日一首\n6. 我的K-pop 口袋\n\n請用「分析 藝人名」取得完整報告。"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": null,
+        "report": "目前支援固定指令：\n1. 分析 aespa\n2. 分析 IVE\n3. 本週榜單\n4. 互動專區\n5. 每日一首\n6. 我的K-pop 口袋\n\n請用「分析 藝人名」取得完整報告。"
+      },
+      "status": 200
+    }
+  ],
+  "fan_attribute_quiz": [
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "md",
+                "text": "你通常是怎麼開始注意一個 K-pop 團？",
+                "type": "text",
+                "weight": "bold",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "粉絲屬性測驗:1:3,1,0",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "整團舞台很合",
+                    "type": "text",
+                    "weight": "bold"
+                  },
+                  {
+                    "color": "#4F665B",
+                    "margin": "xs",
+                    "size": "xs",
+                    "text": "隊形、聲線和成員互動一起打到你。",
+                    "type": "text",
+                    "wrap": true
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "粉絲屬性測驗:1:0,3,1",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "某位成員太亮眼",
+                    "type": "text",
+                    "weight": "bold"
+                  },
+                  {
+                    "color": "#4F665B",
+                    "margin": "xs",
+                    "size": "xs",
+                    "text": "先被一個人吸住，才慢慢認識其他內容。",
+                    "type": "text",
+                    "wrap": true
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "粉絲屬性測驗:1:1,0,3",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "大家都在討論",
+                    "type": "text",
+                    "weight": "bold"
+                  },
+                  {
+                    "color": "#4F665B",
+                    "margin": "xs",
+                    "size": "xs",
+                    "text": "熱門片段、梗圖或榜單聲量讓你點進去看。",
+                    "type": "text",
+                    "wrap": true
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#EAF4EE",
+                "size": "xs",
+                "text": "粉絲屬性測驗",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "Q1/5",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "粉絲屬性測驗 Q1/5：請在 LINE 卡片中選擇最符合你的答案。"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "md",
+                "text": "回歸期間，你最期待哪種內容？",
+                "type": "text",
+                "weight": "bold",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "粉絲屬性測驗:2:4,1,0",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "團體舞台",
+                    "type": "text",
+                    "weight": "bold"
+                  },
+                  {
+                    "color": "#4F665B",
+                    "margin": "xs",
+                    "size": "xs",
+                    "text": "想看全員配置、走位和整體概念。",
+                    "type": "text",
+                    "wrap": true
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "粉絲屬性測驗:2:1,3,1",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "本命直拍",
+                    "type": "text",
+                    "weight": "bold"
+                  },
+                  {
+                    "color": "#4F665B",
+                    "margin": "xs",
+                    "size": "xs",
+                    "text": "先找自己最愛那位的鏡頭和造型。",
+                    "type": "text",
+                    "wrap": true
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "粉絲屬性測驗:2:2,0,3",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "熱門精華",
+                    "type": "text",
+                    "weight": "bold"
+                  },
+                  {
+                    "color": "#4F665B",
+                    "margin": "xs",
+                    "size": "xs",
+                    "text": "想先看社群上最紅、最多人轉的片段。",
+                    "type": "text",
+                    "wrap": true
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#EAF4EE",
+                "size": "xs",
+                "text": "粉絲屬性測驗",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "Q2/5",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "粉絲屬性測驗 Q2/5：請在 LINE 卡片中選擇最符合你的答案。"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "md",
+                "text": "你喜歡的是整個團的化學反應。",
+                "type": "text",
+                "weight": "bold",
+                "wrap": true
+              },
+              {
+                "color": "#4F665B",
+                "size": "sm",
+                "text": "你會看見每位成員在團體裡的角色，也享受舞台、團綜、互動與作品概念拼在一起的完整感。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "color": "#5D6F66",
+                "size": "sm",
+                "text": "適合玩法：團體雷達、舞台名場面整理、全員魅力圖鑑。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "color": "#4F665B",
+                "size": "xs",
+                "text": "分數：團飯 3 / 唯飯 1 / 跟風粉 1",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "label": "再測一次",
+                  "text": "粉絲屬性測驗",
+                  "type": "message"
+                },
+                "color": "#5D6F66",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#EAF4EE",
+                "size": "xs",
+                "text": "你的粉絲屬性是",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "團飯",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "你的粉絲屬性是：團飯\n你喜歡的是整個團的化學反應。\n你會看見每位成員在團體裡的角色，也享受舞台、團綜、互動與作品概念拼在一起的完整感。\n適合玩法：團體雷達、舞台名場面整理、全員魅力圖鑑。\n分數：團飯 3 / 唯飯 1 / 跟風粉 1"
+      },
+      "status": 200
+    }
+  ],
+  "help": [
+    {
+      "body": {
+        "flex": null,
+        "report": "📖 使用說明\n\n輸入：\n分析 aespa\n分析 IVE\n本週榜單\n互動專區\n每日一首\n\n目前支援：\n- 藝人分析報告\n- 本週 Bugs 榜單\n- 粉絲留言情緒分析\n- Play Zone 互動入口\n- 每日一首 K-pop 入口\n\n可分析藝人：\naespa、IVE、BABYMONSTER、NMIXX、ILLIT、NCT、ZEROBASEONE、TXT、ENHYPEN、BOYNEXTDOOR"
+      },
+      "status": 200
+    }
+  ],
+  "member_quiz": [
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "action": {
+                  "data": "認人答案:kyujin_002:A",
+                  "label": "Jiwoo 金智友",
+                  "type": "postback"
+                },
+                "color": "#5D6F66",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "認人答案:kyujin_002:B",
+                  "label": "Kyujin 張圭珍",
+                  "type": "postback"
+                },
+                "color": "#5D6F66",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#E7F1EC",
+                "size": "xs",
+                "text": "認人測驗",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "請問圖片的人是誰？",
+                "type": "text",
+                "weight": "bold",
+                "wrap": true
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "hero": {
+            "aspectMode": "fit",
+            "aspectRatio": "1:1",
+            "backgroundColor": "#F7FAF8",
+            "size": "full",
+            "type": "image",
+            "url": "http://localhost/play-zone/images/kyujin_002.jpg"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "認人測驗：請問圖片的人是誰？"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F5149",
+                "size": "xs",
+                "text": "想繼續挑戰認人測驗嗎？",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "label": "再一題",
+                  "text": "認人測驗",
+                  "type": "message"
+                },
+                "color": "#5D6F66",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "回 Play Zone",
+                  "text": "互動專區",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "spacing": "sm",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#FFFFFF",
+                "size": "md",
+                "text": "再來一題？",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "type": "box"
+          },
+          "size": "kilo",
+          "type": "bubble"
+        },
+        "report": "答對了！"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F5149",
+                "size": "xs",
+                "text": "想繼續挑戰認人測驗嗎？",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "label": "再一題",
+                  "text": "認人測驗",
+                  "type": "message"
+                },
+                "color": "#5D6F66",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "回 Play Zone",
+                  "text": "互動專區",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "spacing": "sm",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#FFFFFF",
+                "size": "md",
+                "text": "再來一題？",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "type": "box"
+          },
+          "size": "kilo",
+          "type": "bubble"
+        },
+        "report": "答錯了。正解是 Jiwoo 金智友。"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "action": {
+                  "data": "認人答案:kyujin_003:A",
+                  "label": "Jiwoo 金智友",
+                  "type": "postback"
+                },
+                "color": "#5D6F66",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "認人答案:kyujin_003:B",
+                  "label": "Kyujin 張圭珍",
+                  "type": "postback"
+                },
+                "color": "#5D6F66",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#E7F1EC",
+                "size": "xs",
+                "text": "認人測驗",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "請問圖片的人是誰？",
+                "type": "text",
+                "weight": "bold",
+                "wrap": true
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "hero": {
+            "aspectMode": "fit",
+            "aspectRatio": "1:1",
+            "backgroundColor": "#F7FAF8",
+            "size": "full",
+            "type": "image",
+            "url": "http://localhost/play-zone/images/kyujin_003.jpg"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "認人測驗：請問圖片的人是誰？"
+      },
+      "status": 200
+    }
+  ],
+  "photo_card": [
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "xs",
+                "text": "想再抽一張神圖嗎？",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "label": "再抽一次",
+                  "text": "神圖抽卡",
+                  "type": "message"
+                },
+                "color": "#5D6F66",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "回 Play Zone",
+                  "text": "互動專區",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "spacing": "sm",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#FFFFFF",
+                "size": "md",
+                "text": "再抽一次",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "type": "box"
+          },
+          "size": "kilo",
+          "type": "bubble"
+        },
+        "report": "✨ 神圖抽卡結果 ✨\n\n🎉 恭喜你今天抽到\n💖 I.N\n📸 類型：機場路\n\n🔗 點開看神圖\nhttps://x.com/check_in208/status/2026494527561936989?s=46"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "xs",
+                "text": "想再抽一張神圖嗎？",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "label": "再抽一次",
+                  "text": "神圖抽卡",
+                  "type": "message"
+                },
+                "color": "#5D6F66",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "回 Play Zone",
+                  "text": "互動專區",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "spacing": "sm",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#FFFFFF",
+                "size": "md",
+                "text": "再抽一次",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "type": "box"
+          },
+          "size": "kilo",
+          "type": "bubble"
+        },
+        "report": "✨ 神圖抽卡結果 ✨\n\n🎉 恭喜你今天抽到\n💖 DINO\n📸 類型：舞台照\n\n🔗 點開看神圖\nhttps://x.com/love_for_dino/status/1945825959753441381?s=46"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "xs",
+                "text": "想再抽一張神圖嗎？",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "label": "再抽一次",
+                  "text": "神圖抽卡",
+                  "type": "message"
+                },
+                "color": "#5D6F66",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "回 Play Zone",
+                  "text": "互動專區",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "spacing": "sm",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#FFFFFF",
+                "size": "md",
+                "text": "再抽一次",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "type": "box"
+          },
+          "size": "kilo",
+          "type": "bubble"
+        },
+        "report": "✨ 神圖抽卡結果 ✨\n\n🎉 恭喜你今天抽到\n💖 LIZ\n📸 類型：簽售照\n\n🔗 點開看神圖\nhttps://x.com/Berries_Liz1121/status/2027715609178599743?s=20"
+      },
+      "status": 200
+    }
+  ],
+  "play_zone": [
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "sm",
+                "text": "把既有資料包成 LINE 互動體驗：測驗、雷達、認人與抽卡。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "text": "本命雷達測驗",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "🧭",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#5D6F66",
+                        "size": "md",
+                        "text": "本命雷達測驗",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#4F665B",
+                        "size": "xs",
+                        "text": "用幾題選擇題推測最適合你的團體與本命。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "text": "粉絲屬性測驗",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "💬",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#5D6F66",
+                        "size": "md",
+                        "text": "粉絲屬性測驗",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#4F665B",
+                        "size": "xs",
+                        "text": "5 題判斷你是團飯、唯飯還是跟風粉。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "text": "認人測驗",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "👀",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#5D6F66",
+                        "size": "md",
+                        "text": "認人測驗",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#4F665B",
+                        "size": "xs",
+                        "text": "從成員特色與舞台線索練習辨認成員。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "text": "神圖抽卡",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "✨",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#5D6F66",
+                        "size": "md",
+                        "text": "神圖抽卡",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#4F665B",
+                        "size": "xs",
+                        "text": "抽一張預先整理好的直拍或神圖連結。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#EAF4EE",
+                "size": "xs",
+                "text": "選一個互動玩法",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "K-pop Play Zone",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "K-pop Play Zone"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "sm",
+                "text": "把既有資料包成 LINE 互動體驗：測驗、雷達、認人與抽卡。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "text": "本命雷達測驗",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "🧭",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#5D6F66",
+                        "size": "md",
+                        "text": "本命雷達測驗",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#4F665B",
+                        "size": "xs",
+                        "text": "用幾題選擇題推測最適合你的團體與本命。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "text": "粉絲屬性測驗",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "💬",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#5D6F66",
+                        "size": "md",
+                        "text": "粉絲屬性測驗",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#4F665B",
+                        "size": "xs",
+                        "text": "5 題判斷你是團飯、唯飯還是跟風粉。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "text": "認人測驗",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "👀",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#5D6F66",
+                        "size": "md",
+                        "text": "認人測驗",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#4F665B",
+                        "size": "xs",
+                        "text": "從成員特色與舞台線索練習辨認成員。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "text": "神圖抽卡",
+                  "type": "message"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "flex": 0,
+                    "gravity": "center",
+                    "size": "xl",
+                    "text": "✨",
+                    "type": "text"
+                  },
+                  {
+                    "contents": [
+                      {
+                        "color": "#5D6F66",
+                        "size": "md",
+                        "text": "神圖抽卡",
+                        "type": "text",
+                        "weight": "bold"
+                      },
+                      {
+                        "color": "#4F665B",
+                        "size": "xs",
+                        "text": "抽一張預先整理好的直拍或神圖連結。",
+                        "type": "text",
+                        "wrap": true
+                      }
+                    ],
+                    "layout": "vertical",
+                    "spacing": "xs",
+                    "type": "box"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "horizontal",
+                "paddingAll": "12px",
+                "spacing": "md",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#EAF4EE",
+                "size": "xs",
+                "text": "選一個互動玩法",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "K-pop Play Zone",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "K-pop Play Zone"
+      },
+      "status": 200
+    }
+  ],
+  "pocket": [
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#FFF6F0",
+            "contents": [
+              {
+                "color": "#5C3F37",
+                "size": "sm",
+                "text": "收藏 MV、直拍與照片，建立你的專屬 K-pop 收藏庫。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "目前推薦偏好：都可以",
+                    "type": "text",
+                    "wrap": true
+                  },
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "🎬 收藏過的 MV：0 個",
+                    "type": "text",
+                    "wrap": true
+                  },
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "🎥 收藏過的直拍：0 個",
+                    "type": "text",
+                    "wrap": true
+                  },
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "🖼️ 收藏過的照片：0 張",
+                    "type": "text",
+                    "wrap": true
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "spacing": "xs",
+                "type": "box"
+              },
+              {
+                "color": "#7A6258",
+                "size": "xs",
+                "text": "收藏越多，每日推薦會越貼近你的喜好。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "action=view_saved&type=mv",
+                  "label": "查看 MV 收藏",
+                  "type": "postback"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=view_saved&type=fancam",
+                  "label": "查看直拍收藏",
+                  "type": "postback"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=view_saved&type=photo",
+                  "label": "查看照片收藏",
+                  "type": "postback"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=open_pref",
+                  "label": "修改推薦偏好",
+                  "type": "postback"
+                },
+                "color": "#B76E61",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#B76E61",
+            "contents": [
+              {
+                "color": "#FFE9DF",
+                "size": "xs",
+                "text": "收藏庫",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "我的K-pop 口袋",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "我的K-pop 口袋"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": null,
+        "report": "🎬 你的 MV 收藏\n\n目前還沒有收藏。"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#FFF6F0",
+            "contents": [
+              {
+                "action": {
+                  "data": "action=set_pref&gender=girl_group",
+                  "label": "女團",
+                  "type": "postback"
+                },
+                "color": "#B76E61",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=set_pref&gender=boy_group",
+                  "label": "男團",
+                  "type": "postback"
+                },
+                "color": "#B76E61",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=set_pref&gender=all",
+                  "label": "都可以",
+                  "type": "postback"
+                },
+                "color": "#B76E61",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "spacing": "sm",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#B76E61",
+            "contents": [
+              {
+                "color": "#FFFFFF",
+                "size": "md",
+                "text": "修改推薦偏好",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "type": "box"
+          },
+          "size": "kilo",
+          "type": "bubble"
+        },
+        "report": "請選擇你的每日 MV 推薦偏好。"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#FFF6F0",
+            "contents": [
+              {
+                "color": "#5C3F37",
+                "size": "sm",
+                "text": "收藏 MV、直拍與照片，建立你的專屬 K-pop 收藏庫。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "目前推薦偏好：女團",
+                    "type": "text",
+                    "wrap": true
+                  },
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "🎬 收藏過的 MV：0 個",
+                    "type": "text",
+                    "wrap": true
+                  },
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "🎥 收藏過的直拍：0 個",
+                    "type": "text",
+                    "wrap": true
+                  },
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "🖼️ 收藏過的照片：0 張",
+                    "type": "text",
+                    "wrap": true
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "spacing": "xs",
+                "type": "box"
+              },
+              {
+                "color": "#7A6258",
+                "size": "xs",
+                "text": "收藏越多，每日推薦會越貼近你的喜好。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "action=view_saved&type=mv",
+                  "label": "查看 MV 收藏",
+                  "type": "postback"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=view_saved&type=fancam",
+                  "label": "查看直拍收藏",
+                  "type": "postback"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=view_saved&type=photo",
+                  "label": "查看照片收藏",
+                  "type": "postback"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=open_pref",
+                  "label": "修改推薦偏好",
+                  "type": "postback"
+                },
+                "color": "#B76E61",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#B76E61",
+            "contents": [
+              {
+                "color": "#FFE9DF",
+                "size": "xs",
+                "text": "收藏庫",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "我的K-pop 口袋",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "已更新每日 MV 推薦偏好：女團"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#FFF6F0",
+            "contents": [
+              {
+                "color": "#5C3F37",
+                "size": "sm",
+                "text": "收藏 MV、直拍與照片，建立你的專屬 K-pop 收藏庫。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "目前推薦偏好：女團",
+                    "type": "text",
+                    "wrap": true
+                  },
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "🎬 收藏過的 MV：1 個",
+                    "type": "text",
+                    "wrap": true
+                  },
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "🎥 收藏過的直拍：0 個",
+                    "type": "text",
+                    "wrap": true
+                  },
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "🖼️ 收藏過的照片：0 張",
+                    "type": "text",
+                    "wrap": true
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "spacing": "xs",
+                "type": "box"
+              },
+              {
+                "color": "#7A6258",
+                "size": "xs",
+                "text": "收藏越多，每日推薦會越貼近你的喜好。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "action=view_saved&type=mv",
+                  "label": "查看 MV 收藏",
+                  "type": "postback"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=view_saved&type=fancam",
+                  "label": "查看直拍收藏",
+                  "type": "postback"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=view_saved&type=photo",
+                  "label": "查看照片收藏",
+                  "type": "postback"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=open_pref",
+                  "label": "修改推薦偏好",
+                  "type": "postback"
+                },
+                "color": "#B76E61",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#B76E61",
+            "contents": [
+              {
+                "color": "#FFE9DF",
+                "size": "xs",
+                "text": "收藏庫",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "我的K-pop 口袋",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "已加入你的 K-pop 口袋 ⭐"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#FFF6F0",
+            "contents": [
+              {
+                "color": "#5C3F37",
+                "size": "sm",
+                "text": "收藏 MV、直拍與照片，建立你的專屬 K-pop 收藏庫。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "目前推薦偏好：女團",
+                    "type": "text",
+                    "wrap": true
+                  },
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "🎬 收藏過的 MV：1 個",
+                    "type": "text",
+                    "wrap": true
+                  },
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "🎥 收藏過的直拍：0 個",
+                    "type": "text",
+                    "wrap": true
+                  },
+                  {
+                    "color": "#5C3F37",
+                    "size": "sm",
+                    "text": "🖼️ 收藏過的照片：0 張",
+                    "type": "text",
+                    "wrap": true
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "spacing": "xs",
+                "type": "box"
+              },
+              {
+                "color": "#7A6258",
+                "size": "xs",
+                "text": "收藏越多，每日推薦會越貼近你的喜好。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "action=view_saved&type=mv",
+                  "label": "查看 MV 收藏",
+                  "type": "postback"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=view_saved&type=fancam",
+                  "label": "查看直拍收藏",
+                  "type": "postback"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=view_saved&type=photo",
+                  "label": "查看照片收藏",
+                  "type": "postback"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "data": "action=open_pref",
+                  "label": "修改推薦偏好",
+                  "type": "postback"
+                },
+                "color": "#B76E61",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#B76E61",
+            "contents": [
+              {
+                "color": "#FFE9DF",
+                "size": "xs",
+                "text": "收藏庫",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "我的K-pop 口袋",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "這個內容已經在你的口袋裡了 ⭐"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": null,
+        "report": "🎬 你的 MV 收藏\n\n1. NMIXX - DASH\n   🔗 https://example.com/nmixx-dash"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": null,
+        "report": "找不到要收藏的內容。"
+      },
+      "status": 200
+    }
+  ],
+  "weekly_chart": [
+    {
+      "body": {
+        "cache": {
+          "cached_at": "2026-10-20T00:00:00+00:00",
+          "type": "weekly_chart"
+        },
+        "flex": null,
+        "report": "# 本週 K-pop 榜單\n1. Fake Song - Fake Artist"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "cache": {
+          "chart_date": "2026-05-11",
+          "type": "weekly_chart_history"
+        },
+        "flex": null,
+        "report": "# Bugs 歷史週榜\n榜單日期：2026-05-11\n1. Old Song - Old Artist"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "cache": {
+          "chart_date": "2026-05-04",
+          "type": "weekly_chart_history"
+        },
+        "flex": null,
+        "report": "# Bugs 歷史週榜\n榜單日期：2026-05-04\n1. Old Song - Old Artist"
+      },
+      "status": 200
+    }
+  ]
+}
