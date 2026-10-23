@@ -22,10 +22,12 @@ COPY pyproject.toml uv.lock .python-version ./
 RUN uv sync --locked
 
 # AI 入坑 v2 encoder: download bge-m3's official ONNX export, quantize it to int8 and
-# precompute member embeddings. Only models/ reaches the final image. Build with
-# --build-arg SEMANTIC_CURATOR=0 to skip it; the bot then falls back to v1 ranking.
+# precompute member embeddings. Only models/ reaches the final image. Off by default:
+# quantizing the 2.2GB model was OOM-killed on the Hugging Face Space builder. Pass
+# --build-arg SEMANTIC_CURATOR=1 on a machine with more memory; without models/ the
+# bot falls back to v1 ranking.
 FROM base AS encoder
-ARG SEMANTIC_CURATOR=1
+ARG SEMANTIC_CURATOR=0
 RUN uv sync --locked --group encoder-build
 COPY src ./src
 COPY scripts ./scripts
