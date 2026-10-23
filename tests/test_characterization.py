@@ -252,7 +252,12 @@ def _run_mock_webhook(messages: list[str], user_id: str, monkeypatch) -> list:
     outputs = []
     for message in messages:
         response = client.post("/webhook", json={"message": message, "user_id": user_id})
-        outputs.append({"status": response.status_code, "body": response.get_data(as_text=True)})
+        body = response.get_data(as_text=True)
+        outputs.append({
+            "status": response.status_code,
+            # The webhook returns JSON text with an HTML content type; compare it parsed.
+            "body": json.loads(body) if body.startswith("{") else body,
+        })
     return outputs
 
 
