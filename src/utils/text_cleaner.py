@@ -3,7 +3,6 @@ from __future__ import annotations
 import html
 import re
 
-
 HTML_TAG_RE = re.compile(r"<[^>]+>")
 WHITESPACE_RE = re.compile(r"\s+")
 

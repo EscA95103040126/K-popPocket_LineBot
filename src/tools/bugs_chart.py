@@ -9,7 +9,6 @@ from bs4 import BeautifulSoup
 
 from src.tools.chart_db import ChartHistoryRepository
 
-
 BUGS_WEEKLY_CHART_URL = "https://music.bugs.co.kr/chart/track/week/total"
 BUGS_HEADERS = {
     "User-Agent": (

@@ -1,5 +1,5 @@
-from pathlib import Path
 import sys
+from pathlib import Path
 
 # 讓這個 script 可以從專案根目錄直接執行：
 # python3 scripts/test_sentiment_classify.py

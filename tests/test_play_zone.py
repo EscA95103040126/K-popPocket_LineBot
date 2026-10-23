@@ -5,7 +5,6 @@ from pathlib import Path
 from types import SimpleNamespace
 
 from flask import Flask
-
 from PIL import Image
 
 from src.agent import KpopAnalysisAgent

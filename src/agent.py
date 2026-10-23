@@ -4,7 +4,7 @@ import json
 import logging
 import re
 import unicodedata
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -13,9 +13,9 @@ import requests
 
 from src.config import Settings, settings
 from src.router import ARTIST_PATTERNS, Intent, route_message
+from src.tools.absa import format_absa_report_for_line, load_absa_cache
 from src.tools.chart_db import ChartHistoryRepository
 from src.tools.naver_news import NaverNewsClient
-from src.tools.absa import format_absa_report_for_line, load_absa_cache
 from src.tools.sentiment import analyze_sentiment_from_csv
 
 logger = logging.getLogger(__name__)
@@ -1016,7 +1016,7 @@ def _cache_key(value: str) -> str:
 
 
 def _now_iso() -> str:
-    return datetime.now(timezone.utc).isoformat()
+    return datetime.now(UTC).isoformat()
 
 
 def _is_fresh(cached_at: str | None, max_age: timedelta) -> bool:
@@ -1027,8 +1027,8 @@ def _is_fresh(cached_at: str | None, max_age: timedelta) -> bool:
     except ValueError:
         return False
     if cached_time.tzinfo is None:
-        cached_time = cached_time.replace(tzinfo=timezone.utc)
-    return datetime.now(timezone.utc) - cached_time <= max_age
+        cached_time = cached_time.replace(tzinfo=UTC)
+    return datetime.now(UTC) - cached_time <= max_age
 
 
 def _format_news_titles(news: list[dict[str, Any]]) -> str:

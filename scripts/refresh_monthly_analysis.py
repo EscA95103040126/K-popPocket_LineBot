@@ -8,7 +8,7 @@ import json
 import re
 import sys
 from collections import Counter
-from datetime import date, datetime, time, timedelta, timezone
+from datetime import UTC, date, datetime, time, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -20,8 +20,12 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from src.agent import DEMO_ARTISTS
 from src.config import settings
 from src.tools.absa import (
-    ABSA_ASPECTS, ABSA_CACHE_DIR, _ratio_summary, _summarize_news,
-    write_absa_payload, write_absa_summary_csv,
+    ABSA_ASPECTS,
+    ABSA_CACHE_DIR,
+    _ratio_summary,
+    _summarize_news,
+    write_absa_payload,
+    write_absa_summary_csv,
 )
 from src.tools.bugs_chart import fetch_bugs_weekly_chart
 from src.tools.naver_news import NAVER_NEWS_URL, NaverNewsClient
@@ -329,7 +333,7 @@ def analyze_artist(artist, raw, start, end):
     if not used_ids <= valid_ids:
         raise RuntimeError("Gemini cited an unknown news source")
     chart_start = date.fromisoformat(raw["chart_rows"][0]["chart_date"])
-    payload = {"artist": artist, "generated_at": datetime.now(timezone.utc).isoformat(),
+    payload = {"artist": artist, "generated_at": datetime.now(UTC).isoformat(),
                "analysis_period": {"start": str(start), "end": str(end), "timezone": "Asia/Taipei"},
                "sources": {"naver_news": {"count": len(news), "items": news, "date_timezone": "Asia/Seoul", **raw["news_coverage"]},
                            "youtube_comments": {"count": len(comments), "items": comments,

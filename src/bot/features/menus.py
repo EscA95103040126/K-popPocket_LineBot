@@ -8,8 +8,8 @@ from src.bot.flex_common import (
     PLAY_ZONE_MUTED_TEXT_COLOR,
     PLAY_ZONE_SUBTITLE_COLOR,
     PLAY_ZONE_TEXT_COLOR,
+    selection_page_flex_contents,
 )
-from src.bot.flex_common import selection_page_flex_contents
 from src.bot.reply import Reply
 
 

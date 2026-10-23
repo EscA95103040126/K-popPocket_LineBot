@@ -9,7 +9,8 @@ from src.bot.dispatcher import MessageContext
 from src.bot.features.bias_radar import safe_bias_radar_image_filename
 from src.bot.features.member_quiz import safe_member_quiz_image_filename
 from src.bot.line_events import LineEventGuard
-from src.config import Settings, settings as default_settings
+from src.config import Settings
+from src.config import settings as default_settings
 from src.tools.bugs_chart import fetch_bugs_weekly_chart
 from src.tools.naver_news import NaverNewsClient
 

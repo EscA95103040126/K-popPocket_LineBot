@@ -3,14 +3,13 @@ from __future__ import annotations
 
 from types import SimpleNamespace
 
+import src.tools.sentiment as sentiment_module
 from src.tools.sentiment import (
     analyze_sentiment_from_csv,
     classify_comment,
     get_comments_by_artist,
     load_comments,
 )
-import src.tools.sentiment as sentiment_module
-
 
 # ── 1. load_comments ──────────────────────────────────────────────────────────
 

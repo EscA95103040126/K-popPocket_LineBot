@@ -1,9 +1,9 @@
 from __future__ import annotations
 
 import random
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from time import time
-from typing import Callable
 
 from src.agent import KpopAnalysisAgent
 from src.bot.catalog import PlayZoneCatalog

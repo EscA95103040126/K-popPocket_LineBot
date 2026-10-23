@@ -8,7 +8,6 @@ import requests
 from dotenv import load_dotenv
 from PIL import Image, ImageDraw, ImageFont
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_IMAGE_PATH = PROJECT_ROOT / "data" / "rich_menu.png"
 RICH_MENU_SIZE = (2500, 1686)

@@ -1,6 +1,5 @@
 from src.tools.bugs_chart import fetch_bugs_weekly_chart, parse_bugs_weekly_chart
 
-
 BUGS_SAMPLE_HTML = """
 <html>
   <body>
