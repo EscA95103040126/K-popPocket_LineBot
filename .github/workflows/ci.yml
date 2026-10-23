@@ -1,8 +1,10 @@
 name: CI
 
+# Every pushed branch runs CI. PRs from this repo are already covered by that push run,
+# so the pull_request event only runs for PRs from forks (see the job conditions).
 on:
   push:
-    branches: [main]
+    branches: ["**"]
   pull_request:
 
 permissions:
@@ -15,6 +17,7 @@ concurrency:
 jobs:
   test:
     name: Lint and test
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name != github.repository
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -43,6 +46,7 @@ jobs:
 
   docker:
     name: Docker image
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name != github.repository
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
