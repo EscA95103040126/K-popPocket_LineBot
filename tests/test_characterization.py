@@ -67,6 +67,15 @@ CONVERSATIONS: dict[str, list[str]] = {
         "為什麼推薦她",
     ],
     "ai_curator_persona": ["我喜歡姐系的", "推薦 vocal 強的男團"],
+    # Free text with no curator keyword counts as a preference only after the entry,
+    # and a fixed command ends that mode.
+    "ai_curator_free_text_after_entry": [
+        "我喜歡甜甜的、笑起來很有感染力的女生",
+        "AI入坑",
+        "我喜歡甜甜的、笑起來很有感染力的女生",
+        "本命雷達測驗",
+        "我喜歡甜甜的、笑起來很有感染力的女生",
+    ],
     "ai_curator_reason_without_context": ["為什麼推薦 Karina"],
     "bias_radar_full": _bias_radar_full_run(),
     "bias_radar_interrupted": ["本命雷達", "每日 MV", "女團", "我的口袋", "help"],
