@@ -5,7 +5,6 @@ from typing import TYPE_CHECKING
 from src.bot.dispatcher import Dispatcher, Handler
 from src.bot.features import menus
 from src.bot.features.ai_curator import (
-    ai_curator_entry_reply,
     is_ai_curator_entry_request,
     is_ai_curator_reason_followup,
 )
@@ -74,11 +73,11 @@ def build_dispatcher(features: Features) -> Dispatcher:
             Handler(
                 "ai_curator_entry",
                 lambda c: is_ai_curator_entry_request(c.text),
-                ai_curator_entry_reply,
+                ai_curator.ai_curator_entry_reply,
             ),
             Handler(
                 "ai_curator_preference",
-                lambda c: ai_curator.is_ai_curator_preference_request(c.text),
+                ai_curator.is_ai_curator_preference_message,
                 ai_curator.ai_curator_preference_reply,
             ),
             Handler(

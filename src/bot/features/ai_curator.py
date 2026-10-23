@@ -33,6 +33,10 @@ logger = logging.getLogger(__name__)
 
 AI_CURATOR_REASON_CONTEXT_TTL_SECONDS = 60 * 30
 AI_CURATOR_REASON_CONTEXT_NAMESPACE = "ai_curator_reason"
+# After the 「AI 入坑」 entry asks for a preference, free text counts as one even when it
+# names none of the keywords below, until a fixed command or the TTL ends that mode.
+AI_CURATOR_AWAITING_NAMESPACE = "ai_curator_awaiting"
+AI_CURATOR_AWAITING_TTL_SECONDS = 60 * 10
 AI_CURATOR_ENTRY_TRIGGERS = {
     "我的雷達",
     "雷達",
@@ -599,6 +603,33 @@ class AiCuratorFeature:
         self._semantic_ranker: SemanticMemberRanker | None = None
         self._semantic_ranker_loaded = False
 
+    def ai_curator_entry_reply(self, context: MessageContext) -> Reply:
+        self._set_awaiting_preference(context.user_id)
+        return ai_curator_entry_reply(context)
+
+    def is_ai_curator_preference_message(self, context: MessageContext) -> bool:
+        if self.is_ai_curator_preference_request(context.text):
+            return True
+        if not context.user_id or not self.sessions.get(
+            AI_CURATOR_AWAITING_NAMESPACE, context.user_id
+        ):
+            return False
+        if self.is_fixed_command(context.text):
+            # The user moved on (menu button, quiz...), so stop reading free text as a
+            # preference; otherwise a later quiz answer like 「女團」 would land here.
+            self.sessions.delete(AI_CURATOR_AWAITING_NAMESPACE, context.user_id)
+            return False
+        return bool(context.text.strip()) and not is_ai_curator_reason_followup(context.text)
+
+    def _set_awaiting_preference(self, user_id: str | None) -> None:
+        if user_id:
+            self.sessions.set(
+                AI_CURATOR_AWAITING_NAMESPACE,
+                user_id,
+                {"awaiting": True},
+                AI_CURATOR_AWAITING_TTL_SECONDS,
+            )
+
     def is_ai_curator_preference_request(self, message: str) -> bool:
         normalized = message.strip().casefold()
         compact = normalized.replace(" ", "")
@@ -717,6 +748,8 @@ class AiCuratorFeature:
         )
 
     def ai_curator_preference_reply(self, context: MessageContext) -> Reply:
+        # Stay in preference mode so the user can refine without the keyword gate.
+        self._set_awaiting_preference(context.user_id)
         response = self._ai_curator_response(context.text, user_id=context.user_id)
         return Reply(
             report=response["report"],

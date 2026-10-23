@@ -437,6 +437,556 @@
       ]
     ]
   ],
+  "ai_curator_free_text_after_entry": [
+    [
+      [
+        {
+          "text": "目前支援固定指令：\n1. 分析 aespa\n2. 分析 IVE\n3. 本週榜單\n4. 互動專區\n5. 每日一首\n6. 我的K-pop 口袋\n\n請用「分析 藝人名」取得完整報告。",
+          "type": "text"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "altText": "AI 入坑",
+          "contents": {
+            "body": {
+              "backgroundColor": "#FAF7F4",
+              "contents": [
+                {
+                  "color": "#5C4033",
+                  "size": "sm",
+                  "text": "直接告訴我你的偏好，我會根據本命雷達、每日推薦與藝人資料幫你排入坑路線。",
+                  "type": "text",
+                  "wrap": true
+                },
+                {
+                  "action": {
+                    "text": "我想入坑清冷感、舞台強的女團",
+                    "type": "message"
+                  },
+                  "backgroundColor": "#FFFFFF",
+                  "contents": [
+                    {
+                      "flex": 0,
+                      "gravity": "center",
+                      "size": "xl",
+                      "text": "🌙",
+                      "type": "text"
+                    },
+                    {
+                      "contents": [
+                        {
+                          "color": "#6F5BA7",
+                          "size": "md",
+                          "text": "清冷女團入坑",
+                          "type": "text",
+                          "weight": "bold"
+                        },
+                        {
+                          "color": "#6B4A3E",
+                          "size": "xs",
+                          "text": "適合喜歡清冷感、舞台視覺和概念感的人。",
+                          "type": "text",
+                          "wrap": true
+                        }
+                      ],
+                      "layout": "vertical",
+                      "spacing": "xs",
+                      "type": "box"
+                    }
+                  ],
+                  "cornerRadius": "8px",
+                  "layout": "horizontal",
+                  "paddingAll": "12px",
+                  "spacing": "md",
+                  "type": "box"
+                },
+                {
+                  "action": {
+                    "text": "幫我推薦 vocal 強、現場穩的 K-pop",
+                    "type": "message"
+                  },
+                  "backgroundColor": "#FFFFFF",
+                  "contents": [
+                    {
+                      "flex": 0,
+                      "gravity": "center",
+                      "size": "xl",
+                      "text": "🎤",
+                      "type": "text"
+                    },
+                    {
+                      "contents": [
+                        {
+                          "color": "#6F5BA7",
+                          "size": "md",
+                          "text": "Vocal 取向推薦",
+                          "type": "text",
+                          "weight": "bold"
+                        },
+                        {
+                          "color": "#6B4A3E",
+                          "size": "xs",
+                          "text": "適合想先看唱功、現場和直拍的人。",
+                          "type": "text",
+                          "wrap": true
+                        }
+                      ],
+                      "layout": "vertical",
+                      "spacing": "xs",
+                      "type": "box"
+                    }
+                  ],
+                  "cornerRadius": "8px",
+                  "layout": "horizontal",
+                  "paddingAll": "12px",
+                  "spacing": "md",
+                  "type": "box"
+                },
+                {
+                  "action": {
+                    "text": "我喜歡霸氣舞台、rap 和 dance，推薦我入坑路線",
+                    "type": "message"
+                  },
+                  "backgroundColor": "#FFFFFF",
+                  "contents": [
+                    {
+                      "flex": 0,
+                      "gravity": "center",
+                      "size": "xl",
+                      "text": "🔥",
+                      "type": "text"
+                    },
+                    {
+                      "contents": [
+                        {
+                          "color": "#6F5BA7",
+                          "size": "md",
+                          "text": "霸氣舞台路線",
+                          "type": "text",
+                          "weight": "bold"
+                        },
+                        {
+                          "color": "#6B4A3E",
+                          "size": "xs",
+                          "text": "適合偏好 rap、dance 和舞台支配感的人。",
+                          "type": "text",
+                          "wrap": true
+                        }
+                      ],
+                      "layout": "vertical",
+                      "spacing": "xs",
+                      "type": "box"
+                    }
+                  ],
+                  "cornerRadius": "8px",
+                  "layout": "horizontal",
+                  "paddingAll": "12px",
+                  "spacing": "md",
+                  "type": "box"
+                },
+                {
+                  "action": {
+                    "text": "我喜歡甜系、白月光感和好聽 MV，幫我推薦",
+                    "type": "message"
+                  },
+                  "backgroundColor": "#FFFFFF",
+                  "contents": [
+                    {
+                      "flex": 0,
+                      "gravity": "center",
+                      "size": "xl",
+                      "text": "💿",
+                      "type": "text"
+                    },
+                    {
+                      "contents": [
+                        {
+                          "color": "#6F5BA7",
+                          "size": "md",
+                          "text": "自由描述偏好",
+                          "type": "text",
+                          "weight": "bold"
+                        },
+                        {
+                          "color": "#6B4A3E",
+                          "size": "xs",
+                          "text": "也可以直接輸入：我喜歡...，幫我推薦。",
+                          "type": "text",
+                          "wrap": true
+                        }
+                      ],
+                      "layout": "vertical",
+                      "spacing": "xs",
+                      "type": "box"
+                    }
+                  ],
+                  "cornerRadius": "8px",
+                  "layout": "horizontal",
+                  "paddingAll": "12px",
+                  "spacing": "md",
+                  "type": "box"
+                }
+              ],
+              "layout": "vertical",
+              "paddingAll": "18px",
+              "spacing": "md",
+              "type": "box"
+            },
+            "header": {
+              "backgroundColor": "#6F5BA7",
+              "contents": [
+                {
+                  "color": "#FDEBD8",
+                  "size": "xs",
+                  "text": "偏好推薦",
+                  "type": "text"
+                },
+                {
+                  "color": "#FFFFFF",
+                  "margin": "sm",
+                  "size": "xl",
+                  "text": "AI 入坑",
+                  "type": "text",
+                  "weight": "bold"
+                }
+              ],
+              "layout": "vertical",
+              "paddingAll": "18px",
+              "type": "box"
+            },
+            "size": "mega",
+            "type": "bubble"
+          },
+          "type": "flex"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "text": "🧭 AI 入坑\n根據你說的「我喜歡甜甜的、笑起來很有感染力的女生」，我會這樣排：\n1. Hearts2Hearts STELLA：清冷|甜系，適合先看本命雷達。\n2. ENHYPEN JUNGWON：甜系|反差，適合先看本命雷達。\n3. IVE REI：甜系|反差，適合先看本命雷達。\n今日入口：先看 ENHYPEN《Blessed-Cursed》\nhttps://youtu.be/osmHArcf_aE?si=j4XDoA6KNXK2Fugm",
+          "type": "text"
+        },
+        {
+          "altText": "AI 入坑",
+          "contents": {
+            "body": {
+              "backgroundColor": "#F7F3FF",
+              "contents": [
+                {
+                  "action": {
+                    "label": "為什麼推薦 Stella？",
+                    "text": "為什麼推薦 Stella？",
+                    "type": "message"
+                  },
+                  "height": "sm",
+                  "style": "secondary",
+                  "type": "button"
+                },
+                {
+                  "action": {
+                    "label": "為什麼推薦 Jungwon？",
+                    "text": "為什麼推薦 Jungwon？",
+                    "type": "message"
+                  },
+                  "height": "sm",
+                  "style": "secondary",
+                  "type": "button"
+                },
+                {
+                  "action": {
+                    "label": "為什麼推薦 Rei？",
+                    "text": "為什麼推薦 Rei？",
+                    "type": "message"
+                  },
+                  "height": "sm",
+                  "style": "secondary",
+                  "type": "button"
+                },
+                {
+                  "action": {
+                    "label": "本命雷達",
+                    "text": "本命雷達測驗",
+                    "type": "message"
+                  },
+                  "height": "sm",
+                  "style": "secondary",
+                  "type": "button"
+                },
+                {
+                  "action": {
+                    "label": "抽 MV",
+                    "text": "每日 MV",
+                    "type": "message"
+                  },
+                  "height": "sm",
+                  "style": "secondary",
+                  "type": "button"
+                },
+                {
+                  "action": {
+                    "label": "抽直拍",
+                    "text": "每日直拍",
+                    "type": "message"
+                  },
+                  "height": "sm",
+                  "style": "secondary",
+                  "type": "button"
+                }
+              ],
+              "layout": "vertical",
+              "paddingAll": "14px",
+              "spacing": "sm",
+              "type": "box"
+            },
+            "header": {
+              "backgroundColor": "#6F5BA7",
+              "contents": [
+                {
+                  "color": "#FFFFFF",
+                  "size": "md",
+                  "text": "接下來想看？",
+                  "type": "text",
+                  "weight": "bold"
+                }
+              ],
+              "layout": "vertical",
+              "paddingAll": "14px",
+              "type": "box"
+            },
+            "size": "kilo",
+            "type": "bubble"
+          },
+          "type": "flex"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "altText": "本命雷達測驗",
+          "contents": {
+            "body": {
+              "backgroundColor": "#F7FAF8",
+              "contents": [
+                {
+                  "color": "#3F554A",
+                  "size": "md",
+                  "text": "想看：",
+                  "type": "text",
+                  "weight": "bold",
+                  "wrap": true
+                },
+                {
+                  "action": {
+                    "data": "本命雷達:0:男團",
+                    "type": "postback"
+                  },
+                  "backgroundColor": "#FFFFFF",
+                  "contents": [
+                    {
+                      "color": "#5D6F66",
+                      "size": "md",
+                      "text": "男團",
+                      "type": "text",
+                      "weight": "bold"
+                    }
+                  ],
+                  "cornerRadius": "8px",
+                  "layout": "vertical",
+                  "paddingAll": "12px",
+                  "type": "box"
+                },
+                {
+                  "action": {
+                    "data": "本命雷達:0:女團",
+                    "type": "postback"
+                  },
+                  "backgroundColor": "#FFFFFF",
+                  "contents": [
+                    {
+                      "color": "#5D6F66",
+                      "size": "md",
+                      "text": "女團",
+                      "type": "text",
+                      "weight": "bold"
+                    }
+                  ],
+                  "cornerRadius": "8px",
+                  "layout": "vertical",
+                  "paddingAll": "12px",
+                  "type": "box"
+                },
+                {
+                  "action": {
+                    "data": "本命雷達:0:都可以",
+                    "type": "postback"
+                  },
+                  "backgroundColor": "#FFFFFF",
+                  "contents": [
+                    {
+                      "color": "#5D6F66",
+                      "size": "md",
+                      "text": "都可以",
+                      "type": "text",
+                      "weight": "bold"
+                    }
+                  ],
+                  "cornerRadius": "8px",
+                  "layout": "vertical",
+                  "paddingAll": "12px",
+                  "type": "box"
+                }
+              ],
+              "layout": "vertical",
+              "paddingAll": "18px",
+              "spacing": "md",
+              "type": "box"
+            },
+            "header": {
+              "backgroundColor": "#5D6F66",
+              "contents": [
+                {
+                  "color": "#EAF4EE",
+                  "size": "xs",
+                  "text": "本命雷達測驗",
+                  "type": "text"
+                },
+                {
+                  "color": "#FFFFFF",
+                  "margin": "sm",
+                  "size": "xl",
+                  "text": "Q1/5",
+                  "type": "text",
+                  "weight": "bold"
+                }
+              ],
+              "layout": "vertical",
+              "paddingAll": "18px",
+              "type": "box"
+            },
+            "size": "mega",
+            "type": "bubble"
+          },
+          "type": "flex"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "altText": "本命雷達測驗",
+          "contents": {
+            "body": {
+              "backgroundColor": "#F7FAF8",
+              "contents": [
+                {
+                  "color": "#3F554A",
+                  "size": "md",
+                  "text": "想看：",
+                  "type": "text",
+                  "weight": "bold",
+                  "wrap": true
+                },
+                {
+                  "action": {
+                    "data": "本命雷達:0:男團",
+                    "type": "postback"
+                  },
+                  "backgroundColor": "#FFFFFF",
+                  "contents": [
+                    {
+                      "color": "#5D6F66",
+                      "size": "md",
+                      "text": "男團",
+                      "type": "text",
+                      "weight": "bold"
+                    }
+                  ],
+                  "cornerRadius": "8px",
+                  "layout": "vertical",
+                  "paddingAll": "12px",
+                  "type": "box"
+                },
+                {
+                  "action": {
+                    "data": "本命雷達:0:女團",
+                    "type": "postback"
+                  },
+                  "backgroundColor": "#FFFFFF",
+                  "contents": [
+                    {
+                      "color": "#5D6F66",
+                      "size": "md",
+                      "text": "女團",
+                      "type": "text",
+                      "weight": "bold"
+                    }
+                  ],
+                  "cornerRadius": "8px",
+                  "layout": "vertical",
+                  "paddingAll": "12px",
+                  "type": "box"
+                },
+                {
+                  "action": {
+                    "data": "本命雷達:0:都可以",
+                    "type": "postback"
+                  },
+                  "backgroundColor": "#FFFFFF",
+                  "contents": [
+                    {
+                      "color": "#5D6F66",
+                      "size": "md",
+                      "text": "都可以",
+                      "type": "text",
+                      "weight": "bold"
+                    }
+                  ],
+                  "cornerRadius": "8px",
+                  "layout": "vertical",
+                  "paddingAll": "12px",
+                  "type": "box"
+                }
+              ],
+              "layout": "vertical",
+              "paddingAll": "18px",
+              "spacing": "md",
+              "type": "box"
+            },
+            "header": {
+              "backgroundColor": "#5D6F66",
+              "contents": [
+                {
+                  "color": "#EAF4EE",
+                  "size": "xs",
+                  "text": "本命雷達測驗",
+                  "type": "text"
+                },
+                {
+                  "color": "#FFFFFF",
+                  "margin": "sm",
+                  "size": "xl",
+                  "text": "Q1/5",
+                  "type": "text",
+                  "weight": "bold"
+                }
+              ],
+              "layout": "vertical",
+              "paddingAll": "18px",
+              "type": "box"
+            },
+            "size": "mega",
+            "type": "bubble"
+          },
+          "type": "flex"
+        }
+      ]
+    ]
+  ],
   "ai_curator_persona": [
     [
       [
