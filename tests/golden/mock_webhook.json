@@ -1,0 +1,260 @@
+{
+  "ai_curator_entry": [
+    {
+      "body": "{\n  \"mock_reply\": \"\\u8acb\\u5728 LINE \\u4e2d\\u9ede\\u9078 AI \\u5165\\u5751\\uff0c\\u6216\\u76f4\\u63a5\\u8f38\\u5165\\u4f60\\u7684 K-pop \\u504f\\u597d\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u8acb\\u5728 LINE \\u4e2d\\u9ede\\u9078 AI \\u5165\\u5751\\uff0c\\u6216\\u76f4\\u63a5\\u8f38\\u5165\\u4f60\\u7684 K-pop \\u504f\\u597d\\u3002\"\n}\n",
+      "status": 200
+    }
+  ],
+  "ai_curator_persona": [
+    {
+      "body": "{\n  \"mock_reply\": \"\\ud83e\\udded AI \\u5165\\u5751\\n\\u6839\\u64da\\u4f60\\u8aaa\\u7684\\u300c\\u6211\\u559c\\u6b61\\u59d0\\u7cfb\\u7684\\u300d\\uff0c\\u6211\\u6703\\u9019\\u6a23\\u6392\\uff1a\\n1. Red Velvet IRENE\\uff1a\\u51b7\\u611f|\\u6e05\\u51b7\\uff0c\\u9069\\u5408\\u5148\\u770b\\u672c\\u547d\\u96f7\\u9054\\u3002\\n2. Hearts2Hearts JUUN\\uff1a\\u9738\\u6c23|\\u53cd\\u5dee\\uff0c\\u9069\\u5408\\u5148\\u770b\\u672c\\u547d\\u96f7\\u9054\\u3002\\n3. aespa KARINA\\uff1a\\u51b7\\u611f|\\u9738\\u6c23|\\u53cd\\u5dee\\uff0c\\u9069\\u5408\\u5148\\u770b\\u672c\\u547d\\u96f7\\u9054\\u3002\\n\\u4eca\\u65e5\\u5165\\u53e3\\uff1a\\u5148\\u770b Red Velvet\\u300aChill Kill\\u300b\\nhttps://youtu.be/xlyrt5eAtKI?si=_GBgJeDhqNomkBM7\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\ud83e\\udded AI \\u5165\\u5751\\n\\u6839\\u64da\\u4f60\\u8aaa\\u7684\\u300c\\u63a8\\u85a6 vocal \\u5f37\\u7684\\u7537\\u5718\\u300d\\uff0c\\u6211\\u6703\\u9019\\u6a23\\u6392\\uff1a\\n1. SEVENTEEN THE8\\uff1a\\u6e05\\u51b7|\\u51b7\\u611f\\uff0c\\u9069\\u5408\\u5148\\u770b\\u672c\\u547d\\u96f7\\u9054\\u3002\\n2. EXO BAEKHYUN\\uff1a\\u751c\\u7cfb|\\u53cd\\u5dee\\uff0c\\u9069\\u5408\\u5148\\u770b\\u672c\\u547d\\u96f7\\u9054\\u3002\\n3. SEVENTEEN HOSHI\\uff1a\\u9738\\u6c23|\\u53cd\\u5dee\\uff0c\\u9069\\u5408\\u5148\\u770b\\u672c\\u547d\\u96f7\\u9054\\u3002\\n\\u4eca\\u65e5\\u5165\\u53e3\\uff1a\\u5148\\u770b ATEEZ\\u300aIce On My Teeth\\u300b\\nhttps://youtu.be/5OflOlcHLb8?si=TIvIo0OkBx-iQrUB\"\n}\n",
+      "status": 200
+    }
+  ],
+  "ai_curator_preference": [
+    {
+      "body": "{\n  \"mock_reply\": \"\\ud83e\\udded AI \\u5165\\u5751\\n\\u6839\\u64da\\u4f60\\u8aaa\\u7684\\u300c\\u6211\\u60f3\\u5165\\u5751\\u6e05\\u51b7\\u611f\\u3001\\u821e\\u53f0\\u5f37\\u7684\\u5973\\u5718\\u300d\\uff0c\\u6211\\u6703\\u9019\\u6a23\\u6392\\uff1a\\n1. IVE GAEUL\\uff1a\\u51b7\\u611f|\\u6e05\\u51b7\\uff0c\\u9069\\u5408\\u5148\\u770b\\u672c\\u547d\\u96f7\\u9054\\u3002\\n2. BABYMONSTER RUKA\\uff1a\\u51b7\\u611f|\\u9738\\u6c23\\uff0c\\u9069\\u5408\\u5148\\u770b\\u672c\\u547d\\u96f7\\u9054\\u3002\\n3. MEOVV SOOIN\\uff1a\\u9738\\u6c23|\\u51b7\\u611f\\uff0c\\u9069\\u5408\\u5148\\u770b\\u672c\\u547d\\u96f7\\u9054\\u3002\\n\\u4eca\\u65e5\\u5165\\u53e3\\uff1a\\u5148\\u770b BABYMONSTER\\u300aLove In My Heart\\u300b\\nhttps://youtu.be/1kXLsrun51s?si=ZLApYdOPu6edpIpy\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u76ee\\u524d\\u672c\\u5730\\u8cc7\\u6599\\u9084\\u627e\\u4e0d\\u5230\\u9019\\u4f4d\\u6210\\u54e1\\uff0c\\u4f46\\u53ef\\u4ee5\\u5148\\u5f9e\\u672c\\u547d\\u96f7\\u9054\\u6216\\u6bcf\\u65e5\\u4e00\\u9996\\u7e7c\\u7e8c\\u63a2\\u7d22\\u3002\\n\\n\\u5148\\u88dc\\u4e00\\u652f\\u6bcf\\u65e5 MV\\uff1aStray Kids - MIROH\\nhttps://youtu.be/Dab4EENTW5I?si=lhTz38BRFfb4vY2l\"\n}\n",
+      "status": 200
+    }
+  ],
+  "ai_curator_reason_without_context": [
+    {
+      "body": "{\n  \"mock_reply\": \"\\u2728 \\u6211\\u6703\\u5148\\u63a8 aespa Karina\\u3002\\n\\ud83d\\udd0e \\u5982\\u679c\\u4f60\\u5403\\u8c93\\u54aa\\u3001\\u72d0\\u72f8\\u90a3\\u7a2e\\u7b2c\\u4e00\\u773c\\u7684\\u6e05\\u900f\\u611f\\uff0cKarina \\u6703\\u5f88\\u5bb9\\u6613\\u5148\\u5c0d\\u4e0a\\uff1b\\u518d\\u52a0\\u4e0a\\u51b7\\u611f\\u3001\\u9738\\u6c23\\u3001\\u53cd\\u5dee\\u7684\\u53cd\\u5dee\\uff0c\\u6703\\u8b93\\u4eba\\u60f3\\u591a\\u770b\\u5e7e\\u652f\\u821e\\u53f0\\u3002\\n\\ud83d\\udcab \\u795e\\u6027\\u3001\\u821e\\u53f0\\u652f\\u914d\\u611f\\u7684\\u8ddd\\u96e2\\u611f\\u5f88\\u9069\\u5408\\u6162\\u6162\\u88ab\\u5708\\u9032\\u53bb\\uff0c\\u5165\\u9580\\u53ef\\u4ee5\\u5148\\u770b\\u80fd\\u611f\\u53d7\\u5230\\u821e\\u53f0\\u52d5\\u4f5c\\u3001rap \\u7bc0\\u594f\\u611f\\u3001\\u93e1\\u982d\\u611f\\u548c\\u5168\\u65b9\\u4f4d\\u611f\\u9b45\\u529b\\u7684\\u76f4\\u62cd\\u3002\\n\\ud83d\\udcf0 \\u88dc\\u5145\\u5718\\u9ad4\\u8fd1\\u6cc1\\uff1aaespa \\u8fd1\\u671f\\u91cd\\u9ede\\u662f\\u300caespa\\u672c\\u9031\\u8072\\u91cf\\u504f\\u5f37\\u300d\\u3002\\n\\n\\ud83c\\udfac \\u5148\\u7528\\u9019\\u652f\\u76f4\\u62cd\\u78ba\\u8a8d\\u611f\\u89ba\\uff1aaespa Karina - UP\\nhttps://youtu.be/PwnHCwC2H9E?si=W947KqWm-lAcrGMO\"\n}\n",
+      "status": 200
+    }
+  ],
+  "artist_picker": [
+    {
+      "body": "{\n  \"mock_reply\": \"\\u76ee\\u524d\\u652f\\u63f4\\u56fa\\u5b9a\\u6307\\u4ee4\\uff1a\\n1. \\u5206\\u6790 aespa\\n2. \\u5206\\u6790 IVE\\n3. \\u672c\\u9031\\u699c\\u55ae\\n4. \\u4e92\\u52d5\\u5c08\\u5340\\n5. \\u6bcf\\u65e5\\u4e00\\u9996\\n6. \\u6211\\u7684K-pop \\u53e3\\u888b\\n\\n\\u8acb\\u7528\\u300c\\u5206\\u6790 \\u85dd\\u4eba\\u540d\\u300d\\u53d6\\u5f97\\u5b8c\\u6574\\u5831\\u544a\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u76ee\\u524d\\u652f\\u63f4\\u56fa\\u5b9a\\u6307\\u4ee4\\uff1a\\n1. \\u5206\\u6790 aespa\\n2. \\u5206\\u6790 IVE\\n3. \\u672c\\u9031\\u699c\\u55ae\\n4. \\u4e92\\u52d5\\u5c08\\u5340\\n5. \\u6bcf\\u65e5\\u4e00\\u9996\\n6. \\u6211\\u7684K-pop \\u53e3\\u888b\\n\\n\\u8acb\\u7528\\u300c\\u5206\\u6790 \\u85dd\\u4eba\\u540d\\u300d\\u53d6\\u5f97\\u5b8c\\u6574\\u5831\\u544a\\u3002\"\n}\n",
+      "status": 200
+    }
+  ],
+  "artist_report": [
+    {
+      "body": "{\n  \"mock_reply\": \"# local analysis\\n\\u5206\\u6790 aespa\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"# local analysis\\nIVE\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"# local analysis\\n\\u5206\\u6790 NCT \\u4e00\\u500b\\u6708\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"# local analysis\\n\\ubd84\\uc11d ILLIT\"\n}\n",
+      "status": 200
+    }
+  ],
+  "bias_radar_full": [
+    {
+      "body": "{\n  \"mock_reply\": \"\\u672c\\u547d\\u96f7\\u9054\\u6e2c\\u9a57 Q1/5\\uff1a\\u8acb\\u5728 LINE \\u5361\\u7247\\u4e2d\\u9078\\u64c7\\u6700\\u7b26\\u5408\\u4f60\\u7684\\u7b54\\u6848\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u672c\\u547d\\u96f7\\u9054\\u6e2c\\u9a57 Q2/5\\uff1a\\u8acb\\u5728 LINE \\u5361\\u7247\\u4e2d\\u9078\\u64c7\\u6700\\u7b26\\u5408\\u4f60\\u7684\\u7b54\\u6848\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u672c\\u547d\\u96f7\\u9054\\u6e2c\\u9a57 Q3/5\\uff1a\\u8acb\\u5728 LINE \\u5361\\u7247\\u4e2d\\u9078\\u64c7\\u6700\\u7b26\\u5408\\u4f60\\u7684\\u7b54\\u6848\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u672c\\u547d\\u96f7\\u9054\\u6e2c\\u9a57 Q4/5\\uff1a\\u8acb\\u5728 LINE \\u5361\\u7247\\u4e2d\\u9078\\u64c7\\u6700\\u7b26\\u5408\\u4f60\\u7684\\u7b54\\u6848\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u672c\\u547d\\u96f7\\u9054\\u6e2c\\u9a57 Q5/5\\uff1a\\u8acb\\u5728 LINE \\u5361\\u7247\\u4e2d\\u9078\\u64c7\\u6700\\u7b26\\u5408\\u4f60\\u7684\\u7b54\\u6848\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u4f60\\u7684\\u672c\\u547d\\u96f7\\u9054\\u7d50\\u679c\\n\\u63a8\\u85a6\\uff1aBLACKPINK ROSE\\n\\u985e\\u578b\\uff1a\\u5973\\u5718\\n\\u547d\\u4e2d\\u6a19\\u7c64\\uff1aDance\\u3001\\u751c\\u7cfb\\u3001\\u795e\\u6027\\n\\u4f60\\u504f\\u597dDance\\u3001\\u751c\\u7cfb\\u3001\\u795e\\u6027\\u7684\\u672c\\u547d\\u578b\\uff0c\\u6240\\u4ee5\\u63a8\\u85a6\\u4f60\\u95dc\\u6ce8 BLACKPINK ROSE\\u3002\\nhttps://www.youtube.com/results?search_query=BLACKPINK+Rose\"\n}\n",
+      "status": 200
+    }
+  ],
+  "bias_radar_interrupted": [
+    {
+      "body": "{\n  \"mock_reply\": \"\\u672c\\u547d\\u96f7\\u9054\\u6e2c\\u9a57 Q1/5\\uff1a\\u8acb\\u5728 LINE \\u5361\\u7247\\u4e2d\\u9078\\u64c7\\u6700\\u7b26\\u5408\\u4f60\\u7684\\u7b54\\u6848\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u672c\\u547d\\u96f7\\u9054\\u6e2c\\u9a57 Q1/5\\uff1a\\u8acb\\u5728 LINE \\u5361\\u7247\\u4e2d\\u9078\\u64c7\\u6700\\u7b26\\u5408\\u4f60\\u7684\\u7b54\\u6848\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u672c\\u547d\\u96f7\\u9054\\u6e2c\\u9a57 Q2/5\\uff1a\\u8acb\\u5728 LINE \\u5361\\u7247\\u4e2d\\u9078\\u64c7\\u6700\\u7b26\\u5408\\u4f60\\u7684\\u7b54\\u6848\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u6211\\u7684K-pop \\u53e3\\u888b\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\ud83d\\udcd6 \\u4f7f\\u7528\\u8aaa\\u660e\\n\\n\\u8f38\\u5165\\uff1a\\n\\u5206\\u6790 aespa\\n\\u5206\\u6790 IVE\\n\\u672c\\u9031\\u699c\\u55ae\\n\\u4e92\\u52d5\\u5c08\\u5340\\n\\u6bcf\\u65e5\\u4e00\\u9996\\n\\n\\u76ee\\u524d\\u652f\\u63f4\\uff1a\\n- \\u85dd\\u4eba\\u5206\\u6790\\u5831\\u544a\\n- \\u672c\\u9031 Bugs \\u699c\\u55ae\\n- \\u7c89\\u7d72\\u7559\\u8a00\\u60c5\\u7dd2\\u5206\\u6790\\n- Play Zone \\u4e92\\u52d5\\u5165\\u53e3\\n- \\u6bcf\\u65e5\\u4e00\\u9996 K-pop \\u5165\\u53e3\\n\\n\\u53ef\\u5206\\u6790\\u85dd\\u4eba\\uff1a\\naespa\\u3001IVE\\u3001BABYMONSTER\\u3001NMIXX\\u3001ILLIT\\u3001NCT\\u3001ZEROBASEONE\\u3001TXT\\u3001ENHYPEN\\u3001BOYNEXTDOOR\"\n}\n",
+      "status": 200
+    }
+  ],
+  "daily_kpop": [
+    {
+      "body": "{\n  \"mock_reply\": \"\\u8acb\\u5728 LINE \\u4e2d\\u9ede\\u9078\\u6bcf\\u65e5\\u4e00\\u9996 K-pop \\u5361\\u7247\\u9078\\u64c7 MV\\u3001\\u76f4\\u62cd\\u6216\\u7d93\\u5178\\u821e\\u53f0\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\ud83c\\udfb5 \\u4eca\\u65e5\\u63a8\\u85a6 MV\\n\\u4eca\\u5929\\u63a8\\u85a6\\u7684\\u662f NMIXX \\u7684\\u300aDASH\\u300b\\u3002\\nhttps://example.com/nmixx-dash\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\ud83c\\udfb5 \\u4eca\\u65e5\\u63a8\\u85a6 \\u76f4\\u62cd\\n\\u4eca\\u5929\\u63a8\\u85a6\\u7684\\u662f Hearts2Hearts \\u7684\\u300aSTYLE\\u300b\\u3002\\n\\u76f4\\u62cd\\u6210\\u54e1\\uff1aA-NA\\nhttps://youtu.be/9xLLggO2Xjc?si=wwgPW9-BLJPTraG8\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\ud83c\\udfb5 \\u4eca\\u65e5\\u63a8\\u85a6 \\u7d93\\u5178\\u821e\\u53f0\\n\\u4eca\\u5929\\u63a8\\u85a6\\u7684\\u662f LEE TEUK, BTS, GFRIEND, TWICE \\u7684\\u300aSorry Sorry\\u300b\\u3002\\nhttps://youtu.be/9oVZDspxn2g?si=G7NK0qeBoD0QWfyw\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\ud83c\\udfb5 \\u4eca\\u65e5\\u63a8\\u85a6 \\u7d93\\u5178\\u821e\\u53f0\\n\\u4eca\\u5929\\u63a8\\u85a6\\u7684\\u662f GOT THE BEAT (BOA, TAEYEON, HYOYEON, SEULGI, WENDY, KARINA, WINTER) \\u7684\\u300aSTEP BACK\\u300b\\u3002\\nhttps://youtu.be/uBY1AoiF5Vo?si=azdHzif7JGprlpJU\"\n}\n",
+      "status": 200
+    }
+  ],
+  "fallback": [
+    {
+      "body": "{\n  \"mock_reply\": \"\\u76ee\\u524d\\u652f\\u63f4\\u56fa\\u5b9a\\u6307\\u4ee4\\uff1a\\n1. \\u5206\\u6790 aespa\\n2. \\u5206\\u6790 IVE\\n3. \\u672c\\u9031\\u699c\\u55ae\\n4. \\u4e92\\u52d5\\u5c08\\u5340\\n5. \\u6bcf\\u65e5\\u4e00\\u9996\\n6. \\u6211\\u7684K-pop \\u53e3\\u888b\\n\\n\\u8acb\\u7528\\u300c\\u5206\\u6790 \\u85dd\\u4eba\\u540d\\u300d\\u53d6\\u5f97\\u5b8c\\u6574\\u5831\\u544a\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u76ee\\u524d\\u652f\\u63f4\\u56fa\\u5b9a\\u6307\\u4ee4\\uff1a\\n1. \\u5206\\u6790 aespa\\n2. \\u5206\\u6790 IVE\\n3. \\u672c\\u9031\\u699c\\u55ae\\n4. \\u4e92\\u52d5\\u5c08\\u5340\\n5. \\u6bcf\\u65e5\\u4e00\\u9996\\n6. \\u6211\\u7684K-pop \\u53e3\\u888b\\n\\n\\u8acb\\u7528\\u300c\\u5206\\u6790 \\u85dd\\u4eba\\u540d\\u300d\\u53d6\\u5f97\\u5b8c\\u6574\\u5831\\u544a\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u76ee\\u524d\\u652f\\u63f4\\u56fa\\u5b9a\\u6307\\u4ee4\\uff1a\\n1. \\u5206\\u6790 aespa\\n2. \\u5206\\u6790 IVE\\n3. \\u672c\\u9031\\u699c\\u55ae\\n4. \\u4e92\\u52d5\\u5c08\\u5340\\n5. \\u6bcf\\u65e5\\u4e00\\u9996\\n6. \\u6211\\u7684K-pop \\u53e3\\u888b\\n\\n\\u8acb\\u7528\\u300c\\u5206\\u6790 \\u85dd\\u4eba\\u540d\\u300d\\u53d6\\u5f97\\u5b8c\\u6574\\u5831\\u544a\\u3002\"\n}\n",
+      "status": 200
+    }
+  ],
+  "fan_attribute_quiz": [
+    {
+      "body": "{\n  \"mock_reply\": \"\\u7c89\\u7d72\\u5c6c\\u6027\\u6e2c\\u9a57 Q1/5\\uff1a\\u8acb\\u5728 LINE \\u5361\\u7247\\u4e2d\\u9078\\u64c7\\u6700\\u7b26\\u5408\\u4f60\\u7684\\u7b54\\u6848\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u7c89\\u7d72\\u5c6c\\u6027\\u6e2c\\u9a57 Q2/5\\uff1a\\u8acb\\u5728 LINE \\u5361\\u7247\\u4e2d\\u9078\\u64c7\\u6700\\u7b26\\u5408\\u4f60\\u7684\\u7b54\\u6848\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u4f60\\u7684\\u7c89\\u7d72\\u5c6c\\u6027\\u662f\\uff1a\\u5718\\u98ef\\n\\u4f60\\u559c\\u6b61\\u7684\\u662f\\u6574\\u500b\\u5718\\u7684\\u5316\\u5b78\\u53cd\\u61c9\\u3002\\n\\u4f60\\u6703\\u770b\\u898b\\u6bcf\\u4f4d\\u6210\\u54e1\\u5728\\u5718\\u9ad4\\u88e1\\u7684\\u89d2\\u8272\\uff0c\\u4e5f\\u4eab\\u53d7\\u821e\\u53f0\\u3001\\u5718\\u7d9c\\u3001\\u4e92\\u52d5\\u8207\\u4f5c\\u54c1\\u6982\\u5ff5\\u62fc\\u5728\\u4e00\\u8d77\\u7684\\u5b8c\\u6574\\u611f\\u3002\\n\\u9069\\u5408\\u73a9\\u6cd5\\uff1a\\u5718\\u9ad4\\u96f7\\u9054\\u3001\\u821e\\u53f0\\u540d\\u5834\\u9762\\u6574\\u7406\\u3001\\u5168\\u54e1\\u9b45\\u529b\\u5716\\u9451\\u3002\\n\\u5206\\u6578\\uff1a\\u5718\\u98ef 3 / \\u552f\\u98ef 1 / \\u8ddf\\u98a8\\u7c89 1\"\n}\n",
+      "status": 200
+    }
+  ],
+  "help": [
+    {
+      "body": "{\n  \"mock_reply\": \"\\ud83d\\udcd6 \\u4f7f\\u7528\\u8aaa\\u660e\\n\\n\\u8f38\\u5165\\uff1a\\n\\u5206\\u6790 aespa\\n\\u5206\\u6790 IVE\\n\\u672c\\u9031\\u699c\\u55ae\\n\\u4e92\\u52d5\\u5c08\\u5340\\n\\u6bcf\\u65e5\\u4e00\\u9996\\n\\n\\u76ee\\u524d\\u652f\\u63f4\\uff1a\\n- \\u85dd\\u4eba\\u5206\\u6790\\u5831\\u544a\\n- \\u672c\\u9031 Bugs \\u699c\\u55ae\\n- \\u7c89\\u7d72\\u7559\\u8a00\\u60c5\\u7dd2\\u5206\\u6790\\n- Play Zone \\u4e92\\u52d5\\u5165\\u53e3\\n- \\u6bcf\\u65e5\\u4e00\\u9996 K-pop \\u5165\\u53e3\\n\\n\\u53ef\\u5206\\u6790\\u85dd\\u4eba\\uff1a\\naespa\\u3001IVE\\u3001BABYMONSTER\\u3001NMIXX\\u3001ILLIT\\u3001NCT\\u3001ZEROBASEONE\\u3001TXT\\u3001ENHYPEN\\u3001BOYNEXTDOOR\"\n}\n",
+      "status": 200
+    }
+  ],
+  "member_quiz": [
+    {
+      "body": "{\n  \"mock_reply\": \"\\u8a8d\\u4eba\\u6e2c\\u9a57\\uff1a\\u8acb\\u554f\\u5716\\u7247\\u7684\\u4eba\\u662f\\u8ab0\\uff1f\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u7b54\\u5c0d\\u4e86\\uff01\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u7b54\\u932f\\u4e86\\u3002\\u6b63\\u89e3\\u662f Jiwoo \\u91d1\\u667a\\u53cb\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u8a8d\\u4eba\\u6e2c\\u9a57\\uff1a\\u8acb\\u554f\\u5716\\u7247\\u7684\\u4eba\\u662f\\u8ab0\\uff1f\"\n}\n",
+      "status": 200
+    }
+  ],
+  "photo_card": [
+    {
+      "body": "{\n  \"mock_reply\": \"\\u2728 \\u795e\\u5716\\u62bd\\u5361\\u7d50\\u679c \\u2728\\n\\n\\ud83c\\udf89 \\u606d\\u559c\\u4f60\\u4eca\\u5929\\u62bd\\u5230\\n\\ud83d\\udc96 I.N\\n\\ud83d\\udcf8 \\u985e\\u578b\\uff1a\\u6a5f\\u5834\\u8def\\n\\n\\ud83d\\udd17 \\u9ede\\u958b\\u770b\\u795e\\u5716\\nhttps://x.com/check_in208/status/2026494527561936989?s=46\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u2728 \\u795e\\u5716\\u62bd\\u5361\\u7d50\\u679c \\u2728\\n\\n\\ud83c\\udf89 \\u606d\\u559c\\u4f60\\u4eca\\u5929\\u62bd\\u5230\\n\\ud83d\\udc96 DINO\\n\\ud83d\\udcf8 \\u985e\\u578b\\uff1a\\u821e\\u53f0\\u7167\\n\\n\\ud83d\\udd17 \\u9ede\\u958b\\u770b\\u795e\\u5716\\nhttps://x.com/love_for_dino/status/1945825959753441381?s=46\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u2728 \\u795e\\u5716\\u62bd\\u5361\\u7d50\\u679c \\u2728\\n\\n\\ud83c\\udf89 \\u606d\\u559c\\u4f60\\u4eca\\u5929\\u62bd\\u5230\\n\\ud83d\\udc96 LIZ\\n\\ud83d\\udcf8 \\u985e\\u578b\\uff1a\\u7c3d\\u552e\\u7167\\n\\n\\ud83d\\udd17 \\u9ede\\u958b\\u770b\\u795e\\u5716\\nhttps://x.com/Berries_Liz1121/status/2027715609178599743?s=20\"\n}\n",
+      "status": 200
+    }
+  ],
+  "play_zone": [
+    {
+      "body": "{\n  \"mock_reply\": \"\\u8acb\\u5728 LINE \\u4e2d\\u9ede\\u9078 K-pop Play Zone \\u5361\\u7247\\u958b\\u59cb\\u4e92\\u52d5\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u8acb\\u5728 LINE \\u4e2d\\u9ede\\u9078 K-pop Play Zone \\u5361\\u7247\\u958b\\u59cb\\u4e92\\u52d5\\u3002\"\n}\n",
+      "status": 200
+    }
+  ],
+  "pocket": [
+    {
+      "body": "{\n  \"mock_reply\": \"\\u6211\\u7684K-pop \\u53e3\\u888b\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\ud83c\\udfac \\u4f60\\u7684 MV \\u6536\\u85cf\\n\\n\\u76ee\\u524d\\u9084\\u6c92\\u6709\\u6536\\u85cf\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u8acb\\u9078\\u64c7\\u4f60\\u7684\\u6bcf\\u65e5 MV \\u63a8\\u85a6\\u504f\\u597d\\u3002\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u5df2\\u66f4\\u65b0\\u6bcf\\u65e5 MV \\u63a8\\u85a6\\u504f\\u597d\\uff1a\\u5973\\u5718\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u5df2\\u52a0\\u5165\\u4f60\\u7684 K-pop \\u53e3\\u888b \\u2b50\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u9019\\u500b\\u5167\\u5bb9\\u5df2\\u7d93\\u5728\\u4f60\\u7684\\u53e3\\u888b\\u88e1\\u4e86 \\u2b50\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\ud83c\\udfac \\u4f60\\u7684 MV \\u6536\\u85cf\\n\\n1. NMIXX - DASH\\n   \\ud83d\\udd17 https://example.com/nmixx-dash\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"\\u627e\\u4e0d\\u5230\\u8981\\u6536\\u85cf\\u7684\\u5167\\u5bb9\\u3002\"\n}\n",
+      "status": 200
+    }
+  ],
+  "weekly_chart": [
+    {
+      "body": "{\n  \"mock_reply\": \"# local analysis\\n\\u672c\\u9031\\u699c\\u55ae\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"# Bugs \\u6b77\\u53f2\\u9031\\u699c\\n\\u699c\\u55ae\\u65e5\\u671f\\uff1a2026-05-11\\n1. Old Song - Old Artist\"\n}\n",
+      "status": 200
+    },
+    {
+      "body": "{\n  \"mock_reply\": \"# Bugs \\u6b77\\u53f2\\u9031\\u699c\\n\\u699c\\u55ae\\u65e5\\u671f\\uff1a2026-05-04\\n1. Old Song - Old Artist\"\n}\n",
+      "status": 200
+    }
+  ]
+}
