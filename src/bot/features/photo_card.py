@@ -85,9 +85,7 @@ def is_photo_card_request(message: str) -> bool:
 
 def _photo_card_row_is_usable(row: dict[str, str]) -> bool:
     return bool(
-        row.get("artist", "").strip()
-        and row.get("type", "").strip()
-        and row.get("url", "").strip()
+        row.get("artist", "").strip() and row.get("type", "").strip() and row.get("url", "").strip()
     )
 
 

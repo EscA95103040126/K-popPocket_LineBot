@@ -83,7 +83,9 @@ def test_unsigned_webhook_is_rejected(tmp_path) -> None:
 def test_redelivered_event_is_not_replied_twice(tmp_path) -> None:
     api = RecordingMessagingApi()
     client = make_app(line_dedupe_path=tmp_path / "seen.json", line_api=api).test_client()
-    event = _event("message", message={"type": "text", "id": "1", "text": "help", "quoteToken": "q"})
+    event = _event(
+        "message", message={"type": "text", "id": "1", "text": "help", "quoteToken": "q"}
+    )
 
     _post_signed(client, [event])
     _post_signed(client, [event])

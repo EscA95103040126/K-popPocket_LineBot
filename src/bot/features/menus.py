@@ -53,10 +53,7 @@ def _artist_picker_flex_contents() -> dict:
                     "color": "#5C4033",
                     "wrap": True,
                 },
-                *[
-                    _artist_picker_button(artist, f"分析 {artist}")
-                    for artist in SUPPORTED_ARTISTS
-                ],
+                *[_artist_picker_button(artist, f"分析 {artist}") for artist in SUPPORTED_ARTISTS],
             ],
         },
     }

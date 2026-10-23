@@ -59,17 +59,17 @@ LOCAL_SUMMARIES = {
     "BOYNEXTDOOR": "BOYNEXTDOOR 仍在擴張受眾階段，粉絲留言與榜單露出可觀察成長動能。",
 }
 # 韓式 ins 風格：奶油白 × 玫瑰棕
-FLEX_HEADER_BG        = "#C4956A"   # 玫瑰棕
-FLEX_HEADER_TEXT      = "#FFFFFF"   # 白色
-FLEX_HEADER_SUBTITLE  = "#FDEBD8"   # 淺暖白
-FLEX_PAGE_BACKGROUND  = "#FAF7F4"   # 奶油白
-FLEX_BLOCK_BACKGROUND = "#FFFFFF"   # 純白
-FLEX_BLOCK_ACCENT     = "#C4956A"   # 豎線裝飾色（同 header）
-FLEX_BLOCK_TITLE      = "#8B5E52"   # 深玫瑰棕
-FLEX_TEXT_COLOR       = "#5C4033"   # 深棕
-FLEX_SEPARATOR_COLOR  = "#E8D5C4"   # 淺奶茶
-FLEX_FOOTER_BG        = "#F2EAE3"   # 淺奶油
-FLEX_FOOTER_TEXT      = "#8B5E52"   # 深玫瑰棕
+FLEX_HEADER_BG = "#C4956A"  # 玫瑰棕
+FLEX_HEADER_TEXT = "#FFFFFF"  # 白色
+FLEX_HEADER_SUBTITLE = "#FDEBD8"  # 淺暖白
+FLEX_PAGE_BACKGROUND = "#FAF7F4"  # 奶油白
+FLEX_BLOCK_BACKGROUND = "#FFFFFF"  # 純白
+FLEX_BLOCK_ACCENT = "#C4956A"  # 豎線裝飾色（同 header）
+FLEX_BLOCK_TITLE = "#8B5E52"  # 深玫瑰棕
+FLEX_TEXT_COLOR = "#5C4033"  # 深棕
+FLEX_SEPARATOR_COLOR = "#E8D5C4"  # 淺奶茶
+FLEX_FOOTER_BG = "#F2EAE3"  # 淺奶油
+FLEX_FOOTER_TEXT = "#8B5E52"  # 深玫瑰棕
 
 
 class KpopAnalysisAgent:
@@ -168,9 +168,8 @@ class KpopAnalysisAgent:
                     exc_info=True,
                 )
             else:
-                if (
-                    payload.get("period_months") == period_months
-                    and _is_fresh(payload.get("cached_at"), max_age=ARTIST_CACHE_TTL)
+                if payload.get("period_months") == period_months and _is_fresh(
+                    payload.get("cached_at"), max_age=ARTIST_CACHE_TTL
                 ):
                     return payload
         return self.preload_artist_cache(artist=artist, period_months=period_months)
@@ -189,8 +188,11 @@ class KpopAnalysisAgent:
         artist = str(absa_payload.get("artist") or "")
         snapshot = absa_payload.get("sources", {}).get("bugs_chart")
         if absa_payload.get("analysis_period") and snapshot:
-            weekly_chart = {"chart_date": snapshot["chart_start"], "source": "bugs",
-                            "items": snapshot["items"]}
+            weekly_chart = {
+                "chart_date": snapshot["chart_start"],
+                "source": "bugs",
+                "items": snapshot["items"],
+            }
         else:
             weekly_chart = self.chart_repo.get_latest_weekly_chart(limit=100)
         chart_performance = _format_current_weekly_artist_chart_lines(
@@ -430,11 +432,11 @@ class KpopAnalysisAgent:
 - 事件類型：{event_types}
 
 ## 3. 粉絲與輿論反應
-- 正面比例：{sentiment['sentiment']['positive']}
-- 中立比例：{sentiment['sentiment']['neutral']}
-- 負面比例：{sentiment['sentiment']['negative']}
-- 主要情緒關鍵字：{', '.join(sentiment['top_keywords']) if sentiment['top_keywords'] else '（無資料）'}
-- 簡短解讀：{sentiment['summary']}
+- 正面比例：{sentiment["sentiment"]["positive"]}
+- 中立比例：{sentiment["sentiment"]["neutral"]}
+- 負面比例：{sentiment["sentiment"]["negative"]}
+- 主要情緒關鍵字：{", ".join(sentiment["top_keywords"]) if sentiment["top_keywords"] else "（無資料）"}
+- 簡短解讀：{sentiment["summary"]}
 
 ## 4. 綜合判斷
 - 市場熱度：{"高" if chart.get("best_rank", 99) <= 3 else "中"}
@@ -460,7 +462,9 @@ class KpopAnalysisAgent:
         best_rank = chart.get("best_rank", "N/A")
         market_heat = _market_heat(best_rank)
         risk = _sentiment_risk(negative)
-        summary = LOCAL_SUMMARIES.get(intent.artist, f"{intent.artist} 目前資料量有限，建議持續觀察榜單與粉絲反應。")
+        summary = LOCAL_SUMMARIES.get(
+            intent.artist, f"{intent.artist} 目前資料量有限，建議持續觀察榜單與粉絲反應。"
+        )
         news_titles = _format_news_titles(news or [])
         chart_performance = _format_chart_performance_lines(
             chart=chart,
@@ -536,11 +540,11 @@ Tool D 情感分析結果：
 - 事件類型：comeback / 銷量 / 爭議 / 代言 / 演唱會 / 榜單
 
 ## 3. 粉絲與輿論反應
-- 正面比例：{s['positive']}
-- 中立比例：{s['neutral']}
-- 負面比例：{s['negative']}
+- 正面比例：{s["positive"]}
+- 中立比例：{s["neutral"]}
+- 負面比例：{s["negative"]}
 - 主要情緒關鍵字：{kw}
-- 簡短解讀：{sentiment['summary']}
+- 簡短解讀：{sentiment["summary"]}
 
 ## 4. 綜合判斷
 - 市場熱度：高 / 中 / 低
@@ -594,11 +598,13 @@ def build_report_flex(
     body_contents: list[dict[str, Any]] = []
     for i, (title, section) in enumerate(block_configs):
         if i > 0:
-            body_contents.append({
-                "type": "separator",
-                "color": FLEX_SEPARATOR_COLOR,
-                "margin": "md",
-            })
+            body_contents.append(
+                {
+                    "type": "separator",
+                    "color": FLEX_SEPARATOR_COLOR,
+                    "margin": "md",
+                }
+            )
         block_body = section if title == "市場洞察" else _section_body(section)
         body_contents.append(_flex_block(title, block_body))
 
@@ -706,7 +712,10 @@ def _extract_artist_name(report: str) -> str:
     for line in report.splitlines():
         if line.startswith("# "):
             title = line.removeprefix("# ")
-            return re.sub(r"(?:\d{4}-\d{2}\s+)?(?:近期)?市場與輿論分析$", "", title).strip() or "K-pop Agent"
+            return (
+                re.sub(r"(?:\d{4}-\d{2}\s+)?(?:近期)?市場與輿論分析$", "", title).strip()
+                or "K-pop Agent"
+            )
     return "K-pop Agent"
 
 
@@ -1000,10 +1009,7 @@ def _kpop_scope_message() -> str:
 
 def _unsupported_artist_message(artist: str) -> str:
     supported = "、".join(SUPPORTED_ARTISTS)
-    return (
-        f"目前 demo 版先支援：{supported}。\n"
-        "請輸入：分析 aespa、分析 IVE、分析 BABYMONSTER。"
-    )
+    return f"目前 demo 版先支援：{supported}。\n請輸入：分析 aespa、分析 IVE、分析 BABYMONSTER。"
 
 
 def artist_cache_path(artist: str) -> Path:

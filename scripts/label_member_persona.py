@@ -93,10 +93,7 @@ def main() -> None:
     if "persona" not in fieldnames:
         raise SystemExit("bias_radar_members.csv has no 'persona' column.")
 
-    targets = [
-        row for row in rows
-        if args.force or not (row.get("persona") or "").strip()
-    ]
+    targets = [row for row in rows if args.force or not (row.get("persona") or "").strip()]
     if args.limit is not None:
         targets = targets[: args.limit]
 
@@ -142,10 +139,7 @@ def _label_member(row: dict[str, str]) -> list[str]:
                 },
                 timeout=GEMINI_REQUEST_TIMEOUT_SECONDS,
             )
-            if (
-                response.status_code in RETRYABLE_STATUS_CODES
-                and attempt < MAX_API_ATTEMPTS
-            ):
+            if response.status_code in RETRYABLE_STATUS_CODES and attempt < MAX_API_ATTEMPTS:
                 wait_seconds = _retry_wait_seconds(response, attempt)
                 print(
                     f"  ! {response.status_code}; retrying in {wait_seconds:.1f}s",
@@ -200,13 +194,13 @@ def _build_prompt(row: dict[str, str]) -> str:
 {guide}
 
 成員資料：
-- 團體：{row.get('artist', '')}
-- 成員：{row.get('member', '')}
-- 性別組：{row.get('gender_group', '')}
-- 外型：{row.get('appearance', '')}
-- 定位：{row.get('position', '')}
-- 氣質：{row.get('vibe', '')}
-- 關係感：{row.get('relationship', '')}
+- 團體：{row.get("artist", "")}
+- 成員：{row.get("member", "")}
+- 性別組：{row.get("gender_group", "")}
+- 外型：{row.get("appearance", "")}
+- 定位：{row.get("position", "")}
+- 氣質：{row.get("vibe", "")}
+- 關係感：{row.get("relationship", "")}
 
 真實資料摘錄（來自 source_url，已清洗截斷）：
 {source_block}"""
@@ -356,9 +350,15 @@ def _write_members(fieldnames: list[str], rows: list[dict[str, str]]) -> None:
 
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--force", action="store_true", help="relabel rows that already have a persona")
-    parser.add_argument("--limit", type=int, default=None, help="only process the first N target rows")
-    parser.add_argument("--dry-run", action="store_true", help="print results without writing the file")
+    parser.add_argument(
+        "--force", action="store_true", help="relabel rows that already have a persona"
+    )
+    parser.add_argument(
+        "--limit", type=int, default=None, help="only process the first N target rows"
+    )
+    parser.add_argument(
+        "--dry-run", action="store_true", help="print results without writing the file"
+    )
     return parser.parse_args()
 
 

@@ -1,4 +1,5 @@
 """pytest coverage for Tool D sentiment module (Phase 3-2D)."""
+
 from __future__ import annotations
 
 from types import SimpleNamespace
@@ -13,12 +14,14 @@ from src.tools.sentiment import (
 
 # ── 1. load_comments ──────────────────────────────────────────────────────────
 
+
 def test_load_comments_total_ge_60():
     comments = load_comments()
     assert len(comments) >= 200
 
 
 # ── 2-4. get_comments_by_artist ───────────────────────────────────────────────
+
 
 def test_get_comments_aespa_count():
     assert len(get_comments_by_artist("aespa")) == 20
@@ -45,11 +48,7 @@ def test_classify_comment_returns_valid_label(monkeypatch):
             return None
 
         def json(self):
-            return {
-                "candidates": [
-                    {"content": {"parts": [{"text": "positive"}]}}
-                ]
-            }
+            return {"candidates": [{"content": {"parts": [{"text": "positive"}]}}]}
 
     monkeypatch.setattr(
         sentiment_module,
@@ -72,11 +71,7 @@ def test_classify_invalid_gemini_response_falls_back_to_neutral(monkeypatch):
             return None
 
         def json(self):
-            return {
-                "candidates": [
-                    {"content": {"parts": [{"text": "happy"}]}}
-                ]
-            }
+            return {"candidates": [{"content": {"parts": [{"text": "happy"}]}}]}
 
     monkeypatch.setattr(
         sentiment_module,
@@ -94,6 +89,7 @@ def test_classify_none_returns_neutral():
 
 
 # ── 9. analyze_sentiment_from_csv ─────────────────────────────────────────────
+
 
 def test_analyze_aespa_structure(monkeypatch):
     monkeypatch.setattr(sentiment_module, "classify_comment", lambda comment: "neutral")

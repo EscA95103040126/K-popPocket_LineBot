@@ -60,9 +60,13 @@ def save_bugs_weekly_chart(
     chart_date: str | None = None,
     rows: list[dict[str, Any]] | None = None,
 ) -> int:
-    rows = rows if rows is not None else fetch_bugs_weekly_chart(
-        limit=limit,
-        chart_date=chart_date,
+    rows = (
+        rows
+        if rows is not None
+        else fetch_bugs_weekly_chart(
+            limit=limit,
+            chart_date=chart_date,
+        )
     )
     return ChartHistoryRepository().insert_chart_rows(rows)
 

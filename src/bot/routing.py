@@ -68,7 +68,9 @@ def build_dispatcher(features: Features) -> Dispatcher:
                 features.pocket.kpop_radar_reply,
             ),
             Handler("help", lambda c: menus.is_help_request(c.text), menus.help_reply),
-            Handler("play_zone", lambda c: menus.is_play_zone_request(c.text), menus.play_zone_reply),
+            Handler(
+                "play_zone", lambda c: menus.is_play_zone_request(c.text), menus.play_zone_reply
+            ),
             Handler(
                 "ai_curator_entry",
                 lambda c: is_ai_curator_entry_request(c.text),

@@ -21,7 +21,9 @@ def build_line_messages(reply: Reply) -> list:
     """Render a Reply as LINE messages: optional text (with quick replies) then the card."""
     messages = []
     if reply.flex is None or reply.text_first:
-        messages.append(TextMessage(text=reply.text, quickReply=build_quick_reply(reply.quick_replies)))
+        messages.append(
+            TextMessage(text=reply.text, quickReply=build_quick_reply(reply.quick_replies))
+        )
     if reply.flex is not None:
         messages.append(build_flex_message(reply.flex, alt_text=reply.alt_text))
     return messages
@@ -38,7 +40,9 @@ def build_flex_message(flex_contents: dict, alt_text: str):
 def build_quick_reply(actions: tuple[QuickReplyAction, ...]) -> QuickReply | None:
     if not actions:
         return None
-    return QuickReply(items=[QuickReplyItem(action=_quick_reply_action(action)) for action in actions])
+    return QuickReply(
+        items=[QuickReplyItem(action=_quick_reply_action(action)) for action in actions]
+    )
 
 
 def _quick_reply_action(action: QuickReplyAction):

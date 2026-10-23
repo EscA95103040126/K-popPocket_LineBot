@@ -112,15 +112,9 @@ def _build_kpop_radar_flex_contents(
                     "cornerRadius": "8px",
                     "contents": [
                         _kpop_radar_info_text(f"目前推薦偏好：{preference_label}"),
-                        _kpop_radar_info_text(
-                            f"🎬 收藏過的 MV：{counts.get('mv', 0)} 個"
-                        ),
-                        _kpop_radar_info_text(
-                            f"🎥 收藏過的直拍：{counts.get('fancam', 0)} 個"
-                        ),
-                        _kpop_radar_info_text(
-                            f"🖼️ 收藏過的照片：{counts.get('photo', 0)} 張"
-                        ),
+                        _kpop_radar_info_text(f"🎬 收藏過的 MV：{counts.get('mv', 0)} 個"),
+                        _kpop_radar_info_text(f"🎥 收藏過的直拍：{counts.get('fancam', 0)} 個"),
+                        _kpop_radar_info_text(f"🖼️ 收藏過的照片：{counts.get('photo', 0)} 張"),
                     ],
                 },
                 {
@@ -271,10 +265,7 @@ def _kpop_radar_params(message: str) -> dict[str, str]:
     data = message.strip()
     if "=" not in data:
         return {}
-    return {
-        str(key): str(value)
-        for key, value in parse_qsl(data, keep_blank_values=True)
-    }
+    return {str(key): str(value) for key, value in parse_qsl(data, keep_blank_values=True)}
 
 
 def _build_kpop_radar_save_prompt_flex_contents(
@@ -436,9 +427,7 @@ class PocketFeature:
                 logger.exception("Could not look up K-pop Radar item for save button.")
         if item:
             if daily_redraw:
-                return build_daily_kpop_redraw_flex_contents(
-                    save_item_id=str(item.get("id") or "")
-                )
+                return build_daily_kpop_redraw_flex_contents(save_item_id=str(item.get("id") or ""))
             return _build_kpop_radar_save_prompt_flex_contents(
                 item,
                 _kpop_radar_item_type_label(item_type),

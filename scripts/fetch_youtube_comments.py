@@ -143,7 +143,12 @@ def fetch_korean_comments(video_id: str, api_key: str, target_count: int) -> lis
 
         payload = _youtube_get(YOUTUBE_COMMENTS_URL, params=params)
         for item in payload.get("items", []):
-            text = item.get("snippet", {}).get("topLevelComment", {}).get("snippet", {}).get("textDisplay", "")
+            text = (
+                item.get("snippet", {})
+                .get("topLevelComment", {})
+                .get("snippet", {})
+                .get("textDisplay", "")
+            )
             cleaned = _clean_text(text)
             if cleaned and HANGUL_RE.search(cleaned):
                 comments.append(cleaned)

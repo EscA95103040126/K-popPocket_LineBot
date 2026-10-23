@@ -16,9 +16,7 @@ def test_import_kpop_items_builds_three_item_types() -> None:
 def test_import_kpop_items_maps_photo_member_to_group() -> None:
     items = build_kpop_items()
     sullyoon_photo = next(
-        item
-        for item in items
-        if item["item_type"] == "photo" and item["member"] == "Sullyoon"
+        item for item in items if item["item_type"] == "photo" and item["member"] == "Sullyoon"
     )
 
     assert sullyoon_photo["artist"] == "NMIXX"

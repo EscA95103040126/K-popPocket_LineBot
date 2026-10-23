@@ -80,8 +80,7 @@ def _extract_period_months(message: str) -> int:
 def _is_weekly_chart_request(message: str) -> bool:
     normalized_message = _normalize_chart_query(message)
     return any(
-        _normalize_chart_query(keyword) in normalized_message
-        for keyword in WEEKLY_CHART_KEYWORDS
+        _normalize_chart_query(keyword) in normalized_message for keyword in WEEKLY_CHART_KEYWORDS
     )
 
 

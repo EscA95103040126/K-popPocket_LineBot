@@ -122,15 +122,22 @@ def test_analyze_endpoint_uses_local_absa_cache(monkeypatch) -> None:
                 "period_months": period_months,
                 "cached_at": "absa-time",
                 "report": "ABSA endpoint report",
-                "flex": {"type": "bubble", "body": {"type": "box", "layout": "vertical", "contents": []}},
+                "flex": {
+                    "type": "bubble",
+                    "body": {"type": "box", "layout": "vertical", "contents": []},
+                },
                 "cache_type": "absa",
             }
 
     dummy = DummyAgent()
 
-    response = make_app(make_deps(agent=dummy)).test_client().post(
-        "/analyze",
-        json={"message": "分析 aespa"},
+    response = (
+        make_app(make_deps(agent=dummy))
+        .test_client()
+        .post(
+            "/analyze",
+            json={"message": "分析 aespa"},
+        )
     )
     payload = response.get_json()
 

@@ -54,9 +54,20 @@ AI_CURATOR_PROFILE_VOCAB: dict[str, tuple[str, ...]] = {
     "vibe": ("冷感", "甜系", "霸氣", "反差", "清冷"),
     "relationship": ("戀愛感", "神性", "朋友感", "白月光感", "舞台支配感"),
     "persona": (
-        "姐系", "忙內", "鄰家", "氛圍", "元氣", "痞帥",
-        "知性", "治癒", "綜藝擔", "性感", "憂鬱感", "陽光",
-        "王子", "野性",
+        "姐系",
+        "忙內",
+        "鄰家",
+        "氛圍",
+        "元氣",
+        "痞帥",
+        "知性",
+        "治癒",
+        "綜藝擔",
+        "性感",
+        "憂鬱感",
+        "陽光",
+        "王子",
+        "野性",
     ),
 }
 
@@ -198,7 +209,16 @@ def _context_stored_at(entry: dict[str, object] | list[dict[str, str]]) -> float
 
 def _clean_ai_curator_query(message: str) -> str:
     cleaned = message.strip()
-    for prefix in ("AI入坑:", "ai入坑:", "入坑指南:", "AI策展:", "ai策展:", "策展:", "雷達:", "推薦:"):
+    for prefix in (
+        "AI入坑:",
+        "ai入坑:",
+        "入坑指南:",
+        "AI策展:",
+        "ai策展:",
+        "策展:",
+        "雷達:",
+        "推薦:",
+    ):
         if cleaned.startswith(prefix):
             return cleaned.removeprefix(prefix).strip() or "幫我推薦 K-pop 入坑路線"
     return cleaned
@@ -212,8 +232,7 @@ def _ai_curator_profile_has_signal(profile: dict) -> bool:
 
 def _build_ai_curator_profile_prompt(query: str) -> str:
     vocab_lines = "\n".join(
-        f"- {field}: {', '.join(labels)}"
-        for field, labels in AI_CURATOR_PROFILE_VOCAB.items()
+        f"- {field}: {', '.join(labels)}" for field, labels in AI_CURATOR_PROFILE_VOCAB.items()
     )
     return f"""你是 K-pop 偏好解析器。請把使用者的自然語言需求對應到下方「允許的標籤」，輸出 JSON。
 規則：
@@ -279,11 +298,15 @@ def _prioritize_members_with_mv(
     mv_artists: set[str],
 ) -> list[dict[str, str]]:
     with_mv = [member for member in members if member.get("artist", "").strip() in mv_artists]
-    without_mv = [member for member in members if member.get("artist", "").strip() not in mv_artists]
+    without_mv = [
+        member for member in members if member.get("artist", "").strip() not in mv_artists
+    ]
     return with_mv + without_mv
 
 
-def _ai_curator_recommended_members(member_candidates: list[dict[str, str]]) -> list[dict[str, str]]:
+def _ai_curator_recommended_members(
+    member_candidates: list[dict[str, str]],
+) -> list[dict[str, str]]:
     recommendations = []
     seen_members = set()
     for member in member_candidates:
@@ -456,9 +479,7 @@ def _ai_curator_reason_sentences(member_row: dict[str, str], member: str) -> lis
             f"{member} 會很容易先對上；再加上{vibe}的反差，會讓人想多看幾支舞台。"
         )
     elif appearance:
-        sentences.append(
-            f"🔎 如果你吃{appearance}那種第一眼的清透感，{member} 會很容易先對上。"
-        )
+        sentences.append(f"🔎 如果你吃{appearance}那種第一眼的清透感，{member} 會很容易先對上。")
     elif vibe:
         sentences.append(f"🔎 {vibe}這種氣場很適合當入坑入口，第一支舞台就能先抓感覺。")
 
@@ -735,8 +756,7 @@ class AiCuratorFeature:
                 "member": recommendation.get("member", "").strip(),
             }
             for recommendation in recommended_members[:3]
-            if recommendation.get("artist", "").strip()
-            and recommendation.get("member", "").strip()
+            if recommendation.get("artist", "").strip() and recommendation.get("member", "").strip()
         ]
         if compact_members:
             self.ai_curator_reason_contexts[user_id] = {
@@ -762,11 +782,7 @@ class AiCuratorFeature:
         members = entry.get("members")
         if not isinstance(members, list):
             return []
-        return [
-            member
-            for member in members
-            if isinstance(member, dict)
-        ]
+        return [member for member in members if isinstance(member, dict)]
 
     def _prune_ai_curator_reason_contexts(self, now: float | None = None) -> None:
         current_time = now if now is not None else self.clock()
@@ -861,7 +877,15 @@ class AiCuratorFeature:
                     "戀愛感": ("戀愛感", "女友", "男友"),
                     "神性": ("神性", "神", "仙"),
                     "朋友感": ("朋友感", "親切"),
-                    "白月光感": ("白月光", "白月光感", "初戀", "初戀感", "守護", "守護感", "想保護"),
+                    "白月光感": (
+                        "白月光",
+                        "白月光感",
+                        "初戀",
+                        "初戀感",
+                        "守護",
+                        "守護感",
+                        "想保護",
+                    ),
                     "舞台支配感": ("舞台支配", "舞台支配感", "壓場", "舞台強"),
                 },
             ),
@@ -993,7 +1017,9 @@ class AiCuratorFeature:
         self.rng.shuffle(matched_rows)
         return matched_rows
 
-    def _rank_daily_kpop_rows_for_curator(self, category: str, profile: dict) -> list[dict[str, str]]:
+    def _rank_daily_kpop_rows_for_curator(
+        self, category: str, profile: dict
+    ) -> list[dict[str, str]]:
         rows = self.catalog.load_daily_kpop_rows(category)
         if not rows and category != "MV":
             rows = self.catalog.load_daily_kpop_rows("MV")
@@ -1002,13 +1028,17 @@ class AiCuratorFeature:
         if gender == "female":
             rows.sort(key=lambda row: 0 if _daily_artist_looks_female(row.get("artist", "")) else 1)
         elif gender == "male":
-            rows.sort(key=lambda row: 0 if not _daily_artist_looks_female(row.get("artist", "")) else 1)
+            rows.sort(
+                key=lambda row: 0 if not _daily_artist_looks_female(row.get("artist", "")) else 1
+            )
         return rows
 
     def _load_ai_curator_artist_summaries(self, artists: list[str]) -> list[dict[str, str]]:
         summaries = []
         for artist in artists:
-            cache_path = self.catalog.base_dir / "data" / "cache" / "artists" / f"{artist.lower()}.json"
+            cache_path = (
+                self.catalog.base_dir / "data" / "cache" / "artists" / f"{artist.lower()}.json"
+            )
             if not cache_path.exists():
                 continue
             try:
@@ -1069,7 +1099,9 @@ class AiCuratorFeature:
 
         artist = self._find_ai_curator_reason_artist(message)
         if artist:
-            summary_text = _ai_curator_artist_summary_text(self._load_ai_curator_artist_summary(artist))
+            summary_text = _ai_curator_artist_summary_text(
+                self._load_ai_curator_artist_summary(artist)
+            )
             link_text = self._find_recommendation_link_for_artist(artist)
             lines = [
                 f"目前追問主要支援成員；你問到的是 {artist}，我先用本地資料補一個團體入口。",
@@ -1212,22 +1244,14 @@ class AiCuratorFeature:
         if member_fancams:
             return _format_fancam_link(self.rng.choice(member_fancams), "🎬 先用這支直拍確認感覺：")
 
-        member_fancams = [
-            row
-            for row in fancams
-            if same_lookup_name(row.get("member", ""), member)
-        ]
+        member_fancams = [row for row in fancams if same_lookup_name(row.get("member", ""), member)]
         if member_fancams:
             return _format_fancam_link(
                 self.rng.choice(member_fancams),
                 f"🎬 目前沒有找到 {display_member_name(member)} 的同團直拍，先補一支同名成員直拍：",
             )
 
-        artist_fancams = [
-            row
-            for row in fancams
-            if same_lookup_name(row.get("artist", ""), artist)
-        ]
+        artist_fancams = [row for row in fancams if same_lookup_name(row.get("artist", ""), artist)]
         if artist_fancams:
             return _format_fancam_link(
                 self.rng.choice(artist_fancams),
