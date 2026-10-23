@@ -1,8 +1,7 @@
 from __future__ import annotations
 
-import app as app_module
-from app import app
 from src.tools.kpop_radar import KpopRadarRepository, SupabaseRestClient
+from tests.fakes import make_app, make_deps
 
 
 class FakeSaveResult:
@@ -129,8 +128,7 @@ def test_find_item_by_url_matches_youtube_video_id_when_share_params_differ() ->
 
 def test_kpop_radar_home_flex_uses_current_counts(monkeypatch) -> None:
     fake_repo = FakeRadarRepository()
-    monkeypatch.setattr(app_module, "radar_repo", fake_repo)
-    client = app.test_client()
+    client = make_app(make_deps(radar_repo=fake_repo)).test_client()
 
     response = client.post(
         "/analyze",
@@ -150,8 +148,7 @@ def test_kpop_radar_home_flex_uses_current_counts(monkeypatch) -> None:
 
 def test_kpop_radar_preference_update_returns_home(monkeypatch) -> None:
     fake_repo = FakeRadarRepository()
-    monkeypatch.setattr(app_module, "radar_repo", fake_repo)
-    client = app.test_client()
+    client = make_app(make_deps(radar_repo=fake_repo)).test_client()
 
     response = client.post(
         "/analyze",
@@ -169,8 +166,7 @@ def test_kpop_radar_preference_update_returns_home(monkeypatch) -> None:
 
 def test_kpop_radar_save_item_reports_duplicate(monkeypatch) -> None:
     fake_repo = FakeRadarRepository()
-    monkeypatch.setattr(app_module, "radar_repo", fake_repo)
-    client = app.test_client()
+    client = make_app(make_deps(radar_repo=fake_repo)).test_client()
 
     first = client.post(
         "/analyze",
@@ -194,8 +190,7 @@ def test_kpop_radar_save_item_reports_duplicate(monkeypatch) -> None:
 
 def test_daily_mv_supabase_response_includes_save_postback(monkeypatch) -> None:
     fake_repo = FakeRadarRepository()
-    monkeypatch.setattr(app_module, "radar_repo", fake_repo)
-    client = app.test_client()
+    client = make_app(make_deps(radar_repo=fake_repo)).test_client()
 
     response = client.post(
         "/analyze",
@@ -221,11 +216,8 @@ def test_daily_fancam_response_includes_save_to_radar(monkeypatch, tmp_path) -> 
         "artist,title,member,url\nNMIXX,DASH,SULLYOON,https://example.com/sullyoon-fancam\n",
         encoding="utf-8",
     )
-    monkeypatch.setattr(app_module, "settings", type("Settings", (), {"base_dir": tmp_path})())
-    monkeypatch.setattr(app_module, "radar_repo", FakeRadarRepository())
-    app_module.daily_kpop_queues.clear()
-    app_module.daily_kpop_source_keys.clear()
-    client = app.test_client()
+    deps = make_deps(base_dir=tmp_path, radar_repo=FakeRadarRepository())
+    client = make_app(deps).test_client()
 
     payload = client.post(
         "/analyze",
@@ -251,11 +243,8 @@ def test_daily_stage_response_keeps_redraw_without_save(monkeypatch, tmp_path) -
         "artist,title,url\nNMIXX,DASH,https://example.com/nmixx-stage\n",
         encoding="utf-8",
     )
-    monkeypatch.setattr(app_module, "settings", type("Settings", (), {"base_dir": tmp_path})())
-    monkeypatch.setattr(app_module, "radar_repo", FakeRadarRepository())
-    app_module.daily_kpop_queues.clear()
-    app_module.daily_kpop_source_keys.clear()
-    client = app.test_client()
+    deps = make_deps(base_dir=tmp_path, radar_repo=FakeRadarRepository())
+    client = make_app(deps).test_client()
 
     payload = client.post(
         "/analyze",
@@ -279,11 +268,8 @@ def test_photo_card_response_includes_save_to_radar(monkeypatch, tmp_path) -> No
         "artist,type,url\nSULLYOON,活動照,https://example.com/sullyoon-photo\n",
         encoding="utf-8",
     )
-    monkeypatch.setattr(app_module, "settings", type("Settings", (), {"base_dir": tmp_path})())
-    monkeypatch.setattr(app_module, "radar_repo", FakeRadarRepository())
-    app_module.photo_card_queue = []
-    app_module.photo_card_source_key = ()
-    client = app.test_client()
+    deps = make_deps(base_dir=tmp_path, radar_repo=FakeRadarRepository())
+    client = make_app(deps).test_client()
 
     payload = client.post(
         "/analyze",

@@ -4,15 +4,24 @@ from io import BytesIO
 from pathlib import Path
 from types import SimpleNamespace
 
-import app as app_module
-from app import app
+from flask import Flask
+
 from PIL import Image
+
 from src.agent import KpopAnalysisAgent
+from src.bot.container import build_bot
+from src.bot.dispatcher import MessageContext
+from src.bot.features import fan_quiz, menus
+from src.bot.features.ai_curator import _build_ai_curator_followup_flex_contents
+from src.bot.features.charts import ChartFeature
+from src.bot.features.member_quiz import MEMBER_QUIZ_EMPTY_TEXT, _normalize_member_quiz_row
 from src.tools.chart_db import ChartHistoryRepository
+from src.web.app_factory import bot_of
+from tests.fakes import REPO_ROOT, FakeLlm, make_app, make_deps
 
 
 def test_fan_attribute_quiz_starts_with_first_question() -> None:
-    client = app.test_client()
+    client = make_app().test_client()
 
     response = client.post("/analyze", json={"message": "粉絲屬性測驗"})
     payload = response.get_json()
@@ -23,7 +32,7 @@ def test_fan_attribute_quiz_starts_with_first_question() -> None:
 
 
 def test_bias_radar_questions_json_is_readable() -> None:
-    json_path = Path(app_module.__file__).resolve().parent / "data" / "play_zone" / "bias_radar_questions.json"
+    json_path = REPO_ROOT / "data" / "play_zone" / "bias_radar_questions.json"
 
     questions = json.loads(json_path.read_text(encoding="utf-8"))
 
@@ -33,7 +42,7 @@ def test_bias_radar_questions_json_is_readable() -> None:
 
 
 def test_bias_radar_members_csv_is_readable_and_large_enough() -> None:
-    csv_path = Path(app_module.__file__).resolve().parent / "data" / "play_zone" / "bias_radar_members.csv"
+    csv_path = REPO_ROOT / "data" / "play_zone" / "bias_radar_members.csv"
 
     with csv_path.open(newline="", encoding="utf-8") as file:
         rows = list(csv.DictReader(file))
@@ -56,8 +65,7 @@ def test_bias_radar_members_csv_is_readable_and_large_enough() -> None:
 
 
 def test_bias_radar_starts_with_first_question() -> None:
-    client = app.test_client()
-    app_module.bias_radar_sessions.clear()
+    client = make_app().test_client()
 
     response = client.post(
         "/analyze",
@@ -73,7 +81,7 @@ def test_bias_radar_starts_with_first_question() -> None:
 
 
 def test_bias_radar_options_use_hidden_postback_state() -> None:
-    flex = app_module._build_bias_radar_question_flex_contents(0)
+    flex = bot_of(make_app()).features.bias_radar._build_bias_radar_question_flex_contents(0)
     first_option_action = flex["body"]["contents"][1]["action"]
 
     assert first_option_action["type"] == "postback"
@@ -82,11 +90,11 @@ def test_bias_radar_options_use_hidden_postback_state() -> None:
     assert "displayText" not in first_option_action
 
 
-def test_bias_radar_result_uses_matching_radar_image(monkeypatch, tmp_path: Path) -> None:
+def test_bias_radar_result_uses_matching_radar_image(tmp_path: Path) -> None:
     image_dir = tmp_path / "data" / "play_zone" / "radar_image"
     image_dir.mkdir(parents=True)
     (image_dir / "aespa-karina.jpg").write_bytes(b"fake image")
-    monkeypatch.setattr(app_module, "settings", SimpleNamespace(base_dir=tmp_path))
+    app = make_app(make_deps(base_dir=tmp_path))
     result = {
         "recommendation": {
             "id": "aespa-karina",
@@ -100,7 +108,7 @@ def test_bias_radar_result_uses_matching_radar_image(monkeypatch, tmp_path: Path
     }
 
     with app.test_request_context("/analyze"):
-        flex = app_module._build_bias_radar_result_flex_contents(result)
+        flex = bot_of(app).features.bias_radar._build_bias_radar_result_flex_contents(result)
 
     assert flex["hero"]["url"] == "http://localhost/play-zone/radar-image/aespa-karina.jpg"
     assert flex["hero"]["aspectMode"] == "fit"
@@ -111,9 +119,8 @@ def test_bias_radar_result_uses_matching_radar_image(monkeypatch, tmp_path: Path
 
 
 def test_bias_radar_recommends_member_from_csv_after_five_answers() -> None:
-    client = app.test_client()
+    client = make_app().test_client()
     user_id = "bias-flow"
-    app_module.bias_radar_sessions.clear()
     client.post("/analyze", json={"message": "本命雷達", "user_id": user_id})
 
     messages = [
@@ -140,7 +147,7 @@ def test_bias_radar_recommends_member_from_csv_after_five_answers() -> None:
         for line in payload["report"].splitlines()
         if line.startswith("推薦：")
     )
-    csv_path = Path(app_module.__file__).resolve().parent / "data" / "play_zone" / "bias_radar_members.csv"
+    csv_path = REPO_ROOT / "data" / "play_zone" / "bias_radar_members.csv"
     with csv_path.open(newline="", encoding="utf-8") as file:
         csv_recommendations = {
             f"{row['artist']} {row['member']}"
@@ -151,7 +158,7 @@ def test_bias_radar_recommends_member_from_csv_after_five_answers() -> None:
 
 
 def test_fan_attribute_quiz_options_use_hidden_postback_state() -> None:
-    flex = app_module._build_fan_attribute_quiz_flex_contents("粉絲屬性測驗")
+    flex = fan_quiz._build_fan_attribute_quiz_flex_contents("粉絲屬性測驗")
     first_option_action = flex["body"]["contents"][1]["action"]
 
     assert flex["header"]["backgroundColor"] == "#5D6F66"
@@ -163,18 +170,18 @@ def test_fan_attribute_quiz_options_use_hidden_postback_state() -> None:
 
 
 def test_fan_attribute_quiz_scores_group_fan_result() -> None:
-    scores = {key: 0 for key in app_module.FAN_ATTRIBUTE_ORDER}
-    for question in app_module.FAN_ATTRIBUTE_QUIZ:
-        scores = app_module._add_fan_attribute_scores(
+    scores = {key: 0 for key in fan_quiz.FAN_ATTRIBUTE_ORDER}
+    for question in fan_quiz.FAN_ATTRIBUTE_QUIZ:
+        scores = fan_quiz._add_fan_attribute_scores(
             scores,
             question["options"][0]["weights"],
         )
 
-    action_text = app_module._fan_attribute_action_text(
-        len(app_module.FAN_ATTRIBUTE_QUIZ),
+    action_text = fan_quiz._fan_attribute_action_text(
+        len(fan_quiz.FAN_ATTRIBUTE_QUIZ),
         scores,
     )
-    client = app.test_client()
+    client = make_app().test_client()
 
     response = client.post("/analyze", json={"message": action_text})
     payload = response.get_json()
@@ -188,7 +195,7 @@ def test_fan_attribute_quiz_scores_group_fan_result() -> None:
 
 
 def test_play_zone_describes_three_fan_attribute_types() -> None:
-    flex = app_module._build_play_zone_flex_contents()
+    flex = menus._build_play_zone_flex_contents()
 
     fan_quiz_item = flex["body"]["contents"][2]
 
@@ -198,18 +205,15 @@ def test_play_zone_describes_three_fan_attribute_types() -> None:
     assert "團飯、唯飯還是跟風粉" in fan_quiz_item["contents"][1]["contents"][1]["text"]
 
 
-def _use_photo_card_csv(monkeypatch, tmp_path: Path, csv_text: str) -> Path:
+def _use_photo_card_csv(tmp_path: Path, csv_text: str) -> Flask:
     play_zone_dir = tmp_path / "data" / "play_zone"
     play_zone_dir.mkdir(parents=True)
     csv_path = play_zone_dir / "photo_cards.csv"
     csv_path.write_text(csv_text, encoding="utf-8")
-    monkeypatch.setattr(app_module, "settings", SimpleNamespace(base_dir=tmp_path))
-    app_module.photo_card_queue = []
-    app_module.photo_card_source_key = ()
-    return csv_path
+    return make_app(make_deps(base_dir=tmp_path))
 
 
-def _use_member_quiz_csv(monkeypatch, tmp_path: Path, csv_text: str) -> Path:
+def _use_member_quiz_csv(tmp_path: Path, csv_text: str) -> Flask:
     play_zone_dir = tmp_path / "data" / "play_zone"
     image_dir = play_zone_dir / "member_quiz_images"
     image_dir.mkdir(parents=True)
@@ -217,21 +221,17 @@ def _use_member_quiz_csv(monkeypatch, tmp_path: Path, csv_text: str) -> Path:
     Image.new("RGB", (4, 5), color="white").save(image_dir / "q002.png")
     csv_path = play_zone_dir / "member_quiz.csv"
     csv_path.write_text(csv_text, encoding="utf-8")
-    monkeypatch.setattr(app_module, "settings", SimpleNamespace(base_dir=tmp_path))
-    app_module.member_quiz_queue = []
-    app_module.member_quiz_source_key = ()
-    return csv_path
+    return make_app(make_deps(base_dir=tmp_path))
 
 
 def _use_ai_curator_reason_csv(
-    monkeypatch,
     tmp_path: Path,
     *,
     bias_members_csv: str | None = None,
     daily_fancam_csv: str,
     daily_mv_csv: str,
-    use_gemini_mock: bool = True,
-) -> None:
+    llm: FakeLlm | None = None,
+) -> Flask:
     play_zone_dir = tmp_path / "data" / "play_zone"
     play_zone_dir.mkdir(parents=True)
     (play_zone_dir / "bias_radar_members.csv").write_text(
@@ -246,22 +246,11 @@ def _use_ai_curator_reason_csv(
     )
     (play_zone_dir / "daily_fancam.csv").write_text(daily_fancam_csv, encoding="utf-8")
     (play_zone_dir / "daily_mv.csv").write_text(daily_mv_csv, encoding="utf-8")
-    monkeypatch.setattr(
-        app_module,
-        "settings",
-        SimpleNamespace(
-            base_dir=tmp_path,
-            use_gemini_mock=use_gemini_mock,
-            use_naver_mock=True,
-            gemini_api_key="test-key",
-            gemini_model="gemini-3.5-flash",
-        ),
-    )
-    app_module.ai_curator_reason_contexts.clear()
+    return make_app(make_deps(base_dir=tmp_path, llm=llm))
 
 
 def test_photo_cards_csv_template_is_readable() -> None:
-    csv_path = Path(app_module.__file__).resolve().parent / "data" / "play_zone" / "photo_cards.csv"
+    csv_path = REPO_ROOT / "data" / "play_zone" / "photo_cards.csv"
 
     header = csv_path.read_text(encoding="utf-8").splitlines()[0]
 
@@ -269,7 +258,7 @@ def test_photo_cards_csv_template_is_readable() -> None:
 
 
 def test_photo_cards_csv_urls_are_normalized() -> None:
-    csv_path = Path(app_module.__file__).resolve().parent / "data" / "play_zone" / "photo_cards.csv"
+    csv_path = REPO_ROOT / "data" / "play_zone" / "photo_cards.csv"
 
     with csv_path.open(newline="", encoding="utf-8") as file:
         rows = list(csv.DictReader(file))
@@ -278,14 +267,13 @@ def test_photo_cards_csv_urls_are_normalized() -> None:
     assert all(row["url"].startswith(("http://", "https://")) for row in rows)
 
 
-def test_photo_cards_csv_loads_valid_rows(monkeypatch, tmp_path: Path) -> None:
-    _use_photo_card_csv(
-        monkeypatch,
+def test_photo_cards_csv_loads_valid_rows(tmp_path: Path) -> None:
+    app = _use_photo_card_csv(
         tmp_path,
         "artist,type,url\nKarina,直拍,https://example.com/karina\n,,\n",
     )
 
-    rows = app_module._load_photo_card_rows()
+    rows = bot_of(app).features.photo_card._load_photo_card_rows()
 
     assert rows == [
         {
@@ -296,8 +284,8 @@ def test_photo_cards_csv_loads_valid_rows(monkeypatch, tmp_path: Path) -> None:
     ]
 
 
-def test_photo_card_empty_csv_uses_fallback_text(monkeypatch, tmp_path: Path) -> None:
-    _use_photo_card_csv(monkeypatch, tmp_path, "artist,type,url\n")
+def test_photo_card_empty_csv_uses_fallback_text(tmp_path: Path) -> None:
+    app = _use_photo_card_csv(tmp_path, "artist,type,url\n")
     client = app.test_client()
 
     response = client.post("/analyze", json={"message": "神圖抽卡"})
@@ -308,9 +296,8 @@ def test_photo_card_empty_csv_uses_fallback_text(monkeypatch, tmp_path: Path) ->
     assert payload["flex"] is None
 
 
-def test_photo_card_with_data_returns_plain_text_recommendation(monkeypatch, tmp_path: Path) -> None:
-    _use_photo_card_csv(
-        monkeypatch,
+def test_photo_card_with_data_returns_plain_text_recommendation(tmp_path: Path) -> None:
+    app = _use_photo_card_csv(
         tmp_path,
         "artist,type,url\nKarina,直拍,https://example.com/karina\n",
     )
@@ -332,9 +319,8 @@ def test_photo_card_with_data_returns_plain_text_recommendation(monkeypatch, tmp
     )
 
 
-def test_photo_card_draw_returns_redraw_flex(monkeypatch, tmp_path: Path) -> None:
-    _use_photo_card_csv(
-        monkeypatch,
+def test_photo_card_draw_returns_redraw_flex(tmp_path: Path) -> None:
+    app = _use_photo_card_csv(
         tmp_path,
         "artist,type,url\nIVE,活動,https://example.com/ive\n",
     )
@@ -353,9 +339,8 @@ def test_photo_card_draw_returns_redraw_flex(monkeypatch, tmp_path: Path) -> Non
     assert flex["body"]["contents"][2]["action"]["text"] == "互動專區"
 
 
-def test_photo_card_queue_avoids_short_term_repeats(monkeypatch, tmp_path: Path) -> None:
-    _use_photo_card_csv(
-        monkeypatch,
+def test_photo_card_queue_avoids_short_term_repeats(tmp_path: Path) -> None:
+    app = _use_photo_card_csv(
         tmp_path,
         "\n".join(
             [
@@ -368,7 +353,7 @@ def test_photo_card_queue_avoids_short_term_repeats(monkeypatch, tmp_path: Path)
         + "\n",
     )
 
-    draws = [app_module._load_photo_card_recommendation() for _ in range(3)]
+    draws = [bot_of(app).features.photo_card._load_photo_card_recommendation() for _ in range(3)]
     draw_keys = {
         (draw["artist"], draw["type"], draw["url"])
         for draw in draws
@@ -379,7 +364,7 @@ def test_photo_card_queue_avoids_short_term_repeats(monkeypatch, tmp_path: Path)
 
 
 def test_member_quiz_csv_template_is_readable() -> None:
-    csv_path = Path(app_module.__file__).resolve().parent / "data" / "play_zone" / "member_quiz.csv"
+    csv_path = REPO_ROOT / "data" / "play_zone" / "member_quiz.csv"
 
     header = csv_path.read_text(encoding="utf-8").splitlines()[0]
 
@@ -387,13 +372,13 @@ def test_member_quiz_csv_template_is_readable() -> None:
 
 
 def test_member_quiz_csv_does_not_contain_non_breaking_spaces() -> None:
-    csv_path = Path(app_module.__file__).resolve().parent / "data" / "play_zone" / "member_quiz.csv"
+    csv_path = REPO_ROOT / "data" / "play_zone" / "member_quiz.csv"
 
     assert "\u00a0" not in csv_path.read_text(encoding="utf-8")
 
 
 def test_member_quiz_row_normalizes_unicode_spaces() -> None:
-    row = app_module._normalize_member_quiz_row(
+    row = _normalize_member_quiz_row(
         {
             "id": " q001 ",
             "question": "請問圖片的人是誰？",
@@ -410,9 +395,8 @@ def test_member_quiz_row_normalizes_unicode_spaces() -> None:
     assert row["answer"] == "A"
 
 
-def test_member_quiz_empty_csv_does_not_crash(monkeypatch, tmp_path: Path) -> None:
-    _use_member_quiz_csv(
-        monkeypatch,
+def test_member_quiz_empty_csv_does_not_crash(tmp_path: Path) -> None:
+    app = _use_member_quiz_csv(
         tmp_path,
         "id,question,image_path,option_a,option_b,answer\n",
     )
@@ -422,13 +406,12 @@ def test_member_quiz_empty_csv_does_not_crash(monkeypatch, tmp_path: Path) -> No
     payload = response.get_json()
 
     assert response.status_code == 200
-    assert payload["report"] == app_module.MEMBER_QUIZ_EMPTY_TEXT
+    assert payload["report"] == MEMBER_QUIZ_EMPTY_TEXT
     assert payload["flex"] is None
 
 
-def test_member_quiz_with_data_returns_question_flex(monkeypatch, tmp_path: Path) -> None:
-    _use_member_quiz_csv(
-        monkeypatch,
+def test_member_quiz_with_data_returns_question_flex(tmp_path: Path) -> None:
+    app = _use_member_quiz_csv(
         tmp_path,
         (
             "id,question,image_path,option_a,option_b,answer\n"
@@ -460,9 +443,8 @@ def test_member_quiz_with_data_returns_question_flex(monkeypatch, tmp_path: Path
     assert "displayText" not in second_action
 
 
-def test_member_quiz_answers_return_result_and_again_flex(monkeypatch, tmp_path: Path) -> None:
-    _use_member_quiz_csv(
-        monkeypatch,
+def test_member_quiz_answers_return_result_and_again_flex(tmp_path: Path) -> None:
+    app = _use_member_quiz_csv(
         tmp_path,
         (
             "id,question,image_path,option_a,option_b,answer\n"
@@ -483,9 +465,8 @@ def test_member_quiz_answers_return_result_and_again_flex(monkeypatch, tmp_path:
     assert correct_payload["flex"]["body"]["contents"][2]["action"]["text"] == "互動專區"
 
 
-def test_member_quiz_missing_id_returns_missing_text(monkeypatch, tmp_path: Path) -> None:
-    _use_member_quiz_csv(
-        monkeypatch,
+def test_member_quiz_missing_id_returns_missing_text(tmp_path: Path) -> None:
+    app = _use_member_quiz_csv(
         tmp_path,
         (
             "id,question,image_path,option_a,option_b,answer\n"
@@ -501,9 +482,8 @@ def test_member_quiz_missing_id_returns_missing_text(monkeypatch, tmp_path: Path
     assert payload["flex"] is None
 
 
-def test_member_quiz_queue_avoids_short_term_repeats(monkeypatch, tmp_path: Path) -> None:
-    _use_member_quiz_csv(
-        monkeypatch,
+def test_member_quiz_queue_avoids_short_term_repeats(tmp_path: Path) -> None:
+    app = _use_member_quiz_csv(
         tmp_path,
         "\n".join(
             [
@@ -515,14 +495,13 @@ def test_member_quiz_queue_avoids_short_term_repeats(monkeypatch, tmp_path: Path
         + "\n",
     )
 
-    draws = [app_module._load_member_quiz_recommendation() for _ in range(2)]
+    draws = [bot_of(app).features.member_quiz._load_member_quiz_recommendation() for _ in range(2)]
 
     assert {draw["id"] for draw in draws if draw is not None} == {"q001", "q002"}
 
 
-def test_member_quiz_image_route_blocks_path_traversal(monkeypatch, tmp_path: Path) -> None:
-    _use_member_quiz_csv(
-        monkeypatch,
+def test_member_quiz_image_route_blocks_path_traversal(tmp_path: Path) -> None:
+    app = _use_member_quiz_csv(
         tmp_path,
         "id,question,image_path,option_a,option_b,answer\n",
     )
@@ -537,9 +516,8 @@ def test_member_quiz_image_route_blocks_path_traversal(monkeypatch, tmp_path: Pa
     assert unsupported_response.status_code == 404
 
 
-def test_member_quiz_flex_image_route_returns_square_jpeg(monkeypatch, tmp_path: Path) -> None:
-    _use_member_quiz_csv(
-        monkeypatch,
+def test_member_quiz_flex_image_route_returns_square_jpeg(tmp_path: Path) -> None:
+    app = _use_member_quiz_csv(
         tmp_path,
         "id,question,image_path,option_a,option_b,answer\n",
     )
@@ -561,7 +539,7 @@ def test_member_quiz_flex_image_route_returns_square_jpeg(monkeypatch, tmp_path:
 
 
 def test_unknown_input_does_not_crash() -> None:
-    client = app.test_client()
+    client = make_app().test_client()
 
     response = client.post("/analyze", json={"message": "這是一個未知指令"})
     payload = response.get_json()
@@ -571,7 +549,7 @@ def test_unknown_input_does_not_crash() -> None:
 
 
 def test_daily_kpop_entry_still_returns_flex() -> None:
-    client = app.test_client()
+    client = make_app().test_client()
 
     response = client.post("/analyze", json={"message": "每日一首"})
     payload = response.get_json()
@@ -584,7 +562,7 @@ def test_daily_kpop_entry_still_returns_flex() -> None:
 
 
 def test_ai_entry_returns_ai_curator_entry_flex() -> None:
-    client = app.test_client()
+    client = make_app().test_client()
 
     response = client.post("/analyze", json={"message": "AI 入坑"})
     payload = response.get_json()
@@ -596,18 +574,8 @@ def test_ai_entry_returns_ai_curator_entry_flex() -> None:
     assert payload["flex"]["body"]["contents"][1]["contents"][1]["contents"][0]["text"] == "清冷女團入坑"
 
 
-def test_ai_curator_preference_uses_local_fallback(monkeypatch) -> None:
-    monkeypatch.setattr(
-        app_module,
-        "settings",
-        SimpleNamespace(
-            base_dir=Path(app_module.__file__).resolve().parent,
-            use_gemini_mock=True,
-            gemini_api_key=None,
-            gemini_model="gemini-3.5-flash",
-        ),
-    )
-    client = app.test_client()
+def test_ai_curator_preference_uses_local_fallback() -> None:
+    client = make_app().test_client()
 
     response = client.post(
         "/analyze",
@@ -637,18 +605,8 @@ def test_ai_curator_preference_uses_local_fallback(monkeypatch) -> None:
     assert not any("color" in item for item in payload["flex"]["body"]["contents"])
 
 
-def test_ai_curator_accepts_simple_appearance_preference(monkeypatch) -> None:
-    monkeypatch.setattr(
-        app_module,
-        "settings",
-        SimpleNamespace(
-            base_dir=Path(app_module.__file__).resolve().parent,
-            use_gemini_mock=True,
-            gemini_api_key=None,
-            gemini_model="gemini-3.5-flash",
-        ),
-    )
-    client = app.test_client()
+def test_ai_curator_accepts_simple_appearance_preference() -> None:
+    client = make_app().test_client()
 
     response = client.post("/analyze", json={"message": "我喜歡小鹿臉的"})
     payload = response.get_json()
@@ -670,18 +628,8 @@ def test_ai_curator_accepts_simple_appearance_preference(monkeypatch) -> None:
     assert "每日直拍" in button_texts
 
 
-def test_ai_curator_accepts_loose_rap_member_question(monkeypatch) -> None:
-    monkeypatch.setattr(
-        app_module,
-        "settings",
-        SimpleNamespace(
-            base_dir=Path(app_module.__file__).resolve().parent,
-            use_gemini_mock=True,
-            gemini_api_key=None,
-            gemini_model="gemini-3.5-flash",
-        ),
-    )
-    client = app.test_client()
+def test_ai_curator_accepts_loose_rap_member_question() -> None:
+    client = make_app().test_client()
 
     response = client.post(
         "/analyze",
@@ -695,17 +643,8 @@ def test_ai_curator_accepts_loose_rap_member_question(monkeypatch) -> None:
     assert payload["flex"]["header"]["contents"][0]["text"] == "接下來想看？"
 
 
-def test_ai_curator_accepts_artist_member_question(monkeypatch) -> None:
-    monkeypatch.setattr(
-        app_module,
-        "settings",
-        SimpleNamespace(
-            base_dir=Path(app_module.__file__).resolve().parent,
-            use_gemini_mock=True,
-            gemini_api_key=None,
-            gemini_model="gemini-3.5-flash",
-        ),
-    )
+def test_ai_curator_accepts_artist_member_question() -> None:
+    app = make_app()
     client = app.test_client()
 
     response = client.post(
@@ -713,7 +652,7 @@ def test_ai_curator_accepts_artist_member_question(monkeypatch) -> None:
         json={"message": "有沒有推薦nmixx的成員"},
     )
     payload = response.get_json()
-    context = app_module._build_ai_curator_context("有沒有推薦nmixx的成員")
+    context = bot_of(app).features.ai_curator._build_ai_curator_context("有沒有推薦nmixx的成員")
 
     assert response.status_code == 200
     assert payload["report"].startswith("🧭 AI 入坑")
@@ -725,18 +664,8 @@ def test_ai_curator_accepts_artist_member_question(monkeypatch) -> None:
     } == {"NMIXX"}
 
 
-def test_ai_curator_followup_has_three_reason_buttons_when_three_members(monkeypatch) -> None:
-    monkeypatch.setattr(
-        app_module,
-        "settings",
-        SimpleNamespace(
-            base_dir=Path(app_module.__file__).resolve().parent,
-            use_gemini_mock=True,
-            gemini_api_key=None,
-            gemini_model="gemini-3.5-flash",
-        ),
-    )
-    client = app.test_client()
+def test_ai_curator_followup_has_three_reason_buttons_when_three_members() -> None:
+    client = make_app().test_client()
 
     response = client.post("/analyze", json={"message": "我喜歡小鹿臉的"})
     payload = response.get_json()
@@ -750,14 +679,14 @@ def test_ai_curator_followup_has_three_reason_buttons_when_three_members(monkeyp
 
 
 def test_ai_curator_followup_without_recommended_members_keeps_default_buttons() -> None:
-    flex = app_module._build_ai_curator_followup_flex_contents(None, [])
+    flex = _build_ai_curator_followup_flex_contents(None, [])
     button_texts = [item["action"]["text"] for item in flex["body"]["contents"]]
 
     assert button_texts == ["本命雷達測驗", "每日 MV", "每日直拍"]
 
 
 def test_ai_curator_followup_reason_buttons_keep_member_only_text_for_duplicate_names() -> None:
-    flex = app_module._build_ai_curator_followup_flex_contents(
+    flex = _build_ai_curator_followup_flex_contents(
         None,
         [
             {"artist": "NMIXX", "member": "JIWOO"},
@@ -771,37 +700,18 @@ def test_ai_curator_followup_reason_buttons_keep_member_only_text_for_duplicate_
     assert "為什麼推薦 Hearts2Hearts Jiwoo？" not in button_texts
 
 
-def test_ai_curator_daily_entry_comes_from_recommended_artists(monkeypatch) -> None:
-    monkeypatch.setattr(
-        app_module,
-        "settings",
-        SimpleNamespace(
-            base_dir=Path(app_module.__file__).resolve().parent,
-            use_gemini_mock=True,
-            gemini_api_key=None,
-            gemini_model="gemini-3.5-flash",
-        ),
-    )
+def test_ai_curator_daily_entry_comes_from_recommended_artists() -> None:
 
-    context = app_module._build_ai_curator_context("我想入坑清冷感、舞台強的女團")
+    ai_curator = bot_of(make_app()).features.ai_curator
+    context = ai_curator._build_ai_curator_context("我想入坑清冷感、舞台強的女團")
     recommended_artists = set(context["recommended_artists"][:3])
 
     assert context["daily_items"]
     assert all(item["artist"] in recommended_artists for item in context["daily_items"])
 
 
-def test_ai_curator_reason_followup_uses_member_csv_and_fancam(monkeypatch) -> None:
-    monkeypatch.setattr(
-        app_module,
-        "settings",
-        SimpleNamespace(
-            base_dir=Path(app_module.__file__).resolve().parent,
-            use_gemini_mock=True,
-            gemini_api_key=None,
-            gemini_model="gemini-3.5-flash",
-        ),
-    )
-    client = app.test_client()
+def test_ai_curator_reason_followup_uses_member_csv_and_fancam() -> None:
+    client = make_app().test_client()
 
     response = client.post("/analyze", json={"message": "為什麼推薦 Sullyoon？"})
     payload = response.get_json()
@@ -829,18 +739,8 @@ def test_ai_curator_reason_followup_uses_member_csv_and_fancam(monkeypatch) -> N
     assert payload["flex"] is None
 
 
-def test_ai_curator_reason_followup_accepts_lowercase_member(monkeypatch) -> None:
-    monkeypatch.setattr(
-        app_module,
-        "settings",
-        SimpleNamespace(
-            base_dir=Path(app_module.__file__).resolve().parent,
-            use_gemini_mock=True,
-            gemini_api_key=None,
-            gemini_model="gemini-3.5-flash",
-        ),
-    )
-    client = app.test_client()
+def test_ai_curator_reason_followup_accepts_lowercase_member() -> None:
+    client = make_app().test_client()
 
     response = client.post("/analyze", json={"message": "推薦 karina 的理由是什麼？"})
     payload = response.get_json()
@@ -851,20 +751,8 @@ def test_ai_curator_reason_followup_accepts_lowercase_member(monkeypatch) -> Non
     assert "直拍" in payload["report"]
 
 
-def test_ai_curator_reason_followup_uses_artist_to_disambiguate_duplicate_member(
-    monkeypatch,
-) -> None:
-    monkeypatch.setattr(
-        app_module,
-        "settings",
-        SimpleNamespace(
-            base_dir=Path(app_module.__file__).resolve().parent,
-            use_gemini_mock=True,
-            gemini_api_key=None,
-            gemini_model="gemini-3.5-flash",
-        ),
-    )
-    client = app.test_client()
+def test_ai_curator_reason_followup_uses_artist_to_disambiguate_duplicate_member() -> None:
+    client = make_app().test_client()
 
     response = client.post("/analyze", json={"message": "為什麼推薦 NMIXX Jiwoo？"})
     payload = response.get_json()
@@ -876,11 +764,9 @@ def test_ai_curator_reason_followup_uses_artist_to_disambiguate_duplicate_member
 
 
 def test_ai_curator_reason_followup_uses_last_ai_context_for_duplicate_member_name(
-    monkeypatch,
     tmp_path: Path,
 ) -> None:
-    _use_ai_curator_reason_csv(
-        monkeypatch,
+    app = _use_ai_curator_reason_csv(
         tmp_path,
         bias_members_csv=(
             "id,artist,member,gender_group,group_type,appearance,position,vibe,relationship,url,source_url\n"
@@ -894,7 +780,7 @@ def test_ai_curator_reason_followup_uses_last_ai_context_for_duplicate_member_na
         ),
         daily_mv_csv="artist,title,url\nNMIXX,DASH,https://example.com/nmixx-mv\n",
     )
-    app_module._store_ai_curator_reason_context(
+    bot_of(app).features.ai_curator._store_ai_curator_reason_context(
         "duplicate-jiwoo",
         [{"artist": "NMIXX", "member": "JIWOO"}],
     )
@@ -913,9 +799,8 @@ def test_ai_curator_reason_followup_uses_last_ai_context_for_duplicate_member_na
     assert "https://example.com/h2h-jiwoo" not in payload["report"]
 
 
-def test_ai_curator_reason_followup_prefers_member_fancam_csv(monkeypatch, tmp_path: Path) -> None:
-    _use_ai_curator_reason_csv(
-        monkeypatch,
+def test_ai_curator_reason_followup_prefers_member_fancam_csv(tmp_path: Path) -> None:
+    app = _use_ai_curator_reason_csv(
         tmp_path,
         daily_fancam_csv=(
             "artist,title,member,url\n"
@@ -934,11 +819,9 @@ def test_ai_curator_reason_followup_prefers_member_fancam_csv(monkeypatch, tmp_p
 
 
 def test_ai_curator_reason_followup_falls_back_to_artist_mv_without_fancam(
-    monkeypatch,
     tmp_path: Path,
 ) -> None:
-    _use_ai_curator_reason_csv(
-        monkeypatch,
+    app = _use_ai_curator_reason_csv(
         tmp_path,
         daily_fancam_csv="artist,title,member,url\n",
         daily_mv_csv="artist,title,url\nNMIXX,DASH,https://example.com/nmixx-dash-mv\n",
@@ -954,24 +837,17 @@ def test_ai_curator_reason_followup_falls_back_to_artist_mv_without_fancam(
 
 
 def test_ai_curator_reason_followup_gemini_failure_still_returns_link(
-    monkeypatch,
     tmp_path: Path,
 ) -> None:
-    _use_ai_curator_reason_csv(
-        monkeypatch,
+    app = _use_ai_curator_reason_csv(
         tmp_path,
         daily_fancam_csv=(
             "artist,title,member,url\n"
             "NMIXX,Love Me Like This,Sullyoon,https://example.com/sullyoon-fancam\n"
         ),
         daily_mv_csv="artist,title,url\nNMIXX,DASH,https://example.com/nmixx-mv\n",
-        use_gemini_mock=False,
+        llm=FakeLlm(error=RuntimeError("Gemini unavailable")),
     )
-
-    def raise_gemini_error(*args, **kwargs):
-        raise RuntimeError("Gemini unavailable")
-
-    monkeypatch.setattr(app_module.requests, "post", raise_gemini_error)
     client = app.test_client()
 
     response = client.post("/analyze", json={"message": "為什麼推薦 Sullyoon？"})
@@ -982,19 +858,8 @@ def test_ai_curator_reason_followup_gemini_failure_still_returns_link(
     assert "https://example.com/sullyoon-fancam" in payload["report"]
 
 
-def test_ai_curator_reason_followup_runs_after_fixed_analyze_routes(monkeypatch) -> None:
-    monkeypatch.setattr(
-        app_module,
-        "settings",
-        SimpleNamespace(
-            base_dir=Path(app_module.__file__).resolve().parent,
-            use_gemini_mock=True,
-            gemini_api_key=None,
-            gemini_model="gemini-3.5-flash",
-        ),
-    )
-    client = app.test_client()
-    app_module.bias_radar_sessions.clear()
+def test_ai_curator_reason_followup_runs_after_fixed_analyze_routes() -> None:
+    client = make_app().test_client()
 
     ai_entry = client.post("/analyze", json={"message": "AI 入坑"}).get_json()
     preference = client.post("/analyze", json={"message": "我喜歡小鹿臉的"}).get_json()
@@ -1020,19 +885,8 @@ def test_ai_curator_reason_followup_runs_after_fixed_analyze_routes(monkeypatch)
     assert reason["flex"] is None
 
 
-def test_webhook_mock_routes_reason_followup_after_fixed_commands(monkeypatch) -> None:
-    monkeypatch.setattr(
-        app_module,
-        "settings",
-        SimpleNamespace(
-            base_dir=Path(app_module.__file__).resolve().parent,
-            use_line_mock=True,
-            use_gemini_mock=True,
-            gemini_api_key=None,
-            gemini_model="gemini-3.5-flash",
-        ),
-    )
-    client = app.test_client()
+def test_webhook_mock_routes_reason_followup_after_fixed_commands() -> None:
+    client = make_app().test_client()
 
     daily_response = json.loads(client.post("/webhook", json={"message": "每日 MV"}).data)
     ai_entry_response = json.loads(client.post("/webhook", json={"message": "AI 入坑"}).data)
@@ -1046,9 +900,8 @@ def test_webhook_mock_routes_reason_followup_after_fixed_commands(monkeypatch) -
     assert reason_response["mock_reply"].startswith("✨ 我會先推 NMIXX Sullyoon")
 
 
-def test_member_quiz_does_not_affect_photo_card_or_fan_attribute(monkeypatch, tmp_path: Path) -> None:
-    _use_photo_card_csv(
-        monkeypatch,
+def test_member_quiz_does_not_affect_photo_card_or_fan_attribute(tmp_path: Path) -> None:
+    app = _use_photo_card_csv(
         tmp_path,
         "artist,type,url\nKarina,直拍,https://example.com/karina\n",
     )
@@ -1062,7 +915,7 @@ def test_member_quiz_does_not_affect_photo_card_or_fan_attribute(monkeypatch, tm
 
 
 def test_analyze_artist_payload_is_used_when_message_has_no_artist() -> None:
-    client = app.test_client()
+    client = make_app().test_client()
 
     response = client.post(
         "/analyze",
@@ -1075,7 +928,7 @@ def test_analyze_artist_payload_is_used_when_message_has_no_artist() -> None:
     assert payload["cache"]["artist"] == "aespa"
 
 
-def test_historical_weekly_chart_command_returns_selected_week(monkeypatch, tmp_path: Path) -> None:
+def test_historical_weekly_chart_command_returns_selected_week(tmp_path: Path) -> None:
     repo = ChartHistoryRepository(db_path=tmp_path / "chart_history.db")
     repo.insert_chart_rows(
         [{
@@ -1088,8 +941,7 @@ def test_historical_weekly_chart_command_returns_selected_week(monkeypatch, tmp_
             "artist": "Test Artist",
         }]
     )
-    monkeypatch.setattr(app_module, "agent", KpopAnalysisAgent(chart_repo=repo))
-    client = app.test_client()
+    client = make_app(make_deps(agent=KpopAnalysisAgent(chart_repo=repo))).test_client()
 
     response = client.post("/analyze", json={"message": "歷史週榜:2026-05-11"})
     payload = response.get_json()
@@ -1102,19 +954,15 @@ def test_historical_weekly_chart_command_returns_selected_week(monkeypatch, tmp_
     assert "1. Historical Song - Test Artist" in payload["report"]
 
 
-def test_weekly_chart_history_quick_reply_excludes_current_week(monkeypatch) -> None:
-    monkeypatch.setattr(
-        app_module,
-        "agent",
-        SimpleNamespace(
-            list_weekly_chart_dates=lambda limit=13, min_items=1: [
-                "2026-05-18",
-                "2026-05-11",
-            ]
-        ),
+def test_weekly_chart_history_quick_reply_excludes_current_week() -> None:
+    agent = SimpleNamespace(
+        list_weekly_chart_dates=lambda limit=13, min_items=1: [
+            "2026-05-18",
+            "2026-05-11",
+        ]
     )
 
-    qr = app_module._build_weekly_chart_history_quick_reply(
+    qr = ChartFeature(agent).build_weekly_chart_history_quick_reply(
         current_chart_date="2026-05-18"
     )
 
@@ -1123,21 +971,17 @@ def test_weekly_chart_history_quick_reply_excludes_current_week(monkeypatch) -> 
     assert qr[0].text == "歷史週榜:2026-05-11"
 
 
-def test_weekly_chart_history_quick_reply_orders_oldest_to_newest(monkeypatch) -> None:
-    monkeypatch.setattr(
-        app_module,
-        "agent",
-        SimpleNamespace(
-            list_weekly_chart_dates=lambda limit=13, min_items=1: [
-                "2026-06-01",
-                "2026-05-25",
-                "2026-05-18",
-                "2026-05-11",
-            ]
-        ),
+def test_weekly_chart_history_quick_reply_orders_oldest_to_newest() -> None:
+    agent = SimpleNamespace(
+        list_weekly_chart_dates=lambda limit=13, min_items=1: [
+            "2026-06-01",
+            "2026-05-25",
+            "2026-05-18",
+            "2026-05-11",
+        ]
     )
 
-    qr = app_module._build_weekly_chart_history_quick_reply(
+    qr = ChartFeature(agent).build_weekly_chart_history_quick_reply(
         current_chart_date="2026-06-01"
     )
 
@@ -1148,42 +992,41 @@ def test_weekly_chart_history_quick_reply_orders_oldest_to_newest(monkeypatch) -
     ]
 
 
-def test_bias_radar_session_prunes_expired_session(monkeypatch) -> None:
-    app_module.bias_radar_sessions.clear()
-    app_module.bias_radar_sessions["expired-user"] = {
+def test_bias_radar_session_prunes_expired_session() -> None:
+    bias_radar = build_bot(make_deps(clock=lambda: 10_000)).features.bias_radar
+    bias_radar.bias_radar_sessions["expired-user"] = {
         "question_index": 1,
         "answers": ["男團"],
         "updated_at": 1,
     }
-    monkeypatch.setattr(app_module, "time", lambda: 10_000)
 
-    assert app_module._is_bias_radar_quiz_request("普通訊息", "expired-user") is False
-    assert "expired-user" not in app_module.bias_radar_sessions
+    assert bias_radar.is_bias_radar_quiz_request("普通訊息", "expired-user") is False
+    assert "expired-user" not in bias_radar.bias_radar_sessions
 
 
 def test_dispatcher_bias_radar_uses_passed_user_id() -> None:
-    app_module.bias_radar_sessions.clear()
 
-    first_reply = app_module.dispatcher.dispatch(
-        app_module.MessageContext(text="本命雷達測驗", user_id="text-flow-user")
+    dispatcher = build_bot(make_deps()).dispatcher
+
+    first_reply = dispatcher.dispatch(
+        MessageContext(text="本命雷達測驗", user_id="text-flow-user")
     ).report
-    second_reply = app_module.dispatcher.dispatch(
-        app_module.MessageContext(text="本命雷達:0:女團", user_id="text-flow-user")
+    second_reply = dispatcher.dispatch(
+        MessageContext(text="本命雷達:0:女團", user_id="text-flow-user")
     ).report
 
     assert first_reply.startswith("本命雷達測驗 Q1/5")
     assert second_reply.startswith("本命雷達測驗 Q2/5")
 
 
-def test_ai_curator_reason_context_prunes_expired_context(monkeypatch) -> None:
-    app_module.ai_curator_reason_contexts.clear()
-    app_module.ai_curator_reason_contexts["expired-user"] = {
+def test_ai_curator_reason_context_prunes_expired_context() -> None:
+    ai_curator = build_bot(make_deps(clock=lambda: 10_000)).features.ai_curator
+    ai_curator.ai_curator_reason_contexts["expired-user"] = {
         "members": [{"artist": "NMIXX", "member": "Sullyoon"}],
         "stored_at": 1,
     }
-    monkeypatch.setattr(app_module, "time", lambda: 10_000)
 
-    members = app_module._ai_curator_reason_context_members("expired-user")
+    members = ai_curator._ai_curator_reason_context_members("expired-user")
 
     assert members == []
-    assert "expired-user" not in app_module.ai_curator_reason_contexts
+    assert "expired-user" not in ai_curator.ai_curator_reason_contexts

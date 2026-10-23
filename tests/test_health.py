@@ -1,8 +1,8 @@
-from app import app
+from tests.fakes import make_app
 
 
 def test_health_reports_integrations() -> None:
-    client = app.test_client()
+    client = make_app().test_client()
 
     response = client.get("/health")
     payload = response.get_json()

@@ -1,6 +1,6 @@
 from types import SimpleNamespace
 
-import app as app_module
+from src.bot.line_events import LineEventGuard, _line_event_id
 
 
 def _event(event_id: str, user_id: str = "user-1"):
@@ -11,59 +11,51 @@ def _event(event_id: str, user_id: str = "user-1"):
 
 
 def test_line_event_id_supports_sdk_snake_case() -> None:
-    assert app_module._line_event_id(_event("event-1")) == "event-1"
+    assert _line_event_id(_event("event-1")) == "event-1"
 
 
-def test_line_event_dedupe_skips_processed_event(monkeypatch, tmp_path) -> None:
-    monkeypatch.setattr(app_module, "LINE_EVENT_DEDUPE_PATH", tmp_path / "seen.json")
-    monkeypatch.setattr(app_module, "line_processed_event_ids", None)
-    app_module.line_processing_event_ids.clear()
-    app_module.line_recent_message_keys.clear()
-
+def test_line_event_dedupe_skips_processed_event(tmp_path) -> None:
+    guard = LineEventGuard(tmp_path / "seen.json")
     event = _event("event-1")
 
-    assert app_module._should_skip_line_event(event, "每日 MV") is False
-    app_module._mark_line_event_processed(event)
-    assert app_module._should_skip_line_event(event, "每日 MV") is True
+    assert guard.should_skip_line_event(event, "每日 MV") is False
+    guard.mark_line_event_processed(event)
+    assert guard.should_skip_line_event(event, "每日 MV") is True
 
 
-def test_line_event_dedupe_survives_process_restart(monkeypatch, tmp_path) -> None:
-    monkeypatch.setattr(app_module, "LINE_EVENT_DEDUPE_PATH", tmp_path / "seen.json")
-    monkeypatch.setattr(app_module, "line_processed_event_ids", None)
-    app_module.line_processing_event_ids.clear()
-    app_module.line_recent_message_keys.clear()
-
+def test_line_event_dedupe_survives_process_restart(tmp_path) -> None:
     event = _event("event-1")
-    assert app_module._should_skip_line_event(event, "每日 MV") is False
-    app_module._mark_line_event_processed(event)
+    first_process = LineEventGuard(tmp_path / "seen.json")
+    assert first_process.should_skip_line_event(event, "每日 MV") is False
+    first_process.mark_line_event_processed(event)
 
-    monkeypatch.setattr(app_module, "line_processed_event_ids", None)
-    app_module.line_processing_event_ids.clear()
-    app_module.line_recent_message_keys.clear()
+    restarted_process = LineEventGuard(tmp_path / "seen.json")
 
-    assert app_module._should_skip_line_event(event, "每日 MV") is True
+    assert restarted_process.should_skip_line_event(event, "每日 MV") is True
 
 
-def test_line_event_dedupe_writes_cache_atomically(monkeypatch, tmp_path) -> None:
+def test_line_event_dedupe_writes_cache_atomically(tmp_path) -> None:
     cache_path = tmp_path / "seen.json"
-    monkeypatch.setattr(app_module, "LINE_EVENT_DEDUPE_PATH", cache_path)
-    monkeypatch.setattr(app_module, "line_processed_event_ids", None)
-    app_module.line_processing_event_ids.clear()
-    app_module.line_recent_message_keys.clear()
+    guard = LineEventGuard(cache_path)
 
     event = _event("event-atomic")
-    assert app_module._should_skip_line_event(event, "每日 MV") is False
-    app_module._mark_line_event_processed(event)
+    assert guard.should_skip_line_event(event, "每日 MV") is False
+    guard.mark_line_event_processed(event)
 
     assert cache_path.exists()
     assert not cache_path.with_name(f"{cache_path.name}.tmp").exists()
 
 
-def test_line_message_debounce_skips_fast_duplicate(monkeypatch, tmp_path) -> None:
-    monkeypatch.setattr(app_module, "LINE_EVENT_DEDUPE_PATH", tmp_path / "seen.json")
-    monkeypatch.setattr(app_module, "line_processed_event_ids", None)
-    app_module.line_processing_event_ids.clear()
-    app_module.line_recent_message_keys.clear()
+def test_line_message_debounce_skips_fast_duplicate(tmp_path) -> None:
+    guard = LineEventGuard(tmp_path / "seen.json", monotonic=lambda: 100.0)
 
-    assert app_module._should_skip_line_event(_event("event-1"), "每日 MV") is False
-    assert app_module._should_skip_line_event(_event("event-2"), "每日 MV") is True
+    assert guard.should_skip_line_event(_event("event-1"), "每日 MV") is False
+    assert guard.should_skip_line_event(_event("event-2"), "每日 MV") is True
+
+
+def test_line_message_debounce_allows_repeat_after_window(tmp_path) -> None:
+    now = iter([100.0, 102.0])
+    guard = LineEventGuard(tmp_path / "seen.json", monotonic=lambda: next(now))
+
+    assert guard.should_skip_line_event(_event("event-1"), "每日 MV") is False
+    assert guard.should_skip_line_event(_event("event-2"), "每日 MV") is False

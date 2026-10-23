@@ -33,7 +33,7 @@ import requests
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from app import AI_CURATOR_PROFILE_VOCAB
+from src.bot.features.ai_curator import AI_CURATOR_PROFILE_VOCAB
 from src.agent import GEMINI_API_URL, GEMINI_REQUEST_TIMEOUT_SECONDS
 from src.config import settings
 

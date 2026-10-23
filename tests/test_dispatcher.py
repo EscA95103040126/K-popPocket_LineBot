@@ -2,10 +2,12 @@ from __future__ import annotations
 
 import pytest
 
-import app as app_module
+from src.bot.container import build_bot
 from src.bot.dispatcher import Dispatcher, Handler, MessageContext
 from src.bot.line_renderer import build_line_messages
 from src.bot.reply import QuickReplyAction, Reply
+from src.bot.routing import is_fixed_command
+from tests.fakes import make_deps
 
 
 def _context(text: str, user_id: str = "routing-user") -> MessageContext:
@@ -67,24 +69,40 @@ def test_dispatcher_rejects_duplicate_handler_names() -> None:
     ],
 )
 def test_routing_table(message: str, expected: str) -> None:
-    app_module.bias_radar_sessions.clear()
+    dispatcher = build_bot(make_deps()).dispatcher
 
-    assert app_module.dispatcher.resolve(_context(message)).name == expected
+    assert dispatcher.resolve(_context(message)).name == expected
 
 
 def test_fixed_commands_escape_an_active_bias_radar_session() -> None:
-    app_module.bias_radar_sessions.clear()
-    app_module.dispatcher.dispatch(_context("本命雷達測驗"))
+    dispatcher = build_bot(make_deps()).dispatcher
+    dispatcher.dispatch(_context("本命雷達測驗"))
 
-    assert app_module.dispatcher.resolve(_context("help")).name == "help"
-    assert app_module.dispatcher.resolve(_context("每日 MV")).name == "bias_radar_quiz"
-    app_module.bias_radar_sessions.clear()
+    assert dispatcher.resolve(_context("help")).name == "help"
+    assert dispatcher.resolve(_context("每日 MV")).name == "bias_radar_quiz"
+
+
+def test_bias_radar_sessions_are_isolated_per_bot() -> None:
+    first = build_bot(make_deps()).dispatcher
+    second = build_bot(make_deps()).dispatcher
+    first.dispatch(_context("本命雷達測驗"))
+
+    assert first.resolve(_context("女團")).name == "bias_radar_quiz"
+    assert second.resolve(_context("女團")).name != "bias_radar_quiz"
+
+
+@pytest.mark.parametrize(
+    ("message", "expected"),
+    [("本命雷達測驗", True), ("本命雷達:0:女團", True), ("每日 MV", True), ("我喜歡小鹿", False)],
+)
+def test_is_fixed_command_looks_only_at_text(message: str, expected: bool) -> None:
+    assert is_fixed_command(message) is expected
 
 
 def test_artist_hint_routes_to_artist_report() -> None:
     context = MessageContext(text="", user_id="u", artist_hint="aespa")
 
-    assert app_module.dispatcher.resolve(context).name == "artist_report"
+    assert build_bot(make_deps()).dispatcher.resolve(context).name == "artist_report"
 
 
 def test_line_renderer_sends_card_only_by_default() -> None:
