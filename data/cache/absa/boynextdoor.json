@@ -1,141 +1,2514 @@
 {
   "artist": "BOYNEXTDOOR",
-  "generated_at": "2026-06-05T08:59:21.344184+00:00",
+  "generated_at": "2026-10-11T15:45:34.201999+00:00",
+  "analysis_period": {
+    "start": "2026-10-01",
+    "end": "2026-10-11",
+    "timezone": "Asia/Taipei"
+  },
   "sources": {
     "naver_news": {
-      "count": 10,
+      "count": 40,
       "items": [
         {
-          "title": "보이넥스트도어, 신보 작업기 공개…\"이런 고통 처음\"",
-          "date": "2026-06-05",
-          "summary": "8일 정규 1집 'HOME' 발매 보이그룹 보이넥스트도어(BOYNEXTDOOR)가 연습생 시절 미공개 영상을 담은 작업기를 통해 새로운 서사를 예고했다. 보이넥스트도어(성호 리우 명재현 태산 이한 운학)는 지난 4일 오후 11시 하이브...",
+          "title": "‘비긴어게인’ HYNN(박혜원), 귀호강 타임",
+          "date": "2026-10-11",
+          "summary": "HYNN(박혜원)은 소란과 함께 보이넥스트도어(BOYNEXTDOOR)의 ‘오늘만 I LOVE YOU’를 선곡해 색다른 매력을 발산했다. 두 아티스트의 첫 듀엣 호흡에 대해 소란의 고영배는 “적일 때는 무섭지만 같은 편일 때는 너무...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/629/0000505250"
+          "link": "https://m.entertain.naver.com/article/144/0001143391",
+          "original_link": "https://sports.khan.co.kr/article/202610111952003?pt=nv"
         },
         {
-          "title": "‘컴백’ 보이넥스트도어, 연습생 시절 미공개 영상 공개 “진정성 있게...",
-          "date": "2026-06-05",
-          "summary": "그룹 보이넥스트도어(BOYNEXTDOOR)가 연습생 시절 미공개 영상을 담은 작업기를 공개했다. 보이넥스트도어(성호, 리우, 명재현, 태산, 이한, 운학)는 지난 4일 오후 11시 하이브 레이블즈 유튜브 채널에 정규 1집 ‘HOME’...",
+          "title": "‘코르티스·베몬·NCT 위시’, 5세대만 믿는다…엔터주, 내년이 승부처...",
+          "date": "2026-10-10",
+          "summary": "BTS 활동이 이어지는 데다 코르티스, 캣츠아이, 보이넥스트도어, 투어스까지 새 IP가 여러 갈래로 자리 잡고 있다. 특히 코르티스는 빠르게 팬덤을 넓히면서 앨범 판매량을 키우고 있고, 캣츠아이도 해외 음원...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/109/0005547182"
+          "link": "https://n.news.naver.com/mnews/article/016/0002707542?sid=101",
+          "original_link": "https://biz.heraldcorp.com/article/10897500?ref=naver"
         },
         {
-          "title": "보이넥스트도어 명재현·성호, '톡파원' 출격⋯첫 정규 'VIRAL' 공개",
-          "date": "2026-06-05",
-          "summary": "오는 8일 방송되는 JTBC '톡파원 25시'에는 첫 정규 앨범 'HOME'으로 돌아온 보이넥스트도어(BOYNEXTDOOR) 명재현과 성호가 게스트로 함께한다. '톡파원25시' [사진=JTBC] 최근 진행된 스튜디오 녹화에서 명재현은 전현무에게...",
+          "title": "클로즈 유어 아이즈, '뮤직뱅크' 1위 눈물 소감 \"사랑받는 게 뭔지 느껴...",
+          "date": "2026-10-09",
+          "summary": "9일 방송된 KBS2 '뮤직뱅크' 1위 후보에는 클로즈 유어 아이즈 '드롭 댓!'(Drop That!), 보이넥스트도어 '애니멀'(ANIMAL)이 올랐다. 1위는 총점 9020점을 받은 클로즈 유어 아이즈였다. 보이넥스트도어는 3334점으로 2위였다....",
           "category": "news",
-          "link": "http://www.joynews24.com/view/1974277"
+          "link": "http://www.stoo.com/article.php?aid=109292591881",
+          "original_link": "http://www.stoo.com/article.php?aid=109292591881"
         },
         {
-          "title": "‘컴백’ 보이넥스트도어, 연습생 시절 미공개 영상 공개 “팀 ‘챕터 ...",
-          "date": "2026-06-05",
-          "summary": "보이넥스트도어 ‘HOME VIDEO’ Ep.2 : HOME’ 영상 갈무리 보이넥스트도어(BOYNEXTDOOR)가 연습생 시절 미공개 영상을 담은 작업기를 깜짝 오픈했다. 보이넥스트도어(성호, 리우, 명재현, 태산, 이한, 운학)는 지난 4일 오후...",
+          "title": "드림에이지 ‘리듬하이브’, 아일릿 앙코르 공연 현장서 체험존·이벤트...",
+          "date": "2026-10-08",
+          "summary": "카드와 같은 디자인의 렌티큘러·홀로그램 초상 카드를 선착순 증정한다. 리듬하이브는 앞서 투어스와 르세라핌, 보이넥스트도어 등 하이브 소속 아티스트의 오프라인 공연과 게임 콘텐츠를 연계한 행사를 진행해 왔다.",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/112/0003797678"
+          "link": "https://n.news.naver.com/mnews/article/005/0001877616?sid=105",
+          "original_link": "https://www.kmib.co.kr/article/view.asp?arcid=9000021067&cp=nv"
         },
         {
-          "title": "보이넥스트도어, \"고통받은 적은 처음\"…연습생 미공개 영상까지 담은 ...",
-          "date": "2026-06-05",
-          "summary": "보이넥스트도어(BOYNEXTDOOR)가 첫 정규 앨범 'HOME'을 앞두고 연습생 시절 모습을 포함한 작업기를 선보이며 컴백 흐름을 이어가고 있다. 새 영상에는 앨범 제작 과정과 함께 그동안 드러나지 않았던 고민과 속마음이 함께...",
+          "title": "'위버스콘 페스티벌', 이번엔 인도로 간다…'위버스콘 페스티벌 인디아...",
+          "date": "2026-10-07",
+          "summary": "(Apink), 보이넥스트도어(BOYNEXTDOOR), 투어스(TWS), 가수 황민현(HWANG MIN HYUN), 김재중(KIM JAEJOONG), 권진아, 윤산하(YOON SANHA), 밴드 루시(LUCY)가 함께 했다. '위버스콘 페스티벌 인디아'는 오는 2027년 3월 27일과 28일...",
           "category": "news",
-          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16080217"
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16241088",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16241088"
         },
         {
-          "title": "보이넥스트도어, 신보 작업 뒷이야기 전하며 컴백 기대감 증폭",
-          "date": "2026-06-02",
-          "summary": "“그간 발매한 앨범 중 가장 솔직하고 감정적, 이번 컴백으로 보여줄 게 많아” 보이넥스트도어(BOYNEXTDOOR)가 뒤풀이 동영상에서 신보 정보를 방출했다. 보이넥스트도어(성호, 리우, 명재현, 태산, 이한, 운학)는 지난...",
+          "title": "김종국, 대만서 '인기 1위' 등극…지코엔 \"보넥도와 콘서트 제안\" ('상남...",
+          "date": "2026-10-06",
+          "summary": "특히 관계자는 KOZ엔터 수장인 지코에게 \"(소속 가수) 보이넥스트도어(보넥도)와 함께 콘서트를 해보는 게 어떻겠냐\"라고 제안해 뜨거운 호응을 자아냈다. / 사진= SBS Plus·MBN '상남자의 여행법 in 대만'",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/144/0001118797"
+          "link": "https://m.entertain.naver.com/article/213/0001403730",
+          "original_link": "https://www.tvreport.co.kr/broadcast/article/1081122/"
         },
         {
-          "title": "보이넥스트도어, 신보 정보 대방출",
-          "date": "2026-06-02",
-          "summary": "보이넥스트도어, 신보 정보 대방출 (출처: 보이넥스트도어 ‘HOME VIDEO’ EP.1：I Wonder) 보이넥스트도어(BOYNEXTDOOR)가 새 앨범 제작 비하인드를 공개하며 컴백 열기를 끌어올렸다. 보이넥스트도어(성호, 리우, 명재현...",
+          "title": "[뮤지션100주간] 올데이 프로젝트 26계단 에스파파 75계단 상승…리센느...",
+          "date": "2026-10-05",
+          "summary": "중위권에서는 보이넥스트도어가 43계단 오른 49위, 유니스가 31계단 오른 44위를 기록했다. 스코어는 각각 288.2점 증가한 517점, 241.1점 증가한 550점이었다. 보이넥스트도어는 'ANIMAL'의 스코어가 258점 증가했고...",
           "category": "news",
-          "link": "https://www.bntnews.co.kr/article/view/bnt202606020063"
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16238776",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16238776"
         },
         {
-          "title": "보이넥스트도어 “데뷔 3주년, 더 달리고 싶다”",
-          "date": "2026-05-30",
-          "summary": "그룹 보이넥스트도어(BOYNEXTDOOR)가 데뷔 3주년을 맞았다. 보이넥스트도어는 데뷔 3주년인 30일 소속사 KOZ 엔터테인먼트를 통해 “처음 올랐던 무대가 지금도 생생한데 벌써 데뷔 3주년이라니 감회가 새롭다”며...",
+          "title": "빅뱅, 스타트렌드 K-POP 그룹 1위 등극… 난지 1호숲 이어 월드투어까지...",
+          "date": "2026-10-04",
+          "summary": "보이넥스트도어·앵두걸스·스트레이 키즈 상위권 3위 보이넥스트도어는 5만5030표를 얻었다. 4위 앵두걸스는 1만3351표를 기록했다. 5위 스트레이 키즈는 4611표를 받았다. 6위부터 9위 피프티피프티, 온앤오프, 세븐틴...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/437/0000493698"
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=552356",
+          "original_link": "https://www.joongangenews.com/news/articleView.html?idxno=552356"
         },
         {
-          "title": "보이넥스트도어 명재현, 컴백 앞두고 부상…\"퍼포먼스 제한적 참여\"",
-          "date": "2026-06-01",
-          "summary": "그룹 보이넥스트도어(BOYNEXTDOOR) 명재현이 컴백을 앞두고 발목 부상을 당했다. 소속사 KOZ 엔터테인먼트는 1일 팬 소통 플랫폼 위버스를 통해 명재현 컨디션 및 스케줄 관련 안내 공지를 게재했다. 소속사 측은 \"명재현은...",
+          "title": "'2026 뮤직뱅크 글로벌 페스티벌 인 재팬', 라이즈-알파드라이브원 2차 ...",
+          "date": "2026-10-02",
+          "summary": "앞서 '2026 뮤직뱅크 글로벌 페스티벌 인 재팬' 1차 라인업으로 트와이스 미사모(MISAMO), 나연(NAYEON), 스트레이 키즈(Stray Kids), 에스파(aespa), 아이브(IVE), 보이넥스트도어(BOYNEXTDOOR), 엔시티 위시(NCT WISH)...",
           "category": "news",
-          "link": "http://www.celuvmedia.com/article.php?aid=1780295455521436007"
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16235472",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16235472"
         },
         {
-          "title": "보이넥스트도어, 정규 1집 ‘HOME’ 전곡 음원 일부 최초 공개",
-          "date": "2026-06-01",
-          "summary": "아이돌그룹 보이넥스트도어(BOYNEXTDOOR)가 오는 8일 컴백에 앞서 정규 1집 ‘HOME’ 전곡 음원 일부를 최초로 공개했다. 이들의 정규 1집에는 타이틀곡 ‘VIRAL’를 포함해 총 9곡이 수록될 예정이다. 여섯 멤버가...",
+          "title": "'2026 SBS 가요대전', 30주년 맞아 크리스마스 이브-25일 양일 개최…라...",
+          "date": "2026-10-01",
+          "summary": "라인업으로는 그룹 스트레이 키즈(Stray Kids), 투모로우바이투게더(TOMORROW X TOGETHER), 엔하이픈(ENHYPEN), 아이브, 르세라핌(LE SSERAFIM), 보이넥스트도어(BOYNEXTDOOR), 제로베이스원(ZEROBASEONE), 라이즈...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/144/0001118575"
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16232724",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16232724"
+        },
+        {
+          "title": "[업뎃] 드림에이지 '리듬하이브', 아일릿 앙코르 공연과 연계 프로모션...",
+          "date": "2026-10-11",
+          "summary": "'리듬하이브'는 앞서 투어스, 르세라핌, 보이넥스트도어 등 하이브 소속 아티스트들의 공연과 연계한 이벤트를 진행한 바 있다. 공연 현장 이벤트와 스페셜 테마 패키지에 대한 자세한 내용은 게임 내 공지사항과 공식...",
+          "category": "news",
+          "link": "http://www.worktoday.co.kr/news/articleView.html?idxno=90285",
+          "original_link": "http://www.worktoday.co.kr/news/articleView.html?idxno=90285"
+        },
+        {
+          "title": "아이들 소연, '퇴사할게여'로 '쇼! 음악중심' 1위…활동 끝난 후에도 인...",
+          "date": "2026-10-10",
+          "summary": "음악중심’에서는 소연의 '퇴사할게여’, 보이넥스트도어의 'ANIMAL’, 아이유의 '이럴 줄 알았어’가 1위 후보에 오른 가운데 소연이 최종 1위에 등극했다. 이날 소연은 음원 및 음반 점수 5005점, 동영상...",
+          "category": "news",
+          "link": "http://www.celuvmedia.com/article.php?aid=1791621391529009007",
+          "original_link": "http://www.celuvmedia.com/article.php?aid=1791621391529009007"
+        },
+        {
+          "title": "보이넥스트도어(BOYNEXTDOOR), 컴백 후 첫 음악방송 트로피 들어 올려",
+          "date": "2026-10-09",
+          "summary": "“선물처럼 준비한 ‘ANIMAL’ 사랑받아 감사해” 보이넥스트도어(BOYNEXTDOOR)가 가요 순위프로그램 1위를 차지했다. 보이넥스트도어(성호, 리우, 명재현, 태산, 이한, 운학)는 정규 1집 리패키지 ‘HOME...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/144/0001143147",
+          "original_link": "https://sports.khan.co.kr/article/202610091825003?pt=nv"
+        },
+        {
+          "title": "온유, 지코와 티키타카 통했다…음원 차트 1위",
+          "date": "2026-10-08",
+          "summary": "지금까지 ‘Tic Tac Toe’ 챌린지에는 지코와 샤이니 민호를 비롯해 제로베이스원 석매튜, 보이넥스트도어 성호·운학, 알파드라이브원 상현 등이 참여해 온유와 색다른 케미를 이뤘다. 특히, 후렴구 리듬에 맞춰...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/144/0001142962",
+          "original_link": "https://sports.khan.co.kr/article/202610081708003?pt=nv"
+        },
+        {
+          "title": "'엠카운트다운', 황민현-김재환 컴백 최초 공개→엔플라잉-킥플립 무대...",
+          "date": "2026-10-07",
+          "summary": "공개된 라인업에 따르면 이날 방송에는 니쥬(NiziU), 로시(Rothy), 보이넥스트도어(BOYNEXTDOOR), 올데이 프로젝트(ALLDAY PROJECT), 원어스(ONEUS), 크래비티(CRAVITY), 클로즈 유어 아이즈(CLOSE YOUR EYES), 튜이드(TUIDE)...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16240946",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16240946"
+        },
+        {
+          "title": "올가을 궁궐에 가면 뭐가 다를까…한복 입은 왕가 걷고, 종묘엔 수문장...",
+          "date": "2026-10-06",
+          "summary": "김영임, 김창완밴드, 린, 이승기, 송가인, 라포엠, 비투비 은광·민혁, 엔믹스, 보이넥스트도어, 싸이커스, 허니제이 등이 출연했다. 경복궁에서는 한복 입은 '왕가의 산책' 경복궁의 중심은 한복이다. 9일과 10일 오후...",
+          "category": "news",
+          "link": "http://www.ikoreanspirit.com/news/articleView.html?idxno=87608",
+          "original_link": "http://www.ikoreanspirit.com/news/articleView.html?idxno=87608"
+        },
+        {
+          "title": "보이넥스트도어(BOYNEXTDOOR), 한터 주간 차트 정상으로 직행",
+          "date": "2026-10-05",
+          "summary": "아이돌그룹 보이넥스트도어(BOYNEXTDOOR)가 정규 1집 리패키지 음반으로 한터 주간 차트 1위에 등극했다. 5일 국내 음반 판매량 집계 사이트 한터차트에 따르면, 보이넥스트도어(성호, 리우, 명재현, 태산, 이한...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/144/0001142257",
+          "original_link": "https://sports.khan.co.kr/article/202610051953003?pt=nv"
+        },
+        {
+          "title": "스타트렌드 K-POP 그룹 투표 1위 빅뱅, 플레이브 제치고 정상",
+          "date": "2026-10-04",
+          "summary": "보이넥스트도어부터 피프티피프티까지 상위권 3위 보이넥스트도어는 3만2045표를 기록했다. 4위 앵두걸스는 6294표를 얻었다. 5위 피프티피프티는 4607표를 기록하며 상위 5위에 이름을 올렸다. 6위부터 여자친구...",
+          "category": "news",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=552589",
+          "original_link": "https://www.joongangenews.com/news/articleView.html?idxno=552589"
+        },
+        {
+          "title": "보이넥스트도어, 'ANIMAL' MV 1천만 뷰 돌파",
+          "date": "2026-10-02",
+          "summary": "|중앙이코노미뉴스 조용우 기자|출처=KOZ 엔터테인먼트 보이넥스트도어(BOYNEXTDOOR)의 신곡 'ANIMAL' 뮤직비디오가 공개 사흘 만인 어제(1일) 오후 12시 20분께 유튜브 조회 수 1000만 건을 돌파했다. KOZ 엔터테인먼트에...",
+          "category": "news",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=552502",
+          "original_link": "https://www.joongangenews.com/news/articleView.html?idxno=552502"
+        },
+        {
+          "title": "보이넥스트도어(BOYNEXTDOOR) 신곡 ‘ANIMAL’, 뮤직비디오 1000만 뷰 돌파...",
+          "date": "2026-10-01",
+          "summary": "아이돌그룹 보이넥스트도어(BOYNEXTDOOR)의 신곡 ‘ANIMAL’ 뮤직비디오가 인기 상승기류를 타며 1000만 뷰를 돌파했다. 보이넥스트도어(성호, 리우, 명재현, 태산, 이한, 운학)가 지난달 28일 오후 6시 발매한 정규 1집...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/144/0001141720",
+          "original_link": "https://sports.khan.co.kr/article/202610012223003?pt=nv"
+        },
+        {
+          "title": "전소연 ‘퇴사할게여’ 1위 등극…솔로 저력 입증 (‘인기가요’)[셀럽...",
+          "date": "2026-10-11",
+          "summary": "한편 이날 ‘인기가요’에는 황민현, 김재환, 엔플라잉, 킥플립, 보이넥스트도어, 올데이 프로젝트, 원어스, 크래비티, 니쥬, 로시, 전유진, 클로즈 유어 아이즈 등이 출연해 다채로운 무대를 꾸몄다. [셀럽미디어 / 사진...",
+          "category": "news",
+          "link": "http://www.celuvmedia.com/article.php?aid=1791704926529031007",
+          "original_link": "http://www.celuvmedia.com/article.php?aid=1791704926529031007"
+        },
+        {
+          "title": "'음중' 아이들 소연, '퇴사할게여'로 1위…보넥도·아이유 순 [TV캡처]",
+          "date": "2026-10-10",
+          "summary": "10일 방송된 MBC '쇼!음악중심'에서 보이넥스트도어(BOYNEXTDOOR), 소연, 아이유가 1위 후보에 올랐다. 집계 결과, 소연은 '퇴사할게여 (Narr. 기안84)'로 음원+음반 점수 5005점, 동영상+방송 점수 382점...",
+          "category": "news",
+          "link": "http://www.stoo.com/article.php?aid=109297394150",
+          "original_link": "http://www.stoo.com/article.php?aid=109297394150"
+        },
+        {
+          "title": "보이넥스트도어, 컴백 후 ‘엠카’서 첫 1위 “팬들 덕에 하루하루 살아...",
+          "date": "2026-10-09",
+          "summary": "그룹 보이넥스트도어(BOYNEXTDOOR)가 신곡 ‘ANIMAL’로 컴백 후 첫 음악방송 트로피를 거머쥐었다. 보이넥스트도어(성호, 리우, 명재현, 태산, 이한, 운학)는 지난 8일 방송된 Mnet ‘엠카운트다운’에서 정규 1집...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/109/0005621259",
+          "original_link": "http://www.osen.co.kr/article/G1112890600"
+        },
+        {
+          "title": "온유, 지코와 함께 한 ‘Tic Tac Toe’ 음원 차트 1위!",
+          "date": "2026-10-08",
+          "summary": "지금까지 ‘틱택토(Tic Tac Toe)’ 챌린지에는 지코와 샤이니 민호를 비롯해 제로베이스원 석매튜, 보이넥스트도어 성호·운학, 알파드라이브원 상현 등이 참여해 온유와 색다른 케미를 이뤘다. 특히, 후렴구 리듬에...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/468/0001271498",
+          "original_link": "https://www.sportsseoul.com/news/read/1640309?ref=naver"
+        },
+        {
+          "title": "\"BTS 컴백 + 5세대 폭주 = 사상 최대 실적…하이브 주가만 딴세상인 이유...",
+          "date": "2026-10-07",
+          "summary": "4분기에는 TXT, 세븐틴 유닛, 엔하이픈 싱글, 투어스, 보이넥스트도어, 르세라핌, 아일릿 등 다수 아티스트의 컴백과 BTS의 남미, 아시아 스타디움 투어, 캣츠아이 북미 투어 등으로 약 250만명의 투어가 반영되며...",
+          "category": "news",
+          "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=302236",
+          "original_link": "https://www.newsquest.co.kr/news/articleView.html?idxno=302236"
+        },
+        {
+          "title": "[종합]\"대만 공연 함께하자\"…'상남자의 여행법' 지코, 현지 CEO 깜짝 제...",
+          "date": "2026-10-06",
+          "summary": "현지 최고경영진은 지코에게 그룹 보이넥스트도어와의 대만 현지 공연을 즉석에서 제안하며 높은 관심을 드러냈다. 현지 언론과 TV 뉴스 프로그램까지 세 사람의 방문 행보를 비중 있게 다루며 높은 화제성을 증명했다....",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16240021",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16240021"
+        },
+        {
+          "title": "보이넥스트도어, 리패키지 앨범으로 70만 장…팬덤 파워 확인",
+          "date": "2026-10-05",
+          "summary": "그룹 보이넥스트도어가 리패키지 앨범으로도 70만 장을 넘기며 팬덤의 체급을 증명했다. 보이넥스트도어의 정규 1집 리패키지 ‘HOME: DELUXE’는 9월 28일 발매 이후 일주일 동안 70만 28장이 판매돼 한터차트 주간 앨범...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/382/0001297248",
+          "original_link": "https://sports.donga.com/ent/article/all/20261005/134787391/1"
+        },
+        {
+          "title": "크래비티ㆍ클로즈 유어 아이즈ㆍ보이넥스트도어ㆍ올데이 프로젝트ㆍ니...",
+          "date": "2026-10-04",
+          "summary": "크래비티(CRAVITY)부터 클로즈 유어 아이즈(CLOSE YOUR EYES), 보이넥스트도어(BOYNEXTDOOR), 올데이 프로젝트(ALLDAY PROJECT), 니쥬(NiziU)까지 그 어느 때보다 다양한 장르의 신보가 이름을 올렸다. ◆ 크래비티, 미니 9집 '소노로스...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/440/0000047848",
+          "original_link": "http://www.tvdaily.co.kr/read.php3?aid=17910952781804674010"
+        },
+        {
+          "title": "'인기가요', 스페셜 MC 이한-운학과 함께…원어스→보이넥스트도어 컴백",
+          "date": "2026-10-02",
+          "summary": "이와 함께 공민지, 박재정, 원어스(ONEUS), 크래비티(CRAVITY), 니쥬(NiziU), 클로즈 유어 아이즈(CLOSE YOUR EYES), 티아이오티(TIOT), 보이넥스트도어(BOYNEXTDOOR), 올데이 프로젝트(ALLDAY PROJECT), 컴백 무대를 예고했다....",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16234547",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16234547"
+        },
+        {
+          "title": "600년 고궁의 가을 정취… '2026 가을 궁중문화축전' 10월 7일 개막",
+          "date": "2026-10-01",
+          "summary": "이번 무대에는 국악인 김영임을 비롯해 김창완밴드, 송가인, 이승기, 린, 라포엠, 엔믹스, 보이넥스트도어 등 세대를 아우르는 아티스트들이 대거 출연한다. 해당 공연은 안전한 관람 환경 조성을 위해 2011년생 이후...",
+          "category": "news",
+          "link": "https://www.ftimes.kr/news/articleView.html?idxno=40092",
+          "original_link": "https://www.ftimes.kr/news/articleView.html?idxno=40092"
+        },
+        {
+          "title": "'비긴어게인' 흰(박혜원), 귀 호강 라이브로 감동 선사…장혜진·소란과...",
+          "date": "2026-10-11",
+          "summary": "흰(박혜원)은 소란과 함께 보이넥스트도어 ‘오늘만 아이 러브 유’를 선곡해 색다른 매력을 보여줬다. 두 아티스트의 첫 듀엣 호흡에 대해 소란의 고영배는 “적일 때는 무섭지만 같은 편일 때는 너무 든든하다”며 흰...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/477/0000632489",
+          "original_link": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1012452"
+        },
+        {
+          "title": "방탄소년단, 보이그룹 브랜드평판 1위…2위 에이티즈·3위 스트레이 키...",
+          "date": "2026-10-10",
+          "summary": "이어 인피니트, 샤이니, 워너원, 슈퍼주니어, 비투비, 동방신기, 몬스타엑스, 2PM, 보이넥스트도어, 제로베이스원 등이 20위권에 이름을 올렸다. [김소연 스타투데이 기자]",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/009/0005746548",
+          "original_link": "https://www.mk.co.kr/article/12172703"
+        },
+        {
+          "title": "보이넥스트도어, 日 레코드협회 '플래티넘' 인증 획득",
+          "date": "2026-10-09",
+          "summary": "그룹 보이넥스트도어가 미니 5집으로 ‘플래티넘’ 기록을 추가했다. 9일 일본레코드협회 발표에 따르면 보이넥스트도어(성호, 리우, 명재현, 태산, 이한, 운학)의 미니 5집 ‘디 액션(The Action)’은 25만 장 이상...",
+          "category": "news",
+          "link": "https://www.mediapen.com/news/view/1128972",
+          "original_link": "https://www.mediapen.com/news/view/1128972"
+        },
+        {
+          "title": "40주차 써클차트 방탄소년단 1위…올데이 프로젝트·보이넥스트도어 급...",
+          "date": "2026-10-08",
+          "summary": "리센느와 하츠투하츠가 뒤를 이은 가운데 올데이 프로젝트는 72계단 상승한 6위, 보이넥스트도어는 31계단 상승한 7위에 오르며 상위권 판도를 흔들었다. 니쥬는 직전 주 미진입 상태에서 12위로 올라서며 환산...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16241911",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16241911"
+        },
+        {
+          "title": "리정 \"보넥도 명재현과 가까운 사이란 사실 몇 년 동안 숨겨\"",
+          "date": "2026-10-07",
+          "summary": "김고은 인턴기자 = 댄서 리정이 그룹 보이넥스트도어의 멤버 명재현과 의외의 친분을 드러냈다. 최근 유튜브 채널 '슈퍼댄서 LEE리정'에는 '재현아 우리집 놀러 올래?'라는 제목의 영상이 게재됐다. 영상에서 리정은...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/421/0009215667",
+          "original_link": "https://www.news1.kr/entertain/celebrity-topic/6313398"
+        },
+        {
+          "title": "'상남자의 여행법 in 대만' 젠슨황 맛집 초관심...지코 합류",
+          "date": "2026-10-06",
+          "summary": "특히 지코는 현지 경영진과의 만남에서 그룹 보이넥스트도어와 함께하는 대만 공연을 제안받는다. 여행 예능 촬영 도중 실제 비즈니스 이야기가 오가면서 프로듀서이자 아티스트인 지코가 어떤 반응을 보일지도 관전...",
+          "category": "news",
+          "link": "https://www.gukjenews.com/news/articleView.html?idxno=3714315",
+          "original_link": "https://www.gukjenews.com/news/articleView.html?idxno=3714315"
+        },
+        {
+          "title": "보넥도 정규 1집 리패키지, 한터 주간 차트 1위 직행 [MK★뮤직차트]",
+          "date": "2026-10-05",
+          "summary": "보이넥스트도어(BOYNEXTDOOR)의 정규 1집 리패키지가 한터 주간 차트 1위로 직행했다. 5일 국내 음반 판매량 집계 사이트 한터차트에 따르면, 보이넥스트도어(성호, 리우, 명재현, 태산, 이한, 운학)의 정규 1집...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/410/0001142325",
+          "original_link": "https://www.mk.co.kr/article/12168414"
+        },
+        {
+          "title": "보이넥스트도어, 정규 1집 리패키지로 日 오리콘 1위 직행",
+          "date": "2026-10-04",
+          "summary": "그룹 '보이넥스트도어(BOYNEXTDOOR·보넥도)'가 정규 1집 리패키지로 일본 오리콘 정상에 올랐다. 4일 오리콘 최신 차트에 따르면, 보이넥스트도어의 정규 1집 리패키지 '홈: 디럭스(HOME: DELUXE)'는 발매 첫날 오리콘...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/003/0014233063",
+          "original_link": "https://www.newsis.com/view/NISX20261004_0003813992"
+        },
+        {
+          "title": "아시안게임 폐막 맞춰 가요계 컴백 러시…10월 음방 경쟁 활활",
+          "date": "2026-10-02",
+          "summary": "이번 주 들어 보이넥스트도어, 니쥬, 올데이 프로젝트, 크래비티, 클로즈 유어 아이즈 등이 줄줄이 컴백 활동에 돌입했다. 보이넥스트도어는 ‘애니멀’(ANIMAL)을 타이틀곡으로 한 정규 1집 리패키지 ‘홈: 디럭스’(HOME...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/018/0006379731",
+          "original_link": "https://www.edaily.co.kr/News/Read?newsId=04582166645608984&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
+        },
+        {
+          "title": "소연, 로제 꺾고 10월 첫째 주 1위…활동 종료에도 '퇴사할게여' 롱런('...",
+          "date": "2026-10-01",
+          "summary": "한편, 이날 '엠카운트다운'에는 공민지, 박재정, 우디, 보라, 보이넥스트도어(BOYNEXTDOOR), 니쥬(NiziU), 올데이프로젝트(ALLDAY PROJECT), INI, 클로즈 유어 아이즈(CLOSE YOUR EYES), 크래비티(CRAVITY), 에반, 원어스...",
+          "category": "news",
+          "link": "http://www.celuvmedia.com/article.php?aid=1790851625528634007",
+          "original_link": "http://www.celuvmedia.com/article.php?aid=1790851625528634007"
         }
-      ]
+      ],
+      "retrieved_unique_non_photo": 209,
+      "pagination_limit_reached": false,
+      "date_timezone": "Asia/Seoul"
     },
     "youtube_comments": {
-      "count": 20
+      "count": 100,
+      "items": [
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "파트 미치겠네 8초 뭐야 진짜",
+          "comment_id": "UgwBAVn_ATkn2Xg5YWN4AaABAg",
+          "published_at": "2026-10-08T08:40:37Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgwBAVn_ATkn2Xg5YWN4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "퍼포먼스 비디오인건 알겠는데 영상효과나 편집으로 안무가 잘 안 보여서 아쉽",
+          "comment_id": "Ugzn1Tj_uu5osbspJ0F4AaABAg",
+          "published_at": "2026-10-11T04:16:26Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=Ugzn1Tj_uu5osbspJ0F4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "성호 무대 너무 잘해서 좋아허지 않고는 살 수 없는 병에 걸려버림",
+          "comment_id": "Ugxxg4RNkhGmya2u_e54AaABAg",
+          "published_at": "2026-10-08T15:40:54Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=Ugxxg4RNkhGmya2u_e54AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTAGE | 'Boom Boom Boom' Stage CAM @ 'KNOCK ON Vol.2' IN JAPAN - BOYNEXTDOOR (보이넥스트도어)",
+          "comment": "일본에서 탑티어에 올라갈 명곡이다",
+          "comment_id": "UgxzjqXfBkczB0VnBLJ4AaABAg",
+          "published_at": "2026-10-09T09:50:26Z",
+          "video_id": "5A3yTrVGQcQ",
+          "channel": "BOYNEXTDOOR",
+          "link": "https://www.youtube.com/watch?v=5A3yTrVGQcQ&lc=UgxzjqXfBkczB0VnBLJ4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "0:21 옆태 보여주고 씩 웃는 거 존나 좋다 하… 사랑해",
+          "comment_id": "UgwyYKvy3sMHeNgzAJB4AaABAg",
+          "published_at": "2026-10-10T07:58:00Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgwyYKvy3sMHeNgzAJB4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "0:48 성호 박자 놓힌거 귀엽당",
+          "comment_id": "UgxC8ax84pVDj5TF1Ix4AaABAg",
+          "published_at": "2026-10-06T06:17:57Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgxC8ax84pVDj5TF1Ix4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "아니 안무 위주로 보여주는 뮤비 개 좋음",
+          "comment_id": "UgxpzmGuS14UXg-Qsqx4AaABAg",
+          "published_at": "2026-10-10T17:29:37Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgxpzmGuS14UXg-Qsqx4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "분명 잤는데, 밤새 뇌(?)가 이 노래를 계속 부름. 흥이 흘러 넘치는데 몸치인게 한이 되는 노래다..",
+          "comment_id": "UgyXwz-AygxUfsvBaVx4AaABAg",
+          "published_at": "2026-10-08T13:58:57Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=UgyXwz-AygxUfsvBaVx4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "2:14 재현아 내 최애는 태산이지만 난 너 크럼프 보러 세시간에 한번씩 직캠본다",
+          "comment_id": "Ugx6FiptOIGlBhkHsWt4AaABAg",
+          "published_at": "2026-10-08T11:04:44Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=Ugx6FiptOIGlBhkHsWt4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "존멋❤",
+          "comment_id": "UgzGs_6IwFOG0WaFrgt4AaABAg",
+          "published_at": "2026-10-05T23:38:40Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgzGs_6IwFOG0WaFrgt4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "1:41 운학이 파트 조명 너무 감다살이고 태산이파트에서 항상 뒤에애들이 댄서때매 잘 안보였었는데 하이앵글로 보여줘버려서 진짜 2차감동옴",
+          "comment_id": "Ugxruu7malYMoI0OHXl4AaABAg",
+          "published_at": "2026-10-10T12:14:30Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=Ugxruu7malYMoI0OHXl4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "아…..리우오빠너무오빠같다",
+          "comment_id": "Ugy8eK8L7_iZ9sn1cUZ4AaABAg",
+          "published_at": "2026-10-08T06:38:48Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=Ugy8eK8L7_iZ9sn1cUZ4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "2:14 여기 크럼프 똑똑똑 랩파트 생각나서 더멋있음 의도한건가? 궁금하네",
+          "comment_id": "UgycjcejlnR9b9DMkYZ4AaABAg",
+          "published_at": "2026-10-07T22:22:12Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgycjcejlnR9b9DMkYZ4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "こんなにそれぞれメンバーの個性がある。だからこそ まとまって見えるステージ、感動します。 同じ曲でもひとつとして同じパフォーマンスはないように感じます。 毎回感動します。 ありがとう！ 이렇게 각자 멤버들의 개성이 있다 그렇기 때문에 정리되어 보이는 무대 감동적입니다 같은 곡이라도 똑같은 퍼포먼스는 하나도 없는 것처럼 느껴집니다. 매번 감동합니다 고마워❤🎉",
+          "comment_id": "UgzUIfT3tsuALSbAQr94AaABAg",
+          "published_at": "2026-10-05T22:54:41Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgzUIfT3tsuALSbAQr94AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "아 명재현 사랑해",
+          "comment_id": "UgwKz01Muat7DI0j39t4AaABAg",
+          "published_at": "2026-10-10T07:59:57Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgwKz01Muat7DI0j39t4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "1:29 어우ㅈㄴ잘생김",
+          "comment_id": "UgyMjJk1Z-veGB6PhvV4AaABAg",
+          "published_at": "2026-10-07T13:50:13Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=UgyMjJk1Z-veGB6PhvV4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "명재현 깜피 ㄹㅇ 개좋다 날티 레전드",
+          "comment_id": "UgzemV0vDqTV3j-iTc54AaABAg",
+          "published_at": "2026-10-07T16:50:40Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgzemV0vDqTV3j-iTc54AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "썸네일 뭐야 개잘겼어",
+          "comment_id": "UgywW8XFEBCDrALj_QN4AaABAg",
+          "published_at": "2026-10-05T15:48:58Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgywW8XFEBCDrALj_QN4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "진짜 한개도 집중 안됩니다ㅠ 카메라 좀 어지럽지않게 찍으면 안되나요ㅠ 아디오스때부터 왤케 어지럽게 찍는거지.. 각 잡고 찍은거보다 연습영상이 훨씬 나요",
+          "comment_id": "UgwQo3A_59E4dWwCP754AaABAg",
+          "published_at": "2026-10-09T14:08:59Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgwQo3A_59E4dWwCP754AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "0:21 이한이 혼자 너무 순둥순둥하게 생겻어ㅜㅜ",
+          "comment_id": "Ugy0_G9_5nEQMR4S6Qh4AaABAg",
+          "published_at": "2026-10-06T11:27:02Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=Ugy0_G9_5nEQMR4S6Qh4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "명재현이 좋다😊 열심히 살어라 항상 응원해",
+          "comment_id": "UgztEAmKPKGvNCm01EJ4AaABAg",
+          "published_at": "2026-10-07T13:52:29Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgztEAmKPKGvNCm01EJ4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "와씨 이걸 무대몰입력이라 하는구나 그냥 미침 그냥 애들이 이 무대에 한 몸이 돼서 추네",
+          "comment_id": "UgyBDtNLeWmwX8lxBbx4AaABAg",
+          "published_at": "2026-10-05T14:07:00Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgyBDtNLeWmwX8lxBbx4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "나 반송댄스에서 이거배우는데 고릴라 표현할때 애들다웃음ㅋㅋㅋㅋ",
+          "comment_id": "UgwjY3oask99N3aYiBV4AaABAg",
+          "published_at": "2026-10-09T08:08:04Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgwjY3oask99N3aYiBV4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "1:53 명재현 행진곡",
+          "comment_id": "Ugx44Zt3raTQntqRopB4AaABAg",
+          "published_at": "2026-10-06T08:32:08Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=Ugx44Zt3raTQntqRopB4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "톤다운 너무 좋다 오래오래 많이많이 해주세요 재현아아아",
+          "comment_id": "Ugx0BSzAQF0TSOdDP9B4AaABAg",
+          "published_at": "2026-10-07T13:41:39Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=Ugx0BSzAQF0TSOdDP9B4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "아 용호 개좋아..",
+          "comment_id": "UgwMEc7LRTiC4AhPLsR4AaABAg",
+          "published_at": "2026-10-05T14:03:42Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgwMEc7LRTiC4AhPLsR4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "2:12 여기서 너무 좋아서 소리지름",
+          "comment_id": "UgwfB26679DEsS-PfbB4AaABAg",
+          "published_at": "2026-10-08T10:32:56Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgwfB26679DEsS-PfbB4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "썸네일을 지나칠수가없네 들어오라고 애교를 부리는데 안넘어올리가 ㅋㅋㅋㅋㅋㅋ",
+          "comment_id": "UgzNxb-qvIWW7BRbjKl4AaABAg",
+          "published_at": "2026-10-06T03:25:03Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=UgzNxb-qvIWW7BRbjKl4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "열정적으로 활동 하는것도 너무너무 좋지만..지치면 조금 쉬어도 괜찮아... 원도어들은 기다릴 수 있어. 재현아 너를 이루는 그 모든걸 사랑해. 앞으로도 화이팅 하자! 재현이 최고",
+          "comment_id": "UgwMu-5_qGJrkJ0CP1V4AaABAg",
+          "published_at": "2026-10-07T05:56:09Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgwMu-5_qGJrkJ0CP1V4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "한태산 눈썹 반 없는거 구라같다 스크래치 미쳤네",
+          "comment_id": "UgzWWhiem8ZKL5dLT014AaABAg",
+          "published_at": "2026-10-05T14:00:36Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgzWWhiem8ZKL5dLT014AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "와이씨 개좋다",
+          "comment_id": "Ugykfze6grImW19SYIN4AaABAg",
+          "published_at": "2026-10-07T19:16:43Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=Ugykfze6grImW19SYIN4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "신난요 신나",
+          "comment_id": "UgwCX4ha3ieCMeDcNhp4AaABAg",
+          "published_at": "2026-10-05T23:33:23Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=UgwCX4ha3ieCMeDcNhp4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "얼굴은 가졌지만 인성은 못 가졌군",
+          "comment_id": "Ugwd5tmv1aeYEKNqyA54AaABAg",
+          "published_at": "2026-10-07T05:46:07Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=Ugwd5tmv1aeYEKNqyA54AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "썸네일 한태산 누구세요 수준인데 보정을 많이 하셨나..",
+          "comment_id": "UgxeYYCXfoNIqtoM-cl4AaABAg",
+          "published_at": "2026-10-05T13:44:18Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgxeYYCXfoNIqtoM-cl4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "쩐다ㅇㅇ",
+          "comment_id": "UgyI-3-0TAwN3GBU7k54AaABAg",
+          "published_at": "2026-10-07T12:41:31Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgyI-3-0TAwN3GBU7k54AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "노래 좋고 안무 구성 좋고 퍼포먼스 다 좋은데 진짜 보넥도 헤어 담당 누구임? 이번 컴백만 그런게 아니라 최근들어 다 통틀어서 얘기하는 건데 애들 앞머리가 다 물에 젖어있음 무슨 워터밤 갔다온 것도 아니고... 솔직히 말하면 코디도 올드함 리우 머리는 무슨 양키냐고... 애들 외모를 헤메코가 다 너프시키는 중임 ㅠㅠ 제발 피드백 반영 좀 해주세요",
+          "comment_id": "Ugytw4c70cJn3nu-A7J4AaABAg",
+          "published_at": "2026-10-05T16:16:22Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=Ugytw4c70cJn3nu-A7J4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "아진심 존나 잘생겼다",
+          "comment_id": "Ugxbte3tTfaLBKujqSl4AaABAg",
+          "published_at": "2026-10-07T03:01:51Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=Ugxbte3tTfaLBKujqSl4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "그래서 운학아가 최애예요",
+          "comment_id": "UgxS98Scj3lKajmxSGV4AaABAg",
+          "published_at": "2026-10-05T13:40:12Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgxS98Scj3lKajmxSGV4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "돌이켜보니 최고다❤ 애니멀",
+          "comment_id": "UgwyYdoCEIuFCkQqiN94AaABAg",
+          "published_at": "2026-10-07T11:56:35Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgwyYdoCEIuFCkQqiN94AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "이한님 너무 잘생기심ㅜㅠㅠㅠㅜㅠㅠㅜㅠㅜ",
+          "comment_id": "UgzXbLU8HDORuEDvaHp4AaABAg",
+          "published_at": "2026-10-05T13:26:44Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=UgzXbLU8HDORuEDvaHp4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "명재현 유죄.",
+          "comment_id": "UgxXZSkPgvpJdakg3Yd4AaABAg",
+          "published_at": "2026-10-07T03:01:34Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgxXZSkPgvpJdakg3Yd4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "이날 왤케 어수선하지??? 다들 피곤했나? 0:11 0:47 1:10",
+          "comment_id": "Ugzs7joY3jWSGhLk_bR4AaABAg",
+          "published_at": "2026-10-05T13:08:35Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=Ugzs7joY3jWSGhLk_bR4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "김이한 카페인 파트에서 개큰 느좋을 느껴버림",
+          "comment_id": "Ugwl6AG_lX8aKRGRWyp4AaABAg",
+          "published_at": "2026-10-07T07:51:37Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=Ugwl6AG_lX8aKRGRWyp4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "콘서트 기대된다 진짜 못가면 손해야 이거는..",
+          "comment_id": "UgxVcs0J3udUUWCIT7Z4AaABAg",
+          "published_at": "2026-10-05T13:23:35Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=UgxVcs0J3udUUWCIT7Z4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "노래너무신나잖아! 응원법도 재미있네 아디오스똑똑똑 응원법 콘서트에서 하면 진짜신나는데 ㅋㅋ 에니멀은 더할꺼같다! 콘서트 기대된다아!!",
+          "comment_id": "UgwuuiVrcvJnnC9ijj54AaABAg",
+          "published_at": "2026-10-07T00:30:11Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgwuuiVrcvJnnC9ijj54AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "ㅔ 뭐 여러분 우선 저도 탯프구요 전 앨범때부터 성호 리우 파트가 말도 안되게 적엇던 걸로 기억하구요, 이번 노래 자체가 래퍼인 재현이한테 파트가 많이 가는게 당연한거구요 태산이를 수납한 것도 아니고 나름대로 임팩트는 꽤 있어서 그렇게 적어보이지도 않고 홈 앨범 제외한 거의 모든 앨범에 태산이 파트가 성호 리우보다 훨씬 더 많았었어서 큰 비율로 보자면 거의 비슷합니다 .. 이런 의견을 내는 원더들을 비난 하는게 아니라 팩트로 보자면 이렇게 제 의견을 말씀드린거에요 우리 무턱대고 코즈만 욕하지는 말자구요 ,,",
+          "comment_id": "UgxfG-5e09p14uivy8R4AaABAg",
+          "published_at": "2026-10-05T12:39:52Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgxfG-5e09p14uivy8R4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "한태산 아우터 진짜 라마같네",
+          "comment_id": "UgypV8CYd3zOfoFnEEV4AaABAg",
+          "published_at": "2026-10-07T07:50:22Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgypV8CYd3zOfoFnEEV4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "근데태산이파트좀늘려주세요",
+          "comment_id": "UgwnrN7KOQS-O-UB_hp4AaABAg",
+          "published_at": "2026-10-05T12:18:28Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=UgwnrN7KOQS-O-UB_hp4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "느하앙 명재현 깜피 개느껴져서 못살겠다,,,,...........ㅜㅜ",
+          "comment_id": "UgwJ2Z88_skU764z9qV4AaABAg",
+          "published_at": "2026-10-06T23:54:53Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgwJ2Z88_skU764z9qV4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "썸네일 태사니 쌍꺼풀이 찐해져서 그런가 이하니 닮았다•••보넥도 영원하자💗💥",
+          "comment_id": "Ugz2M-hnHrpsq6s_jyV4AaABAg",
+          "published_at": "2026-10-05T12:37:56Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=Ugz2M-hnHrpsq6s_jyV4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "완벽한 안무 퍼포먼스, 최고의 영상 그룹, 환상적인 재능 ❤",
+          "comment_id": "UgzNK5oKXuoin4CQzXd4AaABAg",
+          "published_at": "2026-10-06T20:46:43Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgzNK5oKXuoin4CQzXd4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "40대 아줌마인데 리더즈 보다가 명재현 알게되고 보넥도 노래듣다가 여기까지 옴ㅋㅋ아ㅋㅋㅋ애 둘이랑 같이 충춘다~ㅋㅋ",
+          "comment_id": "UgwOmNzUpGjze_91QKl4AaABAg",
+          "published_at": "2026-10-05T09:21:13Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=UgwOmNzUpGjze_91QKl4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "재혀니 사랑합시다....",
+          "comment_id": "Ugw-HTijOoSzy-RFs2F4AaABAg",
+          "published_at": "2026-10-06T13:36:02Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=Ugw-HTijOoSzy-RFs2F4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "0:47 vㅐthㅓㅇ호 안무 틀린게 개 웃김 ㅜㅠㅠ ㄱㅇㅇ",
+          "comment_id": "UgwNnncjNmmUjWcTWh94AaABAg",
+          "published_at": "2026-10-05T12:37:47Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgwNnncjNmmUjWcTWh94AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "와..ㅁㅊㄷ..",
+          "comment_id": "UgzlAKAXGtufSAdLSYN4AaABAg",
+          "published_at": "2026-10-06T14:38:54Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgzlAKAXGtufSAdLSYN4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "명재현 깜피 ㅈㄴ좋다...",
+          "comment_id": "Ugyfor4rLgnGfqHeBJB4AaABAg",
+          "published_at": "2026-10-05T05:48:44Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=Ugyfor4rLgnGfqHeBJB4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "이번 애니멀 재현이가 레슨까지 따로받아가며 열심히 준비한게 보여서 너무 좋아! 재현이랑 잘 어울리는 컨셉인것도 너무 좋고 결론: 명재현 최고야",
+          "comment_id": "UgwE2fekUVuWIXQMafJ4AaABAg",
+          "published_at": "2026-10-06T10:50:14Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgwE2fekUVuWIXQMafJ4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "0:17 리우 귀엽다ㅋㅋㅋㅋ",
+          "comment_id": "Ugz3f4CI8qmog8EhS1p4AaABAg",
+          "published_at": "2026-10-05T12:11:40Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=Ugz3f4CI8qmog8EhS1p4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "와 미친 진짜 개 멋있다",
+          "comment_id": "UgzkMPcSXx_pIFGIojB4AaABAg",
+          "published_at": "2026-10-06T12:40:57Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgzkMPcSXx_pIFGIojB4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "보이넥스트도어 오빠들 너무너무 멋있고 사랑해요~!!! ❤❤❤❤",
+          "comment_id": "Ugycd-Ohns9yp_XmAnh4AaABAg",
+          "published_at": "2026-10-05T04:04:52Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=Ugycd-Ohns9yp_XmAnh4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "돌맹이에서 기가차지만 파트 주인답다… 표정진짜 잘 써ㅋㅋㅋㅋㅋ!!!",
+          "comment_id": "UgzoxBm55A9pDDrkRhR4AaABAg",
+          "published_at": "2026-10-06T09:00:35Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgzoxBm55A9pDDrkRhR4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "1:40 운학이 산책파트 환기파트만 10번 돌려봄",
+          "comment_id": "Ugy-0BhbImjUHZAZgqV4AaABAg",
+          "published_at": "2026-10-05T12:08:10Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=Ugy-0BhbImjUHZAZgqV4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "난 평생 여기에 살아야겠다 보넥도 없는 내 하루는 너무 우울증걸릴거같암",
+          "comment_id": "UgyVXQVhl9IzOr9Txv94AaABAg",
+          "published_at": "2026-10-06T10:47:22Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgyVXQVhl9IzOr9Txv94AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "얼빡으로 보니까 김운학이랑 이리우가 제일 잘생김 0:06",
+          "comment_id": "UgxJsMgtH4yOIYsWoul4AaABAg",
+          "published_at": "2026-10-05T03:34:24Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=UgxJsMgtH4yOIYsWoul4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "표정 연습부터 라이브하면서도 어느 안무 하나라도 안 빼고 다 해내려는 게 느껴지네.. 명재현은 진짜 더 성공할 사람이야",
+          "comment_id": "UgwX_7kep4cSuM-KiMR4AaABAg",
+          "published_at": "2026-10-06T01:34:02Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgwX_7kep4cSuM-KiMR4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "2:08 운학이 작두탄다 미친 아니 진짜 왜케 잘하지",
+          "comment_id": "Ugzs6NcZDBxpJdu2_zJ4AaABAg",
+          "published_at": "2026-10-05T12:07:38Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=Ugzs6NcZDBxpJdu2_zJ4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "아니 이번에 안무 너무 맛있ㅇ음 ㅠㅠ",
+          "comment_id": "Ugx20avcg4Qsq1gWnVx4AaABAg",
+          "published_at": "2026-10-06T08:56:04Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=Ugx20avcg4Qsq1gWnVx4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "2:21 카메라 무빙 ㄹㅈㄷ",
+          "comment_id": "UgxRmlus-VmcBFH9WBp4AaABAg",
+          "published_at": "2026-10-05T03:29:35Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=UgxRmlus-VmcBFH9WBp4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "사랑에 빠졌다.",
+          "comment_id": "Ugz5278NzrjhHnCIJTF4AaABAg",
+          "published_at": "2026-10-05T15:22:41Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=Ugz5278NzrjhHnCIJTF4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "0:11 이상혁 ㅋㅋㅋㅋㅋㅋㅋ 딱 들켰대요 ㅋㅋㅋㅋㅋㅋ 마이크팩 떨어져서 뻘쭘해진 거 너무 귀엽다ㅋㅋㅋㅋ",
+          "comment_id": "UgzzYahafsXz_i7C1KF4AaABAg",
+          "published_at": "2026-10-05T11:38:03Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgzzYahafsXz_i7C1KF4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "너무 좋다ㅠㅠㅠㅠㅠ",
+          "comment_id": "Ugwrho4Psrp9XdIOKJt4AaABAg",
+          "published_at": "2026-10-06T08:55:23Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=Ugwrho4Psrp9XdIOKJt4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "이하니 오늘 왕자님이네",
+          "comment_id": "UgyKTm6JrarqBQgao-h4AaABAg",
+          "published_at": "2026-10-05T03:18:13Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=UgyKTm6JrarqBQgao-h4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "1:10 뭐야...? 너 지금 날 죽이려고 작정했구나 하... 그런 까리한 표정 지으면 내가 넘어갈거같니? 당연히 넘어가지.. 오빠💕",
+          "comment_id": "UgxyEdPAcBR5487kP-R4AaABAg",
+          "published_at": "2026-10-05T13:49:30Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgxyEdPAcBR5487kP-R4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "무대 너무 잘한당",
+          "comment_id": "UgzsCQ-d2wom_EZLyFt4AaABAg",
+          "published_at": "2026-10-05T10:57:58Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgzsCQ-d2wom_EZLyFt4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "리우야 얼굴 미쳤다",
+          "comment_id": "Ugy6tAXthcGxSLBAv154AaABAg",
+          "published_at": "2026-10-06T08:51:47Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=Ugy6tAXthcGxSLBAv154AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "정말고능",
+          "comment_id": "Ugw_eNJA39_DyjesoW14AaABAg",
+          "published_at": "2026-10-05T03:10:04Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=Ugw_eNJA39_DyjesoW14AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "0:21 아 ㅈㅂ 이러지 마세요 너무 황홀하잖아요 도레미 파트 ㄴㅁ 좋아ㅠㅠ",
+          "comment_id": "UgyE_qLJdNLxu1O_g2J4AaABAg",
+          "published_at": "2026-10-05T13:48:00Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgyE_qLJdNLxu1O_g2J4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "1:40 김운학 클릭해파트",
+          "comment_id": "Ugyrh4fB1x2iXLrnKWV4AaABAg",
+          "published_at": "2026-10-05T10:47:18Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=Ugyrh4fB1x2iXLrnKWV4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "0:56초 김이한 완전 애니멀이고요 입덕이요",
+          "comment_id": "UgxpwRIKIRoNJfjqjwV4AaABAg",
+          "published_at": "2026-10-06T08:26:03Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgxpwRIKIRoNJfjqjwV4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "우와",
+          "comment_id": "UgxFkQSK5hkhgxtZtrl4AaABAg",
+          "published_at": "2026-10-05T02:50:31Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=UgxFkQSK5hkhgxtZtrl4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "엠카 애니멀? 직캠 1위는 무조건 명재현이다",
+          "comment_id": "UgwJKZRmVkYgJM1DTkx4AaABAg",
+          "published_at": "2026-10-05T13:47:37Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgwJKZRmVkYgJM1DTkx4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "썸네일 진짜야르네",
+          "comment_id": "UgxlX0ZZACV0U6VBmp54AaABAg",
+          "published_at": "2026-10-05T10:40:40Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgxlX0ZZACV0U6VBmp54AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "진짜 너무 멋있다… 최고야…",
+          "comment_id": "UgzUjWYd4y5iTQNEcHp4AaABAg",
+          "published_at": "2026-10-06T08:16:06Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgzUjWYd4y5iTQNEcHp4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "썸네일 미친",
+          "comment_id": "UgzpFKErOuYFp6jPuDh4AaABAg",
+          "published_at": "2026-10-04T23:11:49Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=UgzpFKErOuYFp6jPuDh4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "1:10 아 여기다 맛있어 너무 맛있어,,!!! 재현아 매일 나를 배부르게 해줘서 고마워🥹🥹",
+          "comment_id": "UgybGgzzXwCFz4Me4LF4AaABAg",
+          "published_at": "2026-10-05T08:09:05Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgybGgzzXwCFz4Me4LF4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "0:57 이한이 헤메코 미쳤다.. 젠짜 스렌더 너무 좋아 ❤😢",
+          "comment_id": "UgxiW07UYNv60RGWmzB4AaABAg",
+          "published_at": "2026-10-05T10:37:54Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgxiW07UYNv60RGWmzB4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "너무 멋있어서 계속 보는중이야. 애들 다 너무 멋있다",
+          "comment_id": "UgwBUef1SMHEmj40Ehl4AaABAg",
+          "published_at": "2026-10-06T06:38:55Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgwBUef1SMHEmj40Ehl4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "태산의 멋짐과 무대 위에 존재감❤❤❤",
+          "comment_id": "UgzT3cRZVXDN1Huck414AaABAg",
+          "published_at": "2026-10-04T23:02:02Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=UgzT3cRZVXDN1Huck414AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "오늘 하루도 명재현 덕분에 기분 좋게 시작했다 재현이도 누구보다 찬란한 하루 보내길🩷🩷",
+          "comment_id": "Ugw_6tmvKmuhMRwwZu14AaABAg",
+          "published_at": "2026-10-05T04:36:12Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=Ugw_6tmvKmuhMRwwZu14AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "0:21 명이표 도레미 못 봐서 한이였는데 한 풀고 갑니다…",
+          "comment_id": "UgxuYN6E-h13cRRZlCx4AaABAg",
+          "published_at": "2026-10-05T10:19:23Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgxuYN6E-h13cRRZlCx4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "안녕하세요, 신입 원도어입니다!! 초6인 저에게는 배우라는 꿈이 있는데요. 처음에 배우를 꿈꾸게 된 이유는 잘되면 어린 나이부터 돈을 벌 수 있다는 생각과 좋아하는 연예인을 만날 수 있다는 생각, 시구를 할 수 있다는 생각 때문이었습니다. 하지만 이런 저에게 다른 이유가 생겼습니다. 애니멀 뮤비 촬영 비하인드를 보며 오빠들의 뮤비에 출연하고 싶다는 생각이 들었습니다. 아역배우분들에게 웃으며 다가가는 오빠들을 보며 부럽다는 생각을...크흠(기분 나쁘셨다면 죄송합니다) 아무튼 오빠들의 뮤비에 출연하고 싶다는 마음을 가지고 열심히 노력해서 배우가 되고싶습니다!!! 나중에 배우로 인사드릴 수 있었으면 좋겠네요...!(오타가 있다면 봐주세요)",
+          "comment_id": "UgxXFJuCQQ0mrZd6_SV4AaABAg",
+          "published_at": "2026-10-06T05:51:55Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgxXFJuCQQ0mrZd6_SV4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "재현이 오늘 완전 해피멍이네 계속 웃어🫳🫳",
+          "comment_id": "Ugxq-5QuIoDekF08gzt4AaABAg",
+          "published_at": "2026-10-04T22:23:10Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=Ugxq-5QuIoDekF08gzt4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "아 짖짜 너무 좋다.. 헤메스팀 사랑합니다... 명재현이랑 너무 잘 어울리는 노래+헤메스+완벽한 춤",
+          "comment_id": "UgwK2M_VThIZUReANgx4AaABAg",
+          "published_at": "2026-10-05T01:43:50Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgwK2M_VThIZUReANgx4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "인가 카감샘 사랑합니다.♥",
+          "comment_id": "UgwxFSZsXMDK83Y2Qgp4AaABAg",
+          "published_at": "2026-10-05T09:46:15Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgwxFSZsXMDK83Y2Qgp4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "사랑해 애들아",
+          "comment_id": "Ugye7_a5SS3SrJfI4Ut4AaABAg",
+          "published_at": "2026-10-06T05:36:48Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=Ugye7_a5SS3SrJfI4Ut4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "크😮👍",
+          "comment_id": "UgxgWfluck2CgbkJdQF4AaABAg",
+          "published_at": "2026-10-04T18:24:41Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=UgxgWfluck2CgbkJdQF4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "comment": "출근길에 재현이 직캠 보기👍💕",
+          "comment_id": "UgyjV0hWzWXV7GQSFOt4AaABAg",
+          "published_at": "2026-10-04T23:31:04Z",
+          "video_id": "CIw5SY7WBq8",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgyjV0hWzWXV7GQSFOt4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "comment": "오빠들 미쳤어 그냥❤",
+          "comment_id": "Ugx5n43uJRGV-11rD_94AaABAg",
+          "published_at": "2026-10-05T09:45:08Z",
+          "video_id": "XZuisHguwTg",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=Ugx5n43uJRGV-11rD_94AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "comment": "재현 진짜 멋있다",
+          "comment_id": "UgzZkTLWOeG1tXnw-1x4AaABAg",
+          "published_at": "2026-10-06T04:45:19Z",
+          "video_id": "KhGcszcFJ_A",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgzZkTLWOeG1tXnw-1x4AaABAg"
+        },
+        {
+          "artist": "BOYNEXTDOOR",
+          "song": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "comment": "카메라 무빙이 너무 아쉽다… 애들춤이 잘 안보여..ㅜㅜㅜ",
+          "comment_id": "UgwwiaKKCbhymy0F6RJ4AaABAg",
+          "published_at": "2026-10-04T17:29:25Z",
+          "video_id": "jP0EJL44QGk",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=UgwwiaKKCbhymy0F6RJ4AaABAg"
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "XZuisHguwTg",
+          "title": "[단독샷캠4K] 보이넥스트도어 'ANIMAL' 단독샷 별도녹화│BOYNEXTDOOR ONE TAKE STAGE│@SBS Inkigayo 261004",
+          "channel": "SBSKPOP X INKIGAYO",
+          "channel_id": "UCS_hnpJLQTvBkqALgapi_4g",
+          "published_at": "2026-10-05T05:30:12Z"
+        },
+        {
+          "video_id": "KhGcszcFJ_A",
+          "title": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Performance Video",
+          "channel": "HYBE LABELS",
+          "channel_id": "UC3IZKseVpdzPSBaWxBxundA",
+          "published_at": "2026-10-05T13:00:12Z"
+        },
+        {
+          "video_id": "jP0EJL44QGk",
+          "title": "ANIMAL - BOYNEXTDOOR | SBS 261004 방송",
+          "channel": "SBSKPOP X INKIGAYO",
+          "channel_id": "UCS_hnpJLQTvBkqALgapi_4g",
+          "published_at": "2026-10-04T07:53:42Z"
+        },
+        {
+          "video_id": "5A3yTrVGQcQ",
+          "title": "BOYNEXTAGE | 'Boom Boom Boom' Stage CAM @ 'KNOCK ON Vol.2' IN JAPAN - BOYNEXTDOOR (보이넥스트도어)",
+          "channel": "BOYNEXTDOOR",
+          "channel_id": "UChhKBlh_wvspTh5n4mL0b5g",
+          "published_at": "2026-08-28T11:30:10Z"
+        },
+        {
+          "video_id": "CIw5SY7WBq8",
+          "title": "[입덕직캠] 보이넥스트도어 명재현 직캠 4K 'ANIMAL' (BOYNEXTDOOR JAEHYUN FanCam) | @MCOUNTDOWN_2026.10.1",
+          "channel": "M2",
+          "channel_id": "UCTQVIXvcHrR9jYoJ6qaBAow",
+          "published_at": "2026-10-03T02:00:29Z"
+        }
+      ],
+      "warnings": [],
+      "sampling": "5 search videos published within 90 days before month start through cutoff; newest dated Korean top-level comments, balanced across videos"
     },
     "model": {
-      "name": "keyword-fallback",
-      "backend": "keyword-fallback"
+      "name": "gemini-3.1-flash-lite-preview",
+      "backend": "gemini-absa"
+    },
+    "bugs_chart": {
+      "chart_start": "2026-09-28",
+      "chart_end": "2026-10-04",
+      "artist_items": [],
+      "items": [
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 1,
+          "title": "퇴사할게여 (Narr. 기안84)",
+          "artist": "소연 (SOYEON)",
+          "album": "끝내주는 인생",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 2,
+          "title": "꿈꾸던 어른이 되었나요?",
+          "artist": "머무르",
+          "album": "꿈꾸던 어른이 되었나요?",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 3,
+          "title": "LOVE ATTACK",
+          "artist": "RESCENE (리센느)",
+          "album": "SCENEDROME",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 4,
+          "title": "Dear my crazy soulmate",
+          "artist": "아이유(IU)",
+          "album": "이 별로부터",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 5,
+          "title": "BAD",
+          "artist": "ATEEZ(에이티즈)",
+          "album": "GOLDEN HOUR : Part.5",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 6,
+          "title": "Guitarist",
+          "artist": "도경수(D.O.)",
+          "album": "DOPAMINE - The 4th Mini Album",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 7,
+          "title": "갑자기",
+          "artist": "아이오아이(I.O.I)",
+          "album": "I.O.I 3rd MINI ALBUM [I.O.I : LOOP]",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 8,
+          "title": "Skibidi",
+          "artist": "소녀시대-효리수 (Girls' Generation-HRS)",
+          "album": "Skibidi",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 9,
+          "title": "Deja Vu",
+          "artist": "RESCENE (리센느)",
+          "album": "Dearest",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 10,
+          "title": "CRASH",
+          "artist": "ALLDAY PROJECT",
+          "album": "CRASH",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 11,
+          "title": "만찬가",
+          "artist": "태연 (TAEYEON)",
+          "album": "J-POP REMAKE Vol.1",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 12,
+          "title": "REDRED",
+          "artist": "CORTIS (코르티스)",
+          "album": "GREENGREEN",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 13,
+          "title": "이 별로부터",
+          "artist": "아이유(IU)",
+          "album": "이 별로부터",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 14,
+          "title": "LEMONADE",
+          "artist": "aespa",
+          "album": "LEMONADE - The 2nd Album",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 15,
+          "title": "It′s Me",
+          "artist": "아일릿(ILLIT)",
+          "album": "MAMIHLAPINATAPAI",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 16,
+          "title": "Drowning",
+          "artist": "WOODZ",
+          "album": "OO-LI",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 17,
+          "title": "생각을 멈추다 보면",
+          "artist": "최유리",
+          "album": "생각을 멈추다 보면",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 18,
+          "title": "Pretty Girl",
+          "artist": "RESCENE (리센느)",
+          "album": "Pretty Girl - Special Single",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 19,
+          "title": "Pop Off Pop Off",
+          "artist": "KiiiKiii (키키)",
+          "album": "WhyKiiiKiii",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 20,
+          "title": "Good Goodbye",
+          "artist": "화사 (HWASA)",
+          "album": "Good Goodbye",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 21,
+          "title": "Less than a Lover",
+          "artist": "제니 (JENNIE)",
+          "album": "Less than a Lover",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 22,
+          "title": "BiiiG",
+          "artist": "BIGBANG (빅뱅)",
+          "album": "BiiiG",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 23,
+          "title": "사랑하게 될 거야",
+          "artist": "한로로",
+          "album": "이상비행",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 24,
+          "title": "0+0",
+          "artist": "한로로",
+          "album": "자몽살구클럽",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 25,
+          "title": "LOUDER",
+          "artist": "CRAVITY",
+          "album": "sonorous",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 26,
+          "title": "Popcorn",
+          "artist": "도경수(D.O.)",
+          "album": "성장 - THE 3RD MINI ALBUM",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 27,
+          "title": "캐치 캐치",
+          "artist": "YENA (최예나)",
+          "album": "LOVE CATCHER",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 28,
+          "title": "RUDE!",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "RUDE!",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 29,
+          "title": "toxic till the end",
+          "artist": "로제(ROSÉ)",
+          "album": "rosie",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 30,
+          "title": "Pinball",
+          "artist": "RESCENE (리센느)",
+          "album": "SCENEDROME",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 31,
+          "title": "404 (New Era)",
+          "artist": "KiiiKiii (키키)",
+          "album": "Delulu Pack",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 32,
+          "title": "소문의 낙원",
+          "artist": "AKMU(악뮤)",
+          "album": "개화",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 33,
+          "title": "기쁨, 슬픔, 아름다운 마음",
+          "artist": "AKMU(악뮤)",
+          "album": "개화",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 34,
+          "title": "봄 내음보다 너를",
+          "artist": "김나영",
+          "album": "봄 내음보다 너를",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 35,
+          "title": "뛰어(JUMP)",
+          "artist": "BLACKPINK",
+          "album": "뛰어(JUMP)",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 36,
+          "title": "어떻게 이별까지 사랑하겠어, 널 사랑하는 거지",
+          "artist": "AKMU(악뮤)",
+          "album": "항해",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 37,
+          "title": "Lemon Tang",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "Lemon Tang - The 2nd Mini Album",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 38,
+          "title": "Runaway",
+          "artist": "RESCENE (리센느)",
+          "album": "Runaway",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 39,
+          "title": "BANG BANG",
+          "artist": "IVE (아이브)",
+          "album": "REVIVE+",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 40,
+          "title": "입춘",
+          "artist": "한로로",
+          "album": "입춘",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 41,
+          "title": "SUN KISS",
+          "artist": "TUIDE (튜이드)",
+          "album": "The 1st EP [TUNE & PLAY]",
+          "change_rank": 11
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 42,
+          "title": "연애의 조건 (Love Options)",
+          "artist": "베스티(BESTie)",
+          "album": "연애의 조건 (Love Options)",
+          "change_rank": 52
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 43,
+          "title": "노스탈지아",
+          "artist": "BIG Naughty (서동현)",
+          "album": "노스탈지아",
+          "change_rank": -10
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 44,
+          "title": "Whiplash",
+          "artist": "aespa",
+          "album": "Whiplash - The 5th Mini Album",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 45,
+          "title": "내게 사랑이 뭐냐고 물어본다면",
+          "artist": "로이킴",
+          "album": "내게 사랑이 뭐냐고 물어본다면",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 46,
+          "title": "한 페이지가 될 수 있게",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Book of Us : Gravity",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 47,
+          "title": "멸종위기사랑",
+          "artist": "이찬혁",
+          "album": "EROS",
+          "change_rank": -7
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 48,
+          "title": "너에게 닿기를",
+          "artist": "10CM",
+          "album": "너에게 닿기를",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 49,
+          "title": "Heavy Serenade",
+          "artist": "NMIXX",
+          "album": "Heavy Serenade",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 50,
+          "title": "Surfin' Boy",
+          "artist": "Red Velvet (레드벨벳)",
+          "album": "Velvet Summer - Summer Mini Album",
+          "change_rank": -16
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 51,
+          "title": "모든 날, 모든 순간 (Every day, Every Moment)",
+          "artist": "폴킴(Paul Kim)",
+          "album": "'키스 먼저 할까요?' OST Part.3",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 52,
+          "title": "타임캡슐",
+          "artist": "다비치",
+          "album": "타임캡슐",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 53,
+          "title": "like JENNIE",
+          "artist": "제니 (JENNIE)",
+          "album": "Ruby",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 54,
+          "title": "Blue Valentine",
+          "artist": "NMIXX",
+          "album": "Blue Valentine",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 55,
+          "title": "Golden",
+          "artist": "HUNTR/X, 아티스트 전체보기",
+          "album": "KPop Demon Hunters (Soundtrack from the Netflix Film)",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 56,
+          "title": "청춘만화",
+          "artist": "이무진",
+          "album": "만화 (滿花)",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 57,
+          "title": "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))",
+          "artist": "너드커넥션(Nerd Connection)",
+          "album": "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 58,
+          "title": "여름아 부탁해",
+          "artist": "볼빨간사춘기",
+          "album": "여름아 부탁해",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 59,
+          "title": "모르시나요(PROD.로코베리)",
+          "artist": "조째즈",
+          "album": "모르시나요",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 60,
+          "title": "HAPPY",
+          "artist": "DAY6 (데이식스)",
+          "album": "Fourever",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 61,
+          "title": "APT.",
+          "artist": "로제(ROSÉ), 아티스트 전체보기",
+          "album": "APT.",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 62,
+          "title": "주저하는 연인들을 위해",
+          "artist": "잔나비",
+          "album": "전설",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 63,
+          "title": "천상연",
+          "artist": "이창섭",
+          "album": "천상연 (웹툰 '선녀외전' X 이창섭 (LEE CHANGSUB))",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 64,
+          "title": "Hype Boy",
+          "artist": "NewJeans",
+          "album": "NewJeans 1st EP 'New Jeans'",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 65,
+          "title": "그대 작은 나의 세상이 되어",
+          "artist": "카더가든",
+          "album": "부재",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 66,
+          "title": "Ditto",
+          "artist": "NewJeans",
+          "album": "NewJeans 'OMG'",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 67,
+          "title": "Die With A Smile",
+          "artist": "Lady Gaga(레이디 가가), 아티스트 전체보기",
+          "album": "Die With A Smile",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 68,
+          "title": "FAMOUS",
+          "artist": "ALLDAY PROJECT",
+          "album": "FAMOUS",
+          "change_rank": 16
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 69,
+          "title": "사계, 그리고 너",
+          "artist": "이창섭",
+          "album": "Lee;Make (Fragmenta Amoris)",
+          "change_rank": 12
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 70,
+          "title": "I AM",
+          "artist": "IVE (아이브)",
+          "album": "I've IVE",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 71,
+          "title": "Supernova",
+          "artist": "aespa",
+          "album": "Armageddon - The 1st Album",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 72,
+          "title": "Welcome to the Show",
+          "artist": "DAY6 (데이식스)",
+          "album": "Fourever",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 73,
+          "title": "에피소드",
+          "artist": "이무진",
+          "album": "에피소드",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 74,
+          "title": "나는 반딧불",
+          "artist": "황가람",
+          "album": "나는 반딧불",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 75,
+          "title": "고민중독",
+          "artist": "QWER",
+          "album": "1st Mini Album 'MANITO'",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 76,
+          "title": "Magnetic",
+          "artist": "아일릿(ILLIT)",
+          "album": "SUPER REAL ME",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 77,
+          "title": "Vitamin ME",
+          "artist": "프로미스나인",
+          "album": "Glow ME",
+          "change_rank": -13
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 78,
+          "title": "첫 만남은 계획대로 되지 않아",
+          "artist": "TWS (투어스)",
+          "album": "Sparkling Blue",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 79,
+          "title": "사랑은 봄비처럼... 이별은 겨울비처럼",
+          "artist": "임현정",
+          "album": "A Year Out..In The Island",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 80,
+          "title": "FOCUS",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "FOCUS - The 1st Mini Album",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 81,
+          "title": "HOME SWEET HOME (feat. 태양, 대성)",
+          "artist": "G-DRAGON",
+          "album": "HOME SWEET HOME (feat. 태양, 대성)",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 82,
+          "title": "달리 표현할 수 없어요",
+          "artist": "로이킴",
+          "album": "달리 표현할 수 없어요",
+          "change_rank": 4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 83,
+          "title": "FALLEN ANGEL",
+          "artist": "제니 (JENNIE)",
+          "album": "Fallen Angel (Digital EP)",
+          "change_rank": -15
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 84,
+          "title": "소나기",
+          "artist": "이클립스 (ECLIPSE)",
+          "album": "선재 업고 튀어 OST Part 1",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 85,
+          "title": "Congratulations",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Day",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 86,
+          "title": "WDA (Whole Different Animal) (Feat. G-DRAGON)",
+          "artist": "aespa",
+          "album": "LEMONADE - The 2nd Album",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 87,
+          "title": "REBEL HEART",
+          "artist": "IVE (아이브)",
+          "album": "IVE EMPATHY",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 88,
+          "title": "예뻤어",
+          "artist": "DAY6 (데이식스)",
+          "album": "Every DAY6 February",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 89,
+          "title": "NOT CUTE ANYMORE",
+          "artist": "아일릿(ILLIT)",
+          "album": "NOT CUTE ANYMORE",
+          "change_rank": -9
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 90,
+          "title": "Flashback",
+          "artist": "엔플라잉(N.Flying)",
+          "album": "Man on the Moon",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 91,
+          "title": "사랑인가 봐",
+          "artist": "멜로망스(MeloMance)",
+          "album": "사랑인가 봐 (사내맞선 OST 스페셜 트랙)",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 92,
+          "title": "THAT’S A NO NO",
+          "artist": "ITZY (있지)",
+          "album": "IT'z ME",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 93,
+          "title": "ONE MORE TIME",
+          "artist": "ALLDAY PROJECT",
+          "album": "ALLDAY PROJECT",
+          "change_rank": 6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 94,
+          "title": "STYLE",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "STYLE",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 95,
+          "title": "BLACKHOLE",
+          "artist": "IVE (아이브)",
+          "album": "REVIVE+",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 96,
+          "title": "Love me or Leave me",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Book of Us : The Demon",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 97,
+          "title": "OVERDRIVE",
+          "artist": "TWS (투어스)",
+          "album": "play hard",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 98,
+          "title": "Who is she",
+          "artist": "KISS OF LIFE",
+          "album": "Who is she",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 99,
+          "title": "new trick",
+          "artist": "로제(ROSÉ)",
+          "album": "new trick",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 100,
+          "title": "Sour Grapes",
+          "artist": "NiziU (니쥬)",
+          "album": "Sour Grapes",
+          "change_rank": 0
+        }
+      ],
+      "link": "https://music.bugs.co.kr/chart/track/week/total?chartdate=20260928",
+      "requested_chart_start": "2026-10-05"
     }
+  },
+  "overall_sentiment": {
+    "count": 100,
+    "ratio": {
+      "positive": 0.86,
+      "neutral": 0.07,
+      "negative": 0.07
+    },
+    "dominant": "positive"
   },
   "aspect_sentiment": {
     "song_music": {
       "label": "song / music",
-      "count": 18,
+      "count": 6,
       "ratio": {
-        "positive": 0.5,
-        "neutral": 0.5,
-        "negative": 0.0
-      },
-      "dominant": "neutral",
-      "evidence": [
-        {
-          "source": "naver_news",
-          "sentiment": "neutral",
-          "text": "‘컴백’ 보이넥스트도어, 연습생 시절 미공개 영상 공개 “진정성 있게... 그룹 보이넥스트도어(BOYNEXTDOOR)가 연습생 시절 미공개 영상을 담은 작업기를 공개했다. 보이넥스트도어(성호, 리우, 명재현, 태산, 이한, 운학)는 지난 4일 오후 11시 하이브 레이블즈 유튜브 채널에 정규 1집 ‘HOME’..."
-        },
-        {
-          "source": "naver_news",
-          "sentiment": "neutral",
-          "text": "보이넥스트도어 명재현·성호, '톡파원' 출격⋯첫 정규 'VIRAL' 공개 오는 8일 방송되는 JTBC '톡파원 25시'에는 첫 정규 앨범 'HOME'으로 돌아온 보이넥스트도어(BOYNEXTDOOR) 명재현과 성호가 게스트로 함께한다. '톡파원25시' [사진=JTBC] 최근 진행된 스튜디오 녹화에서 명재현은 전현무에게..."
-        }
-      ]
-    },
-    "performance": {
-      "label": "performance",
-      "count": 4,
-      "ratio": {
-        "positive": 0.25,
-        "neutral": 0.75,
-        "negative": 0.0
-      },
-      "dominant": "neutral",
-      "evidence": [
-        {
-          "source": "naver_news",
-          "sentiment": "neutral",
-          "text": "보이넥스트도어 “데뷔 3주년, 더 달리고 싶다” 그룹 보이넥스트도어(BOYNEXTDOOR)가 데뷔 3주년을 맞았다. 보이넥스트도어는 데뷔 3주년인 30일 소속사 KOZ 엔터테인먼트를 통해 “처음 올랐던 무대가 지금도 생생한데 벌써 데뷔 3주년이라니 감회가 새롭다”며..."
-        },
-        {
-          "source": "naver_news",
-          "sentiment": "neutral",
-          "text": "보이넥스트도어 명재현, 컴백 앞두고 부상…\"퍼포먼스 제한적 참여\" 그룹 보이넥스트도어(BOYNEXTDOOR) 명재현이 컴백을 앞두고 발목 부상을 당했다. 소속사 KOZ 엔터테인먼트는 1일 팬 소통 플랫폼 위버스를 통해 명재현 컨디션 및 스케줄 관련 안내 공지를 게재했다. 소속사 측은 \"명재현은..."
-        }
-      ]
-    },
-    "visual_styling": {
-      "label": "visual / styling",
-      "count": 3,
-      "ratio": {
-        "positive": 0.6667,
-        "neutral": 0.3333,
+        "positive": 1.0,
+        "neutral": 0.0,
         "negative": 0.0
       },
       "dominant": "positive",
@@ -143,115 +2516,1167 @@
         {
           "source": "youtube_comment",
           "sentiment": "positive",
-          "text": "보넥도는 자신들만의 스타일이 있어서 넘 좋음.. 멤버들도 작곡작사하면서 노래를 함께 만들어가는게 진짜로 너무 좋은것같음🥹"
+          "text": "파트 미치겠네 8초 뭐야 진짜",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgwBAVn_ATkn2Xg5YWN4AaABAg",
+          "published_at": "2026-10-08T08:40:37Z"
         },
         {
           "source": "youtube_comment",
           "sentiment": "positive",
-          "text": "와 이번 노래 미쳤다 노래도 노래대로 진짜 좋은데 뮤비를 너무 잘찍은듯 외국영화 느낌 너무 좋음 진짜 앨범을 세밀하고 꼼꼼하게 열심히 작업한게 티가남 이번 앨범 유난히 더 기대되고 멤버들도 긴장했던 이유를 알겠음 레전드를 말아와서였구만🫵🏻🤗 케이팝에서 이런 노래는 처음인것 같아서 너무 색다르고 보넥도만의 색을 점점 찾아…"
+          "text": "일본에서 탑티어에 올라갈 명곡이다",
+          "link": "https://www.youtube.com/watch?v=5A3yTrVGQcQ&lc=UgxzjqXfBkczB0VnBLJ4AaABAg",
+          "published_at": "2026-10-09T09:50:26Z"
+        }
+      ]
+    },
+    "performance": {
+      "label": "performance",
+      "count": 29,
+      "ratio": {
+        "positive": 0.8276,
+        "neutral": 0.0345,
+        "negative": 0.1379
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "negative",
+          "text": "퍼포먼스 비디오인건 알겠는데 영상효과나 편집으로 안무가 잘 안 보여서 아쉽",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=Ugzn1Tj_uu5osbspJ0F4AaABAg",
+          "published_at": "2026-10-11T04:16:26Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "성호 무대 너무 잘해서 좋아허지 않고는 살 수 없는 병에 걸려버림",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=Ugxxg4RNkhGmya2u_e54AaABAg",
+          "published_at": "2026-10-08T15:40:54Z"
+        }
+      ]
+    },
+    "visual_styling": {
+      "label": "visual / styling",
+      "count": 24,
+      "ratio": {
+        "positive": 0.875,
+        "neutral": 0.0417,
+        "negative": 0.0833
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "0:21 옆태 보여주고 씩 웃는 거 존나 좋다 하… 사랑해",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgwyYKvy3sMHeNgzAJB4AaABAg",
+          "published_at": "2026-10-10T07:58:00Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "아…..리우오빠너무오빠같다",
+          "link": "https://www.youtube.com/watch?v=jP0EJL44QGk&lc=Ugy8eK8L7_iZ9sn1cUZ4AaABAg",
+          "published_at": "2026-10-08T06:38:48Z"
         }
       ]
     },
     "vocal_rap": {
       "label": "vocal / rap",
-      "count": 0,
+      "count": 7,
       "ratio": {
-        "positive": 0,
-        "neutral": 0,
-        "negative": 0
+        "positive": 0.7143,
+        "neutral": 0.2857,
+        "negative": 0.0
       },
-      "dominant": "neutral",
-      "evidence": []
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "2:14 여기 크럼프 똑똑똑 랩파트 생각나서 더멋있음 의도한건가? 궁금하네",
+          "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgycjcejlnR9b9DMkYZ4AaABAg",
+          "published_at": "2026-10-07T22:22:12Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "김이한 카페인 파트에서 개큰 느좋을 느껴버림",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=Ugwl6AG_lX8aKRGRWyp4AaABAg",
+          "published_at": "2026-10-07T07:51:37Z"
+        }
+      ]
     },
     "fandom_public_opinion": {
       "label": "fandom / public_opinion",
-      "count": 10,
+      "count": 19,
       "ratio": {
-        "positive": 0.2,
-        "neutral": 0.8,
-        "negative": 0.0
+        "positive": 0.9474,
+        "neutral": 0.0,
+        "negative": 0.0526
       },
-      "dominant": "neutral",
+      "dominant": "positive",
       "evidence": [
         {
-          "source": "naver_news",
-          "sentiment": "neutral",
-          "text": "보이넥스트도어, 신보 작업기 공개…\"이런 고통 처음\" 8일 정규 1집 'HOME' 발매 보이그룹 보이넥스트도어(BOYNEXTDOOR)가 연습생 시절 미공개 영상을 담은 작업기를 통해 새로운 서사를 예고했다. 보이넥스트도어(성호 리우 명재현 태산 이한 운학)는 지난 4일 오후 11시 하이브..."
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "존멋❤",
+          "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgzGs_6IwFOG0WaFrgt4AaABAg",
+          "published_at": "2026-10-05T23:38:40Z"
         },
         {
-          "source": "naver_news",
-          "sentiment": "neutral",
-          "text": "보이넥스트도어 명재현, 컴백 앞두고 부상…\"퍼포먼스 제한적 참여\" 그룹 보이넥스트도어(BOYNEXTDOOR) 명재현이 컴백을 앞두고 발목 부상을 당했다. 소속사 KOZ 엔터테인먼트는 1일 팬 소통 플랫폼 위버스를 통해 명재현 컨디션 및 스케줄 관련 안내 공지를 게재했다. 소속사 측은 \"명재현은..."
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "아 명재현 사랑해",
+          "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=UgwKz01Muat7DI0j39t4AaABAg",
+          "published_at": "2026-10-10T07:59:57Z"
         }
       ]
     }
   },
-  "overall_sentiment": {
-    "count": 30,
-    "ratio": {
-      "positive": 0.3667,
-      "neutral": 0.6333,
-      "negative": 0.0
-    },
-    "dominant": "neutral"
-  },
-  "top_comments_or_evidence": [
+  "comment_annotations": [
     {
-      "aspect": "song_music",
-      "source": "naver_news",
-      "sentiment": "neutral",
-      "text": "‘컴백’ 보이넥스트도어, 연습생 시절 미공개 영상 공개 “진정성 있게... 그룹 보이넥스트도어(BOYNEXTDOOR)가 연습생 시절 미공개 영상을 담은 작업기를 공개했다. 보이넥스트도어(성호, 리우, 명재현, 태산, 이한, 운학)는 지난 4일 오후 11시 하이브 레이블즈 유튜브 채널에 정규 1집 ‘HOME’..."
-    },
-    {
-      "aspect": "performance",
-      "source": "naver_news",
-      "sentiment": "neutral",
-      "text": "보이넥스트도어 “데뷔 3주년, 더 달리고 싶다” 그룹 보이넥스트도어(BOYNEXTDOOR)가 데뷔 3주년을 맞았다. 보이넥스트도어는 데뷔 3주년인 30일 소속사 KOZ 엔터테인먼트를 통해 “처음 올랐던 무대가 지금도 생생한데 벌써 데뷔 3주년이라니 감회가 새롭다”며..."
-    },
-    {
-      "aspect": "visual_styling",
-      "source": "youtube_comment",
+      "id": 0,
       "sentiment": "positive",
-      "text": "보넥도는 자신들만의 스타일이 있어서 넘 좋음.. 멤버들도 작곡작사하면서 노래를 함께 만들어가는게 진짜로 너무 좋은것같음🥹"
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
-      "aspect": "fandom_public_opinion",
-      "source": "naver_news",
+      "id": 1,
+      "sentiment": "negative",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "vocal_rap",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "sentiment": "negative",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 22,
       "sentiment": "neutral",
-      "text": "보이넥스트도어, 신보 작업기 공개…\"이런 고통 처음\" 8일 정규 1집 'HOME' 발매 보이그룹 보이넥스트도어(BOYNEXTDOOR)가 연습생 시절 미공개 영상을 담은 작업기를 통해 새로운 서사를 예고했다. 보이넥스트도어(성호 리우 명재현 태산 이한 운학)는 지난 4일 오후 11시 하이브..."
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "sentiment": "neutral",
+      "aspects": []
+    },
+    {
+      "id": 24,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 27,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 31,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 32,
+      "sentiment": "negative",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "sentiment": "negative",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 35,
+      "sentiment": "negative",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "visual_styling",
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 39,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "sentiment": "negative",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "vocal_rap",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "sentiment": "neutral",
+      "aspects": [
+        {
+          "aspect": "vocal_rap",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "sentiment": "neutral",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "sentiment": "neutral",
+      "aspects": [
+        {
+          "aspect": "vocal_rap",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 55,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 59,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "vocal_rap",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 69,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 71,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "sentiment": "neutral",
+      "aspects": []
+    },
+    {
+      "id": 76,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "vocal_rap",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "vocal_rap",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "sentiment": "neutral",
+      "aspects": []
+    },
+    {
+      "id": 80,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 83,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 87,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 90,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 92,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 94,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 95,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 96,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 98,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 99,
+      "sentiment": "negative",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "negative"
+        }
+      ]
     }
   ],
   "naver_news_summary": [
     {
-      "title": "보이넥스트도어, 신보 작업기 공개…\"이런 고통 처음\"",
-      "date": "2026-06-05",
-      "summary": "8일 정규 1집 'HOME' 발매 보이그룹 보이넥스트도어(BOYNEXTDOOR)가 연습생 시절 미공개 영상을 담은 작업기를 통해 새로운 서사를 예고했다. 보이넥스트도어(성호 리우 명재현 태산 이한 운학)는 지난 4일 오후 11시 하이브...",
-      "link": "https://m.entertain.naver.com/article/629/0000505250"
+      "title": "‘비긴어게인’ HYNN(박혜원), 귀호강 타임",
+      "date": "2026-10-11",
+      "summary": "HYNN(박혜원)은 소란과 함께 보이넥스트도어(BOYNEXTDOOR)의 ‘오늘만 I LOVE YOU’를 선곡해 색다른 매력을 발산했다. 두 아티스트의 첫 듀엣 호흡에 대해 소란의 고영배는 “적일 때는 무섭지만 같은 편일 때는 너무...",
+      "link": "https://m.entertain.naver.com/article/144/0001143391"
     },
     {
-      "title": "‘컴백’ 보이넥스트도어, 연습생 시절 미공개 영상 공개 “진정성 있게...",
-      "date": "2026-06-05",
-      "summary": "그룹 보이넥스트도어(BOYNEXTDOOR)가 연습생 시절 미공개 영상을 담은 작업기를 공개했다. 보이넥스트도어(성호, 리우, 명재현, 태산, 이한, 운학)는 지난 4일 오후 11시 하이브 레이블즈 유튜브 채널에 정규 1집 ‘HOME’...",
-      "link": "https://m.entertain.naver.com/article/109/0005547182"
+      "title": "‘코르티스·베몬·NCT 위시’, 5세대만 믿는다…엔터주, 내년이 승부처...",
+      "date": "2026-10-10",
+      "summary": "BTS 활동이 이어지는 데다 코르티스, 캣츠아이, 보이넥스트도어, 투어스까지 새 IP가 여러 갈래로 자리 잡고 있다. 특히 코르티스는 빠르게 팬덤을 넓히면서 앨범 판매량을 키우고 있고, 캣츠아이도 해외 음원...",
+      "link": "https://n.news.naver.com/mnews/article/016/0002707542?sid=101"
     },
     {
-      "title": "보이넥스트도어 명재현·성호, '톡파원' 출격⋯첫 정규 'VIRAL' 공개",
-      "date": "2026-06-05",
-      "summary": "오는 8일 방송되는 JTBC '톡파원 25시'에는 첫 정규 앨범 'HOME'으로 돌아온 보이넥스트도어(BOYNEXTDOOR) 명재현과 성호가 게스트로 함께한다. '톡파원25시' [사진=JTBC] 최근 진행된 스튜디오 녹화에서 명재현은 전현무에게...",
-      "link": "http://www.joynews24.com/view/1974277"
+      "title": "클로즈 유어 아이즈, '뮤직뱅크' 1위 눈물 소감 \"사랑받는 게 뭔지 느껴...",
+      "date": "2026-10-09",
+      "summary": "9일 방송된 KBS2 '뮤직뱅크' 1위 후보에는 클로즈 유어 아이즈 '드롭 댓!'(Drop That!), 보이넥스트도어 '애니멀'(ANIMAL)이 올랐다. 1위는 총점 9020점을 받은 클로즈 유어 아이즈였다. 보이넥스트도어는 3334점으로 2위였다....",
+      "link": "http://www.stoo.com/article.php?aid=109292591881"
     },
     {
-      "title": "‘컴백’ 보이넥스트도어, 연습생 시절 미공개 영상 공개 “팀 ‘챕터 ...",
-      "date": "2026-06-05",
-      "summary": "보이넥스트도어 ‘HOME VIDEO’ Ep.2 : HOME’ 영상 갈무리 보이넥스트도어(BOYNEXTDOOR)가 연습생 시절 미공개 영상을 담은 작업기를 깜짝 오픈했다. 보이넥스트도어(성호, 리우, 명재현, 태산, 이한, 운학)는 지난 4일 오후...",
-      "link": "https://m.entertain.naver.com/article/112/0003797678"
+      "title": "드림에이지 ‘리듬하이브’, 아일릿 앙코르 공연 현장서 체험존·이벤트...",
+      "date": "2026-10-08",
+      "summary": "카드와 같은 디자인의 렌티큘러·홀로그램 초상 카드를 선착순 증정한다. 리듬하이브는 앞서 투어스와 르세라핌, 보이넥스트도어 등 하이브 소속 아티스트의 오프라인 공연과 게임 콘텐츠를 연계한 행사를 진행해 왔다.",
+      "link": "https://n.news.naver.com/mnews/article/005/0001877616?sid=105"
     },
     {
-      "title": "보이넥스트도어, \"고통받은 적은 처음\"…연습생 미공개 영상까지 담은 ...",
-      "date": "2026-06-05",
-      "summary": "보이넥스트도어(BOYNEXTDOOR)가 첫 정규 앨범 'HOME'을 앞두고 연습생 시절 모습을 포함한 작업기를 선보이며 컴백 흐름을 이어가고 있다. 새 영상에는 앨범 제작 과정과 함께 그동안 드러나지 않았던 고민과 속마음이 함께...",
-      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16080217"
+      "title": "'위버스콘 페스티벌', 이번엔 인도로 간다…'위버스콘 페스티벌 인디아...",
+      "date": "2026-10-07",
+      "summary": "(Apink), 보이넥스트도어(BOYNEXTDOOR), 투어스(TWS), 가수 황민현(HWANG MIN HYUN), 김재중(KIM JAEJOONG), 권진아, 윤산하(YOON SANHA), 밴드 루시(LUCY)가 함께 했다. '위버스콘 페스티벌 인디아'는 오는 2027년 3월 27일과 28일...",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16241088"
     }
   ],
-  "report_text": "# BOYNEXTDOOR 近期市場與輿論分析\n\n## 1. 榜單表現\n- 榜單表現沿用既有 Bugs 榜單快取觀察，搭配本次新聞與留言聲量判讀。\n- 目前更適合看作回歸期與內容曝光的輔助訊號，後續可再與週榜排名交叉追蹤。\n\n## 2. 粉絲與輿論反應\n- 正面比例：0.3667\n- 中立比例：0.6333\n- 負面比例：0.0\n- 簡短解讀：討論多落在中性觀察，尚未形成明顯輿論壓力。\n- 歌曲／音樂性：中性 (正 0.5 / 中 0.5 / 負 0.0)\n- 舞台／表演：中性 (正 0.25 / 中 0.75 / 負 0.0)\n- 造型／視覺：正面 (正 0.6667 / 中 0.3333 / 負 0.0)\n- 演唱／Rap：中性 (正 0 / 中 0 / 負 0)\n- 粉絲與大眾反應：中性 (正 0.2 / 中 0.8 / 負 0.0)\n\n## 3. 綜合判斷\n- 市場熱度：中\n- 輿論風險：低\n- Naver 新聞觀察：新作與音樂性討論\n- 短期趨勢：Naver 新聞仍有可見曝光，留言端偏中性，短期輿論風險不高。\n\n## 4. 市場洞察\n- 新聞焦點：新作與音樂性討論\n- 機會點：目前輿論壓力低，適合透過舞台、MV 與成員內容累積更鮮明的正面聲量。\n- 觀察重點：持續比對 BOYNEXTDOOR 的榜單續航、留言情緒與新聞曝光是否往同一方向收斂。\n\n## 5. 一句話總結\nBOYNEXTDOOR 目前榜單可搭配後續週榜觀察，討論多落在中性觀察，尚未形成明顯輿論壓力；Naver 新聞仍有近期曝光，整體市場熱度為中、輿論風險為低。\n"
+  "top_comments_or_evidence": [
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "파트 미치겠네 8초 뭐야 진짜",
+      "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgwBAVn_ATkn2Xg5YWN4AaABAg",
+      "published_at": "2026-10-08T08:40:37Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "negative",
+      "text": "퍼포먼스 비디오인건 알겠는데 영상효과나 편집으로 안무가 잘 안 보여서 아쉽",
+      "link": "https://www.youtube.com/watch?v=KhGcszcFJ_A&lc=Ugzn1Tj_uu5osbspJ0F4AaABAg",
+      "published_at": "2026-10-11T04:16:26Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "0:21 옆태 보여주고 씩 웃는 거 존나 좋다 하… 사랑해",
+      "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgwyYKvy3sMHeNgzAJB4AaABAg",
+      "published_at": "2026-10-10T07:58:00Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "2:14 여기 크럼프 똑똑똑 랩파트 생각나서 더멋있음 의도한건가? 궁금하네",
+      "link": "https://www.youtube.com/watch?v=CIw5SY7WBq8&lc=UgycjcejlnR9b9DMkYZ4AaABAg",
+      "published_at": "2026-10-07T22:22:12Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "존멋❤",
+      "link": "https://www.youtube.com/watch?v=XZuisHguwTg&lc=UgzGs_6IwFOG0WaFrgt4AaABAg",
+      "published_at": "2026-10-05T23:38:40Z"
+    }
+  ],
+  "monthly_insight": {
+    "headline": "《ANIMAL》活動與專輯銷售訊號",
+    "market_heat": "《HOME: DELUXE》首週 700,028 張及韓日榜單成績已有報導 [N26][N37]，屬較具體的購買需求訊號。",
+    "news_focus": "《HOME: DELUXE》銷量、日韓榜單與 10/8《M Countdown》冠軍 [N16][N22][N26][N37]。",
+    "trend": "回歸活動持續；已確認的是一次《M Countdown》冠軍，另有其他節目的候選／第二名 [N2][N22]，不能寫成多個節目冠軍。",
+    "opportunity": "以新曲舞台延續討論，並回應抽樣留言中的剪輯與鏡頭建議。",
+    "watch": "新曲後續榜單續航，以及來自不同官方 MV 與舞台的留言差異；現有評論偏向影片觀眾。",
+    "summary": "BOYNEXTDOOR 的《HOME: DELUXE》首週售出 700,028 張 [N26]，《ANIMAL》於 10/8 奪《M Countdown》冠軍 [N22]。100 則留言多為正面，也有剪輯與鏡頭批評。",
+    "evidence_ids": [
+      "N2",
+      "N16",
+      "N22",
+      "N26",
+      "N37"
+    ],
+    "risk": "資料不足",
+    "fan_summary": "抽樣 100 則：正面 86、中立 7、負面 7。比例只代表本次影片觀眾；不能直接推論整體粉絲或一般大眾。"
+  },
+  "report_text": "# BOYNEXTDOOR 2026-10 市場與輿論分析\n\n## 1. 榜單表現\n- Bugs 全曲週榜 Top 100：2026-09-28–2026-10-04（橫跨月份，僅作參考）。\n- 此藝人未出現在這份已發布週榜 Top 100；不能據此推論全球熱度。\n- 2026-10-05 起算週榜尚未取得；目前無法判定當月排名趨勢。\n\n## 2. 粉絲與輿論反應\n- 正面比例：0.86\n- 中立比例：0.07\n- 負面比例：0.07\n- 簡短解讀：抽樣 100 則：正面 86、中立 7、負面 7。比例只代表本次影片觀眾；不能直接推論整體粉絲或一般大眾。\n- 留言樣本：100 則期間內韓文頂層留言；僅代表抽樣影片，新聞不納入比例。\n\n## 3. 綜合判斷\n- 市場熱度：《HOME: DELUXE》首週 700,028 張及韓日榜單成績已有報導 [N26][N37]，屬較具體的購買需求訊號。\n- 輿論風險：資料不足\n- Naver 新聞觀察：《HOME: DELUXE》銷量、日韓榜單與 10/8《M Countdown》冠軍 [N16][N22][N26][N37]。\n- 短期趨勢：回歸活動持續；已確認的是一次《M Countdown》冠軍，另有其他節目的候選／第二名 [N2][N22]，不能寫成多個節目冠軍。\n\n## 4. 市場洞察\n- 機會點：以新曲舞台延續討論，並回應抽樣留言中的剪輯與鏡頭建議。\n- 觀察重點：新曲後續榜單續航，以及來自不同官方 MV 與舞台的留言差異；現有評論偏向影片觀眾。\n- 分析期間：2026-10-01–2026-10-11（截至日資料，非完整月報；新聞依韓國刊登日，留言依台北日期）。\n- 限制：影片搜尋抽樣、韓文頂層留言、新聞摘要；不代表整體粉絲或一般大眾。\n\n## 5. 一句話總結\nBOYNEXTDOOR 的《HOME: DELUXE》首週售出 700,028 張 [N26]，《ANIMAL》於 10/8 奪《M Countdown》冠軍 [N22]。100 則留言多為正面，也有剪輯與鏡頭批評。\n",
+  "original_model_insight": {
+    "headline": "BOYNEXTDOOR新輯熱銷與音樂節目表現亮眼",
+    "risk": "中",
+    "fan_summary": "粉絲對成員舞台表現、視覺造型及音樂作品給予高度正面評價，抽樣留言顯示對成員個人魅力及歌曲編排有強烈共鳴，整體社群氛圍積極，僅有極少數對表演影片剪輯效果提出建議。",
+    "market_heat": "市場熱度高，團體近期發行正規一輯改版專輯，首週銷量突破70萬張並登上多項音樂榜單冠軍，同時活躍於各類音樂節目、節慶演出及海外推廣活動，品牌影響力持續擴大。",
+    "news_focus": "重點聚焦於新專輯《HOME: DELUXE》的商業表現、音樂節目獲獎紀錄、日本市場認證，以及成員參與綜藝與跨界合作帶來的廣泛媒體曝光。",
+    "trend": "團體正處於強勢上升期，透過頻繁的音樂節目回歸、挑戰賽參與及跨國演出，成功提升大眾認知度與粉絲黏著度，在國內外音樂榜單均有顯著排名提升。",
+    "opportunity": "建議持續深化海外市場佈局，利用目前在日韓兩地的強勁銷量與品牌聲量，進一步開發如大中華區等潛在市場的演出機會，並延續與知名製作人及藝人的跨界合作。",
+    "watch": "需持續觀察後續音樂節目競爭態勢、實體專輯銷量走勢，以及未來海外巡演或大型活動的具體規劃對品牌長期影響的評估。",
+    "summary": "BOYNEXTDOOR近期發行正規一輯改版，首週銷量達70萬張，並在多個音樂節目獲得冠軍，展現強大粉絲基礎。團體活躍於各類演出與綜藝，品牌聲量顯著提升，且在日韓市場均取得亮眼成績，整體發展態勢穩健向上。",
+    "evidence_ids": [
+      "N1",
+      "N2",
+      "N6",
+      "N12",
+      "N16",
+      "N18",
+      "N19",
+      "N22",
+      "N26",
+      "N32",
+      "N33",
+      "N36",
+      "N37",
+      "N38"
+    ]
+  },
+  "review": {
+    "reviewed_at": "2026-10-11T15:49:49.104517+00:00",
+    "method": "Source-bound editorial review of news digests and comment annotations",
+    "notes": [
+      "Removed unsupported market/ranking claims",
+      "Separated member, former-member and NCT unit activity",
+      "Overall opinion risk not established by convenience sample"
+    ]
+  }
 }

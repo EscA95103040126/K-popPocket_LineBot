@@ -1,0 +1,1987 @@
+{
+  "artist": "BABYMONSTER",
+  "generated_at": "2026-10-11T15:43:40.475225+00:00",
+  "analysis_period": {
+    "start": "2026-10-01",
+    "end": "2026-10-11",
+    "timezone": "Asia/Taipei"
+  },
+  "sources": {
+    "naver_news": {
+      "count": 40,
+      "items": [
+        {
+          "title": "독보적 대세 입증한 리센느 아이브 블랙핑크 제치고 10월 걸그룹 브랜드...",
+          "date": "2026-10-11",
+          "summary": "프로미스나인, 베이비몬스터, 스테이씨, 미야오, 트리플에스, 아이오아이, 키스오브라이프, 케플러, 캣츠아이, 비비지, 걸스데이, 시그니처, 유스피어, EXID, 클라씨 , 빌리 , 키라스, 아이칠린, 니쥬, 브브걸, 라잇썸...",
+          "category": "news",
+          "link": "https://www.gpkorea.com/news/articleView.html?idxno=147451",
+          "original_link": "https://www.gpkorea.com/news/articleView.html?idxno=147451"
+        },
+        {
+          "title": "‘코르티스·베몬·NCT 위시’, 5세대만 믿는다…엔터주, 내년이 승부처...",
+          "date": "2026-10-10",
+          "summary": "시장의 시선은 BTS 등 기존 간판 그룹의 활동이 이어지는 가운데 코르티스·캣츠아이·NCT 위시·킥플립·베이비몬스터 등 5세대 IP(지식재산권)가 실적으로 연결되는 2027년으로 향한다. 금융정보업체 에프앤가이드에...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/016/0002707542?sid=101",
+          "original_link": "https://biz.heraldcorp.com/article/10897500?ref=naver"
+        },
+        {
+          "title": "KM차트, 이찬원 등 2026 3분기 K-MUSIC 빛낼 '시즌베스트 어텀' 후보 공개",
+          "date": "2026-10-09",
+          "summary": "인기 남성 부문은 이찬원, 임영웅, 방탄소년단 멤버(뷔·진·지민·정국), 박지훈 등 14팀이, 여성 부문은 베이비몬스터, 피프티피프티, 리센느, 트와이스, 아이들 등 14팀이 지명됐다. 신인 남성 부문 코르티스...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242662",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16242662"
+        },
+        {
+          "title": "코르티스 베몬 벌써 월드투어? 막내들 밥값 속도 겁나네 [엔터코노미]",
+          "date": "2026-10-08",
+          "summary": "이번 공연은 데뷔 1주년을 기념해 서울, 인천과 캐나다 토론토, 미국 뉴욕, 일본 가나가와 등 9개 도시에서 14회에 걸쳐 진행됐으며, 전석 매진을 달성했다.와이지엔터테인먼트 소속 걸그룹 베이비몬스터는 정식...",
+          "category": "news",
+          "link": "https://news.mtn.co.kr/news-detail/2026092810410128535",
+          "original_link": "https://news.mtn.co.kr/news-detail/2026092810410128535"
+        },
+        {
+          "title": "베이비몬스터, 4개월 만의 초고속 컴백 예고",
+          "date": "2026-10-07",
+          "summary": "|중앙이코노미뉴스 조용우 기자|출처=YG엔터테인먼트 베이비몬스터가 오는 23일 오후 1시 신곡을 발표하며 4개월 만의 초고속 컴백을 확정했다. YG엔터테인먼트는 어제(6일) 공식 블로그에 'COMING SOON' 티저...",
+          "category": "news",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=553341",
+          "original_link": "https://www.joongangenews.com/news/articleView.html?idxno=553341"
+        },
+        {
+          "title": "베이비몬스터, 4개월 만에 신곡 낸다",
+          "date": "2026-10-06",
+          "summary": "그룹 '베이비몬스터'(베몬)가 4개월 만에 컴백한다. 6일 소속사 YG엔터테인먼트에 따르면, 베이비몬스터는 오는 23일 오후 1시 신곡을 낸다. 베이비몬스터의 신곡 발표는 지난 6월 공개한 디지털 싱글 '슈거 허니...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/003/0014236542",
+          "original_link": "https://www.newsis.com/view/NISX20261006_0003816008"
+        },
+        {
+          "title": "글로벌 파급력 입증한 BTS, 리센느 임영웅 꺾고 10월 광고모델 브랜드평...",
+          "date": "2026-10-05",
+          "summary": "강동원, 베이비몬스터, 박서준 , 강호동, 스트레이키즈, 한지민, 마동석, 한효주, 김태리, 이효리, 손석구, 샤이니, 조정석, 정소민, 투어스, 류승룡, 탁재훈, 이채민, 주우재, 김종민, 주지훈, 차승원에 대한 브랜드...",
+          "category": "news",
+          "link": "https://www.gpkorea.com/news/articleView.html?idxno=147285",
+          "original_link": "https://www.gpkorea.com/news/articleView.html?idxno=147285"
+        },
+        {
+          "title": "패션업계, FW시즌 캠페인에 스타와 브랜드 철학 담았다 [최기자의 패션...",
+          "date": "2026-10-04",
+          "summary": "먼저 아디다스는 스트레이 키즈 필릭스, 베이비몬스터, 축구선수 정승원, 펜싱선수 도경동 등이 참여한 FW 2026 아우터 캠페인 'LIFE IN PROGRESS'를 공개했다. '완벽한 미완성'을 주제로 정해진 스타일에 얽매이지 않고...",
+          "category": "news",
+          "link": "https://www.meconomynews.com/news/articleView.html?idxno=202219",
+          "original_link": "https://www.meconomynews.com/news/articleView.html?idxno=202219"
+        },
+        {
+          "title": "유픽 ‘이달의 픽’ 니키·에반 격돌",
+          "date": "2026-10-03",
+          "summary": "9월 스페셜 픽 1위를 차지한 알파드라이브원 상원을 비롯해 제로베이스원 김지웅, 플레어 유 최립우, 베이비몬스터 아현, 이즈나 최정은 등이 상위권에 진입했다. ‘10월 이달의 픽’ 각 부문 최종 1위에 오른 4명에게는...",
+          "category": "news",
+          "link": "https://www.bntnews.co.kr/article/view/bnt202610030050",
+          "original_link": "https://www.bntnews.co.kr/article/view/bnt202610030050"
+        },
+        {
+          "title": "YG 문화 팝업 '프로젝트 유어사이드', 오늘(2일) 오픈",
+          "date": "2026-10-02",
+          "summary": "이번 행사에서는 시대별 YG 아티스트의 앨범과 굿즈를 비롯해 베이비몬스터와 트레저가 실제 무대에서 착용한 의상을 전시한다. 또한 AI 기술과 미디어아트를 활용한 응원봉 만들기, 전문 댄서와 함께하는 댄스 원데이...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/440/0000047694",
+          "original_link": "http://www.tvdaily.co.kr/read.php3?aid=17909343351804536010"
+        },
+        {
+          "title": "'2026 SBS 가요대전', 30주년 맞아 크리스마스 이브-25일 양일 개최…라...",
+          "date": "2026-10-01",
+          "summary": "WISH), 베이비몬스터(BABYMONSTER), 올데이 프로젝트(ALLDAY PROJECT), 에스파(aespa), 넥스지(NEXZ), 미야오(MEOVV), 이즈나(izna), 킥플립(KickFlip), 스킨즈(SKINZ), 베이비돈크라이(Baby DONT Cry), 아홉(AHOF)...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16232724",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16232724"
+        },
+        {
+          "title": "리센느, 8월·9월·10월에도 \"야호\"..걸그룹 브랜드 평판 '평정'",
+          "date": "2026-10-11",
+          "summary": "프로미스나인, 베이비몬스터, 스테이씨, 미야오, 트리플에스, 아이오아이, 키스오브라이프 순이었다. ​ 브랜드 평판지수는 소비자들의 온라인 습관이 브랜드 소비에 큰 영향을 끼친다는 것을 찾아내서 브랜드...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/109/0005621735",
+          "original_link": "http://www.osen.co.kr/article/G1112891088"
+        },
+        {
+          "title": "케이팝 가을 컴백 대전 돌입…빅4에 이수만 새 그룹·아이브·플레이브...",
+          "date": "2026-10-09",
+          "summary": "▲ 그룹 세븐틴 정한·조슈아(시계 방향으로), NCT 위시, 베이비몬스터, 엔믹스 추석 연휴와 아시안게임으로 잠시 숨을 고르던 가요계가 가을을 맞아 다시 뜨거운 경쟁에 돌입합니다. 하이브·SM·JYP·YG 등 이른바 '빅4...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/055/0001394283?sid=103",
+          "original_link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008790499&plink=ORI&cooper=NAVER"
+        },
+        {
+          "title": "현대카드가 또 해냈다…위켄드 소환에 슈퍼콘서트 '전석 매진', 문화마...",
+          "date": "2026-10-08",
+          "summary": "라이즈를 비롯해 TWS, 베이비몬스터, 에반(EVAN), NCT 127의 쟈니·재현, 배우 이수혁 등이 공연장을 찾은 것으로 전해졌다. 라이즈는 공식 사회관계망서비스(SNS)에 공연장 사진을 올리며 관람 소식을 알렸고, 프로듀서...",
+          "category": "news",
+          "link": "https://www.greened.kr/news/articleView.html?idxno=351698",
+          "original_link": "https://www.greened.kr/news/articleView.html?idxno=351698"
+        },
+        {
+          "title": "베이비몬스터, 2년6개월만에 스포티파이 팔로어 900만…5세대 그룹 최단...",
+          "date": "2026-10-07",
+          "summary": "베이비몬스터가 글로벌 음악 스트리밍 플랫폼 스포티파이 팔로어 900만 명을 단기간 내 돌파하며 막강한 영향력을 입증했다. 7일 소속사 YG엔터테인먼트에 따르면 베이비몬스터의 스포티파이 공식 채널 팔로어 수는...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/477/0000632012",
+          "original_link": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1011894"
+        },
+        {
+          "title": "베이비몬스터, 23일 컴백 확정 [공식]",
+          "date": "2026-10-06",
+          "summary": "베이비몬스터가 오는 23일 신곡을 발표하고 약 4개월 만에 컴백한다. YG엔터테인먼트는 6일 공식 블로그를 통해 ‘COMING SOON’ 티저 포스터를 공개하고 베이비몬스터의 신곡 발매 소식을 알렸다. 포스터에는...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/382/0001297494",
+          "original_link": "https://sports.donga.com/ent/article/all/20261006/134794798/1"
+        },
+        {
+          "title": "1위 방탄소년단, 2위 리센느, 3위 임영웅",
+          "date": "2026-10-05",
+          "summary": "강동원, 베이비몬스터, 박서준 , 강호동, 스트레이키즈, 한지민, 마동석, 한효주, 김태리, 이효리, 손석구, 샤이니, 조정석, 정소민, 투어스, 류승룡, 탁재훈, 이채민, 주우재, 김종민, 주지훈, 차승원에 대한 브랜드...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/108/0003476015",
+          "original_link": "https://www.starnewskorea.com/star/2026/10/05/2026100509084331789"
+        },
+        {
+          "title": "日 쿄세라돔 채운 베이비몬스터…YG 목표가 ‘쑥’",
+          "date": "2026-10-04",
+          "summary": "상상인證, 목표가 6만 → 6만3000원 신규 보이그룹 데뷔도...저연차 IP 주목 걸그룹 베이비몬스터가 해외를 중심으로 활동을 넓히며 YG엔터테인먼트 실적을 끌어올릴 것이라는 전망이 나왔다. 이나라 상상인증권...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/024/0000108685?sid=101",
+          "original_link": "https://www.mk.co.kr/article/12167249"
+        },
+        {
+          "title": "리센느, 10월 신인 아이돌 개인 브랜드평판 올킬..1위 제나·2위 원이·3...",
+          "date": "2026-10-02",
+          "summary": "이안, 베이비몬스터 아현, 키키 하음, 키키 이솔, 유니스 임서원, 코르티스 제임스, 키키 수이, 코르티스 주훈, 코르티스 성현, 아일릿 민주, 아일릿 모카, 코르티스...",
+          "category": "news",
+          "link": "http://www.breaknews.com/1240799",
+          "original_link": "http://www.breaknews.com/1240799"
+        },
+        {
+          "title": "YG, 군산서 'K팝 아이돌' 체험행사",
+          "date": "2026-10-01",
+          "summary": "행사장에선 빅뱅, 블랙핑크, 베이비몬스터 등 YG 소속 아티스트의 무대의상과 공연용품을 살펴볼 수 있다. 또한 댄스클래스 체험, 미디어아트를 활용한 응원봉 만들기 등도 체험할 수 있다. 앞서 YG는 군산지역아동센터...",
+          "category": "news",
+          "link": "https://sjbnews.com/news/news.php?number=889126",
+          "original_link": "https://sjbnews.com/news/news.php?number=889126"
+        },
+        {
+          "title": "리센느, 아이브·블랙핑크 제치고 10월 걸그룹 브랜드평판 1위",
+          "date": "2026-10-11",
+          "summary": "프로미스나인, 베이비몬스터, 스테이씨, 미야오, 트리플에스, 아이오아이, 키스오브라이프 순이었다. ​ 1위를 기록한 리센느(원이, 리브, 미나미, 메이, 제나) 브랜드는 참여지수 533,120 미디어지수 1,270,664 소통지수...",
+          "category": "news",
+          "link": "https://www.slist.kr/news/articleView.html?idxno=772444",
+          "original_link": "https://www.slist.kr/news/articleView.html?idxno=772444"
+        },
+        {
+          "title": "K팝 빅4에 이수만 그룹·아이브·플레이브까지…가을 컴백 대전",
+          "date": "2026-10-09",
+          "summary": "19일에는 세븐틴 정한·조슈아와 엔믹스가, 23일에는 베이비몬스터가 컴백한다. 26일에는 아이브와 아일릿, 라이즈가 같은 날 신보를 내놓으며 맞붙는다. 앤더블은 27일 미니 2집을 발매하며 첫 컴백을 예고했다. 다음...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/001/0016367458?sid=103",
+          "original_link": "https://www.yna.co.kr/view/AKR20261009030400005?input=1195m"
+        },
+        {
+          "title": "'숫자'로만 증명? 그 너머의 베이비몬스터 [이금준의 담다디談]",
+          "date": "2026-10-08",
+          "summary": "요즘 베이비몬스터(BABYMONSTER)에 관한 소식은 대부분 숫자로 도착한다. 스포티파이 팔로워 '900만 명', 유튜브 구독자 '1330만 명' 및 누적 조회수 '100억 회' 돌파. 첫 교세라돔 오사카 공연에서는 이틀 동안 '9만 명'을 불러...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/030/0003473454",
+          "original_link": "https://www.etnews.com/20261008000170"
+        },
+        {
+          "title": "코르티스, 세 번째 앨범 작업 돌입, 건호·주훈이 준 컴백 힌트",
+          "date": "2026-10-07",
+          "summary": "지디X태양의 ‘굿 보이’, 빅뱅의 ‘꽃길’, 베이비몬스터의 ‘배터업’ 등 다수의 케이팝 곡을 작업해 온 채즈 미샨은 글로벌 아티스트들과 꾸준히 손발을 맞춰 온 프로듀서인 만큼, 코르티스와의 만남 역시 차기...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/382/0001297771",
+          "original_link": "https://sports.donga.com/ent/article/all/20261007/134800156/1"
+        },
+        {
+          "title": "베이비몬스터, 새 앨범 티저 오픈…4개월 만의 컴백",
+          "date": "2026-10-06",
+          "summary": "그룹 베이비몬스터가 4개월 만에 컴백한다. 베이비몬스터는 6일 YG엔터테인먼트 공식 블로그를 통해 신곡 발매 일정을 담은 'COMING SOON(커밍 순)' 포스터를 게재했다. 공개된 포스터는 어둠 속 행성과 수면 위...",
+          "category": "news",
+          "link": "https://enter.etoday.co.kr/news/view/303353",
+          "original_link": "https://enter.etoday.co.kr/news/view/303353"
+        },
+        {
+          "title": "임영웅, 10월 광고모델 브랜드평판 톱3",
+          "date": "2026-10-05",
+          "summary": "강동원, 베이비몬스터, 박서준 , 강호동, 스트레이키즈, 한지민, 마동석, 한효주, 김태리, 이효리, 손석구, 샤이니, 조정석, 정소민, 투어스, 류승룡, 탁재훈, 이채민, 주우재, 김종민, 주지훈, 차승원에 대한 브랜드...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/108/0003476013",
+          "original_link": "https://www.starnewskorea.com/star/2026/10/05/2026100508592173471"
+        },
+        {
+          "title": "신라면세점, 창이공항 화장품 사업 12년…K뷰티·K팝 결합 마케팅",
+          "date": "2026-10-02",
+          "summary": "당첨자 24명에게 걸그룹 베이비몬스터의 싱가포르 공연 티켓을 제공한다. 뷰티 기프트백도 경품으로 마련했다. 신라면세점은 2014년 10월 창이공항 터미널 1~3에서 화장품·향수 매장을 열었다. 현재 터미널 4개에 20곳...",
+          "category": "news",
+          "link": "http://www.kdfnews.com/news/articleView.html?idxno=188806",
+          "original_link": "http://www.kdfnews.com/news/articleView.html?idxno=188806"
+        },
+        {
+          "title": "블랙핑크·베이비몬스터·아이브, 9월 '아티스트탑텐 K-팝 걸 브랜드' 주...",
+          "date": "2026-10-01",
+          "summary": "블랙핑크, 베이비몬스터, 아이브, 아이유, 니쥬, 레드벨벳, 하츠투하츠, 이세계아이돌, 키키, 엔믹스가 텐아시아 아티스트탑텐(TENASIA ARTIST TOP TEN) 9월 '아티스트탑텐 K-팝 걸 브랜드' 주인공으로 선정됐다. 9월...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/312/0000778332",
+          "original_link": "https://www.tenasia.co.kr/article/2026100178504"
+        },
+        {
+          "title": "1위 리센느, 2위 아이브, 3위 블랙핑크",
+          "date": "2026-10-11",
+          "summary": "프로미스나인, 베이비몬스터, 스테이씨, 미야오, 트리플에스, 아이오아이, 키스오브라이프, 케플러, 캣츠아이, 비비지, 걸스데이, 시그니처, 유스피어, EXID, 클라씨 , 빌리 , 키라스, 아이칠린, 니쥬, 브브걸, 라잇썸...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/108/0003477702",
+          "original_link": "https://www.starnewskorea.com/music/2026/10/11/2026101108390676637"
+        },
+        {
+          "title": "아샷추 마시며 “켄차나 언니!”…日 MZ들 푹 빠진 ‘한국어 덕질’",
+          "date": "2026-10-09",
+          "summary": "광고에서 걸그룹 베이비몬스터의 일본인 멤버 아사는 “켄차나! 칸차!”라고 외친다. 후속 광고에서도 ‘언니(オンニ)’라는 한국어 호칭을 그대로 사용했다. 일본 소비자가 이런 표현을 낯설어하지 않을 것이라는...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/025/0003556799?sid=104",
+          "original_link": "https://www.joongang.co.kr/article/25468379"
+        },
+        {
+          "title": "‘컴백’ 베이비몬스터, 이번엔 어떤 카드 꺼낼까",
+          "date": "2026-10-08",
+          "summary": "그룹 베이비몬스터가 다시 한번 새로운 음악을 꺼내든다. 올해 쉼 없는 활동으로 음악적 스펙트럼을 확장하고 월드투어를 통해 글로벌 무대에서 입지를 넓힌 이들이 치열한 10월 컴백 대전에 합류한다. 어느 때보다...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/609/0001176575",
+          "original_link": "https://www.newsen.com/news_view.php?uid=202610080852210410"
+        },
+        {
+          "title": "팔로워 900만 돌파? 베이비몬스터, 컴백 전부터 뜨겁다",
+          "date": "2026-10-07",
+          "summary": "베이비몬스터가 스포티파이 공식 채널 팔로워 900만 명을 넘어섰다. 7일 YG엔터테인먼트에 따르면 베이비몬스터의 스포티파이 공식 채널 팔로워 수는 지난달 27일 900만 명을 돌파했다. 2024년 4월 1일 공식...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/415/0000052558",
+          "original_link": "http://www.atstar1.com/news/articleView.html?idxno=6039346"
+        },
+        {
+          "title": "투어 열기 그대로…베이비몬스터, 'COMING SOON' 기습 공개",
+          "date": "2026-10-06",
+          "summary": "베이비몬스터가 오는 23일 신곡을 발표하고 하반기 음악 활동을 이어간다. YG엔터테인먼트는 6일 공식 채널을 통해 'COMING SOON' 포스터를 공개하고 베이비몬스터의 신곡 발매 일정을 알렸다. 공개된 일정에...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/415/0000052506",
+          "original_link": "http://www.atstar1.com/news/articleView.html?idxno=6039284"
+        },
+        {
+          "title": "YG, 군산서 찾아가는 문화 행사 '프로젝트 유어사이드' 개최",
+          "date": "2026-10-02",
+          "summary": "/사진=YG엔터 제공 행사에는 시대별 YG 아티스트의 앨범과 굿즈를 비롯해 베이비몬스터와 트레저의 실제 무대 의상 등을 만날 수 있는 전시 공간이 마련된다. 또 AI 기술을 접목한 콘텐츠와 미디어아트를 활용한...",
+          "category": "news",
+          "link": "https://www.mediapen.com/news/view/1127467",
+          "original_link": "https://www.mediapen.com/news/view/1127467"
+        },
+        {
+          "title": "리센느 1위, 10월 신인 아이돌 브랜드평판 정상..2위 코르티스·3위 이즈...",
+          "date": "2026-10-01",
+          "summary": "2026년 10월 신인 아이돌그룹 브랜드평판 30위 순위는 리센느, 코르티스, 이즈나, 하츠투하츠, 키키, 투어스, 아일릿, 튜이드, 베이비몬스터, 유니스, 알파드라이브원...",
+          "category": "news",
+          "link": "http://www.breaknews.com/1240541",
+          "original_link": "http://www.breaknews.com/1240541"
+        },
+        {
+          "title": "NH투자증권 “엔터, 5세대 업사이클로 악순환 탈피…하이브 최선호주”",
+          "date": "2026-10-08",
+          "summary": "블랙핑크와 빅뱅 등 고연차 IP의 활동 주기가 불규칙한 만큼 베이비몬스터와 신인 보이그룹의 성장성이 더욱 중요하다고 분석했다. 베이비몬스터는 월드투어를 통해 공연 규모를 확대하고 있고 신인 보이그룹도...",
+          "category": "news",
+          "link": "https://www.etoday.co.kr/news/view/2633649",
+          "original_link": "https://www.etoday.co.kr/news/view/2633649"
+        },
+        {
+          "title": "위켄드·찰리 푸스·벤슨 분...10월 글로벌 팝스타 내한",
+          "date": "2026-10-07",
+          "summary": "찰리 푸스는 정국, 스트레이 키즈, 베이비몬스터 등 K-POP 아티스트들과의 협업으로 국내에서도 높은 인지도를 자랑한다. 2016년 첫 내한공연을 시작으로, 2018년, 2023년, 2024년까지 꾸준히 한국을 찾은...",
+          "category": "news",
+          "link": "https://www.raonnews.com/news/article.html?no=61686",
+          "original_link": "https://www.raonnews.com/news/article.html?no=61686"
+        },
+        {
+          "title": "‘10월 대전’ 출사표 던진 베이비몬스터, 23일 컴백",
+          "date": "2026-10-06",
+          "summary": "걸그룹 베이비몬스터가 ‘10월 대전’에 출사표를 던진다. 베이비몬스터는 오는 23일 오후 1시 신곡을 발표한다. YG엔터테인먼트가 6일 공식 블로그에 ‘COMING SOON’ 티저 포스터를 게재했다. 이번 컴백은...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/021/0002823268",
+          "original_link": "https://www.munhwa.com/article/11621604?ref=naver"
+        },
+        {
+          "title": "YG, 찾아가는 문화 행사 '프로젝트 유어사이드' 개최",
+          "date": "2026-10-02",
+          "summary": "이번 행사에는 시대별 YG 아티스트의 앨범과 굿즈를 비롯해 베이비몬스터와 트레저가 실제 무대에서 착용한 의상 등을 만나볼 수 있는 전시 공간이 마련된다. 이와 함께 AI 기술을 접목한 콘텐츠와 미디어아트를...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/311/0002064802",
+          "original_link": "https://www.xportsnews.com/article/2203534"
+        },
+        {
+          "title": "리베란테, 최고그룹상 왕좌 탈환…크로스오버 상위권 수성 속 아이돌 추...",
+          "date": "2026-10-01",
+          "summary": "악뮤는 61표(0.2%)를 얻어 13위, 베이비몬스터가 41표(0.2%)로 14위에 올랐으며, 지난 8월 공동 17위였던 리센느가 36표(0.1%)를 수확해 15위로 도약했다. 하위권에서도 각 팀을 향한 응원의 손길이 마지막까지...",
+          "category": "news",
+          "link": "https://www.cbci.co.kr/news/articleView.html?idxno=611603",
+          "original_link": "https://www.cbci.co.kr/news/articleView.html?idxno=611603"
+        }
+      ],
+      "retrieved_unique_non_photo": 128,
+      "pagination_limit_reached": false,
+      "date_timezone": "Asia/Seoul"
+    },
+    "youtube_comments": {
+      "count": 12,
+      "items": [
+        {
+          "artist": "BABYMONSTER",
+          "song": "'최초 공개' BABYMONSTER - MOON #엠카운트다운 EP.940 | Mnet 260806 방송",
+          "comment": "나 아현이 솔로가 너무 기대됨",
+          "comment_id": "Ugwq19gMMCtAKwJowth4AaABAg",
+          "published_at": "2026-10-11T02:15:03Z",
+          "video_id": "m7YXyj1RigA",
+          "channel": "Mnet K-POP",
+          "link": "https://www.youtube.com/watch?v=m7YXyj1RigA&lc=Ugwq19gMMCtAKwJowth4AaABAg"
+        },
+        {
+          "artist": "BABYMONSTER",
+          "song": "[MPD직캠] 베이비몬스터 직캠 8K 'MOON' (BABYMONSTER FanCam) | @MCOUNTDOWN_2026.8.6",
+          "comment": "루카. 염색 잘햇네",
+          "comment_id": "UgxNL26AYxRLgqZx1K14AaABAg",
+          "published_at": "2026-10-09T14:25:48Z",
+          "video_id": "SWacjygc2Vc",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=SWacjygc2Vc&lc=UgxNL26AYxRLgqZx1K14AaABAg"
+        },
+        {
+          "artist": "BABYMONSTER",
+          "song": "BABYMONSTER (베이비몬스터) - I LIKE IT | Show! MusicCore | MBC260711방송",
+          "comment": "라이브 진짜 미쳤다..",
+          "comment_id": "UgyGAHugbFd26sN5t3R4AaABAg",
+          "published_at": "2026-10-06T12:20:20Z",
+          "video_id": "wj4HXqtZyOw",
+          "channel": "MBCkpop",
+          "link": "https://www.youtube.com/watch?v=wj4HXqtZyOw&lc=UgyGAHugbFd26sN5t3R4AaABAg"
+        },
+        {
+          "artist": "BABYMONSTER",
+          "song": "BABYMONSTER - 'I LIKE IT' M/V",
+          "comment": "1억 뷰 가자아ㅏㅏ❤❤",
+          "comment_id": "UgxqvrKkQTI1PBe-RbJ4AaABAg",
+          "published_at": "2026-10-11T11:09:50Z",
+          "video_id": "9cS2wv6AfHk",
+          "channel": "BABYMONSTER",
+          "link": "https://www.youtube.com/watch?v=9cS2wv6AfHk&lc=UgxqvrKkQTI1PBe-RbJ4AaABAg"
+        },
+        {
+          "artist": "BABYMONSTER",
+          "song": "[MPD직캠] 베이비몬스터 직캠 8K 'MOON' (BABYMONSTER FanCam) | @MCOUNTDOWN_2026.8.6",
+          "comment": "와 진짜 대박이다",
+          "comment_id": "UgyxZdZflRIt5BO20kR4AaABAg",
+          "published_at": "2026-10-08T10:53:52Z",
+          "video_id": "SWacjygc2Vc",
+          "channel": "M2",
+          "link": "https://www.youtube.com/watch?v=SWacjygc2Vc&lc=UgyxZdZflRIt5BO20kR4AaABAg"
+        },
+        {
+          "artist": "BABYMONSTER",
+          "song": "BABYMONSTER (베이비몬스터) - I LIKE IT | Show! MusicCore | MBC260711방송",
+          "comment": "아니 이게 라이브인게 너무 신기해 음원튼걸같아",
+          "comment_id": "UgzghsiJTlhRnC4l3cl4AaABAg",
+          "published_at": "2026-10-03T12:13:08Z",
+          "video_id": "wj4HXqtZyOw",
+          "channel": "MBCkpop",
+          "link": "https://www.youtube.com/watch?v=wj4HXqtZyOw&lc=UgzghsiJTlhRnC4l3cl4AaABAg"
+        },
+        {
+          "artist": "BABYMONSTER",
+          "song": "BABYMONSTER - 'I LIKE IT' M/V",
+          "comment": "멋진 여름 테마와 아름다운 소녀들 <3",
+          "comment_id": "UgzzN98Iqst8OSo1mgR4AaABAg",
+          "published_at": "2026-10-09T05:59:34Z",
+          "video_id": "9cS2wv6AfHk",
+          "channel": "BABYMONSTER",
+          "link": "https://www.youtube.com/watch?v=9cS2wv6AfHk&lc=UgzzN98Iqst8OSo1mgR4AaABAg"
+        },
+        {
+          "artist": "BABYMONSTER",
+          "song": "BABYMONSTER - 'I LIKE IT' M/V",
+          "comment": "세계를 평정하시길^^~",
+          "comment_id": "UgyPmTP2ZaEnhFcFOed4AaABAg",
+          "published_at": "2026-10-04T12:47:08Z",
+          "video_id": "9cS2wv6AfHk",
+          "channel": "BABYMONSTER",
+          "link": "https://www.youtube.com/watch?v=9cS2wv6AfHk&lc=UgyPmTP2ZaEnhFcFOed4AaABAg"
+        },
+        {
+          "artist": "BABYMONSTER",
+          "song": "BABYMONSTER - 'I LIKE IT' M/V",
+          "comment": "좋아요수와 조회수를 살펴보는 것도 정말 재미있네요!",
+          "comment_id": "UgxNmJjK-o80JwUR9jR4AaABAg",
+          "published_at": "2026-10-04T11:40:43Z",
+          "video_id": "9cS2wv6AfHk",
+          "channel": "BABYMONSTER",
+          "link": "https://www.youtube.com/watch?v=9cS2wv6AfHk&lc=UgxNmJjK-o80JwUR9jR4AaABAg"
+        },
+        {
+          "artist": "BABYMONSTER",
+          "song": "BABYMONSTER - 'I LIKE IT' M/V",
+          "comment": "RORA 가 최고입니다❤❤",
+          "comment_id": "UgxiljzevHa3mh_Vh3N4AaABAg",
+          "published_at": "2026-10-03T11:37:29Z",
+          "video_id": "9cS2wv6AfHk",
+          "channel": "BABYMONSTER",
+          "link": "https://www.youtube.com/watch?v=9cS2wv6AfHk&lc=UgxiljzevHa3mh_Vh3N4AaABAg"
+        },
+        {
+          "artist": "BABYMONSTER",
+          "song": "BABYMONSTER - 'I LIKE IT' M/V",
+          "comment": "노래가 짱❤❤",
+          "comment_id": "UgxZ6wxOgmiDaQ0vKtd4AaABAg",
+          "published_at": "2026-10-02T03:41:33Z",
+          "video_id": "9cS2wv6AfHk",
+          "channel": "BABYMONSTER",
+          "link": "https://www.youtube.com/watch?v=9cS2wv6AfHk&lc=UgxZ6wxOgmiDaQ0vKtd4AaABAg"
+        },
+        {
+          "artist": "BABYMONSTER",
+          "song": "BABYMONSTER - 'I LIKE IT' M/V",
+          "comment": "2026.10.2 맨날 들으러 온다 ㅎㅎㅎㅎ",
+          "comment_id": "UgyvbWw8302fw0e0Rxl4AaABAg",
+          "published_at": "2026-10-01T21:47:08Z",
+          "video_id": "9cS2wv6AfHk",
+          "channel": "BABYMONSTER",
+          "link": "https://www.youtube.com/watch?v=9cS2wv6AfHk&lc=UgyvbWw8302fw0e0Rxl4AaABAg"
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "m7YXyj1RigA",
+          "title": "'최초 공개' BABYMONSTER - MOON #엠카운트다운 EP.940 | Mnet 260806 방송",
+          "channel": "Mnet K-POP",
+          "channel_id": "UCbD8EppRX3ZwJSou-TVo90A",
+          "published_at": "2026-08-06T10:24:04Z"
+        },
+        {
+          "video_id": "SWacjygc2Vc",
+          "title": "[MPD직캠] 베이비몬스터 직캠 8K 'MOON' (BABYMONSTER FanCam) | @MCOUNTDOWN_2026.8.6",
+          "channel": "M2",
+          "channel_id": "UCTQVIXvcHrR9jYoJ6qaBAow",
+          "published_at": "2026-08-06T10:14:28Z"
+        },
+        {
+          "video_id": "wj4HXqtZyOw",
+          "title": "BABYMONSTER (베이비몬스터) - I LIKE IT | Show! MusicCore | MBC260711방송",
+          "channel": "MBCkpop",
+          "channel_id": "UCe52oeb7Xv_KaJsEzcKXJJg",
+          "published_at": "2026-07-11T07:28:36Z"
+        },
+        {
+          "video_id": "GFIo-tFQM8Q",
+          "title": "BABYMONSTER (베이비몬스터) - MOON ♬ | #UP코노 EP.12",
+          "channel": "SBSKPOP X INKIGAYO",
+          "channel_id": "UCS_hnpJLQTvBkqALgapi_4g",
+          "published_at": "2026-07-10T06:00:22Z"
+        },
+        {
+          "video_id": "9cS2wv6AfHk",
+          "title": "BABYMONSTER - 'I LIKE IT' M/V",
+          "channel": "BABYMONSTER",
+          "channel_id": "UCqwUnggBBct-AY2lAdI88jQ",
+          "published_at": "2026-07-05T15:00:00Z"
+        }
+      ],
+      "warnings": [],
+      "sampling": "5 search videos published within 90 days before month start through cutoff; newest dated Korean top-level comments, balanced across videos"
+    },
+    "model": {
+      "name": "gemini-3.1-flash-lite-preview",
+      "backend": "gemini-absa"
+    },
+    "bugs_chart": {
+      "chart_start": "2026-09-28",
+      "chart_end": "2026-10-04",
+      "artist_items": [],
+      "items": [
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 1,
+          "title": "퇴사할게여 (Narr. 기안84)",
+          "artist": "소연 (SOYEON)",
+          "album": "끝내주는 인생",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 2,
+          "title": "꿈꾸던 어른이 되었나요?",
+          "artist": "머무르",
+          "album": "꿈꾸던 어른이 되었나요?",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 3,
+          "title": "LOVE ATTACK",
+          "artist": "RESCENE (리센느)",
+          "album": "SCENEDROME",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 4,
+          "title": "Dear my crazy soulmate",
+          "artist": "아이유(IU)",
+          "album": "이 별로부터",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 5,
+          "title": "BAD",
+          "artist": "ATEEZ(에이티즈)",
+          "album": "GOLDEN HOUR : Part.5",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 6,
+          "title": "Guitarist",
+          "artist": "도경수(D.O.)",
+          "album": "DOPAMINE - The 4th Mini Album",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 7,
+          "title": "갑자기",
+          "artist": "아이오아이(I.O.I)",
+          "album": "I.O.I 3rd MINI ALBUM [I.O.I : LOOP]",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 8,
+          "title": "Skibidi",
+          "artist": "소녀시대-효리수 (Girls' Generation-HRS)",
+          "album": "Skibidi",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 9,
+          "title": "Deja Vu",
+          "artist": "RESCENE (리센느)",
+          "album": "Dearest",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 10,
+          "title": "CRASH",
+          "artist": "ALLDAY PROJECT",
+          "album": "CRASH",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 11,
+          "title": "만찬가",
+          "artist": "태연 (TAEYEON)",
+          "album": "J-POP REMAKE Vol.1",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 12,
+          "title": "REDRED",
+          "artist": "CORTIS (코르티스)",
+          "album": "GREENGREEN",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 13,
+          "title": "이 별로부터",
+          "artist": "아이유(IU)",
+          "album": "이 별로부터",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 14,
+          "title": "LEMONADE",
+          "artist": "aespa",
+          "album": "LEMONADE - The 2nd Album",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 15,
+          "title": "It′s Me",
+          "artist": "아일릿(ILLIT)",
+          "album": "MAMIHLAPINATAPAI",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 16,
+          "title": "Drowning",
+          "artist": "WOODZ",
+          "album": "OO-LI",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 17,
+          "title": "생각을 멈추다 보면",
+          "artist": "최유리",
+          "album": "생각을 멈추다 보면",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 18,
+          "title": "Pretty Girl",
+          "artist": "RESCENE (리센느)",
+          "album": "Pretty Girl - Special Single",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 19,
+          "title": "Pop Off Pop Off",
+          "artist": "KiiiKiii (키키)",
+          "album": "WhyKiiiKiii",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 20,
+          "title": "Good Goodbye",
+          "artist": "화사 (HWASA)",
+          "album": "Good Goodbye",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 21,
+          "title": "Less than a Lover",
+          "artist": "제니 (JENNIE)",
+          "album": "Less than a Lover",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 22,
+          "title": "BiiiG",
+          "artist": "BIGBANG (빅뱅)",
+          "album": "BiiiG",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 23,
+          "title": "사랑하게 될 거야",
+          "artist": "한로로",
+          "album": "이상비행",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 24,
+          "title": "0+0",
+          "artist": "한로로",
+          "album": "자몽살구클럽",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 25,
+          "title": "LOUDER",
+          "artist": "CRAVITY",
+          "album": "sonorous",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 26,
+          "title": "Popcorn",
+          "artist": "도경수(D.O.)",
+          "album": "성장 - THE 3RD MINI ALBUM",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 27,
+          "title": "캐치 캐치",
+          "artist": "YENA (최예나)",
+          "album": "LOVE CATCHER",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 28,
+          "title": "RUDE!",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "RUDE!",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 29,
+          "title": "toxic till the end",
+          "artist": "로제(ROSÉ)",
+          "album": "rosie",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 30,
+          "title": "Pinball",
+          "artist": "RESCENE (리센느)",
+          "album": "SCENEDROME",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 31,
+          "title": "404 (New Era)",
+          "artist": "KiiiKiii (키키)",
+          "album": "Delulu Pack",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 32,
+          "title": "소문의 낙원",
+          "artist": "AKMU(악뮤)",
+          "album": "개화",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 33,
+          "title": "기쁨, 슬픔, 아름다운 마음",
+          "artist": "AKMU(악뮤)",
+          "album": "개화",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 34,
+          "title": "봄 내음보다 너를",
+          "artist": "김나영",
+          "album": "봄 내음보다 너를",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 35,
+          "title": "뛰어(JUMP)",
+          "artist": "BLACKPINK",
+          "album": "뛰어(JUMP)",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 36,
+          "title": "어떻게 이별까지 사랑하겠어, 널 사랑하는 거지",
+          "artist": "AKMU(악뮤)",
+          "album": "항해",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 37,
+          "title": "Lemon Tang",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "Lemon Tang - The 2nd Mini Album",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 38,
+          "title": "Runaway",
+          "artist": "RESCENE (리센느)",
+          "album": "Runaway",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 39,
+          "title": "BANG BANG",
+          "artist": "IVE (아이브)",
+          "album": "REVIVE+",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 40,
+          "title": "입춘",
+          "artist": "한로로",
+          "album": "입춘",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 41,
+          "title": "SUN KISS",
+          "artist": "TUIDE (튜이드)",
+          "album": "The 1st EP [TUNE & PLAY]",
+          "change_rank": 11
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 42,
+          "title": "연애의 조건 (Love Options)",
+          "artist": "베스티(BESTie)",
+          "album": "연애의 조건 (Love Options)",
+          "change_rank": 52
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 43,
+          "title": "노스탈지아",
+          "artist": "BIG Naughty (서동현)",
+          "album": "노스탈지아",
+          "change_rank": -10
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 44,
+          "title": "Whiplash",
+          "artist": "aespa",
+          "album": "Whiplash - The 5th Mini Album",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 45,
+          "title": "내게 사랑이 뭐냐고 물어본다면",
+          "artist": "로이킴",
+          "album": "내게 사랑이 뭐냐고 물어본다면",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 46,
+          "title": "한 페이지가 될 수 있게",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Book of Us : Gravity",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 47,
+          "title": "멸종위기사랑",
+          "artist": "이찬혁",
+          "album": "EROS",
+          "change_rank": -7
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 48,
+          "title": "너에게 닿기를",
+          "artist": "10CM",
+          "album": "너에게 닿기를",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 49,
+          "title": "Heavy Serenade",
+          "artist": "NMIXX",
+          "album": "Heavy Serenade",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 50,
+          "title": "Surfin' Boy",
+          "artist": "Red Velvet (레드벨벳)",
+          "album": "Velvet Summer - Summer Mini Album",
+          "change_rank": -16
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 51,
+          "title": "모든 날, 모든 순간 (Every day, Every Moment)",
+          "artist": "폴킴(Paul Kim)",
+          "album": "'키스 먼저 할까요?' OST Part.3",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 52,
+          "title": "타임캡슐",
+          "artist": "다비치",
+          "album": "타임캡슐",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 53,
+          "title": "like JENNIE",
+          "artist": "제니 (JENNIE)",
+          "album": "Ruby",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 54,
+          "title": "Blue Valentine",
+          "artist": "NMIXX",
+          "album": "Blue Valentine",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 55,
+          "title": "Golden",
+          "artist": "HUNTR/X, 아티스트 전체보기",
+          "album": "KPop Demon Hunters (Soundtrack from the Netflix Film)",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 56,
+          "title": "청춘만화",
+          "artist": "이무진",
+          "album": "만화 (滿花)",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 57,
+          "title": "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))",
+          "artist": "너드커넥션(Nerd Connection)",
+          "album": "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 58,
+          "title": "여름아 부탁해",
+          "artist": "볼빨간사춘기",
+          "album": "여름아 부탁해",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 59,
+          "title": "모르시나요(PROD.로코베리)",
+          "artist": "조째즈",
+          "album": "모르시나요",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 60,
+          "title": "HAPPY",
+          "artist": "DAY6 (데이식스)",
+          "album": "Fourever",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 61,
+          "title": "APT.",
+          "artist": "로제(ROSÉ), 아티스트 전체보기",
+          "album": "APT.",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 62,
+          "title": "주저하는 연인들을 위해",
+          "artist": "잔나비",
+          "album": "전설",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 63,
+          "title": "천상연",
+          "artist": "이창섭",
+          "album": "천상연 (웹툰 '선녀외전' X 이창섭 (LEE CHANGSUB))",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 64,
+          "title": "Hype Boy",
+          "artist": "NewJeans",
+          "album": "NewJeans 1st EP 'New Jeans'",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 65,
+          "title": "그대 작은 나의 세상이 되어",
+          "artist": "카더가든",
+          "album": "부재",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 66,
+          "title": "Ditto",
+          "artist": "NewJeans",
+          "album": "NewJeans 'OMG'",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 67,
+          "title": "Die With A Smile",
+          "artist": "Lady Gaga(레이디 가가), 아티스트 전체보기",
+          "album": "Die With A Smile",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 68,
+          "title": "FAMOUS",
+          "artist": "ALLDAY PROJECT",
+          "album": "FAMOUS",
+          "change_rank": 16
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 69,
+          "title": "사계, 그리고 너",
+          "artist": "이창섭",
+          "album": "Lee;Make (Fragmenta Amoris)",
+          "change_rank": 12
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 70,
+          "title": "I AM",
+          "artist": "IVE (아이브)",
+          "album": "I've IVE",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 71,
+          "title": "Supernova",
+          "artist": "aespa",
+          "album": "Armageddon - The 1st Album",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 72,
+          "title": "Welcome to the Show",
+          "artist": "DAY6 (데이식스)",
+          "album": "Fourever",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 73,
+          "title": "에피소드",
+          "artist": "이무진",
+          "album": "에피소드",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 74,
+          "title": "나는 반딧불",
+          "artist": "황가람",
+          "album": "나는 반딧불",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 75,
+          "title": "고민중독",
+          "artist": "QWER",
+          "album": "1st Mini Album 'MANITO'",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 76,
+          "title": "Magnetic",
+          "artist": "아일릿(ILLIT)",
+          "album": "SUPER REAL ME",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 77,
+          "title": "Vitamin ME",
+          "artist": "프로미스나인",
+          "album": "Glow ME",
+          "change_rank": -13
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 78,
+          "title": "첫 만남은 계획대로 되지 않아",
+          "artist": "TWS (투어스)",
+          "album": "Sparkling Blue",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 79,
+          "title": "사랑은 봄비처럼... 이별은 겨울비처럼",
+          "artist": "임현정",
+          "album": "A Year Out..In The Island",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 80,
+          "title": "FOCUS",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "FOCUS - The 1st Mini Album",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 81,
+          "title": "HOME SWEET HOME (feat. 태양, 대성)",
+          "artist": "G-DRAGON",
+          "album": "HOME SWEET HOME (feat. 태양, 대성)",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 82,
+          "title": "달리 표현할 수 없어요",
+          "artist": "로이킴",
+          "album": "달리 표현할 수 없어요",
+          "change_rank": 4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 83,
+          "title": "FALLEN ANGEL",
+          "artist": "제니 (JENNIE)",
+          "album": "Fallen Angel (Digital EP)",
+          "change_rank": -15
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 84,
+          "title": "소나기",
+          "artist": "이클립스 (ECLIPSE)",
+          "album": "선재 업고 튀어 OST Part 1",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 85,
+          "title": "Congratulations",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Day",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 86,
+          "title": "WDA (Whole Different Animal) (Feat. G-DRAGON)",
+          "artist": "aespa",
+          "album": "LEMONADE - The 2nd Album",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 87,
+          "title": "REBEL HEART",
+          "artist": "IVE (아이브)",
+          "album": "IVE EMPATHY",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 88,
+          "title": "예뻤어",
+          "artist": "DAY6 (데이식스)",
+          "album": "Every DAY6 February",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 89,
+          "title": "NOT CUTE ANYMORE",
+          "artist": "아일릿(ILLIT)",
+          "album": "NOT CUTE ANYMORE",
+          "change_rank": -9
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 90,
+          "title": "Flashback",
+          "artist": "엔플라잉(N.Flying)",
+          "album": "Man on the Moon",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 91,
+          "title": "사랑인가 봐",
+          "artist": "멜로망스(MeloMance)",
+          "album": "사랑인가 봐 (사내맞선 OST 스페셜 트랙)",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 92,
+          "title": "THAT’S A NO NO",
+          "artist": "ITZY (있지)",
+          "album": "IT'z ME",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 93,
+          "title": "ONE MORE TIME",
+          "artist": "ALLDAY PROJECT",
+          "album": "ALLDAY PROJECT",
+          "change_rank": 6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 94,
+          "title": "STYLE",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "STYLE",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 95,
+          "title": "BLACKHOLE",
+          "artist": "IVE (아이브)",
+          "album": "REVIVE+",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 96,
+          "title": "Love me or Leave me",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Book of Us : The Demon",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 97,
+          "title": "OVERDRIVE",
+          "artist": "TWS (투어스)",
+          "album": "play hard",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 98,
+          "title": "Who is she",
+          "artist": "KISS OF LIFE",
+          "album": "Who is she",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 99,
+          "title": "new trick",
+          "artist": "로제(ROSÉ)",
+          "album": "new trick",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 100,
+          "title": "Sour Grapes",
+          "artist": "NiziU (니쥬)",
+          "album": "Sour Grapes",
+          "change_rank": 0
+        }
+      ],
+      "link": "https://music.bugs.co.kr/chart/track/week/total?chartdate=20260928",
+      "requested_chart_start": "2026-10-05"
+    }
+  },
+  "overall_sentiment": {
+    "count": 12,
+    "ratio": {
+      "positive": 0.9167,
+      "neutral": 0.0833,
+      "negative": 0.0
+    },
+    "dominant": "positive"
+  },
+  "aspect_sentiment": {
+    "song_music": {
+      "label": "song / music",
+      "count": 3,
+      "ratio": {
+        "positive": 1.0,
+        "neutral": 0.0,
+        "negative": 0.0
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "멋진 여름 테마와 아름다운 소녀들 <3",
+          "link": "https://www.youtube.com/watch?v=9cS2wv6AfHk&lc=UgzzN98Iqst8OSo1mgR4AaABAg",
+          "published_at": "2026-10-09T05:59:34Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "노래가 짱❤❤",
+          "link": "https://www.youtube.com/watch?v=9cS2wv6AfHk&lc=UgxZ6wxOgmiDaQ0vKtd4AaABAg",
+          "published_at": "2026-10-02T03:41:33Z"
+        }
+      ]
+    },
+    "performance": {
+      "label": "performance",
+      "count": 1,
+      "ratio": {
+        "positive": 1.0,
+        "neutral": 0.0,
+        "negative": 0.0
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "라이브 진짜 미쳤다..",
+          "link": "https://www.youtube.com/watch?v=wj4HXqtZyOw&lc=UgyGAHugbFd26sN5t3R4AaABAg",
+          "published_at": "2026-10-06T12:20:20Z"
+        }
+      ]
+    },
+    "visual_styling": {
+      "label": "visual / styling",
+      "count": 2,
+      "ratio": {
+        "positive": 1.0,
+        "neutral": 0.0,
+        "negative": 0.0
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "루카. 염색 잘햇네",
+          "link": "https://www.youtube.com/watch?v=SWacjygc2Vc&lc=UgxNL26AYxRLgqZx1K14AaABAg",
+          "published_at": "2026-10-09T14:25:48Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "멋진 여름 테마와 아름다운 소녀들 <3",
+          "link": "https://www.youtube.com/watch?v=9cS2wv6AfHk&lc=UgzzN98Iqst8OSo1mgR4AaABAg",
+          "published_at": "2026-10-09T05:59:34Z"
+        }
+      ]
+    },
+    "vocal_rap": {
+      "label": "vocal / rap",
+      "count": 1,
+      "ratio": {
+        "positive": 1.0,
+        "neutral": 0.0,
+        "negative": 0.0
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "아니 이게 라이브인게 너무 신기해 음원튼걸같아",
+          "link": "https://www.youtube.com/watch?v=wj4HXqtZyOw&lc=UgzghsiJTlhRnC4l3cl4AaABAg",
+          "published_at": "2026-10-03T12:13:08Z"
+        }
+      ]
+    },
+    "fandom_public_opinion": {
+      "label": "fandom / public_opinion",
+      "count": 4,
+      "ratio": {
+        "positive": 1.0,
+        "neutral": 0.0,
+        "negative": 0.0
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "나 아현이 솔로가 너무 기대됨",
+          "link": "https://www.youtube.com/watch?v=m7YXyj1RigA&lc=Ugwq19gMMCtAKwJowth4AaABAg",
+          "published_at": "2026-10-11T02:15:03Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "1억 뷰 가자아ㅏㅏ❤❤",
+          "link": "https://www.youtube.com/watch?v=9cS2wv6AfHk&lc=UgxqvrKkQTI1PBe-RbJ4AaABAg",
+          "published_at": "2026-10-11T11:09:50Z"
+        }
+      ]
+    }
+  },
+  "comment_annotations": [
+    {
+      "id": 0,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 5,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "vocal_rap",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "sentiment": "neutral",
+      "aspects": []
+    },
+    {
+      "id": 9,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    }
+  ],
+  "naver_news_summary": [
+    {
+      "title": "독보적 대세 입증한 리센느 아이브 블랙핑크 제치고 10월 걸그룹 브랜드...",
+      "date": "2026-10-11",
+      "summary": "프로미스나인, 베이비몬스터, 스테이씨, 미야오, 트리플에스, 아이오아이, 키스오브라이프, 케플러, 캣츠아이, 비비지, 걸스데이, 시그니처, 유스피어, EXID, 클라씨 , 빌리 , 키라스, 아이칠린, 니쥬, 브브걸, 라잇썸...",
+      "link": "https://www.gpkorea.com/news/articleView.html?idxno=147451"
+    },
+    {
+      "title": "‘코르티스·베몬·NCT 위시’, 5세대만 믿는다…엔터주, 내년이 승부처...",
+      "date": "2026-10-10",
+      "summary": "시장의 시선은 BTS 등 기존 간판 그룹의 활동이 이어지는 가운데 코르티스·캣츠아이·NCT 위시·킥플립·베이비몬스터 등 5세대 IP(지식재산권)가 실적으로 연결되는 2027년으로 향한다. 금융정보업체 에프앤가이드에...",
+      "link": "https://n.news.naver.com/mnews/article/016/0002707542?sid=101"
+    },
+    {
+      "title": "KM차트, 이찬원 등 2026 3분기 K-MUSIC 빛낼 '시즌베스트 어텀' 후보 공개",
+      "date": "2026-10-09",
+      "summary": "인기 남성 부문은 이찬원, 임영웅, 방탄소년단 멤버(뷔·진·지민·정국), 박지훈 등 14팀이, 여성 부문은 베이비몬스터, 피프티피프티, 리센느, 트와이스, 아이들 등 14팀이 지명됐다. 신인 남성 부문 코르티스...",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242662"
+    },
+    {
+      "title": "코르티스 베몬 벌써 월드투어? 막내들 밥값 속도 겁나네 [엔터코노미]",
+      "date": "2026-10-08",
+      "summary": "이번 공연은 데뷔 1주년을 기념해 서울, 인천과 캐나다 토론토, 미국 뉴욕, 일본 가나가와 등 9개 도시에서 14회에 걸쳐 진행됐으며, 전석 매진을 달성했다.와이지엔터테인먼트 소속 걸그룹 베이비몬스터는 정식...",
+      "link": "https://news.mtn.co.kr/news-detail/2026092810410128535"
+    },
+    {
+      "title": "베이비몬스터, 4개월 만의 초고속 컴백 예고",
+      "date": "2026-10-07",
+      "summary": "|중앙이코노미뉴스 조용우 기자|출처=YG엔터테인먼트 베이비몬스터가 오는 23일 오후 1시 신곡을 발표하며 4개월 만의 초고속 컴백을 확정했다. YG엔터테인먼트는 어제(6일) 공식 블로그에 'COMING SOON' 티저...",
+      "link": "https://www.joongangenews.com/news/articleView.html?idxno=553341"
+    }
+  ],
+  "top_comments_or_evidence": [
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "멋진 여름 테마와 아름다운 소녀들 <3",
+      "link": "https://www.youtube.com/watch?v=9cS2wv6AfHk&lc=UgzzN98Iqst8OSo1mgR4AaABAg",
+      "published_at": "2026-10-09T05:59:34Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "라이브 진짜 미쳤다..",
+      "link": "https://www.youtube.com/watch?v=wj4HXqtZyOw&lc=UgyGAHugbFd26sN5t3R4AaABAg",
+      "published_at": "2026-10-06T12:20:20Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "루카. 염색 잘햇네",
+      "link": "https://www.youtube.com/watch?v=SWacjygc2Vc&lc=UgxNL26AYxRLgqZx1K14AaABAg",
+      "published_at": "2026-10-09T14:25:48Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "아니 이게 라이브인게 너무 신기해 음원튼걸같아",
+      "link": "https://www.youtube.com/watch?v=wj4HXqtZyOw&lc=UgzghsiJTlhRnC4l3cl4AaABAg",
+      "published_at": "2026-10-03T12:13:08Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "나 아현이 솔로가 너무 기대됨",
+      "link": "https://www.youtube.com/watch?v=m7YXyj1RigA&lc=Ugwq19gMMCtAKwJowth4AaABAg",
+      "published_at": "2026-10-11T02:15:03Z"
+    }
+  ],
+  "monthly_insight": {
+    "headline": "10/23 新曲預告，回歸前觀察",
+    "market_heat": "10/23 新曲發行已公告 [N5][N15]；串流追蹤數報導可作累積受眾參考 [N31]，不能等同當月新曲需求。",
+    "news_focus": "10/23 發行新曲與回歸預告 [N5][N15]，以及 Spotify 追蹤數達 900 萬的報導 [N31]。",
+    "trend": "目前處於回歸預告期，新曲尚未發布，無法確認新曲成績。",
+    "opportunity": "把既有舞台及演唱內容與新曲宣傳銜接，追蹤回歸後的實際反應。",
+    "watch": "10/23 發行後的音源表現及韓文留言；需增加期間內樣本。",
+    "summary": "BABYMONSTER 已公告 10/23 發行新曲 [N5][N15]。現有 12 則留言偏正面，主要反映既有表演內容，尚不足以推論回歸口碑。",
+    "evidence_ids": [
+      "N5",
+      "N15",
+      "N31"
+    ],
+    "risk": "資料不足",
+    "fan_summary": "抽樣 12 則：正面 11、中立 1、負面 0。比例只代表本次影片觀眾；不能直接推論整體粉絲或一般大眾。"
+  },
+  "report_text": "# BABYMONSTER 2026-10 市場與輿論分析\n\n## 1. 榜單表現\n- Bugs 全曲週榜 Top 100：2026-09-28–2026-10-04（橫跨月份，僅作參考）。\n- 此藝人未出現在這份已發布週榜 Top 100；不能據此推論全球熱度。\n- 2026-10-05 起算週榜尚未取得；目前無法判定當月排名趨勢。\n\n## 2. 粉絲與輿論反應\n- 正面比例：0.9167\n- 中立比例：0.0833\n- 負面比例：0.0\n- 簡短解讀：抽樣 12 則：正面 11、中立 1、負面 0。比例只代表本次影片觀眾；不能直接推論整體粉絲或一般大眾。\n- 留言樣本：12 則期間內韓文頂層留言；僅代表抽樣影片，新聞不納入比例。\n\n## 3. 綜合判斷\n- 市場熱度：10/23 新曲發行已公告 [N5][N15]；串流追蹤數報導可作累積受眾參考 [N31]，不能等同當月新曲需求。\n- 輿論風險：資料不足\n- Naver 新聞觀察：10/23 發行新曲與回歸預告 [N5][N15]，以及 Spotify 追蹤數達 900 萬的報導 [N31]。\n- 短期趨勢：目前處於回歸預告期，新曲尚未發布，無法確認新曲成績。\n\n## 4. 市場洞察\n- 機會點：把既有舞台及演唱內容與新曲宣傳銜接，追蹤回歸後的實際反應。\n- 觀察重點：10/23 發行後的音源表現及韓文留言；需增加期間內樣本。\n- 分析期間：2026-10-01–2026-10-11（截至日資料，非完整月報；新聞依韓國刊登日，留言依台北日期）。\n- 限制：影片搜尋抽樣、韓文頂層留言、新聞摘要；不代表整體粉絲或一般大眾。\n\n## 5. 一句話總結\nBABYMONSTER 已公告 10/23 發行新曲 [N5][N15]。現有 12 則留言偏正面，主要反映既有表演內容，尚不足以推論回歸口碑。\n",
+  "original_model_insight": {
+    "headline": "BABYMONSTER 10月23日回歸，全球影響力持續擴張",
+    "risk": "中",
+    "fan_summary": "粉絲對成員現場演唱實力、視覺造型及個人SOLO活動展現高度期待，社群互動多為正面支持，並積極推動觀看次數成長，樣本數為12則留言，樣本有限。",
+    "market_heat": "市場熱度高，品牌影響力穩固，不僅在多項品牌評價榜單名列前茅，更透過全球巡演與跨界行銷提升知名度。",
+    "news_focus": "重點聚焦於10月23日的新曲回歸、全球串流平台數據增長（Spotify追蹤數破900萬），以及作為YG娛樂核心IP在未來業績成長中的關鍵角色。",
+    "trend": "持續擴大海外市場，透過巡演與品牌代言（如adidas）深化全球影響力，並積極參與各類文化推廣活動，維持高頻率的曝光與音樂活動。",
+    "opportunity": "藉由10月回歸契機，進一步鞏固5世代女團領先地位，並利用現有全球粉絲基礎與串流數據優勢，提升新曲在國際市場的競爭力。",
+    "watch": "關注10月23日回歸後的市場反應、新曲音源表現，以及在競爭激烈的10月回歸大戰中，能否維持品牌評價與實體銷量的成長動能。",
+    "summary": "BABYMONSTER近期表現強勁，不僅在品牌評價榜單維持高位，更透過全球巡演與數位平台數據證明其影響力。目前已確認於10月23日回歸，市場對其作為YG娛樂未來成長動能寄予厚望。儘管面臨10月激烈的競爭環境，其穩定的粉絲支持與全球化策略為其發展提供支撐。",
+    "evidence_ids": [
+      "N0",
+      "N1",
+      "N3",
+      "N4",
+      "N5",
+      "N7",
+      "N11",
+      "N14",
+      "N15",
+      "N17",
+      "N20",
+      "N21",
+      "N22",
+      "N24",
+      "N26",
+      "N30",
+      "N31",
+      "N32",
+      "N35",
+      "N37"
+    ]
+  },
+  "review": {
+    "reviewed_at": "2026-10-11T15:49:49.087532+00:00",
+    "method": "Source-bound editorial review of news digests and comment annotations",
+    "notes": [
+      "Removed unsupported market/ranking claims",
+      "Separated member, former-member and NCT unit activity",
+      "Overall opinion risk not established by convenience sample"
+    ]
+  }
+}

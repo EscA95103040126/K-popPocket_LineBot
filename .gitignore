@@ -11,3 +11,5 @@ data/cache/*
 !data/cache/absa/
 !data/cache/absa/*.json
 !data/cache/absa/summary.csv
+data/reports/**/*_raw.json
+data/reports/**/previous_active_cache/

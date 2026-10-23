@@ -1,0 +1,2960 @@
+{
+  "artist": "NMIXX",
+  "generated_at": "2026-10-11T15:44:11.544803+00:00",
+  "analysis_period": {
+    "start": "2026-10-01",
+    "end": "2026-10-11",
+    "timezone": "Asia/Taipei"
+  },
+  "sources": {
+    "naver_news": {
+      "count": 40,
+      "items": [
+        {
+          "title": "독보적 대세 입증한 리센느 아이브 블랙핑크 제치고 10월 걸그룹 브랜드...",
+          "date": "2026-10-11",
+          "summary": "에이핑크, 엔믹스, 프로미스나인, 베이비몬스터, 스테이씨, 미야오, 트리플에스, 아이오아이, 키스오브라이프, 케플러, 캣츠아이, 비비지, 걸스데이, 시그니처, 유스피어, EXID, 클라씨 , 빌리 , 키라스, 아이칠린...",
+          "category": "news",
+          "link": "https://www.gpkorea.com/news/articleView.html?idxno=147451",
+          "original_link": "https://www.gpkorea.com/news/articleView.html?idxno=147451"
+        },
+        {
+          "title": "미야오·엔믹스·아이브·아일릿 줄줄이 컴백…음원차트 돌풍 리센느까...",
+          "date": "2026-10-10",
+          "summary": "리센느가 음원차트 상위권을 차지하고 있는 가운데, 미야오, 엔믹스, 아이브, 아일릿이 각각 새로운... 엔믹스는 19일 미니 6집 'Strange Muse(스트레인지 뮤즈)'를 발표한다. 이번 앨범에는 타이틀곡 '긴 소원...",
+          "category": "news",
+          "link": "https://www.jnilbo.com/news/articleView.html?idxno=90000072200",
+          "original_link": "https://www.jnilbo.com/news/articleView.html?idxno=90000072200"
+        },
+        {
+          "title": "케이팝 가을 컴백 대전 돌입…빅4에 이수만 새 그룹·아이브·플레이브...",
+          "date": "2026-10-09",
+          "summary": "▲ 그룹 세븐틴 정한·조슈아(시계 방향으로), NCT 위시, 베이비몬스터, 엔믹스 추석 연휴와 아시안게임으로... 19일에는 세븐틴 정한·조슈아와 엔믹스가, 23일에는 베이비몬스터가 컴백합니다. 26일에는 아이브와...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/055/0001394283?sid=103",
+          "original_link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008790499&plink=ORI&cooper=NAVER"
+        },
+        {
+          "title": "'AAA 2026', 인기상 결선 투표 시작…변우석-김혜윤→방탄소년단-하츠투...",
+          "date": "2026-10-08",
+          "summary": "여자 그룹 부문은 현재 1위가 하츠투하츠(Hearts2Hearts)이며, 뒤를 이어 2위는 엔믹스(NMIXX), 3위 이세계아이돌, 4위 하데스, 5위는 트와이스(TWICE)가 기록 중이다. 남자 솔로 가수 부문 예선 투표에 이어 1위는...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242036",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16242036"
+        },
+        {
+          "title": "'AAA 2026', 인기상 부문별 1위 변동…변우석·김혜윤→임영웅·예지",
+          "date": "2026-10-07",
+          "summary": "반면 여자 그룹 부문 1위는 엔믹스(NMIXX)가 다시 올랐으며, 2위는 트와이스(TWICE), 3위 이세계아이돌, 4위 하데스, 5위는 하츠투하츠(Hearts2Hearts)로 변동됐다. 남자 솔로 가수 부문 1위는 압도적인 투표차로...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16240980",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16240980"
+        },
+        {
+          "title": "올가을 궁궐에 가면 뭐가 다를까…한복 입은 왕가 걷고, 종묘엔 수문장...",
+          "date": "2026-10-06",
+          "summary": "김영임, 김창완밴드, 린, 이승기, 송가인, 라포엠, 비투비 은광·민혁, 엔믹스, 보이넥스트도어, 싸이커스, 허니제이 등이 출연했다. 경복궁에서는 한복 입은 '왕가의 산책' 경복궁의 중심은 한복이다. 9일과 10일 오후...",
+          "category": "news",
+          "link": "http://www.ikoreanspirit.com/news/articleView.html?idxno=87608",
+          "original_link": "http://www.ikoreanspirit.com/news/articleView.html?idxno=87608"
+        },
+        {
+          "title": "'AAA 2026', 인기상 투표 진행→부문별 순위 보니…변우석-김혜윤 나란히...",
+          "date": "2026-10-05",
+          "summary": "여자 그룹 부문 1위는 트와이스(TWICE), 2위 엔믹스(NMIXX) 3위 이세계아이돌, 4위 하데스, 5위는 하츠투하츠(Hearts2Hearts)로 변동됐다. 남자 솔로 가수 부문 1위는 압도적인 투표차로 임영웅이 지키고 있으며, 뒤를...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16238744",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16238744"
+        },
+        {
+          "title": "비행기 타면 엔믹스가 반긴다…이스타항공, 탑승권·기내방송 협업",
+          "date": "2026-10-04",
+          "summary": "탑승권에는 엔믹스 멤버 사진이 들어가고, 기내에서는 멤버들이 직접 녹음한 인사말과 신곡이 흘러나온다. 11월부터는 엔믹스 멤버들의 이미지를 입힌 항공기도 하늘을 난다. 이스타항공은 아이돌 그룹 엔믹스(NMIXX)와...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/448/0000643039?sid=101",
+          "original_link": "https://news.tvchosun.com/site/data/html_dir/2026/10/04/2026100490091.html"
+        },
+        {
+          "title": "[뮤직컴퍼니100] 제니 OA엔터 0.13%p 확대…JYP·스타쉽 순서 다시 바뀌어",
+          "date": "2026-10-03",
+          "summary": "JYP 소속 데이식스는 2618점으로 4점 증가했고 엔믹스는 1363점으로 7점 감소했다. 있지는 14점으로... 두 회사 모두 여러 아티스트가 점유율을 구성하고 있지만 현재 스코어 비중은 JYP에서 데이식스와 엔믹스...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16235753",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16235753"
+        },
+        {
+          "title": "'AAA 2026', 실시간 순위? 변우석-김혜윤 나란히…스트레이 키즈-트와이...",
+          "date": "2026-10-02",
+          "summary": "여자 그룹 부문에서도 1위 자리는 트와이스(TWICE)가 유지 중이며, 2위 역시 엔믹스(NMIXX), 3위 이세계아이돌, 4위 하데스, 5위는 하츠투하츠(Hearts2Hearts)까지 지난 순위에서 변동은 없다. 남자 솔로 가수 부문...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16235079",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16235079"
+        },
+        {
+          "title": "나무증권, 엔믹스 설윤과 하반기 캠페인…최대 24개월간 수수료 0원",
+          "date": "2026-10-01",
+          "summary": "나무증권이 그룹 엔믹스(NMIXX) 설윤을 앞세운 하반기 광고 캠페인을 시작한다. '선녀급 혜택'을 콘셉트로 신규·휴면 고객에게 최대 24개월간 국내주식 거래수수료와 유관기관수수료를 면제한다. 1일 NH투자증권은 자사...",
+          "category": "news",
+          "link": "http://www.beyondpost.co.kr/view.php?ud=202610012327425622be44c0aacd_30",
+          "original_link": "http://www.beyondpost.co.kr/view.php?ud=202610012327425622be44c0aacd_30"
+        },
+        {
+          "title": "리센느, 8월·9월·10월에도 \"야호\"..걸그룹 브랜드 평판 '평정'",
+          "date": "2026-10-11",
+          "summary": "에이핑크, 엔믹스, 프로미스나인, 베이비몬스터, 스테이씨, 미야오, 트리플에스, 아이오아이, 키스오브라이프 순이었다. ​ 브랜드 평판지수는 소비자들의 온라인 습관이 브랜드 소비에 큰 영향을 끼친다는 것을...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/109/0005621735",
+          "original_link": "http://www.osen.co.kr/article/G1112891088"
+        },
+        {
+          "title": "[뮤직100] 잔나비 87.4점 증가 25위 급등…아이유 141.5점 급감·소연 1위",
+          "date": "2026-10-10",
+          "summary": "하츠투하츠의 'STYLE'은 13.3점 증가한 583.4점으로 74위에서 72위로 상승했고, 엔믹스의 'Heavy Serenade'는 8.8점 증가한 662.6점으로 59위에 올랐다. 블랙핑크 로제의 'APT.'도 10.1점 증가한 657.4점으로 61위를 기록했다....",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242954",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16242954"
+        },
+        {
+          "title": "K팝 빅4에 이수만 그룹·아이브·플레이브까지…가을 컴백 대전",
+          "date": "2026-10-09",
+          "summary": "19일에는 세븐틴 정한·조슈아와 엔믹스가, 23일에는 베이비몬스터가 컴백한다. 26일에는 아이브와 아일릿, 라이즈가 같은 날 신보를 내놓으며 맞붙는다. 앤더블은 27일 미니 2집을 발매하며 첫 컴백을 예고했다. 다음...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/001/0016367458?sid=103",
+          "original_link": "https://www.yna.co.kr/view/AKR20261009030400005?input=1195m"
+        },
+        {
+          "title": "JYP, 755억 들인 고덕 신사옥 건립 전면 철회…'성내동 체제' 유지(종합...",
+          "date": "2026-10-08",
+          "summary": "비, 박지윤, 그룹 'god' '원더걸스' '2PM' '2AM' '갓세븐' '트와이스' '스트레이 키즈' '있지' '엔믹스' '킥플립', '니쥬', '넥스지' 등을 배출했다. 청담동 일대에 흩어졌던 공간을 모아 2018년 약 202억 원에 매입한 현 성내동...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/003/0014242531",
+          "original_link": "https://www.newsis.com/view/NISX20261008_0003819336"
+        },
+        {
+          "title": "'뮤직뱅크 인 바르셀로나' 방송 시간…라인업 엔믹스 등",
+          "date": "2026-10-07",
+          "summary": "출연진 라인업은 에이티즈, 엔하이픈, 엔믹스, 싸이커스, 엔시티 위시, 코르티스, 알파드라이브원 등 7개 팀이다. 현장에는 약 3만7000명의 팬이 모였으며, ‘빛의 범람－COLORFUL WORLD OF K-POP’을 주제로 각 팀의 음악과...",
+          "category": "news",
+          "link": "https://www.bntnews.co.kr/article/view/bnt202610070278",
+          "original_link": "https://www.bntnews.co.kr/article/view/bnt202610070278"
+        },
+        {
+          "title": "3만 7000여 글로벌 팬 열광시킨 ‘KBS 뮤직뱅크 인 바르셀로나’ 공연 실...",
+          "date": "2026-10-06",
+          "summary": "이번 무대에는 ATEEZ(에이티즈), ENHYPEN(엔하이픈), NMIXX(엔믹스), xikers(싸이커스), NCT WISH(엔시티 위시), CORTIS(코르티스), ALPHA DRIVE ONE(알파드라이브원) 등 최정상 K-POP 아티스트들이 총출동했다. MC는 배우 박보검이...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/144/0001142510",
+          "original_link": "https://sports.khan.co.kr/article/202610062341003?pt=nv"
+        },
+        {
+          "title": "[뮤지션100주간] 올데이 프로젝트 26계단 에스파파 75계단 상승…리센느...",
+          "date": "2026-10-05",
+          "summary": "엔믹스와 아이브는 각각 한 계단 올랐지만 스코어는 8.8점과 18.9점 감소했다. 다비치도 두 계단 오른... 하츠투하츠·키키·엔믹스·한로로는 각각 두 곡이 TOP30에 진입했다. 이 분포는 대표곡 순위와 아티스트...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16238776",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16238776"
+        },
+        {
+          "title": "하늘길에 엔믹스 뜬다…이스타항공, 탑승권·객실·동체에 ‘엔써’ 취...",
+          "date": "2026-10-04",
+          "summary": "이스타항공이 걸그룹 엔믹스(NMIXX)와 손잡고 여행 과정에 팬덤 콘텐츠를 접목한다. 멤버들의 사진을 담은... 이스타항공은 엔믹스의 미니 6집 'Strange Muse(스트레인지 뮤즈)' 컴백에 맞춰 공동 마케팅을 진행한다고 4일...",
+          "category": "news",
+          "link": "https://www.ekn.kr/web/view.php?key=20261004021032137",
+          "original_link": "https://www.ekn.kr/web/view.php?key=20261004021032137"
+        },
+        {
+          "title": "아이브·엔믹스·아일릿…10월 컴백 대전 열기 후끈 [N초점]",
+          "date": "2026-10-03",
+          "summary": "10월 아이돌 판이 다시 한번 뜨겁게 달궈지는 가운데, 엔믹스, 아이브, 아일릿 등 대세 걸그룹들의 컴백 대전에 누가 승기를 거둘 수 있을지 관심이 쏠리고 있다. 걸그룹 컴백 대전은 오는 19일 엔믹스(NMIXX)의 미니...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/421/0009207696",
+          "original_link": "https://www.news1.kr/entertain/music/6309106"
+        },
+        {
+          "title": "[뷰티 트렌드] 바이오던스, 서울 주요 대학서 'My First Collagen' 무빙 팝...",
+          "date": "2026-10-02",
+          "summary": "◇ 아이레시피, NMIXX 지우와 '3초 크림 미스트' 신규 광고 캠페인 공개 아이레시피, NMIXX(엔믹스) 지우와 신규... 이번 광고에는 그룹 NMIXX(엔믹스) 멤버 지우가 모델로 참여했다. 광고는 지우의 일상 속 보습이 필요한...",
+          "category": "news",
+          "link": "https://www.ibabynews.com/news/articleView.html?idxno=154962",
+          "original_link": "https://www.ibabynews.com/news/articleView.html?idxno=154962"
+        },
+        {
+          "title": "'2026 SBS 가요대전', 30주년 맞아 크리스마스 이브-25일 양일 개최…라...",
+          "date": "2026-10-01",
+          "summary": "(TREASURE), 엔믹스(NMIXX), 투어스(TWS), 앤팀(&TEAM), 아일릿(ILLIT), 하츠투하츠(Hearts2Hearts), 키키(KiiiKiii), 코르티스(CORTIS) 등이 무대에 오른 바 있다. '2026 SBS 가요대전'은 오는 12월 24일과 25일 양일간...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16232724",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16232724"
+        },
+        {
+          "title": "리센느, 아이브·블랙핑크 제치고 10월 걸그룹 브랜드평판 1위",
+          "date": "2026-10-11",
+          "summary": "에이핑크, 엔믹스, 프로미스나인, 베이비몬스터, 스테이씨, 미야오, 트리플에스, 아이오아이, 키스오브라이프 순이었다. ​ 1위를 기록한 리센느(원이, 리브, 미나미, 메이, 제나) 브랜드는 참여지수 533,120...",
+          "category": "news",
+          "link": "https://www.slist.kr/news/articleView.html?idxno=772444",
+          "original_link": "https://www.slist.kr/news/articleView.html?idxno=772444"
+        },
+        {
+          "title": "[뮤직컴퍼니100] 아이유 EDAM 최대 축소…플레이브 VLAST·잔나비 페포니...",
+          "date": "2026-10-10",
+          "summary": "JYP의 핵심 아티스트 데이식스는 2,618점으로 23점 증가했고, 엔믹스도 1,388점으로 11점 증가했다. 그러나 킥플립은 18점으로 87점 감소했다. 데이식스와 엔믹스의 증가에도 다른 구성 아티스트의 감소가 함께...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242955",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16242955"
+        },
+        {
+          "title": "[뮤직컴퍼니100] 올데이 프로젝트 더블랙레이블 10일간 0.69%p 확대…최예...",
+          "date": "2026-10-09",
+          "summary": "JYP엔터테인먼트의 중심에는 데이식스와 엔믹스가 있다. 데이식스는 2595점으로 아티스트 4위, 엔믹스는 1376점으로 21위를 기록했다. 데이식스는 '한 페이지가 될 수 있게', 'HAPPY', '예뻤어', 'Welcome to the Show...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242313",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16242313"
+        },
+        {
+          "title": "리사 한류 화제성 1위…스트레이 키즈·엔하이픈 TOP3, 아이브 51계단 급...",
+          "date": "2026-10-08",
+          "summary": "유니스도 2위에서 8위로 내려왔으며, 엔믹스는 7위에서 18위로 11계단 떨어졌다. 이처럼 상위권에서는 기존 선두 아티스트들의 순위가 내려간 사이 중상위권과 하위권에 있던 그룹들이 크게 상승하는 변화가...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16241841",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16241841"
+        },
+        {
+          "title": "'뮤직뱅크 인 바르셀로나' 방송, K-팝 대표 라인업 스페인 홀리다",
+          "date": "2026-10-07",
+          "summary": "‘KBS 뮤직뱅크 인 바르셀로나’에는 에이티즈, 엔하이픈, 엔믹스, 싸이커스, 엔시티 위시, 코르티스, 알파드라이브원 등 K-팝 대표하는 라인업이 총출동해 차원이 다른 퍼포먼스를 선보였다. 이번 공연은 3만 7천여...",
+          "category": "news",
+          "link": "https://enter.etoday.co.kr/news/view/303391",
+          "original_link": "https://enter.etoday.co.kr/news/view/303391"
+        },
+        {
+          "title": "걸그룹→보이그룹·밴드…10월 K팝 컴백표 꽉 찼다[SS뮤직]",
+          "date": "2026-10-06",
+          "summary": "엔믹스가 19일 미니 6집 ‘스트레인지 뮤즈(Strange Muse)’를 내놓는다. 아이브는 같은 날 타이틀곡을 먼저... 아이브의 선공개와 앨범 발매가 각각 엔믹스, 아일릿의 컴백과 겹치면서 연속적인 경쟁 구도가 형성됐다....",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/468/0001270911",
+          "original_link": "https://www.sportsseoul.com/news/read/1639686?ref=naver"
+        },
+        {
+          "title": "탑승권부터 항공기까지…이스타항공, 엔믹스와 손잡는다",
+          "date": "2026-10-05",
+          "summary": "이스타항공이 아이돌 그룹 엔믹스(NMIXX)와 공동 마케팅을 진행한다. 탑승권부터 기내방송, 항공기까지 엔믹스 콘텐츠를 활용해 국내 팬은 물론 해외 방한객과의 접점을 넓힌다는 계획이다. 엔믹스는 릴리, 해원, 설윤...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/468/0001270617?sid=101",
+          "original_link": "https://www.sportsseoul.com/news/read/1639434?ref=naver"
+        },
+        {
+          "title": "생일선물로 LP 주고 받고…K팝 아이돌도, 젠지 세대도 '아날로그 음반 ...",
+          "date": "2026-10-04",
+          "summary": "에스파는 정규 2집 '레모네이드(LEMONADE)'를 곡의 이미지와 어울리는 화사한 노란색 LP로 선보였고, 이달 컴백하는 엔믹스(NMIXX)는 미니 6집 '스트레인지 뮤즈(Strange Muse)'를 별도의 LP 버전 2종으로 발매할 예정이다....",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/088/0001032069?sid=103",
+          "original_link": "https://www.imaeil.com/page/view/2026093018471760030"
+        },
+        {
+          "title": "이스타항공, 엔믹스와 공동 마케팅...해외 팬 방한 수요 공략",
+          "date": "2026-10-02",
+          "summary": "|중앙이코노미뉴스 송태원 기자|엔믹스 멤버들의 이미지가 적용된 이스타항공의 '엔믹스 래핑 항공기 목업.[사진=이스타항공] 이스타항공이 아이돌 그룹 엔믹스(NMIXX)와 공동 마케팅에 나서며 국내 팬과 해외 방한객을...",
+          "category": "news",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=552364",
+          "original_link": "https://www.joongangenews.com/news/articleView.html?idxno=552364"
+        },
+        {
+          "title": "나무증권, 설윤과 하반기 캠페인…수수료 0원",
+          "date": "2026-10-01",
+          "summary": "그룹 엔믹스 멤버 설윤을 발탁했다고 1일 밝혔다. 사진=NH투자증권. 한국금융경제신문=박상민 기자 | NH투자증권은 모바일 투자 플랫폼(MTS) '나무증권'의 하반기 광고 캠페인 모델로 그룹 엔믹스(NMIXX) 멤버 설윤을...",
+          "category": "news",
+          "link": "https://www.kfenews.co.kr/news/articleView.html?idxno=665695",
+          "original_link": "https://www.kfenews.co.kr/news/articleView.html?idxno=665695"
+        },
+        {
+          "title": "[뮤직컴퍼니100] 플레이브 VLAST 점유율 0.25%p 확대…SM·더뮤즈 선두 격...",
+          "date": "2026-10-11",
+          "summary": "4위, 엔믹스가 1,400점으로 20위를 기록했다. 데이식스의 '한 페이지가 될 수 있게'는 53위, 'HAPPY'는 55위, '예뻤어'는 75위, 'Welcome to the Show'는 77위에 올랐다. 엔믹스의 'Blue Valentine'은 44위, 'Heavy Serenade'는 57위를...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16243601",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16243601"
+        },
+        {
+          "title": "아이브·아일릿·엔믹스 줄컴백…리센느 독주 깰까?",
+          "date": "2026-10-10",
+          "summary": "리센느가 역주행으로 음원차트 상위권을 독주하고 있는 가운데, 미야오를 비롯해 엔믹스, 아이브... 엔믹스, 데뷔 첫 유닛곡 꺼낸다 엔믹스는 오는 19일 미니 6집 'Strange Muse(스트레인지 뮤즈)'를 발표한다. 지난 5월...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/415/0000052638",
+          "original_link": "http://www.atstar1.com/news/articleView.html?idxno=6039400"
+        },
+        {
+          "title": "[뮤지션100] 플레이브 68점 급증·리센느 1위…하츠투하츠 소연 1점 차 역...",
+          "date": "2026-10-09",
+          "summary": "리센느는 39점, 머무르는 26점, 블랙핑크 제니는 16점, 엔믹스는 12점 증가했다. 플레이브가 이들보다 큰 증가폭을 기록하면서 이날 국내 아티스트의 스코어 확대를 주도했다. ○ 리센느 6079점으로 1위…임영웅...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242311",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16242311"
+        },
+        {
+          "title": "[공식] JYP 신사옥 안 짓는다..“더이상 진행 어려워, 인근 건물 매입할...",
+          "date": "2026-10-08",
+          "summary": "트와이스, 스트레이 키즈, 엔믹스 소속사 JYP엔터테인먼트가 고덕비즈밸리 내 신사옥 건립 사업을... 한편, 1996년 설립된 JYP엔터테인먼트에는 2PM, 트와이스, 스트레이 키즈, 데이식스, 있지, 엔믹스, 엑스디너리...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/109/0005620607",
+          "original_link": "http://www.osen.co.kr/article/G1112889926"
+        },
+        {
+          "title": "가을 궁궐이 무대가 된다 '2026 가을 궁중문화축전' 개막",
+          "date": "2026-10-07",
+          "summary": "신동엽·김준현·이찬원의 진행 아래 명창 김영임과 김창완밴드, 린, 이승기, 송가인, 허용별, 박지현, 라포엠, 비투비(은광&민혁), 엔믹스, 보이넥스트도어, 싸이커스, 허니제이 등이 출연한다. 이번 축전의 대표...",
+          "category": "news",
+          "link": "https://www.m-i.kr/news/articleView.html?idxno=2002756",
+          "original_link": "https://www.m-i.kr/news/articleView.html?idxno=2002756"
+        },
+        {
+          "title": "'AAA 2026', 인기상 투표 진행→순위 변동…김수현-김혜윤-스트레이 키즈...",
+          "date": "2026-10-06",
+          "summary": "여자 그룹 부문 1위는 트와이스(TWICE), 2위 엔믹스(NMIXX) 3위 이세계아이돌, 4위 하데스, 5위는 하츠투하츠(Hearts2Hearts)가 지켰다. 남자 솔로 가수 부문 1위는 압도적인 투표차로 임영웅이 지키고 있으며, 뒤를...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16239563",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16239563"
+        },
+        {
+          "title": "[잇슈 컬처] 아이브·엔믹스·미야오…걸그룹 ‘컴백 대전’",
+          "date": "2026-10-05",
+          "summary": "또, 오는 19일엔 걸그룹 '엔믹스'가 미니 6집 앨범을 선보이고 이어서 '아이브'와 '아일릿'도 동시에 컴백을 예고했는데요. 특히 장원영 씨가 속한 걸그룹 '아이브'는 이번 앨범에서 여성 히어로를 콘셉트로 강렬한 변신을...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/056/0012267749?sid=103",
+          "original_link": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8677552&ref=A"
+        },
+        {
+          "title": "나무증권, 엔믹스 설윤과 하반기 캠페인",
+          "date": "2026-10-04",
+          "summary": "NH투자증권이 '나무증권' 하반기 광고 캠페인 모델로 그룹 엔믹스(NMIXX) 멤버 설윤을 선정했다. 사진=NH투자증권 NH투자증권이 자사 MTS(모바일 투자 플랫폼) '나무증권'의 하반기 광고 캠페인 모델로 그룹 엔믹스(NMIXX)...",
+          "category": "news",
+          "link": "http://www.bizwnews.com/news/articleView.html?idxno=148012",
+          "original_link": "http://www.bizwnews.com/news/articleView.html?idxno=148012"
+        }
+      ],
+      "retrieved_unique_non_photo": 138,
+      "pagination_limit_reached": false,
+      "date_timezone": "Asia/Seoul"
+    },
+    "youtube_comments": {
+      "count": 61,
+      "items": [
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX Full Perform At TMA 2026",
+          "comment": "농담곰이 좋은데.",
+          "comment_id": "UgzJlFDadC4vCyQgw7B4AaABAg",
+          "published_at": "2026-10-09T09:42:26Z",
+          "video_id": "vZb9UcM5aa4",
+          "channel": "skzion_backup",
+          "link": "https://www.youtube.com/watch?v=vZb9UcM5aa4&lc=UgzJlFDadC4vCyQgw7B4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "엔믹스(NMIXX)의 킬링보이스를 라이브로! - O.O, Papillon, SPINNIN' ON IT, Blue ValentineㅣNMIXX Music",
+          "comment": "도입부가 미쳤음 도입부만 듣게됌",
+          "comment_id": "Ugx1HnkY6fOh-ZLm3-J4AaABAg",
+          "published_at": "2026-10-11T14:00:50Z",
+          "video_id": "tRC7Fw_FTuY",
+          "channel": "오해원을 원해오",
+          "link": "https://www.youtube.com/watch?v=tRC7Fw_FTuY&lc=Ugx1HnkY6fOh-ZLm3-J4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "일본어 블발도 너무너무 좋다..",
+          "comment_id": "UgyPkmnkEDqF281ZgQh4AaABAg",
+          "published_at": "2026-10-04T05:37:30Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgyPkmnkEDqF281ZgQh4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX Heavy Serenade KBS Immortal Songs Vocal Highlights",
+          "comment": "설윤진짜 많이 늘엇다..원래도 잘했지만",
+          "comment_id": "UgwN2vunjsDB00JgfDh4AaABAg",
+          "published_at": "2026-10-11T02:19:13Z",
+          "video_id": "pVp4KacJIVk",
+          "channel": "MR_O.ONCIDIUM",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgwN2vunjsDB00JgfDh4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "3:04 릴리 왜울어…??ㅜㅜㅜ",
+          "comment_id": "UgxZTG_3Tx_JZMWK6vh4AaABAg",
+          "published_at": "2026-10-04T00:46:28Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgxZTG_3Tx_JZMWK6vh4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX Heavy Serenade KBS Immortal Songs Vocal Highlights",
+          "comment": "오해원님만 봤는데 전체샷은 더 좋은데요.",
+          "comment_id": "UgzRYuz2nGu432-Cq9l4AaABAg",
+          "published_at": "2026-10-10T13:51:56Z",
+          "video_id": "pVp4KacJIVk",
+          "channel": "MR_O.ONCIDIUM",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgzRYuz2nGu432-Cq9l4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "어떤 언어로 전달해도 블발이 주는 감동은 같네요. 일본 활동도 파이팅!",
+          "comment_id": "Ugw7535KYXY5rz4frp14AaABAg",
+          "published_at": "2026-10-03T11:20:18Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugw7535KYXY5rz4frp14AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX Heavy Serenade KBS Immortal Songs Vocal Highlights",
+          "comment": "다 이쁘네",
+          "comment_id": "UgztbhE9pFXN5eezfkR4AaABAg",
+          "published_at": "2026-10-10T03:02:03Z",
+          "video_id": "pVp4KacJIVk",
+          "channel": "MR_O.ONCIDIUM",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgztbhE9pFXN5eezfkR4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "애들아 일본, 아니 어디에서든 더더 흥해라~~!!",
+          "comment_id": "Ugw89Rv2OgctmpWCd3N4AaABAg",
+          "published_at": "2026-10-03T07:11:06Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugw89Rv2OgctmpWCd3N4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX Heavy Serenade KBS Immortal Songs Vocal Highlights",
+          "comment": "한복❤",
+          "comment_id": "UgzKYvaKawg1AI8obwh4AaABAg",
+          "published_at": "2026-10-09T22:52:30Z",
+          "video_id": "pVp4KacJIVk",
+          "channel": "MR_O.ONCIDIUM",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgzKYvaKawg1AI8obwh4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "일본만 화질이 다르네 ㄷㄷㄷ",
+          "comment_id": "UgzXUSOiNYQrQ9CB2qB4AaABAg",
+          "published_at": "2026-10-02T22:33:11Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgzXUSOiNYQrQ9CB2qB4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX Heavy Serenade KBS Immortal Songs Vocal Highlights",
+          "comment": "릴트리버",
+          "comment_id": "UgyR0I72HVF_itNPI6J4AaABAg",
+          "published_at": "2026-10-09T18:11:50Z",
+          "video_id": "pVp4KacJIVk",
+          "channel": "MR_O.ONCIDIUM",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgyR0I72HVF_itNPI6J4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "멋진걸?😮😮",
+          "comment_id": "Ugz8v0w7azpwbNpUV0d4AaABAg",
+          "published_at": "2026-10-02T09:02:16Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugz8v0w7azpwbNpUV0d4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX Heavy Serenade KBS Immortal Songs Vocal Highlights",
+          "comment": "규진 춤선 디게좋네 눈에 확들어온다..",
+          "comment_id": "UgzpfwBr82BFEtBcVMR4AaABAg",
+          "published_at": "2026-10-09T17:33:34Z",
+          "video_id": "pVp4KacJIVk",
+          "channel": "MR_O.ONCIDIUM",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgzpfwBr82BFEtBcVMR4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "최고야 엔믹스❤❤",
+          "comment_id": "Ugz0FOrhEwS_eZz07k54AaABAg",
+          "published_at": "2026-10-02T01:00:22Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugz0FOrhEwS_eZz07k54AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX Heavy Serenade KBS Immortal Songs Vocal Highlights",
+          "comment": "진짜 거제심장소리로들림 ㅋㅋㅋ",
+          "comment_id": "Ugw7CbbCjstlkypZUqB4AaABAg",
+          "published_at": "2026-10-09T14:42:25Z",
+          "video_id": "pVp4KacJIVk",
+          "channel": "MR_O.ONCIDIUM",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=Ugw7CbbCjstlkypZUqB4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "오피셜이라 엄청 고화질이네 ㅎㄷㄷ",
+          "comment_id": "UgyLsI6IbOPompULNIF4AaABAg",
+          "published_at": "2026-10-01T22:18:59Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgyLsI6IbOPompULNIF4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX Heavy Serenade KBS Immortal Songs Vocal Highlights",
+          "comment": "그래.. 걸그룹에 메보급3명은 있어야 들을 맛 나지",
+          "comment_id": "UgyhsHJH8uh3bB4CEUh4AaABAg",
+          "published_at": "2026-10-08T20:55:50Z",
+          "video_id": "pVp4KacJIVk",
+          "channel": "MR_O.ONCIDIUM",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgyhsHJH8uh3bB4CEUh4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "릴리가 짱 예뻐요🩷🩷🩷🫶🏻🫰🏻",
+          "comment_id": "Ugxmf7DSVchD6qhIWd54AaABAg",
+          "published_at": "2026-10-01T19:49:45Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugxmf7DSVchD6qhIWd54AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX Heavy Serenade KBS Immortal Songs Vocal Highlights",
+          "comment": "역시 릴리. 진짜 잘 소화시켜주네요.",
+          "comment_id": "UgwT6pEklZo5hGRPoiB4AaABAg",
+          "published_at": "2026-10-08T09:12:24Z",
+          "video_id": "pVp4KacJIVk",
+          "channel": "MR_O.ONCIDIUM",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgwT6pEklZo5hGRPoiB4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "와.. 왜 뮤비가 아닌 라이브??했는데 진짜 댕잘하네...",
+          "comment_id": "UgwdHxtdBgZQ8pO6RK94AaABAg",
+          "published_at": "2026-10-01T16:38:56Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgwdHxtdBgZQ8pO6RK94AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX Heavy Serenade KBS Immortal Songs Vocal Highlights",
+          "comment": "릴리는 무조건 사랑 입니다 ~~~🎉❤🎉라이브 하는 천사 👼",
+          "comment_id": "UgyTteegdC3hiU0h8NB4AaABAg",
+          "published_at": "2026-10-08T06:50:55Z",
+          "video_id": "pVp4KacJIVk",
+          "channel": "MR_O.ONCIDIUM",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgyTteegdC3hiU0h8NB4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "얘들 이런 진짜 좋은 노래 좀 많이 줘라! 고릴라",
+          "comment_id": "UgylAFYIsdTHgEBME5p4AaABAg",
+          "published_at": "2026-10-01T15:02:54Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgylAFYIsdTHgEBME5p4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX Heavy Serenade KBS Immortal Songs Vocal Highlights",
+          "comment": "진짜 이쁘다..",
+          "comment_id": "Ugw-n-JpH5S3l0jRtxB4AaABAg",
+          "published_at": "2026-10-07T17:03:21Z",
+          "video_id": "pVp4KacJIVk",
+          "channel": "MR_O.ONCIDIUM",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=Ugw-n-JpH5S3l0jRtxB4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "NMIXX / BRAVO 저는 시냇가에 심은 나무가 시절을 좇아 과실을 맺으며 그 잎사귀가 마르지 아니함 같으니 그 행사가 다 형통하리로다(시.1)",
+          "comment_id": "Ugy37ne67uY8EoGbg7h4AaABAg",
+          "published_at": "2026-10-01T14:56:20Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugy37ne67uY8EoGbg7h4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX Heavy Serenade KBS Immortal Songs Vocal Highlights",
+          "comment": "엔믹스 👍",
+          "comment_id": "UgxlsOiSUl8cDkBq1HB4AaABAg",
+          "published_at": "2026-10-07T07:01:56Z",
+          "video_id": "pVp4KacJIVk",
+          "channel": "MR_O.ONCIDIUM",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgxlsOiSUl8cDkBq1HB4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "NMIXX는 무대 퍼포먼스가 최고입니다👍🏻💫 일본에서는 촬영 규정이 엄격해서 공식적으로 많은 영상을 제공해 주시면 기쁩니다!!",
+          "comment_id": "Ugxq3JP4oion4LaqihF4AaABAg",
+          "published_at": "2026-10-01T14:53:27Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugxq3JP4oion4LaqihF4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX Heavy Serenade KBS Immortal Songs Vocal Highlights",
+          "comment": "너무 예뻐😱 선녀가 여섯명!!",
+          "comment_id": "UgyPtMtSpaHLK1vuxe94AaABAg",
+          "published_at": "2026-10-07T02:20:52Z",
+          "video_id": "pVp4KacJIVk",
+          "channel": "MR_O.ONCIDIUM",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgyPtMtSpaHLK1vuxe94AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "헤메코 너무 이쁘다ㅏ",
+          "comment_id": "Ugyo2fPC8jtOf64KJfF4AaABAg",
+          "published_at": "2026-10-01T14:52:25Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugyo2fPC8jtOf64KJfF4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX Heavy Serenade KBS Immortal Songs Vocal Highlights",
+          "comment": "한복 넘 잘어울린다! 엔믹스 사랑해❤️",
+          "comment_id": "UgwdJ6DFBSJ-DGMaCy94AaABAg",
+          "published_at": "2026-10-06T21:19:43Z",
+          "video_id": "pVp4KacJIVk",
+          "channel": "MR_O.ONCIDIUM",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgwdJ6DFBSJ-DGMaCy94AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "멋지다 엔믹스",
+          "comment_id": "UgzyixgJeXqo8drmsSF4AaABAg",
+          "published_at": "2026-10-01T13:06:11Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgzyixgJeXqo8drmsSF4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX Heavy Serenade KBS Immortal Songs Vocal Highlights",
+          "comment": "한복 헤세 진짜 레전드네..",
+          "comment_id": "UgwP02i5M99obobe0zl4AaABAg",
+          "published_at": "2026-10-06T15:16:19Z",
+          "video_id": "pVp4KacJIVk",
+          "channel": "MR_O.ONCIDIUM",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgwP02i5M99obobe0zl4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "믹둥이들 일본 데뷔 화이팅!♥️",
+          "comment_id": "UgxKqjDYZiDcQQZAqFN4AaABAg",
+          "published_at": "2026-10-01T12:57:37Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgxKqjDYZiDcQQZAqFN4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "이참에 중국어 스페인어 인도어 아랍어 다 만들자 그래서 전세계로 퍼트리자!!",
+          "comment_id": "Ugze-67xmsovS-Sdxad4AaABAg",
+          "published_at": "2026-10-01T12:40:21Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugze-67xmsovS-Sdxad4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "독특한 분위기이면서 애들과 잘 어울리는 명곡이야",
+          "comment_id": "Ugy0J9LjMyYzKN24IVl4AaABAg",
+          "published_at": "2026-10-01T11:49:23Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugy0J9LjMyYzKN24IVl4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "엔써하는 게 젤 맘 편한 거 같다",
+          "comment_id": "Ugwl7F0NXqHLInrTbFx4AaABAg",
+          "published_at": "2026-10-01T11:34:13Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugwl7F0NXqHLInrTbFx4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "엔믹스 언냐들 미모 미쳤다❤",
+          "comment_id": "UgynMT_EfKy040ryYyR4AaABAg",
+          "published_at": "2026-10-01T11:13:50Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgynMT_EfKy040ryYyR4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "장규진 왜 이렇게 예쁘냐",
+          "comment_id": "Ugzu2e23OP3pU1ApyMR4AaABAg",
+          "published_at": "2026-10-01T10:58:26Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugzu2e23OP3pU1ApyMR4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "최고의 모습을 보이기위해 항상 노력하는 엔믹스 일본에서도 많은 사랑 받을수있길🙏🙏🙏",
+          "comment_id": "Ugzz2IjWgiL4YsAAViJ4AaABAg",
+          "published_at": "2026-10-01T10:21:18Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugzz2IjWgiL4YsAAViJ4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "역시 일본 엔써👏",
+          "comment_id": "UgymQtIJv7hvtz-nARF4AaABAg",
+          "published_at": "2026-10-01T10:19:10Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgymQtIJv7hvtz-nARF4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "일본팬들이 기다렸던 만큼 응원소리가 커서 진짜 재밌었어요 우리 믹스 일본활동도 화이팅!",
+          "comment_id": "UgzC1OOGHQ6b_d-_7V54AaABAg",
+          "published_at": "2026-10-01T10:05:54Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgzC1OOGHQ6b_d-_7V54AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "항상 응원합니다 NMIXX",
+          "comment_id": "UgwnkorKuDdT94VtvVd4AaABAg",
+          "published_at": "2026-10-01T09:48:13Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgwnkorKuDdT94VtvVd4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "진짜 너무 좋아서 눈물나요...ㅠㅠ",
+          "comment_id": "Ugzihc4cY2be01_XxB54AaABAg",
+          "published_at": "2026-10-01T09:13:33Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugzihc4cY2be01_XxB54AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "역시 블발은 언제 어떻게 들어도 좋구나",
+          "comment_id": "Ugydt5iLBKfLpWaOoEd4AaABAg",
+          "published_at": "2026-10-01T09:12:32Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugydt5iLBKfLpWaOoEd4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "You'll always be my blue valentine 율 올웨이즈 비 마이 블루 밸런타인 넌 언제나 나의 파란 발렌타인일 거야 You'll always be my blue valentine 율 올웨이즈 비 마이 블루 밸런타인 넌 언제나 나의 파란 발렌타인일 거야 覚めた君の色 blue 사메타 키미노 이로 블루 식어버린 너의 색은 파란색 青いアザの my heart 아오이 아자노 마이 하트 푸르게 멍든 나의 마음 だんだん酷くなった 단단 히도쿠 낫타 점점 더 심해졌어 火照った lovesick 호텟타 러브식 열이 오른 사랑앓이 This is such a bad love 디스 이즈 서치 어 배드 러브 이건 정말 나쁜 사랑이야 We fight, we sigh, and stop 위 파이트, 위 사이, 앤드 스톱 우리는 싸우고, 한숨 쉬고, 멈춰 서 赤く燃えてすぐに冷めるわ 아카쿠 모에테 스구니 사메루와 붉게 타오르다가 금세 식어버려 Rewind, rewind, rewind 리와인드, 리와인드, 리와인드 되감고, 되감고, 되감아 けどまたお互いを探すんだ 케도 마타 오타가이오 사가슨다 그런데도 우린 다시 서로를 찾아 深く刻んだ傷 후카쿠 키잔다 키즈 깊이 새겨진 상처 Red blood 레드 블러드 붉은 피 割れた forever 와레타 포레버 깨져버린 우리의 영 I can see it now 아이 캔 씨 잇 나우 이제 보여 Can you see it now? 캔 유 씨 잇 나우? 너도 이제 보여? 二人は broken glass on the ground 후타리와 브로큰 글래스 온 더 그라운드 바닥에 산산이 꺠진 유리 같은 우리 戻れないとしても 모도레나이토 시테모 돌이킬 수 없다고 해도 We can figure it out 위 캔 피겨 잇 아웃 우리는 어떻게든 해결할 수 있어 If this love is over 이프 디스 러브 이즈 오버 이 사랑이 끝난다면 また飛び込む I 마타 토비코무 아이 나는 다시 뛰어들 거야 この恋 colder 코노 코이 콜더 이 사랑은 더 차갑게 식어가지만 I'll keep the fire lit in mine 아일 킵 더 파이어 릿 인 마인 내 안의 불꽃은 계속 밝혀둘 거야 You'll always be my blue valentine 율 올웨이즈 비 마이 블루 밸런타인 넌 언제나 나의 파란 발렌타인일 거야 You'll always be my blue valentine 율 올웨이즈 비 마이 블루 밸런타인 넌 언제나 나의 파란 발렌타인일 거야 冷めても燃える氷の炎 사메테모 모에루 코오리노 호노오 식어도 타오르는 얼음 속의 불꽃 怖くないと手を伸ばそう 코와쿠나이토 테오 노바소오 두렵지 않다는 듯 손을 뻗자 Hot and icy 핫 앤 아이시 뜨겁고 차가워 But I like it 벗 아이 라이크 잇 하지만 난 그게 좋아 It's so you 잇츠 소 유 그게 바로 너야 心の weather 코코로노 웨더 마음의 날씨 寄せる cloud 요세루 클라우드 밀려오는 구름 寂しい together 사비시이 투게더 외로운 함께 I can feel it now 아이 캔 필 잇 나우 이제 느껴져 Can you feel it now? 캔 유 필 잇 나우? 너도 느껴져? Rollercoaster ぽく 롤러코스터 폿쿠 롤러코스터처럼 夢中になって揺れても 무추우니 낫테 유레테모 정신없이 흔들려도 帰ると知ってる 카에루토 싯테루 우리가 돌아갈 곳을 알고 있어 So it doesn't matter 소 잇 더즌트 매터 그러니 상관없어 You might be my end game 유 마이트 비 마이 엔드 게임 어쩌면 넌 나의 마지막일지도 몰라 壊れそうな worst pain 코와레소오나 워스트 페인 부서질 것 같은 최악의 고통 (You might be) (유 마이트 비) (어쩌면 그럴지도 몰라.) If this love is over 이프 디스 러브 이즈 오버 이 사랑이 끝난다면 また飛び込む I 마타 토비코무 아이 나는 다시 뛰어들 거야 この恋 colder 코노 코이 콜더 이 사랑은 더 차갑게 식어가지만 I'll keep the fire lit in mine 아일 킵 더 파이어 릿 인 마인 내 안의 불꽃은 계속 밝혀둘 거야 You'll always be my blue valentine 율 올웨이즈 비 마이 블루 밸런타인 넌 언제나 나의 파란 발렌타인일 거야 You'll always be my blue valentine 율 올웨이즈 비 마이 블루 밸런타인 넌 언제나 나의 파란 발렌타인일 거야 赤く青く 아카쿠 아오쿠 붉고 푸른 恋とは bruise 코이토와 브루즈 사랑이란 멍 治らない 나오라나이 낫지 않아 'Cause it's you (Yeah) 커즈 잇츠 유 (예) 그건 너이기 때문이야. (Yeah) If this love is over 이프 디스 러브 이즈 오버 이 사랑이 끝난다면 また飛び込む I 마타 토비코무 아이 나는 다시 뛰어들 거야 (飛び込む I) (토비코무 아이) (나는 뛰어들 거야) この恋 colder 코노 코이 콜더 이 사랑은 더 차갑게 식어가지만 I'll keep the fire lit in mine 아일 킵 더 파이어 릿 인 마인 내 안의 불꽃은 계속 밝혀둘 거야 You'll always be my blue valentine 율 올웨이즈 비 마이 블루 밸런타인 넌 언제나 나의 파란 발렌타인일 거야 (Always be, my blue valentine) (올웨이즈 비, 마이 블루 밸런타인) (언제나 나의 파란 발렌타인.) You'll always be my blue valentine 율 올웨이즈 비 마이 블루 밸런타인 넌 언제나 나의 파란 발렌타인일 거야 I'm falling over and over and over, ah 아임 폴링 오버 앤드 오버 앤드 오버, 아 나는 계속해서, 계속해서, 계속해서 빠져들고 있어, 아 You're getting colder and colder and colder 유어 게팅 콜더 앤드 콜더 앤드 콜더 너는 점점 더 차가워지고 있어 Blue valentine 블루 밸런타인 파란 발렌타인 일본어는 들리는데로 써봤습니다 틀린게 있으면 댓글남겨주세요. 日本語は聞こえた通りに書いてみました 間違っているところがあれば コメントで教えてください",
+          "comment_id": "UgyRcS64yMwm9WXVIHV4AaABAg",
+          "published_at": "2026-10-01T08:59:23Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgyRcS64yMwm9WXVIHV4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "일본 공식 데뷔 빨리 보고싶다",
+          "comment_id": "UgxOVtU1GopnGGoBbWt4AaABAg",
+          "published_at": "2026-10-01T08:55:19Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgxOVtU1GopnGGoBbWt4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "하나 둘 셋, 블루발렌타인아! 사랑해❤",
+          "comment_id": "UgzNgyj-N8NyIuSoyt54AaABAg",
+          "published_at": "2026-10-01T08:55:07Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgzNgyj-N8NyIuSoyt54AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "진짜 대박나자 NMIXX",
+          "comment_id": "Ugwl-qknfKsjcVyJRIt4AaABAg",
+          "published_at": "2026-10-01T08:48:11Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugwl-qknfKsjcVyJRIt4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "일본어 버전도 너무 좋다💙🩵 밴드 라이브도 최고",
+          "comment_id": "UgzY9CqrxyR_i-5nV3p4AaABAg",
+          "published_at": "2026-10-01T08:39:02Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgzY9CqrxyR_i-5nV3p4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "긴소원 많관부!!",
+          "comment_id": "UgxCZl_8zZp8lCApWKN4AaABAg",
+          "published_at": "2026-10-01T08:34:07Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgxCZl_8zZp8lCApWKN4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "너무 예쁘다...이번 컴백이랑 일본데뷔도 화이팅!",
+          "comment_id": "Ugyk4V-CU8gx7qzsQ9B4AaABAg",
+          "published_at": "2026-10-01T08:29:48Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugyk4V-CU8gx7qzsQ9B4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "블발 일본어 버전 들으니까 일본 데뷔가 더 기다려진다..",
+          "comment_id": "UgwGt13Lp00tQIArYbx4AaABAg",
+          "published_at": "2026-10-01T08:24:59Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgwGt13Lp00tQIArYbx4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "NMIXX 日本デビューおめでとう! NMIXXが10月19日に「긴소원 (Birthday Wish)」でカムバックします！ぜひたくさん応援してください!",
+          "comment_id": "UgxRnwh6qjn6w9kO6PZ4AaABAg",
+          "published_at": "2026-10-01T08:20:58Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgxRnwh6qjn6w9kO6PZ4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "많이 사랑스럽다",
+          "comment_id": "UgyBVTkwr1XNonsVq4t4AaABAg",
+          "published_at": "2026-10-01T08:16:18Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgyBVTkwr1XNonsVq4t4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "부르으으 바렌타",
+          "comment_id": "Ugzi19qOlD5wHQmK9GR4AaABAg",
+          "published_at": "2026-10-01T08:15:57Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugzi19qOlD5wHQmK9GR4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "일본 엔써분들 많이 들어주세요!! 일본어 버전도 너무 좋다!",
+          "comment_id": "Ugy4EghyZofpNlnVXoB4AaABAg",
+          "published_at": "2026-10-01T08:13:49Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugy4EghyZofpNlnVXoB4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "일본엔써~ 우리 엔믹스 많이 사랑해줘🥰",
+          "comment_id": "UgzlrXIBx8C_QwH_x_B4AaABAg",
+          "published_at": "2026-10-01T08:09:46Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgzlrXIBx8C_QwH_x_B4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "일본어는 모르지만 엔믹스라서 좋음",
+          "comment_id": "UgxmUdScBjVITmeNqcd4AaABAg",
+          "published_at": "2026-10-01T08:09:38Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgxmUdScBjVITmeNqcd4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "12월 9일 일본 데뷔 많이 사랑해주세요",
+          "comment_id": "UgwZZiFcN8Vl5xO8lPR4AaABAg",
+          "published_at": "2026-10-01T08:06:06Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgwZZiFcN8Vl5xO8lPR4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "일본어 버전도 너무 좋다… 엔믹스는 어쩜 저리 못하는 게 없을까",
+          "comment_id": "UgzJPd8vPX4EvtxA7IF4AaABAg",
+          "published_at": "2026-10-01T08:05:00Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgzJPd8vPX4EvtxA7IF4AaABAg"
+        },
+        {
+          "artist": "NMIXX",
+          "song": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "comment": "블발 일본어버전!!! 이번 일본 앨범도 넘 기대된다🥹",
+          "comment_id": "Ugw9UIwS-1ae-pq8xjR4AaABAg",
+          "published_at": "2026-10-01T08:03:41Z",
+          "video_id": "HH26R9NhT8Y",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugw9UIwS-1ae-pq8xjR4AaABAg"
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "vZb9UcM5aa4",
+          "title": "NMIXX Full Perform At TMA 2026",
+          "channel": "skzion_backup",
+          "channel_id": "UCPlQvoSTiCjzbyt84wBHgrQ",
+          "published_at": "2026-09-19T11:36:09Z"
+        },
+        {
+          "video_id": "vgxcuvpc2ZI",
+          "title": "260823 NMIXX 2026 TIMA Full Performance",
+          "channel": "Augester",
+          "channel_id": "UC-mudRaqiuTRE9TwPXXZyQQ",
+          "published_at": "2026-08-23T12:11:29Z"
+        },
+        {
+          "video_id": "tRC7Fw_FTuY",
+          "title": "엔믹스(NMIXX)의 킬링보이스를 라이브로! - O.O, Papillon, SPINNIN' ON IT, Blue ValentineㅣNMIXX Music",
+          "channel": "오해원을 원해오",
+          "channel_id": "UCj0NIYqDMNA8PIBhSb__uZw",
+          "published_at": "2026-07-17T03:39:26Z"
+        },
+        {
+          "video_id": "HH26R9NhT8Y",
+          "title": "NMIXX 「Blue Valentine -Japanese ver.-」 Live Performance Video",
+          "channel": "NMIXX JAPAN OFFICIAL YouTube Channel",
+          "channel_id": "UCcSs_ahfAdcXif9ytpARdfQ",
+          "published_at": "2026-10-01T08:00:36Z"
+        },
+        {
+          "video_id": "pVp4KacJIVk",
+          "title": "NMIXX Heavy Serenade KBS Immortal Songs Vocal Highlights",
+          "channel": "MR_O.ONCIDIUM",
+          "channel_id": "UCBT4B5Dg3cgM-dOW_3d2SIg",
+          "published_at": "2026-10-06T12:17:46Z"
+        }
+      ],
+      "warnings": [],
+      "sampling": "5 search videos published within 90 days before month start through cutoff; newest dated Korean top-level comments, balanced across videos"
+    },
+    "model": {
+      "name": "gemini-3.1-flash-lite-preview",
+      "backend": "gemini-absa"
+    },
+    "bugs_chart": {
+      "chart_start": "2026-09-28",
+      "chart_end": "2026-10-04",
+      "artist_items": [
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 49,
+          "title": "Heavy Serenade",
+          "artist": "NMIXX",
+          "album": "Heavy Serenade",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 54,
+          "title": "Blue Valentine",
+          "artist": "NMIXX",
+          "album": "Blue Valentine",
+          "change_rank": 0
+        }
+      ],
+      "items": [
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 1,
+          "title": "퇴사할게여 (Narr. 기안84)",
+          "artist": "소연 (SOYEON)",
+          "album": "끝내주는 인생",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 2,
+          "title": "꿈꾸던 어른이 되었나요?",
+          "artist": "머무르",
+          "album": "꿈꾸던 어른이 되었나요?",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 3,
+          "title": "LOVE ATTACK",
+          "artist": "RESCENE (리센느)",
+          "album": "SCENEDROME",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 4,
+          "title": "Dear my crazy soulmate",
+          "artist": "아이유(IU)",
+          "album": "이 별로부터",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 5,
+          "title": "BAD",
+          "artist": "ATEEZ(에이티즈)",
+          "album": "GOLDEN HOUR : Part.5",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 6,
+          "title": "Guitarist",
+          "artist": "도경수(D.O.)",
+          "album": "DOPAMINE - The 4th Mini Album",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 7,
+          "title": "갑자기",
+          "artist": "아이오아이(I.O.I)",
+          "album": "I.O.I 3rd MINI ALBUM [I.O.I : LOOP]",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 8,
+          "title": "Skibidi",
+          "artist": "소녀시대-효리수 (Girls' Generation-HRS)",
+          "album": "Skibidi",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 9,
+          "title": "Deja Vu",
+          "artist": "RESCENE (리센느)",
+          "album": "Dearest",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 10,
+          "title": "CRASH",
+          "artist": "ALLDAY PROJECT",
+          "album": "CRASH",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 11,
+          "title": "만찬가",
+          "artist": "태연 (TAEYEON)",
+          "album": "J-POP REMAKE Vol.1",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 12,
+          "title": "REDRED",
+          "artist": "CORTIS (코르티스)",
+          "album": "GREENGREEN",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 13,
+          "title": "이 별로부터",
+          "artist": "아이유(IU)",
+          "album": "이 별로부터",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 14,
+          "title": "LEMONADE",
+          "artist": "aespa",
+          "album": "LEMONADE - The 2nd Album",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 15,
+          "title": "It′s Me",
+          "artist": "아일릿(ILLIT)",
+          "album": "MAMIHLAPINATAPAI",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 16,
+          "title": "Drowning",
+          "artist": "WOODZ",
+          "album": "OO-LI",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 17,
+          "title": "생각을 멈추다 보면",
+          "artist": "최유리",
+          "album": "생각을 멈추다 보면",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 18,
+          "title": "Pretty Girl",
+          "artist": "RESCENE (리센느)",
+          "album": "Pretty Girl - Special Single",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 19,
+          "title": "Pop Off Pop Off",
+          "artist": "KiiiKiii (키키)",
+          "album": "WhyKiiiKiii",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 20,
+          "title": "Good Goodbye",
+          "artist": "화사 (HWASA)",
+          "album": "Good Goodbye",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 21,
+          "title": "Less than a Lover",
+          "artist": "제니 (JENNIE)",
+          "album": "Less than a Lover",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 22,
+          "title": "BiiiG",
+          "artist": "BIGBANG (빅뱅)",
+          "album": "BiiiG",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 23,
+          "title": "사랑하게 될 거야",
+          "artist": "한로로",
+          "album": "이상비행",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 24,
+          "title": "0+0",
+          "artist": "한로로",
+          "album": "자몽살구클럽",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 25,
+          "title": "LOUDER",
+          "artist": "CRAVITY",
+          "album": "sonorous",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 26,
+          "title": "Popcorn",
+          "artist": "도경수(D.O.)",
+          "album": "성장 - THE 3RD MINI ALBUM",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 27,
+          "title": "캐치 캐치",
+          "artist": "YENA (최예나)",
+          "album": "LOVE CATCHER",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 28,
+          "title": "RUDE!",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "RUDE!",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 29,
+          "title": "toxic till the end",
+          "artist": "로제(ROSÉ)",
+          "album": "rosie",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 30,
+          "title": "Pinball",
+          "artist": "RESCENE (리센느)",
+          "album": "SCENEDROME",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 31,
+          "title": "404 (New Era)",
+          "artist": "KiiiKiii (키키)",
+          "album": "Delulu Pack",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 32,
+          "title": "소문의 낙원",
+          "artist": "AKMU(악뮤)",
+          "album": "개화",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 33,
+          "title": "기쁨, 슬픔, 아름다운 마음",
+          "artist": "AKMU(악뮤)",
+          "album": "개화",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 34,
+          "title": "봄 내음보다 너를",
+          "artist": "김나영",
+          "album": "봄 내음보다 너를",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 35,
+          "title": "뛰어(JUMP)",
+          "artist": "BLACKPINK",
+          "album": "뛰어(JUMP)",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 36,
+          "title": "어떻게 이별까지 사랑하겠어, 널 사랑하는 거지",
+          "artist": "AKMU(악뮤)",
+          "album": "항해",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 37,
+          "title": "Lemon Tang",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "Lemon Tang - The 2nd Mini Album",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 38,
+          "title": "Runaway",
+          "artist": "RESCENE (리센느)",
+          "album": "Runaway",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 39,
+          "title": "BANG BANG",
+          "artist": "IVE (아이브)",
+          "album": "REVIVE+",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 40,
+          "title": "입춘",
+          "artist": "한로로",
+          "album": "입춘",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 41,
+          "title": "SUN KISS",
+          "artist": "TUIDE (튜이드)",
+          "album": "The 1st EP [TUNE & PLAY]",
+          "change_rank": 11
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 42,
+          "title": "연애의 조건 (Love Options)",
+          "artist": "베스티(BESTie)",
+          "album": "연애의 조건 (Love Options)",
+          "change_rank": 52
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 43,
+          "title": "노스탈지아",
+          "artist": "BIG Naughty (서동현)",
+          "album": "노스탈지아",
+          "change_rank": -10
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 44,
+          "title": "Whiplash",
+          "artist": "aespa",
+          "album": "Whiplash - The 5th Mini Album",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 45,
+          "title": "내게 사랑이 뭐냐고 물어본다면",
+          "artist": "로이킴",
+          "album": "내게 사랑이 뭐냐고 물어본다면",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 46,
+          "title": "한 페이지가 될 수 있게",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Book of Us : Gravity",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 47,
+          "title": "멸종위기사랑",
+          "artist": "이찬혁",
+          "album": "EROS",
+          "change_rank": -7
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 48,
+          "title": "너에게 닿기를",
+          "artist": "10CM",
+          "album": "너에게 닿기를",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 49,
+          "title": "Heavy Serenade",
+          "artist": "NMIXX",
+          "album": "Heavy Serenade",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 50,
+          "title": "Surfin' Boy",
+          "artist": "Red Velvet (레드벨벳)",
+          "album": "Velvet Summer - Summer Mini Album",
+          "change_rank": -16
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 51,
+          "title": "모든 날, 모든 순간 (Every day, Every Moment)",
+          "artist": "폴킴(Paul Kim)",
+          "album": "'키스 먼저 할까요?' OST Part.3",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 52,
+          "title": "타임캡슐",
+          "artist": "다비치",
+          "album": "타임캡슐",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 53,
+          "title": "like JENNIE",
+          "artist": "제니 (JENNIE)",
+          "album": "Ruby",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 54,
+          "title": "Blue Valentine",
+          "artist": "NMIXX",
+          "album": "Blue Valentine",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 55,
+          "title": "Golden",
+          "artist": "HUNTR/X, 아티스트 전체보기",
+          "album": "KPop Demon Hunters (Soundtrack from the Netflix Film)",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 56,
+          "title": "청춘만화",
+          "artist": "이무진",
+          "album": "만화 (滿花)",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 57,
+          "title": "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))",
+          "artist": "너드커넥션(Nerd Connection)",
+          "album": "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 58,
+          "title": "여름아 부탁해",
+          "artist": "볼빨간사춘기",
+          "album": "여름아 부탁해",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 59,
+          "title": "모르시나요(PROD.로코베리)",
+          "artist": "조째즈",
+          "album": "모르시나요",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 60,
+          "title": "HAPPY",
+          "artist": "DAY6 (데이식스)",
+          "album": "Fourever",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 61,
+          "title": "APT.",
+          "artist": "로제(ROSÉ), 아티스트 전체보기",
+          "album": "APT.",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 62,
+          "title": "주저하는 연인들을 위해",
+          "artist": "잔나비",
+          "album": "전설",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 63,
+          "title": "천상연",
+          "artist": "이창섭",
+          "album": "천상연 (웹툰 '선녀외전' X 이창섭 (LEE CHANGSUB))",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 64,
+          "title": "Hype Boy",
+          "artist": "NewJeans",
+          "album": "NewJeans 1st EP 'New Jeans'",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 65,
+          "title": "그대 작은 나의 세상이 되어",
+          "artist": "카더가든",
+          "album": "부재",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 66,
+          "title": "Ditto",
+          "artist": "NewJeans",
+          "album": "NewJeans 'OMG'",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 67,
+          "title": "Die With A Smile",
+          "artist": "Lady Gaga(레이디 가가), 아티스트 전체보기",
+          "album": "Die With A Smile",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 68,
+          "title": "FAMOUS",
+          "artist": "ALLDAY PROJECT",
+          "album": "FAMOUS",
+          "change_rank": 16
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 69,
+          "title": "사계, 그리고 너",
+          "artist": "이창섭",
+          "album": "Lee;Make (Fragmenta Amoris)",
+          "change_rank": 12
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 70,
+          "title": "I AM",
+          "artist": "IVE (아이브)",
+          "album": "I've IVE",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 71,
+          "title": "Supernova",
+          "artist": "aespa",
+          "album": "Armageddon - The 1st Album",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 72,
+          "title": "Welcome to the Show",
+          "artist": "DAY6 (데이식스)",
+          "album": "Fourever",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 73,
+          "title": "에피소드",
+          "artist": "이무진",
+          "album": "에피소드",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 74,
+          "title": "나는 반딧불",
+          "artist": "황가람",
+          "album": "나는 반딧불",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 75,
+          "title": "고민중독",
+          "artist": "QWER",
+          "album": "1st Mini Album 'MANITO'",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 76,
+          "title": "Magnetic",
+          "artist": "아일릿(ILLIT)",
+          "album": "SUPER REAL ME",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 77,
+          "title": "Vitamin ME",
+          "artist": "프로미스나인",
+          "album": "Glow ME",
+          "change_rank": -13
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 78,
+          "title": "첫 만남은 계획대로 되지 않아",
+          "artist": "TWS (투어스)",
+          "album": "Sparkling Blue",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 79,
+          "title": "사랑은 봄비처럼... 이별은 겨울비처럼",
+          "artist": "임현정",
+          "album": "A Year Out..In The Island",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 80,
+          "title": "FOCUS",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "FOCUS - The 1st Mini Album",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 81,
+          "title": "HOME SWEET HOME (feat. 태양, 대성)",
+          "artist": "G-DRAGON",
+          "album": "HOME SWEET HOME (feat. 태양, 대성)",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 82,
+          "title": "달리 표현할 수 없어요",
+          "artist": "로이킴",
+          "album": "달리 표현할 수 없어요",
+          "change_rank": 4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 83,
+          "title": "FALLEN ANGEL",
+          "artist": "제니 (JENNIE)",
+          "album": "Fallen Angel (Digital EP)",
+          "change_rank": -15
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 84,
+          "title": "소나기",
+          "artist": "이클립스 (ECLIPSE)",
+          "album": "선재 업고 튀어 OST Part 1",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 85,
+          "title": "Congratulations",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Day",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 86,
+          "title": "WDA (Whole Different Animal) (Feat. G-DRAGON)",
+          "artist": "aespa",
+          "album": "LEMONADE - The 2nd Album",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 87,
+          "title": "REBEL HEART",
+          "artist": "IVE (아이브)",
+          "album": "IVE EMPATHY",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 88,
+          "title": "예뻤어",
+          "artist": "DAY6 (데이식스)",
+          "album": "Every DAY6 February",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 89,
+          "title": "NOT CUTE ANYMORE",
+          "artist": "아일릿(ILLIT)",
+          "album": "NOT CUTE ANYMORE",
+          "change_rank": -9
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 90,
+          "title": "Flashback",
+          "artist": "엔플라잉(N.Flying)",
+          "album": "Man on the Moon",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 91,
+          "title": "사랑인가 봐",
+          "artist": "멜로망스(MeloMance)",
+          "album": "사랑인가 봐 (사내맞선 OST 스페셜 트랙)",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 92,
+          "title": "THAT’S A NO NO",
+          "artist": "ITZY (있지)",
+          "album": "IT'z ME",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 93,
+          "title": "ONE MORE TIME",
+          "artist": "ALLDAY PROJECT",
+          "album": "ALLDAY PROJECT",
+          "change_rank": 6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 94,
+          "title": "STYLE",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "STYLE",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 95,
+          "title": "BLACKHOLE",
+          "artist": "IVE (아이브)",
+          "album": "REVIVE+",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 96,
+          "title": "Love me or Leave me",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Book of Us : The Demon",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 97,
+          "title": "OVERDRIVE",
+          "artist": "TWS (투어스)",
+          "album": "play hard",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 98,
+          "title": "Who is she",
+          "artist": "KISS OF LIFE",
+          "album": "Who is she",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 99,
+          "title": "new trick",
+          "artist": "로제(ROSÉ)",
+          "album": "new trick",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 100,
+          "title": "Sour Grapes",
+          "artist": "NiziU (니쥬)",
+          "album": "Sour Grapes",
+          "change_rank": 0
+        }
+      ],
+      "link": "https://music.bugs.co.kr/chart/track/week/total?chartdate=20260928",
+      "requested_chart_start": "2026-10-05"
+    }
+  },
+  "overall_sentiment": {
+    "count": 61,
+    "ratio": {
+      "positive": 0.918,
+      "neutral": 0.082,
+      "negative": 0.0
+    },
+    "dominant": "positive"
+  },
+  "aspect_sentiment": {
+    "song_music": {
+      "label": "song / music",
+      "count": 11,
+      "ratio": {
+        "positive": 1.0,
+        "neutral": 0.0,
+        "negative": 0.0
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "도입부가 미쳤음 도입부만 듣게됌",
+          "link": "https://www.youtube.com/watch?v=tRC7Fw_FTuY&lc=Ugx1HnkY6fOh-ZLm3-J4AaABAg",
+          "published_at": "2026-10-11T14:00:50Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "일본어 블발도 너무너무 좋다..",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=UgyPkmnkEDqF281ZgQh4AaABAg",
+          "published_at": "2026-10-04T05:37:30Z"
+        }
+      ]
+    },
+    "performance": {
+      "label": "performance",
+      "count": 5,
+      "ratio": {
+        "positive": 1.0,
+        "neutral": 0.0,
+        "negative": 0.0
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "오해원님만 봤는데 전체샷은 더 좋은데요.",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgzRYuz2nGu432-Cq9l4AaABAg",
+          "published_at": "2026-10-10T13:51:56Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "규진 춤선 디게좋네 눈에 확들어온다..",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgzpfwBr82BFEtBcVMR4AaABAg",
+          "published_at": "2026-10-09T17:33:34Z"
+        }
+      ]
+    },
+    "visual_styling": {
+      "label": "visual / styling",
+      "count": 12,
+      "ratio": {
+        "positive": 1.0,
+        "neutral": 0.0,
+        "negative": 0.0
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "다 이쁘네",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgztbhE9pFXN5eezfkR4AaABAg",
+          "published_at": "2026-10-10T03:02:03Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "한복❤",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgzKYvaKawg1AI8obwh4AaABAg",
+          "published_at": "2026-10-09T22:52:30Z"
+        }
+      ]
+    },
+    "vocal_rap": {
+      "label": "vocal / rap",
+      "count": 4,
+      "ratio": {
+        "positive": 1.0,
+        "neutral": 0.0,
+        "negative": 0.0
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "설윤진짜 많이 늘엇다..원래도 잘했지만",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgwN2vunjsDB00JgfDh4AaABAg",
+          "published_at": "2026-10-11T02:19:13Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "그래.. 걸그룹에 메보급3명은 있어야 들을 맛 나지",
+          "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgyhsHJH8uh3bB4CEUh4AaABAg",
+          "published_at": "2026-10-08T20:55:50Z"
+        }
+      ]
+    },
+    "fandom_public_opinion": {
+      "label": "fandom / public_opinion",
+      "count": 18,
+      "ratio": {
+        "positive": 1.0,
+        "neutral": 0.0,
+        "negative": 0.0
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "어떤 언어로 전달해도 블발이 주는 감동은 같네요. 일본 활동도 파이팅!",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugw7535KYXY5rz4frp14AaABAg",
+          "published_at": "2026-10-03T11:20:18Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "애들아 일본, 아니 어디에서든 더더 흥해라~~!!",
+          "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugw89Rv2OgctmpWCd3N4AaABAg",
+          "published_at": "2026-10-03T07:11:06Z"
+        }
+      ]
+    }
+  },
+  "comment_annotations": [
+    {
+      "id": 0,
+      "sentiment": "neutral",
+      "aspects": []
+    },
+    {
+      "id": 1,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "vocal_rap",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "sentiment": "neutral",
+      "aspects": []
+    },
+    {
+      "id": 5,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "sentiment": "neutral",
+      "aspects": []
+    },
+    {
+      "id": 11,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 13,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 17,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "vocal_rap",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "vocal_rap",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "vocal_rap",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 25,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 31,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 43,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "sentiment": "neutral",
+      "aspects": []
+    },
+    {
+      "id": 45,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 47,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 54,
+      "sentiment": "neutral",
+      "aspects": []
+    },
+    {
+      "id": 55,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    }
+  ],
+  "naver_news_summary": [
+    {
+      "title": "독보적 대세 입증한 리센느 아이브 블랙핑크 제치고 10월 걸그룹 브랜드...",
+      "date": "2026-10-11",
+      "summary": "에이핑크, 엔믹스, 프로미스나인, 베이비몬스터, 스테이씨, 미야오, 트리플에스, 아이오아이, 키스오브라이프, 케플러, 캣츠아이, 비비지, 걸스데이, 시그니처, 유스피어, EXID, 클라씨 , 빌리 , 키라스, 아이칠린...",
+      "link": "https://www.gpkorea.com/news/articleView.html?idxno=147451"
+    },
+    {
+      "title": "미야오·엔믹스·아이브·아일릿 줄줄이 컴백…음원차트 돌풍 리센느까...",
+      "date": "2026-10-10",
+      "summary": "리센느가 음원차트 상위권을 차지하고 있는 가운데, 미야오, 엔믹스, 아이브, 아일릿이 각각 새로운... 엔믹스는 19일 미니 6집 'Strange Muse(스트레인지 뮤즈)'를 발표한다. 이번 앨범에는 타이틀곡 '긴 소원...",
+      "link": "https://www.jnilbo.com/news/articleView.html?idxno=90000072200"
+    },
+    {
+      "title": "케이팝 가을 컴백 대전 돌입…빅4에 이수만 새 그룹·아이브·플레이브...",
+      "date": "2026-10-09",
+      "summary": "▲ 그룹 세븐틴 정한·조슈아(시계 방향으로), NCT 위시, 베이비몬스터, 엔믹스 추석 연휴와 아시안게임으로... 19일에는 세븐틴 정한·조슈아와 엔믹스가, 23일에는 베이비몬스터가 컴백합니다. 26일에는 아이브와...",
+      "link": "https://n.news.naver.com/mnews/article/055/0001394283?sid=103"
+    },
+    {
+      "title": "'AAA 2026', 인기상 결선 투표 시작…변우석-김혜윤→방탄소년단-하츠투...",
+      "date": "2026-10-08",
+      "summary": "여자 그룹 부문은 현재 1위가 하츠투하츠(Hearts2Hearts)이며, 뒤를 이어 2위는 엔믹스(NMIXX), 3위 이세계아이돌, 4위 하데스, 5위는 트와이스(TWICE)가 기록 중이다. 남자 솔로 가수 부문 예선 투표에 이어 1위는...",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242036"
+    },
+    {
+      "title": "'AAA 2026', 인기상 부문별 1위 변동…변우석·김혜윤→임영웅·예지",
+      "date": "2026-10-07",
+      "summary": "반면 여자 그룹 부문 1위는 엔믹스(NMIXX)가 다시 올랐으며, 2위는 트와이스(TWICE), 3위 이세계아이돌, 4위 하데스, 5위는 하츠투하츠(Hearts2Hearts)로 변동됐다. 남자 솔로 가수 부문 1위는 압도적인 투표차로...",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16240980"
+    }
+  ],
+  "top_comments_or_evidence": [
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "도입부가 미쳤음 도입부만 듣게됌",
+      "link": "https://www.youtube.com/watch?v=tRC7Fw_FTuY&lc=Ugx1HnkY6fOh-ZLm3-J4AaABAg",
+      "published_at": "2026-10-11T14:00:50Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "오해원님만 봤는데 전체샷은 더 좋은데요.",
+      "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgzRYuz2nGu432-Cq9l4AaABAg",
+      "published_at": "2026-10-10T13:51:56Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "다 이쁘네",
+      "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgztbhE9pFXN5eezfkR4AaABAg",
+      "published_at": "2026-10-10T03:02:03Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "설윤진짜 많이 늘엇다..원래도 잘했지만",
+      "link": "https://www.youtube.com/watch?v=pVp4KacJIVk&lc=UgwN2vunjsDB00JgfDh4AaABAg",
+      "published_at": "2026-10-11T02:19:13Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "어떤 언어로 전달해도 블발이 주는 감동은 같네요. 일본 활동도 파이팅!",
+      "link": "https://www.youtube.com/watch?v=HH26R9NhT8Y&lc=Ugw7535KYXY5rz4frp14AaABAg",
+      "published_at": "2026-10-03T11:20:18Z"
+    }
+  ],
+  "monthly_insight": {
+    "headline": "10/19《Strange Muse》回歸預熱",
+    "market_heat": "可確認新輯宣傳與品牌合作的新聞曝光 [N1][N7][N10]；市場成效須等發行後驗證。",
+    "news_focus": "10/19 發行迷你 6 輯《Strange Muse》 [N1][N27]，並有品牌合作與海外演出新聞 [N7][N10][N15]。",
+    "trend": "音樂回歸與商業活動並行，現有週榜可作背景，無法推論當月排名趨勢。",
+    "opportunity": "以演唱實力與舞台片段支持新輯宣傳，再觀察新作接受度。",
+    "watch": "10/19 發行後的新曲榜單與留言變化，並增加不同影片的抽樣。",
+    "summary": "NMIXX 預計 10/19 發行《Strange Muse》 [N1][N27]。61 則留言中 56 則正面、5 則中立，並非全數正面；新輯表現仍待發行後觀察。",
+    "evidence_ids": [
+      "N1",
+      "N7",
+      "N10",
+      "N15",
+      "N27"
+    ],
+    "risk": "資料不足",
+    "fan_summary": "抽樣 61 則：正面 56、中立 5、負面 0。比例只代表本次影片觀眾；不能直接推論整體粉絲或一般大眾。"
+  },
+  "report_text": "# NMIXX 2026-10 市場與輿論分析\n\n## 1. 榜單表現\n- Bugs 全曲週榜 Top 100：2026-09-28–2026-10-04（橫跨月份，僅作參考）。\n- #49 Heavy Serenade（NMIXX）\n- #54 Blue Valentine（NMIXX）\n- 2026-10-05 起算週榜尚未取得；目前無法判定當月排名趨勢。\n\n## 2. 粉絲與輿論反應\n- 正面比例：0.918\n- 中立比例：0.082\n- 負面比例：0.0\n- 簡短解讀：抽樣 61 則：正面 56、中立 5、負面 0。比例只代表本次影片觀眾；不能直接推論整體粉絲或一般大眾。\n- 留言樣本：61 則期間內韓文頂層留言；僅代表抽樣影片，新聞不納入比例。\n\n## 3. 綜合判斷\n- 市場熱度：可確認新輯宣傳與品牌合作的新聞曝光 [N1][N7][N10]；市場成效須等發行後驗證。\n- 輿論風險：資料不足\n- Naver 新聞觀察：10/19 發行迷你 6 輯《Strange Muse》 [N1][N27]，並有品牌合作與海外演出新聞 [N7][N10][N15]。\n- 短期趨勢：音樂回歸與商業活動並行，現有週榜可作背景，無法推論當月排名趨勢。\n\n## 4. 市場洞察\n- 機會點：以演唱實力與舞台片段支持新輯宣傳，再觀察新作接受度。\n- 觀察重點：10/19 發行後的新曲榜單與留言變化，並增加不同影片的抽樣。\n- 分析期間：2026-10-01–2026-10-11（截至日資料，非完整月報；新聞依韓國刊登日，留言依台北日期）。\n- 限制：影片搜尋抽樣、韓文頂層留言、新聞摘要；不代表整體粉絲或一般大眾。\n\n## 5. 一句話總結\nNMIXX 預計 10/19 發行《Strange Muse》 [N1][N27]。61 則留言中 56 則正面、5 則中立，並非全數正面；新輯表現仍待發行後觀察。\n",
+  "original_model_insight": {
+    "headline": "NMIXX 10月回歸前夕：品牌活動與海外演出並進",
+    "risk": "中",
+    "fan_summary": "粉絲對NMIXX的音樂、表演、視覺造型及歌唱實力均給予高度正面評價，特別是針對日本活動與成員個人表現的討論熱烈，樣本數61則留言皆呈現正面情感，但因樣本數有限，無法代表整體粉絲群體意見。",
+    "market_heat": "NMIXX在10月品牌評價中位居前列 [N0][N11][N22]，且在AAA人氣獎投票中維持前段班排名 [N4][N6][N9][N37]。市場關注焦點集中於10月19日的迷你6輯《Strange Muse》回歸 [N1][N13][N27][N33]。",
+    "news_focus": "新聞重點聚焦於NMIXX即將於10月19日發行迷你6輯《Strange Muse》 [N1][N13][N27][N33]，以及與イースター航空的品牌合作 [N7][N18][N28][N30]、成員雪允代言樹木證券 [N10][N31][N39]與成員智雨代言アイレシピ [N20]等商業活動。",
+    "trend": "NMIXX近期趨勢包含積極的海外演出（如巴塞隆納音樂銀行） [N15][N16][N26]、多樣化的品牌代言與跨界合作 [N7][N10][N20][N28]，以及為10月19日回歸進行的宣傳預熱 [N1][N13][N27][N33]。",
+    "opportunity": "隨著10月回歸大戰展開，NMIXX透過與航空業及金融業的異業合作擴大品牌接觸點 [N7][N10][N30]，並藉由海外大型演出鞏固全球粉絲基礎 [N15][N16][N26]，有望在回歸期間提升音源與專輯競爭力。",
+    "watch": "需持續觀察10月19日新專輯《Strange Muse》發行後的音源表現 [N1][N13][N33]，以及在與IVE、ILLIT等團體同期回歸的競爭環境下，NMIXX的市場佔有率變化 [N1][N19][N27][N38]。",
+    "summary": "NMIXX於10月進入回歸準備期，除音樂作品外，在品牌代言與海外演出方面表現活躍 [N7][N10][N15][N20]。儘管面臨10月激烈的市場競爭 [N19][N27][N38]，其在品牌評價與人氣投票中仍保持穩定 [N4][N11][N22]。風險評估方面，因樣本數有限，市場反應仍需觀察回歸後的實際數據。",
+    "evidence_ids": [
+      "N0",
+      "N1",
+      "N4",
+      "N6",
+      "N7",
+      "N9",
+      "N10",
+      "N11",
+      "N13",
+      "N15",
+      "N16",
+      "N18",
+      "N19",
+      "N20",
+      "N22",
+      "N26",
+      "N27",
+      "N28",
+      "N30",
+      "N31",
+      "N33",
+      "N37",
+      "N38",
+      "N39"
+    ]
+  },
+  "review": {
+    "reviewed_at": "2026-10-11T15:49:49.091879+00:00",
+    "method": "Source-bound editorial review of news digests and comment annotations",
+    "notes": [
+      "Removed unsupported market/ranking claims",
+      "Separated member, former-member and NCT unit activity",
+      "Overall opinion risk not established by convenience sample"
+    ]
+  }
+}

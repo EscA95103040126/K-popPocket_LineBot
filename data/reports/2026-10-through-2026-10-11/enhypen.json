@@ -1,0 +1,2112 @@
+{
+  "artist": "ENHYPEN",
+  "generated_at": "2026-10-11T15:45:09.531893+00:00",
+  "analysis_period": {
+    "start": "2026-10-01",
+    "end": "2026-10-11",
+    "timezone": "Asia/Taipei"
+  },
+  "sources": {
+    "naver_news": {
+      "count": 40,
+      "items": [
+        {
+          "title": "3위 스키즈·2위 에이티즈…남자그룹 브랜드평판 1위 차지한 '월드 스타...",
+          "date": "2026-10-11",
+          "summary": "10월 순위 1위부터 30위까지는 방탄소년단, 에이티즈, 스트레이 키즈, 빅뱅, 세븐틴, 코르티스, 엑소, NCT, 엔하이픈, 투어스, 인피니트, 샤이니, 워너원, 슈퍼주니어, 비투비, 동방신기, 몬스타엑스, 2PM...",
+          "category": "news",
+          "link": "https://www.wikitree.co.kr/articles/1165167",
+          "original_link": "https://www.wikitree.co.kr/articles/1165167"
+        },
+        {
+          "title": "방탄소년단, 보이그룹 브랜드평판 1위…2위 에이티즈·3위 스트레이 키...",
+          "date": "2026-10-10",
+          "summary": "4위부터 10위까지는 빅뱅, 세븐틴, 코르티스, 엑소, NCT, 엔하이픈, 투어스 순이었다. 이어 인피니트, 샤이니, 워너원, 슈퍼주니어, 비투비, 동방신기, 몬스타엑스, 2PM, 보이넥스트도어, 제로베이스원 등이 20위권에...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/009/0005746548",
+          "original_link": "https://www.mk.co.kr/article/12172703"
+        },
+        {
+          "title": "엔하이픈(ENHYPEN) 제이 “즐겁고 행복했던 촬영”···‘쉿, 비밀의 솊...",
+          "date": "2026-10-09",
+          "summary": "아이돌그룹 그룹 엔하이픈(ENHYPEN) 멤버 제이가 개인 예능에서 정호영 셰프와 ‘족타 퍼포먼스’로 색다른... 제이는 지난 8일 오후 엔하이픈 공식 유튜브 채널을 통해 ‘쉿, 비밀의 솊’ 3화를 공개했다. 이번...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/144/0001143157",
+          "original_link": "https://sports.khan.co.kr/article/202610091957003?pt=nv"
+        },
+        {
+          "title": "엔하이픈, VR 콘서트 '엔하이픈 브이알 콘서트 : 데스티니' 4주차 특전 ...",
+          "date": "2026-10-08",
+          "summary": "그룹 엔하이픈의 VR 콘서트 '엔하이픈 브이알 콘서트 : 데스티니'가 개봉 4주차 특전을 증정한다. 국내 멀티플렉스 상영관 롯데시네마 공식 앱과 홈페이지에는 '엔하이픈 브이알 콘서트 : 데스티니' 개봉 4주차 특전...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242163",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16242163"
+        },
+        {
+          "title": "'뮤직뱅크 인 바르셀로나' 방송 시간…라인업 엔믹스 등",
+          "date": "2026-10-07",
+          "summary": "에이티즈·엔하이픈 등 7개 팀의 라인업이 준비됐며, 박보검과 제이의 듀엣 및 알파드라이브원... 출연진 라인업은 에이티즈, 엔하이픈, 엔믹스, 싸이커스, 엔시티 위시, 코르티스, 알파드라이브원 등 7개 팀이다....",
+          "category": "news",
+          "link": "https://www.bntnews.co.kr/article/view/bnt202610070278",
+          "original_link": "https://www.bntnews.co.kr/article/view/bnt202610070278"
+        },
+        {
+          "title": "3만 7000여 글로벌 팬 열광시킨 ‘KBS 뮤직뱅크 인 바르셀로나’ 공연 실...",
+          "date": "2026-10-06",
+          "summary": "이번 무대에는 ATEEZ(에이티즈), ENHYPEN(엔하이픈), NMIXX(엔믹스), xikers(싸이커스), NCT WISH(엔시티 위시)... 공연 열기 속 MC 박보검과 ENHYPEN(엔하이픈) 제이가 함께한 특별한 듀엣 무대도 공개됐다. 두 사람은...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/144/0001142510",
+          "original_link": "https://sports.khan.co.kr/article/202610062341003?pt=nv"
+        },
+        {
+          "title": "10월 유통가 팝업 경쟁…지역·캐릭터·체험 콘텐츠로 고객 잡는다",
+          "date": "2026-10-05",
+          "summary": "성수동고릴라가 공개한 10월 팝업스토어 목록에 따르면 그룹 투어스의 공식 캐릭터 '투위미(TWIMI)'를 선보이는 'TWIMI : 42 Forest'를 비롯해 엔하이픈의 '엔친(ENCHIN)', (여자)아이들 우기의 '끼기(GIGI)', 킥플립의 '킥둥쓰...",
+          "category": "news",
+          "link": "https://sports.hankooki.com/news/articleView.html?idxno=6940973",
+          "original_link": "https://sports.hankooki.com/news/articleView.html?idxno=6940973"
+        },
+        {
+          "title": "[인터뷰] 'K-떼창'에 반한 찰리 푸스…\"한국 첫 스타디움 공연, 큰 영광...",
+          "date": "2026-10-04",
+          "summary": "최근 '코르티스' '트와이스' '엔하이픈' 음악을 많이 듣고 있고, 저는 K팝을 사랑합니다. 가끔 프로듀서가 곡을 어떻게 구성했는지 보기 위해 반주만 듣기도 합니다. 그래서 저는 많은 것들을 배우고 듣는 것을 좋아합니다.]...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/437/0000514048?sid=103",
+          "original_link": "https://news.jtbc.co.kr/article/NB12321287?influxDiv=NAVER"
+        },
+        {
+          "title": "엔하이픈 11월 컴백 예고... 1년 3컴백",
+          "date": "2026-10-03",
+          "summary": "사진= 빌리프랩 그룹 엔하이픈(ENHYPEN)이 오는 11월 새 싱글을 발표하고 올해 세 번째 컴백에 나선다. 데뷔 7년 차에도 연이어 신보를 선보이며 활발한 음악 행보를 이어가는 모습이다. 가요계에 따르면 엔하이픈은...",
+          "category": "news",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1184196",
+          "original_link": "https://www.ggilbo.com/news/articleView.html?idxno=1184196"
+        },
+        {
+          "title": "투바투 수빈 \"3살 차 막내 휴닝카이, 내가 깨워서 학교 보냈다\" [RE:뷰]",
+          "date": "2026-10-02",
+          "summary": "2일 온라인 채널 ‘집대성’에선 엔하이픈 제이, 제이크, 니키가 게스트로 출연해 이날 MC로 나선 투바투 수빈과 토크를 펼치는 모습이 담겼다. “형들 말로는 거의 업어 키웠다는데 동의하나?”라는 질문에 엔하이픈 막내...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/213/0001403322",
+          "original_link": "https://www.tvreport.co.kr/breaking/article/1080257/"
+        },
+        {
+          "title": "'2026 SBS 가요대전', 30주년 맞아 크리스마스 이브-25일 양일 개최…라...",
+          "date": "2026-10-01",
+          "summary": "라인업으로는 그룹 스트레이 키즈(Stray Kids), 투모로우바이투게더(TOMORROW X TOGETHER), 엔하이픈(ENHYPEN), 아이브, 르세라핌(LE SSERAFIM), 보이넥스트도어(BOYNEXTDOOR), 제로베이스원(ZEROBASEONE), 라이즈...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16232724",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16232724"
+        },
+        {
+          "title": "BTS 방탄소년단, 10월 브랜드평판 정상…에이티즈·스트레이 키즈 제쳤...",
+          "date": "2026-10-11",
+          "summary": "코르티스, 엑소, NCT, 엔하이픈, 투어스 역시 10위권에 포함됐다. 이번 조사에서 주목할 부분은 보이그룹 전체 데이터 규모가 증가했다는 점이다. 9월 약 5,408만 건이었던 분석 대상 데이터는 10월 약 5,587만 건으로...",
+          "category": "news",
+          "link": "https://www.jemin.com/news/articleView.html?idxno=844124",
+          "original_link": "https://www.jemin.com/news/articleView.html?idxno=844124"
+        },
+        {
+          "title": "보이넥스트도어·아이들 소연, 10월 1주차 한터 국가별 차트 1위..빛나는...",
+          "date": "2026-10-10",
+          "summary": "다음으로 엔시티 127의 'BLINGY'(종합 지수 9262.12점)가 2위, 엔하이픈의 'THE SIN : BLISS'(종합 지수 9184.44점)가 3위에 올랐다 미국에 이어 일본 부문의 주인공도...",
+          "category": "news",
+          "link": "http://www.breaknews.com/1242042",
+          "original_link": "http://www.breaknews.com/1242042"
+        },
+        {
+          "title": "KM차트, 이찬원 등 2026 3분기 K-MUSIC 빛낼 '시즌베스트 어텀' 후보 공개",
+          "date": "2026-10-09",
+          "summary": "아티스트 부문에서는 방탄소년단, 에이티즈, 임영웅, 이찬원, 투모로우바이투게더, 플레이브, 영탁, 엔하이픈, 스트레이 키즈 등 16팀이 정상을 다툰다. 인기 남성 부문은 이찬원, 임영웅, 방탄소년단 멤버...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242662",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16242662"
+        },
+        {
+          "title": "리사 한류 화제성 1위…스트레이 키즈·엔하이픈 TOP3, 아이브 51계단 급...",
+          "date": "2026-10-08",
+          "summary": "전주 11위에서 10계단 상승한 리사는 스트레이 키즈와 엔하이픈을 제치고 선두를 차지했다. 앞선 온라인 반응에서는 솔로곡 'SaWaDiKa'의 퍼포먼스와 태국 문화 요소가 주요 관심사로 나타났다. 엔하이픈은 23계단...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16241841",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16241841"
+        },
+        {
+          "title": "'뮤직뱅크 인 바르셀로나' 방송, K-팝 대표 라인업 스페인 홀리다",
+          "date": "2026-10-07",
+          "summary": "‘KBS 뮤직뱅크 인 바르셀로나’에는 에이티즈, 엔하이픈, 엔믹스, 싸이커스, 엔시티 위시, 코르티스... 또 MC 박보검과 엔하이픈 제이가 함께 선보인 감미로운 듀엣 무대와 에이티즈의 친필 사인볼 선물 이벤트까지...",
+          "category": "news",
+          "link": "https://enter.etoday.co.kr/news/view/303391",
+          "original_link": "https://enter.etoday.co.kr/news/view/303391"
+        },
+        {
+          "title": "지드래곤·태양·대성, 빅뱅 존재감 입증하며 K-브랜드지수 TOP10 영예",
+          "date": "2026-10-06",
+          "summary": "9위 엔하이픈(ENHYPEN), 10위 투어스(TWS) 등이 톱10에 이름을 올렸다. 류원선 아시아브랜드연구소... 엔하이픈은 9위로 새롭게 합류한 반면, 직전 6위였던 투어스는 10위로 내려갔다. 이처럼 글로벌 활동과 음원 성과...",
+          "category": "news",
+          "link": "https://www.siminilbo.co.kr/news/newsview.php?ncode=1160298220958864",
+          "original_link": "https://www.siminilbo.co.kr/news/newsview.php?ncode=1160298220958864"
+        },
+        {
+          "title": "[이번주 관심주] 반년 내내 횡보하는 에스엠, 3Q 앨범·공연 모두 부진 ...",
+          "date": "2026-10-05",
+          "summary": "가수별로는 방탄소년단 150만명, 스트레이키즈 60만명, 빅뱅·엔하이픈 30만명 순이다. 에스엠 가수들의 3분기 투어 일정. 오른쪽에서 두 번째가 최대 모객수. 사진=키움증권 그나마 하나 희망적인 건 에스파의...",
+          "category": "news",
+          "link": "http://www.opinionnews.co.kr/news/articleView.html?idxno=145220",
+          "original_link": "http://www.opinionnews.co.kr/news/articleView.html?idxno=145220"
+        },
+        {
+          "title": "[뮤직컴퍼니100] 제니 OA 0.16%p 축소…올데이 프로젝트 더블랙레이블 열...",
+          "date": "2026-10-04",
+          "summary": "반면 엔하이픈은 135점, 0.14%에 머물러 현재 빌리프랩 점유율의 대부분은 아일릿에서 형성됐다. 곡 'It's Me'는 962.8점으로 9위를 유지하면서 전일보다 7.8점 증가했다. 최근 공식 채널에서는 'It's Me...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16237608",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16237608"
+        },
+        {
+          "title": "라이즈 소희 vs 제베원 김태래, '아이돌 최고보컬' 주인공은?",
+          "date": "2026-10-03",
+          "summary": "현재 라이즈 소희, 아홉 제이엘, 롱샷 루이, 코이키즈 요시키, 제로베이스원 김태래, 엔하이픈 제이 등이... (웨이크원), 엔하이픈 제이(빌리프랩), 알파드라이브원 리오(웨이크원), 플레어유 강우진(FNC) 유픽 포지션...",
+          "category": "news",
+          "link": "https://www.slist.kr/news/articleView.html?idxno=770745",
+          "original_link": "https://www.slist.kr/news/articleView.html?idxno=770745"
+        },
+        {
+          "title": "이준, 걸그룹 멤버와 치킨집 소개팅⋯엔하이픈 \"지금 그러면 은퇴\"",
+          "date": "2026-10-02",
+          "summary": "2일 유튜브 채널 ‘워크맨’에는 이준이 엔하이픈의 정원, 제이와 함께 치킨집 아르바이트에 나선 영상이... 이후 이준은 엔하이픈의 정원과 제이를 만난 뒤에도 “압구정점에서 여자 아이돌과 소개팅했다”며 당시 일화를...",
+          "category": "news",
+          "link": "https://www.etoday.co.kr/news/view/2632229",
+          "original_link": "https://www.etoday.co.kr/news/view/2632229"
+        },
+        {
+          "title": "“제2의 한한령 왔다” 첸백시·알디원·트레저까지, 중국 K팝 줄취소 [...",
+          "date": "2026-10-01",
+          "summary": "엔하이픈 출신 에반 역시 오는 11일 상하이에서 열 예정이었던 첫 미니앨범 팬사인회와 관련 행사가 “불가항력적 요인”으로 취소됐다. FT아일랜드도 여기에 포함됐다. FNC엔터테인먼트는 지난달 29일 오는 17일...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/144/0001141663",
+          "original_link": "https://sports.khan.co.kr/article/202610011807013?pt=nv"
+        },
+        {
+          "title": "방탄소년단(BTS) 1위, 10월 보이그룹 브랜드평판 정상..2위 에이티즈·3위...",
+          "date": "2026-10-10",
+          "summary": "2026년 10월 보이그룹 브랜드평판 30위 순위는 방탄소년단, 에이티즈, 스트레이 키즈, 빅뱅, 세븐틴, 코르티스, 엑소, NCT, 엔하이픈, 투어스, 인피니트, 샤이니, 워너원...",
+          "category": "news",
+          "link": "http://www.breaknews.com/1242041",
+          "original_link": "http://www.breaknews.com/1242041"
+        },
+        {
+          "title": "케이팝 가을 컴백 대전 돌입…빅4에 이수만 새 그룹·아이브·플레이브...",
+          "date": "2026-10-09",
+          "summary": "엔하이픈도 11월 중 신보 발표를 준비하고 있습니다. 특히 리센느는 역주행곡 '러브어택'(LOVE ATTACK)과 리메이크곡 '프리티 걸'(Pretty Girl)로 사랑받은 뒤 선보이는 신곡이기에 이목이 집중됩니다. 에이티즈 역시 팀의...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/055/0001394283?sid=103",
+          "original_link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008790499&plink=ORI&cooper=NAVER"
+        },
+        {
+          "title": "'위버스콘' 첫 해외 무대는 인도…하이브, 뉴델리로 간다",
+          "date": "2026-10-08",
+          "summary": "엔하이픈, 뉴진스, 르세라핌, 투모로우바이투게더, 지코, &TEAM 등이 참여했으며, 이후 K팝뿐 아니라 J팝과 밴드 등으로 출연진 범위를 넓혀왔다. 올해 열린 '2026 위버스콘 페스티벌'에는 에이핑크, 엔하이픈, AND2BLE...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/415/0000052607",
+          "original_link": "http://www.atstar1.com/news/articleView.html?idxno=6039405"
+        },
+        {
+          "title": "\"BTS 컴백 + 5세대 폭주 = 사상 최대 실적…하이브 주가만 딴세상인 이유...",
+          "date": "2026-10-07",
+          "summary": "앨범 부문에서는 엔하이픈, &팀, 캣츠아이, 세븐틴 솔로, 코르티스의 누적 400만장 돌파 등으로 약... 4분기에는 TXT, 세븐틴 유닛, 엔하이픈 싱글, 투어스, 보이넥스트도어, 르세라핌, 아일릿 등 다수 아티스트의...",
+          "category": "news",
+          "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=302236",
+          "original_link": "https://www.newsquest.co.kr/news/articleView.html?idxno=302236"
+        },
+        {
+          "title": "박보검X엔하이픈 제이, 바르셀로나서 스페셜 듀엣‥3만 7천명 열광한 무...",
+          "date": "2026-10-06",
+          "summary": "이번 공연에서 박보검은 안정적인 진행뿐 아니라 그룹 엔하이픈 제이와 감미로운 듀엣 무대를... 한편 이번 무대에는 에이티즈, 엔하이픈, 엔믹스, 싸이커스, 엔시티 위시, 코르티스, 알파드라이브원 등 K-POP을...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/609/0001175810",
+          "original_link": "https://www.newsen.com/news_view.php?uid=202610061640202510"
+        },
+        {
+          "title": "'엔하이픈 브이알 콘서트 : 데스티니', 개봉 3주차 특전은 포스터 엽서...",
+          "date": "2026-10-04",
+          "summary": "그룹 엔하이픈의 VR 콘서트 '엔하이픈 브이알 콘서트 : 데스티니'가 개봉 3주차 특전 증정 이벤트를 진행한다. 국내 멀티플렉스 상영관 롯데시네마는 공식 앱과 홈페이지를 통해 '엔하이픈 브이알 콘서트 : 데스티니...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16237384",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16237384"
+        },
+        {
+          "title": "유픽 ‘베스트 포지션 매치-보컬’ 오픈",
+          "date": "2026-10-03",
+          "summary": "현재 라이즈 소희, 아홉 제이엘, 롱샷 루이, 코이키즈 요시키, 제로베이스원 김태래, 엔하이픈 제이 등이 상위권에 이름을 올리며 초반 경쟁에서 두각을 나타내고 있다. 알파드라이브원 리오, 플레어유 강우진, 플레이브...",
+          "category": "news",
+          "link": "https://www.bntnews.co.kr/article/view/bnt202610030042",
+          "original_link": "https://www.bntnews.co.kr/article/view/bnt202610030042"
+        },
+        {
+          "title": "이준 \"걸그룹 멤버와 압구정서 소개팅\" 깜짝 고백",
+          "date": "2026-10-02",
+          "summary": "2일 유튜브 채널 '워크맨'에는 이준이 엔하이픈 정원, 제이와 함께 치킨집에서 아르바이트하는 모습이... 이어 엔하이픈 정원과 제이가 등장했다. 이준은 두 사람에게 \"나는 압구정점에서 여자 아이돌과 소개팅했다\"고...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/008/0005421757",
+          "original_link": "https://www.mt.co.kr/entertainment/2026/10/02/2026100220511326542"
+        },
+        {
+          "title": "'디 어워즈', 유럽 첫 개최…파리서 이틀간 K팝 시상식",
+          "date": "2026-10-01",
+          "summary": "지난해 열린 '2026 디 어워즈'에서는 엔하이픈이 '올해의 아티스트', 스트레이 키즈가 '올해의 앨범', 보이넥스트도어가 '올해의 노래', 라이즈가 '올해의 레코드'를 각각 수상했다. (사진='디 어워즈')",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/415/0000052400",
+          "original_link": "http://www.atstar1.com/news/articleView.html?idxno=6039170"
+        },
+        {
+          "title": "방탄소년단 10월 보이그룹 브랜드평판 1위 등극 에이티즈 스트레이키즈...",
+          "date": "2026-10-10",
+          "summary": "보이그룹 브랜드평판 2026년 10월 분석에는 방탄소년단, 에이티즈, 스트레이 키즈, 빅뱅, 세븐틴, 코르티스, 엑소, NCT, 엔하이픈, 투어스, 인피니트, 샤이니, 워너원, 슈퍼주니어, 비투비, 동방신기, 몬스타엑스, 2PM...",
+          "category": "news",
+          "link": "https://www.gpkorea.com/news/articleView.html?idxno=147442",
+          "original_link": "https://www.gpkorea.com/news/articleView.html?idxno=147442"
+        },
+        {
+          "title": "K팝 전성기, ‘가수 사전’부터 만들자[임진모의 K팝 이야기](7)",
+          "date": "2026-10-09",
+          "summary": "방탄소년단, 스트레이키즈, 엔하이픈, 에이티즈 등 K팝 가수들이 줄지어 1위를 점령하고 있는, 앨범 200위부터 1위까지 카운트다운 해서 순위를 매기는 메인차트 ‘빌보드 200’ 소식이다. 로큰롤이 세상을 사로잡은...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/033/0000052615?sid=103",
+          "original_link": "https://weekly.khan.co.kr/article/202610091414001"
+        },
+        {
+          "title": "리센느·앤팀·영탁·임영웅 정상…'공감과 서사'로 물든 9월 써클차트",
+          "date": "2026-10-08",
+          "summary": "에이티즈의 'GOLDEN HOUR : Part.5'와 엔하이픈(ENHYPEN)의 'THE SIN : BLISS'가 나란히 1Million 인증을 획득했다. NCT... 1Platinum에는 스트레이 키즈 'THIS & THAT (FANS)', 엔하이픈 'THE SIN : BLISS (Weverse)', 넥스지(NEXZ) 'SAUCIN`'이...",
+          "category": "news",
+          "link": "https://www.nc.press/news/articleView.html?idxno=628128",
+          "original_link": "https://www.nc.press/news/articleView.html?idxno=628128"
+        },
+        {
+          "title": "[박동선의 머니&엔터] 자본시장, K팝에 세계관 다시 묻다… 숏폼 한계가...",
+          "date": "2026-10-07",
+          "summary": "투모로우바이투게더(TXT)의 판타지 서사나 엔하이픈(ENHYPEN)의 뱀파이어 스토리처럼 데뷔 초반 캐릭터 몰입을 돕는 '동반과제'로 쓰이거나, 팬덤 파이가 커진 후 스핀오프(Spin-off) 확장을 위해 정교한 서사를 덧입히는...",
+          "category": "news",
+          "link": "https://www.nc.press/news/articleView.html?idxno=628057",
+          "original_link": "https://www.nc.press/news/articleView.html?idxno=628057"
+        },
+        {
+          "title": "박보검X엔하이픈 제이, 바르셀로나서 특별 듀엣... 3만 7000명 홀렸다",
+          "date": "2026-10-06",
+          "summary": "이번 무대에는 에이티즈, 엔하이픈, 엔믹스, 싸이커스, NCT 위시, 코르티스, 알파드라이브원 등 K팝... MC 박보검과 엔하이픈 제이가 함께한 특별한 듀엣 무대도 공개됐다. 두 사람은 감미로운 하모니와 진정성 있는...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/241/0003534080",
+          "original_link": "https://isplus.com/article/view/isp202610060166"
+        },
+        {
+          "title": "유픽 ‘이달의 픽’ 니키·에반 격돌",
+          "date": "2026-10-03",
+          "summary": "엔하이픈 니키와 에반이 유픽 ‘10월 이달의 픽’ 개인 남자 부문 상위권에서 경쟁을 벌이고 있다. 블랙핑크... 개인 남자 부문에서는 엔하이픈 니키와 에반, 투모로우바이투게더 연준이 상위권에서 경쟁하고 있다. 개인...",
+          "category": "news",
+          "link": "https://www.bntnews.co.kr/article/view/bnt202610030050",
+          "original_link": "https://www.bntnews.co.kr/article/view/bnt202610030050"
+        },
+        {
+          "title": "이준 \"걸그룹 멤버가 먼저 밥 먹자고\"…20년 전 '치킨집 소개팅' 고백",
+          "date": "2026-10-02",
+          "summary": "2일 유튜브 채널 '워크맨'에는 이준과 그룹 엔하이픈 정원, 제이가 치킨집 아르바이트에 도전하는 영상이 공개됐다. 이날 이준은 치킨집에서 일한다는 제작진의 말에 치킨을 몇 번 튀기는지 물으며 자신감을 드러냈다....",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/076/0004452234",
+          "original_link": "https://www.sportschosun.com/entertainment/2026-10-02/202610020100017180000868"
+        },
+        {
+          "title": "리사, K-POP 한류 키워드 1위·댓글 2만2000건…방탄소년단·유니스도 권...",
+          "date": "2026-10-01",
+          "summary": "2위는 엔하이픈 1만6764건, 3위 스트레이 키즈 1만5798건, 4위 방탄소년단 1만4465건, 5위 지수 1만2745건이었다.... 뒤를 엔하이픈 약 1만6000건, 스트레이 키즈 약 1만5000건, 방탄소년단 약 1만4000건, 지수 약 1만2000건이...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16232389",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16232389"
+        },
+        {
+          "title": "美마블·日애니와 손잡은 네이버웹툰…뉴욕 코믹콘서 K콘텐츠 '존재감'",
+          "date": "2026-10-10",
+          "summary": "하이퍼센트는 슈팅게임 ‘백룸 클리너스’의 시연 버전을 공개했고, 테이크원컴퍼니는 K팝 그룹 엔하이픈의 지식재산권(IP)을 활용한 모바일 게임 ‘엔하이픈 월드’를 소개했다. 콘텐츠진흥원은 현지 퍼블리셔와...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/018/0006385000?sid=104",
+          "original_link": "https://www.edaily.co.kr/News/Read?newsId=01580966645611608&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
+        }
+      ],
+      "retrieved_unique_non_photo": 170,
+      "pagination_limit_reached": false,
+      "date_timezone": "Asia/Seoul"
+    },
+    "youtube_comments": {
+      "count": 19,
+      "items": [
+        {
+          "artist": "ENHYPEN",
+          "song": "'COMEBACK' ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.943 | Mnet 260827 방송",
+          "comment": "심재윤얼굴미쳣냐",
+          "comment_id": "Ugz6cysdsIZm-hfk6ut4AaABAg",
+          "published_at": "2026-10-11T07:46:10Z",
+          "video_id": "Pr-4Nze0OyQ",
+          "channel": "Mnet K-POP",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=Ugz6cysdsIZm-hfk6ut4AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "ENHYPEN (엔하이픈) 'Bloody Paradise' Official Performance MV",
+          "comment": "좋은❤❤❤",
+          "comment_id": "UgxEJanzfXW0Ju3SnRl4AaABAg",
+          "published_at": "2026-10-10T09:56:56Z",
+          "video_id": "W-D8GSXg1W8",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=W-D8GSXg1W8&lc=UgxEJanzfXW0Ju3SnRl4AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.944 | Mnet 260903 방송",
+          "comment": "와잠시만",
+          "comment_id": "Ugw2t_SjF4p5dQVcyZh4AaABAg",
+          "published_at": "2026-10-05T14:30:25Z",
+          "video_id": "-iRJLEw1pWA",
+          "channel": "Mnet K-POP",
+          "link": "https://www.youtube.com/watch?v=-iRJLEw1pWA&lc=Ugw2t_SjF4p5dQVcyZh4AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "'COMEBACK' ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.943 | Mnet 260827 방송",
+          "comment": "제이, 그는 잘생겼어!!! 🤌☺️🔥",
+          "comment_id": "Ugz57y_fYb8K_fUBUYh4AaABAg",
+          "published_at": "2026-10-11T05:46:33Z",
+          "video_id": "Pr-4Nze0OyQ",
+          "channel": "Mnet K-POP",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=Ugz57y_fYb8K_fUBUYh4AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "ENHYPEN (엔하이픈) 'Bloody Paradise' Official Performance MV",
+          "comment": "긴긴대로 미쳤다",
+          "comment_id": "Ugznr25uEJ1PIL9wE6p4AaABAg",
+          "published_at": "2026-10-07T04:31:11Z",
+          "video_id": "W-D8GSXg1W8",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=W-D8GSXg1W8&lc=Ugznr25uEJ1PIL9wE6p4AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.944 | Mnet 260903 방송",
+          "comment": "엔하이픈 입덕한다",
+          "comment_id": "UgzwPl5GCTjTp61NBx94AaABAg",
+          "published_at": "2026-10-03T10:20:39Z",
+          "video_id": "-iRJLEw1pWA",
+          "channel": "Mnet K-POP",
+          "link": "https://www.youtube.com/watch?v=-iRJLEw1pWA&lc=UgzwPl5GCTjTp61NBx94AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "'COMEBACK' ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.943 | Mnet 260827 방송",
+          "comment": "매일보면서수명연장하고있습니다고맙습니다",
+          "comment_id": "Ugx6wtUfSwkqQT_jhiN4AaABAg",
+          "published_at": "2026-10-09T16:51:39Z",
+          "video_id": "Pr-4Nze0OyQ",
+          "channel": "Mnet K-POP",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=Ugx6wtUfSwkqQT_jhiN4AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "ENHYPEN (엔하이픈) 'Bloody Paradise' Official Performance MV",
+          "comment": "아... 남자다...남자..",
+          "comment_id": "UgxmgL_zUbLeRbjgDMh4AaABAg",
+          "published_at": "2026-10-05T07:39:27Z",
+          "video_id": "W-D8GSXg1W8",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=W-D8GSXg1W8&lc=UgxmgL_zUbLeRbjgDMh4AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "'COMEBACK' ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.943 | Mnet 260827 방송",
+          "comment": "0:15 도입부 양정원 표정쓰는거 하……….",
+          "comment_id": "UgzQI_KF6pCl9-JjXbx4AaABAg",
+          "published_at": "2026-10-08T00:46:18Z",
+          "video_id": "Pr-4Nze0OyQ",
+          "channel": "Mnet K-POP",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=UgzQI_KF6pCl9-JjXbx4AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "ENHYPEN (엔하이픈) 'Bloody Paradise' Official Performance MV",
+          "comment": "개.쳐.좋.아",
+          "comment_id": "Ugw1wUKQWVICCJDWycJ4AaABAg",
+          "published_at": "2026-10-03T04:17:15Z",
+          "video_id": "W-D8GSXg1W8",
+          "channel": "HYBE LABELS",
+          "link": "https://www.youtube.com/watch?v=W-D8GSXg1W8&lc=Ugw1wUKQWVICCJDWycJ4AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "'COMEBACK' ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.943 | Mnet 260827 방송",
+          "comment": "얘네는 진짜 열심히 사는듯",
+          "comment_id": "Ugxj-zCXw9yUv4Aw6U14AaABAg",
+          "published_at": "2026-10-06T01:54:53Z",
+          "video_id": "Pr-4Nze0OyQ",
+          "channel": "Mnet K-POP",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=Ugxj-zCXw9yUv4Aw6U14AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "'COMEBACK' ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.943 | Mnet 260827 방송",
+          "comment": "블러디야르다이스~",
+          "comment_id": "Ugx7s_RfDYm5-oqLScN4AaABAg",
+          "published_at": "2026-10-05T19:15:42Z",
+          "video_id": "Pr-4Nze0OyQ",
+          "channel": "Mnet K-POP",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=Ugx7s_RfDYm5-oqLScN4AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "'COMEBACK' ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.943 | Mnet 260827 방송",
+          "comment": "양정원 헤메코 전체적으로ㅁㅊ는데",
+          "comment_id": "Ugz7mBlcoUrDUiY4Jmd4AaABAg",
+          "published_at": "2026-10-05T05:41:01Z",
+          "video_id": "Pr-4Nze0OyQ",
+          "channel": "Mnet K-POP",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=Ugz7mBlcoUrDUiY4Jmd4AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "'COMEBACK' ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.943 | Mnet 260827 방송",
+          "comment": "이번 착장 미모 ㄹㅈㄷ임 특히 제이 아이러브유쏘마치",
+          "comment_id": "UgxU2cE01lklhAys_qZ4AaABAg",
+          "published_at": "2026-10-03T05:56:51Z",
+          "video_id": "Pr-4Nze0OyQ",
+          "channel": "Mnet K-POP",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=UgxU2cE01lklhAys_qZ4AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "'COMEBACK' ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.943 | Mnet 260827 방송",
+          "comment": "1일 1블파 해야됨 인생의 백신 같은거임",
+          "comment_id": "UgyHSDUiVWgV5jMpFql4AaABAg",
+          "published_at": "2026-10-02T13:31:41Z",
+          "video_id": "Pr-4Nze0OyQ",
+          "channel": "Mnet K-POP",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=UgyHSDUiVWgV5jMpFql4AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "'COMEBACK' ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.943 | Mnet 260827 방송",
+          "comment": "김선우 ㄹㅈㄷ",
+          "comment_id": "Ugx7AFZvu_T2Zlc1JR54AaABAg",
+          "published_at": "2026-10-02T05:10:11Z",
+          "video_id": "Pr-4Nze0OyQ",
+          "channel": "Mnet K-POP",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=Ugx7AFZvu_T2Zlc1JR54AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "'COMEBACK' ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.943 | Mnet 260827 방송",
+          "comment": "그랜드 슬램에 트리플 크라운까지 다시 한번 축하해~💕",
+          "comment_id": "UgxM1I0b7V1bWPFTXfF4AaABAg",
+          "published_at": "2026-10-02T02:44:46Z",
+          "video_id": "Pr-4Nze0OyQ",
+          "channel": "Mnet K-POP",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=UgxM1I0b7V1bWPFTXfF4AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "'COMEBACK' ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.943 | Mnet 260827 방송",
+          "comment": "내 귀에 맴돌아사 미치겟어요",
+          "comment_id": "UgxhCN5GZBZJcZdvDHd4AaABAg",
+          "published_at": "2026-10-01T13:50:50Z",
+          "video_id": "Pr-4Nze0OyQ",
+          "channel": "Mnet K-POP",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=UgxhCN5GZBZJcZdvDHd4AaABAg"
+        },
+        {
+          "artist": "ENHYPEN",
+          "song": "'COMEBACK' ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.943 | Mnet 260827 방송",
+          "comment": "이번에 잘 안 될 리가 없지만 만약에 잘 안 되면 내가 멤버들보다 속상해 할 자신이 있음",
+          "comment_id": "UgwVB1GjCRAgTjEjM2J4AaABAg",
+          "published_at": "2026-10-01T12:04:21Z",
+          "video_id": "Pr-4Nze0OyQ",
+          "channel": "Mnet K-POP",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=UgwVB1GjCRAgTjEjM2J4AaABAg"
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "Pr-4Nze0OyQ",
+          "title": "'COMEBACK' ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.943 | Mnet 260827 방송",
+          "channel": "Mnet K-POP",
+          "channel_id": "UCbD8EppRX3ZwJSou-TVo90A",
+          "published_at": "2026-08-27T10:53:58Z"
+        },
+        {
+          "video_id": "N6bcKiwXeIM",
+          "title": "[COMEBACK] ENHYPEN エンハイプン 엔하이픈 - Bloody Paradise [Music Bank] | KBS WORLD TV 260821",
+          "channel": "KBS WORLD TV",
+          "channel_id": "UC5BMQOsAB8hKUyHu9KI6yig",
+          "published_at": "2026-08-21T11:30:20Z"
+        },
+        {
+          "video_id": "W-D8GSXg1W8",
+          "title": "ENHYPEN (엔하이픈) 'Bloody Paradise' Official Performance MV",
+          "channel": "HYBE LABELS",
+          "channel_id": "UC3IZKseVpdzPSBaWxBxundA",
+          "published_at": "2026-08-31T13:00:01Z"
+        },
+        {
+          "video_id": "3uAS9Cpz18A",
+          "title": "[SPECIAL STAGE] ENHYPEN(엔하이픈) - Highlight l Show Champion l EP.611 l 260909",
+          "channel": "ALL THE K-POP",
+          "channel_id": "UCPde4guD9yFBRzkxk2PatoA",
+          "published_at": "2026-09-09T11:08:37Z"
+        },
+        {
+          "video_id": "-iRJLEw1pWA",
+          "title": "ENHYPEN(엔하이픈) - Bloody Paradise #엠카운트다운 EP.944 | Mnet 260903 방송",
+          "channel": "Mnet K-POP",
+          "channel_id": "UCbD8EppRX3ZwJSou-TVo90A",
+          "published_at": "2026-09-03T10:58:01Z"
+        }
+      ],
+      "warnings": [],
+      "sampling": "5 search videos published within 90 days before month start through cutoff; newest dated Korean top-level comments, balanced across videos"
+    },
+    "model": {
+      "name": "gemini-3.1-flash-lite-preview",
+      "backend": "gemini-absa"
+    },
+    "bugs_chart": {
+      "chart_start": "2026-09-28",
+      "chart_end": "2026-10-04",
+      "artist_items": [],
+      "items": [
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 1,
+          "title": "퇴사할게여 (Narr. 기안84)",
+          "artist": "소연 (SOYEON)",
+          "album": "끝내주는 인생",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 2,
+          "title": "꿈꾸던 어른이 되었나요?",
+          "artist": "머무르",
+          "album": "꿈꾸던 어른이 되었나요?",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 3,
+          "title": "LOVE ATTACK",
+          "artist": "RESCENE (리센느)",
+          "album": "SCENEDROME",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 4,
+          "title": "Dear my crazy soulmate",
+          "artist": "아이유(IU)",
+          "album": "이 별로부터",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 5,
+          "title": "BAD",
+          "artist": "ATEEZ(에이티즈)",
+          "album": "GOLDEN HOUR : Part.5",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 6,
+          "title": "Guitarist",
+          "artist": "도경수(D.O.)",
+          "album": "DOPAMINE - The 4th Mini Album",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 7,
+          "title": "갑자기",
+          "artist": "아이오아이(I.O.I)",
+          "album": "I.O.I 3rd MINI ALBUM [I.O.I : LOOP]",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 8,
+          "title": "Skibidi",
+          "artist": "소녀시대-효리수 (Girls' Generation-HRS)",
+          "album": "Skibidi",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 9,
+          "title": "Deja Vu",
+          "artist": "RESCENE (리센느)",
+          "album": "Dearest",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 10,
+          "title": "CRASH",
+          "artist": "ALLDAY PROJECT",
+          "album": "CRASH",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 11,
+          "title": "만찬가",
+          "artist": "태연 (TAEYEON)",
+          "album": "J-POP REMAKE Vol.1",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 12,
+          "title": "REDRED",
+          "artist": "CORTIS (코르티스)",
+          "album": "GREENGREEN",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 13,
+          "title": "이 별로부터",
+          "artist": "아이유(IU)",
+          "album": "이 별로부터",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 14,
+          "title": "LEMONADE",
+          "artist": "aespa",
+          "album": "LEMONADE - The 2nd Album",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 15,
+          "title": "It′s Me",
+          "artist": "아일릿(ILLIT)",
+          "album": "MAMIHLAPINATAPAI",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 16,
+          "title": "Drowning",
+          "artist": "WOODZ",
+          "album": "OO-LI",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 17,
+          "title": "생각을 멈추다 보면",
+          "artist": "최유리",
+          "album": "생각을 멈추다 보면",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 18,
+          "title": "Pretty Girl",
+          "artist": "RESCENE (리센느)",
+          "album": "Pretty Girl - Special Single",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 19,
+          "title": "Pop Off Pop Off",
+          "artist": "KiiiKiii (키키)",
+          "album": "WhyKiiiKiii",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 20,
+          "title": "Good Goodbye",
+          "artist": "화사 (HWASA)",
+          "album": "Good Goodbye",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 21,
+          "title": "Less than a Lover",
+          "artist": "제니 (JENNIE)",
+          "album": "Less than a Lover",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 22,
+          "title": "BiiiG",
+          "artist": "BIGBANG (빅뱅)",
+          "album": "BiiiG",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 23,
+          "title": "사랑하게 될 거야",
+          "artist": "한로로",
+          "album": "이상비행",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 24,
+          "title": "0+0",
+          "artist": "한로로",
+          "album": "자몽살구클럽",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 25,
+          "title": "LOUDER",
+          "artist": "CRAVITY",
+          "album": "sonorous",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 26,
+          "title": "Popcorn",
+          "artist": "도경수(D.O.)",
+          "album": "성장 - THE 3RD MINI ALBUM",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 27,
+          "title": "캐치 캐치",
+          "artist": "YENA (최예나)",
+          "album": "LOVE CATCHER",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 28,
+          "title": "RUDE!",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "RUDE!",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 29,
+          "title": "toxic till the end",
+          "artist": "로제(ROSÉ)",
+          "album": "rosie",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 30,
+          "title": "Pinball",
+          "artist": "RESCENE (리센느)",
+          "album": "SCENEDROME",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 31,
+          "title": "404 (New Era)",
+          "artist": "KiiiKiii (키키)",
+          "album": "Delulu Pack",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 32,
+          "title": "소문의 낙원",
+          "artist": "AKMU(악뮤)",
+          "album": "개화",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 33,
+          "title": "기쁨, 슬픔, 아름다운 마음",
+          "artist": "AKMU(악뮤)",
+          "album": "개화",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 34,
+          "title": "봄 내음보다 너를",
+          "artist": "김나영",
+          "album": "봄 내음보다 너를",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 35,
+          "title": "뛰어(JUMP)",
+          "artist": "BLACKPINK",
+          "album": "뛰어(JUMP)",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 36,
+          "title": "어떻게 이별까지 사랑하겠어, 널 사랑하는 거지",
+          "artist": "AKMU(악뮤)",
+          "album": "항해",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 37,
+          "title": "Lemon Tang",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "Lemon Tang - The 2nd Mini Album",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 38,
+          "title": "Runaway",
+          "artist": "RESCENE (리센느)",
+          "album": "Runaway",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 39,
+          "title": "BANG BANG",
+          "artist": "IVE (아이브)",
+          "album": "REVIVE+",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 40,
+          "title": "입춘",
+          "artist": "한로로",
+          "album": "입춘",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 41,
+          "title": "SUN KISS",
+          "artist": "TUIDE (튜이드)",
+          "album": "The 1st EP [TUNE & PLAY]",
+          "change_rank": 11
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 42,
+          "title": "연애의 조건 (Love Options)",
+          "artist": "베스티(BESTie)",
+          "album": "연애의 조건 (Love Options)",
+          "change_rank": 52
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 43,
+          "title": "노스탈지아",
+          "artist": "BIG Naughty (서동현)",
+          "album": "노스탈지아",
+          "change_rank": -10
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 44,
+          "title": "Whiplash",
+          "artist": "aespa",
+          "album": "Whiplash - The 5th Mini Album",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 45,
+          "title": "내게 사랑이 뭐냐고 물어본다면",
+          "artist": "로이킴",
+          "album": "내게 사랑이 뭐냐고 물어본다면",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 46,
+          "title": "한 페이지가 될 수 있게",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Book of Us : Gravity",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 47,
+          "title": "멸종위기사랑",
+          "artist": "이찬혁",
+          "album": "EROS",
+          "change_rank": -7
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 48,
+          "title": "너에게 닿기를",
+          "artist": "10CM",
+          "album": "너에게 닿기를",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 49,
+          "title": "Heavy Serenade",
+          "artist": "NMIXX",
+          "album": "Heavy Serenade",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 50,
+          "title": "Surfin' Boy",
+          "artist": "Red Velvet (레드벨벳)",
+          "album": "Velvet Summer - Summer Mini Album",
+          "change_rank": -16
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 51,
+          "title": "모든 날, 모든 순간 (Every day, Every Moment)",
+          "artist": "폴킴(Paul Kim)",
+          "album": "'키스 먼저 할까요?' OST Part.3",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 52,
+          "title": "타임캡슐",
+          "artist": "다비치",
+          "album": "타임캡슐",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 53,
+          "title": "like JENNIE",
+          "artist": "제니 (JENNIE)",
+          "album": "Ruby",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 54,
+          "title": "Blue Valentine",
+          "artist": "NMIXX",
+          "album": "Blue Valentine",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 55,
+          "title": "Golden",
+          "artist": "HUNTR/X, 아티스트 전체보기",
+          "album": "KPop Demon Hunters (Soundtrack from the Netflix Film)",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 56,
+          "title": "청춘만화",
+          "artist": "이무진",
+          "album": "만화 (滿花)",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 57,
+          "title": "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))",
+          "artist": "너드커넥션(Nerd Connection)",
+          "album": "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 58,
+          "title": "여름아 부탁해",
+          "artist": "볼빨간사춘기",
+          "album": "여름아 부탁해",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 59,
+          "title": "모르시나요(PROD.로코베리)",
+          "artist": "조째즈",
+          "album": "모르시나요",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 60,
+          "title": "HAPPY",
+          "artist": "DAY6 (데이식스)",
+          "album": "Fourever",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 61,
+          "title": "APT.",
+          "artist": "로제(ROSÉ), 아티스트 전체보기",
+          "album": "APT.",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 62,
+          "title": "주저하는 연인들을 위해",
+          "artist": "잔나비",
+          "album": "전설",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 63,
+          "title": "천상연",
+          "artist": "이창섭",
+          "album": "천상연 (웹툰 '선녀외전' X 이창섭 (LEE CHANGSUB))",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 64,
+          "title": "Hype Boy",
+          "artist": "NewJeans",
+          "album": "NewJeans 1st EP 'New Jeans'",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 65,
+          "title": "그대 작은 나의 세상이 되어",
+          "artist": "카더가든",
+          "album": "부재",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 66,
+          "title": "Ditto",
+          "artist": "NewJeans",
+          "album": "NewJeans 'OMG'",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 67,
+          "title": "Die With A Smile",
+          "artist": "Lady Gaga(레이디 가가), 아티스트 전체보기",
+          "album": "Die With A Smile",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 68,
+          "title": "FAMOUS",
+          "artist": "ALLDAY PROJECT",
+          "album": "FAMOUS",
+          "change_rank": 16
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 69,
+          "title": "사계, 그리고 너",
+          "artist": "이창섭",
+          "album": "Lee;Make (Fragmenta Amoris)",
+          "change_rank": 12
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 70,
+          "title": "I AM",
+          "artist": "IVE (아이브)",
+          "album": "I've IVE",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 71,
+          "title": "Supernova",
+          "artist": "aespa",
+          "album": "Armageddon - The 1st Album",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 72,
+          "title": "Welcome to the Show",
+          "artist": "DAY6 (데이식스)",
+          "album": "Fourever",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 73,
+          "title": "에피소드",
+          "artist": "이무진",
+          "album": "에피소드",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 74,
+          "title": "나는 반딧불",
+          "artist": "황가람",
+          "album": "나는 반딧불",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 75,
+          "title": "고민중독",
+          "artist": "QWER",
+          "album": "1st Mini Album 'MANITO'",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 76,
+          "title": "Magnetic",
+          "artist": "아일릿(ILLIT)",
+          "album": "SUPER REAL ME",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 77,
+          "title": "Vitamin ME",
+          "artist": "프로미스나인",
+          "album": "Glow ME",
+          "change_rank": -13
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 78,
+          "title": "첫 만남은 계획대로 되지 않아",
+          "artist": "TWS (투어스)",
+          "album": "Sparkling Blue",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 79,
+          "title": "사랑은 봄비처럼... 이별은 겨울비처럼",
+          "artist": "임현정",
+          "album": "A Year Out..In The Island",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 80,
+          "title": "FOCUS",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "FOCUS - The 1st Mini Album",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 81,
+          "title": "HOME SWEET HOME (feat. 태양, 대성)",
+          "artist": "G-DRAGON",
+          "album": "HOME SWEET HOME (feat. 태양, 대성)",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 82,
+          "title": "달리 표현할 수 없어요",
+          "artist": "로이킴",
+          "album": "달리 표현할 수 없어요",
+          "change_rank": 4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 83,
+          "title": "FALLEN ANGEL",
+          "artist": "제니 (JENNIE)",
+          "album": "Fallen Angel (Digital EP)",
+          "change_rank": -15
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 84,
+          "title": "소나기",
+          "artist": "이클립스 (ECLIPSE)",
+          "album": "선재 업고 튀어 OST Part 1",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 85,
+          "title": "Congratulations",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Day",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 86,
+          "title": "WDA (Whole Different Animal) (Feat. G-DRAGON)",
+          "artist": "aespa",
+          "album": "LEMONADE - The 2nd Album",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 87,
+          "title": "REBEL HEART",
+          "artist": "IVE (아이브)",
+          "album": "IVE EMPATHY",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 88,
+          "title": "예뻤어",
+          "artist": "DAY6 (데이식스)",
+          "album": "Every DAY6 February",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 89,
+          "title": "NOT CUTE ANYMORE",
+          "artist": "아일릿(ILLIT)",
+          "album": "NOT CUTE ANYMORE",
+          "change_rank": -9
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 90,
+          "title": "Flashback",
+          "artist": "엔플라잉(N.Flying)",
+          "album": "Man on the Moon",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 91,
+          "title": "사랑인가 봐",
+          "artist": "멜로망스(MeloMance)",
+          "album": "사랑인가 봐 (사내맞선 OST 스페셜 트랙)",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 92,
+          "title": "THAT’S A NO NO",
+          "artist": "ITZY (있지)",
+          "album": "IT'z ME",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 93,
+          "title": "ONE MORE TIME",
+          "artist": "ALLDAY PROJECT",
+          "album": "ALLDAY PROJECT",
+          "change_rank": 6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 94,
+          "title": "STYLE",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "STYLE",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 95,
+          "title": "BLACKHOLE",
+          "artist": "IVE (아이브)",
+          "album": "REVIVE+",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 96,
+          "title": "Love me or Leave me",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Book of Us : The Demon",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 97,
+          "title": "OVERDRIVE",
+          "artist": "TWS (투어스)",
+          "album": "play hard",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 98,
+          "title": "Who is she",
+          "artist": "KISS OF LIFE",
+          "album": "Who is she",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 99,
+          "title": "new trick",
+          "artist": "로제(ROSÉ)",
+          "album": "new trick",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 100,
+          "title": "Sour Grapes",
+          "artist": "NiziU (니쥬)",
+          "album": "Sour Grapes",
+          "change_rank": 0
+        }
+      ],
+      "link": "https://music.bugs.co.kr/chart/track/week/total?chartdate=20260928",
+      "requested_chart_start": "2026-10-05"
+    }
+  },
+  "overall_sentiment": {
+    "count": 19,
+    "ratio": {
+      "positive": 0.8947,
+      "neutral": 0.1053,
+      "negative": 0.0
+    },
+    "dominant": "positive"
+  },
+  "aspect_sentiment": {
+    "song_music": {
+      "label": "song / music",
+      "count": 2,
+      "ratio": {
+        "positive": 0.5,
+        "neutral": 0.5,
+        "negative": 0.0
+      },
+      "dominant": "neutral",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "neutral",
+          "text": "블러디야르다이스~",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=Ugx7s_RfDYm5-oqLScN4AaABAg",
+          "published_at": "2026-10-05T19:15:42Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "내 귀에 맴돌아사 미치겟어요",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=UgxhCN5GZBZJcZdvDHd4AaABAg",
+          "published_at": "2026-10-01T13:50:50Z"
+        }
+      ]
+    },
+    "performance": {
+      "label": "performance",
+      "count": 1,
+      "ratio": {
+        "positive": 1.0,
+        "neutral": 0.0,
+        "negative": 0.0
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "0:15 도입부 양정원 표정쓰는거 하……….",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=UgzQI_KF6pCl9-JjXbx4AaABAg",
+          "published_at": "2026-10-08T00:46:18Z"
+        }
+      ]
+    },
+    "visual_styling": {
+      "label": "visual / styling",
+      "count": 7,
+      "ratio": {
+        "positive": 1.0,
+        "neutral": 0.0,
+        "negative": 0.0
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "심재윤얼굴미쳣냐",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=Ugz6cysdsIZm-hfk6ut4AaABAg",
+          "published_at": "2026-10-11T07:46:10Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "제이, 그는 잘생겼어!!! 🤌☺️🔥",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=Ugz57y_fYb8K_fUBUYh4AaABAg",
+          "published_at": "2026-10-11T05:46:33Z"
+        }
+      ]
+    },
+    "vocal_rap": {
+      "label": "vocal / rap",
+      "count": 0,
+      "ratio": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 0
+      },
+      "dominant": "neutral",
+      "evidence": []
+    },
+    "fandom_public_opinion": {
+      "label": "fandom / public_opinion",
+      "count": 6,
+      "ratio": {
+        "positive": 1.0,
+        "neutral": 0.0,
+        "negative": 0.0
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "엔하이픈 입덕한다",
+          "link": "https://www.youtube.com/watch?v=-iRJLEw1pWA&lc=UgzwPl5GCTjTp61NBx94AaABAg",
+          "published_at": "2026-10-03T10:20:39Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "매일보면서수명연장하고있습니다고맙습니다",
+          "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=Ugx6wtUfSwkqQT_jhiN4AaABAg",
+          "published_at": "2026-10-09T16:51:39Z"
+        }
+      ]
+    }
+  },
+  "comment_annotations": [
+    {
+      "id": 0,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 2,
+      "sentiment": "neutral",
+      "aspects": []
+    },
+    {
+      "id": 3,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "sentiment": "positive",
+      "aspects": []
+    },
+    {
+      "id": 10,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "sentiment": "neutral",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    }
+  ],
+  "naver_news_summary": [
+    {
+      "title": "3위 스키즈·2위 에이티즈…남자그룹 브랜드평판 1위 차지한 '월드 스타...",
+      "date": "2026-10-11",
+      "summary": "10월 순위 1위부터 30위까지는 방탄소년단, 에이티즈, 스트레이 키즈, 빅뱅, 세븐틴, 코르티스, 엑소, NCT, 엔하이픈, 투어스, 인피니트, 샤이니, 워너원, 슈퍼주니어, 비투비, 동방신기, 몬스타엑스, 2PM...",
+      "link": "https://www.wikitree.co.kr/articles/1165167"
+    },
+    {
+      "title": "방탄소년단, 보이그룹 브랜드평판 1위…2위 에이티즈·3위 스트레이 키...",
+      "date": "2026-10-10",
+      "summary": "4위부터 10위까지는 빅뱅, 세븐틴, 코르티스, 엑소, NCT, 엔하이픈, 투어스 순이었다. 이어 인피니트, 샤이니, 워너원, 슈퍼주니어, 비투비, 동방신기, 몬스타엑스, 2PM, 보이넥스트도어, 제로베이스원 등이 20위권에...",
+      "link": "https://m.entertain.naver.com/article/009/0005746548"
+    },
+    {
+      "title": "엔하이픈(ENHYPEN) 제이 “즐겁고 행복했던 촬영”···‘쉿, 비밀의 솊...",
+      "date": "2026-10-09",
+      "summary": "아이돌그룹 그룹 엔하이픈(ENHYPEN) 멤버 제이가 개인 예능에서 정호영 셰프와 ‘족타 퍼포먼스’로 색다른... 제이는 지난 8일 오후 엔하이픈 공식 유튜브 채널을 통해 ‘쉿, 비밀의 솊’ 3화를 공개했다. 이번...",
+      "link": "https://m.entertain.naver.com/article/144/0001143157"
+    },
+    {
+      "title": "엔하이픈, VR 콘서트 '엔하이픈 브이알 콘서트 : 데스티니' 4주차 특전 ...",
+      "date": "2026-10-08",
+      "summary": "그룹 엔하이픈의 VR 콘서트 '엔하이픈 브이알 콘서트 : 데스티니'가 개봉 4주차 특전을 증정한다. 국내 멀티플렉스 상영관 롯데시네마 공식 앱과 홈페이지에는 '엔하이픈 브이알 콘서트 : 데스티니' 개봉 4주차 특전...",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242163"
+    },
+    {
+      "title": "'뮤직뱅크 인 바르셀로나' 방송 시간…라인업 엔믹스 등",
+      "date": "2026-10-07",
+      "summary": "에이티즈·엔하이픈 등 7개 팀의 라인업이 준비됐며, 박보검과 제이의 듀엣 및 알파드라이브원... 출연진 라인업은 에이티즈, 엔하이픈, 엔믹스, 싸이커스, 엔시티 위시, 코르티스, 알파드라이브원 등 7개 팀이다....",
+      "link": "https://www.bntnews.co.kr/article/view/bnt202610070278"
+    }
+  ],
+  "top_comments_or_evidence": [
+    {
+      "source": "youtube_comment",
+      "sentiment": "neutral",
+      "text": "블러디야르다이스~",
+      "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=Ugx7s_RfDYm5-oqLScN4AaABAg",
+      "published_at": "2026-10-05T19:15:42Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "0:15 도입부 양정원 표정쓰는거 하……….",
+      "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=UgzQI_KF6pCl9-JjXbx4AaABAg",
+      "published_at": "2026-10-08T00:46:18Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "심재윤얼굴미쳣냐",
+      "link": "https://www.youtube.com/watch?v=Pr-4Nze0OyQ&lc=Ugz6cysdsIZm-hfk6ut4AaABAg",
+      "published_at": "2026-10-11T07:46:10Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "엔하이픈 입덕한다",
+      "link": "https://www.youtube.com/watch?v=-iRJLEw1pWA&lc=UgzwPl5GCTjTp61NBx94AaABAg",
+      "published_at": "2026-10-03T10:20:39Z"
+    }
+  ],
+  "monthly_insight": {
+    "headline": "VR 內容與 11 月新作報導",
+    "market_heat": "可確認 VR 演唱會延伸活動與海外演出新聞 [N3][N15][N27]；這些曝光不能直接換算銷量或音源熱度。",
+    "news_focus": "VR 演唱會《DESTINY》、海外演出，以及 11 月新單曲的媒體報導 [N3][N8][N15][N23]。",
+    "trend": "10 月可觀察既有內容與海外活動；11 月新作的日期與細節仍需以後續官方公告核對。",
+    "opportunity": "比對 VR、舞台內容與新作的受眾反應，分開評估不同內容。",
+    "watch": "11 月新作後續公告與發行表現；前成員的活動取消新聞不應直接視為團體的事件。",
+    "summary": "ENHYPEN 的 10 月新聞涵蓋 VR 演唱會及海外演出 [N3][N15]，媒體亦報導 11 月新作規劃 [N8][N23]。19 則留言偏正面，仍不足以推論整體輿論。",
+    "evidence_ids": [
+      "N3",
+      "N8",
+      "N15",
+      "N23",
+      "N27"
+    ],
+    "risk": "資料不足",
+    "fan_summary": "抽樣 19 則：正面 17、中立 2、負面 0。比例只代表本次影片觀眾；不能直接推論整體粉絲或一般大眾。"
+  },
+  "report_text": "# ENHYPEN 2026-10 市場與輿論分析\n\n## 1. 榜單表現\n- Bugs 全曲週榜 Top 100：2026-09-28–2026-10-04（橫跨月份，僅作參考）。\n- 此藝人未出現在這份已發布週榜 Top 100；不能據此推論全球熱度。\n- 2026-10-05 起算週榜尚未取得；目前無法判定當月排名趨勢。\n\n## 2. 粉絲與輿論反應\n- 正面比例：0.8947\n- 中立比例：0.1053\n- 負面比例：0.0\n- 簡短解讀：抽樣 19 則：正面 17、中立 2、負面 0。比例只代表本次影片觀眾；不能直接推論整體粉絲或一般大眾。\n- 留言樣本：19 則期間內韓文頂層留言；僅代表抽樣影片，新聞不納入比例。\n\n## 3. 綜合判斷\n- 市場熱度：可確認 VR 演唱會延伸活動與海外演出新聞 [N3][N15][N27]；這些曝光不能直接換算銷量或音源熱度。\n- 輿論風險：資料不足\n- Naver 新聞觀察：VR 演唱會《DESTINY》、海外演出，以及 11 月新單曲的媒體報導 [N3][N8][N15][N23]。\n- 短期趨勢：10 月可觀察既有內容與海外活動；11 月新作的日期與細節仍需以後續官方公告核對。\n\n## 4. 市場洞察\n- 機會點：比對 VR、舞台內容與新作的受眾反應，分開評估不同內容。\n- 觀察重點：11 月新作後續公告與發行表現；前成員的活動取消新聞不應直接視為團體的事件。\n- 分析期間：2026-10-01–2026-10-11（截至日資料，非完整月報；新聞依韓國刊登日，留言依台北日期）。\n- 限制：影片搜尋抽樣、韓文頂層留言、新聞摘要；不代表整體粉絲或一般大眾。\n\n## 5. 一句話總結\nENHYPEN 的 10 月新聞涵蓋 VR 演唱會及海外演出 [N3][N15]，媒體亦報導 11 月新作規劃 [N8][N23]。19 則留言偏正面，仍不足以推論整體輿論。\n",
+  "original_model_insight": {
+    "headline": "ENHYPEN 11月回歸預告與全球活動頻繁",
+    "risk": "中",
+    "fan_summary": "粉絲對成員視覺與表演給予高度正面評價，社群互動熱絡，樣本觀察顯示粉絲對成員個人活動及團體內容展現高度支持，但因樣本數僅19則，無法代表整體粉絲情緒。",
+    "market_heat": "ENHYPEN 在10月品牌評價位居前10名 [N0, N1, N11, N16, N22, N31]，並在多項全球活動如巴塞隆納音樂節中展現影響力 [N4, N5, N15, N26, N35]，市場關注度穩定。",
+    "news_focus": "重點聚焦於11月新單曲發行預告 [N8, N23, N25]、巴塞隆納音樂節演出 [N4, N5, N15, N26, N35]、VR演唱會特展 [N3, N27] 以及成員參與綜藝與品牌活動 [N2, N9, N20, N29, N37]。",
+    "trend": "團體持續維持高頻率活動，包括音樂發行、全球巡演與跨界IP合作（如遊戲與快閃店）[N6, N39]，並在多個音樂榜單與品牌評價中保持領先地位 [N12, N13, N33]。",
+    "opportunity": "透過11月回歸與持續的全球演出，可進一步擴大海外市場影響力。此外，成員個人綜藝與IP合作有助於提升大眾知名度與粉絲黏著度 [N2, N6, N39]。",
+    "watch": "需關注11月新單曲的市場表現，以及近期部分海外活動受不可抗力因素影響的風險 [N21]，同時觀察團體在各類音樂榜單的長期穩定性。",
+    "summary": "ENHYPEN 於10月展現活躍的全球活動，包括巴塞隆納演出與VR演唱會，並預告11月回歸。團體在品牌評價與榜單中表現穩定，粉絲對成員個人與團體活動反應正面。需留意海外活動變動風險及未來新曲發行表現。",
+    "evidence_ids": [
+      "N0",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "N6",
+      "N8",
+      "N9",
+      "N11",
+      "N12",
+      "N13",
+      "N15",
+      "N16",
+      "N20",
+      "N21",
+      "N22",
+      "N23",
+      "N25",
+      "N26",
+      "N27",
+      "N29",
+      "N31",
+      "N33",
+      "N35",
+      "N37",
+      "N39"
+    ]
+  },
+  "review": {
+    "reviewed_at": "2026-10-11T15:49:49.102324+00:00",
+    "method": "Source-bound editorial review of news digests and comment annotations",
+    "notes": [
+      "Removed unsupported market/ranking claims",
+      "Separated member, former-member and NCT unit activity",
+      "Overall opinion risk not established by convenience sample"
+    ]
+  }
+}

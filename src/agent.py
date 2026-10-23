@@ -187,7 +187,12 @@ class KpopAnalysisAgent:
         period_months: int = 3,
     ) -> dict[str, Any]:
         artist = str(absa_payload.get("artist") or "")
-        weekly_chart = self.chart_repo.get_latest_weekly_chart(limit=100)
+        snapshot = absa_payload.get("sources", {}).get("bugs_chart")
+        if absa_payload.get("analysis_period") and snapshot:
+            weekly_chart = {"chart_date": snapshot["chart_start"], "source": "bugs",
+                            "items": snapshot["items"]}
+        else:
+            weekly_chart = self.chart_repo.get_latest_weekly_chart(limit=100)
         chart_performance = _format_current_weekly_artist_chart_lines(
             artist=artist,
             weekly_chart=weekly_chart,
@@ -200,7 +205,8 @@ class KpopAnalysisAgent:
         return {
             "cached_at": absa_payload.get("generated_at", ""),
             "artist": artist,
-            "period_months": period_months,
+            "period_months": 1 if absa_payload.get("analysis_period") else period_months,
+            "analysis_period": absa_payload.get("analysis_period"),
             "report": report,
             "insight": insight,
             "flex": self.build_flex_message(report, insight=insight),
@@ -699,7 +705,8 @@ def _flex_block(title: str, body: str) -> dict[str, Any]:
 def _extract_artist_name(report: str) -> str:
     for line in report.splitlines():
         if line.startswith("# "):
-            return line.removeprefix("# ").replace("近期市場與輿論分析", "").strip() or "K-pop Agent"
+            title = line.removeprefix("# ")
+            return re.sub(r"(?:\d{4}-\d{2}\s+)?(?:近期)?市場與輿論分析$", "", title).strip() or "K-pop Agent"
     return "K-pop Agent"
 
 
@@ -823,6 +830,13 @@ def _fallback_insight(
 
 
 def _insight_from_absa(payload: dict[str, Any]) -> dict[str, str]:
+    monthly = payload.get("monthly_insight")
+    if monthly:
+        return {
+            "headline": _clean_insight_text(monthly["headline"], max_length=28),
+            "risk": monthly["risk"],
+            "opportunity": _clean_insight_text(monthly["opportunity"], max_length=28),
+        }
     overall = payload.get("overall_sentiment", {}).get("ratio", {})
     positive = _safe_float(overall.get("positive", 0))
     negative = _safe_float(overall.get("negative", 0))

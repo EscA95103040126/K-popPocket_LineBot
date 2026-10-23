@@ -282,6 +282,8 @@ def format_absa_report_for_line(
     payload: dict[str, Any],
     chart_performance: str,
 ) -> str:
+    if payload.get("analysis_period") and payload.get("monthly_insight"):
+        return str(payload["report_text"])
     return _build_report_text(
         artist=str(payload.get("artist") or ""),
         aspect_sentiment=payload.get("aspect_sentiment", {}),
@@ -304,6 +306,7 @@ def write_absa_summary_csv(payloads: Iterable[dict[str, Any]], output_path: Path
     with output_path.open("w", encoding="utf-8", newline="") as file:
         writer = csv.DictWriter(
             file,
+            lineterminator="\n",
             fieldnames=[
                 "artist",
                 "generated_at",
