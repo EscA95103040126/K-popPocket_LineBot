@@ -1,0 +1,239 @@
+qid,type,query,expected,top5
+r001,具體成員參照,喜歡 LE SSERAFIM、aespa、ILLIT、NewJeans，想多認識一些女團,TWICE|Red Velvet,LE SSERAFIM:lesserafim-sakura|LE SSERAFIM:lesserafim-yunjin|LE SSERAFIM:lesserafim-kazuha|LE SSERAFIM:lesserafim-eunchae|ILLIT:illit-yunah
+r002,具體成員參照,最喜歡 TWICE，K-pop、J-pop、搖滾、饒舌都聽，想找新音樂,Hearts2Hearts,TWICE:twice-chaeyoung|TWICE:twice-jeongyeon|TWICE:twice-jihyo|TWICE:twice-nayeon|TWICE:twice-dahyun
+r004,抽象氛圍,喜歡聽起來魔幻、有史詩感的歌，像 TXT〈Silence〉、Stray Kids〈Hero's Soup〉,NCT|LE SSERAFIM|SEVENTEEN,TXT:txt-taehyun|Stray Kids:straykids-felix|Stray Kids:straykids-seungmin|BTS:bts-v|TXT:txt-hueningkai
+r006,具體成員參照,試了好幾年都入不了 K-pop 坑，唯一喜歡的是 T-ara，想找推薦,TXT|Red Velvet|TWICE|ILLIT|Stray Kids,TXT:txt-taehyun|BTS:bts-jungkook|BLACKPINK:blackpink-lisa|TWICE:twice-tzuyu|TXT:txt-hueningkai
+r008,抽象氛圍,想找慢歌但不無聊、帶有思念渴望感的歌，OST 或 R&B 也可以,nct-jaehyun|exo-baekhyun,BTS:bts-v|KISS OF LIFE:kissoflife-haneul|Red Velvet:redvelvet-joy|RIIZE:riize-wonbin|Stray Kids:straykids-in
+r011,具體成員參照,很喜歡 WINNER，想先找風格類似的團當備案,NCT|TXT,SEVENTEEN:seventeen-wonwoo|SEVENTEEN:seventeen-vernon|BTS:bts-jimin|BTS:bts-jin|ILLIT:illit-wonhee
+r013,抽象氛圍,想找不走可愛裝嫩路線、成熟有女人味的女團，最好是比較冷門的,redvelvet-irene|redvelvet-seulgi,Red Velvet:redvelvet-irene|NMIXX:nmixx-sullyoon|BLACKPINK:blackpink-jisoo|BLACKPINK:blackpink-jennie|BABYMONSTER:babymonster-ruka
+r014,具體成員參照,男團主要只聽 xlov 和 ENHYPEN，想找更多男團,SEVENTEEN|Stray Kids|ATEEZ,ENHYPEN:enhypen-jungwon|ENHYPEN:enhypen-jay|SEVENTEEN:seventeen-wonwoo|ENHYPEN:enhypen-sunghoon|SEVENTEEN:seventeen-jeonghan
+r015,曲風,偏好比較重拍、有衝擊力的音樂，想找值得聽的團和歌,TXT|NCT,BTS:bts-v|NCT:nct-renjun|QWER:qwer-chodan|BTS:bts-jimin|NMIXX:nmixx-haewon
+r016,具體成員參照,平常只聽 TWICE 和少女時代，男團只喜歡 GOT7、ATEEZ，想找其他團,TXT,ATEEZ:ateez-hongjoong|ATEEZ:ateez-wooyoung|ATEEZ:ateez-jongho|ATEEZ:ateez-mingi|ATEEZ:ateez-yunho
+r017,抽象氛圍,聽韓團一陣子了，覺得現在女團唱腔偏酷、節奏太重、MV又太性感，想找比較純愛清新、溫柔風格的團,QWER,TWICE:twice-jeongyeon|Red Velvet:redvelvet-joy|NMIXX:nmixx-haewon|Hearts2Hearts:hearts2hearts-carmen|Red Velvet:redvelvet-irene
+r018,聲音/唱腔,覺得開麥舞台的生命力不是對嘴能比的，想多找偶像真唱開麥的舞台,NMIXX|EXO|TWICE,Red Velvet:redvelvet-joy|NMIXX:nmixx-lily|ATEEZ:ateez-mingi|i-dle:idle-miyeon|i-dle:idle-minnie
+r019,舞台/舞蹈,覺得 GFRIEND〈Rough〉、BTS〈血汗淚〉是編舞讓歌紅起來的例子，想找其他靠精彩編舞撐起成績的歌,blackpink-jisoo|twice-nayeon|ive-wonyoung|exo-kai,BTS:bts-jimin|BLACKPINK:blackpink-rose|BLACKPINK:blackpink-lisa|TWICE:twice-jihyo|EXO:exo-baekhyun
+r021,聲音/唱腔,想把 NMIXX 推給朋友，特別想用她們拿手麥的現場和歌唱實力來圈粉，想找適合入坑的歌唱影片,nmixx-lily|nmixx-jiwoo,NMIXX:nmixx-lily|NMIXX:nmixx-haewon|NMIXX:nmixx-kyujin|NMIXX:nmixx-bae|NMIXX:nmixx-jiwoo
+r022,聲音/唱腔,看了 NMIXX 薛侖、SHINee、ONF 的清唱影片覺得超好聽，想找更多沒修音、非錄音室的練唱或清唱影片,bts-jungkook,NMIXX:nmixx-haewon|NMIXX:nmixx-lily|NMIXX:nmixx-sullyoon|NCT:nct-renjun|TXT:txt-hueningkai
+r023,其他,想找眉毛很帥、眉眼很有特色的男偶像,bts-jin|bts-v|nct-jaehyun|seventeen-scoups,RIIZE:riize-eunseok|NCT:nct-jaemin|RIIZE:riize-sungchan|RIIZE:riize-wonbin|SEVENTEEN:seventeen-vernon
+r024,舞台/舞蹈,很喜歡前 (G)I-DLE 穗珍看似慵懶、卻頓點到位又很會扭腰的嫵媚舞風，想找四代女團裡類似舞蹈魅力的成員,idle-shuhua,i-dle:idle-soyeon|IVE:ive-gaeul|TWICE:twice-jeongyeon|i-dle:idle-yuqi|ITZY:itzy-chaeryeong
+r025,舞台/舞蹈,想找身為主唱、同時跳舞也非常厲害的偶像,twice-jihyo|bts-jungkook|seventeen-dk|nct-haechan|exo-baekhyun|nmixx-haewon|exo-do,BTS:bts-jimin|BTS:bts-jungkook|BLACKPINK:blackpink-lisa|BTS:bts-jhope|TXT:txt-yeonjun
+r026,曲風,喜歡聽了熱血、歌詞正向的搖滾風燃歌，Dreamcatcher 也喜歡但想找更明亮的,LE SSERAFIM|i-dle|SEVENTEEN|EXO|Stray Kids|TWICE,NCT:nct-haechan|NCT:nct-renjun|BTS:bts-v|ITZY:itzy-lia|NCT:nct-jaehyun
+r027,舞台/舞蹈,最愛看刀群舞直拍和練習室影片，想知道哪些團跳起舞來會讓人想入坑,SEVENTEEN|ITZY|BTS|TWICE|LE SSERAFIM|TXT|NCT,RIIZE:riize-shotaro|TWICE:twice-momo|SEVENTEEN:seventeen-the8|ATEEZ:ateez-yunho|EXO:exo-kai
+r028,其他,覺得整首歌詞完全沒有英文的偶像歌很特別，想找其他全韓文歌詞的偶像歌曲,i-dle|Stray Kids,BTS:bts-jhope|Stray Kids:straykids-seungmin|BTS:bts-jungkook|RIIZE:riize-wonbin|NMIXX:nmixx-haewon
+r029,曲風,喜歡 NewJeans〈Hurt〉這種慢板但節奏感明確、會跟著律動的情歌,TWICE,Hearts2Hearts:hearts2hearts-ian|Hearts2Hearts:hearts2hearts-yuha|Hearts2Hearts:hearts2hearts-stella|KISS OF LIFE:kissoflife-haneul|Hearts2Hearts:hearts2hearts-carmen
+r030,曲風,喜歡 GFRIEND、TWICE〈Knock Knock〉、SISTAR〈I Swear〉這種旋律輕快的女團或女歌手歌曲,ITZY|Red Velvet,TWICE:twice-jeongyeon|TWICE:twice-mina|TWICE:twice-chaeyoung|BLACKPINK:blackpink-rose|H1-KEY:h1key-seoi
+r032,抽象氛圍,想找適合下雨天聽的歌,bts-jungkook,Stray Kids:straykids-seungmin|BTS:bts-v|RIIZE:riize-sohee|ITZY:itzy-lia|TXT:txt-taehyun
+r034,抽象氛圍,想找病嬌風格、帶點黑暗詭譎感的女團歌,TWICE|i-dle,TWICE:twice-chaeyoung|TWICE:twice-jeongyeon|NMIXX:nmixx-sullyoon|Red Velvet:redvelvet-seulgi|BLACKPINK:blackpink-jisoo
+r035,綜藝/個性,覺得偶像舞台上的小失誤（走錯邊、掉鞋、差點滑倒）很可愛療癒，想找類似的失誤舞台影片,redvelvet-seulgi|ateez-mingi|twice-jeongyeon|bts-rm|seventeen-joshua,SEVENTEEN:seventeen-jeonghan|SEVENTEEN:seventeen-jun|Stray Kids:straykids-felix|ENHYPEN:enhypen-jungwon|Stray Kids:straykids-hyunjin
+r036,聲音/唱腔,喜歡歌曲最後全員一起大合唱、很享受的段落（像 STAYC〈Slow Down〉），想找類似的歌,Red Velvet|BLACKPINK,Stray Kids:straykids-seungmin|ITZY:itzy-lia|SEVENTEEN:seventeen-scoups|BTS:bts-v|BTS:bts-jungkook
+r037,聲音/唱腔,想找全員都是實力派、每個成員單獨拿出來都很能打的韓團,Red Velvet|BTS|SEVENTEEN,BTS:bts-jungkook|BABYMONSTER:babymonster-ahyeon|TWICE:twice-jihyo|BTS:bts-jhope|Stray Kids:straykids-bangchan
+r039,抽象氛圍,喜歡 TWICE〈LIKEY〉這種有運動會氛圍、很元氣的歌，想找類似的,TWICE|ATEEZ,TWICE:twice-jihyo|TWICE:twice-tzuyu|NMIXX:nmixx-lily|TWICE:twice-chaeyoung|TWICE:twice-dahyun
+r040,抽象氛圍,想找情侶氛圍、輕鬆歡快又酸甜的男女合唱歌,exo-baekhyun,KISS OF LIFE:kissoflife-haneul|RIIZE:riize-sohee|Red Velvet:redvelvet-joy|IVE:ive-liz|BTS:bts-v
+r041,舞台/舞蹈,喜歡成員在音樂節目末放舞台上玩開、很放鬆的樣子，想找類似成員玩得很開心的舞台,BTS,SEVENTEEN:seventeen-jun|TWICE:twice-mina|Red Velvet:redvelvet-joy|Stray Kids:straykids-felix|ATEEZ:ateez-mingi
+r042,抽象氛圍,平常聽女團，突然想聽青春活潑、歡快又可愛的男團歌,BTS|TXT|SEVENTEEN|Stray Kids,BTS:bts-jin|BTS:bts-v|SEVENTEEN:seventeen-jun|Stray Kids:straykids-seungmin|SEVENTEEN:seventeen-jeonghan
+r043,舞台/舞蹈,喜歡歌手在台上明顯很享受表演、很有感染力的舞台，限定女團或女 solo,itzy-yuna,TWICE:twice-chaeyoung|Red Velvet:redvelvet-joy|NMIXX:nmixx-lily|TWICE:twice-jeongyeon|BLACKPINK:blackpink-lisa
+r044,其他,想找 MV 裡有東方或傳統服飾元素的歌，像 MOMOLAND〈BAAM〉那樣,nct-ten,BTS:bts-jimin|BTS:bts-v|TWICE:twice-momo|MEOVV:meovv-sooin|RIIZE:riize-wonbin
+r045,抽象氛圍,喜歡 Wendy 和楊多一〈One Summer〉那種讓人心情平靜的曲風，男女不拘,bts-rm,Red Velvet:redvelvet-wendy|TWICE:twice-jeongyeon|Red Velvet:redvelvet-joy|Hearts2Hearts:hearts2hearts-stella|TWICE:twice-tzuyu
+r047,綜藝/個性,很愛看 TWICE、IZ*ONE 的綜藝和 Vlog，想找其他團好笑又圈粉的團綜或綜藝,Red Velvet|SEVENTEEN|ATEEZ|Stray Kids|i-dle|BTS,TWICE:twice-dahyun|TWICE:twice-chaeyoung|IVE:ive-rei|IVE:ive-yujin|NMIXX:nmixx-haewon
+r049,抽象氛圍,深夜想聽像 V〈Sweet Night〉、〈Winter Bear〉那種和緩平靜、能靜靜聆聽的歌,exo-do,BTS:bts-v|IVE:ive-liz|Hearts2Hearts:hearts2hearts-stella|Red Velvet:redvelvet-wendy|ITZY:itzy-lia
+r052,曲風,男生，喜歡 BTS、EXO 那種節奏感爆強、副歌辨識度高、聽了會振奮的帥氣男團舞曲，想找類似的,Stray Kids|TXT|EXO|ATEEZ,BTS:bts-jimin|BTS:bts-v|BTS:bts-jhope|EXO:exo-kai|BTS:bts-jin
+r053,抽象氛圍,想找勵志、能替自己打氣的韓文歌,bts-v,BTS:bts-jhope|EXO:exo-baekhyun|H1-KEY:h1key-seoi|TWICE:twice-jihyo|NMIXX:nmixx-haewon
+r054,綜藝/個性,最近迷上 (G)I-DLE 穗珍和舒華那種一方單向專情、慢慢被攻略的 CP，想找其他女團類似的 CP,twice-sana|twice-tzuyu|twice-nayeon|blackpink-lisa|blackpink-jennie|blackpink-jisoo,i-dle:idle-soyeon|i-dle:idle-shuhua|QWER:qwer-chodan|Red Velvet:redvelvet-irene|TWICE:twice-jeongyeon
+r055,舞台/舞蹈,喜歡 Sana、Krystal 那種表情管理好、可愛中帶點性感的直拍，想找好看的女團成員直拍,twice-sana|twice-tzuyu|twice-nayeon|twice-jihyo|twice-jeongyeon|redvelvet-seulgi|itzy-yuna|itzy-lia,TWICE:twice-sana|TWICE:twice-mina|Hearts2Hearts:hearts2hearts-ana|TWICE:twice-nayeon|QWER:qwer-hina
+r057,抽象氛圍,喜歡 Red Velvet〈You Better Know〉、太妍〈I〉那種像夏天早晨陽光般充滿希望和能量的歌，想找適合早晨聽的,Red Velvet|SEVENTEEN,ITZY:itzy-lia|Red Velvet:redvelvet-wendy|IVE:ive-liz|Red Velvet:redvelvet-joy|Hearts2Hearts:hearts2hearts-stella
+r060,其他,想找前奏有拍手聲或彈手指聲的歌,SEVENTEEN|BTS|TWICE|Red Velvet|BLACKPINK,TXT:txt-taehyun|KISS OF LIFE:kissoflife-haneul|Hearts2Hearts:hearts2hearts-yuha|Hearts2Hearts:hearts2hearts-stella|BTS:bts-jimin
+r061,曲風,喜歡 BTS〈Fire〉那種整首或開場就很燃的歌，男女都可，嘻哈也可以,BTS|BLACKPINK|Stray Kids|SEVENTEEN|ATEEZ,BTS:bts-jimin|BTS:bts-jhope|BTS:bts-jungkook|EXO:exo-baekhyun|BTS:bts-rm
+r062,曲風,喜歡 IZ*ONE 主打最後一段副歌多出變化、再推一波高潮的編排，想找類似歌曲,NCT|Red Velvet|SEVENTEEN|BTS|BLACKPINK|TWICE|Stray Kids,IVE:ive-liz|ITZY:itzy-lia|TWICE:twice-jihyo|TWICE:twice-momo|i-dle:idle-miyeon
+r063,舞台/舞蹈,營隊要帶國小生跳開場舞，想找舞步簡單、能炒熱氣氛的韓國歌,TWICE|Red Velvet|EXO|BLACKPINK,KISS OF LIFE:kissoflife-haneul|EXO:exo-chanyeol|TWICE:twice-dahyun|Stray Kids:straykids-seungmin|ATEEZ:ateez-mingi
+r065,舞台/舞蹈,萬聖節要表演，對韓樂不熟，想找舞步簡單好學的女團歌,TWICE,TWICE:twice-dahyun|Hearts2Hearts:hearts2hearts-yuha|TWICE:twice-mina|NMIXX:nmixx-haewon|i-dle:idle-miyeon
+r067,曲風,喜歡 WINNER〈Island〉、Ed Sheeran〈Shape of You〉這種輕快節奏（tropical house）,bts-jhope,SEVENTEEN:seventeen-vernon|aespa:aespa-ningning|TXT:txt-taehyun|ENHYPEN:enhypen-jungwon|RIIZE:riize-wonbin
+r068,聲音/唱腔,想找男生好唱、傳統主副歌結構、不要一直飆高音或假音的韓文抒情歌,exo-baekhyun,EXO:exo-baekhyun|BTS:bts-v|SEVENTEEN:seventeen-seungkwan|RIIZE:riize-sohee|Stray Kids:straykids-seungmin
+r069,其他,學校要接待韓國小學生，想找一首台灣學生好學好唱的韓文歌,TWICE|BTS|Red Velvet,Stray Kids:straykids-seungmin|TWICE:twice-dahyun|TWICE:twice-tzuyu|Stray Kids:straykids-in|SEVENTEEN:seventeen-seungkwan
+r070,曲風,喜歡 Super Junior〈Lo Siento〉那種男聲、歌詞很色氣的歌，想整理類似歌單,EXO,BTS:bts-jin|NCT:nct-jeno|SEVENTEEN:seventeen-jeonghan|BTS:bts-v|BTS:bts-jimin
+r071,聲音/唱腔,被少女時代不墊音的穩定現場驚豔，想找一聽就知道是真唱、完全不墊音的女團現場,Red Velvet,TWICE:twice-jeongyeon|Hearts2Hearts:hearts2hearts-carmen|QWER:qwer-siyeon|KISS OF LIFE:kissoflife-belle|BLACKPINK:blackpink-rose
+r072,抽象氛圍,喜歡輕鬆、帶正能量的歌，想找類似 Kangaroo 那種輕快的韓文歌,Red Velvet|SEVENTEEN|BTS|NCT,EXO:exo-chanyeol|TXT:txt-hueningkai|NCT:nct-jaehyun|EXO:exo-suho|Stray Kids:straykids-seungmin
+r073,抽象氛圍,一直重聽臉紅的思春期、JJ Project 那種旋律和歌詞都很感人的歌，想找類似的,bts-jin,TWICE:twice-jeongyeon|BTS:bts-v|BTS:bts-jin|BLACKPINK:blackpink-jisoo|Stray Kids:straykids-seungmin
+r074,曲風,喜歡 Red Velvet〈Bad Boy〉、f(x)〈4 Walls〉、SHINee〈View〉這種帶輕微電子感的曲風,TWICE|NCT|Red Velvet,Stray Kids:straykids-seungmin|Red Velvet:redvelvet-joy|Red Velvet:redvelvet-wendy|NMIXX:nmixx-bae|Stray Kids:straykids-felix
+r075,其他,要找歌詞跟愛情無關、適合小朋友的韓文歌,Red Velvet|TWICE,Stray Kids:straykids-seungmin|Stray Kids:straykids-in|KISS OF LIFE:kissoflife-haneul|BTS:bts-jin|Hearts2Hearts:hearts2hearts-yeon
+r076,曲風,最近喜歡節奏感強、輕快的韓國嗨歌,SEVENTEEN|TWICE|Red Velvet|BTS,Red Velvet:redvelvet-joy|KISS OF LIFE:kissoflife-haneul|TXT:txt-hueningkai|NMIXX:nmixx-haewon|Stray Kids:straykids-seungmin
+r077,曲風,喜歡帶有復古感和節奏感的 R&B／funk 風格，想找類似歌手或歌曲,Red Velvet,BTS:bts-v|NMIXX:nmixx-haewon|MEOVV:meovv-ella|QWER:qwer-siyeon|i-dle:idle-minnie
+r079,聲音/唱腔,喜歡同一段旋律由不同音域成員輪流唱的編排（像 Highlight 的歌），想找類似的段落,NCT,NMIXX:nmixx-haewon|BTS:bts-v|H1-KEY:h1key-seoi|BTS:bts-jimin|TXT:txt-taehyun
+r080,其他,想找歌曲中間有口白或對話橋段的歌,TWICE|BTS|SEVENTEEN|Stray Kids,BTS:bts-v|BTS:bts-jungkook|NMIXX:nmixx-haewon|RIIZE:riize-sohee|Stray Kids:straykids-in
+r081,曲風,只追女團、最愛孝琳和素妍的聲音、喜歡節奏重旋律強烈的 EDM 快歌，想找女團以外的男團或 solo 歌手,BTS|Stray Kids,NMIXX:nmixx-haewon|BTS:bts-jimin|Stray Kids:straykids-seungmin|EXO:exo-baekhyun|TWICE:twice-jeongyeon
+r082,抽象氛圍,喜歡臉紅的思春期、MC Mong 那種輕快、聽起來很舒服的歌,Red Velvet|TWICE|BTS,TWICE:twice-jeongyeon|Stray Kids:straykids-seungmin|NMIXX:nmixx-haewon|BTS:bts-v|TXT:txt-taehyun
+r083,曲風,喜歡 DAY6〈I Need Somebody〉、RM&V〈4 O'Clock〉、AKMU〈Melted〉這種貼近人心、歌詞有隱喻的 B 面曲或獨立音樂,BTS,BTS:bts-v|Stray Kids:straykids-seungmin|i-dle:idle-miyeon|ILLIT:illit-minju|TXT:txt-beomgyu
+r084,聲音/唱腔,想找不炫技、不油膩但很厲害的翻唱 cover 影片，最好是比較少聽到的聲音,bts-jungkook,TXT:txt-taehyun|BTS:bts-v|aespa:aespa-ningning|SEVENTEEN:seventeen-wonwoo|TXT:txt-hueningkai
+r085,舞台/舞蹈,想找十多人一起跳、男女都能跳又不會太難的舞蹈歌曲,TWICE,ITZY:itzy-chaeryeong|BTS:bts-jimin|BLACKPINK:blackpink-lisa|TWICE:twice-momo|TWICE:twice-tzuyu
+r086,綜藝/個性,差點因為定延入坑，特別喜歡台上帥氣、台下卻容易害羞靦腆的反差，想找其他 girl crush 系女偶像的害羞片段,twice-jeongyeon|blackpink-jennie|blackpink-lisa|blackpink-jisoo|twice-chaeyoung,TWICE:twice-jeongyeon|TWICE:twice-sana|Hearts2Hearts:hearts2hearts-ian|ITZY:itzy-ryujin|QWER:qwer-hina
+r087,曲風,喜歡 SEVENTEEN WOOZI〈Simple〉、臉紅的思春期那種溫暖明亮、快節奏且以樂器聲為主（非電子）的歌,Red Velvet,SEVENTEEN:seventeen-wonwoo|ITZY:itzy-lia|SEVENTEEN:seventeen-woozi|SEVENTEEN:seventeen-seungkwan|Stray Kids:straykids-seungmin
+r088,抽象氛圍,想找激勵人心、聽了會振作的韓文歌,bts-suga,NMIXX:nmixx-haewon|EXO:exo-baekhyun|TWICE:twice-jeongyeon|SEVENTEEN:seventeen-seungkwan|H1-KEY:h1key-seoi
+r089,曲風,喜歡 BOYFRIEND〈Star〉、KNK〈Rain〉這種好聽的慢歌，想找更多,BLACKPINK|Red Velvet|BTS,Stray Kids:straykids-seungmin|BTS:bts-v|RIIZE:riize-sungchan|BTS:bts-jungkook|SEVENTEEN:seventeen-dk
+r091,曲風,喜歡太妍〈Time Walking On Memory〉、WINNER〈Fool〉、IU〈LEON〉這種輕快、沒什麼電子音、旋律順暢的抒情歌,BTS,ITZY:itzy-lia|TWICE:twice-jeongyeon|TXT:txt-taehyun|NMIXX:nmixx-haewon|Hearts2Hearts:hearts2hearts-yeon
+r095,舞台/舞蹈,TWICE 跳舞時常對鏡頭眨眼，想找其他也會在舞台上對鏡頭 wink 的團體或成員，男女團都可以,twice-momo|twice-jihyo|twice-tzuyu,TWICE:twice-mina|TWICE:twice-momo|TWICE:twice-dahyun|TWICE:twice-nayeon|TWICE:twice-tzuyu
+r096,聲音/唱腔,想找新一代女團裡全員邊唱邊跳都真唱、不墊音的舞台來入坑,redvelvet-seulgi,BLACKPINK:blackpink-lisa|BLACKPINK:blackpink-rose|BABYMONSTER:babymonster-ahyeon|ITZY:itzy-ryujin|i-dle:idle-yuqi
+r097,曲風,最近迷上 BTS〈Save Me〉、BoA〈No Matter〉這種 tropical house 曲風，想找類似的歌,BLACKPINK|BTS|Red Velvet,BTS:bts-jimin|BTS:bts-v|BTS:bts-jhope|BTS:bts-jin|BTS:bts-suga
+r099,聲音/唱腔,查了幾個女團的分詞時間，發現落差都很大，想找成員之間歌唱分配比較平均的女團,BLACKPINK|Red Velvet,TWICE:twice-jeongyeon|NMIXX:nmixx-lily|KISS OF LIFE:kissoflife-belle|Hearts2Hearts:hearts2hearts-carmen|NMIXX:nmixx-haewon
+r100,綜藝/個性,很喜歡 MAMAMOO 互換 part 的表演，想找其他團體交換 part 演出的影片,BTS|SEVENTEEN,TWICE:twice-momo|BLACKPINK:blackpink-lisa|BTS:bts-jimin|NMIXX:nmixx-jiwoo|MEOVV:meovv-gawon
+r101,聲音/唱腔,很喜歡 f(x) Krystal 說英文的發音和腔調，想找說外語很好聽的女團成員,redvelvet-wendy|twice-mina|blackpink-jennie|blackpink-lisa,TWICE:twice-jeongyeon|NMIXX:nmixx-lily|BABYMONSTER:babymonster-pharita|TWICE:twice-nayeon|QWER:qwer-siyeon
+r103,曲風,喜歡 OST〈Reset〉、GD〈Black〉這種男生 rap、女生唱的合作曲風,bts-rm,BTS:bts-jin|BTS:bts-jungkook|SEVENTEEN:seventeen-dk|BTS:bts-v|BTS:bts-jimin
+r104,曲風,喜歡 JYJ〈In Heaven〉那種歌詞不斷重複、卻能感受到急迫深情的歌（不是洗腦歌）,EXO,BTS:bts-jin|ENHYPEN:enhypen-jay|BTS:bts-jimin|ENHYPEN:enhypen-jungwon|NMIXX:nmixx-haewon
+r105,曲風,特別喜歡前奏是吉他的抒情歌，像 SJ〈Andante〉、Sam Kim、臉紅的思春期,Red Velvet,BTS:bts-jimin|QWER:qwer-siyeon|BTS:bts-jin|BTS:bts-v|TWICE:twice-jihyo
+r108,抽象氛圍,想找聽起來很涼、很清爽，適合夏天的歌,TWICE,ITZY:itzy-lia|Hearts2Hearts:hearts2hearts-carmen|RIIZE:riize-sohee|BTS:bts-v|TXT:txt-hueningkai
+r109,曲風,天氣煩躁時喜歡聽 MAMAMOO、BTS〈Converse High〉、Heize 那種輕鬆的 R&B，想找類似的歌,BTS,NMIXX:nmixx-bae|RIIZE:riize-sohee|Stray Kids:straykids-seungmin|BTS:bts-jimin|NMIXX:nmixx-haewon
+r112,曲風,喜歡旋律中毒、抒情但節奏重、rap 好聽的歌，像 BEAST〈12:30〉，不喜歡太溫柔讓人想睡的聲音，想找類似歌手,BTS|EXO,Hearts2Hearts:hearts2hearts-stella|BTS:bts-v|NMIXX:nmixx-lily|Stray Kids:straykids-felix|TXT:txt-taehyun
+r115,曲風,最愛 SHINee〈Lucifer〉、B.A.P〈Warrior〉這種節奏很重、很強烈的舞曲，想找類似的,EXO|BTS,BLACKPINK:blackpink-lisa|BTS:bts-jimin|TWICE:twice-mina|BLACKPINK:blackpink-jennie|RIIZE:riize-shotaro
+r116,曲風,喜歡 Girl's Day〈Show You〉那種輕快舒服、又不會太甜膩的曲風，想找類似的歌，男女都可以,Red Velvet|TWICE,Red Velvet:redvelvet-joy|NMIXX:nmixx-lily|KISS OF LIFE:kissoflife-belle|ITZY:itzy-lia|Stray Kids:straykids-seungmin
+r117,曲風,想找好聽的男女合唱或有 feat 的歌,exo-do,BTS:bts-jungkook|NMIXX:nmixx-haewon|BTS:bts-jin|ATEEZ:ateez-jongho|BTS:bts-jimin
+r119,曲風,很喜歡男 rapper 搭女主唱的歌，想找類似的合作曲,SEVENTEEN,ATEEZ:ateez-mingi|BTS:bts-jimin|BTS:bts-jin|BTS:bts-rm|BTS:bts-v
+r123,曲風,也喜歡古典樂，愛 VIXX LR〈Beautiful Liar〉、EXO〈MAMA〉這種帶古典元素又很燃的流行歌,redvelvet-wendy,NMIXX:nmixx-lily|BTS:bts-v|NMIXX:nmixx-haewon|TXT:txt-taehyun|EXO:exo-baekhyun
+r125,抽象氛圍,最近心情很差，喜歡太妍〈I〉那種療癒感，想找心情不好時能聽的療癒歌,redvelvet-wendy,ITZY:itzy-lia|IVE:ive-liz|Hearts2Hearts:hearts2hearts-carmen|Hearts2Hearts:hearts2hearts-yeon|IVE:ive-rei
+r130,抽象氛圍,被 Red Velvet 一首輕柔飄逸的收錄曲驚豔，想找適合睡前聽、輕柔舒服的韓文歌,EXO,Red Velvet:redvelvet-joy|Red Velvet:redvelvet-wendy|NCT:nct-renjun|Red Velvet:redvelvet-seulgi|Red Velvet:redvelvet-yeri
+r131,綜藝/個性,喜歡 B.A.P、WINNER 那種從強悍帥氣突然轉成搞笑可愛的反差歌，想找其他顛覆原本形象的歌,BTS,BTS:bts-v|ATEEZ:ateez-mingi|SEVENTEEN:seventeen-scoups|BTS:bts-jin|BTS:bts-jhope
+r137,曲風,喜歡 APINK〈NO NO NO〉、KARA〈Break It〉那種完全沒有 rap、旋律輕快或中慢板的歌，想找更多沒有 rap 的歌,EXO,aespa:aespa-ningning|Hearts2Hearts:hearts2hearts-carmen|ITZY:itzy-lia|BLACKPINK:blackpink-rose|NMIXX:nmixx-lily
+r138,曲風,接觸韓樂後發現自己愛比較熱鬧吵的歌，喜歡 Block B、ZICO 的 mixtape 和 BTS 的專輯，想找類似的嘻哈風歌曲,bts-rm,BTS:bts-jhope|BTS:bts-jimin|BTS:bts-jungkook|SEVENTEEN:seventeen-scoups|BTS:bts-jin
+r152,舞台/舞蹈,要教學弟跳舞，想找近期不會太難、適合團體練的男團舞蹈,EXO,SEVENTEEN:seventeen-the8|EXO:exo-kai|RIIZE:riize-shotaro|ATEEZ:ateez-yunho|BTS:bts-jimin
+m025,具體成員參照,請大家推薦可以開始聽的K-pop團！目前在追ATEEZ、Stray Kids、BTS、&TEAM、ENHYPEN、NewJeans、xikers、P1Harmony、LE SSERAFIM,TXT|SEVENTEEN|TWICE|NCT|ITZY|Red Velvet,ENHYPEN:enhypen-jungwon|Stray Kids:straykids-seungmin|Stray Kids:straykids-leeknow|TXT:txt-taehyun|SEVENTEEN:seventeen-scoups
+m026,抽象氛圍,求推薦K-pop歌，那種好聽到讓人整個人「飄起來」的歌，什麼建議都會去聽,EXO|NMIXX,NMIXX:nmixx-haewon|Stray Kids:straykids-seungmin|BLACKPINK:blackpink-rose|BTS:bts-v|BTS:bts-jhope
+m028,其他,拜託推薦一些女團給我,redvelvet-irene|redvelvet-seulgi,TWICE:twice-jeongyeon|TWICE:twice-mina|TWICE:twice-tzuyu|KISS OF LIFE:kissoflife-julie|TWICE:twice-chaeyoung
+m029,其他,現在馬上需要好聽的K-pop女團推薦！,Red Velvet|NMIXX|aespa|LE SSERAFIM|IVE,BLACKPINK:blackpink-rose|BLACKPINK:blackpink-jisoo|TWICE:twice-jeongyeon|TWICE:twice-nayeon|NMIXX:nmixx-haewon
+m030,具體成員參照,覺得自己該多聽一些第五代女團，求歌曲推薦，參考喜好是STAYC、Dreamcatcher、PURPLE KISS這類團,ILLIT,BLACKPINK:blackpink-rose|TWICE:twice-jeongyeon|KISS OF LIFE:kissoflife-belle|KISS OF LIFE:kissoflife-julie|TWICE:twice-chaeyoung
+m032,具體成員參照,本身是Red Velvet和Stray Kids粉，也很愛IVE、NJZ、aespa、ITZY、KiiiKiii、NMIXX等女團，喜歡探索新團，想要更多女團推薦,LE SSERAFIM|ILLIT,Red Velvet:redvelvet-joy|Red Velvet:redvelvet-irene|ITZY:itzy-ryujin|IVE:ive-rei|NMIXX:nmixx-lily
+m033,其他,最愛的Dreamcatcher很長一段時間不會發新歌，男團已經追夠多了，想多入坑一些女團，也歡迎冷門團推薦,blackpink-lisa|blackpink-jennie|blackpink-jisoo|redvelvet-irene,NMIXX:nmixx-haewon|ITZY:itzy-ryujin|TWICE:twice-jeongyeon|i-dle:idle-yuqi|ITZY:itzy-lia
+m034,其他,平常幾乎只聽男團，女團只偶爾聽TWICE，有沒有女團推薦？,Red Velvet,TWICE:twice-jeongyeon|TWICE:twice-chaeyoung|TWICE:twice-nayeon|TWICE:twice-tzuyu|TWICE:twice-jihyo
+m036,其他,想更深入K-pop，但自己只聽EXO和少女時代，覺得還卡在過去，請聽K-pop的朋友給點推薦,TXT|NMIXX|IVE|i-dle|BTS|TWICE|ENHYPEN|LE SSERAFIM|ATEEZ|Red Velvet|NCT|SEVENTEEN|ITZY|aespa|KISS OF LIFE,EXO:exo-baekhyun|BLACKPINK:blackpink-rose|BLACKPINK:blackpink-jisoo|EXO:exo-suho|EXO:exo-do
+m037,曲風,想要那種很俗、很肉麻又輕快的K-pop情歌推薦,NCT,KISS OF LIFE:kissoflife-haneul|Stray Kids:straykids-seungmin|RIIZE:riize-wonbin|ITZY:itzy-lia|Stray Kids:straykids-in
+m038,其他,趁著《KPop獵魔女團》正紅，想問有什麼好聽的K-pop團或歌可以推薦,TWICE|TXT|Stray Kids,NMIXX:nmixx-haewon|NMIXX:nmixx-lily|BLACKPINK:blackpink-rose|TWICE:twice-chaeyoung|IVE:ive-liz
+m039,其他,想開始聽K-pop，有推薦嗎？,aespa|LE SSERAFIM,BLACKPINK:blackpink-rose|BLACKPINK:blackpink-jisoo|BTS:bts-jhope|BTS:bts-jungkook|EXO:exo-baekhyun
+m040,其他,最近K-pop歌單沒什麼新歌，有人有推薦嗎？,Red Velvet,EXO:exo-baekhyun|ITZY:itzy-lia|NMIXX:nmixx-haewon|BTS:bts-jungkook|BLACKPINK:blackpink-rose
+m042,曲風,想請大家推薦女偶像的b-side，不要大家都知道的那種，而是「只有自己知道會覺得很可惜」程度的冷門好歌,TWICE|i-dle|Red Velvet|LE SSERAFIM,BLACKPINK:blackpink-jisoo|BLACKPINK:blackpink-rose|TWICE:twice-tzuyu|TWICE:twice-chaeyoung|TWICE:twice-mina
+m043,聲音/唱腔,聽了Wendy翻唱的聖誕歌覺得聲音超好聽、比原唱還喜歡，想請大家推薦其他韓國女idol翻唱英文歌也很好聽的影片,nmixx-lily|nmixx-haewon|idle-yuqi|idle-minnie|itzy-lia,Red Velvet:redvelvet-wendy|Red Velvet:redvelvet-joy|Hearts2Hearts:hearts2hearts-stella|NMIXX:nmixx-lily|TWICE:twice-jeongyeon
+m044,抽象氛圍,想找適合櫻花季聽的男團清爽系歌曲,Stray Kids|ENHYPEN,NCT:nct-renjun|BTS:bts-v|NCT:nct-jaehyun|BTS:bts-jin|BTS:bts-jimin
+m045,抽象氛圍,大家覺得有哪些適合夏天聽、聽了會想去度假的偶像歌曲？,ITZY|TWICE|NCT|Stray Kids|SEVENTEEN|Red Velvet|IVE,BTS:bts-v|EXO:exo-baekhyun|BTS:bts-jungkook|SEVENTEEN:seventeen-jeonghan|NCT:nct-haechan
+m046,抽象氛圍,有哪些男偶像的歌適合健身時聽？要越聽越來勁的那種,ATEEZ|BTS|Stray Kids|SEVENTEEN|NCT,BTS:bts-jungkook|EXO:exo-baekhyun|TXT:txt-taehyun|RIIZE:riize-sohee|RIIZE:riize-wonbin
+m047,抽象氛圍,請大家推薦適合冬天、值得逆襲的好歌，不論是不是本命的歌都可以,exo-chanyeol,aespa:aespa-winter|TWICE:twice-jihyo|NCT:nct-renjun|NCT:nct-doyoung|EXO:exo-baekhyun
+m048,聲音/唱腔,《Killing Voice》裡有很多傳奇級歌手，大家最推薦哪一集？,NMIXX|SEVENTEEN|Red Velvet,NMIXX:nmixx-haewon|BLACKPINK:blackpink-rose|SEVENTEEN:seventeen-seungkwan|IVE:ive-liz|SEVENTEEN:seventeen-dk
+m049,舞台/舞蹈,看了BABYMONSTER電台live覺得很有實力，大家覺得還有哪些韓團的實力和帶動現場能力適合上科切拉音樂節？,ITZY|Red Velvet|KISS OF LIFE|NMIXX|Stray Kids|TXT|ATEEZ|i-dle|aespa|TWICE|BTS|IVE|SEVENTEEN,BABYMONSTER:babymonster-ahyeon|BABYMONSTER:babymonster-ruka|BABYMONSTER:babymonster-chiquita|QWER:qwer-chodan|EXO:exo-chanyeol
+m050,其他,大家來分享最近陷進去、一直單曲循環的歌吧,idle-minnie|aespa-winter,QWER:qwer-siyeon|EXO:exo-baekhyun|BTS:bts-jimin|ILLIT:illit-moka|BTS:bts-jungkook
+m051,聲音/唱腔,Dingo《Killing Voice》有很多經典集數，大家最常重看哪一集？,TWICE|ATEEZ|Red Velvet|SEVENTEEN|i-dle|EXO|NCT,EXO:exo-do|TWICE:twice-jihyo|ATEEZ:ateez-jongho|Red Velvet:redvelvet-wendy|BLACKPINK:blackpink-jisoo
+m052,其他,隨機播放清單時常常覺得「這首好聽」，一看都是ENHYPEN、P1Harmony或KISS OF LIFE；大家有沒有不是本命、但歌剛好很合自己口味的團？,nct-doyoung,KISS OF LIFE:kissoflife-haneul|KISS OF LIFE:kissoflife-belle|ENHYPEN:enhypen-jungwon|NMIXX:nmixx-haewon|KISS OF LIFE:kissoflife-julie
+m053,曲風,求男團歌推薦（女團也可以）：不喜歡輕飄飄的歌，喜歡像要上戰場那種氣勢的歌，例如NCT的Vampire、aespa的歌；不喜歡EXO〈Tempo〉那種,BTS|NCT|EXO,EXO:exo-baekhyun|TXT:txt-taehyun|NMIXX:nmixx-haewon|EXO:exo-suho|aespa:aespa-ningning
+m054,其他,求可以追的團：不要大公司、不要選秀出身、不要有退團或停活成員、歌不能太難聽、出道三年內，想要很有偶像感的團,MEOVV|ATEEZ,TWICE:twice-jeongyeon|TWICE:twice-tzuyu|NMIXX:nmixx-haewon|SEVENTEEN:seventeen-scoups|EXO:exo-suho
+m057,曲風,附上最近循環播放的歌單，只要跟其中任何一首調性相近的女團歌都歡迎推薦,aespa|IVE|ILLIT|LE SSERAFIM|Red Velvet|Hearts2Hearts,TWICE:twice-jeongyeon|NMIXX:nmixx-haewon|TWICE:twice-chaeyoung|BLACKPINK:blackpink-jisoo|NMIXX:nmixx-lily
+m058,曲風,想找像aespa那首歌一樣感覺的女團歌，aespa的歌也可以，女團都好,aespa-ningning,aespa:aespa-giselle|TWICE:twice-jeongyeon|NMIXX:nmixx-haewon|TWICE:twice-chaeyoung|BLACKPINK:blackpink-rose
+m059,綜藝/個性,想入坑新男團：要自製綜藝好笑、成員感情好、出道三年內，最好是嘻哈路線,NCT,BTS:bts-jin|SEVENTEEN:seventeen-wonwoo|SEVENTEEN:seventeen-scoups|Stray Kids:straykids-han|BTS:bts-rm
+m060,其他,求今年男團好歌推薦，OP自己先列了&TEAM、CLOSE YOUR EYES、KickFlip的歌,NCT|RIIZE,EXO:exo-baekhyun|BTS:bts-jimin|EXO:exo-do|BTS:bts-jhope|TXT:txt-taehyun
+m061,其他,求IVE的收錄曲（非主打）推薦,IVE,IVE:ive-liz|IVE:ive-wonyoung|IVE:ive-rei|IVE:ive-leeseo|IVE:ive-gaeul
+m062,曲風,求戴耳機聽會更好聽的歌，OP自己舉NCT〈Baggy Jeans〉和IU〈홀씨〉為例,blackpink-lisa|exo-baekhyun,ILLIT:illit-minju|SEVENTEEN:seventeen-jeonghan|NCT:nct-jaehyun|TXT:txt-beomgyu|Red Velvet:redvelvet-joy
+m064,曲風,求偶像嘻哈中饒舌很猛的歌，歌詞不要有髒話或物化女性的內容，炫富可以,nct-jeno|bts-suga|bts-rm,NMIXX:nmixx-haewon|EXO:exo-chanyeol|BTS:bts-rm|NMIXX:nmixx-lily|SEVENTEEN:seventeen-vernon
+m065,其他,求推薦你們最常聽的歌，曲風不限,NMIXX,EXO:exo-baekhyun|NMIXX:nmixx-haewon|ITZY:itzy-lia|RIIZE:riize-sohee|NMIXX:nmixx-lily
+m066,聲音/唱腔,女團歌聽得不多，求以歌唱為主的推薦：想要有2010年代感、主唱轉音顫音很好的歌,KISS OF LIFE|Red Velvet,TWICE:twice-jeongyeon|H1-KEY:h1key-seoi|NMIXX:nmixx-lily|NMIXX:nmixx-haewon|ITZY:itzy-lia
+m067,舞台/舞蹈,只追到第四代就退坑、最近回鍋，以前都追舞擔；想知道第五代裡跳舞很強的偶像，男女不限,riize-shotaro|hearts2hearts-juun|illit-iroha,BLACKPINK:blackpink-lisa|TXT:txt-yeonjun|EXO:exo-kai|Stray Kids:straykids-leeknow|NCT:nct-jisung
+m068,舞台/舞蹈,想找跳舞好看的偶像看直拍：不是那種舞神型，而是知道自己怎樣最帥、用自己風格跳得很有型的人，像&TEAM NICHOLAS或THE BOYZ SUNWOO那種,txt-yeonjun|nct-haechan|straykids-leeknow|enhypen-niki,RIIZE:riize-shotaro|SEVENTEEN:seventeen-the8|Stray Kids:straykids-leeknow|ATEEZ:ateez-yunho|EXO:exo-kai
+m069,舞台/舞蹈,求上台時不油膩的男偶像：放電也自然、不會在ending死盯鏡頭喘氣表情過多，本業要強，臉中上即可,bts-v|bts-jimin|seventeen-scoups|seventeen-mingyu,RIIZE:riize-eunseok|NCT:nct-jaemin|SEVENTEEN:seventeen-jun|BTS:bts-jin|ATEEZ:ateez-yeosang
+m070,曲風,求很有夏天感、清爽又嗨的舞曲，像SISTAR〈Loving U〉、少女時代〈PARTY〉、THE BOYZ〈THRILL RIDE〉、ONF〈Complete〉那種，男女團、二到五代都收,i-dle|SEVENTEEN|Stray Kids|NCT|Red Velvet,BLACKPINK:blackpink-lisa|KISS OF LIFE:kissoflife-julie|TWICE:twice-mina|ITZY:itzy-chaeryeong|TWICE:twice-tzuyu
+m071,曲風,求涼爽暢快感的清爽系舞曲，男女團不限，只收偶像歌,NCT|Red Velvet|ATEEZ,TWICE:twice-mina|Hearts2Hearts:hearts2hearts-yuha|ITZY:itzy-lia|ITZY:itzy-yuna|i-dle:idle-yuqi
+m072,曲風,喜歡清爽系的歌，求推薦,TXT,ITZY:itzy-lia|Stray Kids:straykids-in|Stray Kids:straykids-seungmin|KISS OF LIFE:kissoflife-haneul|Hearts2Hearts:hearts2hearts-carmen
+m073,綜藝/個性,求自製綜藝很好笑的偶像，TXT已經看過了所以除外,SEVENTEEN|NCT,SEVENTEEN:seventeen-vernon|TWICE:twice-dahyun|Stray Kids:straykids-changbin|TXT:txt-taehyun|Stray Kids:straykids-han
+m074,綜藝/個性,求可以配飯看的男團旅行類自製綜藝，看過GOING SEVENTEEN和ENHYPEN的，喜歡成員們自由時間玩在一起的感覺,ateez-san|ateez-wooyoung,SEVENTEEN:seventeen-scoups|SEVENTEEN:seventeen-jun|SEVENTEEN:seventeen-jeonghan|ENHYPEN:enhypen-jungwon|SEVENTEEN:seventeen-mingyu
+m075,綜藝/個性,求超好笑的自製綜藝，不要太長的,Hearts2Hearts,Stray Kids:straykids-changbin|Stray Kids:straykids-han|SEVENTEEN:seventeen-vernon|i-dle:idle-yuqi|i-dle:idle-soyeon
+m076,綜藝/個性,前本命退團後本來不想再追星，求NCT WISH的自製綜藝推薦,NCT,SEVENTEEN:seventeen-vernon|ILLIT:illit-wonhee|SEVENTEEN:seventeen-wonwoo|NCT:nct-ten|BTS:bts-jin
+m077,抽象氛圍,求「感覺很好」的歌，除了抒情歌什麼都可以,blackpink-jennie,EXO:exo-baekhyun|NMIXX:nmixx-haewon|TWICE:twice-chaeyoung|RIIZE:riize-sohee|NCT:nct-haechan
+m078,舞台/舞蹈,最近迷上男團舞，喜歡SEVENTEEN〈孫悟空〉和NCT 127〈英雄〉那種編舞帥、強弱對比很大的歌，求類似的,exo-kai|seventeen-hoshi,SEVENTEEN:seventeen-scoups|SEVENTEEN:seventeen-dk|NCT:nct-jaehyun|SEVENTEEN:seventeen-mingyu|SEVENTEEN:seventeen-wonwoo
+m079,曲風,求音場很飽滿、很猛的男團歌，像Stray Kids〈Back Door〉〈CASE 143〉〈Thunderous〉那樣,BTS|NCT|Stray Kids|ATEEZ,Stray Kids:straykids-felix|Stray Kids:straykids-in|Stray Kids:straykids-bangchan|BTS:bts-v|Stray Kids:straykids-seungmin
+m080,其他,求好聽的偶像收錄曲推薦，男女團都可以,NCT|IVE|Stray Kids|TWICE|Red Velvet|RIIZE|NMIXX,NMIXX:nmixx-haewon|TWICE:twice-jeongyeon|TWICE:twice-jihyo|NMIXX:nmixx-lily|i-dle:idle-miyeon
+m081,其他,最近迷上SEVENTEEN，求能安慰人的SEVENTEEN歌,SEVENTEEN,SEVENTEEN:seventeen-wonwoo|SEVENTEEN:seventeen-scoups|SEVENTEEN:seventeen-seungkwan|SEVENTEEN:seventeen-jeonghan|SEVENTEEN:seventeen-dk
+m082,聲音/唱腔,求饒舌段落很讚的女團歌，像HUNTR/X〈How It's Done〉那種,BLACKPINK|BABYMONSTER|NMIXX|KISS OF LIFE,NMIXX:nmixx-haewon|i-dle:idle-soyeon|TWICE:twice-dahyun|TWICE:twice-jeongyeon|TWICE:twice-chaeyoung
+m083,抽象氛圍,求性感、有氛圍又安靜的男團歌，主觀也可以；已知道並排除Jung Kook〈Seven〉、ENHYPEN〈No Doubt〉、HAECHAN〈CRZY〉、NCT DREAM〈Poison〉、NCT 127〈Bad Alive〉等,bts-v|bts-jungkook,SEVENTEEN:seventeen-jeonghan|NCT:nct-haechan|NCT:nct-jaehyun|EXO:exo-baekhyun|SEVENTEEN:seventeen-dk
+m085,曲風,求很強烈的男團歌，像〈Reveal〉〈英雄〉那種,ATEEZ,EXO:exo-baekhyun|BTS:bts-jimin|EXO:exo-chanyeol|TXT:txt-taehyun|RIIZE:riize-sohee
+m086,舞台/舞蹈,覺得自己真的很會跳舞的女偶像有誰？OP看了〈That's a No No〉後覺得KIM CHAEWON很會跳,hearts2hearts-juun|illit-iroha|twice-momo|redvelvet-seulgi|aespa-winter|itzy-ryujin|itzy-chaeryeong|itzy-yeji|blackpink-lisa,LE SSERAFIM:lesserafim-chaewon|MEOVV:meovv-gawon|NMIXX:nmixx-haewon|ITZY:itzy-chaeryeong|BABYMONSTER:babymonster-ahyeon
+m087,聲音/唱腔,音色會讓人心動的男偶像有誰？OP先舉了神話Hyesung、金在中、EXO BAEKHYUN、LNGSHOT等,exo-baekhyun|exo-do|nct-haechan|nct-jaehyun|nct-doyoung,EXO:exo-baekhyun|BTS:bts-jin|BTS:bts-jungkook|EXO:exo-do|TXT:txt-taehyun
+m088,抽象氛圍,求凌晨感性的歌，打算聽到三點再睡,NCT|Stray Kids,QWER:qwer-siyeon|EXO:exo-baekhyun|NCT:nct-renjun|NCT:nct-haechan|Hearts2Hearts:hearts2hearts-stella
+m091,抽象氛圍,懷念學生時代的快樂，求有青春感又歡樂的舞曲,RIIZE|SEVENTEEN|TWICE,KISS OF LIFE:kissoflife-julie|BTS:bts-jimin|Hearts2Hearts:hearts2hearts-yuha|TWICE:twice-momo|Stray Kids:straykids-felix
+m092,抽象氛圍,求既惆悵又令人心潮澎湃的偶像歌，不要太有名的，男女團、樂團偶像都可以,blackpink-jisoo,Hearts2Hearts:hearts2hearts-stella|NMIXX:nmixx-haewon|TWICE:twice-jeongyeon|TWICE:twice-jihyo|Hearts2Hearts:hearts2hearts-ian
+m093,曲風,求涼爽清爽、單純很嗨且節奏很快的K-pop，不要惆悵、冷冽或夢幻感，喜歡DOYOUNG、Young K某些歌那種感覺，想塞滿工作歌單,idle-miyeon,KISS OF LIFE:kissoflife-haneul|Red Velvet:redvelvet-joy|NMIXX:nmixx-haewon|ITZY:itzy-lia|BTS:bts-jhope
+m094,其他,在Reels偶然聽到ILLIT一首歌覺得超好聽，求ILLIT其他歌推薦,ILLIT,ILLIT:illit-moka|IVE:ive-rei|ILLIT:illit-yunah|ILLIT:illit-minju|ILLIT:illit-wonhee
+m095,曲風,求像ILLIT〈jellyous〉那樣、適合跑步時聽的歌,ILLIT,ILLIT:illit-minju|ILLIT:illit-moka|ILLIT:illit-iroha|ILLIT:illit-yunah|BTS:bts-jimin
+m096,抽象氛圍,求像TXT〈打水漂〉那種感覺的歌，不是TXT的也可以,TXT,TXT:txt-taehyun|TXT:txt-hueningkai|TXT:txt-beomgyu|BTS:bts-v|TXT:txt-soobin
+m097,抽象氛圍,求TXT歌裡比較平靜舒緩的歌,TXT,TXT:txt-taehyun|TXT:txt-hueningkai|TXT:txt-soobin|Hearts2Hearts:hearts2hearts-stella|TXT:txt-beomgyu
+m098,其他,求第四、五代男團的門面成員推薦，沒有特定長相偏好，只是想看臉,riize-wonbin|riize-sungchan|riize-eunseok|txt-soobin|txt-beomgyu|straykids-leeknow|straykids-felix|straykids-hyunjin,NCT:nct-jaemin|RIIZE:riize-eunseok|BTS:bts-v|BTS:bts-jin|ATEEZ:ateez-yeosang
+m099,其他,求最近的男團門面推薦，以前喜歡INFINITE L、Wanna One黃旼炫、NCT JAEHYUN，偏好帥氣型而不是漂亮型,riize-wonbin|riize-sungchan|riize-eunseok,NCT:nct-jaemin|BTS:bts-jin|ENHYPEN:enhypen-sunghoon|NCT:nct-jaehyun|ENHYPEN:enhypen-jungwon
+m100,聲音/唱腔,音域偏低常唱男偶像歌（升1~2key），求在KTV好唱、饒舌不難、非粉絲也好入耳的男團歌；常唱ONEUS、ASTRO、PENTAGON、WINNER、Block B、INFINITE等的歌,BTS|SEVENTEEN,BTS:bts-v|SEVENTEEN:seventeen-dk|SEVENTEEN:seventeen-seungkwan|EXO:exo-baekhyun|TXT:txt-taehyun
+m101,其他,想聽新歌，求男團收錄曲推薦，曲風世代都不限,RIIZE|TXT|SEVENTEEN|ATEEZ|NCT|ENHYPEN,BTS:bts-jungkook|SEVENTEEN:seventeen-dk|BTS:bts-jin|EXO:exo-baekhyun|BTS:bts-jimin
+m102,曲風,喜歡ATEEZ〈Adrenaline〉、Stray Kids〈S-Class〉這種又暗黑又嗨的歌，B.A.P、ATEEZ那類，求推薦,ATEEZ|Stray Kids|ITZY,ATEEZ:ateez-mingi|Stray Kids:straykids-seungmin|ATEEZ:ateez-wooyoung|Stray Kids:straykids-changbin|Stray Kids:straykids-felix
+m103,曲風,喜歡ATEEZ〈BAD〉〈Crazy Form〉這種比較強烈的歌，求ATEEZ其他歌推薦,ATEEZ,ATEEZ:ateez-san|ATEEZ:ateez-mingi|ATEEZ:ateez-jongho|ATEEZ:ateez-hongjoong|ATEEZ:ateez-wooyoung
+m104,其他,聽說NCT十週年想入門聽聽看，只知道〈第七感〉、NCT DREAM〈Whale〉、NCT 127〈英雄〉、NCT WISH〈Surf〉，求NCT全體名曲推薦,NCT,NCT:nct-haechan|NCT:nct-doyoung|NCT:nct-renjun|NCT:nct-ten|NCT:nct-jisung
+m105,其他,求像〈FEARLESS〉那樣歌詞充滿自信的LE SSERAFIM歌，最好是韓文歌詞為主,LE SSERAFIM,LE SSERAFIM:lesserafim-yunjin|LE SSERAFIM:lesserafim-chaewon|LE SSERAFIM:lesserafim-sakura|LE SSERAFIM:lesserafim-eunchae|Stray Kids:straykids-seungmin
+m106,抽象氛圍,求像LE SSERAFIM〈Smart〉那樣聽了會充滿鬥志、覺得什麼都做得到的歌,LE SSERAFIM,LE SSERAFIM:lesserafim-yunjin|BTS:bts-jimin|Stray Kids:straykids-changbin|Stray Kids:straykids-seungmin|LE SSERAFIM:lesserafim-eunchae
+m107,其他,還沒聽NMIXX新歌，想知道跟以前哪首像；喜歡〈Papillon〉〈Run for Roses〉〈Podium〉〈Ocean〉〈Love Is Lonely〉〈High Horse〉〈Loud〉等，求推薦,NMIXX,NMIXX:nmixx-lily|NMIXX:nmixx-haewon|NMIXX:nmixx-sullyoon|NMIXX:nmixx-bae|BLACKPINK:blackpink-rose
+m108,其他,主打正在聽，求NMIXX收錄曲只推一首就好,NMIXX,NMIXX:nmixx-lily|NMIXX:nmixx-haewon|NMIXX:nmixx-sullyoon|NMIXX:nmixx-kyujin|NMIXX:nmixx-jiwoo
+m109,其他,求aespa收錄曲推薦一首，自己的耳朵算大眾口味,aespa,aespa:aespa-giselle|aespa:aespa-ningning|aespa:aespa-winter|EXO:exo-baekhyun|BLACKPINK:blackpink-rose
+m110,其他,喜歡RIIZE〈Memories〉和〈Love 119〉，主打大概都知道，想找好聽的收錄曲,RIIZE,RIIZE:riize-sohee|ITZY:itzy-lia|IVE:ive-liz|ITZY:itzy-ryujin|QWER:qwer-siyeon
+m111,抽象氛圍,求EXO歌裡真正讓人心動的歌，喜歡〈足跡〉〈Girl x Friend〉〈不公平〉〈Peter Pan〉這類,EXO,EXO:exo-baekhyun|RIIZE:riize-wonbin|NMIXX:nmixx-haewon|EXO:exo-chanyeol|EXO:exo-suho
+m112,其他,求Red Velvet收錄曲推薦，〈Oh Boy〉〈Day 1〉〈Cool World〉〈Sunny Side Up〉〈Blue Lemonade〉等已知道的除外,Red Velvet,Red Velvet:redvelvet-wendy|Red Velvet:redvelvet-joy|Red Velvet:redvelvet-yeri|Red Velvet:redvelvet-seulgi|Red Velvet:redvelvet-irene
+m113,其他,一直都追女團，想開始試聽男團，求女團粉也會喜歡的男團歌,nct-ten,TWICE:twice-jeongyeon|NMIXX:nmixx-haewon|BTS:bts-jin|BTS:bts-v|TWICE:twice-chaeyoung
+m117,其他,想開始多追幾個女團，例如LE SSERAFIM、BLACKPINK，也許還有TWICE，歡迎推薦歌和其他女團，想認真入坑所以也想知道收錄曲,aespa,BLACKPINK:blackpink-rose|LE SSERAFIM:lesserafim-sakura|LE SSERAFIM:lesserafim-chaewon|NMIXX:nmixx-haewon|KISS OF LIFE:kissoflife-belle
+m120,曲風,如果非粉絲想要跟〈0X1=LOVESONG〉相似的TXT歌，你會推薦哪些？,TXT,TXT:txt-taehyun|TXT:txt-beomgyu|TXT:txt-soobin|BTS:bts-v|TXT:txt-hueningkai
+m121,曲風,很喜歡Stray Kids的〈Red Lights〉和〈TASTE〉這類偏性感的歌，想知道他們還有沒有類似的，喜歡比較暗的氛圍,Stray Kids,Stray Kids:straykids-felix|Stray Kids:straykids-seungmin|Stray Kids:straykids-hyunjin|Stray Kids:straykids-in|Stray Kids:straykids-changbin
+m123,曲風,上次熱衷K-pop是2017年，想回坑，求跟Red Velvet〈Automatic〉相似的歌,Red Velvet,Red Velvet:redvelvet-joy|Red Velvet:redvelvet-wendy|BLACKPINK:blackpink-jennie|Red Velvet:redvelvet-yeri|Red Velvet:redvelvet-seulgi
+m124,曲風,求像Stray Kids〈Collision〉那樣的歌,Stray Kids,Stray Kids:straykids-in|Stray Kids:straykids-felix|Stray Kids:straykids-hyunjin|Stray Kids:straykids-seungmin|Stray Kids:straykids-changbin
+m125,抽象氛圍,求歌名漂亮、氛圍軟綿綿的舞曲,LE SSERAFIM,TWICE:twice-mina|TWICE:twice-tzuyu|LE SSERAFIM:lesserafim-kazuha|Hearts2Hearts:hearts2hearts-yuha|i-dle:idle-minnie
+m126,曲風,正在做跑步歌單，求會讓人跳起來、跑起來不會累的超嗨歌,Stray Kids,BTS:bts-jimin|KISS OF LIFE:kissoflife-haneul|NMIXX:nmixx-lily|Hearts2Hearts:hearts2hearts-stella|BTS:bts-jhope
+m128,抽象氛圍,在做上班通勤歌單，問大家天氣變冷時都會聽什麼歌,SEVENTEEN|BTS|Red Velvet|TWICE|EXO,aespa:aespa-winter|TXT:txt-taehyun|BTS:bts-v|TWICE:twice-jeongyeon|ITZY:itzy-lia
+m129,舞台/舞蹈,喜歡看全身直拍和練習室影片，求沒有「舞蹈短板」、全員都跳得好的團（已知TXT、NCT DREAM、SEVENTEEN、NewJeans、NMIXX）,LE SSERAFIM|NCT|TWICE|ATEEZ|BTS|ENHYPEN,NCT:nct-jisung|NCT:nct-jaemin|NMIXX:nmixx-kyujin|BTS:bts-jimin|NCT:nct-ten
+m130,舞台/舞蹈,想看細節動作不馬虎、成員平均舞蹈實力高、沒有短板的團體直拍,NCT|ENHYPEN,BTS:bts-jimin|TWICE:twice-momo|RIIZE:riize-shotaro|NCT:nct-jaemin|NCT:nct-jisung
+m131,綜藝/個性,求好笑程度像《無限挑戰》的偶像自製綜藝,Hearts2Hearts|SEVENTEEN,Stray Kids:straykids-changbin|i-dle:idle-yuqi|i-dle:idle-soyeon|Stray Kids:straykids-han|SEVENTEEN:seventeen-vernon
+m132,聲音/唱腔,以前只迷高音，最近發現低音的魅力，求低音超強的男偶像,straykids-felix|seventeen-wonwoo|bts-v|nct-jisung|exo-do,BTS:bts-v|RIIZE:riize-sohee|Stray Kids:straykids-felix|NCT:nct-jaehyun|SEVENTEEN:seventeen-jeonghan
+m133,抽象氛圍,喜歡「冷冽又夢幻」風格的歌（例如IVE、NMIXX、宣美、NewJeans、i-dle、Younha、IU、Taeyeon等某些曲子），求更多同類型的歌,Red Velvet|aespa|RIIZE,NMIXX:nmixx-haewon|TWICE:twice-jeongyeon|NMIXX:nmixx-sullyoon|i-dle:idle-miyeon|NMIXX:nmixx-bae
+m134,抽象氛圍,求適合凌晨聽的夢幻感歌曲,BTS|TXT,NCT:nct-renjun|ITZY:itzy-lia|Hearts2Hearts:hearts2hearts-stella|NCT:nct-haechan|QWER:qwer-siyeon
+m135,其他,求不聽會覺得人生損失的超好聽收錄曲，哪個團都行,TXT|BTS|aespa|BABYMONSTER|ATEEZ|Red Velvet|TWICE,KISS OF LIFE:kissoflife-julie|KISS OF LIFE:kissoflife-belle|BTS:bts-v|QWER:qwer-siyeon|NCT:nct-haechan
+m136,其他,請大家推薦自己本命團或任何團中覺得很好聽的收錄曲,TXT|RIIZE|NCT|aespa,BTS:bts-jin|BTS:bts-jimin|SEVENTEEN:seventeen-wonwoo|TWICE:twice-jeongyeon|NMIXX:nmixx-haewon
+m137,其他,主打歌都聽過了，求NCT WISH的收錄曲推薦,NCT,NCT:nct-renjun|NCT:nct-doyoung|NCT:nct-haechan|ITZY:itzy-lia|ILLIT:illit-wonhee
+m138,其他,聽了ENHYPEN的〈Loose〉很中意，歌太多聽不完，求其他好歌（已收Sweet Venom、XO等）,ENHYPEN,NMIXX:nmixx-haewon|ENHYPEN:enhypen-jungwon|ENHYPEN:enhypen-jay|QWER:qwer-siyeon|KISS OF LIFE:kissoflife-haneul
+m139,其他,聽說ENHYPEN歌曲品質好，只知道幾首主打，求以收錄曲為主的推薦,ENHYPEN,ENHYPEN:enhypen-jungwon|ENHYPEN:enhypen-jay|EXO:exo-baekhyun|NCT:nct-haechan|ENHYPEN:enhypen-sunghoon
+m143,舞台/舞蹈,除了本命和好感團之外，大家看過覺得「舞台很強」、不熟歌也會被吸引的團有哪些,BABYMONSTER|ATEEZ,BTS:bts-jimin|SEVENTEEN:seventeen-jun|BLACKPINK:blackpink-lisa|NCT:nct-jaemin|BTS:bts-jin
+m144,曲風,聽了〈Siren〉突然燃起來，喜歡〈MISFIT〉〈特〉〈BOUNCY〉這類，求超猛超炸的男團歌,seventeen-woozi,BTS:bts-jimin|SEVENTEEN:seventeen-dk|BTS:bts-v|SEVENTEEN:seventeen-scoups|EXO:exo-baekhyun
+m145,曲風,求聽了會「戰鬥力上升」的歌，類似Stray Kids〈特〉、aespa〈Drama〉〈Whiplash〉、BOYNEXTDOOR〈Knock Knock〉、BTS〈FIRE〉那種,seventeen-woozi,Stray Kids:straykids-seungmin|SEVENTEEN:seventeen-scoups|BTS:bts-jimin|BTS:bts-jhope|Stray Kids:straykids-in
+m146,抽象氛圍,秋天到了，求有秋天感的偶像歌曲,TWICE|Stray Kids,BTS:bts-v|RIIZE:riize-wonbin|Stray Kids:straykids-seungmin|NMIXX:nmixx-haewon|RIIZE:riize-eunseok
+m147,曲風,有人推薦了Stray Kids的〈거미줄〉，聽了覺得節拍很新奇，求更多同樣偏嘻哈底子的歌,Stray Kids,Stray Kids:straykids-felix|Stray Kids:straykids-hyunjin|Stray Kids:straykids-changbin|Stray Kids:straykids-seungmin|Stray Kids:straykids-leeknow
+m148,抽象氛圍,求「分手了但我沒事、反而很痛快」那種灑脫的分手歌，類似權珍雅〈Fly Away〉、DAY6〈어쩌다 보니〉、Lovelyz〈그날의 너〉,BLACKPINK,TWICE:twice-jeongyeon|ITZY:itzy-lia|RIIZE:riize-sohee|Stray Kids:straykids-seungmin|Red Velvet:redvelvet-joy
+m150,聲音/唱腔,最近覺得低音、中低音很好聽，求音域偏低的女團歌,idle-yuqi,TWICE:twice-jeongyeon|ITZY:itzy-lia|H1-KEY:h1key-riina|i-dle:idle-minnie|i-dle:idle-yuqi
+m152,綜藝/個性,求自製綜藝好笑的團，最好是比較有名的團，剪輯也要好,Hearts2Hearts|SEVENTEEN|TXT,TWICE:twice-chaeyoung|NMIXX:nmixx-haewon|TWICE:twice-dahyun|BTS:bts-jin|Stray Kids:straykids-changbin
+m153,綜藝/個性,自認很無聊又愛發問，想提升社交能力，求女團的自製綜藝推薦,Hearts2Hearts|NMIXX,i-dle:idle-yuqi|TWICE:twice-chaeyoung|TWICE:twice-jeongyeon|TWICE:twice-dahyun|TWICE:twice-sana
+m154,綜藝/個性,求自製綜藝好笑的團，邊看邊順便入坑,SEVENTEEN|Hearts2Hearts,SEVENTEEN:seventeen-wonwoo|SEVENTEEN:seventeen-vernon|Stray Kids:straykids-han|IVE:ive-rei|NMIXX:nmixx-haewon
+m155,抽象氛圍,快到聖誕季了，大家都聽什麼K-pop？請寫團名和歌名,TWICE|EXO|NCT,BLACKPINK:blackpink-rose|NMIXX:nmixx-haewon|aespa:aespa-winter|BTS:bts-jimin|EXO:exo-baekhyun
+m156,綜藝/個性,想深挖成員之間感情很好、很有羈絆的團，求「關係性」好看的團體,NCT|BTS|Stray Kids|TWICE|TXT|SEVENTEEN,BTS:bts-jin|IVE:ive-rei|KISS OF LIFE:kissoflife-julie|TWICE:twice-jeongyeon|NCT:nct-jaemin
+m157,聲音/唱腔,想看在歌裡把Rap唱得很帶勁的偶像，現在還有Rap很強的偶像嗎,ateez-hongjoong|straykids-han|straykids-changbin|straykids-bangchan,BTS:bts-rm|BTS:bts-jhope|TXT:txt-taehyun|EXO:exo-baekhyun|ENHYPEN:enhypen-jay
+m158,聲音/唱腔,最近迷上Rap，現役偶像中Rap很強的男偶像有誰（目前只想到LNGSHOT的金律）,bts-rm|straykids-han|straykids-changbin,BTS:bts-jhope|BTS:bts-jungkook|NCT:nct-jisung|RIIZE:riize-eunseok|BTS:bts-jimin
+m159,其他,不論本命或其他團，求喜歡的收錄曲，想放進運動歌單；抒情、嘻哈、古典都聽,redvelvet-seulgi,SEVENTEEN:seventeen-wonwoo|TXT:txt-taehyun|BTS:bts-jimin|BTS:bts-v|BTS:bts-jhope
+m160,其他,求超好聽但不要太有名的偶像收錄曲（OH MY GIRL〈한 발짝 두 발짝〉、EXO、BTS的收錄曲都知道了，請排除）,twice-nayeon|bts-jungkook|exo-baekhyun|bts-v,TWICE:twice-jeongyeon|EXO:exo-baekhyun|NMIXX:nmixx-haewon|RIIZE:riize-wonbin|TWICE:twice-tzuyu
+m161,綜藝/個性,因為某位成員被圈粉，現在整個RIIZE都喜歡，不知道該從哪裡開始看（自製綜藝、舞台等）,RIIZE,RIIZE:riize-sohee|ITZY:itzy-ryujin|RIIZE:riize-shotaro|RIIZE:riize-sungchan|RIIZE:riize-eunseok
+m162,其他,喜歡LE SSERAFIM一輯〈Sour Grapes〉和〈Impurities〉那種清新俏皮的曲風，想找她們同類型的歌,LE SSERAFIM,LE SSERAFIM:lesserafim-sakura|LE SSERAFIM:lesserafim-eunchae|LE SSERAFIM:lesserafim-yunjin|LE SSERAFIM:lesserafim-kazuha|Stray Kids:straykids-seungmin
+m165,其他,平常只聽SEVENTEEN、ATEEZ、BABYMONSTER、2NE1，歌單一直重複，想加入新的推薦歌,NCT,BABYMONSTER:babymonster-rami|ATEEZ:ateez-mingi|BABYMONSTER:babymonster-ahyeon|ATEEZ:ateez-hongjoong|Stray Kids:straykids-seungmin
+m168,其他,最近迷上TXT的歌，列了自己喜歡的幾首（〈Drama〉〈Dear Sputnik〉等），大家補充推薦,TXT,TXT:txt-taehyun|TXT:txt-soobin|BTS:bts-jimin|BTS:bts-jin|TXT:txt-beomgyu
+m169,其他,稍微聽了aespa的〈Thirsty〉完全是我的菜，求其他收錄曲推薦,aespa,aespa:aespa-winter|aespa:aespa-giselle|aespa:aespa-ningning|aespa:aespa-karina|BLACKPINK:blackpink-lisa
+m170,曲風,第一次聽BTS除了〈SWIM〉之外的歌，喜歡專輯前段那類偏嘻哈的曲子，也喜歡RM、j-hope的個人專輯，求類似的歌,bts-jhope|bts-rm,BTS:bts-jhope|BTS:bts-rm|BTS:bts-jimin|BTS:bts-jin|BTS:bts-v
+m171,其他,發現NCT DREAM收錄曲很多好歌，大家都在聽哪些？偏好抒情感性的歌,NCT,NCT:nct-renjun|NCT:nct-jaemin|NCT:nct-jeno|NCT:nct-jisung|NCT:nct-doyoung
+m172,其他,喜歡NMIXX〈Blue Valentine〉和〈Heavy Serenade〉，求更多收錄曲，大眾比較容易接受的也可以,nmixx-lily,NMIXX:nmixx-haewon|NMIXX:nmixx-lily|NMIXX:nmixx-sullyoon|Hearts2Hearts:hearts2hearts-stella|Red Velvet:redvelvet-wendy
+m173,其他,大家互相推薦歌吧（開頭以HAIM〈3am〉為例），想聽更多這類歌,ATEEZ|LE SSERAFIM|ENHYPEN|SEVENTEEN,NMIXX:nmixx-haewon|NCT:nct-haechan|RIIZE:riize-sohee|KISS OF LIFE:kissoflife-haneul|H1-KEY:h1key-riina
+m174,其他,想買一張SEVENTEEN的實體CD來聽，已經有《Love&Letter》改版，現在還買得到的幾張中推薦哪一張,SEVENTEEN,SEVENTEEN:seventeen-jeonghan|SEVENTEEN:seventeen-joshua|SEVENTEEN:seventeen-vernon|SEVENTEEN:seventeen-wonwoo|SEVENTEEN:seventeen-dino
+m175,曲風,求那種「麻辣感」很重又嗨的歌，已知CORTIS〈REDRED〉和Stray Kids〈特〉，最好推薦主打歌,Stray Kids,Stray Kids:straykids-seungmin|Stray Kids:straykids-felix|Stray Kids:straykids-changbin|Hearts2Hearts:hearts2hearts-stella|Stray Kids:straykids-in
+m176,曲風,求有「二代團」感覺的最近舞曲，主打或收錄曲、男團女團都可以,Hearts2Hearts|BABYMONSTER|IVE|KISS OF LIFE|TXT,TWICE:twice-momo|BTS:bts-jimin|TWICE:twice-tzuyu|TWICE:twice-mina|BABYMONSTER:babymonster-ruka
+m178,抽象氛圍,男團的夏天歌有哪些？像〈Coco Bop〉〈Energetic〉〈We Go Up〉〈ISLAND〉那種，都可以說,ATEEZ|Stray Kids|TXT,EXO:exo-baekhyun|BTS:bts-v|SEVENTEEN:seventeen-scoups|EXO:exo-do|NCT:nct-haechan
+m180,曲風,求有國樂感或東洋風的偶像歌，類似SEVENTEEN〈HOME;RUN〉、BLACKPINK〈Crazy Over You〉，服裝和舞台概念也算,bts-suga,BTS:bts-jimin|TXT:txt-taehyun|SEVENTEEN:seventeen-jun|SEVENTEEN:seventeen-scoups|BTS:bts-jungkook
+m181,舞台/舞蹈,不是粉絲但很想去看一次的演唱會有哪些？（自己想去SHINee和DAY6的）,BLACKPINK|IVE|aespa|NCT|RIIZE,RIIZE:riize-eunseok|QWER:qwer-siyeon|BTS:bts-jin|i-dle:idle-miyeon|EXO:exo-chanyeol
+m183,曲風,求偶像歌中偏R&B的歌，類似伯賢〈Betcha〉、海燦〈Adrenaline〉那種,exo-baekhyun|nct-jaehyun|nct-haechan,Stray Kids:straykids-seungmin|NCT:nct-haechan|EXO:exo-baekhyun|RIIZE:riize-sungchan|BTS:bts-jimin
+m184,抽象氛圍,求偶像收錄曲，抒情或輕鬆好入耳（easy listening）的都喜歡,LE SSERAFIM|ATEEZ,Stray Kids:straykids-seungmin|NMIXX:nmixx-haewon|TWICE:twice-jeongyeon|ITZY:itzy-lia|RIIZE:riize-sohee
+m185,曲風,覺得KiiiKiii〈404〉很特別很好聽，求類似風格（House）的歌,LE SSERAFIM|RIIZE,BTS:bts-v|NMIXX:nmixx-haewon|TWICE:twice-chaeyoung|ITZY:itzy-lia|RIIZE:riize-sohee
+m186,其他,四代女團各團的名盤（迷你以上）大家覺得是哪張？每團只選一張（自己選STAYC《YOUNG-LUV.COM》、aespa《MY WORLD》）,aespa|IVE|LE SSERAFIM|NMIXX|KISS OF LIFE,TWICE:twice-tzuyu|TWICE:twice-mina|BLACKPINK:blackpink-lisa|aespa:aespa-ningning|Hearts2Hearts:hearts2hearts-stella
+m188,其他,最近追星很無聊，求可以喜歡上的男團,NCT|Stray Kids|RIIZE|ATEEZ,BTS:bts-jin|BTS:bts-jungkook|SEVENTEEN:seventeen-scoups|RIIZE:riize-eunseok|ENHYPEN:enhypen-jungwon
+m189,舞台/舞蹈,所有K-pop中你心中第一名的舞台是哪個？（自己是《Road to Kingdom》THE BOYZ〈Reveal〉）,EXO,BTS:bts-jungkook|BTS:bts-jhope|BABYMONSTER:babymonster-ahyeon|RIIZE:riize-eunseok|RIIZE:riize-anton
+m191,其他,求偶像個人solo曲，目前歌單有太妍、伯賢、泰民的幾首歌,exo-baekhyun|exo-suho|exo-kai,TXT:txt-taehyun|EXO:exo-baekhyun|TWICE:twice-jeongyeon|Stray Kids:straykids-seungmin|TWICE:twice-dahyun
+m192,其他,大家被要求推薦歌時總推男團歌，想要也推一些女團的歌,IVE|aespa|NMIXX|Red Velvet|ITZY|LE SSERAFIM,TWICE:twice-jeongyeon|NMIXX:nmixx-haewon|TWICE:twice-chaeyoung|NMIXX:nmixx-lily|EXO:exo-baekhyun
+m193,抽象氛圍,偶像歌裡有沒有比較悲傷的歌？粉絲歌（팬송）除外,TWICE|LE SSERAFIM|NMIXX,EXO:exo-baekhyun|Stray Kids:straykids-seungmin|SEVENTEEN:seventeen-jeonghan|RIIZE:riize-wonbin|BTS:bts-jungkook
+m194,抽象氛圍,考試期間覺得只有自己落後很痛苦，求NCT所有能安慰人或加油打氣歌詞的歌，舊歌、退團成員的歌都可以,nct-doyoung,NCT:nct-haechan|NCT:nct-renjun|NCT:nct-doyoung|NMIXX:nmixx-lily|TWICE:twice-jeongyeon
+m196,抽象氛圍,求春天會聽的歌,redvelvet-yeri,BLACKPINK:blackpink-rose|ITZY:itzy-lia|aespa:aespa-giselle|BLACKPINK:blackpink-jisoo|aespa:aespa-winter
+m198,舞台/舞蹈,想學一支女團舞來減肥，求編舞好學的女團歌,TWICE|ITZY,TWICE:twice-jihyo|TWICE:twice-momo|TWICE:twice-dahyun|TWICE:twice-jeongyeon|BLACKPINK:blackpink-lisa
+m213,其他,求RIIZE的情歌（〈One Kiss〉〈Honestly〉〈Love 119〉〈Talk Saxy〉已知）,RIIZE,RIIZE:riize-sohee|RIIZE:riize-wonbin|RIIZE:riize-eunseok|RIIZE:riize-anton|IVE:ive-liz
+m226,聲音/唱腔,說到音色讓人心動的男偶像會想到誰？（自己是陸星材、勝寬、伯賢的合唱）,exo-baekhyun|exo-do|nct-doyoung|nct-haechan|nct-jaehyun|seventeen-dk|bts-jungkook,SEVENTEEN:seventeen-seungkwan|BTS:bts-v|BTS:bts-jin|EXO:exo-suho|BTS:bts-jungkook
+m227,具體成員參照,對ILLIT還不熟，想請大家推薦ILLIT的歌，其他女團也歡迎,ILLIT,ILLIT:illit-minju|ILLIT:illit-yunah|ILLIT:illit-iroha|ILLIT:illit-moka|ILLIT:illit-wonhee
+m228,其他,大家喜歡或推薦的K-pop歌是什麼？女團男團都可以,RIIZE|ENHYPEN,NMIXX:nmixx-haewon|EXO:exo-baekhyun|BTS:bts-jhope|BLACKPINK:blackpink-rose|BTS:bts-jungkook

@@ -1,0 +1,52 @@
+{
+  "ranker": "v2-bge-m3-gemini-only",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "overall": {
+    "artist_hit@3": 0.5,
+    "member_hit@3": 0.3556,
+    "artist_hit@5": 0.6667,
+    "member_hit@5": 0.4222,
+    "artist_mrr": 0.4296,
+    "n": 60.0
+  },
+  "by_type": {
+    "tag": {
+      "artist_hit@3": 0.7333,
+      "member_hit@3": 0.6667,
+      "artist_hit@5": 1.0,
+      "member_hit@5": 0.7333,
+      "artist_mrr": 0.6633,
+      "n": 15.0
+    },
+    "open": {
+      "artist_hit@3": 0.3,
+      "member_hit@3": 0.0,
+      "artist_hit@5": 0.45,
+      "member_hit@5": 0.1667,
+      "artist_mrr": 0.2648,
+      "n": 20.0
+    },
+    "reference": {
+      "artist_hit@3": 0.4,
+      "member_hit@3": 0.4444,
+      "artist_hit@5": 0.4667,
+      "member_hit@5": 0.4444,
+      "artist_mrr": 0.35,
+      "n": 15.0
+    },
+    "negation": {
+      "artist_hit@3": 0.7,
+      "member_hit@3": 0.2222,
+      "artist_hit@5": 0.9,
+      "member_hit@5": 0.2222,
+      "artist_mrr": 0.5283,
+      "n": 10.0
+    }
+  }
+}
