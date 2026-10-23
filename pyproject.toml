@@ -39,6 +39,8 @@ branch = true
 [tool.coverage.report]
 show_missing = true
 skip_covered = true
+# A floor, not a goal: raise it as coverage grows so it never silently drops.
+fail_under = 65
 
 [tool.ruff]
 line-length = 100

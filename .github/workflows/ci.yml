@@ -1,0 +1,63 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Lint and test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.13.5"
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --locked
+
+      - name: Lint
+        run: uv run --no-sync ruff check --output-format=github .
+
+      - name: Check formatting
+        run: uv run --no-sync ruff format --check .
+
+      - name: Test with coverage
+        run: uv run --no-sync pytest --cov --cov-report=term
+
+      - name: Coverage summary
+        if: always()
+        run: uv run --no-sync coverage report --format=markdown >> "$GITHUB_STEP_SUMMARY"
+
+  docker:
+    name: Docker image
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Build image
+        run: docker build -t kpop-agent .
+
+      - name: Smoke test /health
+        run: |
+          docker run -d --name kpop-agent -p 7860:7860 kpop-agent
+          for attempt in $(seq 1 30); do
+            if curl -fsS http://localhost:7860/health; then
+              exit 0
+            fi
+            sleep 1
+          done
+          docker logs kpop-agent
+          exit 1
