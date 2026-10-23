@@ -13,3 +13,8 @@ data/cache/*
 !data/cache/absa/
 !data/cache/absa/*.json
 !data/cache/absa/summary.csv
+.github
+.ruff_cache
+htmlcov
+coverage.xml
+tests

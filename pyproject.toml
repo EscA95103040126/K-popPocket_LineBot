@@ -1,0 +1,57 @@
+[project]
+name = "kpop-agent"
+version = "0.1.0"
+description = "LINE bot for K-pop chart, news and fan-sentiment analysis plus interactive quizzes"
+readme = "README.md"
+requires-python = ">=3.13"
+# Exact pins keep the deployed Space reproducible; uv.lock pins the transitive tree.
+dependencies = [
+    "beautifulsoup4==4.14.3",
+    "certifi==2026.2.25",
+    "flask==3.0.3",
+    "google-generativeai==0.8.3",
+    "gunicorn==23.0.0",
+    "line-bot-sdk==3.14.2",
+    "pillow==12.2.0",
+    "python-dotenv==1.0.1",
+    "requests==2.32.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==8.3.3",
+    "pytest-cov>=6",
+    "ruff==0.17.2",
+]
+
+[tool.uv]
+# An application, not a library: install dependencies only, never build the project.
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.coverage.run]
+source = ["app", "src"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP"]
+# Line length is the formatter's job; it leaves long string literals alone on purpose.
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+# Scripts put the repo root on sys.path before importing project modules.
+"scripts/*" = ["E402"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["src", "app", "tests"]
