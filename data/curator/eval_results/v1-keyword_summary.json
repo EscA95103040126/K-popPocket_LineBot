@@ -1,0 +1,52 @@
+{
+  "ranker": "v1-keyword",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "overall": {
+    "artist_hit@3": 0.3133,
+    "member_hit@3": 0.1333,
+    "artist_hit@5": 0.38,
+    "member_hit@5": 0.2044,
+    "artist_mrr": 0.2352,
+    "n": 60.0
+  },
+  "by_type": {
+    "tag": {
+      "artist_hit@3": 0.5733,
+      "member_hit@3": 0.2133,
+      "artist_hit@5": 0.68,
+      "member_hit@5": 0.3733,
+      "artist_mrr": 0.3948,
+      "n": 15.0
+    },
+    "open": {
+      "artist_hit@3": 0.14,
+      "member_hit@3": 0.05,
+      "artist_hit@5": 0.16,
+      "member_hit@5": 0.05,
+      "artist_mrr": 0.1202,
+      "n": 20.0
+    },
+    "reference": {
+      "artist_hit@3": 0.2533,
+      "member_hit@3": 0.1333,
+      "artist_hit@5": 0.3467,
+      "member_hit@5": 0.1778,
+      "artist_mrr": 0.2328,
+      "n": 15.0
+    },
+    "negation": {
+      "artist_hit@3": 0.36,
+      "member_hit@3": 0.1111,
+      "artist_hit@5": 0.42,
+      "member_hit@5": 0.1556,
+      "artist_mrr": 0.2297,
+      "n": 10.0
+    }
+  }
+}

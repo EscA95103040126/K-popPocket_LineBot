@@ -1,0 +1,117 @@
+qid,type,query,expected,top5
+m001,具體成員參照,剛入坑K-pop的新手，目前喜歡ENHYPEN，想找更多團體和歌曲來聽，男團女團都歡迎推薦,TXT|IVE|ILLIT|Hearts2Hearts,ENHYPEN:enhypen-jungwon|ENHYPEN:enhypen-sunghoon|ENHYPEN:enhypen-jake|ENHYPEN:enhypen-jay|ENHYPEN:enhypen-sunoo
+m002,曲風,想找音樂風格跟ENHYPEN很像的男團，像Sweet Venom、Given-Taken那種重複洗腦又帶暗黑感的歌,exo-kai,Stray Kids:straykids-seungmin|TXT:txt-taehyun|Stray Kids:straykids-in|NCT:nct-haechan|Stray Kids:straykids-felix
+m003,曲風,想找聽起來像TXT或ENHYPEN的團，主要是人聲很突出，說不上來是什麼曲風，就是很平靜、很美、很「好吃」，像一杯調得剛好的綜合果汁；自己已經找到NCT DOJAEJUNG，想要更多類似的,SEVENTEEN|NCT,NCT:nct-haechan|NCT:nct-jaehyun|NCT:nct-doyoung|NCT:nct-renjun|NCT:nct-jaemin
+m004,具體成員參照,有沒有跟ENHYPEN很像的男團可以推薦？,ATEEZ|TXT|Stray Kids,ENHYPEN:enhypen-sunghoon|ENHYPEN:enhypen-jungwon|ENHYPEN:enhypen-jay|ENHYPEN:enhypen-jake|ENHYPEN:enhypen-niki
+m005,具體成員參照,目前只追ENHYPEN一團，想找其他男團來追，求推薦,ATEEZ|BTS|TXT|RIIZE,SEVENTEEN:seventeen-scoups|SEVENTEEN:seventeen-vernon|ATEEZ:ateez-yunho|SEVENTEEN:seventeen-jeonghan|SEVENTEEN:seventeen-mingyu
+m006,抽象氛圍,超愛aespa那種未來感、hyperpop又很有力量的風格，像Dirty Work、Dark Arts、Supernova、Rich Man這幾首，想找概念或聲音氛圍相近的團或單曲,NMIXX|NCT,NMIXX:nmixx-lily|NMIXX:nmixx-haewon|BABYMONSTER:babymonster-asa|NMIXX:nmixx-bae|BLACKPINK:blackpink-lisa
+m007,曲風,想找跟aespa風格相近的音樂推薦,Red Velvet,aespa:aespa-giselle|aespa:aespa-ningning|aespa:aespa-karina|aespa:aespa-winter|ATEEZ:ateez-mingi
+m008,具體成員參照,喜歡aespa、ITZY、BABYMONSTER這類女團，想找同類型的，也能接受偏搖滾的,BLACKPINK|i-dle|MEOVV|LE SSERAFIM|NMIXX|KISS OF LIFE,BABYMONSTER:babymonster-asa|BABYMONSTER:babymonster-rora|BABYMONSTER:babymonster-pharita|BABYMONSTER:babymonster-ruka|BABYMONSTER:babymonster-ahyeon
+m009,其他,目前喜歡aespa，想多認識其他女團，什麼風格都願意試,Red Velvet|TWICE|NMIXX|LE SSERAFIM|ITZY|BLACKPINK|IVE|i-dle|KISS OF LIFE|BABYMONSTER|ILLIT,BLACKPINK:blackpink-lisa|BABYMONSTER:babymonster-asa|NMIXX:nmixx-bae|TWICE:twice-chaeyoung|ITZY:itzy-yeji
+m010,具體成員參照,想找跟LE SSERAFIM類似的女團,IVE|i-dle|KISS OF LIFE|NMIXX|Red Velvet|aespa|TWICE,IVE:ive-rei|IVE:ive-leeseo|TWICE:twice-sana|NMIXX:nmixx-sullyoon|Red Velvet:redvelvet-irene
+m011,具體成員參照,想找跟LE SSERAFIM和NewJeans相似的團,i-dle|IVE|ITZY|aespa|NMIXX,LE SSERAFIM:lesserafim-yunjin|LE SSERAFIM:lesserafim-sakura|LE SSERAFIM:lesserafim-kazuha|LE SSERAFIM:lesserafim-eunchae|LE SSERAFIM:lesserafim-chaewon
+m012,具體成員參照,想找跟NewJeans、LE SSERAFIM風格相近的K-pop團,MEOVV|ILLIT|IVE|ITZY|aespa|NMIXX|H1-KEY,LE SSERAFIM:lesserafim-yunjin|LE SSERAFIM:lesserafim-sakura|LE SSERAFIM:lesserafim-kazuha|LE SSERAFIM:lesserafim-eunchae|LE SSERAFIM:lesserafim-chaewon
+m013,具體成員參照,一直在重複聽LE SSERAFIM、NMIXX、Kep1er這三團，想找類似的團,ITZY|i-dle|TWICE|aespa|ILLIT|Stray Kids,Stray Kids:straykids-seungmin|NCT:nct-jaemin|Stray Kids:straykids-felix|Stray Kids:straykids-changbin|Stray Kids:straykids-in
+m014,具體成員參照,有沒有跟ATEEZ相似的男團？,Stray Kids|NCT|BTS|SEVENTEEN,ATEEZ:ateez-seonghwa|ATEEZ:ateez-hongjoong|ATEEZ:ateez-san|ATEEZ:ateez-wooyoung|ATEEZ:ateez-yunho
+m015,具體成員參照,想找更多像ATEEZ的團，Dreamcatcher已經聽過了,Stray Kids|NCT,ATEEZ:ateez-hongjoong|ATEEZ:ateez-wooyoung|ATEEZ:ateez-jongho|ATEEZ:ateez-yunho|ATEEZ:ateez-seonghwa
+m017,舞台/舞蹈,想找音樂或舞台表演方式像ATEEZ的男團，喜歡那種戲劇性、很拚的舞台感,Stray Kids,RIIZE:riize-shotaro|RIIZE:riize-wonbin|TXT:txt-taehyun|RIIZE:riize-eunseok|RIIZE:riize-anton
+m018,抽象氛圍,喜歡「夢幻、很美」但又帶洗腦rap的女團歌，愛IVE全專、STAYC的STEREOTYPE、TWICE的Between 1&2、KISS OF LIFE近期作品、BABYMONSTER的Forever、IZ*ONE、ILLIT、ITZY、OH MY GIRL，求類似的女團,redvelvet-irene,Hearts2Hearts:hearts2hearts-ian|Hearts2Hearts:hearts2hearts-yuha|Hearts2Hearts:hearts2hearts-ana|BLACKPINK:blackpink-rose|Hearts2Hearts:hearts2hearts-carmen
+m019,抽象氛圍,想找柔和、少女感的女團歌，喜歡Hearts2Hearts、ARTMS、NewJeans、ILLIT、TWICE、STAYC、IVE、RESCENE那種氛圍,Red Velvet|LE SSERAFIM|aespa|ITZY,KISS OF LIFE:kissoflife-belle|KISS OF LIFE:kissoflife-haneul|KISS OF LIFE:kissoflife-julie|H1-KEY:h1key-seoi|ITZY:itzy-ryujin
+m020,具體成員參照,喜歡TWICE的人還適合聽哪些女團？,Hearts2Hearts|ILLIT|QWER|NMIXX|ITZY|MEOVV|BABYMONSTER,TWICE:twice-chaeyoung|TWICE:twice-jeongyeon|TWICE:twice-jihyo|TWICE:twice-mina|TWICE:twice-nayeon
+m021,抽象氛圍,急需女團推薦，平常聽IVE，偏好少女、可愛感的風格,twice-nayeon,IVE:ive-liz|IVE:ive-rei|IVE:ive-leeseo|IVE:ive-wonyoung|IVE:ive-yujin
+m022,其他,想找新的女團來聽，求推薦,IVE|Red Velvet,TWICE:twice-jeongyeon|BABYMONSTER:babymonster-ruka|TWICE:twice-chaeyoung|BABYMONSTER:babymonster-pharita|BABYMONSTER:babymonster-ahyeon
+m023,具體成員參照,還有沒有像Stray Kids這樣的男團可以推薦？,ATEEZ|NCT,Stray Kids:straykids-felix|Stray Kids:straykids-seungmin|Stray Kids:straykids-in|Stray Kids:straykids-hyunjin|Stray Kids:straykids-bangchan
+m024,曲風,想找很「吵」、noise music感重的團，像Stray Kids、ALL(H)OURS、P1Harmony、ATEEZ那種,NCT|NMIXX|aespa,BABYMONSTER:babymonster-ahyeon|BABYMONSTER:babymonster-asa|BABYMONSTER:babymonster-rora|TXT:txt-taehyun|BABYMONSTER:babymonster-pharita
+m142,舞台/舞蹈,朋友想入坑ATEEZ，該推薦哪些舞台或歌曲給他,ATEEZ,ATEEZ:ateez-mingi|ATEEZ:ateez-wooyoung|ATEEZ:ateez-hongjoong|ATEEZ:ateez-san|ATEEZ:ateez-yunho
+m199,曲風,想找類似aespa〈Supernova〉或〈Cyberpunk〉那種未來感、重低音的歌,exo-kai,BABYMONSTER:babymonster-rora|BTS:bts-v|ILLIT:illit-minju|RIIZE:riize-wonbin|BABYMONSTER:babymonster-asa
+m200,曲風,喜歡QWER〈고민중독〉(g9jb)，求類似的搖滾可愛風歌曲,QWER,NMIXX:nmixx-haewon|BTS:bts-v|NMIXX:nmixx-jiwoo|BTS:bts-jin|BTS:bts-suga
+m201,抽象氛圍,求「黑暗」概念的男團歌,ATEEZ,TXT:txt-taehyun|TXT:txt-beomgyu|TXT:txt-yeonjun|TXT:txt-hueningkai|EXO:exo-baekhyun
+m202,曲風,求像ATEEZ〈Dune〉那樣帶古典取樣、反烏托邦感的歌,bts-suga,RIIZE:riize-wonbin|i-dle:idle-minnie|RIIZE:riize-sohee|i-dle:idle-miyeon|RIIZE:riize-anton
+m203,曲風,求類似ATEEZ〈HALAZIA〉的歌,ATEEZ,RIIZE:riize-sohee|RIIZE:riize-wonbin|RIIZE:riize-anton|ITZY:itzy-lia|RIIZE:riize-eunseok
+m204,抽象氛圍,很愛黑暗系男團歌（也喜歡INFINITE），求推薦,EXO|ENHYPEN|ATEEZ,TXT:txt-taehyun|TXT:txt-yeonjun|ENHYPEN:enhypen-jake|TXT:txt-hueningkai|ENHYPEN:enhypen-jungwon
+m205,曲風,求聽起來像樂團歌的K-pop，最好是女團,QWER|H1-KEY|ITZY|TWICE,BLACKPINK:blackpink-rose|NMIXX:nmixx-haewon|BLACKPINK:blackpink-jisoo|TWICE:twice-chaeyoung|NMIXX:nmixx-sullyoon
+m206,抽象氛圍,求聽起來有未來感的女團歌,aespa|ITZY,ILLIT:illit-minju|ILLIT:illit-wonhee|ILLIT:illit-moka|TWICE:twice-jeongyeon|ILLIT:illit-yunah
+m207,曲風,求類似IVE〈I AM〉那種自信、振奮的歌,IVE|TWICE,LE SSERAFIM:lesserafim-chaewon|RIIZE:riize-sohee|i-dle:idle-minnie|LE SSERAFIM:lesserafim-yunjin|i-dle:idle-miyeon
+m208,抽象氛圍,求振奮人心、有自信能量的女團歌,ITZY|aespa|IVE|i-dle|TWICE,TWICE:twice-jeongyeon|IVE:ive-liz|H1-KEY:h1key-seoi|IVE:ive-yujin|IVE:ive-rei
+m209,聲音/唱腔,求唱歌時聲音沙啞（raspy）的偶像,txt-taehyun,Stray Kids:straykids-seungmin|TWICE:twice-jeongyeon|Stray Kids:straykids-in|Stray Kids:straykids-felix|TWICE:twice-chaeyoung
+m210,聲音/唱腔,求聲音很有辨識度、獨特的男偶像,nct-haechan|straykids-felix|enhypen-jungwon|ateez-mingi|exo-do,SEVENTEEN:seventeen-vernon|SEVENTEEN:seventeen-wonwoo|SEVENTEEN:seventeen-jeonghan|SEVENTEEN:seventeen-jun|EXO:exo-baekhyun
+m211,曲風,求類似Hearts2Hearts〈The Chase〉那種Y2K、空靈R&B感的歌,twice-chaeyoung,KISS OF LIFE:kissoflife-haneul|TXT:txt-taehyun|BTS:bts-v|Stray Kids:straykids-in|BTS:bts-jimin
+m212,曲風,求類似IVE〈I AM〉〈Blue Heart〉〈Eleven〉的歌,aespa|ITZY|Red Velvet|i-dle|BABYMONSTER|TWICE,Red Velvet:redvelvet-irene|ILLIT:illit-wonhee|ILLIT:illit-moka|ILLIT:illit-minju|Red Velvet:redvelvet-wendy
+m215,曲風,求類似MEOVV〈Toxic〉那種空靈、夢幻的慢歌,redvelvet-irene|exo-do,ILLIT:illit-moka|ILLIT:illit-minju|IVE:ive-leeseo|NMIXX:nmixx-sullyoon|IVE:ive-wonyoung
+m216,抽象氛圍,超想要類似KISS OF LIFE〈Igloo〉那種慵懶、帶點嗆的自信歌,aespa|LE SSERAFIM|BABYMONSTER|i-dle|IVE|ITZY,IVE:ive-liz|IVE:ive-rei|IVE:ive-leeseo|IVE:ive-gaeul|IVE:ive-yujin
+m217,曲風,求類似RIIZE〈Impossible〉的house風歌,NCT|TXT|LE SSERAFIM|ATEEZ,ITZY:itzy-ryujin|ILLIT:illit-iroha|ILLIT:illit-moka|ATEEZ:ateez-san|TXT:txt-taehyun
+m218,曲風,求慢節奏、性感的R&B／抒情K-pop,exo-baekhyun|exo-kai,KISS OF LIFE:kissoflife-julie|KISS OF LIFE:kissoflife-haneul|NMIXX:nmixx-haewon|NMIXX:nmixx-kyujin|KISS OF LIFE:kissoflife-natty
+m219,曲風,求貝斯線很groovy的歌,Red Velvet|TWICE|LE SSERAFIM|EXO,MEOVV:meovv-gawon|MEOVV:meovv-ella|RIIZE:riize-wonbin|MEOVV:meovv-sooin|KISS OF LIFE:kissoflife-haneul
+m220,曲風,求類似〈Igloo〉和〈Chemistry〉的歌,exo-baekhyun,ILLIT:illit-minju|ILLIT:illit-iroha|TXT:txt-beomgyu|ILLIT:illit-moka|ILLIT:illit-wonhee
+m221,其他,想入坑一個四代女團，求推薦,NMIXX|ITZY|IVE|LE SSERAFIM,BLACKPINK:blackpink-jisoo|KISS OF LIFE:kissoflife-julie|BLACKPINK:blackpink-jennie|TWICE:twice-jeongyeon|KISS OF LIFE:kissoflife-belle
+m222,抽象氛圍,求像SEVENTEEN〈HIT〉那樣能給人能量的歌,ATEEZ|TWICE|Stray Kids,BTS:bts-jimin|BTS:bts-jhope|RIIZE:riize-wonbin|ILLIT:illit-moka|BTS:bts-jungkook
+m223,曲風,讀書用，求最吵、最嘈雜、最有能量的K-pop歌,Stray Kids|ATEEZ|NCT,Stray Kids:straykids-in|BTS:bts-jungkook|BTS:bts-jimin|Stray Kids:straykids-seungmin|EXO:exo-baekhyun
+m224,抽象氛圍,要剪一支影片，求girl crush風的女團歌,aespa|ITZY|BLACKPINK|LE SSERAFIM,ITZY:itzy-ryujin|ITZY:itzy-lia|TWICE:twice-chaeyoung|TWICE:twice-jeongyeon|Hearts2Hearts:hearts2hearts-ian
+m225,曲風,求類似KISS OF LIFE〈Igloo〉和KARINA〈UP〉的歌,aespa|TWICE,ITZY:itzy-yuna|ITZY:itzy-lia|TWICE:twice-sana|ITZY:itzy-ryujin|TWICE:twice-chaeyoung
+m230,曲風,求類似ENHYPEN〈Bite Me〉的歌,Stray Kids|BTS|ENHYPEN|NMIXX|ATEEZ,ITZY:itzy-ryujin|NMIXX:nmixx-bae|aespa:aespa-ningning|aespa:aespa-giselle|NMIXX:nmixx-haewon
+m231,曲風,求類似NMIXX初期主打那種曲風劇烈轉換的歌,aespa|Stray Kids|Red Velvet,TXT:txt-taehyun|TXT:txt-yeonjun|TXT:txt-hueningkai|BTS:bts-jimin|TXT:txt-beomgyu
+m232,曲風,除了TXT〈Sugar Rush Ride〉，還有什麼類似的歌？,ENHYPEN,ITZY:itzy-ryujin|ITZY:itzy-lia|BTS:bts-suga|ITZY:itzy-yuna|BTS:bts-v
+m233,曲風,求類似Stray Kids〈Chk Chk Boom〉的歌,ITZY|ATEEZ|LE SSERAFIM|Stray Kids|SEVENTEEN|BTS|NCT|TXT|BLACKPINK,BABYMONSTER:babymonster-chiquita|BABYMONSTER:babymonster-rami|TXT:txt-beomgyu|TXT:txt-taehyun|BABYMONSTER:babymonster-rora
+m234,曲風,很想找類似BABYMONSTER〈DRIP〉或CLASS:y〈ZEALOUS〉那種不在乎的態度、很好跳的歌,LE SSERAFIM|aespa|BLACKPINK,ITZY:itzy-lia|Stray Kids:straykids-felix|ITZY:itzy-chaeryeong|Stray Kids:straykids-seungmin|Stray Kids:straykids-in
+m235,曲風,求類似TXT〈Sugar Rush Ride〉的歌，但要的是副歌以外那種夏日、魔幻的吉他編曲感,TXT|ENHYPEN,RIIZE:riize-sohee|BTS:bts-v|RIIZE:riize-wonbin|RIIZE:riize-sungchan|RIIZE:riize-shotaro
+m236,曲風,有沒有類似ATEEZ〈WORK〉的歌？,Stray Kids|NCT|i-dle|ATEEZ,ITZY:itzy-ryujin|ITZY:itzy-yeji|ITZY:itzy-lia|TXT:txt-taehyun|ITZY:itzy-chaeryeong
+m237,具體成員參照,剛成為NMIXX新粉，求推薦,NMIXX,NMIXX:nmixx-haewon|NMIXX:nmixx-lily|NMIXX:nmixx-kyujin|NMIXX:nmixx-bae|NMIXX:nmixx-jiwoo
+m238,具體成員參照,求BABYMONSTER的歌和內容推薦,BABYMONSTER,BABYMONSTER:babymonster-rora|BABYMONSTER:babymonster-rami|BABYMONSTER:babymonster-ruka|BABYMONSTER:babymonster-pharita|BABYMONSTER:babymonster-chiquita
+m239,曲風,求更多類似aespa〈Whiplash〉的歌,aespa-karina,ITZY:itzy-lia|NMIXX:nmixx-haewon|ITZY:itzy-yeji|ITZY:itzy-yuna|NMIXX:nmixx-lily
+m240,曲風,求類似THE BOYZ〈D.D.D〉或TXT〈No Rules〉的歌,TWICE|Red Velvet|TXT|IVE,SEVENTEEN:seventeen-dk|ATEEZ:ateez-jongho|SEVENTEEN:seventeen-scoups|ATEEZ:ateez-yunho|SEVENTEEN:seventeen-wonwoo
+m241,抽象氛圍,求像IVE〈REBEL HEART〉那樣帶點憤怒、卻又很痛快的歌,RIIZE|ENHYPEN|NMIXX|KISS OF LIFE|i-dle|TWICE|BLACKPINK,RIIZE:riize-sohee|RIIZE:riize-wonbin|Red Velvet:redvelvet-joy|Red Velvet:redvelvet-irene|Red Velvet:redvelvet-wendy
+m242,抽象氛圍,求類似fromis_9〈Attitude〉那種帥氣、自信的歌,IVE,RIIZE:riize-wonbin|RIIZE:riize-sohee|RIIZE:riize-eunseok|IVE:ive-liz|RIIZE:riize-anton
+m243,曲風,求類似Red Velvet〈Psycho〉、NMIXX〈Cool〉那種以弦樂為主、比較chill的歌,Red Velvet|ITZY|TWICE,Hearts2Hearts:hearts2hearts-stella|ILLIT:illit-minju|ILLIT:illit-moka|TXT:txt-taehyun|TXT:txt-beomgyu
+m244,抽象氛圍,求類似SEVENTEEN〈音樂의 神〉那種明亮、清爽、歡快的歌,SEVENTEEN|EXO,Red Velvet:redvelvet-wendy|BTS:bts-jimin|Red Velvet:redvelvet-joy|Stray Kids:straykids-seungmin|BTS:bts-jungkook
+m245,具體成員參照,剛成為CARAT（SEVENTEEN新粉），求推薦歌曲,SEVENTEEN,SEVENTEEN:seventeen-wonwoo|SEVENTEEN:seventeen-vernon|SEVENTEEN:seventeen-seungkwan|SEVENTEEN:seventeen-dk|SEVENTEEN:seventeen-scoups
+m246,具體成員參照,喜歡i-dle〈Lion〉但不喜歡〈TOMBOY〉〈Nxde〉，求推薦他們的歌,idle-soyeon,i-dle:idle-minnie|i-dle:idle-soyeon|i-dle:idle-miyeon|i-dle:idle-yuqi|i-dle:idle-shuhua
+m247,抽象氛圍,求類似ITZY〈Not Shy〉〈WANNABE〉那種提升自信的歌,BLACKPINK|LE SSERAFIM,RIIZE:riize-wonbin|IVE:ive-liz|IVE:ive-yujin|RIIZE:riize-sohee|IVE:ive-rei
+m248,抽象氛圍,求類似IVE〈Kitsch〉那種俏皮、自信、不在意別人眼光的歌,aespa|NMIXX|ITZY|LE SSERAFIM,ITZY:itzy-lia|TWICE:twice-chaeyoung|ITZY:itzy-ryujin|ILLIT:illit-minju|ILLIT:illit-wonhee
+m249,曲風,求類似i-dle〈TOMBOY〉的歌,ITZY,ITZY:itzy-ryujin|ITZY:itzy-yeji|ITZY:itzy-lia|ITZY:itzy-chaeryeong|IVE:ive-rei
+m250,抽象氛圍,求類似tripleS〈Girls Never Die〉、i-dle〈Revenge〉〈TOMBOY〉的歌,idle-soyeon,TWICE:twice-jihyo|ITZY:itzy-ryujin|TWICE:twice-jeongyeon|ITZY:itzy-yeji|ITZY:itzy-lia
+m251,曲風,求類似SEULGI〈Anywhere But Home〉的K-pop歌,LE SSERAFIM,NMIXX:nmixx-sullyoon|NMIXX:nmixx-haewon|EXO:exo-baekhyun|TWICE:twice-dahyun|NMIXX:nmixx-lily
+m253,曲風,求類似IVE〈OTT〉、ILLIT〈Magnetic〉那種輕快洗腦的歌，男團女團都歡迎,TWICE|NMIXX,BTS:bts-jimin|BTS:bts-v|BTS:bts-jin|BTS:bts-jungkook|BTS:bts-jhope
+m254,曲風,什麼K-pop歌適合跟BTS〈血汗淚〉放在同一個歌單？,BTS|ENHYPEN|Stray Kids,BTS:bts-jungkook|BTS:bts-jimin|BTS:bts-jhope|BTS:bts-jin|BTS:bts-v
+m255,抽象氛圍,求類似RIIZE〈Love 119〉那種校園初戀情歌,NCT|Stray Kids|SEVENTEEN|BTS,IVE:ive-rei|ITZY:itzy-ryujin|IVE:ive-liz|KISS OF LIFE:kissoflife-belle|IVE:ive-leeseo
+m256,曲風,求跟RIIZE的歌風格相近的歌,NCT|EXO|ENHYPEN|SEVENTEEN,RIIZE:riize-sohee|RIIZE:riize-wonbin|RIIZE:riize-eunseok|RIIZE:riize-shotaro|RIIZE:riize-anton
+m257,曲風,求更多類似ATEEZ〈BOUNCY〉的歌,ATEEZ|NCT|SEVENTEEN,ITZY:itzy-ryujin|RIIZE:riize-sohee|RIIZE:riize-eunseok|ITZY:itzy-lia|RIIZE:riize-wonbin
+m259,曲風,求類似NCT 127〈Sticker〉那種古怪、實驗性的歌,NCT|EXO|Stray Kids,NCT:nct-jaehyun|NCT:nct-haechan|Stray Kids:straykids-in|Stray Kids:straykids-changbin|NCT:nct-taeyong
+m260,抽象氛圍,求類似RIIZE〈Love 119〉的歌，喜歡那種90年代校園初戀的感覺,NCT,IVE:ive-rei|ITZY:itzy-ryujin|KISS OF LIFE:kissoflife-belle|IVE:ive-liz|KISS OF LIFE:kissoflife-julie
+m261,具體成員參照,求類似〈Crazy Form〉和〈BOUNCY〉的ATEEZ歌,ATEEZ,ITZY:itzy-ryujin|TXT:txt-taehyun|ITZY:itzy-yuna|ITZY:itzy-chaeryeong|ITZY:itzy-yeji
+m262,曲風,求類似ATEEZ〈Inception〉、BTS〈血汗淚〉的歌,exo-baekhyun|ateez-wooyoung,TXT:txt-taehyun|RIIZE:riize-sohee|RIIZE:riize-wonbin|TXT:txt-hueningkai|RIIZE:riize-eunseok
+m263,曲風,有沒有類似aespa〈Drama〉的歌推薦？,nct-taeyong,ITZY:itzy-lia|ITZY:itzy-yeji|ITZY:itzy-chaeryeong|ITZY:itzy-yuna|BTS:bts-jimin
+m264,曲風,求類似KISS OF LIFE〈Midas Touch〉那種2000年代流行舞曲感的歌,i-dle,TWICE:twice-momo|TWICE:twice-mina|TWICE:twice-tzuyu|TWICE:twice-dahyun|TWICE:twice-chaeyoung
+m265,曲風,其他團體有沒有類似KISS OF LIFE〈Sticky〉的歌？各世代、男女團都可以，最好是女團,TWICE|LE SSERAFIM|aespa,TWICE:twice-chaeyoung|TWICE:twice-dahyun|TWICE:twice-nayeon|TWICE:twice-jeongyeon|TWICE:twice-sana
+m267,曲風,求類似Stray Kids〈樂(LALALALA)〉的歌,aespa|BABYMONSTER,BABYMONSTER:babymonster-rora|ITZY:itzy-lia|ILLIT:illit-moka|BTS:bts-jungkook|BABYMONSTER:babymonster-rami
+m268,曲風,有什麼女團歌類似BLACKPINK〈Shut Down〉？,BABYMONSTER|i-dle|ITZY|aespa|LE SSERAFIM|TWICE,TWICE:twice-jeongyeon|BABYMONSTER:babymonster-rami|TWICE:twice-chaeyoung|ITZY:itzy-lia|TWICE:twice-mina
+m269,具體成員參照,求類似〈Let Me In〉的EXO歌,EXO,NMIXX:nmixx-haewon|BTS:bts-jimin|BTS:bts-jin|NMIXX:nmixx-bae|NMIXX:nmixx-sullyoon
+m270,曲風,求類似這幾首EXO R&B抒情曲的歌,exo-baekhyun,EXO:exo-baekhyun|EXO:exo-do|EXO:exo-chanyeol|EXO:exo-suho|RIIZE:riize-wonbin
+m271,聲音/唱腔,需要唱功很強的抒情曲,redvelvet-wendy,RIIZE:riize-wonbin|RIIZE:riize-sohee|RIIZE:riize-eunseok|IVE:ive-liz|TWICE:twice-jihyo
+m272,曲風,求類似STAYC〈YOUNG-LUV〉和BLACKPINK〈Lovesick Girls〉的歌,redvelvet-joy,TWICE:twice-chaeyoung|Stray Kids:straykids-seungmin|TWICE:twice-jeongyeon|Stray Kids:straykids-hyunjin|TWICE:twice-tzuyu
+m273,曲風,有沒有類似ENHYPEN〈Knife〉（Jake版）或aespa〈Dirty Work〉的歌？,IVE,NMIXX:nmixx-haewon|NMIXX:nmixx-bae|NMIXX:nmixx-sullyoon|NMIXX:nmixx-jiwoo|ITZY:itzy-lia
+m274,曲風,想多找跟RIIZE風格一樣的K-pop歌,RIIZE|NCT,ITZY:itzy-ryujin|ITZY:itzy-lia|ITZY:itzy-chaeryeong|ITZY:itzy-yeji|NMIXX:nmixx-bae
+m275,曲風,哪些K-pop團體的聲音跟RIIZE相近？,NCT|SEVENTEEN,RIIZE:riize-sohee|RIIZE:riize-eunseok|RIIZE:riize-wonbin|RIIZE:riize-anton|ITZY:itzy-ryujin
+m276,曲風,求類似RIIZE〈Impossible〉的歌,NCT|TXT|LE SSERAFIM,ITZY:itzy-ryujin|ILLIT:illit-moka|ITZY:itzy-lia|ITZY:itzy-yeji|ILLIT:illit-iroha
+m277,曲風,除了NMIXX之外，還有其他「Mixx pop」拼貼曲風的歌嗎？非K-pop也可以,Red Velvet|aespa,TXT:txt-yeonjun|TXT:txt-beomgyu|TXT:txt-taehyun|TXT:txt-hueningkai|TWICE:twice-chaeyoung
+m278,曲風,求類似NMIXX〈Papillon〉的歌,nct-ten,ILLIT:illit-minju|TXT:txt-taehyun|BABYMONSTER:babymonster-pharita|ENHYPEN:enhypen-jungwon|BABYMONSTER:babymonster-rami
+m279,曲風,還有哪些歌類似NMIXX〈High Horse〉？,i-dle|NMIXX,TXT:txt-taehyun|TXT:txt-yeonjun|TXT:txt-soobin|TXT:txt-hueningkai|TXT:txt-beomgyu
+m280,曲風,求類似ATEEZ的歌,Stray Kids,RIIZE:riize-sohee|RIIZE:riize-wonbin|TXT:txt-taehyun|ITZY:itzy-yeji|ITZY:itzy-ryujin
+m282,曲風,有沒有聽起來像Hearts2Hearts〈RUDE!〉的歌？,RIIZE|SEVENTEEN|NMIXX,Hearts2Hearts:hearts2hearts-stella|Hearts2Hearts:hearts2hearts-yuha|Hearts2Hearts:hearts2hearts-ana|Hearts2Hearts:hearts2hearts-carmen|Hearts2Hearts:hearts2hearts-juun
+m283,曲風,求類似Hearts2Hearts〈FOCUS〉和〈Apple Pie〉的歌,TXT|ILLIT|NMIXX|IVE|Red Velvet,TWICE:twice-chaeyoung|TWICE:twice-dahyun|TWICE:twice-nayeon|TWICE:twice-jeongyeon|BTS:bts-jungkook
+m285,曲風,求類似LE SSERAFIM〈Sonder〉和MEOVV〈Revenge〉的歌,NMIXX|MEOVV|Red Velvet,Red Velvet:redvelvet-wendy|aespa:aespa-ningning|Red Velvet:redvelvet-seulgi|aespa:aespa-winter|Red Velvet:redvelvet-joy
+m286,曲風,求類似MEOVV〈Hit 'Em〉的歌,aespa|i-dle,NMIXX:nmixx-haewon|BTS:bts-jimin|ATEEZ:ateez-hongjoong|ATEEZ:ateez-mingi|ATEEZ:ateez-wooyoung
+m287,曲風,有哪些K-pop團體跟NMIXX相似？,Red Velvet|NCT|Hearts2Hearts,NMIXX:nmixx-haewon|NMIXX:nmixx-kyujin|NMIXX:nmixx-lily|NMIXX:nmixx-bae|NMIXX:nmixx-jiwoo
+m288,曲風,求類似Hearts2Hearts〈The Chase〉的歌,NMIXX|TWICE,ATEEZ:ateez-yunho|ATEEZ:ateez-san|BTS:bts-jimin|ITZY:itzy-lia|ATEEZ:ateez-hongjoong
+m289,曲風,想找有J-pop感的K-pop歌,QWER|i-dle|TWICE,NMIXX:nmixx-haewon|BTS:bts-jhope|NMIXX:nmixx-lily|TWICE:twice-jeongyeon|NMIXX:nmixx-jiwoo
+m290,曲風,求類似ATEEZ〈Bouncy〉〈Crazy Form〉、TXT〈Deja Vu〉〈Quarter Life〉和V〈FRI(END)S〉的歌,Stray Kids|ATEEZ,ITZY:itzy-ryujin|ITZY:itzy-lia|RIIZE:riize-wonbin|ITZY:itzy-yeji|RIIZE:riize-anton
+m291,曲風,還有其他K-pop歌像ATEEZ的〈On The Road〉和〈Enough〉嗎？,ATEEZ,ITZY:itzy-ryujin|ITZY:itzy-lia|RIIZE:riize-sohee|ITZY:itzy-yeji|NMIXX:nmixx-haewon
+m294,曲風,求類似H1-KEY〈Athletic Girl〉那種充滿活力的歌,TWICE|i-dle|aespa|ITZY|IVE|NMIXX,NMIXX:nmixx-lily|NMIXX:nmixx-haewon|ILLIT:illit-yunah|ILLIT:illit-iroha|ILLIT:illit-moka
+m295,曲風,有沒有H1-KEY那種聲音的歌？,i-dle|Red Velvet|TWICE,Hearts2Hearts:hearts2hearts-stella|Hearts2Hearts:hearts2hearts-yuha|QWER:qwer-siyeon|Hearts2Hearts:hearts2hearts-ana|Hearts2Hearts:hearts2hearts-carmen
+m296,曲風,求類似H1-KEY〈Rose Blossom〉的歌,aespa,BLACKPINK:blackpink-rose|Red Velvet:redvelvet-joy|Red Velvet:redvelvet-wendy|Hearts2Hearts:hearts2hearts-yuha|Hearts2Hearts:hearts2hearts-stella
+m299,抽象氛圍,求類似ILLIT〈Midnight Fiction〉那種夢幻氛圍的歌,Hearts2Hearts|TXT|LE SSERAFIM|IVE,TXT:txt-yeonjun|TXT:txt-taehyun|TXT:txt-hueningkai|TXT:txt-soobin|TXT:txt-beomgyu
+m300,曲風,還有其他團體的音樂跟ILLIT相似嗎？,NCT,ITZY:itzy-ryujin|ITZY:itzy-chaeryeong|ITZY:itzy-lia|ITZY:itzy-yeji|i-dle:idle-minnie
+m301,曲風,想找類似ILLIT的團體,Hearts2Hearts|TWICE,i-dle:idle-minnie|ITZY:itzy-ryujin|TXT:txt-taehyun|TXT:txt-yeonjun|NCT:nct-jaemin
+m303,曲風,求類似IVE〈Accendio〉和〈Blue Heart〉的歌,Red Velvet|ITZY|aespa|KISS OF LIFE|NCT|Stray Kids,Red Velvet:redvelvet-irene|ILLIT:illit-wonhee|ILLIT:illit-moka|Red Velvet:redvelvet-wendy|ILLIT:illit-minju
+m304,曲風,還有其他類似ILLIT的團體嗎？,Hearts2Hearts|NCT,ITZY:itzy-ryujin|ITZY:itzy-chaeryeong|ITZY:itzy-yeji|i-dle:idle-minnie|NCT:nct-jaemin
+m305,抽象氛圍,求類似ILLIT〈Midnight Fiction〉的歌,Hearts2Hearts|Red Velvet|LE SSERAFIM,TXT:txt-yeonjun|TXT:txt-taehyun|TXT:txt-hueningkai|TXT:txt-soobin|TXT:txt-beomgyu
+m306,曲風,有沒有聽起來像J-pop的K-pop或搖滾歌？,NCT,NMIXX:nmixx-haewon|BTS:bts-jhope|NMIXX:nmixx-lily|NMIXX:nmixx-sullyoon|BTS:bts-jungkook

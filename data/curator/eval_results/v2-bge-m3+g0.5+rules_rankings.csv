@@ -1,0 +1,61 @@
+qid,type,query,expected,top5
+q001,tag,想追舞跳得很強、動作又乾淨俐落的女團成員,twice-momo|itzy-chaeryeong,TWICE:twice-mina|TWICE:twice-momo|BLACKPINK:blackpink-lisa|TWICE:twice-jihyo|ITZY:itzy-ryujin
+q002,tag,有沒有唱功很穩、高音很厲害的女團主唱？,nmixx-lily|redvelvet-wendy,BLACKPINK:blackpink-rose|TWICE:twice-jeongyeon|TWICE:twice-jihyo|BLACKPINK:blackpink-jisoo|H1-KEY:h1key-riina
+q003,tag,推薦饒舌很有氣勢的女偶像給我,idle-soyeon|babymonster-asa,TWICE:twice-chaeyoung|i-dle:idle-soyeon|i-dle:idle-yuqi|i-dle:idle-shuhua|ITZY:itzy-ryujin
+q004,tag,我喜歡甜甜的、笑起來很有感染力的女生,twice-sana|twice-nayeon,TWICE:twice-sana|KISS OF LIFE:kissoflife-julie|TWICE:twice-nayeon|TWICE:twice-dahyun|TWICE:twice-jeongyeon
+q005,tag,想找氣質優雅、長相清冷的女團成員,redvelvet-irene|twice-mina,TWICE:twice-jeongyeon|TWICE:twice-mina|Hearts2Hearts:hearts2hearts-ana|ILLIT:illit-minju|i-dle:idle-miyeon
+q006,tag,女團有誰是貓系長相，站上台又很帥的？,aespa-karina|itzy-yeji,TWICE:twice-chaeyoung|TWICE:twice-nayeon|TWICE:twice-mina|TWICE:twice-sana|TWICE:twice-tzuyu
+q007,tag,想看很有綜藝感、講話好笑的女偶像,nmixx-haewon|twice-dahyun,i-dle:idle-yuqi|NMIXX:nmixx-haewon|i-dle:idle-soyeon|TWICE:twice-dahyun|i-dle:idle-minnie
+q008,tag,想追開朗、有領導力的女團隊長,ive-yujin|twice-jihyo,i-dle:idle-soyeon|i-dle:idle-shuhua|H1-KEY:h1key-seoi|QWER:qwer-chodan|Red Velvet:redvelvet-irene
+q009,tag,求舞蹈強又有性感魅力的男偶像,exo-kai|nct-ten,TXT:txt-yeonjun|EXO:exo-kai|SEVENTEEN:seventeen-the8|ATEEZ:ateez-yunho|BTS:bts-jimin
+q010,tag,男團裡高音強、唱歌很有爆發力的主唱有誰,ateez-jongho|exo-baekhyun,EXO:exo-baekhyun|NCT:nct-doyoung|SEVENTEEN:seventeen-seungkwan|SEVENTEEN:seventeen-dk|BTS:bts-jungkook
+q011,tag,喜歡饒舌有力量、也會自己寫詞的男生,bts-rm|straykids-changbin,SEVENTEEN:seventeen-vernon|SEVENTEEN:seventeen-wonwoo|BTS:bts-rm|SEVENTEEN:seventeen-seungkwan|EXO:exo-chanyeol
+q012,tag,想找聲音低沉，很有辨識度的男團成員,straykids-felix|bts-v,SEVENTEEN:seventeen-wonwoo|BTS:bts-v|Stray Kids:straykids-felix|SEVENTEEN:seventeen-jeonghan|SEVENTEEN:seventeen-joshua
+q013,tag,推薦外向又搞笑的男偶像，我想看綜藝,seventeen-seungkwan|bts-jin,SEVENTEEN:seventeen-vernon|SEVENTEEN:seventeen-seungkwan|SEVENTEEN:seventeen-jun|SEVENTEEN:seventeen-wonwoo|SEVENTEEN:seventeen-the8
+q014,tag,有沒有安靜一點、外表冷冷的男團成員？,enhypen-sunghoon|seventeen-wonwoo,RIIZE:riize-eunseok|TXT:txt-taehyun|SEVENTEEN:seventeen-jun|EXO:exo-sehun|SEVENTEEN:seventeen-jeonghan
+q015,tag,我會被有創作才華、會作曲製作的男偶像吸引,seventeen-woozi|bts-suga,BTS:bts-jin|Stray Kids:straykids-bangchan|BTS:bts-v|Stray Kids:straykids-changbin|SEVENTEEN:seventeen-the8
+q016,open,想找聲音像冰過的薄荷糖，亮亮的又有一點冷感的女生,aespa-winter,TWICE:twice-jeongyeon|ILLIT:illit-minju|Hearts2Hearts:hearts2hearts-ian|TWICE:twice-sana|TWICE:twice-mina
+q017,open,晚上搭末班車想戴耳機聽一個女生唱歌，有點沙沙的、像抱著吉他說心事那樣,blackpink-rose,aespa:aespa-giselle|aespa:aespa-ningning|Hearts2Hearts:hearts2hearts-carmen|KISS OF LIFE:kissoflife-haneul|QWER:qwer-siyeon
+q018,open,最近上班好累，想找歌裡有那種陪你再撐一下的感覺的女團,H1-KEY,TWICE:twice-jeongyeon|TWICE:twice-chaeyoung|TWICE:twice-jihyo|NMIXX:nmixx-haewon|IVE:ive-liz
+q019,open,想找會讓我想到動畫片尾曲跟放學後社團練團的女生樂團,QWER,TWICE:twice-chaeyoung|Hearts2Hearts:hearts2hearts-yuha|QWER:qwer-chodan|TWICE:twice-mina|IVE:ive-rei
+q020,open,有沒有歌聽起來像走進漂亮但有點詭異的童話屋的女團,Red Velvet,TWICE:twice-chaeyoung|TWICE:twice-mina|BABYMONSTER:babymonster-pharita|NMIXX:nmixx-sullyoon|ILLIT:illit-minju
+q021,open,想找像少女做了一場粉紅色白日夢、輕輕飄起來的女團,ILLIT,TWICE:twice-mina|BABYMONSTER:babymonster-pharita|TWICE:twice-chaeyoung|TWICE:twice-jeongyeon|TWICE:twice-tzuyu
+q022,open,想看那種一進場就像知道自己是主角的女生，有點美式派對的自信,kissoflife-julie|kissoflife-natty,IVE:ive-wonyoung|NMIXX:nmixx-lily|TWICE:twice-nayeon|KISS OF LIFE:kissoflife-julie|ITZY:itzy-ryujin
+q023,open,喜歡站著就像芭蕾教室窗邊那道光的女生，姿態很舒展、氣質乾淨,lesserafim-kazuha|twice-mina,LE SSERAFIM:lesserafim-kazuha|TWICE:twice-mina|ILLIT:illit-iroha|ILLIT:illit-wonhee|i-dle:idle-shuhua
+q024,open,想追會把自己的困惑寫進歌裡，像翻開她私人日記的女偶像,lesserafim-yunjin,i-dle:idle-miyeon|TWICE:twice-chaeyoung|i-dle:idle-minnie|NMIXX:nmixx-lily|NMIXX:nmixx-haewon
+q025,open,有沒有女生的聲音像帶顆粒的黑咖啡，講起話來又很鬧的,idle-yuqi,H1-KEY:h1key-riina|TWICE:twice-jeongyeon|aespa:aespa-ningning|i-dle:idle-minnie|aespa:aespa-giselle
+q026,open,想找一個看他跳舞就會跟著心情變亮、像把陽光帶進房間的男生,bts-jhope,ATEEZ:ateez-yunho|BTS:bts-jimin|RIIZE:riize-shotaro|SEVENTEEN:seventeen-jun|BTS:bts-jhope
+q027,open,想看男生跳舞像水流過去，連指尖都在說故事的那種,bts-jimin|nct-ten,ATEEZ:ateez-yunho|RIIZE:riize-shotaro|ATEEZ:ateez-san|SEVENTEEN:seventeen-jun|SEVENTEEN:seventeen-the8
+q028,open,想聽那種青春快要結束、有點疼但還想往前跑的男團,TXT,TXT:txt-taehyun|BTS:bts-jimin|BTS:bts-jungkook|SEVENTEEN:seventeen-scoups|TXT:txt-yeonjun
+q029,open,想入坑有吸血鬼故事感、舞台像危險夜色的男團,ENHYPEN,ENHYPEN:enhypen-sunghoon|ENHYPEN:enhypen-jay|TXT:txt-beomgyu|TXT:txt-taehyun|ENHYPEN:enhypen-jungwon
+q030,open,有沒有舞台像冒險電影開打、會讓人想跟著一起衝出去的男團,ATEEZ,SEVENTEEN:seventeen-scoups|ATEEZ:ateez-san|NCT:nct-jisung|EXO:exo-kai|BTS:bts-jimin
+q031,open,"想追一團像一大群朋友一起長大, 平常吵吵鬧鬧但做正事超有默契的男團",SEVENTEEN,SEVENTEEN:seventeen-scoups|SEVENTEEN:seventeen-jun|SEVENTEEN:seventeen-wonwoo|BTS:bts-jin|BTS:bts-jimin
+q032,open,想找一開口就像夏天汽水冒泡、聲音很透亮有少年感的男生,riize-sohee,TXT:txt-hueningkai|BTS:bts-v|RIIZE:riize-sohee|Stray Kids:straykids-felix|RIIZE:riize-anton
+q033,open,想聽像暖色檯燈照著黑膠唱片那樣的男聲，低低的很適合夜晚,nct-jaehyun,BTS:bts-v|SEVENTEEN:seventeen-wonwoo|RIIZE:riize-eunseok|TXT:txt-taehyun|NCT:nct-haechan
+q034,open,想追那種感覺會陪你逛美術館、聊書跟人生的男偶像,bts-rm,SEVENTEEN:seventeen-vernon|SEVENTEEN:seventeen-wonwoo|SEVENTEEN:seventeen-jun|RIIZE:riize-sungchan|ENHYPEN:enhypen-jungwon
+q035,open,心情差時想看一個男生笑到眼睛都彎起來，整個人很有暖暖的傻氣,seventeen-dk,SEVENTEEN:seventeen-jun|BTS:bts-jin|BTS:bts-v|ENHYPEN:enhypen-jake|TXT:txt-soobin
+q036,reference,我喜歡 Jennie 那種拍時尚大片很有氣場的感覺，還有哪位女生可以追？,aespa-karina|kissoflife-julie,ITZY:itzy-ryujin|KISS OF LIFE:kissoflife-julie|TWICE:twice-jeongyeon|TWICE:twice-jihyo|TWICE:twice-tzuyu
+q037,reference,喜歡太妍唱抒情歌時那種清亮又撐得起高音的聲音，能推薦女團主唱嗎,redvelvet-wendy,TWICE:twice-jeongyeon|ITZY:itzy-lia|IVE:ive-liz|BLACKPINK:blackpink-rose|TWICE:twice-jihyo
+q038,reference,想找像 BoA 那樣動作俐落、跳舞有控制力的女團成員,twice-momo|redvelvet-seulgi,TWICE:twice-momo|BLACKPINK:blackpink-lisa|BABYMONSTER:babymonster-asa|BABYMONSTER:babymonster-rora|MEOVV:meovv-gawon
+q039,reference,我喜歡 IU 把心事寫進歌裡的感覺，女團有自己寫歌、會唱內心話的人嗎,lesserafim-yunjin,Hearts2Hearts:hearts2hearts-ian|IVE:ive-liz|BLACKPINK:blackpink-jisoo|ITZY:itzy-lia|TWICE:twice-chaeyoung
+q040,reference,喜歡 MAMAMOO 那種敢放開來唱的現場，有推薦唱功強的女團嗎,NMIXX,BLACKPINK:blackpink-jisoo|TWICE:twice-momo|NMIXX:nmixx-haewon|BLACKPINK:blackpink-lisa|BLACKPINK:blackpink-rose
+q041,reference,BLACKPINK 的 How You Like That 那種霸氣我很吃，想再認識一團嘻哈味重的女團,BABYMONSTER,NMIXX:nmixx-lily|TWICE:twice-chaeyoung|NMIXX:nmixx-haewon|ITZY:itzy-ryujin|TWICE:twice-nayeon
+q042,reference,喜歡 TWICE 的 Feel Special 那種低潮時被接住的感覺，有歌也很鼓勵人的女團嗎,H1-KEY,IVE:ive-liz|KISS OF LIFE:kissoflife-julie|ITZY:itzy-ryujin|ITZY:itzy-lia|Hearts2Hearts:hearts2hearts-stella
+q043,reference,喜歡 SHINee 泰民跳舞那種細膩又性感的感覺，還可以看哪位男偶像,exo-kai|nct-ten,ATEEZ:ateez-san|ATEEZ:ateez-yunho|ATEEZ:ateez-wooyoung|BTS:bts-jimin|EXO:exo-kai
+q044,reference,喜歡 GD 會創作、饒舌又有自己穿搭想法的樣子，男團有誰也是這種類型？,ateez-hongjoong|nct-taeyong,BTS:bts-rm|BTS:bts-suga|SEVENTEEN:seventeen-vernon|SEVENTEEN:seventeen-dk|BTS:bts-jin
+q045,reference,我喜歡 EXO D.O. 唱 R&B 那種溫暖厚實的聲音，可以推別團的男生嗎,nct-jaehyun,EXO:exo-do|EXO:exo-chanyeol|EXO:exo-baekhyun|EXO:exo-suho|EXO:exo-kai
+q046,reference,平常聽周深，想認識唱高音很穩、聲音也很清亮的男團主唱,exo-baekhyun,EXO:exo-baekhyun|NCT:nct-renjun|NCT:nct-doyoung|SEVENTEEN:seventeen-dk|TXT:txt-taehyun
+q047,reference,喜歡 Bruno Mars 那種身體跟著節奏彈起來的律動感，Kpop 男生有誰可以看,bts-jhope,BTS:bts-jimin|BTS:bts-v|BTS:bts-jin|BTS:bts-jungkook|BTS:bts-jhope
+q048,reference,看完《排球少年》很喜歡大家互相鬧又一起拚的隊友情誼，想追有這種感覺的男團,SEVENTEEN,SEVENTEEN:seventeen-jun|SEVENTEEN:seventeen-scoups|BTS:bts-jin|SEVENTEEN:seventeen-the8|BTS:bts-jimin
+q049,reference,喜歡《哈利波特》那種青春裡混著魔法與冒險的世界觀，有類似感覺的男團嗎,TXT,BTS:bts-jin|SEVENTEEN:seventeen-wonwoo|TXT:txt-taehyun|TXT:txt-beomgyu|SEVENTEEN:seventeen-scoups
+q050,reference,我很吃《暮光之城》那種吸血鬼和危險浪漫的氛圍，想找這種概念的男團,ENHYPEN,ENHYPEN:enhypen-sunghoon|ENHYPEN:enhypen-jungwon|ENHYPEN:enhypen-jay|BTS:bts-jin|TXT:txt-beomgyu
+q051,negation,喜歡女團舞者但不要走甜美撒嬌路線，想看帥氣、有力量的,itzy-ryujin|redvelvet-seulgi,TWICE:twice-mina|BLACKPINK:blackpink-lisa|TWICE:twice-momo|TWICE:twice-nayeon|ITZY:itzy-ryujin
+q052,negation,不要太尖亮的女聲，我比較喜歡偏低、有厚度的聲音,idle-yuqi,TWICE:twice-jeongyeon|i-dle:idle-minnie|IVE:ive-liz|NMIXX:nmixx-lily|Red Velvet:redvelvet-joy
+q053,negation,不想追以 rap 為主的成員，想找唱高音很穩的女團主唱,nmixx-lily|kissoflife-belle,BLACKPINK:blackpink-rose|H1-KEY:h1key-seoi|NMIXX:nmixx-lily|H1-KEY:h1key-riina|ITZY:itzy-lia
+q054,negation,想聽女生團體，但不要以電子舞曲為主，想聽吉他跟真的鼓組,QWER,QWER:qwer-chodan|TWICE:twice-jihyo|QWER:qwer-hina|TWICE:twice-chaeyoung|Hearts2Hearts:hearts2hearts-yuha
+q055,negation,不要一直很嗨的綜藝咖，想追比較安靜、氣質像芭蕾舞者的女團成員,twice-mina,TWICE:twice-mina|TWICE:twice-jeongyeon|TWICE:twice-tzuyu|Hearts2Hearts:hearts2hearts-jiwoo|i-dle:idle-shuhua
+q056,negation,男團成員但不要 rapper，想聽咬字清楚、細膩唱抒情歌的主唱,exo-do|straykids-seungmin,SEVENTEEN:seventeen-seungkwan|SEVENTEEN:seventeen-dk|NCT:nct-renjun|RIIZE:riize-sohee|NCT:nct-doyoung
+q057,negation,不要太稚嫩的少年音，想找低沉、慵懶一點的男聲,bts-v|nct-jaehyun,SEVENTEEN:seventeen-wonwoo|BTS:bts-v|SEVENTEEN:seventeen-joshua|Stray Kids:straykids-felix|SEVENTEEN:seventeen-jeonghan
+q058,negation,不想追話很少的冰山型，想看很會接話、在綜藝帶氣氛的男偶像,seventeen-seungkwan|bts-jin,SEVENTEEN:seventeen-vernon|RIIZE:riize-eunseok|SEVENTEEN:seventeen-the8|SEVENTEEN:seventeen-seungkwan|EXO:exo-sehun
+q059,negation,想看男生跳舞，但不要光靠力量耍帥，想要現代舞那種柔軟延伸的感覺,bts-jimin,SEVENTEEN:seventeen-the8|ATEEZ:ateez-yunho|SEVENTEEN:seventeen-jun|EXO:exo-kai|Stray Kids:straykids-felix
+q060,negation,我不追饒舌擔當，想找唱歌清亮、笑起來很有活力的男團主唱,riize-sohee|seventeen-dk,SEVENTEEN:seventeen-seungkwan|SEVENTEEN:seventeen-dk|EXO:exo-baekhyun|EXO:exo-suho|RIIZE:riize-sohee
