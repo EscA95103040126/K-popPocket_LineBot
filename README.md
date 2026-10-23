@@ -228,54 +228,75 @@ python3 -u scripts/refresh_monthly_analysis.py --month 2026-10 --as-of 2026-10-1
 
 ## 系統架構
 
+三個入口（LINE webhook、JSON API `/analyze`、本機 mock webhook）共用同一張路由表。每個功能只回傳跟平台無關的 `Reply`，再由各入口轉成自己的格式：
+
 ```text
-LINE 使用者
-    |
-    v
-LINE Messaging API
-    |
-    v
-Flask app.py
-    |
-    +-- Intent Router / 指令判斷
-    |
-    +-- 藝人分析
-    |     +-- Bugs Chart SQLite
-    |     +-- Offline ABSA JSON cache
-    |     +-- Artist cache fallback
-    |     +-- Gemini Insight
-    |
-    +-- AI 入坑
-    |     +-- bias_radar_members.csv
-    |     +-- daily_mv.csv
-    |     +-- Gemini / fallback
-    |
-    +-- 我的 K-pop 口袋 / 每日 MV 個人化
-    |     +-- Supabase user_preferences
-    |     +-- Supabase kpop_items.gender_category
-    |     +-- Supabase user_saved_items / user_draw_history
-    |
-    +-- Play Zone
-    |     +-- 粉絲屬性測驗
-    |     +-- 本命雷達
-    |     +-- 認人測驗
-    |     +-- 神圖抽卡
-    |
-    +-- LINE Flex Message Formatter
+LINE 使用者 ──> LINE Messaging API ──> POST /webhook ──> LineAdapter
+                                                          │ 驗證簽章、去重、debounce
+HTTP 呼叫端 ───────────────────────> POST /analyze ──────┤
+本機 mock ─────────────────────────> POST /webhook ──────┤（未設定 LINE 金鑰時）
+                                                          v
+                                          Dispatcher（src/bot/routing.py）
+                                          依序比對 18 個 handler，第一個符合的負責回覆
+                                                          │
+          ┌──────────────┬──────────────┬─────────────────┼──────────────┬──────────────┐
+          v              v              v                 v              v              v
+       藝人分析        週榜           AI 入坑         Play Zone      每日一首      我的口袋
+     (agent +       (agent +       (Gemini +        (本命雷達、     (CSV /        (Supabase)
+     ABSA cache)    SQLite)        CSV 資料)        認人、抽卡)     Supabase)
+          └──────────────┴──────────────┴────────┬────────┴──────────────┴──────────────┘
+                                                  v
+                                        Reply（文字、Flex、Quick Reply）
+                                                  │
+                         ┌────────────────────────┼────────────────────────┐
+                         v                        v                        v
+                 LINE 訊息（line_renderer）   JSON（Reply.to_json）     純文字（mock）
 ```
+
+設計重點：
+
+- **單一路由表**：`src/bot/routing.py` 是唯一決定「哪則訊息由哪個功能處理」的地方，順序就是優先順序。
+- **依賴注入**：`create_app(deps)` 接收 `BotDeps`（設定、分析 agent、Supabase repo、Gemini client、亂數、時鐘）。正式環境由 `BotDeps.from_settings()` 建立；測試則注入假物件，不用 monkeypatch 全域變數。
+- **狀態跟著實例走**：本命雷達進度、AI 入坑追問脈絡、抽卡佇列都存在各功能物件裡，每個 app 實例各自獨立。
 
 ## 專案結構
 
 ```text
 .
-├── app.py                         # Flask app、LINE webhook、Flex Message 與互動流程
+├── app.py                         # WSGI 進入點（gunicorn app:app），只呼叫 create_app()
 ├── Dockerfile                     # Hugging Face Space Docker runtime
 ├── requirements.txt               # Runtime Python dependencies
 ├── requirements-dev.txt           # 本機測試與開發依賴
+├── pytest.ini                     # pytest 設定
 ├── src/
+│   ├── web/
+│   │   └── app_factory.py         # create_app()：Flask 路由、health、圖片路由
+│   ├── bot/
+│   │   ├── container.py           # BotDeps、Features 與 build_bot() 組裝
+│   │   ├── routing.py             # 單一路由表與固定指令判斷
+│   │   ├── dispatcher.py          # Dispatcher / Handler / MessageContext
+│   │   ├── reply.py               # 跟平台無關的 Reply 與 QuickReplyAction
+│   │   ├── line_adapter.py        # LINE webhook：簽章驗證、事件分派、送出回覆
+│   │   ├── line_events.py         # LINE 事件去重與 debounce
+│   │   ├── line_renderer.py       # Reply → LINE 訊息
+│   │   ├── llm.py                 # Gemini 文字生成 client
+│   │   ├── catalog.py             # Play Zone CSV 資料讀取與快取
+│   │   ├── flex_common.py         # 共用 Flex 元件與配色
+│   │   ├── text_utils.py          # 名稱比對等文字工具
+│   │   └── features/              # 各功能模組
+│   │       ├── menus.py           # 選單、使用說明、選擇藝人
+│   │       ├── artist_report.py   # 藝人分析報告
+│   │       ├── charts.py          # 本週榜單與歷史週榜
+│   │       ├── ai_curator.py      # AI 入坑與推薦理由追問
+│   │       ├── bias_radar.py      # 本命雷達測驗
+│   │       ├── fan_quiz.py        # 粉絲屬性測驗
+│   │       ├── member_quiz.py     # 認人測驗
+│   │       ├── daily_kpop.py      # 每日一首
+│   │       ├── photo_card.py      # 神圖抽卡
+│   │       └── pocket.py          # 我的 K-pop 口袋
 │   ├── agent.py                   # 藝人分析、Gemini 報告與 fallback
 │   ├── config.py                  # 環境變數與路徑設定
-│   ├── router.py                  # 使用者訊息 intent routing
+│   ├── router.py                  # 藝人名稱與週榜 intent 解析
 │   ├── tools/
 │   │   ├── bugs_chart.py          # Bugs 榜單爬蟲/parser
 │   │   ├── chart_db.py            # SQLite 榜單查詢
@@ -291,6 +312,7 @@ Flask app.py
 │   ├── fetch_bugs_chart.py        # 抓取 Bugs 週榜
 │   ├── fetch_youtube_comments.py  # 抓取 YouTube 留言
 │   ├── build_absa_cache.py        # 離線 Naver + YouTube + KcELECTRA ABSA cache
+│   ├── refresh_monthly_analysis.py # 按月份更新藝人分析
 │   ├── import_kpop_items.py       # 將每日 MV、直拍與神圖資料匯入 Supabase kpop_items
 │   ├── label_sentiments.py        # Gemini 標註留言情感
 │   ├── preload_cache.py           # 預先產生藝人分析快取
@@ -301,7 +323,11 @@ Flask app.py
 │   └── play_zone/                 # Play Zone CSV、JSON 與圖片素材
 ├── supabase/
 │   └── kpop_radar_schema.sql      # K-pop 口袋 Supabase schema
-└── tests/                         # pytest 測試
+└── tests/
+    ├── conftest.py                # 讓測試不讀 .env、不帶任何金鑰
+    ├── fakes.py                   # 假依賴與 make_app() / make_deps()
+    ├── golden/                    # golden master 快照
+    └── test_*.py                  # pytest 測試
 ```
 
 ## 環境變數
@@ -328,6 +354,7 @@ cp .env.example .env
 | `DATABASE_PATH` | SQLite 資料庫位置 | 預設可用 |
 | `MOCK_DATA_DIR` | mock data 位置 | 預設可用 |
 | `PORT` | Flask port | HF 使用 `7860` |
+| `KPOP_AGENT_ENV_FILE` | 改讀其他 env 檔；設為空字串則不讀任何 env 檔（測試用） | 選填 |
 
 若部分 API key 未設定，系統會使用 mock data 或本地 fallback，避免整個 Bot 中斷。
 
@@ -420,8 +447,19 @@ python3 scripts/import_kpop_items.py --dry-run
 pytest
 ```
 
+測試不會讀 `.env`，也不會連到任何外部服務：`tests/conftest.py` 會在載入設定前清掉所有金鑰，每個測試再用 `tests/fakes.py` 的 `make_app()` 建一個注入假依賴的 app。
+
+`tests/test_characterization.py` 是 golden master 測試：同一組對話腳本會分別送進 LINE、`/analyze` 和 mock webhook，輸出要跟 `tests/golden/` 的快照完全一致。刻意改變行為時，用下面的指令更新快照，並在 commit 裡檢查 diff：
+
+```bash
+UPDATE_GOLDEN=1 pytest tests/test_characterization.py
+```
+
 目前測試涵蓋：
 
+- 三個入口的 golden master 快照
+- 路由表順序與 Dispatcher、LINE renderer
+- 帶簽章的 LINE webhook 端到端流程（文字、postback、加好友、重送）
 - Flask health check
 - LINE webhook 去重與 debounce
 - Router intent 判斷
