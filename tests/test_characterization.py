@@ -144,7 +144,9 @@ def _run_mock_webhook(messages: list[str], user_id: str, tmp_path: Path) -> list
 
 def _run_line(messages: list[str], user_id: str, tmp_path: Path) -> list:
     api = RecordingMessagingApi()
-    app = make_app(_fresh_deps(tmp_path), line_dedupe_path=tmp_path / f"{user_id}.json", line_api=api)
+    app = make_app(
+        _fresh_deps(tmp_path), line_dedupe_path=tmp_path / f"{user_id}.json", line_api=api
+    )
     adapter = line_adapter_of(app)
     outputs = []
     for index, message in enumerate(messages):
