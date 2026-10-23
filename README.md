@@ -123,7 +123,7 @@ v1 會先把使用者的話對應到約 34 個固定標籤，再依 `bias_radar_
 | Codex 撰寫的 60 題 | 44% | 62% |
 | 真實粉絲推坑需求 238 組 | 45% | 55% |
 
-模型不放進 git：Docker 建置時，`scripts/export_onnx_encoder.py` 會下載官方 ONNX 並量化為約 570 MB 的 int8 模型，`scripts/build_member_embeddings.py` 再預先算好成員向量，執行時只需要 onnxruntime、tokenizers 和 numpy。找不到 `models/bge-m3-int8/`，或成員向量和目前描述不一致時，會自動退回 v1。本機要啟用 v2：
+模型不放進 GitHub：`scripts/export_onnx_encoder.py` 下載官方 ONNX 並量化為約 570 MB 的 int8 模型，`scripts/build_member_embeddings.py` 再預先算好成員向量，兩者都寫入 `models/bge-m3-int8/`，只以 LFS 放進 Hugging Face Space 的儲存庫（在 Space 建置時量化會記憶體不足）。執行時只需要 onnxruntime、tokenizers 和 numpy。找不到 `models/bge-m3-int8/`，或成員向量和目前描述不一致時，會自動退回 v1；所以修改 `data/curator/` 後，要重跑 `build_member_embeddings.py` 再部署。本機要啟用 v2：
 
 ```bash
 uv run --group encoder-build python scripts/export_onnx_encoder.py
