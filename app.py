@@ -24,6 +24,8 @@ from src.agent import (
     KpopAnalysisAgent,
     SUPPORTED_ARTISTS,
 )
+from src.bot.dispatcher import Dispatcher, Handler, MessageContext
+from src.bot.reply import QuickReplyAction, Reply
 from src.config import settings
 from src.router import ARTIST_PATTERNS, route_message
 from src.tools.bugs_chart import fetch_bugs_weekly_chart
@@ -37,16 +39,8 @@ try:
     from linebot.v3.messaging import (
         ApiClient,
         Configuration,
-        FlexContainer,
-        FlexMessage,
-        MessageAction,
         MessagingApi,
-        PostbackAction,
-        QuickReply,
-        QuickReplyItem,
         ReplyMessageRequest,
-        ButtonsTemplate,
-        TemplateMessage,
         TextMessage,
     )
     from linebot.v3.webhooks import (
@@ -55,21 +49,15 @@ try:
         PostbackEvent,
         TextMessageContent,
     )
+    from src.bot.line_renderer import build_line_messages
 except ImportError:  # pragma: no cover - lets local mock mode run without LINE SDK.
     WebhookHandler = None
     InvalidSignatureError = Exception
+    build_line_messages = None
     ApiClient = None
     Configuration = None
-    FlexContainer = None
-    FlexMessage = None
-    MessageAction = None
     MessagingApi = None
-    PostbackAction = None
-    QuickReply = None
-    QuickReplyItem = None
     ReplyMessageRequest = None
-    ButtonsTemplate = None
-    TemplateMessage = None
     TextMessage = None
     FollowEvent = None
     MessageEvent = None
@@ -374,83 +362,8 @@ def analyze() -> tuple[dict, int]:
         message = f"分析 {artist}"
     if not message:
         return {"error": "message or artist is required"}, 400
-    intent = route_message(message)
-    artist_from_payload = route_message(f"分析 {artist}").artist if artist else ""
-    analysis_artist = intent.artist or artist_from_payload
-    if _is_kpop_radar_request(message):
-        response = _kpop_radar_response(message, user_id=user_id)
-    elif _is_play_zone_request(message):
-        response = {
-            "report": "K-pop Play Zone",
-            "flex": _build_play_zone_flex_contents(),
-        }
-    elif _is_ai_curator_entry_request(message):
-        response = {
-            "report": "AI 入坑",
-            "flex": _build_ai_curator_entry_flex_contents(),
-        }
-    elif _is_ai_curator_preference_request(message):
-        response = _ai_curator_response(message, user_id=user_id)
-    elif _is_bias_radar_quiz_request(message, user_id):
-        response = _bias_radar_quiz_response(user_id, message)
-    elif _is_fan_attribute_quiz_request(message):
-        response = {
-            "report": _fan_attribute_quiz_text(message),
-            "flex": _build_fan_attribute_quiz_flex_contents(message),
-        }
-    elif _is_member_quiz_answer(message):
-        response = _member_quiz_answer_response(message)
-    elif _is_member_quiz_request(message):
-        response = _member_quiz_question_response()
-    elif _is_daily_kpop_request(message):
-        response = {
-            "report": "每日一首 K-pop",
-            "flex": _build_daily_kpop_flex_contents(),
-        }
-    elif _is_daily_kpop_category_request(message):
-        response = _daily_kpop_response(message, user_id=user_id)
-    elif _is_photo_card_request(message):
-        response = _photo_card_response()
-    elif _is_historical_weekly_chart_request(message):
-        chart_date = _historical_weekly_chart_date(message)
-        response = {
-            "report": agent.generate_weekly_chart_report_for_date(chart_date),
-            "cache": {
-                "type": "weekly_chart_history",
-                "chart_date": chart_date,
-            },
-            "flex": None,
-        }
-    elif intent.name == "weekly_chart":
-        chart_cache = agent.get_weekly_chart_cache()
-        response = {
-            "report": chart_cache["report"],
-            "cache": {
-                "type": "weekly_chart",
-                "cached_at": chart_cache["cached_at"],
-            },
-            "flex": None,
-        }
-    elif analysis_artist and (artist or _is_full_artist_report_request(message)):
-        artist_cache = agent.get_artist_analysis_cache(
-            analysis_artist,
-            period_months=intent.period_months,
-        )
-        response = {
-            "report": artist_cache["report"],
-            "cache": {
-                "type": artist_cache.get("cache_type", "artist"),
-                "artist": artist_cache["artist"],
-                "cached_at": artist_cache["cached_at"],
-            },
-            "flex": artist_cache["flex"],
-        }
-    elif _is_ai_curator_reason_followup(message):
-        response = _ai_curator_reason_followup_response(message, user_id=user_id)
-    else:
-        report = _reply_text_for_message(message, user_id=user_id)
-        response = {"report": report, "flex": None}
-    return response, 200
+    context = MessageContext(text=message, user_id=user_id, artist_hint=artist)
+    return dispatcher.dispatch(context).to_json(), 200
 
 
 @app.post("/webhook")
@@ -463,7 +376,7 @@ def webhook() -> tuple[str, int]:
         message = _extract_mock_message(payload)
         if message:
             user_id = str(payload.get("user_id") or "mock-user")
-            reply = fit_line_text(_reply_text_for_message(message, user_id=user_id))
+            reply = dispatcher.dispatch(MessageContext(text=message, user_id=user_id)).text
             return jsonify({"mock_reply": reply}).get_data(as_text=True), 200
         return "OK", 200
 
@@ -482,62 +395,6 @@ def _extract_mock_message(payload: dict) -> str:
         return ""
     message = events[0].get("message") or {}
     return str(message.get("text") or "")
-
-
-def _build_line_reply_message(report: str):
-    if FlexMessage is None or FlexContainer is None:
-        return TextMessage(text=fit_line_text(report))
-
-    if _is_weekly_chart_report(report):
-        return TextMessage(text=fit_line_text(report))
-
-    try:
-        flex_contents = agent.build_flex_message(report)
-        return FlexMessage(
-            altText="K-pop 분석 보고서",
-            contents=FlexContainer.from_dict(flex_contents),
-        )
-    except Exception:
-        return TextMessage(text=fit_line_text(report))
-
-
-def _build_line_flex_message(flex_contents: dict, alt_text: str = "K-pop 분석 보고서"):
-    if FlexMessage is None or FlexContainer is None:
-        return TextMessage(text=alt_text)
-    try:
-        return FlexMessage(
-            altText=alt_text,
-            contents=FlexContainer.from_dict(flex_contents),
-        )
-    except Exception:
-        logger.exception("Cached Flex build failed; falling back to text.")
-        return TextMessage(text=alt_text)
-
-
-def _build_artist_picker_message():
-    if TextMessage is None:
-        return None
-    if FlexMessage is not None and FlexContainer is not None:
-        try:
-            return FlexMessage(
-                altText="選擇要分析的 K-pop 藝人",
-                contents=FlexContainer.from_dict(_artist_picker_flex_contents()),
-            )
-        except Exception:
-            logger.exception("Artist picker Flex build failed; falling back to text.")
-
-    if QuickReply is None or QuickReplyItem is None or MessageAction is None:
-        return TextMessage(text=f"請輸入：分析 {SUPPORTED_ARTISTS[0]}，或使用預載藝人名稱。")
-
-    return TextMessage(
-        text="想分析哪位藝人？",
-        quickReply=QuickReply(
-            items=[
-                QuickReplyItem(action=MessageAction(label=artist, text=f"分析 {artist}"))
-                for artist in SUPPORTED_ARTISTS
-            ]
-        ),
-    )
 
 
 def _artist_picker_flex_contents() -> dict:
@@ -1489,27 +1346,18 @@ def _selection_page_button(
 def _build_weekly_chart_history_quick_reply(
     current_chart_date: str = "",
     limit: int = 12,
-):
-    if QuickReply is None or QuickReplyItem is None or MessageAction is None:
-        return None
+) -> tuple[QuickReplyAction, ...]:
     chart_dates = [
         chart_date
         for chart_date in agent.list_weekly_chart_dates(limit=limit + 1, min_items=1)
         if chart_date and chart_date != current_chart_date
     ][:limit]
-    chart_dates = list(reversed(chart_dates))
-    if not chart_dates:
-        return None
-    return QuickReply(
-        items=[
-            QuickReplyItem(
-                action=MessageAction(
-                    label=f"📅 {_weekly_chart_date_label(chart_date)}",
-                    text=f"{HISTORICAL_WEEKLY_CHART_PREFIX}{chart_date}",
-                )
-            )
-            for chart_date in chart_dates
-        ]
+    return tuple(
+        QuickReplyAction(
+            label=f"📅 {_weekly_chart_date_label(chart_date)}",
+            text=f"{HISTORICAL_WEEKLY_CHART_PREFIX}{chart_date}",
+        )
+        for chart_date in reversed(chart_dates)
     )
 
 
@@ -1753,23 +1601,14 @@ def _kpop_radar_preference_button(label: str, preferred_gender: str) -> dict:
     }
 
 
-def _build_kpop_radar_preference_quick_reply():
-    if QuickReply is None or QuickReplyItem is None or PostbackAction is None:
-        return None
-    return QuickReply(
-        items=[
-            QuickReplyItem(
-                action=PostbackAction(
-                    label=label,
-                    data=f"action=set_pref&gender={gender}",
-                )
-            )
-            for label, gender in (
-                ("女團", "girl_group"),
-                ("男團", "boy_group"),
-                ("都可以", "all"),
-            )
-        ]
+def _build_kpop_radar_preference_quick_reply() -> tuple[QuickReplyAction, ...]:
+    return tuple(
+        QuickReplyAction(label=label, text=f"action=set_pref&gender={gender}", postback=True)
+        for label, gender in (
+            ("女團", "girl_group"),
+            ("男團", "boy_group"),
+            ("都可以", "all"),
+        )
     )
 
 
@@ -1798,25 +1637,23 @@ def _format_kpop_radar_saved_items(
     return "\n".join(lines)
 
 
-def _build_help_message():
-    return TextMessage(
-        text=(
-            "📖 使用說明\n\n"
-            "輸入：\n"
-            "分析 aespa\n"
-            "分析 IVE\n"
-            "本週榜單\n"
-            "互動專區\n"
-            "每日一首\n\n"
-            "目前支援：\n"
-            "- 藝人分析報告\n"
-            "- 本週 Bugs 榜單\n"
-            "- 粉絲留言情緒分析\n"
-            "- Play Zone 互動入口\n"
-            "- 每日一首 K-pop 入口\n\n"
-            "可分析藝人：\n"
-            "aespa、IVE、BABYMONSTER、NMIXX、ILLIT、NCT、ZEROBASEONE、TXT、ENHYPEN、BOYNEXTDOOR"
-        )
+def _help_text() -> str:
+    return (
+        "📖 使用說明\n\n"
+        "輸入：\n"
+        "分析 aespa\n"
+        "分析 IVE\n"
+        "本週榜單\n"
+        "互動專區\n"
+        "每日一首\n\n"
+        "目前支援：\n"
+        "- 藝人分析報告\n"
+        "- 本週 Bugs 榜單\n"
+        "- 粉絲留言情緒分析\n"
+        "- Play Zone 互動入口\n"
+        "- 每日一首 K-pop 入口\n\n"
+        "可分析藝人：\n"
+        "aespa、IVE、BABYMONSTER、NMIXX、ILLIT、NCT、ZEROBASEONE、TXT、ENHYPEN、BOYNEXTDOOR"
     )
 
 
@@ -2039,7 +1876,6 @@ def _is_fixed_command_request(message: str) -> bool:
         or _is_daily_kpop_category_request(message)
         or _is_photo_card_request(message)
         or _is_historical_weekly_chart_request(message)
-        or _is_play_zone_placeholder_request(message)
         or _is_bias_radar_quiz_request(message)
         or route_message(message).name == "weekly_chart"
         or _is_full_artist_report_request(message)
@@ -2080,11 +1916,6 @@ def _is_member_quiz_request(message: str) -> bool:
 
 def _is_member_quiz_answer(message: str) -> bool:
     return re.fullmatch(r"認人答案:[^:]+:[AB]", message.strip()) is not None
-
-
-def _is_play_zone_placeholder_request(message: str) -> bool:
-    normalized = message.strip()
-    return normalized in {"粉絲屬性測驗", "神圖抽卡"}
 
 
 def _is_daily_kpop_category_request(message: str) -> bool:
@@ -2183,42 +2014,231 @@ def _mentions_supported_artist(message: str) -> bool:
     )
 
 
-def _reply_text_for_message(message: str, user_id: str = "analyze-user") -> str:
-    if _is_kpop_radar_request(message):
-        return _kpop_radar_response(message, user_id=user_id)["report"]
-    if _is_help_request(message):
-        return _build_help_message().text
-    if _is_play_zone_request(message):
-        return "請在 LINE 中點選 K-pop Play Zone 卡片開始互動。"
-    if _is_ai_curator_entry_request(message):
-        return "請在 LINE 中點選 AI 入坑，或直接輸入你的 K-pop 偏好。"
-    if _is_ai_curator_preference_request(message):
-        return _ai_curator_response(message, user_id=user_id)["report"]
-    if _is_bias_radar_quiz_request(message, user_id):
-        return _bias_radar_quiz_response(user_id, message)["report"]
-    if _is_fan_attribute_quiz_request(message):
-        return _fan_attribute_quiz_text(message)
-    if _is_member_quiz_answer(message):
-        return _member_quiz_answer_response(message)["report"]
-    if _is_member_quiz_request(message):
-        return _member_quiz_question_response()["report"]
-    if _is_daily_kpop_request(message):
-        return "請在 LINE 中點選每日一首 K-pop 卡片選擇 MV、直拍或經典舞台。"
-    if _is_photo_card_request(message):
-        return _photo_card_response()["report"]
-    if _is_play_zone_placeholder_request(message):
-        return _play_zone_placeholder_text(message)
-    if _is_daily_kpop_category_request(message):
-        return _daily_kpop_response(message, user_id=user_id)["report"]
-    if _is_historical_weekly_chart_request(message):
-        return agent.generate_weekly_chart_report_for_date(_historical_weekly_chart_date(message))
-    if route_message(message).name == "weekly_chart":
-        return agent.analyze_message_local(message)
-    if _is_full_artist_report_request(message):
-        return agent.analyze_message_local(message)
-    if _is_ai_curator_reason_followup(message):
-        return _ai_curator_reason_followup_response(message, user_id=user_id)["report"]
-    return _fixed_command_help_text()
+def _artist_picker_reply(context: MessageContext) -> Reply:
+    return Reply(
+        report="請輸入：分析 aespa、分析 IVE、分析 NCT",
+        flex=_artist_picker_flex_contents(),
+        alt_text="選擇要分析的 K-pop 藝人",
+    )
+
+
+def _kpop_radar_reply(context: MessageContext) -> Reply:
+    response = _kpop_radar_response(context.text, user_id=context.user_id)
+    if _kpop_radar_action(context.text) == "open_pref":
+        return Reply(
+            report=response["report"],
+            flex=response["flex"],
+            alt_text="修改推薦偏好",
+            text_first=True,
+            quick_replies=_build_kpop_radar_preference_quick_reply(),
+        )
+    return Reply(report=response["report"], flex=response["flex"], alt_text="我的K-pop 口袋")
+
+
+def _help_reply(context: MessageContext) -> Reply:
+    return Reply(report=_help_text())
+
+
+def _play_zone_reply(context: MessageContext) -> Reply:
+    return Reply(
+        report="K-pop Play Zone",
+        flex=_build_play_zone_flex_contents(),
+        alt_text="K-pop Play Zone",
+        fallback_text="請選擇：本命雷達測驗、粉絲屬性測驗、認人測驗、神圖抽卡",
+    )
+
+
+def _ai_curator_entry_reply(context: MessageContext) -> Reply:
+    return Reply(
+        report="AI 入坑",
+        flex=_build_ai_curator_entry_flex_contents(),
+        alt_text="AI 入坑",
+        fallback_text="請直接輸入你的 K-pop 偏好，例如：我想入坑清冷感、舞台強的女團。",
+    )
+
+
+def _ai_curator_preference_reply(context: MessageContext) -> Reply:
+    response = _ai_curator_response(context.text, user_id=context.user_id)
+    return Reply(
+        report=response["report"],
+        flex=response["flex"],
+        alt_text="AI 入坑",
+        text_first=True,
+    )
+
+
+def _bias_radar_reply(context: MessageContext) -> Reply:
+    response = _bias_radar_quiz_response(context.user_id, context.text)
+    return Reply(report=response["report"], flex=response["flex"], alt_text="本命雷達測驗")
+
+
+def _fan_attribute_quiz_reply(context: MessageContext) -> Reply:
+    return Reply(
+        report=_fan_attribute_quiz_text(context.text),
+        flex=_build_fan_attribute_quiz_flex_contents(context.text),
+        alt_text="粉絲屬性測驗",
+    )
+
+
+def _member_quiz_answer_reply(context: MessageContext) -> Reply:
+    response = _member_quiz_answer_response(context.text)
+    return Reply(
+        report=response["report"],
+        flex=response["flex"],
+        alt_text="再來一題？",
+        text_first=True,
+    )
+
+
+def _member_quiz_reply(context: MessageContext) -> Reply:
+    response = _member_quiz_question_response()
+    return Reply(report=response["report"], flex=response["flex"], alt_text="認人測驗")
+
+
+def _daily_kpop_menu_reply(context: MessageContext) -> Reply:
+    return Reply(
+        report="每日一首 K-pop",
+        flex=_build_daily_kpop_flex_contents(),
+        alt_text="每日一首 K-pop",
+        fallback_text="請選擇：每日 MV、每日直拍、每日經典舞台",
+    )
+
+
+def _daily_kpop_category_reply(context: MessageContext) -> Reply:
+    response = _daily_kpop_response(context.text, user_id=context.user_id)
+    return Reply(
+        report=response["report"],
+        flex=response["flex"],
+        alt_text="再抽一首 K-pop",
+        text_first=True,
+    )
+
+
+def _photo_card_reply(context: MessageContext) -> Reply:
+    response = _photo_card_response()
+    return Reply(
+        report=response["report"],
+        flex=response["flex"],
+        alt_text="再抽一次",
+        text_first=True,
+    )
+
+
+def _historical_weekly_chart_reply(context: MessageContext) -> Reply:
+    chart_date = _historical_weekly_chart_date(context.text)
+    return Reply(
+        report=agent.generate_weekly_chart_report_for_date(chart_date),
+        cache={"type": "weekly_chart_history", "chart_date": chart_date},
+    )
+
+
+def _weekly_chart_reply(context: MessageContext) -> Reply:
+    chart_cache = agent.get_weekly_chart_cache()
+    return Reply(
+        report=chart_cache["report"],
+        quick_replies=_build_weekly_chart_history_quick_reply(
+            current_chart_date=chart_cache.get("chart", {}).get("chart_date", ""),
+        ),
+        cache={"type": "weekly_chart", "cached_at": chart_cache["cached_at"]},
+    )
+
+
+def _report_artist(context: MessageContext) -> str:
+    artist = route_message(context.text).artist
+    if artist and _is_full_artist_report_request(context.text):
+        return artist
+    if context.artist_hint:
+        return route_message(f"分析 {context.artist_hint}").artist
+    return ""
+
+
+def _artist_report_reply(context: MessageContext) -> Reply:
+    artist = _report_artist(context)
+    artist_cache = agent.get_artist_analysis_cache(
+        artist,
+        period_months=route_message(context.text).period_months,
+    )
+    return Reply(
+        report=artist_cache["report"],
+        flex=artist_cache["flex"],
+        alt_text=f"{artist_cache['artist']} K-pop 分析報告",
+        cache={
+            "type": artist_cache.get("cache_type", "artist"),
+            "artist": artist_cache["artist"],
+            "cached_at": artist_cache["cached_at"],
+        },
+    )
+
+
+def _ai_curator_reason_reply(context: MessageContext) -> Reply:
+    response = _ai_curator_reason_followup_response(context.text, user_id=context.user_id)
+    return Reply(report=response["report"])
+
+
+def _fixed_command_help_reply(context: MessageContext) -> Reply:
+    return Reply(report=_fixed_command_help_text())
+
+
+# Single routing table for every channel (LINE, /analyze, mock webhook).
+# Order matters: the first matching handler wins.
+dispatcher = Dispatcher(
+    handlers=[
+        Handler("artist_picker", lambda c: _is_artist_picker_request(c.text), _artist_picker_reply),
+        Handler("kpop_pocket", lambda c: _is_kpop_radar_request(c.text), _kpop_radar_reply),
+        Handler("help", lambda c: _is_help_request(c.text), _help_reply),
+        Handler("play_zone", lambda c: _is_play_zone_request(c.text), _play_zone_reply),
+        Handler(
+            "ai_curator_entry",
+            lambda c: _is_ai_curator_entry_request(c.text),
+            _ai_curator_entry_reply,
+        ),
+        Handler(
+            "ai_curator_preference",
+            lambda c: _is_ai_curator_preference_request(c.text),
+            _ai_curator_preference_reply,
+        ),
+        Handler(
+            "bias_radar_quiz",
+            lambda c: _is_bias_radar_quiz_request(c.text, c.user_id),
+            _bias_radar_reply,
+        ),
+        Handler(
+            "fan_attribute_quiz",
+            lambda c: _is_fan_attribute_quiz_request(c.text),
+            _fan_attribute_quiz_reply,
+        ),
+        Handler(
+            "member_quiz_answer",
+            lambda c: _is_member_quiz_answer(c.text),
+            _member_quiz_answer_reply,
+        ),
+        Handler("member_quiz", lambda c: _is_member_quiz_request(c.text), _member_quiz_reply),
+        Handler("daily_kpop_menu", lambda c: _is_daily_kpop_request(c.text), _daily_kpop_menu_reply),
+        Handler(
+            "daily_kpop_category",
+            lambda c: _is_daily_kpop_category_request(c.text),
+            _daily_kpop_category_reply,
+        ),
+        Handler("photo_card", lambda c: _is_photo_card_request(c.text), _photo_card_reply),
+        Handler(
+            "historical_weekly_chart",
+            lambda c: _is_historical_weekly_chart_request(c.text),
+            _historical_weekly_chart_reply,
+        ),
+        Handler(
+            "weekly_chart",
+            lambda c: route_message(c.text).name == "weekly_chart",
+            _weekly_chart_reply,
+        ),
+        Handler("artist_report", lambda c: bool(_report_artist(c)), _artist_report_reply),
+        Handler(
+            "ai_curator_reason",
+            lambda c: _is_ai_curator_reason_followup(c.text),
+            _ai_curator_reason_reply,
+        ),
+    ],
+    fallback=Handler("fixed_command_help", lambda c: True, _fixed_command_help_reply),
+)
 
 
 def _fixed_command_help_text() -> str:
@@ -2231,16 +2251,6 @@ def _fixed_command_help_text() -> str:
         "5. 每日一首\n"
         "6. 我的K-pop 口袋\n\n"
         "請用「分析 藝人名」取得完整報告。"
-    )
-
-
-def _play_zone_placeholder_text(message: str) -> str:
-    feature = message.strip()
-    if feature == "我的雷達":
-        feature = "我的K-pop 口袋"
-    return (
-        f"{feature}入口已建立。\n"
-        "下一步會接題庫與本地 JSON 結果表，讓它變成真正可玩的互動流程。"
     )
 
 
@@ -4492,208 +4502,44 @@ def _sqlite_status() -> dict:
         }
 
 
-if line_handler is not None and MessageEvent is not None and TextMessageContent is not None:
-
-    def _reply_line_event(event: MessageEvent | PostbackEvent, user_text: str) -> None:
-        if _should_skip_line_event(event, user_text):
-            return
-        if not line_configuration:
-            _clear_line_event_processing(event)
-            return
-        line_user_id = _line_user_id(event) or "line-user"
+def _reply_line_event(event: object, user_text: str) -> None:
+    if _should_skip_line_event(event, user_text):
+        return
+    if not line_configuration:
+        _clear_line_event_processing(event)
+        return
+    line_user_id = _line_user_id(event) or "line-user"
+    try:
+        _ensure_kpop_radar_user(line_user_id)
+    except Exception:
+        logger.exception("Could not initialize K-pop Radar user.")
+    reply = dispatcher.dispatch(MessageContext(text=user_text, user_id=line_user_id))
+    with ApiClient(line_configuration) as api_client:
+        line_bot_api = MessagingApi(api_client)
         try:
-            _ensure_kpop_radar_user(line_user_id)
-        except Exception:
-            logger.exception("Could not initialize K-pop Radar user.")
-        with ApiClient(line_configuration) as api_client:
-            line_bot_api = MessagingApi(api_client)
-            reply_messages = None
-            if _is_artist_picker_request(user_text):
-                reply_message = _build_artist_picker_message()
-                fallback_text = "請輸入：分析 aespa、分析 IVE、分析 NCT"
-            elif _is_kpop_radar_request(user_text):
-                response = _kpop_radar_response(user_text, user_id=line_user_id)
-                fallback_text = fit_line_text(response["report"])
-                if _kpop_radar_action(user_text) == "open_pref":
-                    reply_message = TextMessage(
-                        text=fallback_text,
-                        quickReply=_build_kpop_radar_preference_quick_reply(),
-                    )
-                    reply_messages = [
-                        reply_message,
-                        _build_line_flex_message(
-                            response["flex"],
-                            alt_text="修改推薦偏好",
-                        ),
-                    ]
-                elif response["flex"] is not None:
-                    reply_message = _build_line_flex_message(
-                        response["flex"],
-                        alt_text="我的K-pop 口袋",
-                    )
-                else:
-                    reply_message = TextMessage(text=fallback_text)
-            elif _is_help_request(user_text):
-                reply_message = _build_help_message()
-                fallback_text = reply_message.text
-            elif _is_play_zone_request(user_text):
-                reply_message = _build_line_flex_message(
-                    _build_play_zone_flex_contents(),
-                    alt_text="K-pop Play Zone",
+            line_bot_api.reply_message(
+                ReplyMessageRequest(
+                    reply_token=event.reply_token,
+                    messages=build_line_messages(reply),
                 )
-                fallback_text = "請選擇：本命雷達測驗、粉絲屬性測驗、認人測驗、神圖抽卡"
-            elif _is_ai_curator_entry_request(user_text):
-                reply_message = _build_line_flex_message(
-                    _build_ai_curator_entry_flex_contents(),
-                    alt_text="AI 入坑",
-                )
-                fallback_text = "請直接輸入你的 K-pop 偏好，例如：我想入坑清冷感、舞台強的女團。"
-            elif _is_ai_curator_preference_request(user_text):
-                response = _ai_curator_response(user_text, user_id=line_user_id)
-                fallback_text = fit_line_text(response["report"])
-                reply_message = TextMessage(text=fallback_text)
-                reply_messages = [
-                    reply_message,
-                    _build_line_flex_message(
-                        response["flex"],
-                        alt_text="AI 入坑",
-                    ),
-                ]
-            elif _is_bias_radar_quiz_request(user_text, line_user_id):
-                response = _bias_radar_quiz_response(line_user_id, user_text)
-                reply_message = _build_line_flex_message(
-                    response["flex"],
-                    alt_text="本命雷達測驗",
-                )
-                fallback_text = fit_line_text(response["report"])
-            elif _is_fan_attribute_quiz_request(user_text):
-                reply_message = _build_line_flex_message(
-                    _build_fan_attribute_quiz_flex_contents(user_text),
-                    alt_text="粉絲屬性測驗",
-                )
-                fallback_text = fit_line_text(_fan_attribute_quiz_text(user_text))
-            elif _is_member_quiz_answer(user_text):
-                response = _member_quiz_answer_response(user_text)
-                fallback_text = fit_line_text(response["report"])
-                reply_message = TextMessage(text=fallback_text)
-                if response["flex"] is not None:
-                    reply_messages = [
-                        reply_message,
-                        _build_line_flex_message(
-                            response["flex"],
-                            alt_text="再來一題？",
-                        ),
-                    ]
-            elif _is_member_quiz_request(user_text):
-                response = _member_quiz_question_response()
-                fallback_text = fit_line_text(response["report"])
-                if response["flex"] is None:
-                    reply_message = TextMessage(text=fallback_text)
-                else:
-                    reply_message = _build_line_flex_message(
-                        response["flex"],
-                        alt_text="認人測驗",
-                    )
-            elif _is_daily_kpop_request(user_text):
-                reply_message = _build_line_flex_message(
-                    _build_daily_kpop_flex_contents(),
-                    alt_text="每日一首 K-pop",
-                )
-                fallback_text = "請選擇：每日 MV、每日直拍、每日經典舞台"
-            elif _is_daily_kpop_category_request(user_text):
-                response = _daily_kpop_response(user_text, user_id=line_user_id)
-                fallback_text = fit_line_text(response["report"])
-                reply_message = TextMessage(text=fallback_text)
-                if response["flex"] is not None:
-                    reply_messages = [
-                        reply_message,
-                        _build_line_flex_message(
-                            response["flex"],
-                            alt_text="再抽一首 K-pop",
-                        ),
-                    ]
-            elif _is_photo_card_request(user_text):
-                response = _photo_card_response()
-                report_text = response["report"]
-                fallback_text = fit_line_text(report_text)
-                reply_message = TextMessage(text=fallback_text)
-                if response["flex"] is not None:
-                    reply_messages = [
-                        reply_message,
-                        _build_line_flex_message(
-                            response["flex"],
-                            alt_text="再抽一次",
-                        ),
-                    ]
-            else:
-                if _is_historical_weekly_chart_request(user_text):
-                    report = agent.generate_weekly_chart_report_for_date(
-                        _historical_weekly_chart_date(user_text)
-                    )
-                    reply_message = TextMessage(text=fit_line_text(report))
-                    fallback_text = fit_line_text(report)
-                elif route_message(user_text).name == "weekly_chart":
-                    chart_cache = agent.get_weekly_chart_cache()
-                    report = chart_cache["report"]
-                    fallback_text = fit_line_text(report)
-                    history_qr = _build_weekly_chart_history_quick_reply(
-                        current_chart_date=chart_cache.get("chart", {}).get("chart_date", ""),
-                    )
-                    reply_message = TextMessage(
-                        text=fallback_text,
-                        quickReply=history_qr,
-                    )
-                elif _is_full_artist_report_request(user_text):
-                    intent = route_message(user_text)
-                    artist_cache = agent.get_artist_analysis_cache(
-                        intent.artist,
-                        period_months=intent.period_months,
-                    )
-                    report = artist_cache["report"]
-                    reply_message = _build_line_flex_message(
-                        artist_cache["flex"],
-                        alt_text=f"{artist_cache['artist']} K-pop 分析報告",
-                    )
-                    fallback_text = fit_line_text(report)
-                elif _is_ai_curator_reason_followup(user_text):
-                    response = _ai_curator_reason_followup_response(
-                        user_text,
-                        user_id=line_user_id,
-                    )
-                    fallback_text = fit_line_text(response["report"])
-                    reply_message = TextMessage(text=fallback_text)
-                else:
-                    fallback_text = fit_line_text(
-                        _reply_text_for_message(user_text, user_id=line_user_id)
-                    )
-                    reply_message = TextMessage(text=fallback_text)
-                    report = ""
-
-            if reply_message is None:
-                _clear_line_event_processing(event)
-                return
-
+            )
+            _mark_line_event_processed(event)
+        except Exception as exc:
+            logger.warning("Flex reply failed; retrying with text fallback: %s", exc)
             try:
                 line_bot_api.reply_message(
                     ReplyMessageRequest(
                         reply_token=event.reply_token,
-                        messages=reply_messages or [reply_message],
+                        messages=[TextMessage(text=reply.text)],
                     )
                 )
                 _mark_line_event_processed(event)
-            except Exception as exc:
-                logger.warning("Flex reply failed; retrying with text fallback: %s", exc)
-                try:
-                    line_bot_api.reply_message(
-                        ReplyMessageRequest(
-                            reply_token=event.reply_token,
-                            messages=[TextMessage(text=fallback_text)],
-                        )
-                    )
-                    _mark_line_event_processed(event)
-                except Exception as fallback_exc:
-                    _clear_line_event_processing(event)
-                    logger.exception("LINE reply failed: %s", fallback_exc)
+            except Exception as fallback_exc:
+                _clear_line_event_processing(event)
+                logger.exception("LINE reply failed: %s", fallback_exc)
+
+
+if line_handler is not None and MessageEvent is not None and TextMessageContent is not None:
 
     @line_handler.add(MessageEvent, message=TextMessageContent)
     def handle_text_message(event: MessageEvent) -> None:
