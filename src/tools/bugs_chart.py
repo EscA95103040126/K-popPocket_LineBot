@@ -131,9 +131,24 @@ def _node_title_or_text(node: Any) -> str:
 
 
 def _artist_text(node: Any) -> str:
+    for link in node.select("a.more"):
+        match = re.search(
+            r"openMultiArtistSearchResultPopLayer\(this,\s*'((?:\\.|[^'\\])*)'",
+            link.get("onclick", ""),
+        )
+        if not match:
+            continue
+        names = []
+        for record in re.split(r"\\+n|\r?\n", match.group(1)):
+            fields = record.split("||")
+            if len(fields) >= 3 and fields[2].isdigit() and fields[1].strip():
+                names.append(fields[1].strip().replace("\\'", "'"))
+        if names:
+            return ", ".join(dict.fromkeys(names))
+
     artists = [
         _node_title_or_text(link)
-        for link in node.select("a")
+        for link in node.select("a:not(.more)")
         if _node_title_or_text(link)
     ]
     if artists:
