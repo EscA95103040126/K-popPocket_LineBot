@@ -7,6 +7,8 @@ pinned: false
 
 # K-pop Agent
 
+[![CI](https://github.com/EscA95103040126/K-pop-Agent/actions/workflows/ci.yml/badge.svg)](https://github.com/EscA95103040126/K-pop-Agent/actions/workflows/ci.yml)
+
 K-pop Agent 是一個已部署至 Hugging Face Space 的 LINE Bot 專案，將 K-pop 榜單資料、Naver 新聞、YouTube 留言情感分析、Gemini 文字生成、SQLite 快取與 LINE Flex Message 整合成可互動的 K-pop 分析與遊玩型機器人。
 
 - Hugging Face Space: <https://huggingface.co/spaces/EscA95103040126/kpop-agent>
@@ -42,7 +44,7 @@ sdk: docker
 app_port: 7860
 ```
 
-`Dockerfile` 會安裝 `requirements.txt`，初始化 SQLite 資料庫，並以 `gunicorn` 啟動 Flask app。
+`Dockerfile` 會用 uv 依 `uv.lock` 安裝執行期依賴（`uv sync --locked`，不含開發工具），初始化 SQLite 資料庫，並以 `gunicorn` 啟動 Flask app。
 
 ## 主要功能
 
@@ -188,7 +190,7 @@ Play Zone 是互動遊玩區，目前包含：
 `分析 藝人` 的輿論面向分析不在 LINE webhook 內即時跑模型，也不在 webhook 內大量抓 YouTube 留言。正式流程是先執行離線批次：
 
 ```bash
-python3 scripts/build_absa_cache.py
+uv run python scripts/build_absa_cache.py
 ```
 
 批次腳本會：
@@ -215,7 +217,7 @@ LINE Bot 收到 `分析 aespa`、`分析 IVE` 等完整藝人分析指令時，�
 需要分析指定月份時，使用有日期與來源紀錄的更新流程：
 
 ```bash
-python3 -u scripts/refresh_monthly_analysis.py --month 2026-10 --as-of 2026-10-11 --publish-local
+uv run python -u scripts/refresh_monthly_analysis.py --month 2026-10 --as-of 2026-10-11 --publish-local
 ```
 
 這個流程直接讀取 Naver、YouTube、Bugs 與 Gemini API，不以 mock 或舊留言替代當月資料。它會按發布日期篩選新聞及韓文頂層留言，以 Gemini 做整體及五面向情感標註，再產生附引用來源的繁體中文報告。新聞不納入留言情感比例，正面比例不作為市場熱度指標。影片搜尋為抽樣，並包含非官方舞台影片，不代表所有粉絲或一般大眾。
@@ -265,9 +267,10 @@ HTTP 呼叫端 ─────────────────────�
 .
 ├── app.py                         # WSGI 進入點（gunicorn app:app），只呼叫 create_app()
 ├── Dockerfile                     # Hugging Face Space Docker runtime
-├── requirements.txt               # Runtime Python dependencies
-├── requirements-dev.txt           # 本機測試與開發依賴
-├── pytest.ini                     # pytest 設定
+├── pyproject.toml                 # 依賴、pytest、coverage 與 ruff 設定
+├── uv.lock                        # uv 鎖定的完整依賴版本
+├── .python-version                # Python 3.13
+├── .github/workflows/ci.yml       # GitHub Actions：lint、測試、coverage、Docker 冒煙測試
 ├── src/
 │   ├── web/
 │   │   └── app_factory.py         # create_app()：Flask 路由、health、圖片路由
@@ -362,23 +365,25 @@ cp .env.example .env
 
 ### 1. 安裝依賴
 
+專案用 [uv](https://docs.astral.sh/uv/) 管理 Python 與依賴，以下指令會依 `.python-version` 準備 Python 3.13，並照 `uv.lock` 安裝執行期依賴和開發工具：
+
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements-dev.txt
+uv sync
 ```
+
+新增依賴用 `uv add 套件名稱`（開發工具用 `uv add --dev`），會一併更新 `pyproject.toml` 和 `uv.lock`。
 
 ### 2. 初始化資料庫
 
 ```bash
-python3 scripts/init_db.py
-python3 scripts/seed_data.py
+uv run python scripts/init_db.py
+uv run python scripts/seed_data.py
 ```
 
 ### 3. 啟動 Flask
 
 ```bash
-python3 app.py
+uv run python app.py
 ```
 
 本機預設 port 由 `.env` 的 `PORT` 決定，若未設定則使用 `5000`。
@@ -417,34 +422,45 @@ https://EscA95103040126-kpop-agent.hf.space/webhook
 
 ```bash
 # 抓取 Bugs 週榜
-python3 scripts/fetch_bugs_chart.py
+uv run python scripts/fetch_bugs_chart.py
 
 # 抓取指定週次 Bugs 週榜
-python3 scripts/fetch_bugs_chart.py --chart-date 2026-05-18
+uv run python scripts/fetch_bugs_chart.py --chart-date 2026-05-18
 
 # 預先產生藝人 cache
-python3 scripts/preload_cache.py
+uv run python scripts/preload_cache.py
 
 # 抓取 YouTube 留言
-python3 scripts/fetch_youtube_comments.py
+uv run python scripts/fetch_youtube_comments.py
 
 # 使用 Gemini 標註留言情感
-python3 scripts/label_sentiments.py
+uv run python scripts/label_sentiments.py
 
 # 建立或更新 LINE Rich Menu
-python3 scripts/setup_rich_menu.py
+uv run python scripts/setup_rich_menu.py
 
 # 匯入每日 MV、直拍與神圖資料到 Supabase kpop_items
-python3 scripts/import_kpop_items.py
+uv run python scripts/import_kpop_items.py
 
 # 僅檢查匯入資料數量，不寫入 Supabase
-python3 scripts/import_kpop_items.py --dry-run
+uv run python scripts/import_kpop_items.py --dry-run
 ```
 
-## 測試
+## 測試與程式碼品質
 
 ```bash
-pytest
+uv run pytest                 # 測試
+uv run pytest --cov           # 測試加覆蓋率（低於 65% 會失敗）
+uv run ruff check .           # lint
+uv run ruff format .          # 自動排版
+```
+
+GitHub Actions（`.github/workflows/ci.yml`）在每次 push 到 `main` 和每個 PR 上執行同樣的檢查，並把覆蓋率表格寫進 job summary。另一個 job 會實際 build Docker 映像檔、啟動 container 並打 `/health`，確認部署到 Hugging Face 的映像檔能跑起來。
+
+全專案統一排版的 commit 記錄在 `.git-blame-ignore-revs`，執行下面這行之後，`git blame` 就會略過它：
+
+```bash
+git config blame.ignoreRevsFile .git-blame-ignore-revs
 ```
 
 測試不會讀 `.env`，也不會連到任何外部服務：`tests/conftest.py` 會在載入設定前清掉所有金鑰，每個測試再用 `tests/fakes.py` 的 `make_app()` 建一個注入假依賴的 app。
@@ -482,7 +498,9 @@ UPDATE_GOLDEN=1 pytest tests/test_characterization.py
 - CSV / JSON cache
 - Docker
 - Hugging Face Spaces
-- pytest
+- pytest、pytest-cov
+- uv、ruff
+- GitHub Actions
 
 ## 目前狀態
 
