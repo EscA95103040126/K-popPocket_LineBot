@@ -285,7 +285,6 @@ def _build_kpop_radar_save_prompt_flex_contents(
     redraw_text: str,
 ) -> dict:
     item_id = str(recommendation.get("id") or "")
-    item_type = str(recommendation.get("item_type") or "mv")
     label = "收藏至口袋"
     contents = [
         {

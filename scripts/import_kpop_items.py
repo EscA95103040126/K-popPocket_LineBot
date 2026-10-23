@@ -15,7 +15,6 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from src.config import settings
 from src.tools.kpop_radar import KpopRadarRepository
 
-
 PLAY_ZONE_DIR = settings.base_dir / "data" / "play_zone"
 BIAS_RADAR_MEMBERS_PATH = PLAY_ZONE_DIR / "bias_radar_members.csv"
 DAILY_MV_PATH = PLAY_ZONE_DIR / "daily_mv.csv"

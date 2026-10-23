@@ -1,8 +1,8 @@
 from datetime import date
 
 from scripts.refresh_monthly_analysis import aggregate_comments, artist_matches, local_day
-from src.tools.absa import format_absa_report_for_line
 from src.agent import KpopAnalysisAgent, _extract_artist_name, _insight_from_absa
+from src.tools.absa import format_absa_report_for_line
 
 
 def test_monthly_dates_use_taipei_boundary():

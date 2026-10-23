@@ -8,7 +8,6 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
@@ -25,7 +24,6 @@ from src.tools.absa import (
     write_absa_summary_csv,
 )
 from src.tools.naver_news import NaverNewsClient
-
 
 DEFAULT_COMMENTS_PER_ARTIST = 50
 SUMMARY_CSV = ABSA_CACHE_DIR / "summary.csv"

@@ -10,7 +10,6 @@ import requests
 from src.config import Settings, settings
 from src.utils.text_cleaner import clean_html_text
 
-
 NAVER_NEWS_URL = "https://openapi.naver.com/v1/search/news.json"
 logger = logging.getLogger(__name__)
 

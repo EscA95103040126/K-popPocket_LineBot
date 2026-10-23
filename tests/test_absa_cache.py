@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import json
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 import src.agent as agent_module
 import src.tools.absa as absa_module
@@ -28,7 +28,7 @@ def _sample_absa_payload(artist: str = "aespa") -> dict:
     }
     return {
         "artist": artist,
-        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "generated_at": datetime.now(UTC).isoformat(),
         "sources": {
             "naver_news": {"count": 1, "items": []},
             "youtube_comments": {"count": 1},

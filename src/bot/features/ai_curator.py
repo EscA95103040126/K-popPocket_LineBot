@@ -5,7 +5,8 @@ import logging
 import random
 import re
 import unicodedata
-from typing import TYPE_CHECKING, Callable
+from collections.abc import Callable
+from typing import TYPE_CHECKING
 
 from src.bot.dispatcher import MessageContext
 from src.bot.flex_common import selection_page_flex_contents

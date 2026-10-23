@@ -1,8 +1,9 @@
 from __future__ import annotations
 
 import logging
-from contextlib import contextmanager
-from typing import TYPE_CHECKING, Callable, ContextManager, Iterator
+from collections.abc import Callable, Iterator
+from contextlib import AbstractContextManager, contextmanager
+from typing import TYPE_CHECKING
 
 from linebot.v3 import WebhookHandler
 from linebot.v3.messaging import (
@@ -25,7 +26,7 @@ if TYPE_CHECKING:
 
 logger = logging.getLogger(__name__)
 
-MessagingApiFactory = Callable[[], ContextManager[MessagingApi]]
+MessagingApiFactory = Callable[[], AbstractContextManager[MessagingApi]]
 
 
 class LineAdapter:

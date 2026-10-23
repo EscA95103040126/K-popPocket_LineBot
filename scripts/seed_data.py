@@ -2,14 +2,13 @@ from __future__ import annotations
 
 import csv
 import sqlite3
-from pathlib import Path
 import sys
+from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.tools.chart_db import ChartHistoryRepository
-
 
 CSV_PATH = PROJECT_ROOT / "data" / "seed_chart_data.csv"
 

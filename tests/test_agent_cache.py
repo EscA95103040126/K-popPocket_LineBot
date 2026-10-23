@@ -1,5 +1,5 @@
 import json
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 
 import src.agent as agent_module
 from src.agent import KpopAnalysisAgent
@@ -15,14 +15,14 @@ class DummyAgent:
         return {
             "artist": artist,
             "period_months": period_months,
-            "cached_at": datetime.now(timezone.utc).isoformat(),
+            "cached_at": datetime.now(UTC).isoformat(),
             "report": "regenerated",
         }
 
     def preload_weekly_chart_cache(self, limit: int = 10) -> dict:
         self.weekly_preload_calls += 1
         return {
-            "cached_at": datetime.now(timezone.utc).isoformat(),
+            "cached_at": datetime.now(UTC).isoformat(),
             "chart": {"items": []},
             "report": "weekly regenerated",
         }
@@ -36,7 +36,7 @@ def test_get_artist_cache_returns_fresh_matching_period(monkeypatch, tmp_path) -
             {
                 "artist": "aespa",
                 "period_months": 3,
-                "cached_at": datetime.now(timezone.utc).isoformat(),
+                "cached_at": datetime.now(UTC).isoformat(),
                 "report": "cached",
             }
         ),
@@ -58,7 +58,7 @@ def test_get_artist_cache_regenerates_stale_cache(monkeypatch, tmp_path) -> None
             {
                 "artist": "aespa",
                 "period_months": 3,
-                "cached_at": (datetime.now(timezone.utc) - timedelta(days=2)).isoformat(),
+                "cached_at": (datetime.now(UTC) - timedelta(days=2)).isoformat(),
                 "report": "stale",
             }
         ),

@@ -6,7 +6,6 @@ from dataclasses import dataclass
 
 from src.utils.text_cleaner import normalize_artist
 
-
 ARTIST_PATTERNS = {
     "aespa": re.compile(r"(aespa|에스파)", re.IGNORECASE),
     "IVE": re.compile(r"(ive|아이브)", re.IGNORECASE),

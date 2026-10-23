@@ -33,7 +33,6 @@ from tests.fakes import (
     make_deps,
 )
 
-
 GOLDEN_DIR = Path(__file__).parent / "golden"
 UPDATE_GOLDEN = os.getenv("UPDATE_GOLDEN") == "1"
 SEED = 20261023

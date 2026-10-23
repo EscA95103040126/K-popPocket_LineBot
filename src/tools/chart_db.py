@@ -7,8 +7,7 @@ from pathlib import Path
 from statistics import mean
 from typing import Any
 
-from src.config import Settings, settings
-
+from src.config import settings
 
 SCHEMA_SQL = """
 CREATE TABLE IF NOT EXISTS chart_history (

@@ -10,7 +10,6 @@ from src.bot.flex_common import (
 )
 from src.bot.reply import Reply
 
-
 FAN_ATTRIBUTE_TYPES = {
     "group": {
         "name": "團飯",

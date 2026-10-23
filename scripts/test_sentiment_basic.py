@@ -1,10 +1,10 @@
-from pathlib import Path
 import sys
+from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.tools.sentiment import load_comments, get_comments_by_artist
+from src.tools.sentiment import get_comments_by_artist, load_comments
 
 
 def main():

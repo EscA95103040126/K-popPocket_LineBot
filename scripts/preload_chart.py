@@ -3,11 +3,10 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.agent import KpopAnalysisAgent, WEEKLY_CHART_CACHE_PATH
+from src.agent import WEEKLY_CHART_CACHE_PATH, KpopAnalysisAgent
 from src.tools.bugs_chart import fetch_bugs_weekly_chart, save_bugs_weekly_chart
 
 

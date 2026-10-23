@@ -6,9 +6,10 @@ import logging
 import os
 import re
 from collections import Counter
-from datetime import datetime, timezone
+from collections.abc import Iterable
+from datetime import UTC, datetime
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any
 
 from src.config import settings
 from src.tools.sentiment import _normalize_artist_name, get_comments_by_artist
@@ -256,7 +257,7 @@ def build_absa_payload(
 
     return {
         "artist": artist,
-        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "generated_at": datetime.now(UTC).isoformat(),
         "sources": {
             "naver_news": {
                 "count": len(news),

@@ -3,10 +3,10 @@ from __future__ import annotations
 import json
 import logging
 from collections import OrderedDict
+from collections.abc import Callable
 from pathlib import Path
 from threading import RLock
 from time import monotonic, time
-from typing import Callable
 
 logger = logging.getLogger(__name__)
 

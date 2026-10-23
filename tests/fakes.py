@@ -5,10 +5,10 @@ from __future__ import annotations
 import dataclasses
 import itertools
 import random
+from collections.abc import Callable
 from contextlib import contextmanager
 from pathlib import Path
 from time import time
-from typing import Callable
 
 from flask import Flask
 
