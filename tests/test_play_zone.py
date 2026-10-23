@@ -826,7 +826,7 @@ def test_ai_curator_reason_followup_uses_member_csv_and_fancam(monkeypatch) -> N
     assert "Naver 近期資料" not in payload["report"]
     assert "先用這支直拍確認感覺：NMIXX Sullyoon" in payload["report"]
     assert "https://youtu" in payload["report"]
-    assert "flex" not in payload
+    assert payload["flex"] is None
 
 
 def test_ai_curator_reason_followup_accepts_lowercase_member(monkeypatch) -> None:
@@ -1017,7 +1017,7 @@ def test_ai_curator_reason_followup_runs_after_fixed_analyze_routes(monkeypatch)
     assert artist_report["cache"]["type"] == "absa"
     assert artist_report["cache"]["artist"] == "aespa"
     assert reason["report"].startswith("✨ 我會先推 NMIXX Sullyoon")
-    assert "flex" not in reason
+    assert reason["flex"] is None
 
 
 def test_webhook_mock_routes_reason_followup_after_fixed_commands(monkeypatch) -> None:
@@ -1042,7 +1042,7 @@ def test_webhook_mock_routes_reason_followup_after_fixed_commands(monkeypatch) -
     ).data)
 
     assert daily_response["mock_reply"].startswith("🎵 今日推薦 MV")
-    assert ai_entry_response["mock_reply"].startswith("請在 LINE 中點選 AI 入坑")
+    assert ai_entry_response["mock_reply"].startswith("請直接輸入你的 K-pop 偏好")
     assert reason_response["mock_reply"].startswith("✨ 我會先推 NMIXX Sullyoon")
 
 
@@ -1118,12 +1118,9 @@ def test_weekly_chart_history_quick_reply_excludes_current_week(monkeypatch) -> 
         current_chart_date="2026-05-18"
     )
 
-    assert qr is not None
-    items = qr.items
-    assert len(items) == 1
-    action = items[0].action
-    assert action.label == "📅 5/11-5/17"
-    assert action.text == "歷史週榜:2026-05-11"
+    assert len(qr) == 1
+    assert qr[0].label == "📅 5/11-5/17"
+    assert qr[0].text == "歷史週榜:2026-05-11"
 
 
 def test_weekly_chart_history_quick_reply_orders_oldest_to_newest(monkeypatch) -> None:
@@ -1144,8 +1141,7 @@ def test_weekly_chart_history_quick_reply_orders_oldest_to_newest(monkeypatch) -
         current_chart_date="2026-06-01"
     )
 
-    assert qr is not None
-    assert [item.action.label for item in qr.items] == [
+    assert [action.label for action in qr] == [
         "📅 5/11-5/17",
         "📅 5/18-5/24",
         "📅 5/25-5/31",
@@ -1165,17 +1161,15 @@ def test_bias_radar_session_prunes_expired_session(monkeypatch) -> None:
     assert "expired-user" not in app_module.bias_radar_sessions
 
 
-def test_reply_text_bias_radar_uses_passed_user_id() -> None:
+def test_dispatcher_bias_radar_uses_passed_user_id() -> None:
     app_module.bias_radar_sessions.clear()
 
-    first_reply = app_module._reply_text_for_message(
-        "本命雷達測驗",
-        user_id="text-flow-user",
-    )
-    second_reply = app_module._reply_text_for_message(
-        "本命雷達:0:女團",
-        user_id="text-flow-user",
-    )
+    first_reply = app_module.dispatcher.dispatch(
+        app_module.MessageContext(text="本命雷達測驗", user_id="text-flow-user")
+    ).report
+    second_reply = app_module.dispatcher.dispatch(
+        app_module.MessageContext(text="本命雷達:0:女團", user_id="text-flow-user")
+    ).report
 
     assert first_reply.startswith("本命雷達測驗 Q1/5")
     assert second_reply.startswith("本命雷達測驗 Q2/5")

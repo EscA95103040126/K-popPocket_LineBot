@@ -720,6 +720,7 @@
     },
     {
       "body": {
+        "flex": null,
         "report": "目前本地資料還找不到這位成員，但可以先從本命雷達或每日一首繼續探索。\n\n先補一支每日 MV：Stray Kids - MIROH\nhttps://youtu.be/Dab4EENTW5I?si=lhTz38BRFfb4vY2l"
       },
       "status": 200
@@ -728,6 +729,7 @@
   "ai_curator_reason_without_context": [
     {
       "body": {
+        "flex": null,
         "report": "✨ 我會先推 aespa Karina。\n🔎 如果你吃貓咪、狐狸那種第一眼的清透感，Karina 會很容易先對上；再加上冷感、霸氣、反差的反差，會讓人想多看幾支舞台。\n💫 神性、舞台支配感的距離感很適合慢慢被圈進去，入門可以先看能感受到舞台動作、rap 節奏感、鏡頭感和全方位感魅力的直拍。\n📰 補充團體近況：aespa 近期重點是「aespa本週聲量偏強」。\n\n🎬 先用這支直拍確認感覺：aespa Karina - UP\nhttps://youtu.be/PwnHCwC2H9E?si=W947KqWm-lAcrGMO"
       },
       "status": 200
@@ -736,15 +738,317 @@
   "artist_picker": [
     {
       "body": {
-        "flex": null,
-        "report": "目前支援固定指令：\n1. 分析 aespa\n2. 分析 IVE\n3. 本週榜單\n4. 互動專區\n5. 每日一首\n6. 我的K-pop 口袋\n\n請用「分析 藝人名」取得完整報告。"
+        "flex": {
+          "body": {
+            "backgroundColor": "#FAF7F4",
+            "contents": [
+              {
+                "color": "#5C4033",
+                "size": "sm",
+                "text": "請選擇要產生分析報告的藝人，或直接輸入「分析 藝人名」。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "label": "aespa",
+                  "text": "分析 aespa",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "IVE",
+                  "text": "分析 IVE",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "BABYMONSTER",
+                  "text": "分析 BABYMONSTER",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "NMIXX",
+                  "text": "分析 NMIXX",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "ILLIT",
+                  "text": "分析 ILLIT",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "NCT",
+                  "text": "分析 NCT",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "ZEROBASEONE",
+                  "text": "分析 ZEROBASEONE",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "TXT",
+                  "text": "分析 TXT",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "ENHYPEN",
+                  "text": "分析 ENHYPEN",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "BOYNEXTDOOR",
+                  "text": "分析 BOYNEXTDOOR",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#C4956A",
+            "contents": [
+              {
+                "color": "#FDEBD8",
+                "size": "xs",
+                "text": "K-pop Agent",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xxl",
+                "text": "選擇藝人",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "請輸入：分析 aespa、分析 IVE、分析 NCT"
       },
       "status": 200
     },
     {
       "body": {
-        "flex": null,
-        "report": "目前支援固定指令：\n1. 分析 aespa\n2. 分析 IVE\n3. 本週榜單\n4. 互動專區\n5. 每日一首\n6. 我的K-pop 口袋\n\n請用「分析 藝人名」取得完整報告。"
+        "flex": {
+          "body": {
+            "backgroundColor": "#FAF7F4",
+            "contents": [
+              {
+                "color": "#5C4033",
+                "size": "sm",
+                "text": "請選擇要產生分析報告的藝人，或直接輸入「分析 藝人名」。",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "label": "aespa",
+                  "text": "分析 aespa",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "IVE",
+                  "text": "分析 IVE",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "BABYMONSTER",
+                  "text": "分析 BABYMONSTER",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "NMIXX",
+                  "text": "分析 NMIXX",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "ILLIT",
+                  "text": "分析 ILLIT",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "NCT",
+                  "text": "分析 NCT",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "ZEROBASEONE",
+                  "text": "分析 ZEROBASEONE",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "TXT",
+                  "text": "分析 TXT",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "ENHYPEN",
+                  "text": "分析 ENHYPEN",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "BOYNEXTDOOR",
+                  "text": "分析 BOYNEXTDOOR",
+                  "type": "message"
+                },
+                "color": "#8B5E52",
+                "height": "sm",
+                "style": "primary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#C4956A",
+            "contents": [
+              {
+                "color": "#FDEBD8",
+                "size": "xs",
+                "text": "K-pop Agent",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xxl",
+                "text": "選擇藝人",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "請輸入：分析 aespa、分析 IVE、分析 NCT"
       },
       "status": 200
     }
@@ -2149,150 +2453,8 @@
     },
     {
       "body": {
-        "flex": {
-          "body": {
-            "backgroundColor": "#F7FAF8",
-            "contents": [
-              {
-                "color": "#3F554A",
-                "size": "md",
-                "text": "外貌偏好：",
-                "type": "text",
-                "weight": "bold",
-                "wrap": true
-              },
-              {
-                "action": {
-                  "data": "本命雷達:1:貓咪",
-                  "type": "postback"
-                },
-                "backgroundColor": "#FFFFFF",
-                "contents": [
-                  {
-                    "color": "#5D6F66",
-                    "size": "md",
-                    "text": "貓咪",
-                    "type": "text",
-                    "weight": "bold"
-                  }
-                ],
-                "cornerRadius": "8px",
-                "layout": "vertical",
-                "paddingAll": "12px",
-                "type": "box"
-              },
-              {
-                "action": {
-                  "data": "本命雷達:1:狗狗",
-                  "type": "postback"
-                },
-                "backgroundColor": "#FFFFFF",
-                "contents": [
-                  {
-                    "color": "#5D6F66",
-                    "size": "md",
-                    "text": "狗狗",
-                    "type": "text",
-                    "weight": "bold"
-                  }
-                ],
-                "cornerRadius": "8px",
-                "layout": "vertical",
-                "paddingAll": "12px",
-                "type": "box"
-              },
-              {
-                "action": {
-                  "data": "本命雷達:1:小兔",
-                  "type": "postback"
-                },
-                "backgroundColor": "#FFFFFF",
-                "contents": [
-                  {
-                    "color": "#5D6F66",
-                    "size": "md",
-                    "text": "小兔",
-                    "type": "text",
-                    "weight": "bold"
-                  }
-                ],
-                "cornerRadius": "8px",
-                "layout": "vertical",
-                "paddingAll": "12px",
-                "type": "box"
-              },
-              {
-                "action": {
-                  "data": "本命雷達:1:狐狸",
-                  "type": "postback"
-                },
-                "backgroundColor": "#FFFFFF",
-                "contents": [
-                  {
-                    "color": "#5D6F66",
-                    "size": "md",
-                    "text": "狐狸",
-                    "type": "text",
-                    "weight": "bold"
-                  }
-                ],
-                "cornerRadius": "8px",
-                "layout": "vertical",
-                "paddingAll": "12px",
-                "type": "box"
-              },
-              {
-                "action": {
-                  "data": "本命雷達:1:小鹿",
-                  "type": "postback"
-                },
-                "backgroundColor": "#FFFFFF",
-                "contents": [
-                  {
-                    "color": "#5D6F66",
-                    "size": "md",
-                    "text": "小鹿",
-                    "type": "text",
-                    "weight": "bold"
-                  }
-                ],
-                "cornerRadius": "8px",
-                "layout": "vertical",
-                "paddingAll": "12px",
-                "type": "box"
-              }
-            ],
-            "layout": "vertical",
-            "paddingAll": "18px",
-            "spacing": "md",
-            "type": "box"
-          },
-          "header": {
-            "backgroundColor": "#5D6F66",
-            "contents": [
-              {
-                "color": "#EAF4EE",
-                "size": "xs",
-                "text": "本命雷達測驗",
-                "type": "text"
-              },
-              {
-                "color": "#FFFFFF",
-                "margin": "sm",
-                "size": "xl",
-                "text": "Q2/5",
-                "type": "text",
-                "weight": "bold"
-              }
-            ],
-            "layout": "vertical",
-            "paddingAll": "18px",
-            "type": "box"
-          },
-          "size": "mega",
-          "type": "bubble"
-        },
-        "report": "本命雷達測驗 Q2/5：請在 LINE 卡片中選擇最符合你的答案。"
+        "flex": null,
+        "report": "📖 使用說明\n\n輸入：\n分析 aespa\n分析 IVE\n本週榜單\n互動專區\n每日一首\n\n目前支援：\n- 藝人分析報告\n- 本週 Bugs 榜單\n- 粉絲留言情緒分析\n- Play Zone 互動入口\n- 每日一首 K-pop 入口\n\n可分析藝人：\naespa、IVE、BABYMONSTER、NMIXX、ILLIT、NCT、ZEROBASEONE、TXT、ENHYPEN、BOYNEXTDOOR"
       },
       "status": 200
     }

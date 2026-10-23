@@ -257,8 +257,6 @@ def _run_mock_webhook(messages: list[str], user_id: str, monkeypatch) -> list:
 
 
 def _run_line(messages: list[str], user_id: str) -> list:
-    if not hasattr(app_module, "_reply_line_event"):
-        pytest.skip("LINE reply path is only defined when LINE credentials are configured")
     outputs = []
     for index, message in enumerate(messages):
         RecordingMessagingApi.replies = []

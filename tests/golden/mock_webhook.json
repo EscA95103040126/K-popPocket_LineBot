@@ -1,11 +1,11 @@
 {
   "ai_curator_entry": [
     {
-      "body": "{\n  \"mock_reply\": \"\\u8acb\\u5728 LINE \\u4e2d\\u9ede\\u9078 AI \\u5165\\u5751\\uff0c\\u6216\\u76f4\\u63a5\\u8f38\\u5165\\u4f60\\u7684 K-pop \\u504f\\u597d\\u3002\"\n}\n",
+      "body": "{\n  \"mock_reply\": \"\\u8acb\\u76f4\\u63a5\\u8f38\\u5165\\u4f60\\u7684 K-pop \\u504f\\u597d\\uff0c\\u4f8b\\u5982\\uff1a\\u6211\\u60f3\\u5165\\u5751\\u6e05\\u51b7\\u611f\\u3001\\u821e\\u53f0\\u5f37\\u7684\\u5973\\u5718\\u3002\"\n}\n",
       "status": 200
     },
     {
-      "body": "{\n  \"mock_reply\": \"\\u8acb\\u5728 LINE \\u4e2d\\u9ede\\u9078 AI \\u5165\\u5751\\uff0c\\u6216\\u76f4\\u63a5\\u8f38\\u5165\\u4f60\\u7684 K-pop \\u504f\\u597d\\u3002\"\n}\n",
+      "body": "{\n  \"mock_reply\": \"\\u8acb\\u76f4\\u63a5\\u8f38\\u5165\\u4f60\\u7684 K-pop \\u504f\\u597d\\uff0c\\u4f8b\\u5982\\uff1a\\u6211\\u60f3\\u5165\\u5751\\u6e05\\u51b7\\u611f\\u3001\\u821e\\u53f0\\u5f37\\u7684\\u5973\\u5718\\u3002\"\n}\n",
       "status": 200
     }
   ],
@@ -37,29 +37,29 @@
   ],
   "artist_picker": [
     {
-      "body": "{\n  \"mock_reply\": \"\\u76ee\\u524d\\u652f\\u63f4\\u56fa\\u5b9a\\u6307\\u4ee4\\uff1a\\n1. \\u5206\\u6790 aespa\\n2. \\u5206\\u6790 IVE\\n3. \\u672c\\u9031\\u699c\\u55ae\\n4. \\u4e92\\u52d5\\u5c08\\u5340\\n5. \\u6bcf\\u65e5\\u4e00\\u9996\\n6. \\u6211\\u7684K-pop \\u53e3\\u888b\\n\\n\\u8acb\\u7528\\u300c\\u5206\\u6790 \\u85dd\\u4eba\\u540d\\u300d\\u53d6\\u5f97\\u5b8c\\u6574\\u5831\\u544a\\u3002\"\n}\n",
+      "body": "{\n  \"mock_reply\": \"\\u8acb\\u8f38\\u5165\\uff1a\\u5206\\u6790 aespa\\u3001\\u5206\\u6790 IVE\\u3001\\u5206\\u6790 NCT\"\n}\n",
       "status": 200
     },
     {
-      "body": "{\n  \"mock_reply\": \"\\u76ee\\u524d\\u652f\\u63f4\\u56fa\\u5b9a\\u6307\\u4ee4\\uff1a\\n1. \\u5206\\u6790 aespa\\n2. \\u5206\\u6790 IVE\\n3. \\u672c\\u9031\\u699c\\u55ae\\n4. \\u4e92\\u52d5\\u5c08\\u5340\\n5. \\u6bcf\\u65e5\\u4e00\\u9996\\n6. \\u6211\\u7684K-pop \\u53e3\\u888b\\n\\n\\u8acb\\u7528\\u300c\\u5206\\u6790 \\u85dd\\u4eba\\u540d\\u300d\\u53d6\\u5f97\\u5b8c\\u6574\\u5831\\u544a\\u3002\"\n}\n",
+      "body": "{\n  \"mock_reply\": \"\\u8acb\\u8f38\\u5165\\uff1a\\u5206\\u6790 aespa\\u3001\\u5206\\u6790 IVE\\u3001\\u5206\\u6790 NCT\"\n}\n",
       "status": 200
     }
   ],
   "artist_report": [
     {
-      "body": "{\n  \"mock_reply\": \"# local analysis\\n\\u5206\\u6790 aespa\"\n}\n",
+      "body": "{\n  \"mock_reply\": \"# aespa \\u8fd1\\u671f\\u5e02\\u5834\\u8207\\u8f3f\\u8ad6\\u5206\\u6790\\n\\u671f\\u9593\\uff1a3 \\u500b\\u6708\"\n}\n",
       "status": 200
     },
     {
-      "body": "{\n  \"mock_reply\": \"# local analysis\\nIVE\"\n}\n",
+      "body": "{\n  \"mock_reply\": \"# IVE \\u8fd1\\u671f\\u5e02\\u5834\\u8207\\u8f3f\\u8ad6\\u5206\\u6790\\n\\u671f\\u9593\\uff1a3 \\u500b\\u6708\"\n}\n",
       "status": 200
     },
     {
-      "body": "{\n  \"mock_reply\": \"# local analysis\\n\\u5206\\u6790 NCT \\u4e00\\u500b\\u6708\"\n}\n",
+      "body": "{\n  \"mock_reply\": \"# NCT \\u8fd1\\u671f\\u5e02\\u5834\\u8207\\u8f3f\\u8ad6\\u5206\\u6790\\n\\u671f\\u9593\\uff1a1 \\u500b\\u6708\"\n}\n",
       "status": 200
     },
     {
-      "body": "{\n  \"mock_reply\": \"# local analysis\\n\\ubd84\\uc11d ILLIT\"\n}\n",
+      "body": "{\n  \"mock_reply\": \"# ILLIT \\u8fd1\\u671f\\u5e02\\u5834\\u8207\\u8f3f\\u8ad6\\u5206\\u6790\\n\\u671f\\u9593\\uff1a3 \\u500b\\u6708\"\n}\n",
       "status": 200
     }
   ],
@@ -113,7 +113,7 @@
   ],
   "daily_kpop": [
     {
-      "body": "{\n  \"mock_reply\": \"\\u8acb\\u5728 LINE \\u4e2d\\u9ede\\u9078\\u6bcf\\u65e5\\u4e00\\u9996 K-pop \\u5361\\u7247\\u9078\\u64c7 MV\\u3001\\u76f4\\u62cd\\u6216\\u7d93\\u5178\\u821e\\u53f0\\u3002\"\n}\n",
+      "body": "{\n  \"mock_reply\": \"\\u8acb\\u9078\\u64c7\\uff1a\\u6bcf\\u65e5 MV\\u3001\\u6bcf\\u65e5\\u76f4\\u62cd\\u3001\\u6bcf\\u65e5\\u7d93\\u5178\\u821e\\u53f0\"\n}\n",
       "status": 200
     },
     {
@@ -201,11 +201,11 @@
   ],
   "play_zone": [
     {
-      "body": "{\n  \"mock_reply\": \"\\u8acb\\u5728 LINE \\u4e2d\\u9ede\\u9078 K-pop Play Zone \\u5361\\u7247\\u958b\\u59cb\\u4e92\\u52d5\\u3002\"\n}\n",
+      "body": "{\n  \"mock_reply\": \"\\u8acb\\u9078\\u64c7\\uff1a\\u672c\\u547d\\u96f7\\u9054\\u6e2c\\u9a57\\u3001\\u7c89\\u7d72\\u5c6c\\u6027\\u6e2c\\u9a57\\u3001\\u8a8d\\u4eba\\u6e2c\\u9a57\\u3001\\u795e\\u5716\\u62bd\\u5361\"\n}\n",
       "status": 200
     },
     {
-      "body": "{\n  \"mock_reply\": \"\\u8acb\\u5728 LINE \\u4e2d\\u9ede\\u9078 K-pop Play Zone \\u5361\\u7247\\u958b\\u59cb\\u4e92\\u52d5\\u3002\"\n}\n",
+      "body": "{\n  \"mock_reply\": \"\\u8acb\\u9078\\u64c7\\uff1a\\u672c\\u547d\\u96f7\\u9054\\u6e2c\\u9a57\\u3001\\u7c89\\u7d72\\u5c6c\\u6027\\u6e2c\\u9a57\\u3001\\u8a8d\\u4eba\\u6e2c\\u9a57\\u3001\\u795e\\u5716\\u62bd\\u5361\"\n}\n",
       "status": 200
     }
   ],
@@ -245,7 +245,7 @@
   ],
   "weekly_chart": [
     {
-      "body": "{\n  \"mock_reply\": \"# local analysis\\n\\u672c\\u9031\\u699c\\u55ae\"\n}\n",
+      "body": "{\n  \"mock_reply\": \"# \\u672c\\u9031 K-pop \\u699c\\u55ae\\n1. Fake Song - Fake Artist\"\n}\n",
       "status": 200
     },
     {
