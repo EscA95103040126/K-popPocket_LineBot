@@ -1,110 +1,1574 @@
 {
   "artist": "ZEROBASEONE",
-  "generated_at": "2026-06-05T08:59:20.418668+00:00",
+  "generated_at": "2026-10-11T15:44:48.630897+00:00",
+  "analysis_period": {
+    "start": "2026-10-01",
+    "end": "2026-10-11",
+    "timezone": "Asia/Taipei"
+  },
   "sources": {
     "naver_news": {
-      "count": 10,
+      "count": 40,
       "items": [
         {
-          "title": "[공식] 팬 기만 논란..제로베이스원 박건욱, 조작 대참사에 사과",
-          "date": "2026-06-05",
-          "summary": "보이 그룹 제로베이스원(ZEROBASEONE) 멤버 박건욱이 조작 논란에 고개를 숙였다. 5일 박건욱은 팬 소통 플랫폼에 \"최근 팬사인회에서의 제 행동에 대해 진심 어린 사과를 드리고 싶어 이 글을 올립니다\"라며 장문의 글을...",
+          "title": "제로베이스원 떠난 장하오→한유진, 재데뷔 5개월 만에 확 달라졌다…물...",
+          "date": "2026-10-11",
+          "summary": "장하오, 리키, 김규빈, 한유진은 제로베이스원으로 활동하다 지난 3월 웨이크원과의 계약 종료 후 팀을 떠났다. 유승언 역시 이븐 활동을 마친 뒤 원소속사인 YH엔터테인먼트(구 위에화엔터테인먼트)에서...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/108/0003441533"
+          "link": "https://m.entertain.naver.com/article/312/0000779489",
+          "original_link": "https://www.tenasia.co.kr/article/2026100927204"
         },
         {
-          "title": "제로베이스원 박건욱, 팬사인회 조작 사과…“신중하지 못했다”",
-          "date": "2026-06-05",
-          "summary": "[헤럴드뮤즈] 그룹 제로베이스원(ZEROBASEONE) 멤버 박건욱이 팬 사인회 이벤트 당첨 조작 논란에 대해 사과했다. 5일 박건욱은 팬 소통 플랫폼에 “최근 팬사인회에서의 제 행동에 대해 진심 어린 사과를 드리고 싶어 이...",
+          "title": "방탄소년단, 보이그룹 브랜드평판 1위…2위 에이티즈·3위 스트레이 키...",
+          "date": "2026-10-10",
+          "summary": "이어 인피니트, 샤이니, 워너원, 슈퍼주니어, 비투비, 동방신기, 몬스타엑스, 2PM, 보이넥스트도어, 제로베이스원 등이 20위권에 이름을 올렸다. [김소연 스타투데이 기자]",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/016/0002652447"
+          "link": "https://m.entertain.naver.com/article/009/0005746548",
+          "original_link": "https://www.mk.co.kr/article/12172703"
         },
         {
-          "title": "제로베이스원, 음악·예능·숏폼 아우르는 전방위 활약",
-          "date": "2026-06-04",
-          "summary": "제로베이스원(ZEROBASEONE)이 음악 방송 활동을 마무리한 이후에도 화제성을 이어가고 있다. 제로베이스원(성한빈, 김지웅, 석매튜, 김태래, 박건욱)은 최근 여섯 번째 미니앨범 '어센드-(Ascend-)' 활동을 통해 다양한...",
+          "title": "성한빈, 데뷔 3년 만에 자신의 이름을 내건 첫 솔로 앨범 발매",
+          "date": "2026-10-09",
+          "summary": "그룹 제로베이스원(ZEROBASEONE)의 리더로 활약해 온 성한빈은 이번에는 자신의 목소리와 춤으로 솔로 무대를 채운다. 앞서 선공개한 ‘Killin’ Me(킬린 미)’ 퍼포먼스 비디오에서는 강렬한 변신과 눈을 뗄 수 없는...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/437/0000494535"
+          "link": "https://m.entertain.naver.com/article/144/0001143161",
+          "original_link": "https://sports.khan.co.kr/article/202610092148003?pt=nv"
         },
         {
-          "title": "[TOP이슈] 제로베이스원 박건욱, 팬사인회 추첨 조작 논란 사과 \"진심 다...",
-          "date": "2026-06-05",
-          "summary": "제로베이스원(ZEROBASEONE) 박건욱이 팬사인회에서 있었던 추첨 조작 논란을 사과했다. 5일 박건욱은 팬 소통 플랫폼을 통해 \"제로베이스원 박건욱입니다. 최근 팬사인회에서의 제 행동에 대해 진심 어린 사과를 드리고 싶어...",
+          "title": "제로베이스원, 팀→솔로→유닛…‘5인 5색’ 행보 구축",
+          "date": "2026-10-08",
+          "summary": "그룹 제로베이스원이 팀 활동을 넘어 개인과 유닛으로 활동 영역을 넓히며 존재감을 키우고 있다. 5인... 석매튜와 박건욱은 제로베이스원 첫 유닛 EMP로 뭉쳐 지난달 첫 믹스테이프를 공개했으며, 오는 11월 디지털...",
           "category": "news",
-          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16080251"
+          "link": "https://m.entertain.naver.com/article/009/0005746231",
+          "original_link": "https://www.mk.co.kr/article/12172015"
         },
         {
-          "title": "제로베이스원 박건욱 ‘유쾌한 미소’ [MK포토]",
-          "date": "2026-06-05",
-          "summary": "그룹 제로베이스원(ZEROBASEONE)이 해외일정 참석차 5일 오전 인천국제공항을 통해 중국 상하이로 출국했다. 출국장으로 향하는 제로베이스원 박건욱. 인천공항=김영구 MK스포츠 기자",
+          "title": "'AAA 2026', 인기상 부문별 1위 변동…변우석·김혜윤→임영웅·예지",
+          "date": "2026-10-07",
+          "summary": "3위 제로베이스원(ZEROBASEONE) 성한빈, 4위 이찬원, 5위는 투모루바이투게더(TOMORROW X TOGETHER) 연준이다.... 올해 배우 지창욱, 제로베이스원 성한빈, 쯔위가 합류해 함께 진행을 맡는다. 'AAA 2026'은 오는 12월...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/410/0001127598"
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16240980",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16240980"
         },
         {
-          "title": "제로베이스원 김태래 ‘강렬한 멋짐’[포토엔HD]",
-          "date": "2026-06-05",
-          "summary": "제로베이스원(ZEROBASEONE) 멤버 성한빈, 김지웅, 석매튜, 김태래, 박건욱이 6월 5일 오전 인천 중구 운서동 인천국제공항 제 2여객터미널을 통해 해외 일정 참석 차 중국 상하이로 출국하고 있다.",
+          "title": "'AAA 2026', 인기상 투표 진행→순위 변동…김수현-김혜윤-스트레이 키즈...",
+          "date": "2026-10-06",
+          "summary": "3위 제로베이스원(ZEROBASEONE) 성한빈, 4위 이찬원, 5위는 투모루바이투게더(TOMORROW X TOGETHER) 연준에서... 올해 배우 지창욱, 제로베이스원 성한빈, 쯔위가 합류해 함께 진행을 맡는다. 'AAA 2026'은 오는 12월 5일과...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/609/0001131631"
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16239563",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16239563"
         },
         {
-          "title": "제로베이스원 박건욱 '볼하트~'[★포토]",
-          "date": "2026-06-05",
-          "summary": "그룹 제로베이스원(ZEROBASEONE) 박건욱이 중국 상하이 일정 차 5일 오전 인천국제공항을 통해 출국하고 있다. 2026.06.05",
+          "title": "앤더블 측, 일본 매니지먼트 사칭 사기 발생→주의 당부 \"각별히 주의하...",
+          "date": "2026-10-05",
+          "summary": "장하오, 리키, 김규빈, 한유진은 지난 2023년 방송된 Mnet 서바이벌 '보이즈플래닛'에서 최종 데뷔조 순위에 올라 같은 해 7월 미니 1집 'YOUTH IN THE SHADE'를 발매하며 프로젝트 그룹 제로베이스원으로 데뷔해 활동을...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/108/0003441592"
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16238745",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16238745"
         },
         {
-          "title": "제로베이스원 '오랜만이에요!' [★영상]",
-          "date": "2026-06-05",
-          "summary": "그룹 제로베이스원(ZEROBASEONE) 성한빈, 김지웅, 석매튜, 김태래, 박건욱이 중국 상하이 일정 차 5일 오전 인천국제공항을 통해 출국하고 있다. 2026.06.05",
+          "title": "'AAA 2026', 실시간 순위 변동…변우석-김혜윤 1위 유지→스트레이 키즈...",
+          "date": "2026-10-04",
+          "summary": "3위 제로베이스원(ZEROBASEONE) 성한빈, 4위 이찬원, 5위는 투모루바이투게더(TOMORROW X TOGETHER) 연준으로... 올해 배우 지창욱, 제로베이스원 성한빈, 쯔위가 합류해 함께 진행을 맡는다. 'AAA 2026'은 오는 12월 5일과...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/108/0003441583"
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16237066",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16237066"
         },
         {
-          "title": "제로베이스원 성한빈 '빛나는 미소'[★포토]",
-          "date": "2026-06-05",
-          "summary": "그룹 제로베이스원(ZEROBASEONE) 성한빈이 중국 상하이 일정 차 5일 오전 인천국제공항을 통해 출국하고 있다. 2026.06.05",
+          "title": "라이즈 소희 vs 제베원 김태래, '아이돌 최고보컬' 주인공은?",
+          "date": "2026-10-03",
+          "summary": "현재 라이즈 소희, 아홉 제이엘, 롱샷 루이, 코이키즈 요시키, 제로베이스원 김태래, 엔하이픈 제이 등이... 라이즈 소희(SM), 아홉 제이엘(F&F), 롱샷 루이(모어비전), 코이키즈 요시키(LAPONEENTERTAINMENT), 제로베이스원...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/108/0003441591"
+          "link": "https://www.slist.kr/news/articleView.html?idxno=770745",
+          "original_link": "https://www.slist.kr/news/articleView.html?idxno=770745"
         },
         {
-          "title": "제로베이스원 김지웅 '멋진 태토남'[★포토]",
-          "date": "2026-06-05",
-          "summary": "그룹 제로베이스원(ZEROBASEONE) 김지웅이 중국 상하이 일정 차 5일 오전 인천국제공항을 통해 출국하고 있다. 2026.06.05",
+          "title": "'AAA 2026', 실시간 순위? 변우석-김혜윤 나란히…스트레이 키즈-트와이...",
+          "date": "2026-10-02",
+          "summary": "3위 제로베이스원(ZEROBASEONE) 성한빈, 4위 투모루바이투게더(TOMORROW X TOGETHER) 연준, 5위는 방탄소년단... 올해 배우 지창욱, 제로베이스원 성한빈, 쯔위가 합류해 함께 진행을 맡는다. 'AAA 2026'은 오는 12월 5일과...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/108/0003441589"
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16235079",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16235079"
+        },
+        {
+          "title": "NiziU(니쥬) 한국 첫 미니 앨범 ‘Sour Grapes’, 일간 앨범 차트 1위 등...",
+          "date": "2026-10-01",
+          "summary": "지난 9월 29일에는 MBC FM4U ‘제로베이스원의 친한친구’에 출연해 새 앨범 이야기를 나눴다. 이들은 “한국 첫 미니 앨범인 만큼 새로운 모습을 보여드리기 위해 욕심내서 열심히 준비했다”고 말했고, “처음...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/144/0001141733",
+          "original_link": "https://sports.khan.co.kr/article/202610012353003?pt=nv"
+        },
+        {
+          "title": "3위 스키즈·2위 에이티즈…남자그룹 브랜드평판 1위 차지한 '월드 스타...",
+          "date": "2026-10-11",
+          "summary": "보이넥스트도어, 제로베이스원, 하이라이트, 피원하모니, 투모로우바이투게더, 트레저, 크래비티, 펜타곤, 아홉, SF9, 알파드라이브원, ATBO 순이었다.'아리랑'으로 차트와 시상식 휩쓸어BTS(방탄소년단) 멤버들이...",
+          "category": "news",
+          "link": "https://www.wikitree.co.kr/articles/1165167",
+          "original_link": "https://www.wikitree.co.kr/articles/1165167"
+        },
+        {
+          "title": "방탄소년단(BTS) 1위, 10월 보이그룹 브랜드평판 정상..2위 에이티즈·3위...",
+          "date": "2026-10-10",
+          "summary": "보이넥스트도어, 제로베이스원, 하이라이트, 피원하모니, 투모로우바이투게더, 트레저, 크래비티, 펜타곤, 아홉, SF9, 알파드라이브원, ATBO 순으로 분석됐다....",
+          "category": "news",
+          "link": "http://www.breaknews.com/1242041",
+          "original_link": "http://www.breaknews.com/1242041"
+        },
+        {
+          "title": "케이팝 가을 컴백 대전 돌입…빅4에 이수만 새 그룹·아이브·플레이브...",
+          "date": "2026-10-09",
+          "summary": "당장 오는 12일에는 NCT 위시, 플레이브, 제로베이스원 성한빈, 엑스디너리 히어로즈가 동시에 출격합니다. SM엔터테인먼트를 떠나 A20엔터테인먼트를 설립한 이수만이 제작한 신인 보이그룹 A2O 소울(SOUL)과 걸그룹 A20...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/055/0001394283?sid=103",
+          "original_link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008790499&plink=ORI&cooper=NAVER"
+        },
+        {
+          "title": "'AAA 2026', 인기상 결선 투표 시작…변우석-김혜윤→방탄소년단-하츠투...",
+          "date": "2026-10-08",
+          "summary": "멤버 장원영이 MC를 맡아 매년 'AAA'를 이끌고 있다. 올해 배우 지창욱, 제로베이스원 성한빈, 쯔위가 합류해 함께 진행을 맡는다. 'AAA 2026'은 오는 12월 5일과 6일 양일간 가오슝 내셔널 스타디움에서 개최된다.",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242036",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16242036"
+        },
+        {
+          "title": "'엠카운트다운', 황민현-김재환 컴백 최초 공개→엔플라잉-킥플립 무대...",
+          "date": "2026-10-07",
+          "summary": "'엠카운트다운' MC는 22대, 23대 MC였던 제로베이스원(ZEROBASEONE) 성한빈, 라이즈(RIIZE) 소희... 이후 지난 3월 12일 방송된 919회부터 트레저(TREASURE) 멤버 소정환, 제로베이스원 멤버 박건욱, 킥플립 멤버...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16240946",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16240946"
+        },
+        {
+          "title": "지효가 이끄는 파리의 밤…'디 어워즈 2027' 1차 라인업 베일 벗어",
+          "date": "2026-10-06",
+          "summary": "당시 제2회 시상식은 지난 2월 11일 서울 고려대학교 화정체육관에서 열렸으며, 엔하이픈·보이넥스트도어·제로베이스원·NCT 위시 등 여러 K팝 아티스트가 참석했다. 2025년 첫선을 보인 '디 어워즈'는 올해 2회까지...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/415/0000052507",
+          "original_link": "http://www.atstar1.com/news/articleView.html?idxno=6039286"
+        },
+        {
+          "title": "'AAA 2026', 인기상 투표 진행→부문별 순위 보니…변우석-김혜윤 나란히...",
+          "date": "2026-10-05",
+          "summary": "3위 제로베이스원(ZEROBASEONE) 성한빈, 4위 이찬원, 5위는 투모루바이투게더(TOMORROW X TOGETHER) 연준이 유지... 올해 배우 지창욱, 제로베이스원 성한빈, 쯔위가 합류해 함께 진행을 맡는다. 'AAA 2026'은 오는 12월...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16238744",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16238744"
+        },
+        {
+          "title": "유픽 ‘베스트 포지션 매치-보컬’ 오픈",
+          "date": "2026-10-03",
+          "summary": "현재 라이즈 소희, 아홉 제이엘, 롱샷 루이, 코이키즈 요시키, 제로베이스원 김태래, 엔하이픈 제이 등이 상위권에 이름을 올리며 초반 경쟁에서 두각을 나타내고 있다. 알파드라이브원 리오, 플레어유 강우진, 플레이브...",
+          "category": "news",
+          "link": "https://www.bntnews.co.kr/article/view/bnt202610030042",
+          "original_link": "https://www.bntnews.co.kr/article/view/bnt202610030042"
+        },
+        {
+          "title": "[Opinion] 몰라서 그렇지 요즘 아이돌은 부계 유튜브가 필수예요 [문화 ...",
+          "date": "2026-10-02",
+          "summary": "제로베이스원 석매튜, ‘해봣튜’ 제로베이스원의 석매튜가 운영하는 채널 ‘해봣튜’는 이름 그대로 석매튜가 하고 싶은 것을 직접 해보는 채널이다. 아이돌 매니저의 매니저가 되어보거나, 민속촌에서 귀신 알바를 하고...",
+          "category": "news",
+          "link": "https://www.artinsight.co.kr/news/view.php?no=82665",
+          "original_link": "https://www.artinsight.co.kr/news/view.php?no=82665"
+        },
+        {
+          "title": "'2026 SBS 가요대전', 30주년 맞아 크리스마스 이브-25일 양일 개최…라...",
+          "date": "2026-10-01",
+          "summary": "라인업으로는 그룹 스트레이 키즈(Stray Kids), 투모로우바이투게더(TOMORROW X TOGETHER), 엔하이픈(ENHYPEN), 아이브, 르세라핌(LE SSERAFIM), 보이넥스트도어(BOYNEXTDOOR), 제로베이스원(ZEROBASEONE), 라이즈...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16232724",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16232724"
+        },
+        {
+          "title": "'모범돌' 성한빈의 파격 변신…'퇴폐미'로 깰 한계 [N이슈]",
+          "date": "2026-10-11",
+          "summary": "그룹 제로베이스원 성한빈이 데뷔 3년 만에 첫 솔로 EP를 내놓으며 파격적인 콘셉트 변화를 예고했다. 성한빈의 첫 솔로 EP '데드:얼라이브'는 12일 오후 6시 각종 음원 사이트를 통해 발매된다. 성한빈은 그간 팀 내...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/421/0009220100",
+          "original_link": "https://www.news1.kr/entertain/music/6314171"
+        },
+        {
+          "title": "방탄소년단 10월 보이그룹 브랜드평판 1위 등극 에이티즈 스트레이키즈...",
+          "date": "2026-10-10",
+          "summary": "보이넥스트도어, 제로베이스원, 하이라이트, 피원하모니, 투모로우바이투게더, 트레저, 크래비티, 펜타곤, 아홉, SF9, 알파드라이브원, ATBO, 빅스, 2AM, 더보이즈, 갓세븐, 블락비, 아스트로, 라이즈, 엑스러브, B1A4...",
+          "category": "news",
+          "link": "https://www.gpkorea.com/news/articleView.html?idxno=147442",
+          "original_link": "https://www.gpkorea.com/news/articleView.html?idxno=147442"
+        },
+        {
+          "title": "K팝 빅4에 이수만 그룹·아이브·플레이브까지…가을 컴백 대전",
+          "date": "2026-10-09",
+          "summary": "9일 가요계에 따르면 오는 12일 NCT 위시, 플레이브, 제로베이스원 성한빈, 엑스디너리 히어로즈가 동시에 출격한다. 제로베이스원의 멤버 성한빈은 데뷔 3년 만에 첫 솔로 앨범을 낸다. 엑스디너리 히어로즈는 멤버...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/001/0016367458?sid=103",
+          "original_link": "https://www.yna.co.kr/view/AKR20261009030400005?input=1195m"
+        },
+        {
+          "title": "가을 가요계 男아이돌 솔로 러시…god부터 제베원 멤버까지 줄줄이",
+          "date": "2026-10-08",
+          "summary": "제로베이스원 성한빈, BAE173 출신 이한결, 웨이션브이 샤오쥔이 그 주인공이다. 성한빈은 12일 첫 미니앨범 ‘데드:얼라이브’(DEAD:ALIVE)를 발매한다. 앨범에는 타이틀곡 ‘언데드’(UNDEAD)를 포함해 총 8곡을 담았다....",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/018/0006384192",
+          "original_link": "https://www.edaily.co.kr/News/Read?newsId=06045046645610952&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
+        },
+        {
+          "title": "'제베원' 성한빈, 내일(8일) 일일 기상캐스터로 나선다... 무슨 일?",
+          "date": "2026-10-07",
+          "summary": "사진=더라이브레이블 제공 그룹 제로베이스원의 성한빈이 일일 기상캐스터로 변신한다. 7일 JTBC는 성한빈이 오는 8일 오전 방송되는 뉴스 프로그램 '아침&'에 일일 기상캐스터로 직접 출연해 시청자들에게 전국의...",
+          "category": "news",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1185811",
+          "original_link": "https://www.ggilbo.com/news/articleView.html?idxno=1185811"
+        },
+        {
+          "title": "앤더블, 데뷔 5개월 만에 두 번째 챕터…'Attraction'으로 돌아온다",
+          "date": "2026-10-06",
+          "summary": "장하오, 리키, 김규빈, 한유진은 제로베이스원 출신이며 유승언은 이븐으로 활동한 경력이 있다. 서로 다른 팀에서 활동했던 다섯 멤버가 앤더블이라는 이름으로 다시 출발한 뒤, 두 번째 앨범에서는...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/415/0000052504",
+          "original_link": "http://www.atstar1.com/news/articleView.html?idxno=6039281"
+        },
+        {
+          "title": "앤더블, 日 매니지먼트 사칭 투자 사기 확인…소속사 \"주의 당부\"",
+          "date": "2026-10-05",
+          "summary": "제로베이스원으로 활동했던 장하오, 리키, 김규빈, 한유진과 이븐 출신 유승언이 합류해 5인조로 구성됐다. 한편 앤더블은 지난 5월 정식 데뷔했으며, 최근 아시아 4개 도시에서 쇼콘을 성공적으로 마쳤다....",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/437/0000514113",
+          "original_link": "https://news.jtbc.co.kr/article/NB12321385?influxDiv=NAVER"
+        },
+        {
+          "title": "라이즈 소희·제로베이스원 김태래, 유픽 보컬 최강자 경쟁 초반부터 치...",
+          "date": "2026-10-03",
+          "summary": "현재 라이즈 소희, 아홉 제이엘, 롱샷 루이, 코이키즈 요시키, 제로베이스원 김태래, 엔하이픈 제이 등이 상위권을 형성하며 초기 흐름을 주도하고 있다. 후보군에는 막강한 팬덤과 가창력을 겸비한 보컬리스트들이 대거...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16235720",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16235720"
+        },
+        {
+          "title": "조현아 “로이킴이면 안 한다”…게스트 따라 화장 달라지는 이유는",
+          "date": "2026-10-02",
+          "summary": "그는 “예를 들어 제로베이스원이라면 멤버들의 나이를 생각한다”며 상대와 자신의 관계와 분위기를 함께 고려한다고 설명했다. 이어 로이킴을 언급하며 “모르는 사이였으면 숍에 갔을 거다. 어쨌든 로이킴도 잘생긴...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/022/0004163628",
+          "original_link": "https://www.segye.com/newsView/20261002504891?OutUrl=naver"
+        },
+        {
+          "title": "니쥬, 한국 첫 미니 앨범 '사워 그레이프스' 한터차트 1위",
+          "date": "2026-10-01",
+          "summary": "니쥬는 방송 활동을 앞두고 다채로운 소통도 이어가고 있다.지난 9월 29일에는 MBC FM4U '제로베이스원의 친한친구'에 출연해 새 앨범 이야기를 나눴다. 멤버들은 \"한국 첫 미니 앨범인 만큼 새로운 모습을 보여드리기...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/008/0005421228?sid=101",
+          "original_link": "https://www.mt.co.kr/stock/2026/10/01/2026100117052629481"
+        },
+        {
+          "title": "장하오 맞아?…제로베이스원 떠나 재데뷔하더니 혼자서만 샛노란 머리로...",
+          "date": "2026-10-09",
+          "summary": "그룹 제로베이스원 출신 장하오가 눈에 띄게 달라진 비주얼을 선보였다. 지난 5월 앤더블로... 결성된 제로베이스원 멤버로 활동했다. 이후 올해 3월 기존 소속사와의 계약을 연장하지 않고, 5월...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/312/0000779306",
+          "original_link": "https://www.tenasia.co.kr/article/2026100924704"
+        },
+        {
+          "title": "제로베이스원, 완전체와 개별 활동 병행…방송·연기·유닛까지 활동 영...",
+          "date": "2026-10-08",
+          "summary": "그룹 제로베이스원(ZEROBASEONE)이 완전체 활동에 더해 솔로, 유닛, 연기, 방송까지 활동 반경을 넓히고 있다.... 제로베이스원(성한빈, 김지웅, 석매튜, 김태래, 박건욱)은 팀 활동을 중심으로 각자의 강점과 개성을 살린...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/311/0002066941",
+          "original_link": "https://www.xportsnews.com/article/2205726"
+        },
+        {
+          "title": "\"팬들 아침 깨운다\"…성한빈, '제로베이스원' 리더에서 일일 날씨 요정...",
+          "date": "2026-10-07",
+          "summary": "2001년생인 성한빈은 2023년 Mnet 보이 그룹 서바이벌 오디션 프로그램 '보이즈 플래닛'에서 최종 2위를 차지하며 ZEROBASEONE(제로베이스원)으로 데뷔했다. 그는 그룹의 리더이자 올라운더 멤버로 전문 댄서 출신의...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/213/0001403862",
+          "original_link": "https://www.tvreport.co.kr/star/article/1081414/"
+        },
+        {
+          "title": "앤더블, 10월 27일 미니 2집으로 첫 컴백…발전된 서사",
+          "date": "2026-10-06",
+          "summary": "그룹 제로베이스원 출신 장하오, 리키, 김규빈, 한유진과 이븐 출신 유승언이 뭉쳤다. 그룹명은 '앤드'(AND)와 '더블'(DOUBLE)의 합성어로, 단편적인 모습이 아닌 다양한 내면이 중첩되어 '나다움'을 확장해 간다는...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/421/0009210842",
+          "original_link": "https://www.news1.kr/entertain/music/6310793"
+        },
+        {
+          "title": "앤더블 측, 日 매니지먼트 사칭 투자 사기 주의 당부 “투자 권유 안 한...",
+          "date": "2026-10-05",
+          "summary": "한편 앤더블은 YH엔터테인먼트가 템페스트 이후 약 4년 만에 선보이는 보이그룹으로, 제로베이스원의 멤버로 활동을 펼쳤던 장하오, 리키, 김규빈, 한유진과 이븐의 멤버였던 유승언으로 구성됐다. 최근...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/410/0001142319",
+          "original_link": "https://www.mk.co.kr/article/12168377"
+        },
+        {
+          "title": "유픽 ‘이달의 픽’ 니키·에반 격돌",
+          "date": "2026-10-03",
+          "summary": "9월 스페셜 픽 1위를 차지한 알파드라이브원 상원을 비롯해 제로베이스원 김지웅, 플레어 유 최립우, 베이비몬스터 아현, 이즈나 최정은 등이 상위권에 진입했다. ‘10월 이달의 픽’ 각 부문 최종 1위에 오른 4명에게는...",
+          "category": "news",
+          "link": "https://www.bntnews.co.kr/article/view/bnt202610030050",
+          "original_link": "https://www.bntnews.co.kr/article/view/bnt202610030050"
+        },
+        {
+          "title": "강남페스티벌 3~5일 개최…도산대로서 퍼레이드·공연",
+          "date": "2026-10-02",
+          "summary": "루네이트, 세이마이네임, 알파드라이브원, 제로베이스원, 키키, 피원하모니와 싸이 등 7팀이 무대에 오르며, 싸이가 마지막을 장식한다. 축제 공식 안내는 당일 정오부터 티켓부스에서 모바일 티켓과 신분증을 확인한...",
+          "category": "news",
+          "link": "https://www.vegannews.co.kr/news/article.html?no=390276",
+          "original_link": "https://www.vegannews.co.kr/news/article.html?no=390276"
+        },
+        {
+          "title": "성한빈, 베일 벗은 첫 솔로 비주얼…시선 홀리는 매혹적 아우라",
+          "date": "2026-10-01",
+          "summary": "성한빈은 Mnet 오디션 프로그램 '보이즈 플래닛'을 통해 결성된 그룹 제로베이스원 리더로, 매력적인 보컬과 뛰어난 퍼포먼스 기량, 깔끔한 진행 실력을 바탕으로 다방면에서 활발한 활동을 펼치고 있다.",
+          "category": "news",
+          "link": "http://www.joynews24.com/view/2010979",
+          "original_link": "http://www.joynews24.com/view/2010979"
+        },
+        {
+          "title": "[뮤직100] 최예나 138.5점 급감·볼빨간사춘기 41위…태연 TOP10 진입",
+          "date": "2026-10-09",
+          "summary": "신곡 공개와 함께 지코, 샤이니 민호, 제로베이스원 석매튜, 보이넥스트도어 성호·운학 등이 참여한 댄스 챌린지도 선보였다. 이 곡은 온유의 보컬과 지코의 랩을 결합한 R&B 힙합 트랙으로, 리듬에 맞춰...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242312",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16242312"
         }
-      ]
+      ],
+      "retrieved_unique_non_photo": 112,
+      "pagination_limit_reached": false,
+      "date_timezone": "Asia/Seoul"
     },
     "youtube_comments": {
-      "count": 20
+      "count": 5,
+      "items": [
+        {
+          "artist": "ZEROBASEONE",
+          "song": "[KCON LA 2026] ZEROBASEONE - Exotic | Mnet 260905 방송",
+          "comment": "이노래 진짜 좋던데 더떠야함",
+          "comment_id": "Ugx_Xp4dnfqIAr7rRGx4AaABAg",
+          "published_at": "2026-10-10T14:02:31Z",
+          "video_id": "0xgeKaAoUUs",
+          "channel": "KCON official",
+          "link": "https://www.youtube.com/watch?v=0xgeKaAoUUs&lc=Ugx_Xp4dnfqIAr7rRGx4AaABAg"
+        },
+        {
+          "artist": "ZEROBASEONE",
+          "song": "ZEROBASEONE(제로베이스원) HAN BIN & MATTHEW & GUN WOOK KCON LA 2026 'SexyBack' Dance Practice(Moving ver.)",
+          "comment": "야르하다",
+          "comment_id": "Ugy74x-rZ1_1jP4oYWZ4AaABAg",
+          "published_at": "2026-10-01T11:10:54Z",
+          "video_id": "39LJuKUgTmc",
+          "channel": "ZEROBASEONE",
+          "link": "https://www.youtube.com/watch?v=39LJuKUgTmc&lc=Ugy74x-rZ1_1jP4oYWZ4AaABAg"
+        },
+        {
+          "artist": "ZEROBASEONE",
+          "song": "Sneak Peek | M COUNTDOWN: KCON LA 2026 | ZEROBASEONE - SexyBack | Coming up on 5 SEP, Mnet",
+          "comment": "사랑해💙",
+          "comment_id": "UgxI7UGCQxt2K-2Xh314AaABAg",
+          "published_at": "2026-10-11T13:29:52Z",
+          "video_id": "c_Xxi_9GdPQ",
+          "channel": "KCON official",
+          "link": "https://www.youtube.com/watch?v=c_Xxi_9GdPQ&lc=UgxI7UGCQxt2K-2Xh314AaABAg"
+        },
+        {
+          "artist": "ZEROBASEONE",
+          "song": "Sneak Peek | M COUNTDOWN: KCON LA 2026 | ZEROBASEONE - SexyBack | Coming up on 5 SEP, Mnet",
+          "comment": "0:48 성한빈 여기 ㅈ됨 지림",
+          "comment_id": "UgzKzrqhf_x21L06zjJ4AaABAg",
+          "published_at": "2026-10-10T13:59:44Z",
+          "video_id": "c_Xxi_9GdPQ",
+          "channel": "KCON official",
+          "link": "https://www.youtube.com/watch?v=c_Xxi_9GdPQ&lc=UgzKzrqhf_x21L06zjJ4AaABAg"
+        },
+        {
+          "artist": "ZEROBASEONE",
+          "song": "Sneak Peek | M COUNTDOWN: KCON LA 2026 | ZEROBASEONE - SexyBack | Coming up on 5 SEP, Mnet",
+          "comment": "성한빈 진심 미친건가 와",
+          "comment_id": "UgwrG6HZLM-Wqz03sP54AaABAg",
+          "published_at": "2026-10-10T13:58:15Z",
+          "video_id": "c_Xxi_9GdPQ",
+          "channel": "KCON official",
+          "link": "https://www.youtube.com/watch?v=c_Xxi_9GdPQ&lc=UgwrG6HZLM-Wqz03sP54AaABAg"
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "w4KjeEqNsB4",
+          "title": "ZEROBASEONE (제로베이스원) 'Exotic' Dance Practice (Fix ver.)",
+          "channel": "ZEROBASEONE",
+          "channel_id": "UCSAp0Yl9S0Zq5uDqE6im_XQ",
+          "published_at": "2026-08-16T10:59:08Z"
+        },
+        {
+          "video_id": "0xgeKaAoUUs",
+          "title": "[KCON LA 2026] ZEROBASEONE - Exotic | Mnet 260905 방송",
+          "channel": "KCON official",
+          "channel_id": "UC2aul0Y3jUJ9sMzOhWPT9AA",
+          "published_at": "2026-09-05T10:38:58Z"
+        },
+        {
+          "video_id": "39LJuKUgTmc",
+          "title": "ZEROBASEONE(제로베이스원) HAN BIN & MATTHEW & GUN WOOK KCON LA 2026 'SexyBack' Dance Practice(Moving ver.)",
+          "channel": "ZEROBASEONE",
+          "channel_id": "UCSAp0Yl9S0Zq5uDqE6im_XQ",
+          "published_at": "2026-08-18T10:59:03Z"
+        },
+        {
+          "video_id": "NVnCjP14NeY",
+          "title": "ZEROBASEONE(제로베이스원) - V for Vision | 2026 MyK FESTA | MyK Live DAY2",
+          "channel": "MyK FESTA 마이케이",
+          "channel_id": "UCGq1Mc2P3lxcX4i0qfw5RQw",
+          "published_at": "2026-08-14T08:00:27Z"
+        },
+        {
+          "video_id": "c_Xxi_9GdPQ",
+          "title": "Sneak Peek | M COUNTDOWN: KCON LA 2026 | ZEROBASEONE - SexyBack | Coming up on 5 SEP, Mnet",
+          "channel": "KCON official",
+          "channel_id": "UC2aul0Y3jUJ9sMzOhWPT9AA",
+          "published_at": "2026-08-28T01:03:21Z"
+        }
+      ],
+      "warnings": [],
+      "sampling": "5 search videos published within 90 days before month start through cutoff; newest dated Korean top-level comments, balanced across videos"
     },
     "model": {
-      "name": "keyword-fallback",
-      "backend": "keyword-fallback"
+      "name": "gemini-3.1-flash-lite-preview",
+      "backend": "gemini-absa"
+    },
+    "bugs_chart": {
+      "chart_start": "2026-09-28",
+      "chart_end": "2026-10-04",
+      "artist_items": [],
+      "items": [
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 1,
+          "title": "퇴사할게여 (Narr. 기안84)",
+          "artist": "소연 (SOYEON)",
+          "album": "끝내주는 인생",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 2,
+          "title": "꿈꾸던 어른이 되었나요?",
+          "artist": "머무르",
+          "album": "꿈꾸던 어른이 되었나요?",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 3,
+          "title": "LOVE ATTACK",
+          "artist": "RESCENE (리센느)",
+          "album": "SCENEDROME",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 4,
+          "title": "Dear my crazy soulmate",
+          "artist": "아이유(IU)",
+          "album": "이 별로부터",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 5,
+          "title": "BAD",
+          "artist": "ATEEZ(에이티즈)",
+          "album": "GOLDEN HOUR : Part.5",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 6,
+          "title": "Guitarist",
+          "artist": "도경수(D.O.)",
+          "album": "DOPAMINE - The 4th Mini Album",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 7,
+          "title": "갑자기",
+          "artist": "아이오아이(I.O.I)",
+          "album": "I.O.I 3rd MINI ALBUM [I.O.I : LOOP]",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 8,
+          "title": "Skibidi",
+          "artist": "소녀시대-효리수 (Girls' Generation-HRS)",
+          "album": "Skibidi",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 9,
+          "title": "Deja Vu",
+          "artist": "RESCENE (리센느)",
+          "album": "Dearest",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 10,
+          "title": "CRASH",
+          "artist": "ALLDAY PROJECT",
+          "album": "CRASH",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 11,
+          "title": "만찬가",
+          "artist": "태연 (TAEYEON)",
+          "album": "J-POP REMAKE Vol.1",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 12,
+          "title": "REDRED",
+          "artist": "CORTIS (코르티스)",
+          "album": "GREENGREEN",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 13,
+          "title": "이 별로부터",
+          "artist": "아이유(IU)",
+          "album": "이 별로부터",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 14,
+          "title": "LEMONADE",
+          "artist": "aespa",
+          "album": "LEMONADE - The 2nd Album",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 15,
+          "title": "It′s Me",
+          "artist": "아일릿(ILLIT)",
+          "album": "MAMIHLAPINATAPAI",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 16,
+          "title": "Drowning",
+          "artist": "WOODZ",
+          "album": "OO-LI",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 17,
+          "title": "생각을 멈추다 보면",
+          "artist": "최유리",
+          "album": "생각을 멈추다 보면",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 18,
+          "title": "Pretty Girl",
+          "artist": "RESCENE (리센느)",
+          "album": "Pretty Girl - Special Single",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 19,
+          "title": "Pop Off Pop Off",
+          "artist": "KiiiKiii (키키)",
+          "album": "WhyKiiiKiii",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 20,
+          "title": "Good Goodbye",
+          "artist": "화사 (HWASA)",
+          "album": "Good Goodbye",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 21,
+          "title": "Less than a Lover",
+          "artist": "제니 (JENNIE)",
+          "album": "Less than a Lover",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 22,
+          "title": "BiiiG",
+          "artist": "BIGBANG (빅뱅)",
+          "album": "BiiiG",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 23,
+          "title": "사랑하게 될 거야",
+          "artist": "한로로",
+          "album": "이상비행",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 24,
+          "title": "0+0",
+          "artist": "한로로",
+          "album": "자몽살구클럽",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 25,
+          "title": "LOUDER",
+          "artist": "CRAVITY",
+          "album": "sonorous",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 26,
+          "title": "Popcorn",
+          "artist": "도경수(D.O.)",
+          "album": "성장 - THE 3RD MINI ALBUM",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 27,
+          "title": "캐치 캐치",
+          "artist": "YENA (최예나)",
+          "album": "LOVE CATCHER",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 28,
+          "title": "RUDE!",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "RUDE!",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 29,
+          "title": "toxic till the end",
+          "artist": "로제(ROSÉ)",
+          "album": "rosie",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 30,
+          "title": "Pinball",
+          "artist": "RESCENE (리센느)",
+          "album": "SCENEDROME",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 31,
+          "title": "404 (New Era)",
+          "artist": "KiiiKiii (키키)",
+          "album": "Delulu Pack",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 32,
+          "title": "소문의 낙원",
+          "artist": "AKMU(악뮤)",
+          "album": "개화",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 33,
+          "title": "기쁨, 슬픔, 아름다운 마음",
+          "artist": "AKMU(악뮤)",
+          "album": "개화",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 34,
+          "title": "봄 내음보다 너를",
+          "artist": "김나영",
+          "album": "봄 내음보다 너를",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 35,
+          "title": "뛰어(JUMP)",
+          "artist": "BLACKPINK",
+          "album": "뛰어(JUMP)",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 36,
+          "title": "어떻게 이별까지 사랑하겠어, 널 사랑하는 거지",
+          "artist": "AKMU(악뮤)",
+          "album": "항해",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 37,
+          "title": "Lemon Tang",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "Lemon Tang - The 2nd Mini Album",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 38,
+          "title": "Runaway",
+          "artist": "RESCENE (리센느)",
+          "album": "Runaway",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 39,
+          "title": "BANG BANG",
+          "artist": "IVE (아이브)",
+          "album": "REVIVE+",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 40,
+          "title": "입춘",
+          "artist": "한로로",
+          "album": "입춘",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 41,
+          "title": "SUN KISS",
+          "artist": "TUIDE (튜이드)",
+          "album": "The 1st EP [TUNE & PLAY]",
+          "change_rank": 11
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 42,
+          "title": "연애의 조건 (Love Options)",
+          "artist": "베스티(BESTie)",
+          "album": "연애의 조건 (Love Options)",
+          "change_rank": 52
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 43,
+          "title": "노스탈지아",
+          "artist": "BIG Naughty (서동현)",
+          "album": "노스탈지아",
+          "change_rank": -10
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 44,
+          "title": "Whiplash",
+          "artist": "aespa",
+          "album": "Whiplash - The 5th Mini Album",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 45,
+          "title": "내게 사랑이 뭐냐고 물어본다면",
+          "artist": "로이킴",
+          "album": "내게 사랑이 뭐냐고 물어본다면",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 46,
+          "title": "한 페이지가 될 수 있게",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Book of Us : Gravity",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 47,
+          "title": "멸종위기사랑",
+          "artist": "이찬혁",
+          "album": "EROS",
+          "change_rank": -7
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 48,
+          "title": "너에게 닿기를",
+          "artist": "10CM",
+          "album": "너에게 닿기를",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 49,
+          "title": "Heavy Serenade",
+          "artist": "NMIXX",
+          "album": "Heavy Serenade",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 50,
+          "title": "Surfin' Boy",
+          "artist": "Red Velvet (레드벨벳)",
+          "album": "Velvet Summer - Summer Mini Album",
+          "change_rank": -16
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 51,
+          "title": "모든 날, 모든 순간 (Every day, Every Moment)",
+          "artist": "폴킴(Paul Kim)",
+          "album": "'키스 먼저 할까요?' OST Part.3",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 52,
+          "title": "타임캡슐",
+          "artist": "다비치",
+          "album": "타임캡슐",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 53,
+          "title": "like JENNIE",
+          "artist": "제니 (JENNIE)",
+          "album": "Ruby",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 54,
+          "title": "Blue Valentine",
+          "artist": "NMIXX",
+          "album": "Blue Valentine",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 55,
+          "title": "Golden",
+          "artist": "HUNTR/X, 아티스트 전체보기",
+          "album": "KPop Demon Hunters (Soundtrack from the Netflix Film)",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 56,
+          "title": "청춘만화",
+          "artist": "이무진",
+          "album": "만화 (滿花)",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 57,
+          "title": "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))",
+          "artist": "너드커넥션(Nerd Connection)",
+          "album": "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 58,
+          "title": "여름아 부탁해",
+          "artist": "볼빨간사춘기",
+          "album": "여름아 부탁해",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 59,
+          "title": "모르시나요(PROD.로코베리)",
+          "artist": "조째즈",
+          "album": "모르시나요",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 60,
+          "title": "HAPPY",
+          "artist": "DAY6 (데이식스)",
+          "album": "Fourever",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 61,
+          "title": "APT.",
+          "artist": "로제(ROSÉ), 아티스트 전체보기",
+          "album": "APT.",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 62,
+          "title": "주저하는 연인들을 위해",
+          "artist": "잔나비",
+          "album": "전설",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 63,
+          "title": "천상연",
+          "artist": "이창섭",
+          "album": "천상연 (웹툰 '선녀외전' X 이창섭 (LEE CHANGSUB))",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 64,
+          "title": "Hype Boy",
+          "artist": "NewJeans",
+          "album": "NewJeans 1st EP 'New Jeans'",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 65,
+          "title": "그대 작은 나의 세상이 되어",
+          "artist": "카더가든",
+          "album": "부재",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 66,
+          "title": "Ditto",
+          "artist": "NewJeans",
+          "album": "NewJeans 'OMG'",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 67,
+          "title": "Die With A Smile",
+          "artist": "Lady Gaga(레이디 가가), 아티스트 전체보기",
+          "album": "Die With A Smile",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 68,
+          "title": "FAMOUS",
+          "artist": "ALLDAY PROJECT",
+          "album": "FAMOUS",
+          "change_rank": 16
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 69,
+          "title": "사계, 그리고 너",
+          "artist": "이창섭",
+          "album": "Lee;Make (Fragmenta Amoris)",
+          "change_rank": 12
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 70,
+          "title": "I AM",
+          "artist": "IVE (아이브)",
+          "album": "I've IVE",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 71,
+          "title": "Supernova",
+          "artist": "aespa",
+          "album": "Armageddon - The 1st Album",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 72,
+          "title": "Welcome to the Show",
+          "artist": "DAY6 (데이식스)",
+          "album": "Fourever",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 73,
+          "title": "에피소드",
+          "artist": "이무진",
+          "album": "에피소드",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 74,
+          "title": "나는 반딧불",
+          "artist": "황가람",
+          "album": "나는 반딧불",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 75,
+          "title": "고민중독",
+          "artist": "QWER",
+          "album": "1st Mini Album 'MANITO'",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 76,
+          "title": "Magnetic",
+          "artist": "아일릿(ILLIT)",
+          "album": "SUPER REAL ME",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 77,
+          "title": "Vitamin ME",
+          "artist": "프로미스나인",
+          "album": "Glow ME",
+          "change_rank": -13
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 78,
+          "title": "첫 만남은 계획대로 되지 않아",
+          "artist": "TWS (투어스)",
+          "album": "Sparkling Blue",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 79,
+          "title": "사랑은 봄비처럼... 이별은 겨울비처럼",
+          "artist": "임현정",
+          "album": "A Year Out..In The Island",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 80,
+          "title": "FOCUS",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "FOCUS - The 1st Mini Album",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 81,
+          "title": "HOME SWEET HOME (feat. 태양, 대성)",
+          "artist": "G-DRAGON",
+          "album": "HOME SWEET HOME (feat. 태양, 대성)",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 82,
+          "title": "달리 표현할 수 없어요",
+          "artist": "로이킴",
+          "album": "달리 표현할 수 없어요",
+          "change_rank": 4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 83,
+          "title": "FALLEN ANGEL",
+          "artist": "제니 (JENNIE)",
+          "album": "Fallen Angel (Digital EP)",
+          "change_rank": -15
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 84,
+          "title": "소나기",
+          "artist": "이클립스 (ECLIPSE)",
+          "album": "선재 업고 튀어 OST Part 1",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 85,
+          "title": "Congratulations",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Day",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 86,
+          "title": "WDA (Whole Different Animal) (Feat. G-DRAGON)",
+          "artist": "aespa",
+          "album": "LEMONADE - The 2nd Album",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 87,
+          "title": "REBEL HEART",
+          "artist": "IVE (아이브)",
+          "album": "IVE EMPATHY",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 88,
+          "title": "예뻤어",
+          "artist": "DAY6 (데이식스)",
+          "album": "Every DAY6 February",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 89,
+          "title": "NOT CUTE ANYMORE",
+          "artist": "아일릿(ILLIT)",
+          "album": "NOT CUTE ANYMORE",
+          "change_rank": -9
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 90,
+          "title": "Flashback",
+          "artist": "엔플라잉(N.Flying)",
+          "album": "Man on the Moon",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 91,
+          "title": "사랑인가 봐",
+          "artist": "멜로망스(MeloMance)",
+          "album": "사랑인가 봐 (사내맞선 OST 스페셜 트랙)",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 92,
+          "title": "THAT’S A NO NO",
+          "artist": "ITZY (있지)",
+          "album": "IT'z ME",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 93,
+          "title": "ONE MORE TIME",
+          "artist": "ALLDAY PROJECT",
+          "album": "ALLDAY PROJECT",
+          "change_rank": 6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 94,
+          "title": "STYLE",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "STYLE",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 95,
+          "title": "BLACKHOLE",
+          "artist": "IVE (아이브)",
+          "album": "REVIVE+",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 96,
+          "title": "Love me or Leave me",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Book of Us : The Demon",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 97,
+          "title": "OVERDRIVE",
+          "artist": "TWS (투어스)",
+          "album": "play hard",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 98,
+          "title": "Who is she",
+          "artist": "KISS OF LIFE",
+          "album": "Who is she",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 99,
+          "title": "new trick",
+          "artist": "로제(ROSÉ)",
+          "album": "new trick",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 100,
+          "title": "Sour Grapes",
+          "artist": "NiziU (니쥬)",
+          "album": "Sour Grapes",
+          "change_rank": 0
+        }
+      ],
+      "link": "https://music.bugs.co.kr/chart/track/week/total?chartdate=20260928",
+      "requested_chart_start": "2026-10-05"
     }
+  },
+  "overall_sentiment": {
+    "count": 5,
+    "ratio": {
+      "positive": 0.8,
+      "neutral": 0.2,
+      "negative": 0.0
+    },
+    "dominant": "positive"
   },
   "aspect_sentiment": {
     "song_music": {
       "label": "song / music",
-      "count": 11,
+      "count": 1,
       "ratio": {
-        "positive": 0.7273,
-        "neutral": 0.2727,
+        "positive": 1.0,
+        "neutral": 0.0,
         "negative": 0.0
       },
       "dominant": "positive",
       "evidence": [
         {
-          "source": "naver_news",
-          "sentiment": "neutral",
-          "text": "제로베이스원, 음악·예능·숏폼 아우르는 전방위 활약 제로베이스원(ZEROBASEONE)이 음악 방송 활동을 마무리한 이후에도 화제성을 이어가고 있다. 제로베이스원(성한빈, 김지웅, 석매튜, 김태래, 박건욱)은 최근 여섯 번째 미니앨범 '어센드-(Ascend-)' 활동을 통해 다양한..."
-        },
-        {
           "source": "youtube_comment",
           "sentiment": "positive",
-          "text": "이번 노래 정말 질리지가 않네 특히 뮤비가 너무 좋아ㅠㅠ"
+          "text": "이노래 진짜 좋던데 더떠야함",
+          "link": "https://www.youtube.com/watch?v=0xgeKaAoUUs&lc=Ugx_Xp4dnfqIAr7rRGx4AaABAg",
+          "published_at": "2026-10-10T14:02:31Z"
         }
       ]
     },
@@ -121,40 +1585,44 @@
         {
           "source": "youtube_comment",
           "sentiment": "positive",
-          "text": "Mv도 보고 컴백 프리미어도 봤는데, 그 전 셜록 무대에서도 느꼈지만 보컬도 댄스도 의지도 훨씬 단단해진 느낌! 9명이 채우던 무대를 5명이 채우는 것 부담이 상당했을텐데 멋지게 이겨냈다! 이전보다 zb1이 더 좋아졌어!! 꼭 음방 1위했으면 좋겠다. 그럴 자격이 충분하다!"
+          "text": "0:48 성한빈 여기 ㅈ됨 지림",
+          "link": "https://www.youtube.com/watch?v=c_Xxi_9GdPQ&lc=UgzKzrqhf_x21L06zjJ4AaABAg",
+          "published_at": "2026-10-10T13:59:44Z"
         },
         {
           "source": "youtube_comment",
           "sentiment": "positive",
-          "text": "미쳤다 진짜 ㅜㅜㅜ 노래 춤 스타일 비주얼 연출진짜 느좋 연출팀 진짜 개사랑해요"
+          "text": "성한빈 진심 미친건가 와",
+          "link": "https://www.youtube.com/watch?v=c_Xxi_9GdPQ&lc=UgwrG6HZLM-Wqz03sP54AaABAg",
+          "published_at": "2026-10-10T13:58:15Z"
         }
       ]
     },
     "visual_styling": {
       "label": "visual / styling",
-      "count": 8,
+      "count": 0,
       "ratio": {
-        "positive": 0.875,
-        "neutral": 0.125,
-        "negative": 0.0
+        "positive": 0,
+        "neutral": 0,
+        "negative": 0
       },
-      "dominant": "positive",
-      "evidence": [
-        {
-          "source": "youtube_comment",
-          "sentiment": "positive",
-          "text": "내가 진짜 뮤비를 이렇게 많이보는 사람이 아닌데 뮤비가 너무 좋아서 계속보게된다…❤ 특히 한빈이의 롸잇나우베이비 에선 진짜 그냥 맨날 설레"
-        },
-        {
-          "source": "youtube_comment",
-          "sentiment": "positive",
-          "text": "이번 노래 정말 질리지가 않네 특히 뮤비가 너무 좋아ㅠㅠ"
-        }
-      ]
+      "dominant": "neutral",
+      "evidence": []
     },
     "vocal_rap": {
       "label": "vocal / rap",
-      "count": 2,
+      "count": 0,
+      "ratio": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 0
+      },
+      "dominant": "neutral",
+      "evidence": []
+    },
+    "fandom_public_opinion": {
+      "label": "fandom / public_opinion",
+      "count": 1,
       "ratio": {
         "positive": 1.0,
         "neutral": 0.0,
@@ -165,110 +1633,164 @@
         {
           "source": "youtube_comment",
           "sentiment": "positive",
-          "text": "Mv도 보고 컴백 프리미어도 봤는데, 그 전 셜록 무대에서도 느꼈지만 보컬도 댄스도 의지도 훨씬 단단해진 느낌! 9명이 채우던 무대를 5명이 채우는 것 부담이 상당했을텐데 멋지게 이겨냈다! 이전보다 zb1이 더 좋아졌어!! 꼭 음방 1위했으면 좋겠다. 그럴 자격이 충분하다!"
-        },
-        {
-          "source": "youtube_comment",
-          "sentiment": "positive",
-          "text": "멤버들이 하나하나 다 잘 보이고 음색도 좋은데 가창력도 정말 디테일있게 발전한 게 느껴져서 들을수록 더 좋아❤"
-        }
-      ]
-    },
-    "fandom_public_opinion": {
-      "label": "fandom / public_opinion",
-      "count": 16,
-      "ratio": {
-        "positive": 0.1875,
-        "neutral": 0.625,
-        "negative": 0.1875
-      },
-      "dominant": "neutral",
-      "evidence": [
-        {
-          "source": "naver_news",
-          "sentiment": "negative",
-          "text": "[공식] 팬 기만 논란..제로베이스원 박건욱, 조작 대참사에 사과 보이 그룹 제로베이스원(ZEROBASEONE) 멤버 박건욱이 조작 논란에 고개를 숙였다. 5일 박건욱은 팬 소통 플랫폼에 \"최근 팬사인회에서의 제 행동에 대해 진심 어린 사과를 드리고 싶어 이 글을 올립니다\"라며 장문의 글을..."
-        },
-        {
-          "source": "naver_news",
-          "sentiment": "negative",
-          "text": "제로베이스원 박건욱, 팬사인회 조작 사과…“신중하지 못했다” [헤럴드뮤즈] 그룹 제로베이스원(ZEROBASEONE) 멤버 박건욱이 팬 사인회 이벤트 당첨 조작 논란에 대해 사과했다. 5일 박건욱은 팬 소통 플랫폼에 “최근 팬사인회에서의 제 행동에 대해 진심 어린 사과를 드리고 싶어 이..."
+          "text": "사랑해💙",
+          "link": "https://www.youtube.com/watch?v=c_Xxi_9GdPQ&lc=UgxI7UGCQxt2K-2Xh314AaABAg",
+          "published_at": "2026-10-11T13:29:52Z"
         }
       ]
     }
   },
-  "overall_sentiment": {
-    "count": 30,
-    "ratio": {
-      "positive": 0.4667,
-      "neutral": 0.4333,
-      "negative": 0.1
-    },
-    "dominant": "positive"
-  },
-  "top_comments_or_evidence": [
+  "comment_annotations": [
     {
-      "aspect": "song_music",
-      "source": "naver_news",
+      "id": 0,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 1,
       "sentiment": "neutral",
-      "text": "제로베이스원, 음악·예능·숏폼 아우르는 전방위 활약 제로베이스원(ZEROBASEONE)이 음악 방송 활동을 마무리한 이후에도 화제성을 이어가고 있다. 제로베이스원(성한빈, 김지웅, 석매튜, 김태래, 박건욱)은 최근 여섯 번째 미니앨범 '어센드-(Ascend-)' 활동을 통해 다양한..."
+      "aspects": []
     },
     {
-      "aspect": "performance",
-      "source": "youtube_comment",
+      "id": 2,
       "sentiment": "positive",
-      "text": "Mv도 보고 컴백 프리미어도 봤는데, 그 전 셜록 무대에서도 느꼈지만 보컬도 댄스도 의지도 훨씬 단단해진 느낌! 9명이 채우던 무대를 5명이 채우는 것 부담이 상당했을텐데 멋지게 이겨냈다! 이전보다 zb1이 더 좋아졌어!! 꼭 음방 1위했으면 좋겠다. 그럴 자격이 충분하다!"
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
-      "aspect": "visual_styling",
-      "source": "youtube_comment",
+      "id": 3,
       "sentiment": "positive",
-      "text": "내가 진짜 뮤비를 이렇게 많이보는 사람이 아닌데 뮤비가 너무 좋아서 계속보게된다…❤ 특히 한빈이의 롸잇나우베이비 에선 진짜 그냥 맨날 설레"
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
-      "aspect": "vocal_rap",
-      "source": "youtube_comment",
+      "id": 4,
       "sentiment": "positive",
-      "text": "Mv도 보고 컴백 프리미어도 봤는데, 그 전 셜록 무대에서도 느꼈지만 보컬도 댄스도 의지도 훨씬 단단해진 느낌! 9명이 채우던 무대를 5명이 채우는 것 부담이 상당했을텐데 멋지게 이겨냈다! 이전보다 zb1이 더 좋아졌어!! 꼭 음방 1위했으면 좋겠다. 그럴 자격이 충분하다!"
-    },
-    {
-      "aspect": "fandom_public_opinion",
-      "source": "naver_news",
-      "sentiment": "negative",
-      "text": "[공식] 팬 기만 논란..제로베이스원 박건욱, 조작 대참사에 사과 보이 그룹 제로베이스원(ZEROBASEONE) 멤버 박건욱이 조작 논란에 고개를 숙였다. 5일 박건욱은 팬 소통 플랫폼에 \"최근 팬사인회에서의 제 행동에 대해 진심 어린 사과를 드리고 싶어 이 글을 올립니다\"라며 장문의 글을..."
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
     }
   ],
   "naver_news_summary": [
     {
-      "title": "[공식] 팬 기만 논란..제로베이스원 박건욱, 조작 대참사에 사과",
-      "date": "2026-06-05",
-      "summary": "보이 그룹 제로베이스원(ZEROBASEONE) 멤버 박건욱이 조작 논란에 고개를 숙였다. 5일 박건욱은 팬 소통 플랫폼에 \"최근 팬사인회에서의 제 행동에 대해 진심 어린 사과를 드리고 싶어 이 글을 올립니다\"라며 장문의 글을...",
-      "link": "https://m.entertain.naver.com/article/108/0003441533"
+      "title": "제로베이스원 떠난 장하오→한유진, 재데뷔 5개월 만에 확 달라졌다…물...",
+      "date": "2026-10-11",
+      "summary": "장하오, 리키, 김규빈, 한유진은 제로베이스원으로 활동하다 지난 3월 웨이크원과의 계약 종료 후 팀을 떠났다. 유승언 역시 이븐 활동을 마친 뒤 원소속사인 YH엔터테인먼트(구 위에화엔터테인먼트)에서...",
+      "link": "https://m.entertain.naver.com/article/312/0000779489"
     },
     {
-      "title": "제로베이스원 박건욱, 팬사인회 조작 사과…“신중하지 못했다”",
-      "date": "2026-06-05",
-      "summary": "[헤럴드뮤즈] 그룹 제로베이스원(ZEROBASEONE) 멤버 박건욱이 팬 사인회 이벤트 당첨 조작 논란에 대해 사과했다. 5일 박건욱은 팬 소통 플랫폼에 “최근 팬사인회에서의 제 행동에 대해 진심 어린 사과를 드리고 싶어 이...",
-      "link": "https://m.entertain.naver.com/article/016/0002652447"
+      "title": "방탄소년단, 보이그룹 브랜드평판 1위…2위 에이티즈·3위 스트레이 키...",
+      "date": "2026-10-10",
+      "summary": "이어 인피니트, 샤이니, 워너원, 슈퍼주니어, 비투비, 동방신기, 몬스타엑스, 2PM, 보이넥스트도어, 제로베이스원 등이 20위권에 이름을 올렸다. [김소연 스타투데이 기자]",
+      "link": "https://m.entertain.naver.com/article/009/0005746548"
     },
     {
-      "title": "제로베이스원, 음악·예능·숏폼 아우르는 전방위 활약",
-      "date": "2026-06-04",
-      "summary": "제로베이스원(ZEROBASEONE)이 음악 방송 활동을 마무리한 이후에도 화제성을 이어가고 있다. 제로베이스원(성한빈, 김지웅, 석매튜, 김태래, 박건욱)은 최근 여섯 번째 미니앨범 '어센드-(Ascend-)' 활동을 통해 다양한...",
-      "link": "https://m.entertain.naver.com/article/437/0000494535"
+      "title": "성한빈, 데뷔 3년 만에 자신의 이름을 내건 첫 솔로 앨범 발매",
+      "date": "2026-10-09",
+      "summary": "그룹 제로베이스원(ZEROBASEONE)의 리더로 활약해 온 성한빈은 이번에는 자신의 목소리와 춤으로 솔로 무대를 채운다. 앞서 선공개한 ‘Killin’ Me(킬린 미)’ 퍼포먼스 비디오에서는 강렬한 변신과 눈을 뗄 수 없는...",
+      "link": "https://m.entertain.naver.com/article/144/0001143161"
     },
     {
-      "title": "[TOP이슈] 제로베이스원 박건욱, 팬사인회 추첨 조작 논란 사과 \"진심 다...",
-      "date": "2026-06-05",
-      "summary": "제로베이스원(ZEROBASEONE) 박건욱이 팬사인회에서 있었던 추첨 조작 논란을 사과했다. 5일 박건욱은 팬 소통 플랫폼을 통해 \"제로베이스원 박건욱입니다. 최근 팬사인회에서의 제 행동에 대해 진심 어린 사과를 드리고 싶어...",
-      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16080251"
+      "title": "제로베이스원, 팀→솔로→유닛…‘5인 5색’ 행보 구축",
+      "date": "2026-10-08",
+      "summary": "그룹 제로베이스원이 팀 활동을 넘어 개인과 유닛으로 활동 영역을 넓히며 존재감을 키우고 있다. 5인... 석매튜와 박건욱은 제로베이스원 첫 유닛 EMP로 뭉쳐 지난달 첫 믹스테이프를 공개했으며, 오는 11월 디지털...",
+      "link": "https://m.entertain.naver.com/article/009/0005746231"
     },
     {
-      "title": "제로베이스원 박건욱 ‘유쾌한 미소’ [MK포토]",
-      "date": "2026-06-05",
-      "summary": "그룹 제로베이스원(ZEROBASEONE)이 해외일정 참석차 5일 오전 인천국제공항을 통해 중국 상하이로 출국했다. 출국장으로 향하는 제로베이스원 박건욱. 인천공항=김영구 MK스포츠 기자",
-      "link": "https://m.entertain.naver.com/article/410/0001127598"
+      "title": "'AAA 2026', 인기상 부문별 1위 변동…변우석·김혜윤→임영웅·예지",
+      "date": "2026-10-07",
+      "summary": "3위 제로베이스원(ZEROBASEONE) 성한빈, 4위 이찬원, 5위는 투모루바이투게더(TOMORROW X TOGETHER) 연준이다.... 올해 배우 지창욱, 제로베이스원 성한빈, 쯔위가 합류해 함께 진행을 맡는다. 'AAA 2026'은 오는 12월...",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16240980"
     }
   ],
-  "report_text": "# ZEROBASEONE 近期市場與輿論分析\n\n## 1. 榜單表現\n- 榜單表現沿用既有 Bugs 榜單快取觀察，搭配本次新聞與留言聲量判讀。\n- 目前更適合看作回歸期與內容曝光的輔助訊號，後續可再與週榜排名交叉追蹤。\n\n## 2. 粉絲與輿論反應\n- 正面比例：0.4667\n- 中立比例：0.4333\n- 負面比例：0.1\n- 簡短解讀：粉絲留言偏正向，音樂與內容曝光仍能帶動討論。\n- 歌曲／音樂性：正面 (正 0.7273 / 中 0.2727 / 負 0.0)\n- 舞台／表演：正面 (正 1.0 / 中 0.0 / 負 0.0)\n- 造型／視覺：正面 (正 0.875 / 中 0.125 / 負 0.0)\n- 演唱／Rap：正面 (正 1.0 / 中 0.0 / 負 0.0)\n- 粉絲與大眾反應：中性 (正 0.1875 / 中 0.625 / 負 0.1875)\n\n## 3. 綜合判斷\n- 市場熱度：中\n- 輿論風險：低\n- Naver 新聞觀察：新作與音樂性討論\n- 短期趨勢：Naver 新聞仍有可見曝光，留言端偏正面，短期輿論風險不高。\n\n## 4. 市場洞察\n- 新聞焦點：新作與音樂性討論\n- 機會點：可延續音樂與內容品質帶來的正向討論，並把新聞曝光轉成舞台與作品話題。\n- 觀察重點：持續比對 ZEROBASEONE 的榜單續航、留言情緒與新聞曝光是否往同一方向收斂。\n\n## 5. 一句話總結\nZEROBASEONE 目前榜單可搭配後續週榜觀察，粉絲留言偏正向，音樂與內容曝光仍能帶動討論；Naver 新聞仍有近期曝光，整體市場熱度為中、輿論風險為低。\n"
+  "top_comments_or_evidence": [
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "이노래 진짜 좋던데 더떠야함",
+      "link": "https://www.youtube.com/watch?v=0xgeKaAoUUs&lc=Ugx_Xp4dnfqIAr7rRGx4AaABAg",
+      "published_at": "2026-10-10T14:02:31Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "0:48 성한빈 여기 ㅈ됨 지림",
+      "link": "https://www.youtube.com/watch?v=c_Xxi_9GdPQ&lc=UgzKzrqhf_x21L06zjJ4AaABAg",
+      "published_at": "2026-10-10T13:59:44Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "사랑해💙",
+      "link": "https://www.youtube.com/watch?v=c_Xxi_9GdPQ&lc=UgxI7UGCQxt2K-2Xh314AaABAg",
+      "published_at": "2026-10-11T13:29:52Z"
+    }
+  ],
+  "monthly_insight": {
+    "headline": "團體與個人活動並行",
+    "market_heat": "新聞呈現團體與個人活動並行 [N32]；成韓彬個人專輯的宣傳曝光不能視為團體的新輯成績。",
+    "news_focus": "成韓彬 10/12 發行首張個人 EP《DEAD:ALIVE》 [N21][N24]，及團體多元活動 [N32]。",
+    "trend": "目前應區分現有團體活動、成員個人作品與前成員活動，避免混計。",
+    "opportunity": "分別追蹤團體作品與成韓彬個人 EP 的受眾反應。",
+    "watch": "10/12 個人作品發布後資料；新聞提及前成員組成的新團時，不能納入 ZEROBASEONE 成績。",
+    "summary": "ZEROBASEONE 的 10 月新聞重點是團體與個人活動並行 [N32]，成韓彬預計 10/12 發行《DEAD:ALIVE》 [N21][N24]。僅 5 則留言，整體口碑資料不足。",
+    "evidence_ids": [
+      "N21",
+      "N24",
+      "N32"
+    ],
+    "risk": "資料不足",
+    "fan_summary": "抽樣 5 則：正面 4、中立 1、負面 0。比例只代表本次影片觀眾；不能直接推論整體粉絲或一般大眾。"
+  },
+  "report_text": "# ZEROBASEONE 2026-10 市場與輿論分析\n\n## 1. 榜單表現\n- Bugs 全曲週榜 Top 100：2026-09-28–2026-10-04（橫跨月份，僅作參考）。\n- 此藝人未出現在這份已發布週榜 Top 100；不能據此推論全球熱度。\n- 2026-10-05 起算週榜尚未取得；目前無法判定當月排名趨勢。\n\n## 2. 粉絲與輿論反應\n- 正面比例：0.8\n- 中立比例：0.2\n- 負面比例：0.0\n- 簡短解讀：抽樣 5 則：正面 4、中立 1、負面 0。比例只代表本次影片觀眾；不能直接推論整體粉絲或一般大眾。\n- 留言樣本：5 則期間內韓文頂層留言；僅代表抽樣影片，新聞不納入比例。\n\n## 3. 綜合判斷\n- 市場熱度：新聞呈現團體與個人活動並行 [N32]；成韓彬個人專輯的宣傳曝光不能視為團體的新輯成績。\n- 輿論風險：資料不足\n- Naver 新聞觀察：成韓彬 10/12 發行首張個人 EP《DEAD:ALIVE》 [N21][N24]，及團體多元活動 [N32]。\n- 短期趨勢：目前應區分現有團體活動、成員個人作品與前成員活動，避免混計。\n\n## 4. 市場洞察\n- 機會點：分別追蹤團體作品與成韓彬個人 EP 的受眾反應。\n- 觀察重點：10/12 個人作品發布後資料；新聞提及前成員組成的新團時，不能納入 ZEROBASEONE 成績。\n- 分析期間：2026-10-01–2026-10-11（截至日資料，非完整月報；新聞依韓國刊登日，留言依台北日期）。\n- 限制：影片搜尋抽樣、韓文頂層留言、新聞摘要；不代表整體粉絲或一般大眾。\n\n## 5. 一句話總結\nZEROBASEONE 的 10 月新聞重點是團體與個人活動並行 [N32]，成韓彬預計 10/12 發行《DEAD:ALIVE》 [N21][N24]。僅 5 則留言，整體口碑資料不足。\n",
+  "original_model_insight": {
+    "headline": "ZEROBASEONE成員個人活動活躍與品牌影響力分析",
+    "risk": "中",
+    "fan_summary": "粉絲對成員成韓彬的個人舞台表現與音樂作品給予高度正面評價，留言樣本顯示對其轉型與舞台魅力充滿期待，整體互動氛圍積極[N2][N21]。",
+    "market_heat": "ZEROBASEONE在品牌評價中維持前20名水準[N1][N11]，且成員積極參與各類綜藝、主持及音樂節活動，市場曝光度穩定[N4][N25][N37]。",
+    "news_focus": "焦點集中於成員成韓彬即將發行的首張個人專輯[N2][N21]，以及團體成員在個人、小分隊與綜藝領域的多元發展[N3][N32]，同時提及前成員組成的團體動態[N0][N34]。",
+    "trend": "團體正朝向「完全體與個人活動並行」的模式發展，成員透過SOLO、小分隊及主持等多樣化路徑擴大影響力，展現出高度的個人品牌經營策略[N3][N32]。",
+    "opportunity": "成韓彬的個人專輯發行與擔任大型頒獎典禮MC，為其個人品牌帶來顯著的曝光機會，有助於提升其在音樂與主持領域的專業形象[N4][N21][N33]。",
+    "watch": "需持續觀察成韓彬個人專輯的市場反應，以及團體在年底大型頒獎典禮與年末舞台的表現，同時留意成員個人活動對團體整體品牌影響力的長期效應[N2][N20][N21]。",
+    "summary": "ZEROBASEONE近期以成員個人活動為核心，成韓彬將發行首張個人專輯並展現轉型風格[N2][N21]，團體亦持續參與各類音樂節與品牌活動[N37]。儘管部分前成員已離團重組[N0][N34]，現有成員在品牌評價中仍保持穩定，並透過多元化發展維持市場熱度[N1][N32]。",
+    "evidence_ids": [
+      "N0",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N11",
+      "N20",
+      "N21",
+      "N32",
+      "N33",
+      "N34",
+      "N37"
+    ]
+  },
+  "review": {
+    "reviewed_at": "2026-10-11T15:49:49.098334+00:00",
+    "method": "Source-bound editorial review of news digests and comment annotations",
+    "notes": [
+      "Removed unsupported market/ranking claims",
+      "Separated member, former-member and NCT unit activity",
+      "Overall opinion risk not established by convenience sample"
+    ]
+  }
 }

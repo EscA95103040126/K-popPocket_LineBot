@@ -1,119 +1,2389 @@
 {
   "artist": "IVE",
-  "generated_at": "2026-06-05T08:59:18.797243+00:00",
+  "generated_at": "2026-10-11T15:43:26.452870+00:00",
+  "analysis_period": {
+    "start": "2026-10-01",
+    "end": "2026-10-11",
+    "timezone": "Asia/Taipei"
+  },
   "sources": {
     "naver_news": {
-      "count": 10,
+      "count": 40,
       "items": [
         {
-          "title": "아이브, 오리콘·빌보드 재팬 ‘꿀꺽’",
-          "date": "2026-06-04",
-          "summary": "그룹 아이브(IVE)가 일본 새 앨범으로 현지 주요 차트 정상에 올랐다. 소속사 스타쉽엔터테인먼트는 4일 아이브의 일본 네 번째 앨범 ‘루시드 드림’(LUCID DREAM)이 일본 오리콘과 빌보드 재팬 차트에서 1위를...",
+          "title": "\"특별히 다이어트 안해요\"…리즈, '세끼' 다 먹고도 턱선 유지하는 비법...",
+          "date": "2026-10-11",
+          "summary": "이준형 인턴 기자 = 그룹 아이브(IVE) 멤버 리즈가 고향 제주도에서 눈부신 비주얼을 자랑하며 근황을 전했다. 8일 리즈는 자신의 사회관계망서비스(SNS)에 \"저는 제주 출신입니다\"라는 글과 함께 여러 장의 사진을 공개했다....",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/144/0001119045"
+          "link": "https://m.entertain.naver.com/article/003/0014245463",
+          "original_link": "https://www.newsis.com/view/NISX20261011_0003820999"
         },
         {
-          "title": "아이브, 日 오리콘 다시 한 번 최정상",
-          "date": "2026-06-04",
-          "summary": "아이브 [스타쉽 엔터테인먼트 제공] 그룹 아이브(IVE)가 일본 음악 시장에서 다시 한번 정상을 밟았다. 최근 일본 오리콘이 발표한 최신 차트에 따르면 아이브(안유진·가을·레이·장원영·리즈·이서)의 현지 네...",
+          "title": "라치카 시미즈, 장원영 극찬... \"열심히 연구해서 모든 파트 킬링 신으...",
+          "date": "2026-10-10",
+          "summary": "가요계 퍼포먼스의 중심인 댄스 크루 라치카의 황금 막내이자 아이브의 전담 퍼포먼스 디렉터로 맹활약 중인 시미즈가 한강 뷰 작업실과 럭셔리한 일상, 그리고 아이브 멤버들을 향한 극찬을 아낌없이 쏟아냈다. 특히...",
           "category": "news",
-          "link": "https://n.news.naver.com/mnews/article/016/0002652174?sid=103"
+          "link": "https://m.entertain.naver.com/article/445/0000475222",
+          "original_link": "https://mhnse.com/news/articleView.html?idxno=1586224"
         },
         {
-          "title": "아이브, 日 신보 '루시드 드림' 오리콘·빌보드 차트 1위",
-          "date": "2026-06-04",
-          "summary": "걸그룹 아이브(IVE)가 신보 '루시드 드림'으로 일본 오리콘, 빌보드 차트 정상에 올랐다. 3일 일본 오리콘에 따르면, 아이브의 일본 네 번째 앨범 '루시드 드림'(LUCID DREAM)이 '오리콘 주간 합산 앨범 랭킹' 1위에...",
+          "title": "아이브 리즈, 제주 카페에서 포착된 청초한 근황…솔로곡 'Unreal'로 보컬...",
+          "date": "2026-10-09",
+          "summary": "그룹 아이브(IVE) 리즈(김지원, 21세)가 제주에서 촬영한 사진으로 근황을 전했다. 실내에서 창밖 풍경을... 1집 'ELEVEN'으로 아이브 멤버로 정식 데뷔했다. 리즈가 속한 아이브는 안유진·가을·레이·장원영·리즈...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/421/0008985324"
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242727",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16242727"
         },
         {
-          "title": "아이브, 日 신보 '루시드 드림' 오리콘·빌보드 차트 1위",
-          "date": "2026-06-04",
-          "summary": "아이브(IVE)가 일본 주요 차트를 석권하며 현지에서의 뜨거운 인기를 다시 한번 입증했다. 지난 3일 일본 오리콘이 발표한 최신 차트에 따르면, 아이브의 일본 네 번째 앨범 'LUCID DREAM(루시드 드림)'이 '오리콘...",
+          "title": "이채연, 日 데뷔 싱글 '보쿠노코에'로 감성 보컬 변신",
+          "date": "2026-10-08",
+          "summary": "당시 아이브, 세븐틴, 블랙핑크 지수 등 대형 아티스트들이 포진한 시기였던 만큼, 솔로 아티스트로서 눈에 띄는 성과를 남기며 음악적 가능성을 한층 끌어올렸다. 같은 해 싱글 1집 'The Move : Street'를 통해서는 스트릿...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/437/0000494468"
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242152",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16242152"
         },
         {
-          "title": "아이브, 도쿄돔 재입성 앞두고 日 오리콘·빌보드 1위",
-          "date": "2026-06-04",
-          "summary": "그룹 아이브(IVE)가 일본 주요 음악 차트를 휩쓸며 현지에서의 막강한 인기를 다시 한번 증명했다. 일본 오리콘이 지난 3일 발표한 최신 차트에 따르면 아이브의 일본 네 번째 앨범 ‘LUCID DREAM(루시드 드림)...",
+          "title": "아이브 장원영, 그레이 톤 셀카로 전한 근황…광채 비주얼 눈길",
+          "date": "2026-10-07",
+          "summary": "그룹 아이브(IVE) 장원영(21세)이 실내에서 촬영한 사진으로 근황을 전했다. 길게 늘어뜨린 머리와 그레이... 장원영은 2004년생으로, 6인조 걸그룹 아이브의 멤버로 활동하고 있다. 팀 내에서 센터이자 보컬...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/408/0000310663"
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16241156",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16241156"
         },
         {
-          "title": "아이브, 日 신보 오리콘 주간 1위…올해 최고 기록",
-          "date": "2026-06-04",
-          "summary": "팀 통산 3번째 1위..6월 24일 도쿄돔 재입성 걸그룹 아이브(IVE)가 일본 주요 앨범 차트를 석권했다. 지난 3일 일본 오리콘이 발표한 최신 차트에 따르면 아이브(안유진 가을 레이 장원영 리즈 이서)의 일본...",
+          "title": "청담공원에서 운동하는 장원영 실존..책 읽고 명상까지",
+          "date": "2026-10-06",
+          "summary": "아이브 장원영이 청담공원에서 여유로운 시간을 보내는 일상을 공개했다. 5일 아이브 공식 SNS에는 장원영이 서울 청담공원을 찾은 모습이 공개돼 눈길을 끌었다. 공개된 사진과 영상 속 장원영은 핑크빛 민소매 상의에...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/629/0000504873"
+          "link": "https://m.entertain.naver.com/article/109/0005619342",
+          "original_link": "http://www.osen.co.kr/article/G1112888668"
         },
         {
-          "title": "아이브, 日 신보로 오리콘 주간 차트 정상 올라",
-          "date": "2026-06-04",
-          "summary": "걸그룹 아이브(IVE·안유진, 가을, 레이, 장원영, 리즈, 이서)가 일본 음악 차트 정상에 올랐다. 아이브(사진=스타쉽엔터테인먼트) 일본 오리콘이 3일 발표한 최신 차트에 따르면 아이브가 현지에서 발매한 4번째...",
+          "title": "애플 터너스 CEO, 디자인 스튜디오 주 여러 번 직접 방문…쿡은 월 1회였...",
+          "date": "2026-10-05",
+          "summary": "윌리엄스 퇴장 이후 이어진 사실상의 디자인 총괄애플은 조니 아이브(Jony Ive)가 2019년 회사를 떠난 뒤... 셈이다.아이브 후임 없이 CEO가 최종 결정자로눈에 띄는 대목은 애플이 아이브의 후임 격인 최고디자인책임자...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/018/0006297075"
+          "link": "https://www.wikitree.co.kr/articles/1164057",
+          "original_link": "https://www.wikitree.co.kr/articles/1164057"
         },
         {
-          "title": "아이브, 日 신보 '루시드 드림' 오리콘·빌보드 차트 1위 직행 [공식]",
-          "date": "2026-06-04",
-          "summary": "그룹 아이브(IVE 안유진·가을·레이·장원영·리즈·이서) 일본 신보가 일본 차트에서 1위를 기록했다. 지난 3일 일본 오리콘이 발표한 최신 차트에 따르면 아이브의 일본 네 번째 앨범 'LUCID DREAM(루시드 드림)...",
+          "title": "아이브 장원영, 파리서 물오른 비주얼…드림 백과 함께한 순간",
+          "date": "2026-10-04",
+          "summary": "그룹 아이브(IVE) 장원영(21세)이 세련된 재킷 스타일링 사진으로 근황을 전했다. 단정한 실내 공간에서... 장원영은 가요계에서 활약 중인 6인조 그룹 아이브의 멤버로, 팀의 센터 포지션을 맡아 무대 전반을...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/108/0003441290"
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16238102",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16238102"
         },
         {
-          "title": "아이브, 日 오리콘ㆍ빌보드 동시 석권⋯올해 최고 기록 경신",
-          "date": "2026-06-04",
-          "summary": "이투데이=장유진 기자 | 그룹 아이브(IVE)가 일본 주요 차트를 석권했다. 3일 일본 오리콘이 발표한 최신 차트에 따르면, 아이브의 일본 네 번째 앨범 '루시드 드림(LUCID DREAM)'은 '오리콘 주간 합산 앨범 랭킹' 1위에...",
+          "title": "연예계가 들썩인 이광수 버블 중독, 절친 김우빈→도경수도 “미친 사람...",
+          "date": "2026-10-03",
+          "summary": "아이브 레이, 리즈, 리센느 리브와 원이, 이즈나 정세비, 트리플에스 윤서연, 키스오브라이프 하늘, 루시 최상엽 등이 이광수의 버블을 언급하거나 이광수 버블 결제를 인증했다. 이광수 버블의 화제성은 절친들에게도...",
           "category": "news",
-          "link": "https://www.etoday.co.kr/news/view/2590441"
+          "link": "https://m.entertain.naver.com/article/609/0001175098",
+          "original_link": "https://www.newsen.com/news_view.php?uid=202610031857222510"
         },
         {
-          "title": "아이브, 日 오리콘·빌보드 동시 석권…해외 여성가수 올해 최고 기록",
-          "date": "2026-06-04",
-          "summary": "그룹 아이브(IVE)가 일본 주요 음악 차트를 휩쓸며 현지에서의 뜨거운 인기를 다시 한번 입증했다. 3일 일본 오리콘이 발표한 최신 차트에 따르면 아이브의 일본 네 번째 앨범 'LUCID DREAM'(루시드 드림)은 '주간...",
+          "title": "도경수, 주방 아닌 홀은 처음이라…첫 주문부터 실수 \"나 최악\" 사과 ('...",
+          "date": "2026-10-02",
+          "summary": "2일 방송된 tvN '우주떡집'에서는 이은지, 오마이걸 미미, 이영지, 아이브 안유진이 출연했다. 이날 이은지, 미미, 안유진, 이영지가 출근 준비를 하는 사이 누군가 주방에 등장했다. 엑소 도경수였다. 도경수는 주방을...",
           "category": "news",
-          "link": "https://m.entertain.naver.com/article/416/0000323909"
+          "link": "https://m.entertain.naver.com/article/213/0001403323",
+          "original_link": "https://www.tvreport.co.kr/broadcast/article/1080259/"
+        },
+        {
+          "title": "'2026 SBS 가요대전', 30주년 맞아 크리스마스 이브-25일 양일 개최…라...",
+          "date": "2026-10-01",
+          "summary": "재민, 아이브(IVE)의 안유진, 데이식스(DAY6) 영케이가 함께 진행을 맡은 바 있다. 라인업으로는 그룹 스트레이 키즈(Stray Kids), 투모로우바이투게더(TOMORROW X TOGETHER), 엔하이픈(ENHYPEN), 아이브...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16232724",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16232724"
+        },
+        {
+          "title": "컴백 아이브, ‘완전체’ 비주얼 공개됐다",
+          "date": "2026-10-11",
+          "summary": "그룹 아이브(IVE)가 새 앨범 단체 콘셉트 포토를 공개하며 컴백 예열에 나섰다. 아이브(안유진, 가을, 레이, 장원영, 리즈, 이서)의 소속사 스타쉽엔터테인먼트는 지난 9일 공식 SNS 채널을 통해 신보 ‘룩스 캔 킬...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/468/0001271799",
+          "original_link": "https://www.sportsseoul.com/news/read/1640610?ref=naver"
+        },
+        {
+          "title": "아이브 멤버별 특징 술술..시미즈 \"유진은 시원시원→원영은 본인 느낌...",
+          "date": "2026-10-10",
+          "summary": "'전참시' 시미즈가 아이브에 대한 남다른 애정을 자랑했다. 10일 전파를 탄 MBC '전지적 참견 시점'에서 댄서... 그 이후로 뮤비나 무대 디렉팅을 보게 됐다\"며 3년째 아이브와 함께 하고 있다고 알렸다. 이어 그는 \"아이브...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/108/0003477654",
+          "original_link": "https://www.starnewskorea.com/broadcast-show/2026/10/10/2026101023460078281"
+        },
+        {
+          "title": "엘칸 페라리 회장 \"AI 버블 믿지 않는다\"…수익 모델은 불확실",
+          "date": "2026-10-09",
+          "summary": "올해 행사에는 엘칸 회장을 비롯해 핀테크 기업 레볼루트 창업자 닉 스토론스키, 전 애플 수석 디자이너 조니 아이브, 알리바바 그룹 공동창업자 조 차이 등이 연사로 참석했다.",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/088/0001033269?sid=105",
+          "original_link": "https://www.imaeil.com/page/view/2026100921055334713"
+        },
+        {
+          "title": "아이브 이서, 핑크 드레스 자태…'룩스 캔 킬' 컴백 앞둔 눈부신 비주얼",
+          "date": "2026-10-08",
+          "summary": "그룹 아이브(IVE) 이서(이현서, 18세)가 드레스 차림의 사진으로 근황을 전했다. 막내다운 에너지를 간직한... 이서는 2007년 2월 21일 태어난 6인조 걸그룹 아이브의 막내 멤버다. 2021년 싱글 1집 'ELEVEN'으로 데뷔한 뒤...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242143",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16242143"
+        },
+        {
+          "title": "아이브 리즈, 선글라스로 완성한 시크 비주얼",
+          "date": "2026-10-07",
+          "summary": "그룹 아이브(IVE) 리즈(김지원, 21세)가 매장 사진으로 세련된 근황을 전했다. 선글라스를 활용한... 리즈는 2021년 싱글 1집 'ELEVEN'으로 데뷔한 6인조 그룹 아이브의 멤버로, 팀에서 주로 보컬을 담당하고 있다....",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16241146",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16241146"
+        },
+        {
+          "title": "장원영, 민트 팔토시끼고 청담 공원서 포착",
+          "date": "2026-10-06",
+          "summary": "박재민 인턴 기자 = 그룹 아이브 장원영이 공원에서 운동 기구를 타는 모습이 포착됐다. 아이브는 5일 공식 소셜미디어에 신곡 '룩스캔킬'(Looks Can Kill)을 홍보하는 글과 함께 사진과 영상을 올렸다. 영상 속 장원영은...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/003/0014236952",
+          "original_link": "https://www.newsis.com/view/NISX20261006_0003815518"
+        },
+        {
+          "title": "아이브, ‘제31회 부산국제영화제’(BIFF) 자원활동가에 격려·응원 메시...",
+          "date": "2026-10-05",
+          "summary": "걸그룹 아이브(IVE아이브)가 ‘제31회 부산국제영화제’(BIFF) 자원활동가들에게 응원의 메시지를 전했다. 소속사 스타쉽엔터테인먼트에 따르면, 아이브(IVE: 안유진·가을·레이·장원영·리즈·이서)는 지난 4일 부산...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/144/0001142271",
+          "original_link": "https://sports.khan.co.kr/article/202610052235003?pt=nv"
+        },
+        {
+          "title": "아이브 레이, 별 장식 포즈로 발렌티노룩 완성",
+          "date": "2026-10-04",
+          "summary": "그룹 IVE(아이브) 레이(나오이 레이, 21세)가 별 모티프 장식을 더한 사진으로 근황을 전했다. 시크한 올블랙 스타일링과 여유 있는 포즈로 개성 있는 분위기를 드러냈다. 4일 올라온 게시물에는 실내 공간을...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16238051",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16238051"
+        },
+        {
+          "title": "아이브(IVE) 레이·리즈 공항패션, 독보적 여신 비주얼+감각적 스타일링",
+          "date": "2026-10-03",
+          "summary": "브레이크뉴스 박동제 기자= 그룹 아이브(IVE) 멤버 레이, 리즈가 공항패션을 통해 독보적인 여신 비주얼을 뽐냈다. 3일 디마코에 따르면, 아이브 레이·리즈는 이날...",
+          "category": "news",
+          "link": "http://www.breaknews.com/1240896",
+          "original_link": "http://www.breaknews.com/1240896"
+        },
+        {
+          "title": "'2026 뮤직뱅크 글로벌 페스티벌 인 재팬', 라이즈-알파드라이브원 2차 ...",
+          "date": "2026-10-02",
+          "summary": "MC 라인업으로는 12일에 미사모의 사나와 김재원이, 13일에는 아이브 장원영과 김재원이 함께... (aespa), 아이브(IVE), 보이넥스트도어(BOYNEXTDOOR), 엔시티 위시(NCT WISH), 코르티스(CORTIS)가 합류한 바 있다....",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16235472",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16235472"
+        },
+        {
+          "title": "스포티파이, 아이브(IVE) 새 EP ‘Looks Can Kill’ 발매 앞서 팬들 위한...",
+          "date": "2026-10-01",
+          "summary": "오디오·음원 스트리밍 플랫폼 스포티파이(Spotify)는 아이브(IVE)의 새 EP ‘룩스 캔 킬(Looks Can Kill)’과 그... 10월 26일 발매를 앞둔 아이브의 신보를 한발 앞서 경험할 수 있는 자리로, 다이브는 아이브가 새롭게 써 내려갈...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/144/0001141726",
+          "original_link": "https://sports.khan.co.kr/article/202610012253013?pt=nv"
+        },
+        {
+          "title": "\"나눔과 추억이 깃든 가을축제\"… 송도 센트럴파크서 '송도굿마켓' 성황",
+          "date": "2026-10-11",
+          "summary": "아이브와 투모로우바이투게더 등 유명 아이돌의 포토카드와 인형을 판매하던 한 13살 어린이 참가자는 물건이 잘 팔리지 않자 \"기부할 수 있게 꼭 사가세요\"라고 목청껏 외쳐 지나가던 시민들에게 기분 좋은 웃음을...",
+          "category": "news",
+          "link": "https://www.joongboo.com/news/articleView.html?idxno=363738921",
+          "original_link": "https://www.joongboo.com/news/articleView.html?idxno=363738921"
+        },
+        {
+          "title": "아이브 안유진, 파리서도 돋보인 인형 미모+마네킹 비율‥컴백 앞두고 ...",
+          "date": "2026-10-10",
+          "summary": "그룹 아이브 안유진이 소녀 같은 사랑스러운 모습으로 근황을 전했다. 안유진은 지난 10월 9일 자신의... 안유진이 소속된 아이브는 10월 26일 새 미니앨범 ‘Looks Can Kill(룩스 캔 킬)’을 발매하며 이에 앞서 19일...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/609/0001177323",
+          "original_link": "https://www.newsen.com/news_view.php?uid=202610101452362510"
+        },
+        {
+          "title": "아이브 가을, 안경 셀카로 전한 근황…'룩스 캔 킬' 컴백 앞두고 눈길",
+          "date": "2026-10-09",
+          "summary": "그룹 아이브(IVE) 가을(김가을, 23세)이 안경을 쓴 셀카로 근황을 전했다. 단정한 묶음 머리와 블랙 톤... 가을은 2002년 9월 24일생으로, 그룹 아이브에서 래퍼와 보컬 포지션을 맡고 있다. 순우리말 활동명인...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242698",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16242698"
+        },
+        {
+          "title": "아이브 이서, 리본 드레스 포즈…'룩스 캔 킬' 컴백 앞둔 무대 비하인드",
+          "date": "2026-10-08",
+          "summary": "그룹 아이브(IVE) 이서(이현서, 18세)가 화이트 드레스를 착용한 백스테이지 사진으로 근황을 전했다.... 이서는 2007년생으로, 2021년 싱글 1집 'ELEVEN'으로 아이브 막내 멤버로 데뷔했다. 초등학생 시절 캐스팅을 통해...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242141",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16242141"
+        },
+        {
+          "title": "아이브 리즈, 에펠탑 아래 빛난 파리의 밤…'걸 히어로' 행보 잇는다",
+          "date": "2026-10-07",
+          "summary": "그룹 아이브(IVE) 리즈(김지원, 21세)가 파리에서 촬영한 야간 사진으로 근황을 전했다. 편안한 포즈와... 한편, 아이브는 오는 19일 타이틀곡 'Looks Can Kill'을 선공개하고 26일 동명의 미니앨범 'Looks Can Kill'을...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16241129",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16241129"
+        },
+        {
+          "title": "아이브 리즈, 파리 야경 속 럭셔리 무드…'룩스 캔 킬' 앞두고 빛난 존...",
+          "date": "2026-10-06",
+          "summary": "그룹 IVE(아이브) 리즈(김지원, 21세)가 파리 밤거리에서 촬영한 사진으로 근황을 전했다. 도시 야경을... 리즈는 2004년 11월 21일 제주도 제주시에서 태어났으며, 2021년 싱글 1집 'ELEVEN'으로 아이브 멤버로...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16240001",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16240001"
+        },
+        {
+          "title": "'AAA 2026', 인기상 투표 진행→부문별 순위 보니…변우석-김혜윤 나란히...",
+          "date": "2026-10-05",
+          "summary": "'AAA 2026'은 지난 '2021 아시아 아티스트 어워즈'부터 그룹 아이브의 멤버 장원영이 MC를 맡아 매년 'AAA'를 이끌고 있다. 올해 배우 지창욱, 제로베이스원 성한빈, 쯔위가 합류해 함께 진행을 맡는다. 'AAA 2026'은...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16238744",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16238744"
+        },
+        {
+          "title": "스킨케어 다음은 색조… K뷰티 글로벌 사업 확장",
+          "date": "2026-10-04",
+          "summary": "애경산업의 에이지투웨니스는 최근 그룹 아이브의 레이를 글로벌 앰배서더로 선정해 해외 시장 공략을 강화한다는 계획이다. 업계 관계자는 \"세계 시장에서 K뷰티에 대한 선호도가 높아지면서 스킨케어뿐만 아니라...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/014/0005584809?sid=101",
+          "original_link": "https://www.fnnews.com/news/202610041852054179"
+        },
+        {
+          "title": "도경수, ‘버블 중독’ 이광수에 당황 “내가 아는 사람 중 제일 말 없는...",
+          "date": "2026-10-03",
+          "summary": "이영지 역시 팬들에게 이광수의 버블을 추천했으며 아이브 레이는 구독을 고민하고 있다고 밝혔다. 리즈는 실제 이광수의 버블을 구독한 뒤 아침 사이 메시지가 수십 개 쌓였다며 그의 소통 능력을 배워오겠다고 해 웃음을...",
+          "category": "news",
+          "link": "http://www.celuvmedia.com/article.php?aid=1791028726528739006",
+          "original_link": "http://www.celuvmedia.com/article.php?aid=1791028726528739006"
+        },
+        {
+          "title": "'AAA 2026', 실시간 순위? 변우석-김혜윤 나란히…스트레이 키즈-트와이...",
+          "date": "2026-10-02",
+          "summary": "'AAA 2026'은 지난 '2021 아시아 아티스트 어워즈'부터 그룹 아이브의 멤버 장원영이 MC를 맡아 매년 'AAA'를 이끌고 있다. 올해 배우 지창욱, 제로베이스원 성한빈, 쯔위가 합류해 함께 진행을 맡는다. 'AAA 2026'은...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16235079",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16235079"
+        },
+        {
+          "title": "아이브 장원영, 블랙 시퀀 드레스 자태…파리 향한 럭셔리 나들이",
+          "date": "2026-10-01",
+          "summary": "그룹 아이브(IVE) 장원영(21세)이 블랙 시퀀 드레스 차 안 사진으로 근황을 전했다. 차분한 분위기 속에서... 장원영은 스타쉽엔터테인먼트 소속 6인조 그룹 아이브의 멤버로, 팀에서 센터와 보컬을 맡고 있다. 2018년...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16232762",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16232762"
+        },
+        {
+          "title": "‘137억 한남동 루시드하우스’ 장원영, 집 인테리어도 ‘억’",
+          "date": "2026-10-11",
+          "summary": "걸그룹 아이브 장원영이 137억원에 매입한 한남동 자택 내부를 공개했다. 7일 장원영은 소셜미디어에 “my... 한편 아이브는 월드 투어를 진행 중이며, 오는 26일 새 미니 앨범 ‘Looks Can Kill’을 발매할 예정이다.",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/117/0004114047",
+          "original_link": "https://www.mydaily.co.kr/page/view/2026100804443993245"
+        },
+        {
+          "title": "라치카 시미즈, 탁 트인 한강뷰 집 공개…감각적 인테리어까지 '감탄' (...",
+          "date": "2026-10-10",
+          "summary": "라치카는 아이브, 에스파 등 인기 K팝 아이돌과 작업하며 다수의 포인트 안무를 탄생시킨 댄스 크루이다. 이날 시미즈는 평소의 강렬한 이미지와 달리 수수한 민낯으로 기상했다. 그는 일어나자마자 휴대폰을 확인하며...",
+          "category": "news",
+          "link": "https://m.entertain.naver.com/article/311/0002067534",
+          "original_link": "https://www.xportsnews.com/article/2206318"
+        },
+        {
+          "title": "국립무용단에도 ‘지민정’·‘안녕즈’가 있다…“물들듯 가까워졌죠...",
+          "date": "2026-10-09",
+          "summary": "액션 영화 같은 듀엣…군더더기 없는 몸 K-팝 걸그룹 에스파에 ‘지민정’(카리나·윈터)이, 아이브에 ‘안녕즈’(안유진·장원영)가 있다면 국립무용단엔 이 둘이 있다. 완벽한 비주얼과 빈틈없는 합. 박혜지와 이요음은...",
+          "category": "news",
+          "link": "https://n.news.naver.com/mnews/article/016/0002707377?sid=103",
+          "original_link": "https://biz.heraldcorp.com/article/10897935?ref=naver"
+        },
+        {
+          "title": "'AAA 2026', 인기상 결선 투표 시작…변우석-김혜윤→방탄소년단-하츠투...",
+          "date": "2026-10-08",
+          "summary": "'AAA 2026'은 지난 '2021 아시아 아티스트 어워즈'부터 그룹 아이브의 멤버 장원영이 MC를 맡아 매년 'AAA'를 이끌고 있다. 올해 배우 지창욱, 제로베이스원 성한빈, 쯔위가 합류해 함께 진행을 맡는다. 'AAA 2026'은...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242036",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16242036"
+        },
+        {
+          "title": "'AAA 2026', 인기상 부문별 1위 변동…변우석·김혜윤→임영웅·예지",
+          "date": "2026-10-07",
+          "summary": "'AAA 2026'은 지난 '2021 아시아 아티스트 어워즈'부터 그룹 아이브의 멤버 장원영이 MC를 맡아 매년 'AAA'를 이끌고 있다. 올해 배우 지창욱, 제로베이스원 성한빈, 쯔위가 합류해 함께 진행을 맡는다. 'AAA 2026'은...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16240980",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16240980"
+        },
+        {
+          "title": "아이브 레이, 발렌티노와 함께한 밤…고혹 비주얼 눈길",
+          "date": "2026-10-06",
+          "summary": "그룹 아이브(IVE) 레이(나오이 레이, 21세)가 럭셔리 브랜드와 함께한 스타일링 사진으로 근황을 전했다.... 레이는 일본 아이치현 나고야시 출신으로, 2004년 2월 3일 태어나 한국에서 활동하는 6인조 그룹 아이브의...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16239996",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16239996"
+        },
+        {
+          "title": "[뮤지션100주간] 올데이 프로젝트 26계단 에스파파 75계단 상승…리센느...",
+          "date": "2026-10-05",
+          "summary": "엔믹스와 아이브는 각각 한 계단 올랐지만 스코어는 8.8점과 18.9점 감소했다. 다비치도 두 계단 오른 32위였으나 스코어는 0.3점 줄었다. 이들 사례는 순위 상승을 스코어 증가와 구분해서 읽어야 한다는 점을...",
+          "category": "news",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16238776",
+          "original_link": "https://www.topstarnews.net/news/articleView.html?idxno=16238776"
         }
-      ]
+      ],
+      "retrieved_unique_non_photo": 596,
+      "pagination_limit_reached": false,
+      "date_timezone": "Asia/Seoul"
     },
     "youtube_comments": {
-      "count": 20
+      "count": 83,
+      "items": [
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "금발 단발누구죠?",
+          "comment_id": "Ugy61lteEG5C-VFOxgl4AaABAg",
+          "published_at": "2026-10-11T05:41:11Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugy61lteEG5C-VFOxgl4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE 아이브 LIZ 리즈 'Unreal' Special Clip",
+          "comment": "장소 제주인가요?",
+          "comment_id": "UgxjRvM89rRmOfI4j-F4AaABAg",
+          "published_at": "2026-10-09T07:38:57Z",
+          "video_id": "Xe7admnJYK8",
+          "channel": "IVE",
+          "link": "https://www.youtube.com/watch?v=Xe7admnJYK8&lc=UgxjRvM89rRmOfI4j-F4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE at 2026 TIMA (Day 2) | TMElive International Music Awards / TIMA國際音樂大賞",
+          "comment": "그냥 빈자리가 느껴지지 않음",
+          "comment_id": "Ugz77tyRBM6BoVNZ2G54AaABAg",
+          "published_at": "2026-10-01T14:38:15Z",
+          "video_id": "XtCnr9ga-pI",
+          "channel": "ASF",
+          "link": "https://www.youtube.com/watch?v=XtCnr9ga-pI&lc=Ugz77tyRBM6BoVNZ2G54AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "평균키 170장신 그룹의 위엄 아이브의 행진 #아이브 #ive #원영 #가을 #리즈 #이서 #레이 #유진 #뱅뱅 #bangbang",
+          "comment": "평균신장 약 170이어서 굳이 힐 안신어도 힐 신은거마냥 비율 개지림ㅋㅋㅋ",
+          "comment_id": "Ugy6VJKWWAZ0L8CS6oN4AaABAg",
+          "published_at": "2026-10-06T06:09:03Z",
+          "video_id": "RlVm1BfHu7U",
+          "channel": "케이위키",
+          "link": "https://www.youtube.com/watch?v=RlVm1BfHu7U&lc=Ugy6VJKWWAZ0L8CS6oN4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "아이브는 라이브 할 때 댄스에는 좀 방해되도 핸드마이크 항상 쓰는게 제일 호감. 인이어 끼고 춤만 빡세게 추고 노래 대충 부르는 가수들 진짜 많은데 아이브는 자신감이 있어서 그렇겠지만 보컬에 신경쓴다는게 항상 눈에 보임",
+          "comment_id": "Ugyv6dftzv1rhVOiuPJ4AaABAg",
+          "published_at": "2026-10-11T05:31:21Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugyv6dftzv1rhVOiuPJ4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE 아이브 LIZ 리즈 'Unreal' Special Clip",
+          "comment": "이제야 제대로 된 가치를 인정 받는 듯…진작에 떴어야… 이젠 실력이 인정받는 시대!!!",
+          "comment_id": "UgwJIWsb7Qxw4O_XJeB4AaABAg",
+          "published_at": "2026-10-08T13:36:54Z",
+          "video_id": "Xe7admnJYK8",
+          "channel": "IVE",
+          "link": "https://www.youtube.com/watch?v=Xe7admnJYK8&lc=UgwJIWsb7Qxw4O_XJeB4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "평균키 170장신 그룹의 위엄 아이브의 행진 #아이브 #ive #원영 #가을 #리즈 #이서 #레이 #유진 #뱅뱅 #bangbang",
+          "comment": "레이가 대박인게 큐티 청순 섹시 다 어울림",
+          "comment_id": "UgzdEfVeEnBfEf_I3Y14AaABAg",
+          "published_at": "2026-10-02T15:00:51Z",
+          "video_id": "RlVm1BfHu7U",
+          "channel": "케이위키",
+          "link": "https://www.youtube.com/watch?v=RlVm1BfHu7U&lc=UgzdEfVeEnBfEf_I3Y14AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "원영씨",
+          "comment_id": "Ugwp38ErfNSyGgIyOZp4AaABAg",
+          "published_at": "2026-10-10T11:45:36Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugwp38ErfNSyGgIyOZp4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "평균키 170장신 그룹의 위엄 아이브의 행진 #아이브 #ive #원영 #가을 #리즈 #이서 #레이 #유진 #뱅뱅 #bangbang",
+          "comment": "근데 레이는 왜 맨날 눈이 풀려있지",
+          "comment_id": "UgybxPty5fnmiWGrfSh4AaABAg",
+          "published_at": "2026-10-02T04:04:43Z",
+          "video_id": "RlVm1BfHu7U",
+          "channel": "케이위키",
+          "link": "https://www.youtube.com/watch?v=RlVm1BfHu7U&lc=UgybxPty5fnmiWGrfSh4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "아이브 전원 미소녀 축하해",
+          "comment_id": "UgyWYOl-sIKRHCZdt1J4AaABAg",
+          "published_at": "2026-10-10T08:21:29Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgyWYOl-sIKRHCZdt1J4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "3: 40 리즈 뱅뱅 다 죽자 파트 개 미쳤네;;",
+          "comment_id": "Ugycm9rO9W-dmiW8slx4AaABAg",
+          "published_at": "2026-10-10T06:56:13Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugycm9rO9W-dmiW8slx4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "썸네일 미쳤다",
+          "comment_id": "UgyuMKy7z9QPHtrkHPd4AaABAg",
+          "published_at": "2026-10-10T06:27:56Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgyuMKy7z9QPHtrkHPd4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "하나 같이 다 어느 그룹에 넣어도 얼굴 간판급 ㄷㄷ;;; 진짜 대박이긴 하다.",
+          "comment_id": "Ugyv9K7PVvVUm8JJb1p4AaABAg",
+          "published_at": "2026-10-10T06:19:22Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugyv9K7PVvVUm8JJb1p4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "키 다 ㅈㄴ 크네 ㅋㅋㅋㅋ 모델들이냐",
+          "comment_id": "UgyASTYeHDOJnkz0QU14AaABAg",
+          "published_at": "2026-10-10T03:14:06Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgyASTYeHDOJnkz0QU14AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "아이브 진짜 사랑해여❤❤❤",
+          "comment_id": "UgwRcs4DbVtSqU53nV54AaABAg",
+          "published_at": "2026-10-09T10:52:36Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgwRcs4DbVtSqU53nV54AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "성형 장원영.....ㅋㅋㅋㅋㅋㅋ",
+          "comment_id": "UgxufZwDEWE3p6JQC1x4AaABAg",
+          "published_at": "2026-10-09T03:37:48Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgxufZwDEWE3p6JQC1x4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "이제 음악방송 다 나오는건가?",
+          "comment_id": "Ugw23nH5_ojL4bM-nSV4AaABAg",
+          "published_at": "2026-10-08T17:30:16Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugw23nH5_ojL4bM-nSV4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "아이브 ❤",
+          "comment_id": "UgwwATjiAM3caGzQdpd4AaABAg",
+          "published_at": "2026-10-08T16:25:41Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgwwATjiAM3caGzQdpd4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "이서 아기였는데 이젠 그냥 미녀야",
+          "comment_id": "UgwOhTjy01tSm3OF8cp4AaABAg",
+          "published_at": "2026-10-08T14:28:23Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgwOhTjy01tSm3OF8cp4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "가을아 단발로 쭈욱해조❤",
+          "comment_id": "UgwVBRNCg3-oLFcAZAd4AaABAg",
+          "published_at": "2026-10-08T13:28:39Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgwVBRNCg3-oLFcAZAd4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "썸네일 이서 귀하다",
+          "comment_id": "UgyiEAd3J6oMRXHEuUh4AaABAg",
+          "published_at": "2026-10-08T10:35:28Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgyiEAd3J6oMRXHEuUh4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "라이브 열심히 하면 좋겠네요",
+          "comment_id": "UgysI0TFQb3olV-yhDt4AaABAg",
+          "published_at": "2026-10-08T10:16:17Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgysI0TFQb3olV-yhDt4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "여돌 1황은 아이브가 맞다 (반박 사절)",
+          "comment_id": "UgyLXb_zvOY3jx6C4wx4AaABAg",
+          "published_at": "2026-10-08T10:16:05Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgyLXb_zvOY3jx6C4wx4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "헤메코 고능하다 진짜",
+          "comment_id": "UgycK9nKSj1j9JcS-gx4AaABAg",
+          "published_at": "2026-10-08T06:56:49Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgycK9nKSj1j9JcS-gx4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "가을 미친미모",
+          "comment_id": "UgxVAjYjDecdFk4Q1NZ4AaABAg",
+          "published_at": "2026-10-08T01:34:14Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgxVAjYjDecdFk4Q1NZ4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "리즈가 진짜 이쁜데 머리스타일만 좀 바꿔보면 좋겠음",
+          "comment_id": "Ugwa1hdTAEWFdVyR26Z4AaABAg",
+          "published_at": "2026-10-07T22:15:37Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugwa1hdTAEWFdVyR26Z4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "안유진 남상ㅋ",
+          "comment_id": "UgyOpE57Nt_pnMviR6V4AaABAg",
+          "published_at": "2026-10-07T21:25:26Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgyOpE57Nt_pnMviR6V4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "아 근데 여기선 이서가 진짜 예쁘다.. 넋 놓고 보게됨 ㅠㅠㅠㅠ 원영이나 뭐 리즈는 기복없이 예쁜 거 같고. 이서가 진짜 키만 조금 더 컸으면 와... ㅠ 쨌든 이번 착장 완전 여신임",
+          "comment_id": "UgxJEFBHvF_qzLvSgG94AaABAg",
+          "published_at": "2026-10-07T20:18:23Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgxJEFBHvF_qzLvSgG94AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "와 리즈 진짜...... 매일이 닉값이네",
+          "comment_id": "Ugz0HhBIucGFseXDDBx4AaABAg",
+          "published_at": "2026-10-07T17:34:52Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugz0HhBIucGFseXDDBx4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "확실히 이쁜건 탑급으로 이쁜데 끼 있는 친구들은 아닌듯",
+          "comment_id": "UgyaFuDQStQq2xFTgCF4AaABAg",
+          "published_at": "2026-10-07T17:25:41Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgyaFuDQStQq2xFTgCF4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "하루 지나고 나서야 보다니..",
+          "comment_id": "UgxTrScZaD3I-aUz6sB4AaABAg",
+          "published_at": "2026-10-07T16:44:08Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgxTrScZaD3I-aUz6sB4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "워녕짜응 원샷 잡혔을때 함성 장난 아니네;;;;",
+          "comment_id": "UgwBIYhHJu67VR5GGM94AaABAg",
+          "published_at": "2026-10-07T16:03:09Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgwBIYhHJu67VR5GGM94AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "진짜 욕나오는 미모들이다..한병한면 비칠때마다 욕이절로나옴 비주얼평균실화냐",
+          "comment_id": "UgwkPnlbVreFmFUwWAt4AaABAg",
+          "published_at": "2026-10-07T15:12:33Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgwkPnlbVreFmFUwWAt4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "와.. 진짜 6개의 구슬 다 모은 느낌이랄까? 월드투어 때문에 바빴는데 이 맛이지 이 맛이야 아이브~",
+          "comment_id": "UgwP-4-eMzg9G8QJsOV4AaABAg",
+          "published_at": "2026-10-07T15:02:22Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgwP-4-eMzg9G8QJsOV4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "그냥 비주얼로 압살하네 ㄷ ㄷ",
+          "comment_id": "UgxGkw1ZQ8HVJyOld314AaABAg",
+          "published_at": "2026-10-07T14:55:01Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgxGkw1ZQ8HVJyOld314AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "가을이는 긴머리가 나아.....",
+          "comment_id": "UgzsGhtqC6mgZoNplrt4AaABAg",
+          "published_at": "2026-10-07T14:44:08Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgzsGhtqC6mgZoNplrt4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "제발 이런 느낌으로 마마가야함 작년 마마가 너무 아쉬웠음",
+          "comment_id": "Ugz3ZflVcIkQNDNMXjV4AaABAg",
+          "published_at": "2026-10-07T12:46:06Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugz3ZflVcIkQNDNMXjV4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "장원영 미쳣다 ..❤",
+          "comment_id": "UgzwLbAnn9RVLIu0xgd4AaABAg",
+          "published_at": "2026-10-07T12:41:20Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgzwLbAnn9RVLIu0xgd4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "썸네일 감다살",
+          "comment_id": "UgxurAOLERnYQlJigiR4AaABAg",
+          "published_at": "2026-10-07T11:28:00Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgxurAOLERnYQlJigiR4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "1황은 1황이다.....ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 아우라 도랏멘",
+          "comment_id": "Ugw8p1fDwe4iHgCCvg94AaABAg",
+          "published_at": "2026-10-07T10:47:08Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugw8p1fDwe4iHgCCvg94AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "노래퀼리티만 좋으면 될것같아요😢뱅뱅도 좋지만",
+          "comment_id": "Ugzn8Zpl9Eklu_EtV_14AaABAg",
+          "published_at": "2026-10-07T08:39:17Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugzn8Zpl9Eklu_EtV_14AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "0:14 겁나 예쁘다 진짜 진심 아이브사랑해",
+          "comment_id": "UgzyQe5mboBvjoo_Zqt4AaABAg",
+          "published_at": "2026-10-07T05:43:31Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgzyQe5mboBvjoo_Zqt4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "이서는 진짜 성인 다됬구나~ 귀염보다 섹시한 표정이 더 잘어울리네~",
+          "comment_id": "UgymrLlNwRep8kJGX0R4AaABAg",
+          "published_at": "2026-10-07T05:38:07Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgymrLlNwRep8kJGX0R4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "장원영 너무너무 이쁘다 와",
+          "comment_id": "UgzOdIxNXoUL44KntKh4AaABAg",
+          "published_at": "2026-10-07T03:55:44Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgzOdIxNXoUL44KntKh4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "리센느 보다가 이거보니까 리센느 못보겠다 아이브 다시 갑니다!!",
+          "comment_id": "UgyneKtBH36s-JcE8bd4AaABAg",
+          "published_at": "2026-10-07T01:41:43Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgyneKtBH36s-JcE8bd4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "유디닝 ㅜㅜ너무이뽀 사랑애 아니 영리즈 미쳤노ㅜㅜ3:03 3:14",
+          "comment_id": "UgwS-RaWVlejNwPizvp4AaABAg",
+          "published_at": "2026-10-06T23:11:15Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgwS-RaWVlejNwPizvp4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "모든 멤버들이 주사위6인듯 이번컴백 너무 기대됨!!!!!!!❤❤",
+          "comment_id": "UgzwjLQgtQ8h0v816oB4AaABAg",
+          "published_at": "2026-10-06T23:02:56Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgzwjLQgtQ8h0v816oB4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "이런게 여돌이지 남자같이 입고 춤추고 하는게 걸크러쉬가 아님 아름다움 섹시미 여성미 넘치는 걸크러쉬가 찐이지 요즘 여돌이 망하는게 남돌마냥 남성미 뿜냄 여돌같지가않음",
+          "comment_id": "UgzPGc5pLkH4rP_VsPd4AaABAg",
+          "published_at": "2026-10-06T17:36:49Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgzPGc5pLkH4rP_VsPd4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "오랜만에 웃기전에 미소가 먼저 지어짐 고트",
+          "comment_id": "UgwjN7o50AYAU5xtt1t4AaABAg",
+          "published_at": "2026-10-06T16:27:18Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgwjN7o50AYAU5xtt1t4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "짱이브 무대 퍼포 미쳤다...❤ 너무 좋음",
+          "comment_id": "UgySh9IFfRgyy8n-eoV4AaABAg",
+          "published_at": "2026-10-06T15:02:36Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgySh9IFfRgyy8n-eoV4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "눈이 멀듯..✨",
+          "comment_id": "UgxlTJFlH30Npi0EkmV4AaABAg",
+          "published_at": "2026-10-06T14:20:44Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgxlTJFlH30Npi0EkmV4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "미친 존나 여신들",
+          "comment_id": "UgwC2zTEYpeHZyA_FTZ4AaABAg",
+          "published_at": "2026-10-06T14:07:07Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgwC2zTEYpeHZyA_FTZ4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "미쳤다 다들 미모가 ㅠㅠ",
+          "comment_id": "UgyR-O_TJzs0atxSSrB4AaABAg",
+          "published_at": "2026-10-06T14:05:49Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgyR-O_TJzs0atxSSrB4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "함성소리 가슴이 웅장해지네 ❤",
+          "comment_id": "UgyfusrbOOYJIHugVep4AaABAg",
+          "published_at": "2026-10-06T13:59:46Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgyfusrbOOYJIHugVep4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "사랑해 내 최애 그룹",
+          "comment_id": "UgxQ9xMMlx6wmJ0WRdp4AaABAg",
+          "published_at": "2026-10-06T13:35:13Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgxQ9xMMlx6wmJ0WRdp4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "아이브 ❤❤❤❤❤❤🎉🎉🎉",
+          "comment_id": "Ugy-8KOH908osj2xP-94AaABAg",
+          "published_at": "2026-10-06T12:42:15Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugy-8KOH908osj2xP-94AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "아이브님들 짱 ❤❤",
+          "comment_id": "UgwYNaBG3Ntl5V6VQWJ4AaABAg",
+          "published_at": "2026-10-06T12:21:53Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgwYNaBG3Ntl5V6VQWJ4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "아이브 사랑해 진짜 걸그룹 미모 원탑 걸그룹 답다",
+          "comment_id": "UgznLpjGluZa9Zw-p0N4AaABAg",
+          "published_at": "2026-10-06T12:20:55Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgznLpjGluZa9Zw-p0N4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "유진 가을 레이 원영 리즈 이서 아이브!!!❤ 아이브 덕에 스타쉽이 중소돌애서 대형으로 바뀐 느낌??/",
+          "comment_id": "UgyNLxBgKV-_MExLPdt4AaABAg",
+          "published_at": "2026-10-06T12:11:48Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgyNLxBgKV-_MExLPdt4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "이쁘니까 눈을 못떼겠음 ㄷㄷ",
+          "comment_id": "Ugz7_VyfXrmul1gOcNl4AaABAg",
+          "published_at": "2026-10-06T11:26:32Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugz7_VyfXrmul1gOcNl4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "올 한해 열심히 뱅쳐준 나의 히로인들🤩",
+          "comment_id": "UgyBxp8TzheOygITGyd4AaABAg",
+          "published_at": "2026-10-06T11:26:23Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgyBxp8TzheOygITGyd4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "IVE (아이브)❤❤❤",
+          "comment_id": "UgzmSCfrL2T_5TkjiV14AaABAg",
+          "published_at": "2026-10-06T11:04:00Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgzmSCfrL2T_5TkjiV14AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "그저 레전드",
+          "comment_id": "UgwkK_wQcN-Dk0-PreJ4AaABAg",
+          "published_at": "2026-10-06T10:29:32Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgwkK_wQcN-Dk0-PreJ4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "비쥬얼 진짜 최고네",
+          "comment_id": "Ugz64Ru8GONCJzw5Fv54AaABAg",
+          "published_at": "2026-10-06T10:19:27Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugz64Ru8GONCJzw5Fv54AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "아이브는 항상 수려하다 특히 안유진 오늘따라 킬러같구 멋짐 컴백 홧팅하자 얘들아! 패션위크 갔다온거 수고했어!!",
+          "comment_id": "Ugzl5uBzn5RyTvw-v454AaABAg",
+          "published_at": "2026-10-06T09:41:40Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugzl5uBzn5RyTvw-v454AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "아이브 기획사 원래 중소 아니었나? 다시 봐도 비주얼들 진짜 대박이다 다 ㅈㄴ 이쁜데 키도 커서 시원시원하고 어떻게 이런 애들을 싹 뽑았을까...",
+          "comment_id": "Ugz8aU9gYXFT3nM8pdx4AaABAg",
+          "published_at": "2026-10-06T09:04:44Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugz8aU9gYXFT3nM8pdx4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "나이가 깡패로구나 좋구나 좋아",
+          "comment_id": "UgykMnAGctFA06fk6T14AaABAg",
+          "published_at": "2026-10-06T09:00:16Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgykMnAGctFA06fk6T14AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "카감은 사퇴하라 저 용안 얼빡샷을 찍어야지 뭘 찍는겨",
+          "comment_id": "UgxHeZ1008QWNXlF6MB4AaABAg",
+          "published_at": "2026-10-06T08:56:35Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgxHeZ1008QWNXlF6MB4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "압둥이들아! 갓본의 민지둥이남들이 답둥이들이 되겠어! ㅎㅎㅎ 😃",
+          "comment_id": "Ugygnn5xncpcN13f78B4AaABAg",
+          "published_at": "2026-10-06T08:47:44Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugygnn5xncpcN13f78B4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "간만에 아이브 무대 ❤❤",
+          "comment_id": "UgxrdZX2tPZ_mKq1ga14AaABAg",
+          "published_at": "2026-10-06T08:27:23Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgxrdZX2tPZ_mKq1ga14AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "이 무대 직관했으면 쌍코피 터지것다 😅",
+          "comment_id": "UgzGh-YAL4astvOIr_t4AaABAg",
+          "published_at": "2026-10-06T08:26:18Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgzGh-YAL4astvOIr_t4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "역시 아이브가 최고야",
+          "comment_id": "UgwI9szsDdwwWk7RIXZ4AaABAg",
+          "published_at": "2026-10-06T07:54:45Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgwI9szsDdwwWk7RIXZ4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "원영이 키가 더 큰거 같은데ㄷㄷ 지금 비공식적으로 178cm라는 소문이 있다😮",
+          "comment_id": "UgwPHnW3BRYVnJsJJ_t4AaABAg",
+          "published_at": "2026-10-06T07:42:41Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgwPHnW3BRYVnJsJJ_t4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "신곡도 기대할게!! (Looks can kill 19일 선공개? / 26일 앨범",
+          "comment_id": "UgyNT5v0p9joTAuLhpF4AaABAg",
+          "published_at": "2026-10-06T07:05:11Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgyNT5v0p9joTAuLhpF4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "아이브❤❤❤",
+          "comment_id": "UgzshYjXOwHZC3tlou54AaABAg",
+          "published_at": "2026-10-06T06:53:23Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgzshYjXOwHZC3tlou54AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "원영공주님❤❤❤",
+          "comment_id": "UgwVGBWUslCQYxhLXVd4AaABAg",
+          "published_at": "2026-10-06T06:52:53Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgwVGBWUslCQYxhLXVd4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "가을❤❤❤",
+          "comment_id": "UgwsxaqpbqeKiagbbuR4AaABAg",
+          "published_at": "2026-10-06T06:24:34Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgwsxaqpbqeKiagbbuR4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "아니 아이브는 뭔가 공연할 때 유독 더 멋있음… 다른 팀도 그렇지만 아이브가 뭔가 특유의 시선을 끄는 표정과 무대 매너가 많은듯",
+          "comment_id": "UgzrLUIa0QDk7jqCzOB4AaABAg",
+          "published_at": "2026-10-06T06:11:51Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgzrLUIa0QDk7jqCzOB4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "ㅋㅋㅋ볼수록 웃기네",
+          "comment_id": "UgxX_mDJzegANGvPS2p4AaABAg",
+          "published_at": "2026-10-06T06:09:50Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgxX_mDJzegANGvPS2p4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "아이브❤❤❤❤❤",
+          "comment_id": "UgzSmFkx0XVPQOnHqKx4AaABAg",
+          "published_at": "2026-10-06T05:30:49Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgzSmFkx0XVPQOnHqKx4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "수고했어요!",
+          "comment_id": "UgzQGX7MG1f02zqwjj14AaABAg",
+          "published_at": "2026-10-06T04:38:40Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgzQGX7MG1f02zqwjj14AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "안유진 김가을 나오이 레이 장원영 김지원 이현서 아이브",
+          "comment_id": "UgzZtF9z-nBIQHTAMAp4AaABAg",
+          "published_at": "2026-10-06T04:23:26Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgzZtF9z-nBIQHTAMAp4AaABAg"
+        },
+        {
+          "artist": "IVE",
+          "song": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "comment": "전혀 실망스럽지 않은 공연 아이브가 여전히 그토록 매력적인 이유는 다음과 같아",
+          "comment_id": "UgzaXYJoqNS_G9e17_Z4AaABAg",
+          "published_at": "2026-10-06T04:22:59Z",
+          "video_id": "MR8noFcOGqU",
+          "channel": "SBSKPOP X INKIGAYO",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgzaXYJoqNS_G9e17_Z4AaABAg"
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "MR8noFcOGqU",
+          "title": "IVE (아이브) - INTRO + BANG BANG | 2026 INKIGAYO LIVE in TOKYO",
+          "channel": "SBSKPOP X INKIGAYO",
+          "channel_id": "UCS_hnpJLQTvBkqALgapi_4g",
+          "published_at": "2026-10-06T04:14:31Z"
+        },
+        {
+          "video_id": "Xe7admnJYK8",
+          "title": "IVE 아이브 LIZ 리즈 'Unreal' Special Clip",
+          "channel": "IVE",
+          "channel_id": "UC-Fnix71vRP64WXeo0ikd0Q",
+          "published_at": "2026-09-03T14:21:06Z"
+        },
+        {
+          "video_id": "XtCnr9ga-pI",
+          "title": "IVE at 2026 TIMA (Day 2) | TMElive International Music Awards / TIMA國際音樂大賞",
+          "channel": "ASF",
+          "channel_id": "UCSd_dOy59D1jwfpBD0AiSIQ",
+          "published_at": "2026-08-23T13:31:51Z"
+        },
+        {
+          "video_id": "fUsY15T2hlo",
+          "title": "【IVE】(아이브)-BLACKHOLE 교차편집 (Stage Mix.)",
+          "channel": "LY鯊魚",
+          "channel_id": "UC53_kRXOU5xGXua9RdAQxsA",
+          "published_at": "2026-08-25T14:00:17Z"
+        },
+        {
+          "video_id": "RlVm1BfHu7U",
+          "title": "평균키 170장신 그룹의 위엄 아이브의 행진 #아이브 #ive #원영 #가을 #리즈 #이서 #레이 #유진 #뱅뱅 #bangbang",
+          "channel": "케이위키",
+          "channel_id": "UChDKPQWQRqzcAGeVYJSYE2Q",
+          "published_at": "2026-09-29T10:39:23Z"
+        }
+      ],
+      "warnings": [],
+      "sampling": "5 search videos published within 90 days before month start through cutoff; newest dated Korean top-level comments, balanced across videos"
     },
     "model": {
-      "name": "keyword-fallback",
-      "backend": "keyword-fallback"
+      "name": "gemini-3.1-flash-lite-preview",
+      "backend": "gemini-absa"
+    },
+    "bugs_chart": {
+      "chart_start": "2026-09-28",
+      "chart_end": "2026-10-04",
+      "artist_items": [
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 39,
+          "title": "BANG BANG",
+          "artist": "IVE (아이브)",
+          "album": "REVIVE+",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 70,
+          "title": "I AM",
+          "artist": "IVE (아이브)",
+          "album": "I've IVE",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 87,
+          "title": "REBEL HEART",
+          "artist": "IVE (아이브)",
+          "album": "IVE EMPATHY",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 95,
+          "title": "BLACKHOLE",
+          "artist": "IVE (아이브)",
+          "album": "REVIVE+",
+          "change_rank": -5
+        }
+      ],
+      "items": [
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 1,
+          "title": "퇴사할게여 (Narr. 기안84)",
+          "artist": "소연 (SOYEON)",
+          "album": "끝내주는 인생",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 2,
+          "title": "꿈꾸던 어른이 되었나요?",
+          "artist": "머무르",
+          "album": "꿈꾸던 어른이 되었나요?",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 3,
+          "title": "LOVE ATTACK",
+          "artist": "RESCENE (리센느)",
+          "album": "SCENEDROME",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 4,
+          "title": "Dear my crazy soulmate",
+          "artist": "아이유(IU)",
+          "album": "이 별로부터",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 5,
+          "title": "BAD",
+          "artist": "ATEEZ(에이티즈)",
+          "album": "GOLDEN HOUR : Part.5",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 6,
+          "title": "Guitarist",
+          "artist": "도경수(D.O.)",
+          "album": "DOPAMINE - The 4th Mini Album",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 7,
+          "title": "갑자기",
+          "artist": "아이오아이(I.O.I)",
+          "album": "I.O.I 3rd MINI ALBUM [I.O.I : LOOP]",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 8,
+          "title": "Skibidi",
+          "artist": "소녀시대-효리수 (Girls' Generation-HRS)",
+          "album": "Skibidi",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 9,
+          "title": "Deja Vu",
+          "artist": "RESCENE (리센느)",
+          "album": "Dearest",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 10,
+          "title": "CRASH",
+          "artist": "ALLDAY PROJECT",
+          "album": "CRASH",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 11,
+          "title": "만찬가",
+          "artist": "태연 (TAEYEON)",
+          "album": "J-POP REMAKE Vol.1",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 12,
+          "title": "REDRED",
+          "artist": "CORTIS (코르티스)",
+          "album": "GREENGREEN",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 13,
+          "title": "이 별로부터",
+          "artist": "아이유(IU)",
+          "album": "이 별로부터",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 14,
+          "title": "LEMONADE",
+          "artist": "aespa",
+          "album": "LEMONADE - The 2nd Album",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 15,
+          "title": "It′s Me",
+          "artist": "아일릿(ILLIT)",
+          "album": "MAMIHLAPINATAPAI",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 16,
+          "title": "Drowning",
+          "artist": "WOODZ",
+          "album": "OO-LI",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 17,
+          "title": "생각을 멈추다 보면",
+          "artist": "최유리",
+          "album": "생각을 멈추다 보면",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 18,
+          "title": "Pretty Girl",
+          "artist": "RESCENE (리센느)",
+          "album": "Pretty Girl - Special Single",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 19,
+          "title": "Pop Off Pop Off",
+          "artist": "KiiiKiii (키키)",
+          "album": "WhyKiiiKiii",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 20,
+          "title": "Good Goodbye",
+          "artist": "화사 (HWASA)",
+          "album": "Good Goodbye",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 21,
+          "title": "Less than a Lover",
+          "artist": "제니 (JENNIE)",
+          "album": "Less than a Lover",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 22,
+          "title": "BiiiG",
+          "artist": "BIGBANG (빅뱅)",
+          "album": "BiiiG",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 23,
+          "title": "사랑하게 될 거야",
+          "artist": "한로로",
+          "album": "이상비행",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 24,
+          "title": "0+0",
+          "artist": "한로로",
+          "album": "자몽살구클럽",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 25,
+          "title": "LOUDER",
+          "artist": "CRAVITY",
+          "album": "sonorous",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 26,
+          "title": "Popcorn",
+          "artist": "도경수(D.O.)",
+          "album": "성장 - THE 3RD MINI ALBUM",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 27,
+          "title": "캐치 캐치",
+          "artist": "YENA (최예나)",
+          "album": "LOVE CATCHER",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 28,
+          "title": "RUDE!",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "RUDE!",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 29,
+          "title": "toxic till the end",
+          "artist": "로제(ROSÉ)",
+          "album": "rosie",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 30,
+          "title": "Pinball",
+          "artist": "RESCENE (리센느)",
+          "album": "SCENEDROME",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 31,
+          "title": "404 (New Era)",
+          "artist": "KiiiKiii (키키)",
+          "album": "Delulu Pack",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 32,
+          "title": "소문의 낙원",
+          "artist": "AKMU(악뮤)",
+          "album": "개화",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 33,
+          "title": "기쁨, 슬픔, 아름다운 마음",
+          "artist": "AKMU(악뮤)",
+          "album": "개화",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 34,
+          "title": "봄 내음보다 너를",
+          "artist": "김나영",
+          "album": "봄 내음보다 너를",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 35,
+          "title": "뛰어(JUMP)",
+          "artist": "BLACKPINK",
+          "album": "뛰어(JUMP)",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 36,
+          "title": "어떻게 이별까지 사랑하겠어, 널 사랑하는 거지",
+          "artist": "AKMU(악뮤)",
+          "album": "항해",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 37,
+          "title": "Lemon Tang",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "Lemon Tang - The 2nd Mini Album",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 38,
+          "title": "Runaway",
+          "artist": "RESCENE (리센느)",
+          "album": "Runaway",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 39,
+          "title": "BANG BANG",
+          "artist": "IVE (아이브)",
+          "album": "REVIVE+",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 40,
+          "title": "입춘",
+          "artist": "한로로",
+          "album": "입춘",
+          "change_rank": 2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 41,
+          "title": "SUN KISS",
+          "artist": "TUIDE (튜이드)",
+          "album": "The 1st EP [TUNE & PLAY]",
+          "change_rank": 11
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 42,
+          "title": "연애의 조건 (Love Options)",
+          "artist": "베스티(BESTie)",
+          "album": "연애의 조건 (Love Options)",
+          "change_rank": 52
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 43,
+          "title": "노스탈지아",
+          "artist": "BIG Naughty (서동현)",
+          "album": "노스탈지아",
+          "change_rank": -10
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 44,
+          "title": "Whiplash",
+          "artist": "aespa",
+          "album": "Whiplash - The 5th Mini Album",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 45,
+          "title": "내게 사랑이 뭐냐고 물어본다면",
+          "artist": "로이킴",
+          "album": "내게 사랑이 뭐냐고 물어본다면",
+          "change_rank": 1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 46,
+          "title": "한 페이지가 될 수 있게",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Book of Us : Gravity",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 47,
+          "title": "멸종위기사랑",
+          "artist": "이찬혁",
+          "album": "EROS",
+          "change_rank": -7
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 48,
+          "title": "너에게 닿기를",
+          "artist": "10CM",
+          "album": "너에게 닿기를",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 49,
+          "title": "Heavy Serenade",
+          "artist": "NMIXX",
+          "album": "Heavy Serenade",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 50,
+          "title": "Surfin' Boy",
+          "artist": "Red Velvet (레드벨벳)",
+          "album": "Velvet Summer - Summer Mini Album",
+          "change_rank": -16
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 51,
+          "title": "모든 날, 모든 순간 (Every day, Every Moment)",
+          "artist": "폴킴(Paul Kim)",
+          "album": "'키스 먼저 할까요?' OST Part.3",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 52,
+          "title": "타임캡슐",
+          "artist": "다비치",
+          "album": "타임캡슐",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 53,
+          "title": "like JENNIE",
+          "artist": "제니 (JENNIE)",
+          "album": "Ruby",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 54,
+          "title": "Blue Valentine",
+          "artist": "NMIXX",
+          "album": "Blue Valentine",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 55,
+          "title": "Golden",
+          "artist": "HUNTR/X, 아티스트 전체보기",
+          "album": "KPop Demon Hunters (Soundtrack from the Netflix Film)",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 56,
+          "title": "청춘만화",
+          "artist": "이무진",
+          "album": "만화 (滿花)",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 57,
+          "title": "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))",
+          "artist": "너드커넥션(Nerd Connection)",
+          "album": "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 58,
+          "title": "여름아 부탁해",
+          "artist": "볼빨간사춘기",
+          "album": "여름아 부탁해",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 59,
+          "title": "모르시나요(PROD.로코베리)",
+          "artist": "조째즈",
+          "album": "모르시나요",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 60,
+          "title": "HAPPY",
+          "artist": "DAY6 (데이식스)",
+          "album": "Fourever",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 61,
+          "title": "APT.",
+          "artist": "로제(ROSÉ), 아티스트 전체보기",
+          "album": "APT.",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 62,
+          "title": "주저하는 연인들을 위해",
+          "artist": "잔나비",
+          "album": "전설",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 63,
+          "title": "천상연",
+          "artist": "이창섭",
+          "album": "천상연 (웹툰 '선녀외전' X 이창섭 (LEE CHANGSUB))",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 64,
+          "title": "Hype Boy",
+          "artist": "NewJeans",
+          "album": "NewJeans 1st EP 'New Jeans'",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 65,
+          "title": "그대 작은 나의 세상이 되어",
+          "artist": "카더가든",
+          "album": "부재",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 66,
+          "title": "Ditto",
+          "artist": "NewJeans",
+          "album": "NewJeans 'OMG'",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 67,
+          "title": "Die With A Smile",
+          "artist": "Lady Gaga(레이디 가가), 아티스트 전체보기",
+          "album": "Die With A Smile",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 68,
+          "title": "FAMOUS",
+          "artist": "ALLDAY PROJECT",
+          "album": "FAMOUS",
+          "change_rank": 16
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 69,
+          "title": "사계, 그리고 너",
+          "artist": "이창섭",
+          "album": "Lee;Make (Fragmenta Amoris)",
+          "change_rank": 12
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 70,
+          "title": "I AM",
+          "artist": "IVE (아이브)",
+          "album": "I've IVE",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 71,
+          "title": "Supernova",
+          "artist": "aespa",
+          "album": "Armageddon - The 1st Album",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 72,
+          "title": "Welcome to the Show",
+          "artist": "DAY6 (데이식스)",
+          "album": "Fourever",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 73,
+          "title": "에피소드",
+          "artist": "이무진",
+          "album": "에피소드",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 74,
+          "title": "나는 반딧불",
+          "artist": "황가람",
+          "album": "나는 반딧불",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 75,
+          "title": "고민중독",
+          "artist": "QWER",
+          "album": "1st Mini Album 'MANITO'",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 76,
+          "title": "Magnetic",
+          "artist": "아일릿(ILLIT)",
+          "album": "SUPER REAL ME",
+          "change_rank": -4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 77,
+          "title": "Vitamin ME",
+          "artist": "프로미스나인",
+          "album": "Glow ME",
+          "change_rank": -13
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 78,
+          "title": "첫 만남은 계획대로 되지 않아",
+          "artist": "TWS (투어스)",
+          "album": "Sparkling Blue",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 79,
+          "title": "사랑은 봄비처럼... 이별은 겨울비처럼",
+          "artist": "임현정",
+          "album": "A Year Out..In The Island",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 80,
+          "title": "FOCUS",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "FOCUS - The 1st Mini Album",
+          "change_rank": 3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 81,
+          "title": "HOME SWEET HOME (feat. 태양, 대성)",
+          "artist": "G-DRAGON",
+          "album": "HOME SWEET HOME (feat. 태양, 대성)",
+          "change_rank": -2
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 82,
+          "title": "달리 표현할 수 없어요",
+          "artist": "로이킴",
+          "album": "달리 표현할 수 없어요",
+          "change_rank": 4
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 83,
+          "title": "FALLEN ANGEL",
+          "artist": "제니 (JENNIE)",
+          "album": "Fallen Angel (Digital EP)",
+          "change_rank": -15
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 84,
+          "title": "소나기",
+          "artist": "이클립스 (ECLIPSE)",
+          "album": "선재 업고 튀어 OST Part 1",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 85,
+          "title": "Congratulations",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Day",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 86,
+          "title": "WDA (Whole Different Animal) (Feat. G-DRAGON)",
+          "artist": "aespa",
+          "album": "LEMONADE - The 2nd Album",
+          "change_rank": -8
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 87,
+          "title": "REBEL HEART",
+          "artist": "IVE (아이브)",
+          "album": "IVE EMPATHY",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 88,
+          "title": "예뻤어",
+          "artist": "DAY6 (데이식스)",
+          "album": "Every DAY6 February",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 89,
+          "title": "NOT CUTE ANYMORE",
+          "artist": "아일릿(ILLIT)",
+          "album": "NOT CUTE ANYMORE",
+          "change_rank": -9
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 90,
+          "title": "Flashback",
+          "artist": "엔플라잉(N.Flying)",
+          "album": "Man on the Moon",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 91,
+          "title": "사랑인가 봐",
+          "artist": "멜로망스(MeloMance)",
+          "album": "사랑인가 봐 (사내맞선 OST 스페셜 트랙)",
+          "change_rank": -3
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 92,
+          "title": "THAT’S A NO NO",
+          "artist": "ITZY (있지)",
+          "album": "IT'z ME",
+          "change_rank": -1
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 93,
+          "title": "ONE MORE TIME",
+          "artist": "ALLDAY PROJECT",
+          "album": "ALLDAY PROJECT",
+          "change_rank": 6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 94,
+          "title": "STYLE",
+          "artist": "Hearts2Hearts (하츠투하츠)",
+          "album": "STYLE",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 95,
+          "title": "BLACKHOLE",
+          "artist": "IVE (아이브)",
+          "album": "REVIVE+",
+          "change_rank": -5
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 96,
+          "title": "Love me or Leave me",
+          "artist": "DAY6 (데이식스)",
+          "album": "The Book of Us : The Demon",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 97,
+          "title": "OVERDRIVE",
+          "artist": "TWS (투어스)",
+          "album": "play hard",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 98,
+          "title": "Who is she",
+          "artist": "KISS OF LIFE",
+          "album": "Who is she",
+          "change_rank": 0
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 99,
+          "title": "new trick",
+          "artist": "로제(ROSÉ)",
+          "album": "new trick",
+          "change_rank": -6
+        },
+        {
+          "fetch_date": "2026-10-11",
+          "chart_date": "2026-09-28",
+          "source": "bugs",
+          "chart_type": "weekly",
+          "rank": 100,
+          "title": "Sour Grapes",
+          "artist": "NiziU (니쥬)",
+          "album": "Sour Grapes",
+          "change_rank": 0
+        }
+      ],
+      "link": "https://music.bugs.co.kr/chart/track/week/total?chartdate=20260928",
+      "requested_chart_start": "2026-10-05"
     }
+  },
+  "overall_sentiment": {
+    "count": 83,
+    "ratio": {
+      "positive": 0.7711,
+      "neutral": 0.1807,
+      "negative": 0.0482
+    },
+    "dominant": "positive"
   },
   "aspect_sentiment": {
     "song_music": {
       "label": "song / music",
-      "count": 13,
+      "count": 2,
       "ratio": {
-        "positive": 0.4615,
-        "neutral": 0.5385,
-        "negative": 0.0
-      },
-      "dominant": "neutral",
-      "evidence": [
-        {
-          "source": "naver_news",
-          "sentiment": "neutral",
-          "text": "아이브, 오리콘·빌보드 재팬 ‘꿀꺽’ 그룹 아이브(IVE)가 일본 새 앨범으로 현지 주요 차트 정상에 올랐다. 소속사 스타쉽엔터테인먼트는 4일 아이브의 일본 네 번째 앨범 ‘루시드 드림’(LUCID DREAM)이 일본 오리콘과 빌보드 재팬 차트에서 1위를..."
-        },
-        {
-          "source": "naver_news",
-          "sentiment": "neutral",
-          "text": "아이브, 日 오리콘 다시 한 번 최정상 아이브 [스타쉽 엔터테인먼트 제공] 그룹 아이브(IVE)가 일본 음악 시장에서 다시 한번 정상을 밟았다. 최근 일본 오리콘이 발표한 최신 차트에 따르면 아이브(안유진·가을·레이·장원영·리즈·이서)의 현지 네..."
-        }
-      ]
-    },
-    "performance": {
-      "label": "performance",
-      "count": 1,
-      "ratio": {
-        "positive": 0.0,
-        "neutral": 1.0,
+        "positive": 0.5,
+        "neutral": 0.5,
         "negative": 0.0
       },
       "dominant": "neutral",
@@ -121,13 +2391,74 @@
         {
           "source": "youtube_comment",
           "sentiment": "neutral",
-          "text": "나 가을언니가 이렇게 나올때만을 기다렸어 이제 언니무대다 가보자"
+          "text": "노래퀼리티만 좋으면 될것같아요😢뱅뱅도 좋지만",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugzn8Zpl9Eklu_EtV_14AaABAg",
+          "published_at": "2026-10-07T08:39:17Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "신곡도 기대할게!! (Looks can kill 19일 선공개? / 26일 앨범",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgyNT5v0p9joTAuLhpF4AaABAg",
+          "published_at": "2026-10-06T07:05:11Z"
+        }
+      ]
+    },
+    "performance": {
+      "label": "performance",
+      "count": 11,
+      "ratio": {
+        "positive": 0.6364,
+        "neutral": 0.1818,
+        "negative": 0.1818
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "아이브는 라이브 할 때 댄스에는 좀 방해되도 핸드마이크 항상 쓰는게 제일 호감. 인이어 끼고 춤만 빡세게 추고 노래 대충 부르는 가수들 진짜 많은데 아이브는 자신감이 있어서 그렇겠지만 보컬에 신경쓴다는게 항상 눈에 보임",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugyv6dftzv1rhVOiuPJ4AaABAg",
+          "published_at": "2026-10-11T05:31:21Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "neutral",
+          "text": "라이브 열심히 하면 좋겠네요",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=UgysI0TFQb3olV-yhDt4AaABAg",
+          "published_at": "2026-10-08T10:16:17Z"
         }
       ]
     },
     "visual_styling": {
       "label": "visual / styling",
-      "count": 4,
+      "count": 39,
+      "ratio": {
+        "positive": 0.8205,
+        "neutral": 0.0513,
+        "negative": 0.1282
+      },
+      "dominant": "positive",
+      "evidence": [
+        {
+          "source": "youtube_comment",
+          "sentiment": "neutral",
+          "text": "금발 단발누구죠?",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugy61lteEG5C-VFOxgl4AaABAg",
+          "published_at": "2026-10-11T05:41:11Z"
+        },
+        {
+          "source": "youtube_comment",
+          "sentiment": "positive",
+          "text": "평균신장 약 170이어서 굳이 힐 안신어도 힐 신은거마냥 비율 개지림ㅋㅋㅋ",
+          "link": "https://www.youtube.com/watch?v=RlVm1BfHu7U&lc=Ugy6VJKWWAZ0L8CS6oN4AaABAg",
+          "published_at": "2026-10-06T06:09:03Z"
+        }
+      ]
+    },
+    "vocal_rap": {
+      "label": "vocal / rap",
+      "count": 2,
       "ratio": {
         "positive": 1.0,
         "neutral": 0.0,
@@ -138,21 +2469,25 @@
         {
           "source": "youtube_comment",
           "sentiment": "positive",
-          "text": "진짜 레이랑 가을 랩 미쳤다.. 브릿지 가을 유진 부분도 너무 좋고 이서 개인 파트랑 리즈랑 원영도 컨셉 소화력 미쳤음.. 스타쉽 감다살 레전드"
+          "text": "아이브는 라이브 할 때 댄스에는 좀 방해되도 핸드마이크 항상 쓰는게 제일 호감. 인이어 끼고 춤만 빡세게 추고 노래 대충 부르는 가수들 진짜 많은데 아이브는 자신감이 있어서 그렇겠지만 보컬에 신경쓴다는게 항상 눈에 보임",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugyv6dftzv1rhVOiuPJ4AaABAg",
+          "published_at": "2026-10-11T05:31:21Z"
         },
         {
           "source": "youtube_comment",
           "sentiment": "positive",
-          "text": "이번엔 ㄹㅇ 가을,레이가 킥이네 가을이 약간 비주얼적으로 몽환적인 느낌이 있는데 후렴으로 들어가기전 랩하는 부분이 딱 그렇고 초반부에서도 빌드업이 마냥 쎈것만이 아닌 몽환적인 느낌도 넣음으로써 그 다음에 확 치고 들어오는 후렴부분이랑 후렴 가기 이전 리즈가 빌드업 하는 부분이 되게 잘 맞음"
+          "text": "3: 40 리즈 뱅뱅 다 죽자 파트 개 미쳤네;;",
+          "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugycm9rO9W-dmiW8slx4AaABAg",
+          "published_at": "2026-10-10T06:56:13Z"
         }
       ]
     },
-    "vocal_rap": {
-      "label": "vocal / rap",
-      "count": 7,
+    "fandom_public_opinion": {
+      "label": "fandom / public_opinion",
+      "count": 26,
       "ratio": {
-        "positive": 0.8571,
-        "neutral": 0.1429,
+        "positive": 1.0,
+        "neutral": 0.0,
         "negative": 0.0
       },
       "dominant": "positive",
@@ -160,110 +2495,950 @@
         {
           "source": "youtube_comment",
           "sentiment": "positive",
-          "text": "이번곡 ㄹㅇ 레이가을의 재발견임..... 랩 하나로 노래의 퀄리티를 높여줌. 랩파트가 이 노래의 킥인듯..."
+          "text": "그냥 빈자리가 느껴지지 않음",
+          "link": "https://www.youtube.com/watch?v=XtCnr9ga-pI&lc=Ugz77tyRBM6BoVNZ2G54AaABAg",
+          "published_at": "2026-10-01T14:38:15Z"
         },
         {
           "source": "youtube_comment",
-          "sentiment": "neutral",
-          "text": "1:09 이 부분 레이랩이 겁나 쫜득함 ㄹㅇ 두쫀쿠임"
-        }
-      ]
-    },
-    "fandom_public_opinion": {
-      "label": "fandom / public_opinion",
-      "count": 20,
-      "ratio": {
-        "positive": 0.3,
-        "neutral": 0.7,
-        "negative": 0.0
-      },
-      "dominant": "neutral",
-      "evidence": [
-        {
-          "source": "naver_news",
-          "sentiment": "neutral",
-          "text": "아이브, 오리콘·빌보드 재팬 ‘꿀꺽’ 그룹 아이브(IVE)가 일본 새 앨범으로 현지 주요 차트 정상에 올랐다. 소속사 스타쉽엔터테인먼트는 4일 아이브의 일본 네 번째 앨범 ‘루시드 드림’(LUCID DREAM)이 일본 오리콘과 빌보드 재팬 차트에서 1위를..."
-        },
-        {
-          "source": "naver_news",
-          "sentiment": "neutral",
-          "text": "아이브, 日 오리콘 다시 한 번 최정상 아이브 [스타쉽 엔터테인먼트 제공] 그룹 아이브(IVE)가 일본 음악 시장에서 다시 한번 정상을 밟았다. 최근 일본 오리콘이 발표한 최신 차트에 따르면 아이브(안유진·가을·레이·장원영·리즈·이서)의 현지 네..."
+          "sentiment": "positive",
+          "text": "이제야 제대로 된 가치를 인정 받는 듯…진작에 떴어야… 이젠 실력이 인정받는 시대!!!",
+          "link": "https://www.youtube.com/watch?v=Xe7admnJYK8&lc=UgwJIWsb7Qxw4O_XJeB4AaABAg",
+          "published_at": "2026-10-08T13:36:54Z"
         }
       ]
     }
   },
-  "overall_sentiment": {
-    "count": 30,
-    "ratio": {
-      "positive": 0.4667,
-      "neutral": 0.5333,
-      "negative": 0.0
-    },
-    "dominant": "neutral"
-  },
-  "top_comments_or_evidence": [
+  "comment_annotations": [
     {
-      "aspect": "song_music",
-      "source": "naver_news",
+      "id": 0,
       "sentiment": "neutral",
-      "text": "아이브, 오리콘·빌보드 재팬 ‘꿀꺽’ 그룹 아이브(IVE)가 일본 새 앨범으로 현지 주요 차트 정상에 올랐다. 소속사 스타쉽엔터테인먼트는 4일 아이브의 일본 네 번째 앨범 ‘루시드 드림’(LUCID DREAM)이 일본 오리콘과 빌보드 재팬 차트에서 1위를..."
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "neutral"
+        }
+      ]
     },
     {
-      "aspect": "performance",
-      "source": "youtube_comment",
+      "id": 1,
       "sentiment": "neutral",
-      "text": "나 가을언니가 이렇게 나올때만을 기다렸어 이제 언니무대다 가보자"
+      "aspects": []
     },
     {
-      "aspect": "visual_styling",
-      "source": "youtube_comment",
+      "id": 2,
       "sentiment": "positive",
-      "text": "진짜 레이랑 가을 랩 미쳤다.. 브릿지 가을 유진 부분도 너무 좋고 이서 개인 파트랑 리즈랑 원영도 컨셉 소화력 미쳤음.. 스타쉽 감다살 레전드"
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
-      "aspect": "vocal_rap",
-      "source": "youtube_comment",
+      "id": 3,
       "sentiment": "positive",
-      "text": "이번곡 ㄹㅇ 레이가을의 재발견임..... 랩 하나로 노래의 퀄리티를 높여줌. 랩파트가 이 노래의 킥인듯..."
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
-      "aspect": "fandom_public_opinion",
-      "source": "naver_news",
+      "id": 4,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "vocal_rap",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 7,
       "sentiment": "neutral",
-      "text": "아이브, 오리콘·빌보드 재팬 ‘꿀꺽’ 그룹 아이브(IVE)가 일본 새 앨범으로 현지 주요 차트 정상에 올랐다. 소속사 스타쉽엔터테인먼트는 4일 아이브의 일본 네 번째 앨범 ‘루시드 드림’(LUCID DREAM)이 일본 오리콘과 빌보드 재팬 차트에서 1위를..."
+      "aspects": []
+    },
+    {
+      "id": 8,
+      "sentiment": "negative",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "vocal_rap",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "sentiment": "negative",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "sentiment": "neutral",
+      "aspects": []
+    },
+    {
+      "id": 17,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "sentiment": "neutral",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "sentiment": "neutral",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "sentiment": "negative",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "sentiment": "neutral",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "performance",
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "sentiment": "neutral",
+      "aspects": []
+    },
+    {
+      "id": 31,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "sentiment": "neutral",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "sentiment": "neutral",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "sentiment": "neutral",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "sentiment": "negative",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "sentiment": "neutral",
+      "aspects": []
+    },
+    {
+      "id": 69,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "sentiment": "neutral",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "song_music",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "visual_styling",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "sentiment": "neutral",
+      "aspects": []
+    },
+    {
+      "id": 79,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "fandom_public_opinion",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "sentiment": "neutral",
+      "aspects": []
+    },
+    {
+      "id": 82,
+      "sentiment": "positive",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive"
+        }
+      ]
     }
   ],
   "naver_news_summary": [
     {
-      "title": "아이브, 오리콘·빌보드 재팬 ‘꿀꺽’",
-      "date": "2026-06-04",
-      "summary": "그룹 아이브(IVE)가 일본 새 앨범으로 현지 주요 차트 정상에 올랐다. 소속사 스타쉽엔터테인먼트는 4일 아이브의 일본 네 번째 앨범 ‘루시드 드림’(LUCID DREAM)이 일본 오리콘과 빌보드 재팬 차트에서 1위를...",
-      "link": "https://m.entertain.naver.com/article/144/0001119045"
+      "title": "\"특별히 다이어트 안해요\"…리즈, '세끼' 다 먹고도 턱선 유지하는 비법...",
+      "date": "2026-10-11",
+      "summary": "이준형 인턴 기자 = 그룹 아이브(IVE) 멤버 리즈가 고향 제주도에서 눈부신 비주얼을 자랑하며 근황을 전했다. 8일 리즈는 자신의 사회관계망서비스(SNS)에 \"저는 제주 출신입니다\"라는 글과 함께 여러 장의 사진을 공개했다....",
+      "link": "https://m.entertain.naver.com/article/003/0014245463"
     },
     {
-      "title": "아이브, 日 오리콘 다시 한 번 최정상",
-      "date": "2026-06-04",
-      "summary": "아이브 [스타쉽 엔터테인먼트 제공] 그룹 아이브(IVE)가 일본 음악 시장에서 다시 한번 정상을 밟았다. 최근 일본 오리콘이 발표한 최신 차트에 따르면 아이브(안유진·가을·레이·장원영·리즈·이서)의 현지 네...",
-      "link": "https://n.news.naver.com/mnews/article/016/0002652174?sid=103"
+      "title": "라치카 시미즈, 장원영 극찬... \"열심히 연구해서 모든 파트 킬링 신으...",
+      "date": "2026-10-10",
+      "summary": "가요계 퍼포먼스의 중심인 댄스 크루 라치카의 황금 막내이자 아이브의 전담 퍼포먼스 디렉터로 맹활약 중인 시미즈가 한강 뷰 작업실과 럭셔리한 일상, 그리고 아이브 멤버들을 향한 극찬을 아낌없이 쏟아냈다. 특히...",
+      "link": "https://m.entertain.naver.com/article/445/0000475222"
     },
     {
-      "title": "아이브, 日 신보 '루시드 드림' 오리콘·빌보드 차트 1위",
-      "date": "2026-06-04",
-      "summary": "걸그룹 아이브(IVE)가 신보 '루시드 드림'으로 일본 오리콘, 빌보드 차트 정상에 올랐다. 3일 일본 오리콘에 따르면, 아이브의 일본 네 번째 앨범 '루시드 드림'(LUCID DREAM)이 '오리콘 주간 합산 앨범 랭킹' 1위에...",
-      "link": "https://m.entertain.naver.com/article/421/0008985324"
+      "title": "아이브 리즈, 제주 카페에서 포착된 청초한 근황…솔로곡 'Unreal'로 보컬...",
+      "date": "2026-10-09",
+      "summary": "그룹 아이브(IVE) 리즈(김지원, 21세)가 제주에서 촬영한 사진으로 근황을 전했다. 실내에서 창밖 풍경을... 1집 'ELEVEN'으로 아이브 멤버로 정식 데뷔했다. 리즈가 속한 아이브는 안유진·가을·레이·장원영·리즈...",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242727"
     },
     {
-      "title": "아이브, 日 신보 '루시드 드림' 오리콘·빌보드 차트 1위",
-      "date": "2026-06-04",
-      "summary": "아이브(IVE)가 일본 주요 차트를 석권하며 현지에서의 뜨거운 인기를 다시 한번 입증했다. 지난 3일 일본 오리콘이 발표한 최신 차트에 따르면, 아이브의 일본 네 번째 앨범 'LUCID DREAM(루시드 드림)'이 '오리콘...",
-      "link": "https://m.entertain.naver.com/article/437/0000494468"
+      "title": "이채연, 日 데뷔 싱글 '보쿠노코에'로 감성 보컬 변신",
+      "date": "2026-10-08",
+      "summary": "당시 아이브, 세븐틴, 블랙핑크 지수 등 대형 아티스트들이 포진한 시기였던 만큼, 솔로 아티스트로서 눈에 띄는 성과를 남기며 음악적 가능성을 한층 끌어올렸다. 같은 해 싱글 1집 'The Move : Street'를 통해서는 스트릿...",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242152"
     },
     {
-      "title": "아이브, 도쿄돔 재입성 앞두고 日 오리콘·빌보드 1위",
-      "date": "2026-06-04",
-      "summary": "그룹 아이브(IVE)가 일본 주요 음악 차트를 휩쓸며 현지에서의 막강한 인기를 다시 한번 증명했다. 일본 오리콘이 지난 3일 발표한 최신 차트에 따르면 아이브의 일본 네 번째 앨범 ‘LUCID DREAM(루시드 드림)...",
-      "link": "https://m.entertain.naver.com/article/408/0000310663"
+      "title": "아이브 장원영, 그레이 톤 셀카로 전한 근황…광채 비주얼 눈길",
+      "date": "2026-10-07",
+      "summary": "그룹 아이브(IVE) 장원영(21세)이 실내에서 촬영한 사진으로 근황을 전했다. 길게 늘어뜨린 머리와 그레이... 장원영은 2004년생으로, 6인조 걸그룹 아이브의 멤버로 활동하고 있다. 팀 내에서 센터이자 보컬...",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16241156"
     }
   ],
-  "report_text": "# IVE 近期市場與輿論分析\n\n## 1. 榜單表現\n- 榜單表現沿用既有 Bugs 榜單快取觀察，搭配本次新聞與留言聲量判讀。\n- 目前更適合看作回歸期與內容曝光的輔助訊號，後續可再與週榜排名交叉追蹤。\n\n## 2. 粉絲與輿論反應\n- 正面比例：0.4667\n- 中立比例：0.5333\n- 負面比例：0.0\n- 簡短解讀：粉絲留言偏正向，音樂與內容曝光仍能帶動討論。\n- 歌曲／音樂性：中性 (正 0.4615 / 中 0.5385 / 負 0.0)\n- 舞台／表演：中性 (正 0.0 / 中 1.0 / 負 0.0)\n- 造型／視覺：正面 (正 1.0 / 中 0.0 / 負 0.0)\n- 演唱／Rap：正面 (正 0.8571 / 中 0.1429 / 負 0.0)\n- 粉絲與大眾反應：中性 (正 0.3 / 中 0.7 / 負 0.0)\n\n## 3. 綜合判斷\n- 市場熱度：中\n- 輿論風險：低\n- Naver 新聞觀察：新作與音樂性討論、榜單與音源平台露出\n- 短期趨勢：Naver 新聞仍有可見曝光，留言端偏中性，短期輿論風險不高。\n\n## 4. 市場洞察\n- 新聞焦點：新作與音樂性討論、榜單與音源平台露出\n- 機會點：可延續音樂與內容品質帶來的正向討論，並把新聞曝光轉成舞台與作品話題。\n- 觀察重點：持續比對 IVE 的榜單續航、留言情緒與新聞曝光是否往同一方向收斂。\n\n## 5. 一句話總結\nIVE 目前榜單可搭配後續週榜觀察，粉絲留言偏正向，音樂與內容曝光仍能帶動討論；Naver 新聞仍有近期曝光，整體市場熱度為中、輿論風險為低。\n"
+  "top_comments_or_evidence": [
+    {
+      "source": "youtube_comment",
+      "sentiment": "neutral",
+      "text": "노래퀼리티만 좋으면 될것같아요😢뱅뱅도 좋지만",
+      "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugzn8Zpl9Eklu_EtV_14AaABAg",
+      "published_at": "2026-10-07T08:39:17Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "아이브는 라이브 할 때 댄스에는 좀 방해되도 핸드마이크 항상 쓰는게 제일 호감. 인이어 끼고 춤만 빡세게 추고 노래 대충 부르는 가수들 진짜 많은데 아이브는 자신감이 있어서 그렇겠지만 보컬에 신경쓴다는게 항상 눈에 보임",
+      "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugyv6dftzv1rhVOiuPJ4AaABAg",
+      "published_at": "2026-10-11T05:31:21Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "neutral",
+      "text": "금발 단발누구죠?",
+      "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugy61lteEG5C-VFOxgl4AaABAg",
+      "published_at": "2026-10-11T05:41:11Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "아이브는 라이브 할 때 댄스에는 좀 방해되도 핸드마이크 항상 쓰는게 제일 호감. 인이어 끼고 춤만 빡세게 추고 노래 대충 부르는 가수들 진짜 많은데 아이브는 자신감이 있어서 그렇겠지만 보컬에 신경쓴다는게 항상 눈에 보임",
+      "link": "https://www.youtube.com/watch?v=MR8noFcOGqU&lc=Ugyv6dftzv1rhVOiuPJ4AaABAg",
+      "published_at": "2026-10-11T05:31:21Z"
+    },
+    {
+      "source": "youtube_comment",
+      "sentiment": "positive",
+      "text": "그냥 빈자리가 느껴지지 않음",
+      "link": "https://www.youtube.com/watch?v=XtCnr9ga-pI&lc=Ugz77tyRBM6BoVNZ2G54AaABAg",
+      "published_at": "2026-10-01T14:38:15Z"
+    }
+  ],
+  "monthly_insight": {
+    "headline": "10/26 新 EP，回歸預熱期",
+    "market_heat": "已公告新 EP 與持續發布概念內容 [N11][N21]；這是宣傳活動訊號，尚非新作品銷量或音源成績。",
+    "news_focus": "《Looks Can Kill》預計 10/26 發行，主打曲 10/19 先公開 [N21][N26]。",
+    "trend": "截至 10/11 仍屬回歸前宣傳期，發行後接受度尚待觀察。",
+    "opportunity": "以新概念與現場表現作為回歸內容重點，再比對新曲發布後的資料。",
+    "watch": "10/19 先行曲與 10/26 EP 發行後的榜單、留言和銷量變化。",
+    "summary": "IVE 正為《Looks Can Kill》預熱，預計 10/19 先公開主打曲、10/26 發行 EP [N21][N26]。83 則抽樣留言偏正面，不能視為新 EP 的市場成績。",
+    "evidence_ids": [
+      "N11",
+      "N21",
+      "N26"
+    ],
+    "risk": "資料不足",
+    "fan_summary": "抽樣 83 則：正面 64、中立 15、負面 4。比例只代表本次影片觀眾；不能直接推論整體粉絲或一般大眾。"
+  },
+  "report_text": "# IVE 2026-10 市場與輿論分析\n\n## 1. 榜單表現\n- Bugs 全曲週榜 Top 100：2026-09-28–2026-10-04（橫跨月份，僅作參考）。\n- #39 BANG BANG（IVE (아이브)）\n- #70 I AM（IVE (아이브)）\n- #87 REBEL HEART（IVE (아이브)）\n- #95 BLACKHOLE（IVE (아이브)）\n- 2026-10-05 起算週榜尚未取得；目前無法判定當月排名趨勢。\n\n## 2. 粉絲與輿論反應\n- 正面比例：0.7711\n- 中立比例：0.1807\n- 負面比例：0.0482\n- 簡短解讀：抽樣 83 則：正面 64、中立 15、負面 4。比例只代表本次影片觀眾；不能直接推論整體粉絲或一般大眾。\n- 留言樣本：83 則期間內韓文頂層留言；僅代表抽樣影片，新聞不納入比例。\n\n## 3. 綜合判斷\n- 市場熱度：已公告新 EP 與持續發布概念內容 [N11][N21]；這是宣傳活動訊號，尚非新作品銷量或音源成績。\n- 輿論風險：資料不足\n- Naver 新聞觀察：《Looks Can Kill》預計 10/26 發行，主打曲 10/19 先公開 [N21][N26]。\n- 短期趨勢：截至 10/11 仍屬回歸前宣傳期，發行後接受度尚待觀察。\n\n## 4. 市場洞察\n- 機會點：以新概念與現場表現作為回歸內容重點，再比對新曲發布後的資料。\n- 觀察重點：10/19 先行曲與 10/26 EP 發行後的榜單、留言和銷量變化。\n- 分析期間：2026-10-01–2026-10-11（截至日資料，非完整月報；新聞依韓國刊登日，留言依台北日期）。\n- 限制：影片搜尋抽樣、韓文頂層留言、新聞摘要；不代表整體粉絲或一般大眾。\n\n## 5. 一句話總結\nIVE 正為《Looks Can Kill》預熱，預計 10/19 先公開主打曲、10/26 發行 EP [N21][N26]。83 則抽樣留言偏正面，不能視為新 EP 的市場成績。\n",
+  "original_model_insight": {
+    "headline": "IVE 10月回歸預熱中，成員個人活動與品牌代言活躍",
+    "risk": "中",
+    "fan_summary": "粉絲對成員實力與舞台表現持高度正面評價，特別是對於現場演唱與舞蹈結合的自信給予肯定，留言樣本顯示粉絲對團體完整性與成員個人價值認同感強烈。",
+    "market_heat": "市場熱度穩定，IVE 透過多樣化的個人時尚代言、綜藝出演及預告新專輯《Looks Can Kill》維持曝光，並積極參與國際活動與頒獎典禮 MC 工作。",
+    "news_focus": "新聞焦點集中於 10 月 26 日發行的新專輯《Looks Can Kill》宣傳、成員個人時尚畫報、品牌代言（如 레이 的 K-Beauty 代言）以及成員參與綜藝與頒獎典禮主持。",
+    "trend": "團體正處於回歸準備期，透過社群媒體發布概念照與預告，同時成員在時尚與綜藝領域保持高頻率曝光，維持大眾關注度。",
+    "opportunity": "新專輯《Looks Can Kill》將於 10 月 26 日發行，並於 19 日先行公開主打歌，預計將帶動音源成績與粉絲互動熱度。",
+    "watch": "觀察重點為新專輯發行後的音源表現、實體銷量，以及成員在各類大型音樂節與頒獎典禮中的表現與影響力。",
+    "summary": "IVE 正積極籌備 10 月 26 日發行的迷你專輯《Looks Can Kill》，成員透過個人時尚活動、綜藝出演及擔任頒獎典禮 MC 維持高曝光。儘管近期音源榜單排名略有波動，但粉絲對成員實力與團體價值給予高度正面評價。風險評估為中，因樣本數有限且主要基於社群留言與新聞報導，需持續觀察回歸後的市場反應。",
+    "evidence_ids": [
+      "N1",
+      "N11",
+      "N12",
+      "N16",
+      "N20",
+      "N21",
+      "N23",
+      "N26",
+      "N29",
+      "N33",
+      "N39"
+    ]
+  },
+  "review": {
+    "reviewed_at": "2026-10-11T15:49:49.082472+00:00",
+    "method": "Source-bound editorial review of news digests and comment annotations",
+    "notes": [
+      "Removed unsupported market/ranking claims",
+      "Separated member, former-member and NCT unit activity",
+      "Overall opinion risk not established by convenience sample"
+    ]
+  }
 }

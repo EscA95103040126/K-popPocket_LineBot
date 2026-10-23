@@ -210,6 +210,22 @@ fandom / public_opinion
 
 LINE Bot 收到 `分析 aespa`、`分析 IVE` 等完整藝人分析指令時，會先讀 `data/cache/absa/{artist}.json`。若 ABSA cache 不存在或 schema 無效，才回到既有 `data/cache/artists/{artist}.json` / 本地 fallback 流程。
 
+## 按月份更新藝人分析
+
+需要分析指定月份時，使用有日期與來源紀錄的更新流程：
+
+```bash
+python3 -u scripts/refresh_monthly_analysis.py --month 2026-10 --as-of 2026-10-11 --publish-local
+```
+
+這個流程直接讀取 Naver、YouTube、Bugs 與 Gemini API，不以 mock 或舊留言替代當月資料。它會按發布日期篩選新聞及韓文頂層留言，以 Gemini 做整體及五面向情感標註，再產生附引用來源的繁體中文報告。新聞不納入留言情感比例，正面比例不作為市場熱度指標。影片搜尋為抽樣，並包含非官方舞台影片，不代表所有粉絲或一般大眾。
+
+預設每組藝人目標為 100 則留言，但只保留期間內實際可取得的留言，樣本可能少於目標。新聞依韓國刊登日篩選；留言依 Asia/Taipei 日期篩選。當月尚未結束時，產出的是截至日分析。Bugs 使用實際回傳的已發布週榜日期，不把查詢日期當成榜單日期；橫跨月份的週榜會標明限制。
+
+原始資料、模型標註、JSON 快取、CSV 與 Markdown 報告寫入 `data/reports/{月份}-through-{截至日}/`。所有指定藝人完成後，`--publish-local` 才會更新本機 `data/cache/absa/`，並在報告目錄備份原本快取。LINE 讀取月報時會保留報告的日期與榜單快照。
+
+失敗後可以加 `--reuse-raw`，接續使用同一期間已取得的資料與完成的結果。未加 `--publish-local` 時只產生報告，不變更啟用快取。更新本機檔案後，仍需同步部署至 Hugging Face，線上 LINE Bot 才會使用新版報告。
+
 ## 系統架構
 
 ```text
