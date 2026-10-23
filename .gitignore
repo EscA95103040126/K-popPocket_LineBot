@@ -13,3 +13,6 @@ data/cache/*
 !data/cache/absa/summary.csv
 data/reports/**/*_raw.json
 data/reports/**/previous_active_cache/
+
+# Built by scripts/export_onnx_encoder.py; too large for git.
+models/

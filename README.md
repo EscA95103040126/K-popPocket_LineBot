@@ -104,9 +104,34 @@ AI 入坑支援自然語言偏好，例如：
 我喜歡霸氣舞台、rap 和 dance
 ```
 
-系統會解析使用者偏好，讀取 `data/play_zone/bias_radar_members.csv`，依照外貌、定位、氣質、關係感等欄位推薦成員與團體，再搭配 `data/play_zone/daily_mv.csv` 提供 MV 入坑路線。
+系統會依照使用者偏好推薦成員與團體，再搭配 `data/play_zone/daily_mv.csv` 提供 MV 入坑路線。
 
 若 Gemini API 可用，會產生較自然的推薦文字；若 API 不可用，會使用本地 fallback 產生穩定回覆。
+
+#### v2：語意向量推薦
+
+v1 會先把使用者的話對應到約 34 個固定標籤，再依 `bias_radar_members.csv` 的標籤重疊數排序，標籤表以外的說法（例如「像 Karina 那種」「適合深夜開車聽」）會直接遺失。v2 改為：
+
+1. 每位成員有一段開放式描述：Gemini 依 kprofiles 摘錄生成（`data/curator/member_profiles.csv`），再由 Grok 查核並補充代表作、音色、粉絲用語（`data/curator/grok_enrichment.csv`）。
+2. 以 int8 量化的 [BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3) 把描述和使用者的話轉成向量，依相似度排序；使用者明說女團或男團時，再做性別過濾。
+3. 推薦文字的提示詞加入成員簡介與團體概念（`data/curator/grok_groups.csv`），讓 Gemini 說得出「為什麼推這團」。v2 不再呼叫 Gemini 解析偏好，每次推薦只用 1 次 Gemini。
+
+評估結果（團體命中 @3，見 `scripts/evaluate_curator.py` 與 `docs/semantic_curator/PLAN.md`）：
+
+| 測試集 | v1（關鍵字 + Gemini） | v2（int8 bge-m3） |
+| --- | --- | --- |
+| Codex 撰寫的 60 題 | 44% | 62% |
+| 真實粉絲推坑需求 238 組 | 45% | 55% |
+
+模型不放進 git：Docker 建置時，`scripts/export_onnx_encoder.py` 會下載官方 ONNX 並量化為約 570 MB 的 int8 模型，`scripts/build_member_embeddings.py` 再預先算好成員向量，執行時只需要 onnxruntime、tokenizers 和 numpy。找不到 `models/bge-m3-int8/`，或成員向量和目前描述不一致時，會自動退回 v1。本機要啟用 v2：
+
+```bash
+uv run --group encoder-build python scripts/export_onnx_encoder.py
+```
+
+```bash
+uv run python scripts/build_member_embeddings.py
+```
 
 ### 4. 每日一首 K-pop
 

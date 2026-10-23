@@ -11,6 +11,7 @@ from typing import TYPE_CHECKING
 from src.bot.dispatcher import MessageContext
 from src.bot.flex_common import selection_page_flex_contents
 from src.bot.reply import Reply
+from src.bot.semantic_index import query_gender
 from src.bot.text_utils import (
     bias_radar_tag_text,
     contains_lookup_name,
@@ -24,6 +25,7 @@ from src.utils.response_formatter import fit_line_text
 if TYPE_CHECKING:
     from src.bot.catalog import PlayZoneCatalog
     from src.bot.llm import GeminiTextClient
+    from src.bot.semantic_index import SemanticMemberRanker
     from src.bot.sessions import SessionStore
 
 logger = logging.getLogger(__name__)
@@ -358,11 +360,13 @@ def _ai_curator_artist_candidates(
 
 
 def _build_ai_curator_prompt(query: str, context: dict) -> str:
+    notes = context.get("member_notes") or {}
     member_lines = [
         (
             f"- {member.get('artist')} {member.get('member')}: "
             f"position={member.get('position')}; vibe={member.get('vibe')}; "
             f"relationship={member.get('relationship')}; persona={member.get('persona')}"
+            + (f"; 簡介={note}" if (note := notes.get(member.get("id", ""))) else "")
         )
         for member in context["member_candidates"][:5]
     ]
@@ -583,12 +587,17 @@ class AiCuratorFeature:
         rng: random.Random,
         sessions: SessionStore,
         is_fixed_command: Callable[[str], bool],
+        semantic_ranker_loader: Callable[[], SemanticMemberRanker | None] | None = None,
     ) -> None:
         self.catalog = catalog
         self.llm = llm
         self.rng = rng
         self.sessions = sessions
         self.is_fixed_command = is_fixed_command
+        # None, or a loader returning None, keeps the v1 tag ranking.
+        self.semantic_ranker_loader = semantic_ranker_loader
+        self._semantic_ranker: SemanticMemberRanker | None = None
+        self._semantic_ranker_loaded = False
 
     def is_ai_curator_preference_request(self, message: str) -> bool:
         normalized = message.strip().casefold()
@@ -766,17 +775,37 @@ class AiCuratorFeature:
             return []
         return [member for member in members if isinstance(member, dict)]
 
+    def _semantic_member_ranker(self) -> SemanticMemberRanker | None:
+        # Loaded on first use: the encoder costs ~600MB and a second to open.
+        if not self._semantic_ranker_loaded:
+            self._semantic_ranker_loaded = True
+            if self.semantic_ranker_loader is not None:
+                self._semantic_ranker = self.semantic_ranker_loader()
+        return self._semantic_ranker
+
     def _build_ai_curator_context(self, query: str) -> dict:
-        profile = self._resolve_ai_curator_profile(query)
-        mv_artists = {
-            row.get("artist", "").strip()
-            for row in self.catalog.load_daily_kpop_rows("MV")
-            if row.get("artist", "").strip()
-        }
-        member_candidates = _prioritize_members_with_mv(
-            self._rank_bias_radar_members_for_curator(profile),
-            mv_artists,
-        )[:5]
+        ranker = self._semantic_member_ranker()
+        if ranker is not None:
+            # v2 understands the query through embeddings, so the tag profile only
+            # steers the MV fallback; keywords suffice and save a Gemini call.
+            profile = self._extract_ai_curator_preferences(query)
+            profile["gender"] = profile["gender"] or query_gender(_compact_ai_curator_text(query))
+            member_candidates = ranker.rank(query)[:5]
+            member_notes = ranker.notes
+            low_confidence = False
+        else:
+            profile = self._resolve_ai_curator_profile(query)
+            mv_artists = {
+                row.get("artist", "").strip()
+                for row in self.catalog.load_daily_kpop_rows("MV")
+                if row.get("artist", "").strip()
+            }
+            member_candidates = _prioritize_members_with_mv(
+                self._rank_bias_radar_members_for_curator(profile),
+                mv_artists,
+            )[:5]
+            member_notes = {}
+            low_confidence = not _ai_curator_profile_has_signal(profile)
         recommended_members = _ai_curator_recommended_members(member_candidates)
         recommended_artists = _ai_curator_recommended_artists(member_candidates)[:3]
         daily_items = self._rank_daily_mv_rows_for_artists(recommended_artists, profile)[:5]
@@ -790,7 +819,8 @@ class AiCuratorFeature:
             "artist_summaries": self._load_ai_curator_artist_summaries(artist_candidates[:3]),
             "primary_artist": artist_candidates[0] if artist_candidates else None,
             "recommended_artists": recommended_artists,
-            "low_confidence": not _ai_curator_profile_has_signal(profile),
+            "member_notes": member_notes,
+            "low_confidence": low_confidence,
         }
 
     def _extract_ai_curator_preferences(self, query: str) -> dict[str, set[str] | str | None]:

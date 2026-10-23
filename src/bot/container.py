@@ -18,6 +18,7 @@ from src.bot.features.photo_card import PhotoCardFeature
 from src.bot.features.pocket import PocketFeature
 from src.bot.llm import GeminiTextClient
 from src.bot.routing import build_dispatcher, is_fixed_command
+from src.bot.semantic_index import SemanticMemberRanker
 from src.bot.sessions import InMemorySessionStore, SessionStore, build_session_store
 from src.config import Settings
 from src.tools.kpop_radar import KpopRadarRepository
@@ -35,6 +36,8 @@ class BotDeps:
     clock: Callable[[], float] = time
     # None means per-process memory (see build_bot).
     sessions: SessionStore | None = None
+    # AI 入坑 v2 semantic ranking; it still falls back to v1 when models/ is missing.
+    semantic_curator: bool = False
 
     @classmethod
     def from_settings(cls, settings: Settings) -> BotDeps:
@@ -45,6 +48,7 @@ class BotDeps:
             radar_repo=radar_repo,
             llm=GeminiTextClient(settings.gemini_api_key, settings.gemini_model),
             sessions=build_session_store(radar_repo.client),
+            semantic_curator=True,
         )
 
 
@@ -77,7 +81,20 @@ def build_bot(deps: BotDeps) -> Bot:
         catalog=catalog,
         pocket=pocket,
         ai_curator=AiCuratorFeature(
-            catalog, deps.llm, deps.rng, sessions, is_fixed_command=is_fixed_command
+            catalog,
+            deps.llm,
+            deps.rng,
+            sessions,
+            is_fixed_command=is_fixed_command,
+            semantic_ranker_loader=(
+                (
+                    lambda: SemanticMemberRanker.load(
+                        deps.settings.base_dir, catalog.load_bias_radar_members()
+                    )
+                )
+                if deps.semantic_curator
+                else None
+            ),
         ),
         bias_radar=BiasRadarFeature(catalog, deps.rng, sessions),
         member_quiz=MemberQuizFeature(catalog, deps.rng),

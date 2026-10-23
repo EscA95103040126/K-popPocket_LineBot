@@ -1,0 +1,74 @@
+{
+  "ranker": "v2-qwen3-0.6b+gender",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "overall": {
+    "artist_hit@3": 0.542,
+    "artist_hit@5": 0.6134,
+    "artist_mrr": 0.5073,
+    "member_hit@3": 0.2535,
+    "member_hit@5": 0.2535,
+    "n": 238.0
+  },
+  "by_type": {
+    "具體成員參照": {
+      "artist_hit@3": 0.2,
+      "artist_hit@5": 0.3,
+      "artist_mrr": 0.17,
+      "n": 10.0
+    },
+    "抽象氛圍": {
+      "artist_hit@3": 0.4565,
+      "artist_hit@5": 0.5435,
+      "artist_mrr": 0.4664,
+      "member_hit@3": 0.0625,
+      "member_hit@5": 0.0625,
+      "n": 46.0
+    },
+    "曲風": {
+      "artist_hit@3": 0.5833,
+      "artist_hit@5": 0.6167,
+      "artist_mrr": 0.543,
+      "member_hit@3": 0.2143,
+      "member_hit@5": 0.2143,
+      "n": 60.0
+    },
+    "聲音/唱腔": {
+      "artist_hit@3": 0.5417,
+      "artist_hit@5": 0.625,
+      "artist_mrr": 0.4893,
+      "member_hit@3": 0.4615,
+      "member_hit@5": 0.4615,
+      "n": 24.0
+    },
+    "舞台/舞蹈": {
+      "artist_hit@3": 0.6667,
+      "member_hit@3": 0.2727,
+      "artist_hit@5": 0.7083,
+      "member_hit@5": 0.2727,
+      "artist_mrr": 0.5726,
+      "n": 24.0
+    },
+    "其他": {
+      "artist_hit@3": 0.614,
+      "member_hit@3": 0.3077,
+      "artist_hit@5": 0.7018,
+      "member_hit@5": 0.3077,
+      "artist_mrr": 0.5791,
+      "n": 57.0
+    },
+    "綜藝/個性": {
+      "artist_hit@3": 0.4118,
+      "member_hit@3": 0.25,
+      "artist_hit@5": 0.5294,
+      "member_hit@5": 0.25,
+      "artist_mrr": 0.3825,
+      "n": 17.0
+    }
+  }
+}
