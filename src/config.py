@@ -9,7 +9,11 @@ from dotenv import load_dotenv
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
-load_dotenv(BASE_DIR / ".env")
+# KPOP_AGENT_ENV_FILE points at an alternative env file; set it to "" to skip loading one
+# (the test suite does this so it never picks up real credentials).
+ENV_FILE = os.getenv("KPOP_AGENT_ENV_FILE", str(BASE_DIR / ".env"))
+if ENV_FILE:
+    load_dotenv(ENV_FILE)
 os.environ.setdefault("SSL_CERT_FILE", certifi.where())
 os.environ.setdefault("REQUESTS_CA_BUNDLE", certifi.where())
 
