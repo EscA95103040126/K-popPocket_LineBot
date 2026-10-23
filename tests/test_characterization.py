@@ -94,13 +94,31 @@ def no_network(monkeypatch):
     monkeypatch.setattr(requests, "post", _block_network)
 
 
-def _fresh_deps():
+def _hermetic_base_dir(tmp_path: Path) -> Path:
+    """A base_dir with the tracked Play Zone data but none of the runtime caches.
+
+    data/cache/ is git-ignored and filled in at runtime, so reading the real one would make
+    snapshots depend on whatever happens to be cached on the machine running the tests.
+    """
+    base_dir = tmp_path / "repo"
+    if not base_dir.exists():
+        (base_dir / "data").mkdir(parents=True)
+        (base_dir / "data" / "play_zone").symlink_to(REPO_ROOT / "data" / "play_zone")
+    return base_dir
+
+
+def _fresh_deps(tmp_path: Path):
     # A new app per conversation gives every conversation fresh state.
-    return make_deps(agent=FakeAgent(), radar_repo=FakeRadarRepository(), rng=random.Random(SEED))
+    return make_deps(
+        base_dir=_hermetic_base_dir(tmp_path),
+        agent=FakeAgent(),
+        radar_repo=FakeRadarRepository(),
+        rng=random.Random(SEED),
+    )
 
 
 def _run_analyze(messages: list[str], user_id: str, tmp_path: Path) -> list:
-    client = make_app(_fresh_deps()).test_client()
+    client = make_app(_fresh_deps(tmp_path)).test_client()
     outputs = []
     for message in messages:
         response = client.post("/analyze", json={"message": message, "user_id": user_id})
@@ -109,7 +127,7 @@ def _run_analyze(messages: list[str], user_id: str, tmp_path: Path) -> list:
 
 
 def _run_mock_webhook(messages: list[str], user_id: str, tmp_path: Path) -> list:
-    client = make_app(_fresh_deps()).test_client()
+    client = make_app(_fresh_deps(tmp_path)).test_client()
     outputs = []
     for message in messages:
         response = client.post("/webhook", json={"message": message, "user_id": user_id})
@@ -126,7 +144,7 @@ def _run_mock_webhook(messages: list[str], user_id: str, tmp_path: Path) -> list
 
 def _run_line(messages: list[str], user_id: str, tmp_path: Path) -> list:
     api = RecordingMessagingApi()
-    app = make_app(_fresh_deps(), line_dedupe_path=tmp_path / f"{user_id}.json", line_api=api)
+    app = make_app(_fresh_deps(tmp_path), line_dedupe_path=tmp_path / f"{user_id}.json", line_api=api)
     adapter = line_adapter_of(app)
     outputs = []
     for index, message in enumerate(messages):
