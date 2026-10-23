@@ -1,4 +1,4 @@
-FROM python:3.13-slim AS base
+FROM python:3.13-slim
 
 COPY --from=ghcr.io/astral-sh/uv:0.13.5 /uv /uvx /bin/
 
@@ -21,28 +21,12 @@ WORKDIR /app
 COPY pyproject.toml uv.lock .python-version ./
 RUN uv sync --locked
 
-# AI 入坑 v2 encoder: download bge-m3's official ONNX export, quantize it to int8 and
-# precompute member embeddings. Only models/ reaches the final image. Off by default:
-# quantizing the 2.2GB model was OOM-killed on the Hugging Face Space builder. Pass
-# --build-arg SEMANTIC_CURATOR=1 on a machine with more memory; without models/ the
-# bot falls back to v1 ranking.
-FROM base AS encoder
-ARG SEMANTIC_CURATOR=0
-RUN uv sync --locked --group encoder-build
-COPY src ./src
-COPY scripts ./scripts
-COPY data/curator ./data/curator
-COPY data/play_zone ./data/play_zone
-RUN mkdir -p models && \
-    if [ "$SEMANTIC_CURATOR" = "1" ]; then \
-        python scripts/export_onnx_encoder.py && \
-        python scripts/build_member_embeddings.py; \
-    fi
-
-FROM base
-
+# AI 入坑 v2 needs models/bge-m3-int8/ (int8 encoder + member embeddings) in the build
+# context. It is built locally by scripts/export_onnx_encoder.py and
+# scripts/build_member_embeddings.py and committed to the Hugging Face Space through
+# LFS; quantizing during the build was OOM-killed on the Space builder. Without it
+# (GitHub CI, fresh clones) the bot falls back to v1 ranking.
 COPY . .
-COPY --from=encoder /app/models ./models
 RUN python scripts/init_db.py && \
     python scripts/seed_data.py
 
