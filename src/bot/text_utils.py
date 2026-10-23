@@ -51,8 +51,4 @@ def join_nonempty_blocks(*blocks: str) -> str:
 
 
 def split_bias_radar_tags(raw_value: str) -> set[str]:
-    return {
-        tag.strip()
-        for tag in raw_value.split("|")
-        if tag.strip()
-    }
+    return {tag.strip() for tag in raw_value.split("|") if tag.strip()}

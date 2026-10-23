@@ -48,9 +48,7 @@ def _prune_ordered_timestamps(
     max_size: int,
 ) -> None:
     expired_keys = [
-        key
-        for key, timestamp in timestamps.items()
-        if now - float(timestamp) > ttl_seconds
+        key for key, timestamp in timestamps.items() if now - float(timestamp) > ttl_seconds
     ]
     for key in expired_keys:
         timestamps.pop(key, None)

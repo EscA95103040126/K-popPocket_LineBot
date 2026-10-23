@@ -220,9 +220,7 @@ def build_absa_payload(
     sentiment_analyzer = analyzer or KeywordSentimentAnalyzer()
     records = _records_from_sources(news=news, comments=comments)
     overall_counts: Counter[str] = Counter()
-    aspect_counts: dict[str, Counter[str]] = {
-        aspect: Counter() for aspect in ABSA_ASPECTS
-    }
+    aspect_counts: dict[str, Counter[str]] = {aspect: Counter() for aspect in ABSA_ASPECTS}
     aspect_evidence: dict[str, list[dict[str, str]]] = {aspect: [] for aspect in ABSA_ASPECTS}
 
     for record in records:
@@ -396,10 +394,7 @@ def _ratio_summary(counts: Counter[str]) -> dict[str, Any]:
     if total <= 0:
         ratio = {label: 0 for label in VALID_SENTIMENT_LABELS}
     else:
-        ratio = {
-            label: round(counts.get(label, 0) / total, 4)
-            for label in VALID_SENTIMENT_LABELS
-        }
+        ratio = {label: round(counts.get(label, 0) / total, 4) for label in VALID_SENTIMENT_LABELS}
     return {
         "count": total,
         "ratio": ratio,
@@ -473,9 +468,9 @@ def _build_report_text(
 {chart_lines}
 
 ## 2. 粉絲與輿論反應
-- 正面比例：{overall.get('positive', 0)}
-- 中立比例：{overall.get('neutral', 0)}
-- 負面比例：{overall.get('negative', 0)}
+- 正面比例：{overall.get("positive", 0)}
+- 中立比例：{overall.get("neutral", 0)}
+- 負面比例：{overall.get("negative", 0)}
 - 簡短解讀：{fan_summary}
 
 ## 3. 綜合判斷
@@ -512,8 +507,7 @@ def _localized_aspect_label(aspect: str) -> str:
 
 def _format_news_titles(naver_news_summary: list[dict[str, str]]) -> str:
     text = " ".join(
-        f"{item.get('title', '')} {item.get('summary', '')}"
-        for item in naver_news_summary
+        f"{item.get('title', '')} {item.get('summary', '')}" for item in naver_news_summary
     )
     if not text.strip():
         return "目前沒有明確新聞焦點"
@@ -521,7 +515,10 @@ def _format_news_titles(naver_news_summary: list[dict[str, str]]) -> str:
     category_keywords = (
         ("公開演出與舞台曝光", ("열린음악회", "라인업", "출연", "공연", "콘서트", "무대")),
         ("海外媒體與產業評選", ("포브스", "forbes", "30세", "아시아", "영향력")),
-        ("新作與音樂性討論", ("신보", "앨범", "컴백", "곡", "음악성", "serenade", "heavy serenade")),
+        (
+            "新作與音樂性討論",
+            ("신보", "앨범", "컴백", "곡", "음악성", "serenade", "heavy serenade"),
+        ),
         ("榜單與音源平台露出", ("차트", "멜론", "chart", "순위")),
         ("品牌與商業活動", ("브랜드", "캠페인", "광고", "화보", "앰버서더")),
         ("巡演與現場活動", ("투어", "월드투어", "팬미팅", "현장")),
@@ -598,7 +595,9 @@ def _footer_summary(
     heat = _market_heat_from_overall(overall)
     risk = _risk_from_overall(overall)
     sentiment = _fan_summary(_dominant_from_ratio(overall), overall).rstrip("。")
-    news_part = "新聞焦點尚不明顯" if news_titles == "目前沒有明確新聞焦點" else "Naver 新聞仍有近期曝光"
+    news_part = (
+        "新聞焦點尚不明顯" if news_titles == "目前沒有明確新聞焦點" else "Naver 新聞仍有近期曝光"
+    )
     return (
         f"{artist} 目前榜單可搭配後續週榜觀察，{sentiment}；"
         f"{news_part}，整體市場熱度為{heat}、輿論風險為{risk}。"

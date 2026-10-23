@@ -74,8 +74,7 @@ class SupabaseRestClient:
         )
         if response.status_code >= 400:
             raise KpopRadarError(
-                f"Supabase {method} {table} failed: "
-                f"{response.status_code} {response.text[:300]}"
+                f"Supabase {method} {table} failed: {response.status_code} {response.text[:300]}"
             )
         if response.status_code == 204 or not response.content:
             return None
@@ -325,14 +324,17 @@ class KpopRadarRepository:
             raise KpopRadarError("Supabase is not configured")
 
         normalized_items = [_normalize_kpop_item(item) for item in items]
-        existing_rows = self.client.request(
-            "GET",
-            "kpop_items",
-            params={
-                "select": "id,item_type,url,gender_category,artist,member,title,thumbnail_url,source",
-                "limit": "10000",
-            },
-        ) or []
+        existing_rows = (
+            self.client.request(
+                "GET",
+                "kpop_items",
+                params={
+                    "select": "id,item_type,url,gender_category,artist,member,title,thumbnail_url,source",
+                    "limit": "10000",
+                },
+            )
+            or []
+        )
         existing_by_key = {
             (str(row.get("item_type") or ""), str(row.get("url") or "")): row
             for row in existing_rows
@@ -526,7 +528,7 @@ def _youtube_video_id(url: str) -> str | None:
 
 def _chunks(items: list[dict[str, Any]], size: int):
     for index in range(0, len(items), size):
-        yield items[index:index + size]
+        yield items[index : index + size]
 
 
 def _now_iso() -> str:

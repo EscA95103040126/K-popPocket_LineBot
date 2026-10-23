@@ -393,10 +393,7 @@ def _add_fan_attribute_scores(
     scores: dict[str, int],
     weights: dict[str, int],
 ) -> dict[str, int]:
-    return {
-        key: scores.get(key, 0) + weights.get(key, 0)
-        for key in FAN_ATTRIBUTE_ORDER
-    }
+    return {key: scores.get(key, 0) + weights.get(key, 0) for key in FAN_ATTRIBUTE_ORDER}
 
 
 def _fan_attribute_action_text(question_index: int, scores: dict[str, int]) -> str:
@@ -422,8 +419,7 @@ def _fan_attribute_quiz_text(message: str) -> str:
     scores = quiz_state["scores"]
     fan_type = FAN_ATTRIBUTE_TYPES[_fan_attribute_result_key(scores)]
     score_text = " / ".join(
-        f"{FAN_ATTRIBUTE_TYPES[key]['name']} {scores[key]}"
-        for key in FAN_ATTRIBUTE_ORDER
+        f"{FAN_ATTRIBUTE_TYPES[key]['name']} {scores[key]}" for key in FAN_ATTRIBUTE_ORDER
     )
     return (
         f"你的粉絲屬性是：{fan_type['name']}\n"

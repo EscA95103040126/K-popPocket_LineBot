@@ -109,8 +109,14 @@ class FakeAgent:
             "artist": artist,
             "cached_at": "2026-10-11T00:00:00+00:00",
             "cache_type": "absa",
-            "flex": {"type": "bubble", "body": {"type": "box", "layout": "vertical",
-                     "contents": [{"type": "text", "text": f"{artist} report"}]}},
+            "flex": {
+                "type": "bubble",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [{"type": "text", "text": f"{artist} report"}],
+                },
+            },
         }
 
 

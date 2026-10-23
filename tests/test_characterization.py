@@ -43,8 +43,7 @@ def _bias_radar_full_run() -> list[str]:
         (REPO_ROOT / "data/play_zone/bias_radar_questions.json").read_text(encoding="utf-8")
     )
     return ["本命雷達測驗"] + [
-        f"本命雷達:{index}:{question['options'][1]}"
-        for index, question in enumerate(questions)
+        f"本命雷達:{index}:{question['options'][1]}" for index, question in enumerate(questions)
     ]
 
 
@@ -115,11 +114,13 @@ def _run_mock_webhook(messages: list[str], user_id: str, tmp_path: Path) -> list
     for message in messages:
         response = client.post("/webhook", json={"message": message, "user_id": user_id})
         body = response.get_data(as_text=True)
-        outputs.append({
-            "status": response.status_code,
-            # The webhook returns JSON text with an HTML content type; compare it parsed.
-            "body": json.loads(body) if body.startswith("{") else body,
-        })
+        outputs.append(
+            {
+                "status": response.status_code,
+                # The webhook returns JSON text with an HTML content type; compare it parsed.
+                "body": json.loads(body) if body.startswith("{") else body,
+            }
+        )
     return outputs
 
 

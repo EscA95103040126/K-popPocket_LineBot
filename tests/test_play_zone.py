@@ -148,10 +148,7 @@ def test_bias_radar_recommends_member_from_csv_after_five_answers() -> None:
     )
     csv_path = REPO_ROOT / "data" / "play_zone" / "bias_radar_members.csv"
     with csv_path.open(newline="", encoding="utf-8") as file:
-        csv_recommendations = {
-            f"{row['artist']} {row['member']}"
-            for row in csv.DictReader(file)
-        }
+        csv_recommendations = {f"{row['artist']} {row['member']}" for row in csv.DictReader(file)}
 
     assert recommended in csv_recommendations
 
@@ -353,11 +350,7 @@ def test_photo_card_queue_avoids_short_term_repeats(tmp_path: Path) -> None:
     )
 
     draws = [bot_of(app).features.photo_card._load_photo_card_recommendation() for _ in range(3)]
-    draw_keys = {
-        (draw["artist"], draw["type"], draw["url"])
-        for draw in draws
-        if draw is not None
-    }
+    draw_keys = {(draw["artist"], draw["type"], draw["url"]) for draw in draws if draw is not None}
 
     assert len(draw_keys) == 3
 
@@ -570,7 +563,10 @@ def test_ai_entry_returns_ai_curator_entry_flex() -> None:
     assert payload["report"] == "AI 入坑"
     assert payload["flex"]["header"]["backgroundColor"] == "#6F5BA7"
     assert payload["flex"]["header"]["contents"][1]["text"] == "AI 入坑"
-    assert payload["flex"]["body"]["contents"][1]["contents"][1]["contents"][0]["text"] == "清冷女團入坑"
+    assert (
+        payload["flex"]["body"]["contents"][1]["contents"][1]["contents"][0]["text"]
+        == "清冷女團入坑"
+    )
 
 
 def test_ai_curator_preference_uses_local_fallback() -> None:
@@ -586,21 +582,17 @@ def test_ai_curator_preference_uses_local_fallback() -> None:
     assert payload["report"].startswith("🧭 AI 入坑")
     assert "清冷感" in payload["report"]
     assert payload["flex"]["header"]["contents"][0]["text"] == "接下來想看？"
-    button_texts = [
-        item["action"]["text"]
-        for item in payload["flex"]["body"]["contents"]
-    ]
+    button_texts = [item["action"]["text"] for item in payload["flex"]["body"]["contents"]]
     assert len(button_texts) == 6
     assert all(text.startswith("為什麼推薦 ") for text in button_texts[:3])
-    assert all(" " not in text.removeprefix("為什麼推薦 ").removesuffix("？") for text in button_texts[:3])
+    assert all(
+        " " not in text.removeprefix("為什麼推薦 ").removesuffix("？") for text in button_texts[:3]
+    )
     assert "本命雷達測驗" in button_texts
     assert "每日 MV" in button_texts
     assert "每日直拍" in button_texts
     assert not any(text.startswith("分析 ") for text in button_texts)
-    assert {
-        item.get("style")
-        for item in payload["flex"]["body"]["contents"]
-    } == {"secondary"}
+    assert {item.get("style") for item in payload["flex"]["body"]["contents"]} == {"secondary"}
     assert not any("color" in item for item in payload["flex"]["body"]["contents"])
 
 
@@ -614,13 +606,8 @@ def test_ai_curator_accepts_simple_appearance_preference() -> None:
     assert payload["report"].startswith("🧭 AI 入坑")
     assert "目前支援固定指令" not in payload["report"]
     assert payload["flex"]["header"]["contents"][0]["text"] == "接下來想看？"
-    button_texts = [
-        item["action"]["text"]
-        for item in payload["flex"]["body"]["contents"]
-    ]
-    reason_buttons = [
-        text for text in button_texts if text.startswith("為什麼推薦 ")
-    ]
+    button_texts = [item["action"]["text"] for item in payload["flex"]["body"]["contents"]]
+    reason_buttons = [text for text in button_texts if text.startswith("為什麼推薦 ")]
     assert len(reason_buttons) >= 2
     assert "本命雷達測驗" in button_texts
     assert "每日 MV" in button_texts
@@ -657,10 +644,7 @@ def test_ai_curator_accepts_artist_member_question() -> None:
     assert payload["report"].startswith("🧭 AI 入坑")
     assert "NMIXX" in payload["report"]
     assert context["member_candidates"]
-    assert {
-        member["artist"]
-        for member in context["member_candidates"][:3]
-    } == {"NMIXX"}
+    assert {member["artist"] for member in context["member_candidates"][:3]} == {"NMIXX"}
 
 
 def test_ai_curator_followup_has_three_reason_buttons_when_three_members() -> None:
@@ -668,10 +652,7 @@ def test_ai_curator_followup_has_three_reason_buttons_when_three_members() -> No
 
     response = client.post("/analyze", json={"message": "我喜歡小鹿臉的"})
     payload = response.get_json()
-    button_texts = [
-        item["action"]["text"]
-        for item in payload["flex"]["body"]["contents"]
-    ]
+    button_texts = [item["action"]["text"] for item in payload["flex"]["body"]["contents"]]
 
     assert response.status_code == 200
     assert len([text for text in button_texts if text.startswith("為什麼推薦 ")]) == 3
@@ -889,10 +870,12 @@ def test_webhook_mock_routes_reason_followup_after_fixed_commands() -> None:
 
     daily_response = json.loads(client.post("/webhook", json={"message": "每日 MV"}).data)
     ai_entry_response = json.loads(client.post("/webhook", json={"message": "AI 入坑"}).data)
-    reason_response = json.loads(client.post(
-        "/webhook",
-        json={"message": "為何推薦 Sullyoon？"},
-    ).data)
+    reason_response = json.loads(
+        client.post(
+            "/webhook",
+            json={"message": "為何推薦 Sullyoon？"},
+        ).data
+    )
 
     assert daily_response["mock_reply"].startswith("🎵 今日推薦 MV")
     assert ai_entry_response["mock_reply"].startswith("請直接輸入你的 K-pop 偏好")
@@ -930,15 +913,17 @@ def test_analyze_artist_payload_is_used_when_message_has_no_artist() -> None:
 def test_historical_weekly_chart_command_returns_selected_week(tmp_path: Path) -> None:
     repo = ChartHistoryRepository(db_path=tmp_path / "chart_history.db")
     repo.insert_chart_rows(
-        [{
-            "fetch_date": "2026-05-18",
-            "chart_date": "2026-05-11",
-            "source": "bugs",
-            "chart_type": "weekly",
-            "rank": 1,
-            "title": "Historical Song",
-            "artist": "Test Artist",
-        }]
+        [
+            {
+                "fetch_date": "2026-05-18",
+                "chart_date": "2026-05-11",
+                "source": "bugs",
+                "chart_type": "weekly",
+                "rank": 1,
+                "title": "Historical Song",
+                "artist": "Test Artist",
+            }
+        ]
     )
     client = make_app(make_deps(agent=KpopAnalysisAgent(chart_repo=repo))).test_client()
 
@@ -961,9 +946,7 @@ def test_weekly_chart_history_quick_reply_excludes_current_week() -> None:
         ]
     )
 
-    qr = ChartFeature(agent).build_weekly_chart_history_quick_reply(
-        current_chart_date="2026-05-18"
-    )
+    qr = ChartFeature(agent).build_weekly_chart_history_quick_reply(current_chart_date="2026-05-18")
 
     assert len(qr) == 1
     assert qr[0].label == "📅 5/11-5/17"
@@ -980,9 +963,7 @@ def test_weekly_chart_history_quick_reply_orders_oldest_to_newest() -> None:
         ]
     )
 
-    qr = ChartFeature(agent).build_weekly_chart_history_quick_reply(
-        current_chart_date="2026-06-01"
-    )
+    qr = ChartFeature(agent).build_weekly_chart_history_quick_reply(current_chart_date="2026-06-01")
 
     assert [action.label for action in qr] == [
         "📅 5/11-5/17",

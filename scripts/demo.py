@@ -1,4 +1,5 @@
 """Demo script: simulates live presentation queries via KpopAnalysisAgent."""
+
 from __future__ import annotations
 
 import sys
@@ -19,7 +20,7 @@ QUERIES = [
 def main() -> None:
     agent = KpopAnalysisAgent()
     for i, query in enumerate(QUERIES, start=1):
-        print(f"\n{'='*60}")
+        print(f"\n{'=' * 60}")
         print(f"[Demo {i}/{len(QUERIES)}] 輸入：{query}")
         print("=" * 60)
         try:
@@ -27,7 +28,7 @@ def main() -> None:
             print(report)
         except Exception as exc:
             print(f"[ERROR] 分析失敗：{exc}")
-    print(f"\n{'='*60}")
+    print(f"\n{'=' * 60}")
     print("Demo 完成。")
 
 

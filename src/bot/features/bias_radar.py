@@ -351,7 +351,9 @@ class BiasRadarFeature:
             "flex": self._build_bias_radar_result_flex_contents(result),
         }
 
-    def _store_bias_radar_session(self, user_id: str, question_index: int, answers: list[str]) -> None:
+    def _store_bias_radar_session(
+        self, user_id: str, question_index: int, answers: list[str]
+    ) -> None:
         self.bias_radar_sessions[user_id] = {
             "question_index": question_index,
             "answers": answers,
@@ -421,15 +423,10 @@ class BiasRadarFeature:
         if not members:
             raise ValueError("bias_radar_members.csv has no usable rows")
 
-        scored_rows = [
-            _score_bias_radar_member(member, answers)
-            for member in members
-        ]
+        scored_rows = [_score_bias_radar_member(member, answers) for member in members]
         max_score = max(score for score, _, _ in scored_rows)
         top_matches = [
-            (member, matched)
-            for score, member, matched in scored_rows
-            if score == max_score
+            (member, matched) for score, member, matched in scored_rows if score == max_score
         ]
         recommendation, matched = self.rng.choice(top_matches)
         matched_label_text = "、".join(matched) if matched else "整體氣質接近"

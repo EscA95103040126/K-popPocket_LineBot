@@ -84,11 +84,7 @@ def classify_comment(comment: str | None) -> str:
                     {
                         "role": "user",
                         "parts": [
-                            {
-                                "text": GEMINI_SENTIMENT_PROMPT.format(
-                                    comment=comment.strip()
-                                )
-                            }
+                            {"text": GEMINI_SENTIMENT_PROMPT.format(comment=comment.strip())}
                         ],
                     }
                 ],
@@ -101,9 +97,7 @@ def classify_comment(comment: str | None) -> str:
         )
         response.raise_for_status()
         data = response.json()
-        label = (
-            data["candidates"][0]["content"]["parts"][0].get("text", "")
-        ).strip().casefold()
+        label = (data["candidates"][0]["content"]["parts"][0].get("text", "")).strip().casefold()
     except Exception:
         logger.exception("Gemini sentiment classification failed; using neutral label.")
         return "neutral"

@@ -19,10 +19,7 @@ def main() -> None:
         try:
             payload = agent.preload_artist_cache(artist)
             success_count += 1
-            print(
-                f"OK {artist}: {artist_cache_path(artist)} "
-                f"(cached_at={payload['cached_at']})"
-            )
+            print(f"OK {artist}: {artist_cache_path(artist)} (cached_at={payload['cached_at']})")
         except Exception as exc:
             failed.append((artist, str(exc)))
             print(f"FAILED {artist}: {exc}")
