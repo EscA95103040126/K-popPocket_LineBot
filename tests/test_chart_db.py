@@ -9,13 +9,22 @@ def test_chart_db_returns_artist_trend(tmp_path: Path) -> None:
     repo = ChartHistoryRepository(db_path=db_path)
     repo.init_db()
 
-    seed(db_path=db_path)
+    csv_path = tmp_path / "seed.csv"
+    csv_path.write_text(
+        "fetch_date,chart_date,source,chart_type,rank,title,artist,album,change_rank\n"
+        "2026-09-28,2026-09-14,bugs,weekly,10,Song,aespa,Album,0\n"
+        "2026-09-28,2026-09-21,bugs,weekly,7,Song,aespa,Album,3\n"
+        "2026-09-28,2026-09-28,bugs,weekly,5,Song,aespa,Album,2\n",
+        encoding="utf-8",
+    )
+    assert seed(csv_path=csv_path, db_path=db_path) == 3
     result = repo.get_artist_trend("aespa", weeks=12)
 
     assert result["artist"] == "aespa"
     assert result["best_rank"] == min(item["rank"] for item in result["history"])
     assert result["weeks_on_chart"] == len({item["chart_date"] for item in result["history"]})
     assert result["history"]
+    assert result["weeks_on_chart"] == 3
 
 
 def test_chart_db_insert_chart_rows_is_idempotent(tmp_path: Path) -> None:

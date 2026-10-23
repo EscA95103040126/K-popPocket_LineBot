@@ -92,3 +92,24 @@ def test_fetch_bugs_weekly_chart_passes_chartdate_param(monkeypatch) -> None:
 
     assert rows
     assert captured["kwargs"]["params"] == {"chartdate": "20260518"}
+
+
+def test_parse_bugs_chart_reads_collaborators_without_artist_menu_label() -> None:
+    html = r"""
+    <div>2026.10.05 ~ 2026.10.11</div>
+    <table class="byChart"><tbody><tr>
+      <td><div class="ranking"><strong>1</strong></div></td>
+      <th><p class="title"><a title="Tic Tac Toe">Tic Tac Toe</a></p></th>
+      <td><p class="artist">
+        <a class="artistTitle" title="온유 (ONEW)">온유 (ONEW)</a>
+        <a class="more" title="아티스트 전체보기"
+           onclick="bugs.layermenu.openMultiArtistSearchResultPopLayer(this, '온유(ONEW)||온유 (ONEW)||80044241||OK\\n지코||지코 (ZICO)||80069449||OK', ''); return false;">온유 (ONEW)</a>
+      </p></td>
+    </tr></tbody></table>
+    """
+
+    rows = parse_bugs_weekly_chart(html, fetch_date="2026-10-13")
+
+    assert rows[0]["chart_date"] == "2026-10-05"
+    assert rows[0]["title"] == "Tic Tac Toe"
+    assert rows[0]["artist"] == "온유 (ONEW), 지코 (ZICO)"

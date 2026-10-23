@@ -7,6 +7,8 @@ from types import SimpleNamespace
 import app as app_module
 from app import app
 from PIL import Image
+from src.agent import KpopAnalysisAgent
+from src.tools.chart_db import ChartHistoryRepository
 
 
 def test_fan_attribute_quiz_starts_with_first_question() -> None:
@@ -1073,7 +1075,20 @@ def test_analyze_artist_payload_is_used_when_message_has_no_artist() -> None:
     assert payload["cache"]["artist"] == "aespa"
 
 
-def test_historical_weekly_chart_command_returns_selected_week() -> None:
+def test_historical_weekly_chart_command_returns_selected_week(monkeypatch, tmp_path: Path) -> None:
+    repo = ChartHistoryRepository(db_path=tmp_path / "chart_history.db")
+    repo.insert_chart_rows(
+        [{
+            "fetch_date": "2026-05-18",
+            "chart_date": "2026-05-11",
+            "source": "bugs",
+            "chart_type": "weekly",
+            "rank": 1,
+            "title": "Historical Song",
+            "artist": "Test Artist",
+        }]
+    )
+    monkeypatch.setattr(app_module, "agent", KpopAnalysisAgent(chart_repo=repo))
     client = app.test_client()
 
     response = client.post("/analyze", json={"message": "歷史週榜:2026-05-11"})
@@ -1084,6 +1099,7 @@ def test_historical_weekly_chart_command_returns_selected_week() -> None:
     assert payload["cache"]["chart_date"] == "2026-05-11"
     assert payload["report"].startswith("# Bugs 歷史週榜")
     assert "榜單日期：2026-05-11" in payload["report"]
+    assert "1. Historical Song - Test Artist" in payload["report"]
 
 
 def test_weekly_chart_history_quick_reply_excludes_current_week(monkeypatch) -> None:
