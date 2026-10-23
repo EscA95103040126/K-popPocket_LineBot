@@ -25,4 +25,4 @@ echo ""
 
 # 啟動 Flask
 cd "$PROJECT_ROOT"
-python3 app.py
+uv run python app.py
