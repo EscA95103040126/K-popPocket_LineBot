@@ -37,6 +37,26 @@ AI_CURATOR_REASON_CONTEXT_NAMESPACE = "ai_curator_reason"
 # names none of the keywords below, until a fixed command or the TTL ends that mode.
 AI_CURATOR_AWAITING_NAMESPACE = "ai_curator_awaiting"
 AI_CURATOR_AWAITING_TTL_SECONDS = 60 * 10
+# Last-resort routing: free text no other feature claimed that still reads like a
+# preference (「我喜歡比較年輕的，唱歌比較好的那種」) goes to AI 入坑, not the help text.
+AI_CURATOR_FREE_TEXT_CUES = (
+    "喜歡",
+    "想找",
+    "想看",
+    "想追",
+    "想聽",
+    "想認識",
+    "推薦",
+    "推坑",
+    "入坑",
+    "有沒有",
+    "求",
+    "適合",
+    "那種",
+    "那樣",
+    "類似",
+)
+AI_CURATOR_FREE_TEXT_MIN_CHARS = 6
 AI_CURATOR_ENTRY_TRIGGERS = {
     "我的雷達",
     "雷達",
@@ -620,6 +640,14 @@ class AiCuratorFeature:
             self.sessions.delete(AI_CURATOR_AWAITING_NAMESPACE, context.user_id)
             return False
         return bool(context.text.strip()) and not is_ai_curator_reason_followup(context.text)
+
+    def is_ai_curator_free_text_preference(self, context: MessageContext) -> bool:
+        compact = _compact_ai_curator_text(context.text)
+        if len(compact) < AI_CURATOR_FREE_TEXT_MIN_CHARS or self.is_fixed_command(context.text):
+            return False
+        if is_ai_curator_reason_followup(context.text):
+            return False
+        return any(cue in compact for cue in AI_CURATOR_FREE_TEXT_CUES)
 
     def _set_awaiting_preference(self, user_id: str | None) -> None:
         if user_id:

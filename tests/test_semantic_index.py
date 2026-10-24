@@ -219,3 +219,29 @@ def test_ai_curator_falls_back_to_v1_when_loader_returns_none() -> None:
 
     assert context["member_candidates"]
     assert context["member_notes"] == {}
+
+
+@pytest.mark.parametrize(
+    ("message", "expected"),
+    [
+        ("我喜歡比較年輕的，唱歌比較好的那種", True),
+        ("有沒有聲音很特別的人", True),
+        ("推薦", False),  # too short to describe a preference
+        ("今天天氣好熱喔", False),  # no preference cue
+        ("本命雷達測驗", False),  # fixed command
+        ("為什麼推薦 Karina", False),  # reason follow-up has its own route
+    ],
+)
+def test_free_text_preference_needs_a_cue_and_no_command(message: str, expected: bool) -> None:
+    from src.bot.dispatcher import MessageContext
+    from src.bot.routing import is_fixed_command
+
+    curator = AiCuratorFeature(
+        PlayZoneCatalog(REPO_ROOT),
+        FakeLlm(),
+        random.Random(0),
+        InMemorySessionStore(),
+        is_fixed_command=is_fixed_command,
+    )
+
+    assert curator.is_ai_curator_free_text_preference(MessageContext(message, "U1")) is expected
