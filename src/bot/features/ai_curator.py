@@ -384,16 +384,23 @@ def _ai_curator_artist_candidates(
     return list(dict.fromkeys(artist for artist in artists if artist))
 
 
+def _ai_curator_member_line(member: dict[str, str], notes: dict[str, str]) -> str:
+    name = f"- {member.get('artist')} {member.get('member')}"
+    if note := notes.get(member.get("id", "")):
+        # Only the curated note: the v1 tags (e.g. position=Vocal) led Gemini to call
+        # members who are not main vocalists 「主唱」.
+        return f"{name}：{note}"
+    # v1 fallback has no curated notes, so the tag table is all there is.
+    return (
+        f"{name}: position={member.get('position')}; vibe={member.get('vibe')}; "
+        f"relationship={member.get('relationship')}; persona={member.get('persona')}"
+    )
+
+
 def _build_ai_curator_prompt(query: str, context: dict) -> str:
     notes = context.get("member_notes") or {}
     member_lines = [
-        (
-            f"- {member.get('artist')} {member.get('member')}: "
-            f"position={member.get('position')}; vibe={member.get('vibe')}; "
-            f"relationship={member.get('relationship')}; persona={member.get('persona')}"
-            + (f"; 簡介={note}" if (note := notes.get(member.get("id", ""))) else "")
-        )
-        for member in context["member_candidates"][:5]
+        _ai_curator_member_line(member, notes) for member in context["member_candidates"][:5]
     ]
     daily_lines = [
         f"- {item.get('artist')} - {item.get('title')} (MV): {item.get('url')}"
@@ -411,9 +418,13 @@ def _build_ai_curator_prompt(query: str, context: dict) -> str:
     )
     return f"""你是 K-pop 入坑指南，請用繁體中文根據使用者偏好做自然語言推薦。
 只能根據下方候選資料回答，不要捏造不存在的資料。
-回答 5 行以內，口吻像 LINE Bot，清楚給 2-3 個推薦與下一步。
+回答 5 行以內，口吻像 LINE Bot。
+推薦對象是成員：從本命候選選 2-3 位，每位用一句話說明為什麼符合使用者的偏好。
+成員的定位（主唱、主舞、隊長等）和特質只能照候選資料寫，資料沒寫的就不要提。
 不要使用英文。不要評論候選資料是否完全符合；請從候選中選最接近者給出推薦。
 今日入口必須從「推薦 MV 候選」選一首，且藝人必須屬於本命候選前 3 位的所屬團體。
+最後一句的下一步只能是：點下方「為什麼推薦」按鈕看推薦理由，或直接再打字描述想要的風格。
+不要叫使用者回覆或輸入任何指令、關鍵字（例如「了解更多」），Bot 並不支援。
 {low_confidence_note}
 使用者偏好：
 {query}
