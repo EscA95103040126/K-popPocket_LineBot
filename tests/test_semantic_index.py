@@ -194,9 +194,7 @@ def test_ai_curator_uses_semantic_ranker_and_one_gemini_call() -> None:
     ranked = [catalog_members["twice-sana"], catalog_members["twice-nayeon"]]
     ranker = FakeRanker(ranked)
     loads = []
-    llm = FakeLlm(
-        text="推薦你先認識這兩位成員，笑容都很有感染力，舞台也很甜，先從今日入口的影片開始入坑吧！"
-    )
+    llm = FakeLlm(text='["笑起來超有感染力，甜度滿分", "https://not.a/reason"]')
     curator = _curator(llm, lambda: loads.append(1) or ranker)
 
     context = curator._build_ai_curator_context("我喜歡甜甜的女生")
@@ -209,10 +207,17 @@ def test_ai_curator_uses_semantic_ranker_and_one_gemini_call() -> None:
     assert len(llm.prompts) == 1
     prompt_lines = llm.prompts[0].splitlines()
     # The curated note replaces the v1 tags; members without one keep the tags.
-    assert "- TWICE SANA：測試用簡介" in prompt_lines
-    assert any(line.startswith("- TWICE NAYEON: position=") for line in prompt_lines)
-    assert "不要叫使用者回覆或輸入任何指令" in llm.prompts[0]
-    assert response["report"].startswith("推薦你先認識這兩位成員")
+    assert "1. TWICE SANA：測試用簡介" in prompt_lines
+    assert any(line.startswith("2. TWICE NAYEON: position=") for line in prompt_lines)
+    # Gemini's reasons fill the fixed layout; an unusable one falls back to the tags.
+    report_lines = response["report"].splitlines()
+    assert report_lines[:3] == [
+        "🧭 AI 入坑",
+        "根據你說的「我喜歡甜甜的女生」，我會這樣排：",
+        "1. TWICE SANA：笑起來超有感染力，甜度滿分。",
+    ]
+    assert report_lines[3].startswith("2. TWICE NAYEON：") and "適合先看本命雷達" in report_lines[3]
+    assert report_lines[4].startswith("今日入口：先看 ")
     assert loads == [1]
 
 
@@ -251,23 +256,20 @@ def test_free_text_preference_needs_a_cue_and_no_command(message: str, expected:
     assert curator.is_ai_curator_free_text_preference(MessageContext(message, "U1")) is expected
 
 
-def test_curator_answer_keeps_chinese_with_links_and_latin_names() -> None:
-    from src.bot.features.ai_curator import _clean_ai_curator_answer
+def test_parse_reasons_keeps_one_clean_line_per_member() -> None:
+    from src.bot.features.ai_curator import _parse_ai_curator_reasons
 
-    # A real Gemini answer: 57% of its letters are Latin because of links and names.
-    chinese = (
-        "您好！根據您的偏好，為您推薦本命候選中 RIIZE 的 Wonbin，他所屬團體出道曲即為"
-        "〈Get A Guitar〉，完美符合彈吉他設定。\n另外推薦 aespa 的音樂作品，您可以欣賞這兩首 MV：\n"
-        "1. aespa - Better Things: https://youtu.be/gfk3QLU1x0E\n"
-        "2. aespa - Next Level: https://youtu.be/4TWR90KJl84\n想了解更多成員資訊嗎？"
-    )
-    english = (
-        "Based on your preference I recommend RIIZE Wonbin, who plays guitar, and aespa. "
-        "Watch https://youtu.be/gfk3QLU1x0E to start. 推薦你看看。"
-    )
+    text = """```json
+["1. 出道曲〈Get A Guitar〉就和吉他有關", "Plays guitar in a band", "身為樂團成員，現場彈奏超有魅力！"]
+```"""
 
-    assert _clean_ai_curator_answer(chinese)
-    assert _clean_ai_curator_answer(english) == ""
+    assert _parse_ai_curator_reasons(text, 4) == [
+        "出道曲〈Get A Guitar〉就和吉他有關。",
+        None,  # not Chinese
+        "身為樂團成員，現場彈奏超有魅力！",
+        None,  # Gemini returned fewer reasons than members
+    ]
+    assert _parse_ai_curator_reasons("not json", 2) == [None, None]
 
 
 def test_llm_error_logs_status_without_the_api_key() -> None:
