@@ -245,3 +245,22 @@ def test_free_text_preference_needs_a_cue_and_no_command(message: str, expected:
     )
 
     assert curator.is_ai_curator_free_text_preference(MessageContext(message, "U1")) is expected
+
+
+def test_curator_answer_keeps_chinese_with_links_and_latin_names() -> None:
+    from src.bot.features.ai_curator import _clean_ai_curator_answer
+
+    # A real Gemini answer: 57% of its letters are Latin because of links and names.
+    chinese = (
+        "您好！根據您的偏好，為您推薦本命候選中 RIIZE 的 Wonbin，他所屬團體出道曲即為"
+        "〈Get A Guitar〉，完美符合彈吉他設定。\n另外推薦 aespa 的音樂作品，您可以欣賞這兩首 MV：\n"
+        "1. aespa - Better Things: https://youtu.be/gfk3QLU1x0E\n"
+        "2. aespa - Next Level: https://youtu.be/4TWR90KJl84\n想了解更多成員資訊嗎？"
+    )
+    english = (
+        "Based on your preference I recommend RIIZE Wonbin, who plays guitar, and aespa. "
+        "Watch https://youtu.be/gfk3QLU1x0E to start. 推薦你看看。"
+    )
+
+    assert _clean_ai_curator_answer(chinese)
+    assert _clean_ai_curator_answer(english) == ""
