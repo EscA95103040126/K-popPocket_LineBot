@@ -445,6 +445,14 @@ def _clean_ai_curator_answer(text: str) -> str:
     return fit_line_text(cleaned, limit=900)
 
 
+def _llm_error(error: Exception) -> str:
+    """Status code or exception type only: requests puts the API key (?key=...) in the URL
+    of its error messages, so the message itself must never reach the logs."""
+    response = getattr(error, "response", None)
+    status = getattr(response, "status_code", None)
+    return f"HTTP {status}" if status else type(error).__name__
+
+
 def _chinese_char_count(text: str) -> int:
     return len(re.findall(r"[一-鿿]", text))
 
@@ -1006,8 +1014,11 @@ class AiCuratorFeature:
                 response_mime_type="application/json",
             )
             return _parse_ai_curator_profile_json(text)
-        except Exception:
-            logger.warning("AI curator profile parse via Gemini failed; using keyword fallback.")
+        except Exception as error:
+            logger.warning(
+                "AI curator profile parse via Gemini failed (%s); using keyword fallback.",
+                _llm_error(error),
+            )
             return None
 
     def _extract_ai_curator_artist_preferences(self, compact_query: str) -> set[str]:
@@ -1131,10 +1142,17 @@ class AiCuratorFeature:
         try:
             prompt = _build_ai_curator_prompt(query, context)
             text = self.llm.generate(prompt, temperature=0.45, max_output_tokens=360)
-            return _clean_ai_curator_answer(text) or fallback
-        except Exception:
-            logger.warning("AI curator Gemini response failed; using fallback.")
+        except Exception as error:
+            logger.warning(
+                "AI curator Gemini response failed (%s); using fallback.", _llm_error(error)
+            )
             return fallback
+        cleaned = _clean_ai_curator_answer(text)
+        if not cleaned:
+            logger.warning(
+                "AI curator Gemini answer rejected (%d chars); using fallback.", len(text)
+            )
+        return cleaned or fallback
 
     def _ai_curator_reason_followup_response(
         self,
@@ -1260,8 +1278,10 @@ class AiCuratorFeature:
             prompt = self._build_ai_curator_reason_prompt(message, member_row)
             text = self.llm.generate(prompt, temperature=0.35, max_output_tokens=260)
             return _clean_ai_curator_reason_answer(text) or fallback
-        except Exception:
-            logger.warning("AI curator reason Gemini response failed; using fallback.")
+        except Exception as error:
+            logger.warning(
+                "AI curator reason Gemini response failed (%s); using fallback.", _llm_error(error)
+            )
             return fallback
 
     def _build_ai_curator_reason_prompt(self, message: str, member_row: dict[str, str]) -> str:

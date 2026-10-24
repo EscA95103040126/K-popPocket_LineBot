@@ -264,3 +264,18 @@ def test_curator_answer_keeps_chinese_with_links_and_latin_names() -> None:
 
     assert _clean_ai_curator_answer(chinese)
     assert _clean_ai_curator_answer(english) == ""
+
+
+def test_llm_error_logs_status_without_the_api_key() -> None:
+    import requests
+
+    from src.bot.features.ai_curator import _llm_error
+
+    response = requests.Response()
+    response.status_code = 429
+    error = requests.HTTPError(
+        "429 for url: https://x/generateContent?key=SECRET", response=response
+    )
+
+    assert _llm_error(error) == "HTTP 429"
+    assert _llm_error(requests.Timeout("timed out ?key=SECRET")) == "Timeout"
