@@ -433,11 +433,98 @@
       "status": 200
     }
   ],
-  "ai_curator_free_text_after_entry": [
+  "ai_curator_free_text": [
     {
       "body": {
-        "flex": null,
-        "report": "目前支援固定指令：\n1. 分析 aespa\n2. 分析 IVE\n3. 本週榜單\n4. 互動專區\n5. 每日一首\n6. 我的K-pop 口袋\n\n請用「分析 藝人名」取得完整報告。"
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7F3FF",
+            "contents": [
+              {
+                "action": {
+                  "label": "為什麼推薦 Stella？",
+                  "text": "為什麼推薦 Stella？",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "為什麼推薦 Jungwon？",
+                  "text": "為什麼推薦 Jungwon？",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "為什麼推薦 Rei？",
+                  "text": "為什麼推薦 Rei？",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "本命雷達",
+                  "text": "本命雷達測驗",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "抽 MV",
+                  "text": "每日 MV",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              },
+              {
+                "action": {
+                  "label": "抽直拍",
+                  "text": "每日直拍",
+                  "type": "message"
+                },
+                "height": "sm",
+                "style": "secondary",
+                "type": "button"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "spacing": "sm",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#6F5BA7",
+            "contents": [
+              {
+                "color": "#FFFFFF",
+                "size": "md",
+                "text": "接下來想看？",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "14px",
+            "type": "box"
+          },
+          "size": "kilo",
+          "type": "bubble"
+        },
+        "report": "🧭 AI 入坑\n根據你說的「我喜歡甜甜的、笑起來很有感染力的女生」，我會這樣排：\n1. Hearts2Hearts STELLA：清冷|甜系，適合先看本命雷達。\n2. ENHYPEN JUNGWON：甜系|反差，適合先看本命雷達。\n3. IVE REI：甜系|反差，適合先看本命雷達。\n今日入口：先看 ENHYPEN《Blessed-Cursed》\nhttps://youtu.be/osmHArcf_aE?si=j4XDoA6KNXK2Fugm"
       },
       "status": 200
     },
@@ -665,8 +752,8 @@
             "contents": [
               {
                 "action": {
-                  "label": "為什麼推薦 Stella？",
-                  "text": "為什麼推薦 Stella？",
+                  "label": "為什麼推薦 Kai？",
+                  "text": "為什麼推薦 Kai？",
                   "type": "message"
                 },
                 "height": "sm",
@@ -675,8 +762,8 @@
               },
               {
                 "action": {
-                  "label": "為什麼推薦 Jungwon？",
-                  "text": "為什麼推薦 Jungwon？",
+                  "label": "為什麼推薦 Narin？",
+                  "text": "為什麼推薦 Narin？",
                   "type": "message"
                 },
                 "height": "sm",
@@ -685,8 +772,8 @@
               },
               {
                 "action": {
-                  "label": "為什麼推薦 Rei？",
-                  "text": "為什麼推薦 Rei？",
+                  "label": "為什麼推薦 Huh Yun Jin？",
+                  "text": "為什麼推薦 Huh Yun Jin？",
                   "type": "message"
                 },
                 "height": "sm",
@@ -747,7 +834,116 @@
           "size": "kilo",
           "type": "bubble"
         },
-        "report": "🧭 AI 入坑\n根據你說的「我喜歡甜甜的、笑起來很有感染力的女生」，我會這樣排：\n1. Hearts2Hearts STELLA：清冷|甜系，適合先看本命雷達。\n2. ENHYPEN JUNGWON：甜系|反差，適合先看本命雷達。\n3. IVE REI：甜系|反差，適合先看本命雷達。\n今日入口：先看 ENHYPEN《Blessed-Cursed》\nhttps://youtu.be/osmHArcf_aE?si=j4XDoA6KNXK2Fugm"
+        "report": "🧭 AI 入坑\n根據你說的「聲音低沉一點的男生」，我會這樣排：\n1. EXO KAI：霸氣|清冷，適合先看本命雷達。\n2. MEOVV NARIN：霸氣|反差，適合先看本命雷達。\n3. LE SSERAFIM HUH YUN JIN：霸氣|反差，適合先看本命雷達。\n今日入口：先看 EXO《Monster》\nhttps://youtu.be/KSH-FVVtTf0?si=1t32uSMnN1eGJm44"
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "flex": {
+          "body": {
+            "backgroundColor": "#F7FAF8",
+            "contents": [
+              {
+                "color": "#3F554A",
+                "size": "md",
+                "text": "想看：",
+                "type": "text",
+                "weight": "bold",
+                "wrap": true
+              },
+              {
+                "action": {
+                  "data": "本命雷達:0:男團",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "男團",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:0:女團",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "女團",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              },
+              {
+                "action": {
+                  "data": "本命雷達:0:都可以",
+                  "type": "postback"
+                },
+                "backgroundColor": "#FFFFFF",
+                "contents": [
+                  {
+                    "color": "#5D6F66",
+                    "size": "md",
+                    "text": "都可以",
+                    "type": "text",
+                    "weight": "bold"
+                  }
+                ],
+                "cornerRadius": "8px",
+                "layout": "vertical",
+                "paddingAll": "12px",
+                "type": "box"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "spacing": "md",
+            "type": "box"
+          },
+          "header": {
+            "backgroundColor": "#5D6F66",
+            "contents": [
+              {
+                "color": "#EAF4EE",
+                "size": "xs",
+                "text": "本命雷達測驗",
+                "type": "text"
+              },
+              {
+                "color": "#FFFFFF",
+                "margin": "sm",
+                "size": "xl",
+                "text": "Q1/5",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "layout": "vertical",
+            "paddingAll": "18px",
+            "type": "box"
+          },
+          "size": "mega",
+          "type": "bubble"
+        },
+        "report": "本命雷達測驗 Q1/5：請在 LINE 卡片中選擇最符合你的答案。"
       },
       "status": 200
     },

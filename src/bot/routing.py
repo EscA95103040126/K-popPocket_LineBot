@@ -135,6 +135,12 @@ def build_dispatcher(features: Features) -> Dispatcher:
                 lambda c: is_ai_curator_reason_followup(c.text),
                 ai_curator.ai_curator_reason_reply,
             ),
+            # Last so every feature above gets the message first.
+            Handler(
+                "ai_curator_free_text",
+                ai_curator.is_ai_curator_free_text_preference,
+                ai_curator.ai_curator_preference_reply,
+            ),
         ],
         fallback=Handler("fixed_command_help", lambda c: True, menus.fixed_command_help_reply),
     )
