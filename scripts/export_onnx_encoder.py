@@ -1,4 +1,4 @@
-"""Build the int8 ONNX query encoder the bot ships for AI 入坑 v2.
+"""Build the int8 ONNX encoders for AI 入坑.
 
 The bot only needs to embed one short query per request, so it runs BAAI/bge-m3
 through onnxruntime instead of torch. This script downloads the official ONNX export
@@ -7,7 +7,8 @@ Gather, which alone is ~1GB in fp32) and writes model.onnx + tokenizer.json.
 
 With --source it exports a locally fine-tuned SentenceTransformer (v3, see
 scripts/train_encoder.py) through torch instead, with the same CLS + L2-normalize
-`sentence_embedding` output the bot expects, then quantizes it the same way.
+`sentence_embedding` output the bot expects, then quantizes it the same way. The bot
+ships the v3 export (models/bge-m3-v3-int8/, see src/bot/semantic_index.py).
 
 Usage:
     python scripts/export_onnx_encoder.py                 # writes models/bge-m3-int8/
@@ -30,7 +31,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.bot.semantic_index import ONNX_ENCODER_DIR
+from src.bot.semantic_index import OFFICIAL_ONNX_DIR, ONNX_ENCODER_DIR
 
 SOURCE_REPO = "BAAI/bge-m3"
 SOURCE_FILES = (
@@ -46,7 +47,9 @@ def main() -> None:
     from onnxruntime.quantization import QuantType, quantize_dynamic
 
     args = _parse_args()
-    out_dir = Path(args.out)
+    out_dir = Path(
+        args.out or PROJECT_ROOT / (ONNX_ENCODER_DIR if args.source else OFFICIAL_ONNX_DIR)
+    )
     out_dir.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory() as work_dir:
         if args.source:
@@ -109,7 +112,7 @@ def _export_local_model(source: Path, work_dir: Path) -> None:
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", help="local SentenceTransformer dir to export")
-    parser.add_argument("--out", default=str(PROJECT_ROOT / ONNX_ENCODER_DIR))
+    parser.add_argument("--out", help="defaults to the shipped dir with --source, else v2's")
     return parser.parse_args()
 
 

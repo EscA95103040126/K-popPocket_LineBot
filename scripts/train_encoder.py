@@ -15,7 +15,7 @@ hours in swap.
 Usage (needs the `curator` dependency group; runs on Apple Silicon MPS):
     uv run --group curator python scripts/train_encoder.py
     uv run --group curator python scripts/export_onnx_encoder.py \\
-        --source models/bge-m3-curator-v3 --out models/bge-m3-v3-int8
+        --source models/bge-m3-curator-v3   # writes models/bge-m3-v3-int8/
 """
 
 from __future__ import annotations

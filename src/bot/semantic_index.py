@@ -6,8 +6,9 @@ profile + Grok enrichment, see docs/semantic_curator/PLAN.md) and queries are ra
 by embedding cosine similarity against those documents.
 
 Two encoders produce the embeddings: `SentenceTransformerEncoder` (the `curator`
-dependency group, for comparing models offline) and `OnnxEncoder`, the int8 bge-m3
-the bot ships, which only needs onnxruntime, tokenizers and numpy.
+dependency group, for comparing models offline) and `OnnxEncoder`, the int8 encoder
+the bot ships (v3 since it beat v2 on member-level hits), which only needs
+onnxruntime, tokenizers and numpy.
 """
 
 from __future__ import annotations
@@ -27,7 +28,10 @@ CURATOR_DATA_DIR = Path("data") / "curator"
 PROFILES_FILENAME = "member_profiles.csv"
 ENRICHMENT_FILENAME = "grok_enrichment.csv"
 GROUPS_FILENAME = "grok_groups.csv"
-ONNX_ENCODER_DIR = Path("models") / "bge-m3-int8"
+# The encoder the bot ships: v3, bge-m3 LoRA-tuned on synthetic queries, int8.
+ONNX_ENCODER_DIR = Path("models") / "bge-m3-v3-int8"
+# v2: the official bge-m3 ONNX export quantized to int8, kept for evaluation.
+OFFICIAL_ONNX_DIR = Path("models") / "bge-m3-int8"
 ONNX_MAX_TOKENS = 512
 MEMBER_EMBEDDINGS_FILENAME = "member_embeddings.npz"
 NOTE_PROFILE_CHARS = 70
@@ -60,7 +64,7 @@ EMBEDDING_MODELS: dict[str, EmbeddingModelSpec] = {
     ),
 }
 
-# The int8 ONNX export of bge-m3 built by scripts/export_onnx_encoder.py.
+# Evaluation key for OFFICIAL_ONNX_DIR (scripts/evaluate_curator.py).
 ONNX_MODEL_KEY = "bge-m3-int8"
 
 GENDER_LABELS = {"female": "女團成員", "male": "男團成員"}
@@ -129,7 +133,7 @@ class OnnxEncoder:
 
 def build_encoder(model_key: str, base_dir: Path | None = None):
     if model_key == ONNX_MODEL_KEY:
-        return OnnxEncoder((base_dir or Path(".")) / ONNX_ENCODER_DIR)
+        return OnnxEncoder((base_dir or Path(".")) / OFFICIAL_ONNX_DIR)
     return SentenceTransformerEncoder(EMBEDDING_MODELS[model_key])
 
 
@@ -279,8 +283,8 @@ def write_member_embeddings(base_dir: Path, members: list[dict[str, str]], encod
 class SemanticMemberRanker:
     """What the bot uses at runtime: v2 ranking plus short notes for the answer prompt.
 
-    The v2 setup that won the offline evaluation (docs/semantic_curator/PLAN.md):
-    int8 bge-m3, Gemini profile + Grok enrichment documents, gender filter only.
+    The setup that won the offline evaluation (docs/semantic_curator/PLAN.md): the v3
+    int8 encoder over Gemini profile + Grok enrichment documents, gender filter only.
     """
 
     def __init__(
