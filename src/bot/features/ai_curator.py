@@ -57,6 +57,7 @@ AI_CURATOR_FREE_TEXT_CUES = (
     "類似",
 )
 AI_CURATOR_FREE_TEXT_MIN_CHARS = 6
+AI_CURATOR_MIN_CHINESE_CHARS = 30
 AI_CURATOR_ENTRY_TRIGGERS = {
     "我的雷達",
     "雷達",
@@ -437,9 +438,15 @@ def _clean_ai_curator_answer(text: str) -> str:
     suspicious_markers = ("not explicitly", "let'", "let's", "candidate", "closest")
     if any(marker in cleaned.casefold() for marker in suspicious_markers):
         return ""
-    if _ascii_letter_ratio(cleaned) > 0.35:
+    if _chinese_char_count(re.sub(r"https?://\S+", "", cleaned)) < AI_CURATOR_MIN_CHINESE_CHARS:
+        # MV links and Latin artist, member and song names push a normal Chinese answer
+        # past any Latin-letter ratio, so judge the language by how much Chinese is left.
         return ""
     return fit_line_text(cleaned, limit=900)
+
+
+def _chinese_char_count(text: str) -> int:
+    return len(re.findall(r"[一-鿿]", text))
 
 
 def _ascii_letter_ratio(text: str) -> float:
