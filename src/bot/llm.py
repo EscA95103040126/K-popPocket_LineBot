@@ -6,6 +6,10 @@ import requests
 
 from src.agent import GEMINI_API_URL, GEMINI_NO_THINKING, GEMINI_REQUEST_TIMEOUT_SECONDS
 
+# The free-tier flash-lite preview answered AI 入坑 prompts in 2-18s, so the bot waits
+# longer than the 10s default; it must stay well under gunicorn's 30s worker timeout.
+BOT_GEMINI_TIMEOUT_SECONDS = 20
+
 
 class GeminiTextClient:
     """Minimal Gemini generateContent client; disabled when no API key is configured."""

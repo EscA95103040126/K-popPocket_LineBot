@@ -207,7 +207,11 @@ def test_ai_curator_uses_semantic_ranker_and_one_gemini_call() -> None:
     assert context["low_confidence"] is False
     # Only the answer prompt: v2 skips the Gemini tag-profile parse.
     assert len(llm.prompts) == 1
-    assert "簡介=測試用簡介" in llm.prompts[0]
+    prompt_lines = llm.prompts[0].splitlines()
+    # The curated note replaces the v1 tags; members without one keep the tags.
+    assert "- TWICE SANA：測試用簡介" in prompt_lines
+    assert any(line.startswith("- TWICE NAYEON: position=") for line in prompt_lines)
+    assert "不要叫使用者回覆或輸入任何指令" in llm.prompts[0]
     assert response["report"].startswith("推薦你先認識這兩位成員")
     assert loads == [1]
 

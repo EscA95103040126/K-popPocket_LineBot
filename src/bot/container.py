@@ -16,7 +16,7 @@ from src.bot.features.daily_kpop import DailyKpopFeature
 from src.bot.features.member_quiz import MemberQuizFeature
 from src.bot.features.photo_card import PhotoCardFeature
 from src.bot.features.pocket import PocketFeature
-from src.bot.llm import GeminiTextClient
+from src.bot.llm import BOT_GEMINI_TIMEOUT_SECONDS, GeminiTextClient
 from src.bot.routing import build_dispatcher, is_fixed_command
 from src.bot.semantic_index import SemanticMemberRanker
 from src.bot.sessions import InMemorySessionStore, SessionStore, build_session_store
@@ -46,7 +46,11 @@ class BotDeps:
             settings=settings,
             agent=KpopAnalysisAgent(config=settings),
             radar_repo=radar_repo,
-            llm=GeminiTextClient(settings.gemini_api_key, settings.gemini_model),
+            llm=GeminiTextClient(
+                settings.gemini_api_key,
+                settings.gemini_model,
+                timeout_seconds=BOT_GEMINI_TIMEOUT_SECONDS,
+            ),
             sessions=build_session_store(radar_repo.client),
             semantic_curator=True,
         )
