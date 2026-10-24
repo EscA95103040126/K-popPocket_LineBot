@@ -23,6 +23,10 @@ dependencies = [
 [dependency-groups]
 curator = [
     { include-group = "encoder-build" },
+    "accelerate>=1.15.0",
+    "datasets>=5.1.0",
+    "opencc>=1.4.2",
+    "peft>=0.21.2",
     "sentence-transformers>=5",
 ]
 dev = [
