@@ -57,7 +57,9 @@ AI_CURATOR_FREE_TEXT_CUES = (
     "類似",
 )
 AI_CURATOR_FREE_TEXT_MIN_CHARS = 6
-AI_CURATOR_MIN_CHINESE_CHARS = 30
+AI_CURATOR_ANSWER_MEMBERS = 3
+AI_CURATOR_REASON_MIN_CHINESE_CHARS = 6
+AI_CURATOR_REASON_MAX_CHARS = 60
 AI_CURATOR_ENTRY_TRIGGERS = {
     "我的雷達",
     "雷達",
@@ -398,62 +400,60 @@ def _ai_curator_member_line(member: dict[str, str], notes: dict[str, str]) -> st
 
 
 def _build_ai_curator_prompt(query: str, context: dict) -> str:
+    """Ask Gemini for one reason per recommended member; the reply layout stays in code.
+
+    Free-form answers drifted (dropped group names, MV-only picks, invented commands),
+    so Gemini now fills the reasons into the same layout as the fallback answer.
+    """
+
     notes = context.get("member_notes") or {}
+    members = context["member_candidates"][:AI_CURATOR_ANSWER_MEMBERS]
     member_lines = [
-        _ai_curator_member_line(member, notes) for member in context["member_candidates"][:5]
+        f"{index}. " + _ai_curator_member_line(member, notes).removeprefix("- ")
+        for index, member in enumerate(members, start=1)
     ]
-    daily_lines = [
-        f"- {item.get('artist')} - {item.get('title')} (MV): {item.get('url')}"
-        for item in context["daily_items"][:5]
-    ]
-    artist_lines = [
-        f"- {item['artist']}: {item['chart']}; {item['sentiment']}; insight={item['insight']}"
-        for item in context["artist_summaries"]
-    ]
-    low_confidence_note = (
-        "（注意：這次沒有解析到明確的偏好條件，下方候選是依大方向挑的；"
-        "請在開頭用一句話誠實說明，並邀請使用者補充想要的風格，再給推薦。）\n"
-        if context.get("low_confidence")
-        else ""
-    )
-    return f"""你是 K-pop 入坑指南，請用繁體中文根據使用者偏好做自然語言推薦。
-只能根據下方候選資料回答，不要捏造不存在的資料。
-回答 5 行以內，口吻像 LINE Bot。
-推薦對象是成員：從本命候選選 2-3 位，每位用一句話說明為什麼符合使用者的偏好。
-成員的定位（主唱、主舞、隊長等）和特質只能照候選資料寫，資料沒寫的就不要提。
-不要使用英文。不要評論候選資料是否完全符合；請從候選中選最接近者給出推薦。
-今日入口必須從「推薦 MV 候選」選一首，且藝人必須屬於本命候選前 3 位的所屬團體。
-最後一句的下一步只能是：點下方「為什麼推薦」按鈕看推薦理由，或直接再打字描述想要的風格。
-不要叫使用者回覆或輸入任何指令、關鍵字（例如「了解更多」），Bot 並不支援。
-{low_confidence_note}
+    return f"""你是 K-pop 入坑指南。推薦系統已依使用者的偏好排好下面 {len(members)} 位成員，
+請為每位成員寫一句繁體中文（台灣用語）的推薦理由。
+
+規則：
+- 每句 15 到 30 字（短一點，LINE 上才好讀），說明這位成員為什麼符合使用者的偏好，語氣親切可愛。
+- 只能根據成員資料寫；定位（主唱、主舞、隊長等）和特質資料沒寫就不要提，不要捏造。
+- 不要寫成員名字或團名（版面會另外顯示），不要加網址、表情符號或編號。
+- 只輸出 JSON 字串陣列，順序和成員相同，例如 ["理由一", "理由二", "理由三"]。
+
 使用者偏好：
 {query}
 
-本命候選：
-{chr(10).join(member_lines) or "- 無"}
-
-推薦 MV 候選：
-{chr(10).join(daily_lines) or "- 無"}
-
-藝人分析摘要：
-{chr(10).join(artist_lines) or "- 無"}
+成員：
+{chr(10).join(member_lines)}
 """
 
 
-def _clean_ai_curator_answer(text: str) -> str:
-    cleaned = text.strip()
-    cleaned = re.sub(r"^```(?:text)?", "", cleaned).strip()
-    cleaned = re.sub(r"```$", "", cleaned).strip()
-    if len(cleaned) < 30:
-        return ""
-    suspicious_markers = ("not explicitly", "let'", "let's", "candidate", "closest")
-    if any(marker in cleaned.casefold() for marker in suspicious_markers):
-        return ""
-    if _chinese_char_count(re.sub(r"https?://\S+", "", cleaned)) < AI_CURATOR_MIN_CHINESE_CHARS:
-        # MV links and Latin artist, member and song names push a normal Chinese answer
-        # past any Latin-letter ratio, so judge the language by how much Chinese is left.
-        return ""
-    return fit_line_text(cleaned, limit=900)
+def _parse_ai_curator_reasons(text: str, count: int) -> list[str | None]:
+    """One cleaned reason per member, None where Gemini's line is unusable."""
+
+    match = re.search(r"\[.*\]", text, re.DOTALL)
+    try:
+        values = json.loads(match.group(0)) if match else []
+    except ValueError:
+        values = []
+    if not isinstance(values, list):
+        values = []
+    reasons: list[str | None] = []
+    for index in range(count):
+        value = values[index] if index < len(values) else None
+        reasons.append(_clean_ai_curator_reason(value) if isinstance(value, str) else None)
+    return reasons
+
+
+def _clean_ai_curator_reason(value: str) -> str | None:
+    reason = re.sub(r"^\s*(?:\d+[.、．)]\s*)", "", " ".join(value.split())).strip()
+    if "http" in reason.casefold() or len(reason) > AI_CURATOR_REASON_MAX_CHARS:
+        return None
+    if _chinese_char_count(reason) < AI_CURATOR_REASON_MIN_CHINESE_CHARS:
+        # Too short to say anything, or not Chinese at all.
+        return None
+    return reason if reason[-1] in "。！？!?～~" else f"{reason}。"
 
 
 def _llm_error(error: Exception) -> str:
@@ -477,6 +477,14 @@ def _ascii_letter_ratio(text: str) -> float:
 
 
 def _fallback_ai_curator_answer(query: str, context: dict) -> str:
+    return _render_ai_curator_answer(query, context, reasons=None)
+
+
+def _render_ai_curator_answer(
+    query: str,
+    context: dict,
+    reasons: list[str | None] | None,
+) -> str:
     member_candidates = context.get("member_candidates", [])
     daily_items = context.get("daily_items", [])
     lines = [
@@ -484,10 +492,11 @@ def _fallback_ai_curator_answer(query: str, context: dict) -> str:
         f"根據你說的「{query}」，我會這樣排：",
     ]
     if member_candidates:
-        for index, member in enumerate(member_candidates[:3], start=1):
+        for index, member in enumerate(member_candidates[:AI_CURATOR_ANSWER_MEMBERS], start=1):
+            reason = reasons[index - 1] if reasons and index <= len(reasons) else None
             lines.append(
                 f"{index}. {member['artist']} {member['member']}："
-                f"{member.get('vibe', '風格鮮明')}，適合先看本命雷達。"
+                + (reason or f"{member.get('vibe', '風格鮮明')}，適合先看本命雷達。")
             )
     elif daily_items:
         for index, item in enumerate(daily_items[:3], start=1):
@@ -1148,22 +1157,28 @@ class AiCuratorFeature:
         return summaries
 
     def _generate_ai_curator_answer(self, query: str, context: dict, fallback: str) -> str:
-        if not self.llm.enabled:
+        members = context.get("member_candidates", [])[:AI_CURATOR_ANSWER_MEMBERS]
+        if not self.llm.enabled or not members:
             return fallback
         try:
-            prompt = _build_ai_curator_prompt(query, context)
-            text = self.llm.generate(prompt, temperature=0.45, max_output_tokens=360)
+            text = self.llm.generate(
+                _build_ai_curator_prompt(query, context),
+                temperature=0.45,
+                max_output_tokens=360,
+                response_mime_type="application/json",
+            )
         except Exception as error:
             logger.warning(
                 "AI curator Gemini response failed (%s); using fallback.", _llm_error(error)
             )
             return fallback
-        cleaned = _clean_ai_curator_answer(text)
-        if not cleaned:
+        reasons = _parse_ai_curator_reasons(text, len(members))
+        if not any(reasons):
             logger.warning(
-                "AI curator Gemini answer rejected (%d chars); using fallback.", len(text)
+                "AI curator Gemini reasons rejected (%d chars); using fallback.", len(text)
             )
-        return cleaned or fallback
+            return fallback
+        return _render_ai_curator_answer(query, context, reasons)
 
     def _ai_curator_reason_followup_response(
         self,
