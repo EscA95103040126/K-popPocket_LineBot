@@ -48,7 +48,10 @@ from src.bot.llm import GeminiTextClient
 from src.bot.semantic_index import (
     EMBEDDING_MODELS,
     ONNX_MODEL_KEY,
+    EmbeddingModelSpec,
+    OnnxEncoder,
     SemanticMemberIndex,
+    SentenceTransformerEncoder,
     _compact,
     apply_query_rules,
     build_encoder,
@@ -72,6 +75,16 @@ QUERY_SETS = ("codex", "real-dev", "real-test", "real-test-discovery")
 # are the least reliable; good enough to pick one weight, not to report results.
 REAL_DEV_PLATFORMS = {"Reddit"}
 GROUP_WEIGHT_GRID = (0.25, 0.5, 0.75, 1.0, 1.5)
+# v3: bge-m3 fine-tuned on synthetic queries (scripts/train_encoder.py), before and
+# after the int8 export the bot would ship.
+LOCAL_ENCODERS = {
+    "bge-m3-v3": lambda: SentenceTransformerEncoder(
+        EmbeddingModelSpec(str(PROJECT_ROOT / "models" / "bge-m3-curator-v3"))
+    ),
+    "bge-m3-v3-int8": lambda: OnnxEncoder(PROJECT_ROOT / "models" / "bge-m3-v3-int8"),
+    # Base bge-m3 through the same torch export as v3, to compare like with like.
+    "bge-m3-base-int8": lambda: OnnxEncoder(PROJECT_ROOT / "models" / "bge-m3-base-int8"),
+}
 SEEDS = (0, 1, 2, 3, 4)
 KS = (3, 5)
 MRR_DEPTH = 10
@@ -142,8 +155,13 @@ def build_v1_ranker(seed: int, *, use_llm: bool) -> Ranker:
 def _semantic_index(model_key: str, include_enrichment: bool) -> SemanticMemberIndex:
     members = PlayZoneCatalog(PROJECT_ROOT).load_bias_radar_members()
     documents = load_member_documents(PROJECT_ROOT, members, include_enrichment=include_enrichment)
+    encoder = (
+        LOCAL_ENCODERS[model_key]()
+        if model_key in LOCAL_ENCODERS
+        else build_encoder(model_key, PROJECT_ROOT)
+    )
     return SemanticMemberIndex(
-        build_encoder(model_key, PROJECT_ROOT),
+        encoder,
         documents,
         group_documents=load_group_documents(PROJECT_ROOT),
         member_artists={member["id"]: member["artist"] for member in members},
@@ -181,7 +199,7 @@ RANKERS: dict[str, Callable[[int], Ranker]] = {
     "v1-keyword": lambda seed: build_v1_ranker(seed, use_llm=False),
     "v1": lambda seed: build_v1_ranker(seed, use_llm=True),
 }
-for _model_key in [*EMBEDDING_MODELS, ONNX_MODEL_KEY]:
+for _model_key in [*EMBEDDING_MODELS, ONNX_MODEL_KEY, *LOCAL_ENCODERS]:
     # (suffix, Grok member enrichment, group weight, query rules)
     _variants = [
         ("-gemini-only", False, 0.0, False),

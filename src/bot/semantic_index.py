@@ -67,11 +67,11 @@ GENDER_LABELS = {"female": "女團成員", "male": "男團成員"}
 
 
 class SentenceTransformerEncoder:
-    def __init__(self, model_key: str) -> None:
+    def __init__(self, spec: EmbeddingModelSpec) -> None:
         from sentence_transformers import SentenceTransformer
 
-        self.spec = EMBEDDING_MODELS[model_key]
-        self.model = SentenceTransformer(self.spec.name)
+        self.spec = spec
+        self.model = SentenceTransformer(spec.name)
 
     def encode_queries(self, texts: list[str]):
         return self._encode(texts, self.spec.query_prompt)
@@ -130,7 +130,7 @@ class OnnxEncoder:
 def build_encoder(model_key: str, base_dir: Path | None = None):
     if model_key == ONNX_MODEL_KEY:
         return OnnxEncoder((base_dir or Path(".")) / ONNX_ENCODER_DIR)
-    return SentenceTransformerEncoder(model_key)
+    return SentenceTransformerEncoder(EMBEDDING_MODELS[model_key])
 
 
 def load_member_documents(
