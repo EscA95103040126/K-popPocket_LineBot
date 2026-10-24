@@ -108,7 +108,7 @@ AI 入坑支援自然語言偏好，例如：
 
 若 Gemini API 可用，會產生較自然的推薦文字；若 API 不可用，會使用本地 fallback 產生穩定回覆。
 
-#### v2：語意向量推薦
+#### v2 / v3：語意向量推薦
 
 v1 會先把使用者的話對應到約 34 個固定標籤，再依 `bias_radar_members.csv` 的標籤重疊數排序，標籤表以外的說法（例如「像 Karina 那種」「適合深夜開車聽」）會直接遺失。v2 改為：
 
@@ -116,17 +116,27 @@ v1 會先把使用者的話對應到約 34 個固定標籤，再依 `bias_radar_
 2. 以 int8 量化的 [BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3) 把描述和使用者的話轉成向量，依相似度排序；使用者明說女團或男團時，再做性別過濾。
 3. 推薦文字的提示詞加入成員簡介與團體概念（`data/curator/grok_groups.csv`），讓 Gemini 說得出「為什麼推這團」。v2 不再呼叫 Gemini 解析偏好，每次推薦只用 1 次 Gemini。
 
-評估結果（團體命中 @3，見 `scripts/evaluate_curator.py` 與 `docs/semantic_curator/PLAN.md`）：
+v3 再用 LoRA 微調 bge-m3：本機 MLX 上的 Qwen3-4B 依成員描述寫出 2,267 句粉絲口吻的需求（`scripts/generate_synthetic_queries.py`），以 `scripts/train_encoder.py` 訓練（只訓練 0.41% 的參數）。目前上線的是 v3。
 
-| 測試集 | v1（關鍵字 + Gemini） | v2（int8 bge-m3） |
-| --- | --- | --- |
-| Codex 撰寫的 60 題 | 44% | 62% |
-| 真實粉絲推坑需求 238 組 | 45% | 55% |
+評估結果（團體命中 @3 / 成員命中 @3，見 `scripts/evaluate_curator.py` 與 `docs/semantic_curator/PLAN.md`）：
 
-模型不放進 GitHub：`scripts/export_onnx_encoder.py` 下載官方 ONNX 並量化為約 570 MB 的 int8 模型，`scripts/build_member_embeddings.py` 再預先算好成員向量，兩者都寫入 `models/bge-m3-int8/`，只以 LFS 放進 Hugging Face Space 的儲存庫（在 Space 建置時量化會記憶體不足）。執行時只需要 onnxruntime、tokenizers 和 numpy。找不到 `models/bge-m3-int8/`，或成員向量和目前描述不一致時，會自動退回 v1；所以修改 `data/curator/` 後，要重跑 `build_member_embeddings.py` 再部署。本機要啟用 v2：
+| 測試集 | v1（關鍵字 + Gemini） | v2（bge-m3 int8） | v3（LoRA 微調 int8） |
+| --- | --- | --- | --- |
+| Codex 撰寫的 60 題 | 44% / 25% | 62% / 47% | 62% / 60% |
+| 真實粉絲推坑需求 238 組 | 45% / 19% | 55% / 23% | 58% / 28% |
+
+v3 的進步集中在成員層級：和用同一流程匯出的原始 bge-m3 逐題比較，多答對 14 題、答錯 3 題（符號檢定 p = 0.013）；真實需求的團體命中則持平。
+
+訊息路由：點「AI 入坑」後 10 分鐘內的文字都視為偏好；沒點入口時，其他功能都沒接走、且含有「喜歡、想找、推薦、有沒有」等字眼的訊息，也會交給 AI 入坑。
+
+模型不放進 GitHub，只以 LFS 放進 Hugging Face Space 的儲存庫（在 Space 建置時量化會記憶體不足）。`models/bge-m3-v3-int8/` 內含 int8 模型和預先算好的成員向量，執行時只需要 onnxruntime、tokenizers 和 numpy。找不到這個資料夾，或成員向量和目前描述不一致時，會自動退回 v1；所以修改 `data/curator/` 後，要重跑 `build_member_embeddings.py` 再部署。本機重建 v3：
 
 ```bash
-uv run --group encoder-build python scripts/export_onnx_encoder.py
+uv run --group curator python scripts/train_encoder.py
+```
+
+```bash
+uv run --group curator python scripts/export_onnx_encoder.py --source models/bge-m3-curator-v3
 ```
 
 ```bash

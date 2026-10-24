@@ -21,10 +21,10 @@ WORKDIR /app
 COPY pyproject.toml uv.lock .python-version ./
 RUN uv sync --locked
 
-# AI 入坑 v2 needs models/bge-m3-int8/ (int8 encoder + member embeddings) in the build
-# context. It is built locally by scripts/export_onnx_encoder.py and
-# scripts/build_member_embeddings.py and committed to the Hugging Face Space through
-# LFS; quantizing during the build was OOM-killed on the Space builder. Without it
+# AI 入坑 needs models/bge-m3-v3-int8/ (int8 encoder + member embeddings) in the build
+# context. It is built locally (scripts/train_encoder.py, export_onnx_encoder.py,
+# build_member_embeddings.py) and committed to the Hugging Face Space through LFS;
+# quantizing during the build was OOM-killed on the Space builder. Without it
 # (GitHub CI, fresh clones) the bot falls back to v1 ranking.
 COPY . .
 RUN python scripts/init_db.py && \

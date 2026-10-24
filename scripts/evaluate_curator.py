@@ -47,6 +47,7 @@ from src.bot.features.ai_curator import AiCuratorFeature, _prioritize_members_wi
 from src.bot.llm import GeminiTextClient
 from src.bot.semantic_index import (
     EMBEDDING_MODELS,
+    ONNX_ENCODER_DIR,
     ONNX_MODEL_KEY,
     EmbeddingModelSpec,
     OnnxEncoder,
@@ -81,7 +82,7 @@ LOCAL_ENCODERS = {
     "bge-m3-v3": lambda: SentenceTransformerEncoder(
         EmbeddingModelSpec(str(PROJECT_ROOT / "models" / "bge-m3-curator-v3"))
     ),
-    "bge-m3-v3-int8": lambda: OnnxEncoder(PROJECT_ROOT / "models" / "bge-m3-v3-int8"),
+    "bge-m3-v3-int8": lambda: OnnxEncoder(PROJECT_ROOT / ONNX_ENCODER_DIR),
     # Base bge-m3 through the same torch export as v3, to compare like with like.
     "bge-m3-base-int8": lambda: OnnxEncoder(PROJECT_ROOT / "models" / "bge-m3-base-int8"),
 }
