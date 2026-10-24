@@ -4,7 +4,7 @@ from typing import Any
 
 import requests
 
-from src.agent import GEMINI_API_URL, GEMINI_REQUEST_TIMEOUT_SECONDS
+from src.agent import GEMINI_API_URL, GEMINI_NO_THINKING, GEMINI_REQUEST_TIMEOUT_SECONDS
 
 
 class GeminiTextClient:
@@ -35,6 +35,7 @@ class GeminiTextClient:
         generation_config: dict[str, Any] = {
             "temperature": temperature,
             "maxOutputTokens": max_output_tokens,
+            "thinkingConfig": GEMINI_NO_THINKING,
         }
         if response_mime_type:
             generation_config["responseMimeType"] = response_mime_type
