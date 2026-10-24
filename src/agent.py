@@ -27,6 +27,9 @@ _SENTIMENT_FALLBACK: dict = {
 VALID_INSIGHT_RISKS = {"高", "中", "低"}
 GEMINI_REQUEST_TIMEOUT_SECONDS = 10
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+# Thinking models (e.g. gemini-3.5-flash) spend maxOutputTokens on thoughts first; with
+# the small budgets used here that left 12-token answers, so thinking is switched off.
+GEMINI_NO_THINKING = {"thinkingBudget": 0}
 DEMO_ARTISTS = (
     "aespa",
     "IVE",
@@ -135,6 +138,7 @@ class KpopAnalysisAgent:
                     "generationConfig": {
                         "temperature": 0.3,
                         "maxOutputTokens": 260,
+                        "thinkingConfig": GEMINI_NO_THINKING,
                     },
                 },
                 timeout=GEMINI_REQUEST_TIMEOUT_SECONDS,
@@ -360,6 +364,7 @@ class KpopAnalysisAgent:
                     "generationConfig": {
                         "temperature": 0.2,
                         "maxOutputTokens": 120,
+                        "thinkingConfig": GEMINI_NO_THINKING,
                     },
                 },
                 timeout=GEMINI_REQUEST_TIMEOUT_SECONDS,
