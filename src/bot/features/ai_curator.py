@@ -10,6 +10,7 @@ from typing import TYPE_CHECKING
 
 from src.bot.dispatcher import MessageContext
 from src.bot.flex_common import selection_page_flex_contents
+from src.bot.member_evidence import FACET_LABELS, pick_member_evidence, query_facets
 from src.bot.reply import Reply
 from src.bot.semantic_index import query_gender
 from src.bot.text_utils import (
@@ -407,17 +408,31 @@ def _build_ai_curator_prompt(query: str, context: dict) -> str:
     """
 
     notes = context.get("member_notes") or {}
+    evidence = context.get("member_evidence") or {}
     members = context["member_candidates"][:AI_CURATOR_ANSWER_MEMBERS]
-    member_lines = [
-        f"{index}. " + _ai_curator_member_line(member, notes).removeprefix("- ")
-        for index, member in enumerate(members, start=1)
-    ]
+    asked = query_facets(query)
+    member_lines = []
+    for index, member in enumerate(members, start=1):
+        line = f"{index}. " + _ai_curator_member_line(member, notes).removeprefix("- ")
+        rows = evidence.get(member.get("id", ""), [])
+        if rows:
+            line += "\n   有來源的特質：" + "；".join(row["value"] for row in rows)
+        # 只說「不要捏造」擋不住 Gemini 照抄使用者的話，逐人點名缺的面向才有用。
+        if missing := [f for f in asked if f not in {row.get("facet") for row in rows}]:
+            line += (
+                "\n   資料沒寫他的"
+                + "、".join(FACET_LABELS[f] for f in missing)
+                + "，理由不要提這些。"
+            )
+        member_lines.append(line)
     return f"""你是 K-pop 入坑指南。推薦系統已依使用者的偏好排好下面 {len(members)} 位成員，
 請為每位成員寫一句繁體中文（台灣用語）的推薦理由。
 
 規則：
 - 每句 15 到 30 字（短一點，LINE 上才好讀），說明這位成員為什麼符合使用者的偏好，語氣親切可愛。
 - 只能根據成員資料寫；定位（主唱、主舞、隊長等）和特質資料沒寫就不要提，不要捏造。
+- 「有來源的特質」是整理過的粉絲觀感或報導，和偏好有關時優先用它；粉絲觀感要寫成「粉絲常說…」，不要寫成事實。
+- 使用者要的特質（例如反差、搞笑、聲線）資料裡沒寫，就不要說這位成員有，改說他其他值得認識的地方。
 - 不要寫成員名字或團名（版面會另外顯示），不要加網址、表情符號或編號。
 - 只輸出 JSON 字串陣列，順序和成員相同，例如 ["理由一", "理由二", "理由三"]。
 
@@ -492,11 +507,16 @@ def _render_ai_curator_answer(
         f"根據你說的「{query}」，我會這樣排：",
     ]
     if member_candidates:
+        evidence = context.get("member_evidence") or {}
         for index, member in enumerate(member_candidates[:AI_CURATOR_ANSWER_MEMBERS], start=1):
             reason = reasons[index - 1] if reasons and index <= len(reasons) else None
             lines.append(
                 f"{index}. {member['artist']} {member['member']}："
-                + (reason or f"{member.get('vibe', '風格鮮明')}，適合先看本命雷達。")
+                + (
+                    reason
+                    or _evidence_fallback_reason(evidence.get(member.get("id", ""), []), query)
+                    or f"{member.get('vibe', '風格鮮明')}，適合先看本命雷達。"
+                )
             )
     elif daily_items:
         for index, item in enumerate(daily_items[:3], start=1):
@@ -510,6 +530,20 @@ def _render_ai_curator_answer(
         if item.get("url"):
             lines.append(item["url"])
     return fit_line_text("\n".join(lines), limit=900)
+
+
+def _evidence_fallback_reason(rows: list[dict[str, str]], query: str) -> str | None:
+    """沒有 Gemini 時，直接用一條粉絲觀感當理由；它本來就寫成「粉絲常說…」的口吻。
+
+    只用使用者問到的面向（沒問特定面向時用氣質），問聲線卻回「綜藝很好笑」會答非所問。
+    """
+
+    facets = query_facets(query) or ["vibe"]
+    for row in rows:
+        if row.get("perspective") == "fan_perception" and row.get("facet") in facets:
+            value = row["value"].rstrip("。")
+            return f"{value}。"
+    return None
 
 
 def _ai_curator_reason_member_is_usable(row: dict[str, str]) -> bool:
@@ -888,6 +922,11 @@ class AiCuratorFeature:
             profile["gender"] = profile["gender"] or query_gender(_compact_ai_curator_text(query))
             member_candidates = ranker.rank(query)[:5]
             member_notes = ranker.notes
+            member_evidence = {
+                member["id"]: picked
+                for member in member_candidates
+                if (picked := pick_member_evidence(ranker.evidence.get(member["id"], []), query))
+            }
             low_confidence = False
         else:
             profile = self._resolve_ai_curator_profile(query)
@@ -901,6 +940,7 @@ class AiCuratorFeature:
                 mv_artists,
             )[:5]
             member_notes = {}
+            member_evidence = {}
             low_confidence = not _ai_curator_profile_has_signal(profile)
         recommended_members = _ai_curator_recommended_members(member_candidates)
         recommended_artists = _ai_curator_recommended_artists(recommended_members)
@@ -916,6 +956,7 @@ class AiCuratorFeature:
             "primary_artist": artist_candidates[0] if artist_candidates else None,
             "recommended_artists": recommended_artists,
             "member_notes": member_notes,
+            "member_evidence": member_evidence,
             "low_confidence": low_confidence,
         }
 

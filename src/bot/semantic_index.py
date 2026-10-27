@@ -23,6 +23,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from src.bot.curator_query import CuratorQueryParser
+from src.bot.member_evidence import load_member_evidence
 
 logger = logging.getLogger(__name__)
 
@@ -291,11 +292,13 @@ class SemanticMemberRanker:
         members: list[dict[str, str]],
         notes: dict[str, str],
         query_parser: CuratorQueryParser | None = None,
+        evidence: dict[str, list[dict[str, str]]] | None = None,
     ) -> None:
         self.index = index
         self.members_by_id = {member["id"]: member for member in members}
         self.notes = notes
         self.query_parser = query_parser
+        self.evidence = evidence or {}
 
     @classmethod
     def load(cls, base_dir: Path, members: list[dict[str, str]]) -> SemanticMemberRanker | None:
@@ -328,6 +331,7 @@ class SemanticMemberRanker:
             members,
             load_member_notes(base_dir, members),
             CuratorQueryParser.load(base_dir, members),
+            load_member_evidence(base_dir),
         )
 
     def rank(self, query: str) -> list[dict[str, str]]:

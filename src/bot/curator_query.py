@@ -256,7 +256,8 @@ class CuratorQueryParser:
                     excluded_artists.add(e.artist)
             if (mode == "similarity" or (mode == "same_artist" and similar)) and e.kind == "member":
                 excluded_ids.update(e.candidates)
-            if mode == "similarity" and (e.kind == "group" or other):
+            # 「像某團」常常原團就是好答案；只有明說其他團才硬排除。
+            if mode == "similarity" and other:
                 excluded_artists.add(e.artist)
         # 別名替換只改明確解析的人名；歧義不猜，也不改寫未知查詢。
         search = raw
@@ -288,7 +289,16 @@ class CuratorQueryParser:
                 result, key=lambda i: self.members[i]["artist"] not in parsed.preferred_artists
             )
         if parsed.mode == "similarity":
-            return sorted(
-                result, key=lambda i: self.members[i]["artist"] in parsed.reference_artists
-            )
+            # 參照團只保留排名最前的一位，其餘往後，讓前三名有其他團可認識。
+            kept: list[str] = []
+            later: list[str] = []
+            for i in result:
+                same = self.members[i]["artist"] in parsed.reference_artists
+                if same and any(
+                    self.members[k]["artist"] in parsed.reference_artists for k in kept
+                ):
+                    later.append(i)
+                else:
+                    kept.append(i)
+            return kept + later
         return result
