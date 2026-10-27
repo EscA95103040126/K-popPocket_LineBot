@@ -80,6 +80,36 @@ def test_mentioning_current_favorite_is_not_same_group_request(parser):
     assert not parsed.preferred_artists
 
 
+def test_similar_to_group_keeps_one_member_of_that_group(parser):
+    parsed = parser.parse("想多找跟 RIIZE 風格一樣的歌")
+    assert parsed.mode == "similarity"
+    assert not parsed.excluded_artists
+    ranked = ["riize-sohee", "riize-wonbin", "itzy-ryujin", "itzy-lia"]
+    assert parser.constrain(parsed, ranked) == [
+        "riize-sohee",
+        "itzy-ryujin",
+        "itzy-lia",
+        "riize-wonbin",
+    ]
+
+
+def test_similar_to_member_keeps_one_groupmate_and_drops_self(parser):
+    parsed = parser.parse("我喜歡 MEOVV 的 ANNA，有沒有相似類型的推薦？")
+    ranked = ["meovv-anna", "meovv-narin", "meovv-ella", "qwer-hina", "twice-sana"]
+    assert parser.constrain(parsed, ranked) == [
+        "meovv-narin",
+        "qwer-hina",
+        "twice-sana",
+        "meovv-ella",
+    ]
+
+
+def test_asking_for_other_groups_drops_the_reference_group(parser):
+    parsed = parser.parse("喜歡 MEOVV ANNA，想認識其他團像她的人")
+    assert "MEOVV" in parsed.excluded_artists
+    assert parser.constrain(parsed, ["meovv-narin", "qwer-hina"]) == ["qwer-hina"]
+
+
 def test_explicit_group_exclusion_is_hard_filter(parser):
     parsed = parser.parse("除了 NMIXX 之外，想找其他女團")
     assert "NMIXX" in parsed.excluded_artists

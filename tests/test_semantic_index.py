@@ -171,6 +171,7 @@ class FakeRanker:
     def __init__(self, members: list[dict[str, str]]) -> None:
         self.members = members
         self.notes = {members[0]["id"]: "測試用簡介"}
+        self.evidence: dict[str, list[dict[str, str]]] = {}
         self.queries: list[str] = []
 
     def rank(self, query: str) -> list[dict[str, str]]:
@@ -219,6 +220,69 @@ def test_ai_curator_uses_semantic_ranker_and_one_gemini_call() -> None:
     assert report_lines[3].startswith("2. TWICE NAYEON：") and "適合先看本命雷達" in report_lines[3]
     assert report_lines[4].startswith("今日入口：先看 ")
     assert loads == [1]
+
+
+def _evidence(member_id: str, facet: str, value: str, perspective="fan_perception"):
+    return {
+        "evidence_id": f"mc-{member_id}-{facet}",
+        "member_id": member_id,
+        "facet": facet,
+        "perspective": perspective,
+        "value": value,
+        "source_count": "3",
+    }
+
+
+def test_answer_prompt_lists_sourced_traits_for_the_asked_facet_first() -> None:
+    catalog_members = {m["id"]: m for m in PlayZoneCatalog(REPO_ROOT).load_bias_radar_members()}
+    ranker = FakeRanker([catalog_members["itzy-yeji"], catalog_members["twice-sana"]])
+    ranker.evidence = {
+        "itzy-yeji": [
+            _evidence("itzy-yeji", "vocal", "粉絲常稱讚她的高音"),
+            _evidence("itzy-yeji", "contrast", "粉絲常說她舞臺上氣場強，私下溫順可愛"),
+        ]
+    }
+    llm = FakeLlm(text='["理由一說得很完整喔", "理由二說得很完整喔"]')
+    curator = _curator(llm, lambda: ranker)
+
+    curator._ai_curator_response("平常安靜，上台像變了一個人的反差")
+
+    prompt_lines = llm.prompts[0].splitlines()
+    assert (
+        "   有來源的特質：粉絲常說她舞臺上氣場強，私下溫順可愛；粉絲常稱讚她的高音" in prompt_lines
+    )
+    # SANA has no sourced traits, so her line carries no evidence row.
+    assert sum("有來源的特質" in line for line in prompt_lines) == 2
+
+
+def test_fallback_reason_uses_fan_perception_before_tags() -> None:
+    catalog_members = {m["id"]: m for m in PlayZoneCatalog(REPO_ROOT).load_bias_radar_members()}
+    ranker = FakeRanker([catalog_members["itzy-yeji"], catalog_members["twice-sana"]])
+    ranker.evidence = {
+        "itzy-yeji": [_evidence("itzy-yeji", "variety", "主持音樂節目", "event_record")],
+        "twice-sana": [_evidence("twice-sana", "vibe", "粉絲常說她親切又愛撒嬌")],
+    }
+    curator = _curator(FakeLlm(text=""), lambda: ranker)
+
+    lines = curator._ai_curator_response("我喜歡親切的女生")["report"].splitlines()
+
+    assert lines[2].startswith("1. ITZY YEJI：") and "適合先看本命雷達" in lines[2]
+    assert lines[3] == "2. TWICE SANA：粉絲常說她親切又愛撒嬌。"
+
+
+def test_fallback_reason_skips_evidence_for_another_facet() -> None:
+    catalog_members = {m["id"]: m for m in PlayZoneCatalog(REPO_ROOT).load_bias_radar_members()}
+    ranker = FakeRanker([catalog_members["seventeen-seungkwan"]])
+    ranker.evidence = {
+        "seventeen-seungkwan": [
+            _evidence("seventeen-seungkwan", "variety", "粉絲常說他是綜藝擔當、很好笑")
+        ]
+    }
+    curator = _curator(FakeLlm(text=""), lambda: ranker)
+
+    lines = curator._ai_curator_response("推薦 vocal 強的男團")["report"].splitlines()
+
+    assert "綜藝" not in lines[2] and "適合先看本命雷達" in lines[2]
 
 
 def test_ai_curator_falls_back_to_v1_when_loader_returns_none() -> None:

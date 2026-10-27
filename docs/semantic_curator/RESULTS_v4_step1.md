@@ -79,3 +79,12 @@ Bot 的 `SemanticMemberRanker` 與離線 `v4-intent-aliases` 共用 `rank_ids`�
 驗證：233 項測試通過，ruff check／format check 與 diff 空白檢查通過；新增測試涵蓋中韓別名、同名消歧、兩位 Jiwoo 同句、英文常用詞、同團作品、不喜歡部分歌曲、明確排除、歌曲段落、歌曲名不作人名、未知別名 ID／檔案缺漏及 Bot／評估共用約束。
 
 下一階段等 25 團各 3–5 首代表作進 staging 後再接歌曲檢索；沒有更動正式資料、補寫相似關係、重排序、訓練或部署。
+
+## 第二步（2026-10-28）：團體軟降權與成員證據
+
+- 「相似」只排除參照本人；參照團保留排名最前的一位，其餘往後。只有明說其他團／不要某團才硬排除。m270、m274 的退步因此消失。
+- real-dev 重跑 `v4-intent-aliases`：團體 @3 46/116（39.66%），成員 @3 5/20（25%）。對 v3 團體逐題 7 勝 0 敗，雙尾符號檢定 p = 0.015625；成員 0 勝 0 敗。
+- `scripts/build_member_evidence.py` 由 Grok member_evidence v1_1–v1_10 與 v1_11_clean 覆蓋產生 `data/curator/member_evidence.csv`：同 claim_id 取較新批次，只收 supported 且 usable_for_persona=yes、非本人自述的主張，共 193 條、126/154 位成員。Jake、Yunho 的黃金獵犬彙整依「原文要連到行為或個性」的判準改為 pending，不收。
+- 證據只進推薦理由：Gemini 提示詞列出有來源的特質（問到的面向優先），並逐人列出「資料沒寫」的面向；本地退回只用同一面向的粉絲觀感。排序不讀證據。
+- 本機以 v3 int8 模型＋Gemini（flash-lite）跑四個示範句：加入「資料沒寫」提醒前，「平常安靜，上台像變了一個人」的 YEOSANG、TAEHYUN 被寫成平時安靜、上台反差，沒有證據；加入後不再出現。這是人工看四題，不是理由忠實度的量化評估。
+- 正式 Codex 60 題、real-test、real-test-discovery 仍未重跑。
