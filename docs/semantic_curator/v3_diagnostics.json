@@ -1,0 +1,1824 @@
+{
+  "ranker": "v2-bge-m3-v3-int8+gender",
+  "real_dev_n": 116,
+  "by_type_n": {
+    "具體成員參照": 18,
+    "曲風": 69,
+    "抽象氛圍": 21,
+    "其他": 3,
+    "舞台/舞蹈": 2,
+    "聲音/唱腔": 3
+  },
+  "by_type_artist_misses": {
+    "具體成員參照": 12,
+    "曲風": 43,
+    "抽象氛圍": 17,
+    "舞台/舞蹈": 1,
+    "其他": 2,
+    "聲音/唱腔": 2
+  },
+  "overlapping_flags": {
+    "提及已知藝人": 96,
+    "提及已知藝人／團體未命中": 66,
+    "前三位團體重複": 94,
+    "前三位團體重複／團體未命中": 66,
+    "推薦含提及團體": 94,
+    "推薦含提及團體／團體未命中": 64,
+    "前三位全同團": 54,
+    "前三位全同團／團體未命中": 37,
+    "同團其他作品": 10,
+    "同團其他作品／團體未命中": 0,
+    "明確否定": 4,
+    "明確否定／團體未命中": 3
+  },
+  "real_dev_rows": [
+    {
+      "qid": "m001",
+      "type": "具體成員參照",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "enhypen-jungwon",
+        "nmixx-haewon",
+        "enhypen-jay"
+      ]
+    },
+    {
+      "qid": "m002",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "enhypen-jay",
+        "seventeen-vernon",
+        "enhypen-jake"
+      ]
+    },
+    {
+      "qid": "m003",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "nct-haechan",
+        "txt-hueningkai",
+        "nct-doyoung"
+      ]
+    },
+    {
+      "qid": "m004",
+      "type": "具體成員參照",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "enhypen-jungwon",
+        "enhypen-jay",
+        "enhypen-sunghoon"
+      ]
+    },
+    {
+      "qid": "m005",
+      "type": "具體成員參照",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "enhypen-jungwon",
+        "enhypen-jay",
+        "enhypen-sunghoon"
+      ]
+    },
+    {
+      "qid": "m006",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "aespa-ningning",
+        "aespa-karina",
+        "babymonster-asa"
+      ]
+    },
+    {
+      "qid": "m007",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "aespa-giselle",
+        "aespa-ningning",
+        "aespa-karina"
+      ]
+    },
+    {
+      "qid": "m008",
+      "type": "具體成員參照",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "babymonster-asa",
+        "babymonster-rora",
+        "itzy-lia"
+      ]
+    },
+    {
+      "qid": "m009",
+      "type": "其他",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "aespa-giselle",
+        "aespa-karina",
+        "babymonster-asa"
+      ]
+    },
+    {
+      "qid": "m010",
+      "type": "具體成員參照",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "lesserafim-yunjin",
+        "lesserafim-sakura",
+        "lesserafim-eunchae"
+      ]
+    },
+    {
+      "qid": "m011",
+      "type": "具體成員參照",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "lesserafim-yunjin",
+        "lesserafim-eunchae",
+        "lesserafim-sakura"
+      ]
+    },
+    {
+      "qid": "m012",
+      "type": "具體成員參照",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "lesserafim-yunjin",
+        "lesserafim-sakura",
+        "bts-jimin"
+      ]
+    },
+    {
+      "qid": "m013",
+      "type": "具體成員參照",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "lesserafim-yunjin",
+        "nmixx-haewon",
+        "lesserafim-chaewon"
+      ]
+    },
+    {
+      "qid": "m014",
+      "type": "具體成員參照",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ateez-hongjoong",
+        "ateez-san",
+        "ateez-seonghwa"
+      ]
+    },
+    {
+      "qid": "m015",
+      "type": "具體成員參照",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ateez-hongjoong",
+        "ateez-jongho",
+        "ateez-wooyoung"
+      ]
+    },
+    {
+      "qid": "m017",
+      "type": "舞台/舞蹈",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ateez-san",
+        "ateez-mingi",
+        "ateez-wooyoung"
+      ]
+    },
+    {
+      "qid": "m018",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ive-liz",
+        "babymonster-ahyeon",
+        "ive-wonyoung"
+      ]
+    },
+    {
+      "qid": "m019",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "hearts2hearts-carmen",
+        "hearts2hearts-yuha",
+        "twice-jeongyeon"
+      ]
+    },
+    {
+      "qid": "m020",
+      "type": "具體成員參照",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "twice-jihyo",
+        "twice-jeongyeon",
+        "twice-chaeyoung"
+      ]
+    },
+    {
+      "qid": "m021",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ive-liz",
+        "ive-rei",
+        "ive-leeseo"
+      ]
+    },
+    {
+      "qid": "m022",
+      "type": "其他",
+      "artist_hit@3": false,
+      "flags": [
+        "前三位團體重複"
+      ],
+      "top3": [
+        "twice-jeongyeon",
+        "twice-nayeon",
+        "blackpink-jisoo"
+      ]
+    },
+    {
+      "qid": "m023",
+      "type": "具體成員參照",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "straykids-in",
+        "straykids-felix",
+        "straykids-seungmin"
+      ]
+    },
+    {
+      "qid": "m024",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "straykids-bangchan",
+        "ateez-wooyoung",
+        "straykids-in"
+      ]
+    },
+    {
+      "qid": "m142",
+      "type": "舞台/舞蹈",
+      "artist_hit@3": true,
+      "flags": [
+        "同團其他作品",
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ateez-wooyoung",
+        "ateez-san",
+        "ateez-mingi"
+      ]
+    },
+    {
+      "qid": "m199",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "aespa-ningning",
+        "itzy-lia",
+        "bts-v"
+      ]
+    },
+    {
+      "qid": "m200",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "同團其他作品",
+        "提及已知藝人",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "qwer-siyeon",
+        "ive-liz",
+        "bts-v"
+      ]
+    },
+    {
+      "qid": "m201",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [],
+      "top3": [
+        "seventeen-wonwoo",
+        "bts-v",
+        "exo-chanyeol"
+      ]
+    },
+    {
+      "qid": "m202",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ateez-san",
+        "ateez-seonghwa",
+        "ateez-hongjoong"
+      ]
+    },
+    {
+      "qid": "m203",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "同團其他作品",
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ateez-hongjoong",
+        "ateez-san",
+        "ateez-wooyoung"
+      ]
+    },
+    {
+      "qid": "m204",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [],
+      "top3": [
+        "straykids-in",
+        "bts-jimin",
+        "seventeen-dk"
+      ]
+    },
+    {
+      "qid": "m205",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [],
+      "top3": [
+        "itzy-lia",
+        "nmixx-haewon",
+        "qwer-siyeon"
+      ]
+    },
+    {
+      "qid": "m206",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [],
+      "top3": [
+        "blackpink-jisoo",
+        "twice-nayeon",
+        "qwer-siyeon"
+      ]
+    },
+    {
+      "qid": "m207",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ive-leeseo",
+        "ive-rei",
+        "ive-liz"
+      ]
+    },
+    {
+      "qid": "m208",
+      "type": "抽象氛圍",
+      "artist_hit@3": true,
+      "flags": [],
+      "top3": [
+        "h1key-seoi",
+        "twice-jihyo",
+        "nmixx-haewon"
+      ]
+    },
+    {
+      "qid": "m209",
+      "type": "聲音/唱腔",
+      "artist_hit@3": false,
+      "flags": [],
+      "top3": [
+        "babymonster-rami",
+        "twice-jeongyeon",
+        "aespa-ningning"
+      ]
+    },
+    {
+      "qid": "m210",
+      "type": "聲音/唱腔",
+      "artist_hit@3": true,
+      "flags": [],
+      "top3": [
+        "nct-haechan",
+        "bts-v",
+        "exo-baekhyun"
+      ]
+    },
+    {
+      "qid": "m211",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "hearts2hearts-ian",
+        "bts-jimin",
+        "bts-v"
+      ]
+    },
+    {
+      "qid": "m212",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ive-liz",
+        "ive-rei",
+        "ive-wonyoung"
+      ]
+    },
+    {
+      "qid": "m215",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "meovv-sooin",
+        "meovv-anna",
+        "bts-v"
+      ]
+    },
+    {
+      "qid": "m216",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "kissoflife-julie",
+        "kissoflife-haneul",
+        "kissoflife-belle"
+      ]
+    },
+    {
+      "qid": "m217",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "riize-sohee",
+        "itzy-ryujin",
+        "riize-wonbin"
+      ]
+    },
+    {
+      "qid": "m218",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [],
+      "top3": [
+        "kissoflife-julie",
+        "idle-minnie",
+        "redvelvet-joy"
+      ]
+    },
+    {
+      "qid": "m219",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [],
+      "top3": [
+        "riize-wonbin",
+        "qwer-magenta",
+        "bts-v"
+      ]
+    },
+    {
+      "qid": "m220",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [],
+      "top3": [
+        "exo-baekhyun",
+        "twice-chaeyoung",
+        "straykids-in"
+      ]
+    },
+    {
+      "qid": "m221",
+      "type": "其他",
+      "artist_hit@3": false,
+      "flags": [],
+      "top3": [
+        "blackpink-jisoo",
+        "kissoflife-julie",
+        "twice-nayeon"
+      ]
+    },
+    {
+      "qid": "m222",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "seventeen-scoups",
+        "nct-haechan",
+        "seventeen-wonwoo"
+      ]
+    },
+    {
+      "qid": "m223",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "前三位團體重複"
+      ],
+      "top3": [
+        "ateez-jongho",
+        "bts-jimin",
+        "bts-jungkook"
+      ]
+    },
+    {
+      "qid": "m224",
+      "type": "抽象氛圍",
+      "artist_hit@3": true,
+      "flags": [],
+      "top3": [
+        "itzy-ryujin",
+        "twice-sana",
+        "qwer-chodan"
+      ]
+    },
+    {
+      "qid": "m225",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "kissoflife-belle",
+        "kissoflife-julie",
+        "kissoflife-natty"
+      ]
+    },
+    {
+      "qid": "m230",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "enhypen-niki",
+        "enhypen-jay",
+        "enhypen-jungwon"
+      ]
+    },
+    {
+      "qid": "m231",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "nmixx-lily",
+        "nmixx-haewon",
+        "nmixx-kyujin"
+      ]
+    },
+    {
+      "qid": "m232",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體",
+        "明確否定"
+      ],
+      "top3": [
+        "txt-soobin",
+        "txt-yeonjun",
+        "txt-taehyun"
+      ]
+    },
+    {
+      "qid": "m233",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "straykids-changbin",
+        "straykids-in",
+        "straykids-bangchan"
+      ]
+    },
+    {
+      "qid": "m234",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "babymonster-ruka",
+        "babymonster-chiquita",
+        "straykids-felix"
+      ]
+    },
+    {
+      "qid": "m235",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "明確否定"
+      ],
+      "top3": [
+        "bts-v",
+        "bts-suga",
+        "bts-jungkook"
+      ]
+    },
+    {
+      "qid": "m236",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ateez-hongjoong",
+        "ateez-jongho",
+        "ateez-mingi"
+      ]
+    },
+    {
+      "qid": "m237",
+      "type": "具體成員參照",
+      "artist_hit@3": true,
+      "flags": [
+        "同團其他作品",
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "nmixx-lily",
+        "nmixx-haewon",
+        "nmixx-jiwoo"
+      ]
+    },
+    {
+      "qid": "m238",
+      "type": "具體成員參照",
+      "artist_hit@3": true,
+      "flags": [
+        "同團其他作品",
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "babymonster-rora",
+        "babymonster-rami",
+        "babymonster-ruka"
+      ]
+    },
+    {
+      "qid": "m239",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "aespa-ningning",
+        "aespa-giselle",
+        "aespa-winter"
+      ]
+    },
+    {
+      "qid": "m240",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人"
+      ],
+      "top3": [
+        "seventeen-dk",
+        "ateez-jongho",
+        "bts-v"
+      ]
+    },
+    {
+      "qid": "m241",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ive-rei",
+        "ive-liz",
+        "redvelvet-irene"
+      ]
+    },
+    {
+      "qid": "m242",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [
+        "前三位團體重複"
+      ],
+      "top3": [
+        "seventeen-scoups",
+        "seventeen-dk",
+        "bts-jhope"
+      ]
+    },
+    {
+      "qid": "m243",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "redvelvet-wendy",
+        "bts-jimin",
+        "hearts2hearts-stella"
+      ]
+    },
+    {
+      "qid": "m244",
+      "type": "抽象氛圍",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "seventeen-jeonghan",
+        "seventeen-joshua",
+        "redvelvet-wendy"
+      ]
+    },
+    {
+      "qid": "m245",
+      "type": "具體成員參照",
+      "artist_hit@3": true,
+      "flags": [
+        "同團其他作品",
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "seventeen-vernon",
+        "seventeen-wonwoo",
+        "seventeen-seungkwan"
+      ]
+    },
+    {
+      "qid": "m246",
+      "type": "具體成員參照",
+      "artist_hit@3": true,
+      "flags": [
+        "同團其他作品",
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體",
+        "明確否定"
+      ],
+      "top3": [
+        "idle-soyeon",
+        "idle-miyeon",
+        "idle-minnie"
+      ]
+    },
+    {
+      "qid": "m247",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "itzy-yeji",
+        "itzy-ryujin",
+        "riize-wonbin"
+      ]
+    },
+    {
+      "qid": "m248",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ive-liz",
+        "ive-rei",
+        "ive-gaeul"
+      ]
+    },
+    {
+      "qid": "m249",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "idle-soyeon",
+        "idle-minnie",
+        "idle-miyeon"
+      ]
+    },
+    {
+      "qid": "m250",
+      "type": "抽象氛圍",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "idle-soyeon",
+        "twice-jihyo",
+        "idle-minnie"
+      ]
+    },
+    {
+      "qid": "m251",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "redvelvet-seulgi",
+        "straykids-seungmin",
+        "exo-baekhyun"
+      ]
+    },
+    {
+      "qid": "m253",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ive-liz",
+        "ive-wonyoung",
+        "illit-wonhee"
+      ]
+    },
+    {
+      "qid": "m254",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "bts-jungkook",
+        "exo-baekhyun",
+        "bts-jhope"
+      ]
+    },
+    {
+      "qid": "m255",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ive-liz",
+        "riize-sohee",
+        "riize-wonbin"
+      ]
+    },
+    {
+      "qid": "m256",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "riize-sohee",
+        "riize-wonbin",
+        "itzy-ryujin"
+      ]
+    },
+    {
+      "qid": "m257",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ateez-jongho",
+        "ateez-wooyoung",
+        "ateez-mingi"
+      ]
+    },
+    {
+      "qid": "m259",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [],
+      "top3": [
+        "nct-haechan",
+        "seventeen-vernon",
+        "bts-v"
+      ]
+    },
+    {
+      "qid": "m260",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "riize-wonbin",
+        "ive-liz",
+        "itzy-ryujin"
+      ]
+    },
+    {
+      "qid": "m261",
+      "type": "具體成員參照",
+      "artist_hit@3": true,
+      "flags": [
+        "同團其他作品",
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ateez-san",
+        "ateez-mingi",
+        "ateez-jongho"
+      ]
+    },
+    {
+      "qid": "m262",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ateez-jongho",
+        "ateez-hongjoong",
+        "ateez-san"
+      ]
+    },
+    {
+      "qid": "m263",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "aespa-karina",
+        "aespa-giselle",
+        "aespa-ningning"
+      ]
+    },
+    {
+      "qid": "m264",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "kissoflife-julie",
+        "kissoflife-natty",
+        "bts-jimin"
+      ]
+    },
+    {
+      "qid": "m265",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "kissoflife-belle",
+        "kissoflife-julie",
+        "kissoflife-natty"
+      ]
+    },
+    {
+      "qid": "m267",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "straykids-in",
+        "straykids-felix",
+        "straykids-seungmin"
+      ]
+    },
+    {
+      "qid": "m268",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "blackpink-jisoo",
+        "blackpink-jennie",
+        "blackpink-rose"
+      ]
+    },
+    {
+      "qid": "m269",
+      "type": "具體成員參照",
+      "artist_hit@3": true,
+      "flags": [
+        "同團其他作品",
+        "提及已知藝人",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "bts-jimin",
+        "straykids-in",
+        "exo-chanyeol"
+      ]
+    },
+    {
+      "qid": "m270",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "前三位團體重複"
+      ],
+      "top3": [
+        "exo-baekhyun",
+        "exo-do",
+        "riize-wonbin"
+      ]
+    },
+    {
+      "qid": "m271",
+      "type": "聲音/唱腔",
+      "artist_hit@3": false,
+      "flags": [],
+      "top3": [
+        "seventeen-dk",
+        "txt-taehyun",
+        "exo-baekhyun"
+      ]
+    },
+    {
+      "qid": "m272",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "blackpink-jisoo",
+        "twice-chaeyoung",
+        "itzy-lia"
+      ]
+    },
+    {
+      "qid": "m273",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "enhypen-jay",
+        "enhypen-jake",
+        "aespa-ningning"
+      ]
+    },
+    {
+      "qid": "m274",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "riize-sohee",
+        "itzy-ryujin",
+        "riize-wonbin"
+      ]
+    },
+    {
+      "qid": "m275",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "riize-sohee",
+        "itzy-ryujin",
+        "riize-anton"
+      ]
+    },
+    {
+      "qid": "m276",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "riize-sohee",
+        "riize-wonbin",
+        "itzy-ryujin"
+      ]
+    },
+    {
+      "qid": "m277",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體",
+        "明確否定"
+      ],
+      "top3": [
+        "nmixx-lily",
+        "nmixx-haewon",
+        "nmixx-jiwoo"
+      ]
+    },
+    {
+      "qid": "m278",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "nmixx-haewon",
+        "nmixx-sullyoon",
+        "nmixx-lily"
+      ]
+    },
+    {
+      "qid": "m279",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "nmixx-lily",
+        "nmixx-bae",
+        "nmixx-haewon"
+      ]
+    },
+    {
+      "qid": "m280",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ateez-hongjoong",
+        "ateez-san",
+        "ateez-jongho"
+      ]
+    },
+    {
+      "qid": "m282",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "hearts2hearts-stella",
+        "hearts2hearts-yuha",
+        "hearts2hearts-carmen"
+      ]
+    },
+    {
+      "qid": "m283",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "hearts2hearts-yuha",
+        "hearts2hearts-ian",
+        "ateez-jongho"
+      ]
+    },
+    {
+      "qid": "m285",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "meovv-sooin",
+        "lesserafim-sakura",
+        "lesserafim-yunjin"
+      ]
+    },
+    {
+      "qid": "m286",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "meovv-gawon",
+        "bts-jimin",
+        "meovv-sooin"
+      ]
+    },
+    {
+      "qid": "m287",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "nmixx-haewon",
+        "nmixx-lily",
+        "nmixx-kyujin"
+      ]
+    },
+    {
+      "qid": "m288",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "hearts2hearts-stella",
+        "hearts2hearts-ian",
+        "hearts2hearts-yuha"
+      ]
+    },
+    {
+      "qid": "m289",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "前三位全同團",
+        "前三位團體重複"
+      ],
+      "top3": [
+        "bts-jhope",
+        "bts-jungkook",
+        "bts-jimin"
+      ]
+    },
+    {
+      "qid": "m290",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ateez-san",
+        "ateez-wooyoung",
+        "bts-v"
+      ]
+    },
+    {
+      "qid": "m291",
+      "type": "曲風",
+      "artist_hit@3": true,
+      "flags": [
+        "同團其他作品",
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ateez-hongjoong",
+        "ateez-jongho",
+        "ateez-san"
+      ]
+    },
+    {
+      "qid": "m294",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "h1key-hwiseo",
+        "h1key-riina",
+        "h1key-yel"
+      ]
+    },
+    {
+      "qid": "m295",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "h1key-hwiseo",
+        "h1key-riina",
+        "h1key-seoi"
+      ]
+    },
+    {
+      "qid": "m296",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "h1key-seoi",
+        "h1key-hwiseo",
+        "blackpink-rose"
+      ]
+    },
+    {
+      "qid": "m299",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "illit-minju",
+        "idle-minnie",
+        "illit-moka"
+      ]
+    },
+    {
+      "qid": "m300",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "illit-iroha",
+        "illit-moka",
+        "illit-yunah"
+      ]
+    },
+    {
+      "qid": "m301",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "illit-iroha",
+        "illit-moka",
+        "illit-yunah"
+      ]
+    },
+    {
+      "qid": "m303",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "ive-liz",
+        "ive-leeseo",
+        "ive-rei"
+      ]
+    },
+    {
+      "qid": "m304",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位全同團",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "illit-iroha",
+        "illit-yunah",
+        "illit-moka"
+      ]
+    },
+    {
+      "qid": "m305",
+      "type": "抽象氛圍",
+      "artist_hit@3": false,
+      "flags": [
+        "提及已知藝人",
+        "前三位團體重複",
+        "推薦含提及團體"
+      ],
+      "top3": [
+        "illit-moka",
+        "idle-minnie",
+        "illit-minju"
+      ]
+    },
+    {
+      "qid": "m306",
+      "type": "曲風",
+      "artist_hit@3": false,
+      "flags": [
+        "前三位全同團",
+        "前三位團體重複"
+      ],
+      "top3": [
+        "bts-jhope",
+        "bts-jimin",
+        "bts-jungkook"
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "query": "我喜歡 MEOVV 的 ANNA，有沒有相似類型的推薦？",
+      "top5": [
+        "meovv-anna",
+        "meovv-narin",
+        "meovv-ella",
+        "meovv-gawon",
+        "qwer-hina"
+      ],
+      "old_mv_artists": [
+        "MEOVV",
+        "QWER"
+      ],
+      "hidden_mv_rows": 6,
+      "new_mv_artists": [
+        "MEOVV"
+      ]
+    },
+    {
+      "query": "推薦那種不刻意搞笑，卻因為太認真反而很好笑的女偶像。",
+      "top5": [
+        "nmixx-haewon",
+        "twice-dahyun",
+        "twice-sana",
+        "twice-nayeon",
+        "redvelvet-joy"
+      ],
+      "old_mv_artists": [
+        "NMIXX",
+        "Red Velvet",
+        "TWICE"
+      ],
+      "hidden_mv_rows": 18,
+      "new_mv_artists": [
+        "NMIXX",
+        "TWICE"
+      ]
+    },
+    {
+      "query": "想找平常很安靜，但一上舞台就像變了一個人的女愛豆。",
+      "top5": [
+        "qwer-hina",
+        "idle-yuqi",
+        "itzy-yeji",
+        "lesserafim-chaewon",
+        "nmixx-haewon"
+      ],
+      "old_mv_artists": [
+        "QWER",
+        "i-dle"
+      ],
+      "hidden_mv_rows": 0,
+      "new_mv_artists": [
+        "i-dle"
+      ]
+    }
+  ]
+}
