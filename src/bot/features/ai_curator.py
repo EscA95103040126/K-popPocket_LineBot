@@ -903,7 +903,7 @@ class AiCuratorFeature:
             member_notes = {}
             low_confidence = not _ai_curator_profile_has_signal(profile)
         recommended_members = _ai_curator_recommended_members(member_candidates)
-        recommended_artists = _ai_curator_recommended_artists(member_candidates)[:3]
+        recommended_artists = _ai_curator_recommended_artists(recommended_members)
         daily_items = self._rank_daily_mv_rows_for_artists(recommended_artists, profile)[:5]
         artist_candidates = _ai_curator_artist_candidates(member_candidates, daily_items)[:5]
         return {
@@ -1099,11 +1099,15 @@ class AiCuratorFeature:
         if not rows:
             return []
 
-        artist_set = set(artists)
-        matched_rows = [row for row in rows if row.get("artist", "").strip() in artist_set]
-        if not matched_rows:
-            # Fallback only when the three recommended artists' groups have no MV rows yet.
+        if not artists:
             return self._rank_daily_kpop_rows_for_curator("MV", profile)
+
+        matched_rows = [
+            row
+            for row in rows
+            if any(same_lookup_name(row.get("artist", ""), artist) for artist in artists)
+        ]
+        # 沒有已顯示推薦團體的 MV 時，省略入口，避免帶使用者去無關團體。
 
         self.rng.shuffle(matched_rows)
         return matched_rows

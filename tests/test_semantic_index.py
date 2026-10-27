@@ -230,6 +230,32 @@ def test_ai_curator_falls_back_to_v1_when_loader_returns_none() -> None:
     assert context["member_notes"] == {}
 
 
+def test_daily_entry_excludes_hidden_candidate_groups() -> None:
+    members = {m["id"]: m for m in PlayZoneCatalog(REPO_ROOT).load_bias_radar_members()}
+    ranked = [
+        members[i] for i in ("meovv-anna", "meovv-narin", "meovv-ella", "qwer-hina", "idle-yuqi")
+    ]
+    curator = _curator(FakeLlm(text=""), lambda: FakeRanker(ranked))
+
+    for seed in range(20):
+        curator.rng.seed(seed)
+        context = curator._build_ai_curator_context("我喜歡 MEOVV 的 ANNA，有沒有相似類型的推薦？")
+        assert context["recommended_artists"] == ["MEOVV"]
+        assert context["daily_items"]
+        assert all(item["artist"] == "MEOVV" for item in context["daily_items"])
+
+
+def test_daily_entry_matches_artist_case_and_spacing() -> None:
+    curator = _curator(FakeLlm(text=""), lambda: None)
+    rows = curator._rank_daily_mv_rows_for_artists(["  meovv  "], {})
+    assert rows and all(row["artist"] == "MEOVV" for row in rows)
+
+
+def test_daily_entry_omitted_when_recommended_artist_has_no_mv() -> None:
+    curator = _curator(FakeLlm(text=""), lambda: None)
+    assert curator._rank_daily_mv_rows_for_artists(["測試用無 MV 團體"], {}) == []
+
+
 @pytest.mark.parametrize(
     ("message", "expected"),
     [
