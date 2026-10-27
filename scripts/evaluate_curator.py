@@ -43,6 +43,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.bot.catalog import PlayZoneCatalog
+from src.bot.curator_query import CuratorQueryParser
 from src.bot.features.ai_curator import AiCuratorFeature, _prioritize_members_with_mv
 from src.bot.llm import GeminiTextClient
 from src.bot.semantic_index import (
@@ -52,6 +53,7 @@ from src.bot.semantic_index import (
     EmbeddingModelSpec,
     OnnxEncoder,
     SemanticMemberIndex,
+    SemanticMemberRanker,
     SentenceTransformerEncoder,
     _compact,
     apply_query_rules,
@@ -196,9 +198,22 @@ def build_v2_ranker(
     return rank
 
 
+@cache
+def build_v4_ranker() -> Ranker:
+    members = PlayZoneCatalog(PROJECT_ROOT).load_bias_radar_members()
+    ranker = SemanticMemberRanker(
+        _semantic_index("bge-m3-v3-int8", True),
+        members,
+        {},
+        CuratorQueryParser.load(PROJECT_ROOT, members),
+    )
+    return cache(ranker.rank_ids)
+
+
 RANKERS: dict[str, Callable[[int], Ranker]] = {
     "v1-keyword": lambda seed: build_v1_ranker(seed, use_llm=False),
     "v1": lambda seed: build_v1_ranker(seed, use_llm=True),
+    "v4-intent-aliases": lambda seed: build_v4_ranker(),
 }
 for _model_key in [*EMBEDDING_MODELS, ONNX_MODEL_KEY, *LOCAL_ENCODERS]:
     # (suffix, Grok member enrichment, group weight, query rules)

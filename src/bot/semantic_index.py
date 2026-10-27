@@ -22,6 +22,8 @@ import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 
+from src.bot.curator_query import CuratorQueryParser
+
 logger = logging.getLogger(__name__)
 
 CURATOR_DATA_DIR = Path("data") / "curator"
@@ -281,21 +283,19 @@ def write_member_embeddings(base_dir: Path, members: list[dict[str, str]], encod
 
 
 class SemanticMemberRanker:
-    """What the bot uses at runtime: v2 ranking plus short notes for the answer prompt.
-
-    The setup that won the offline evaluation (docs/semantic_curator/PLAN.md): the v3
-    int8 encoder over Gemini profile + Grok enrichment documents, gender filter only.
-    """
+    """以 v3 int8 向量排序，載入別名表時套用 v4 實體／意圖約束。"""
 
     def __init__(
         self,
         index: SemanticMemberIndex,
         members: list[dict[str, str]],
         notes: dict[str, str],
+        query_parser: CuratorQueryParser | None = None,
     ) -> None:
         self.index = index
         self.members_by_id = {member["id"]: member for member in members}
         self.notes = notes
+        self.query_parser = query_parser
 
     @classmethod
     def load(cls, base_dir: Path, members: list[dict[str, str]]) -> SemanticMemberRanker | None:
@@ -323,13 +323,23 @@ class SemanticMemberRanker:
         except Exception:
             logger.exception("Could not load the semantic curator; using v1 ranking.")
             return None
-        return cls(index, members, load_member_notes(base_dir, members))
+        return cls(
+            index,
+            members,
+            load_member_notes(base_dir, members),
+            CuratorQueryParser.load(base_dir, members),
+        )
 
     def rank(self, query: str) -> list[dict[str, str]]:
-        ranked = apply_query_rules(
-            query, self.index.rank(query), self.members_by_id, exclude_referenced=False
-        )
-        return [self.members_by_id[member_id] for member_id in ranked]
+        return [self.members_by_id[i] for i in self.rank_ids(query)]
+
+    def rank_ids(self, query: str) -> list[str]:
+        parsed = self.query_parser.parse(query) if self.query_parser else None
+        ranked = self.index.rank(parsed.search_query if parsed else query)
+        if parsed:
+            ranked = self.query_parser.constrain(parsed, ranked)
+        ranked = apply_query_rules(query, ranked, self.members_by_id, exclude_referenced=False)
+        return ranked
 
 
 def load_member_notes(base_dir: Path, members: list[dict[str, str]]) -> dict[str, str]:

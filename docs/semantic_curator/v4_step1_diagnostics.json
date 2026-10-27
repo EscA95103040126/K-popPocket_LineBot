@@ -1,0 +1,2435 @@
+{
+  "baseline": "v2-bge-m3-v3-int8+gender",
+  "ranker": "v4-intent-aliases",
+  "sha256": {
+    "src/bot/curator_query.py": "cfcc76d48d424e40fe61ac9abb41c21e45ef2a931bf57e3b28a3d1a93027aeed",
+    "src/bot/semantic_index.py": "ba529d710707f60b25c09756860491d7c3cff68aa35f3f6804695724158b3386",
+    "data/curator/grok_aliases.csv": "0b79fbefc89a7339331afdf6c77fffa72d68455b36f35463c3246328c7785736"
+  },
+  "comparisons": {
+    "artist": {
+      "tie": 106,
+      "win": 8,
+      "loss": 2,
+      "two_sided_sign_p": 0.109375
+    },
+    "member": {
+      "tie": 19,
+      "loss": 1,
+      "two_sided_sign_p": 1.0
+    }
+  },
+  "structure": {
+    "v2-bge-m3-v3-int8+gender": {
+      "group_duplicate": 94,
+      "all_same_group": 54,
+      "protected_n": 10,
+      "protected_hits": 10
+    },
+    "v4-intent-aliases": {
+      "group_duplicate": 72,
+      "all_same_group": 35,
+      "protected_n": 10,
+      "protected_hits": 10
+    }
+  },
+  "mode_counts": {
+    "similarity": 33,
+    "general": 21,
+    "same_artist": 5,
+    "related_music": 57
+  },
+  "real_dev": [
+    {
+      "qid": "m001",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "ENHYPEN"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m002",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "ENHYPEN"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m003",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "ENHYPEN",
+        "NCT",
+        "TXT"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m004",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "ENHYPEN"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m005",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "ENHYPEN"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m006",
+      "mode": "similarity",
+      "facets": [
+        "vibe",
+        "vocal"
+      ],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "aespa"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m007",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "aespa"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m008",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "BABYMONSTER",
+        "ITZY",
+        "aespa"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m009",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "aespa"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m010",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "LE SSERAFIM"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m011",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "LE SSERAFIM"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m012",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "LE SSERAFIM"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m013",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "LE SSERAFIM",
+        "NMIXX"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m014",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "ATEEZ"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m015",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "ATEEZ"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m017",
+      "mode": "similarity",
+      "facets": [
+        "performance"
+      ],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "ATEEZ"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m018",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "BABYMONSTER",
+        "ILLIT",
+        "ITZY",
+        "IVE",
+        "KISS OF LIFE",
+        "TWICE"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m019",
+      "mode": "similarity",
+      "facets": [
+        "vibe"
+      ],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "Hearts2Hearts",
+        "ILLIT",
+        "IVE",
+        "TWICE"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m020",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "TWICE"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m021",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m022",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m023",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "Stray Kids"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m024",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "ATEEZ",
+        "Stray Kids"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m142",
+      "mode": "same_artist",
+      "facets": [
+        "performance"
+      ],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": true
+    },
+    {
+      "qid": "m199",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m200",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": true
+    },
+    {
+      "qid": "m201",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m202",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m203",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": true
+    },
+    {
+      "qid": "m204",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m205",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m206",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m207",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m208",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m209",
+      "mode": "general",
+      "facets": [
+        "vocal"
+      ],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m210",
+      "mode": "general",
+      "facets": [
+        "vocal"
+      ],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": true
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": true
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m211",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m212",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m215",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m216",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m217",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m218",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m219",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m220",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": true
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": true
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m221",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m222",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m223",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m224",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m225",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m230",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m231",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "NMIXX"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m232",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m233",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m234",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m235",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m236",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m237",
+      "mode": "same_artist",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": true
+    },
+    {
+      "qid": "m238",
+      "mode": "same_artist",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": true
+    },
+    {
+      "qid": "m239",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m240",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m241",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m242",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m243",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m244",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m245",
+      "mode": "same_artist",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": true
+    },
+    {
+      "qid": "m246",
+      "mode": "same_artist",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": true
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": true
+        }
+      },
+      "protected": true
+    },
+    {
+      "qid": "m247",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m248",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m249",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m250",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": true
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": true
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m251",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m253",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m254",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m255",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m256",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "RIIZE"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m257",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m259",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m260",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m261",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": true
+    },
+    {
+      "qid": "m262",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m263",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m264",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m265",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "KISS OF LIFE"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m267",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m268",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m269",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": true
+    },
+    {
+      "qid": "m270",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "EXO"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": true
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m271",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m272",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m273",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m274",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "RIIZE"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m275",
+      "mode": "similarity",
+      "facets": [
+        "vocal"
+      ],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "RIIZE"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m276",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m277",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "NMIXX"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m278",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m279",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m280",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "ATEEZ"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m282",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m283",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m285",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m286",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m287",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "NMIXX"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m288",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m289",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m290",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m291",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": true,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": true,
+          "member": false
+        }
+      },
+      "protected": true
+    },
+    {
+      "qid": "m294",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m295",
+      "mode": "similarity",
+      "facets": [
+        "vocal"
+      ],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "H1-KEY"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m296",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m299",
+      "mode": "related_music",
+      "facets": [
+        "vibe"
+      ],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m300",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "ILLIT"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m301",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "ILLIT"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m303",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m304",
+      "mode": "similarity",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [
+        "ILLIT"
+      ],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m305",
+      "mode": "related_music",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    },
+    {
+      "qid": "m306",
+      "mode": "general",
+      "facets": [],
+      "ambiguous": false,
+      "excluded_ids": [],
+      "excluded_artists": [],
+      "hits": {
+        "v2-bge-m3-v3-int8+gender": {
+          "artist": false,
+          "member": false
+        },
+        "v4-intent-aliases": {
+          "artist": false,
+          "member": false
+        }
+      },
+      "protected": false
+    }
+  ],
+  "demos": [
+    {
+      "query": "我喜歡 MEOVV 的 ANNA，有沒有相似類型的推薦？",
+      "mode": "similarity",
+      "facets": [],
+      "entities": [
+        {
+          "start": 4,
+          "end": 9,
+          "kind": "group",
+          "candidates": [
+            "MEOVV"
+          ],
+          "artist": "MEOVV"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "kind": "member",
+          "candidates": [
+            "meovv-anna"
+          ],
+          "artist": "MEOVV"
+        }
+      ],
+      "v3_top3": [
+        "meovv-anna",
+        "meovv-narin",
+        "meovv-ella"
+      ],
+      "v4_top3": [
+        "qwer-hina",
+        "twice-sana",
+        "twice-mina"
+      ],
+      "mv": {
+        "artist": "QWER",
+        "title": "고민중독",
+        "url": "https://youtu.be/ImuWa3SJulY?si=BLOrkmV-z_DqcUVi"
+      }
+    },
+    {
+      "query": "推薦那種不刻意搞笑，卻因為太認真反而很好笑的女偶像。",
+      "mode": "general",
+      "facets": [],
+      "entities": [],
+      "v3_top3": [
+        "nmixx-haewon",
+        "twice-dahyun",
+        "twice-sana"
+      ],
+      "v4_top3": [
+        "nmixx-haewon",
+        "twice-dahyun",
+        "twice-sana"
+      ],
+      "mv": {
+        "artist": "NMIXX",
+        "title": "Party O’Clock",
+        "url": "https://youtu.be/Rd2wppggYxo?si=sNzMQLJ9qBMI2JPV"
+      }
+    },
+    {
+      "query": "想找平常很安靜，但一上舞台就像變了一個人的女愛豆。",
+      "mode": "general",
+      "facets": [
+        "performance"
+      ],
+      "entities": [],
+      "v3_top3": [
+        "qwer-hina",
+        "idle-yuqi",
+        "itzy-yeji"
+      ],
+      "v4_top3": [
+        "qwer-hina",
+        "idle-yuqi",
+        "itzy-yeji"
+      ],
+      "mv": {
+        "artist": "i-dle",
+        "title": "Oh my god",
+        "url": "https://youtu.be/om3n2ni8luE?si=sJGIsrCzgF7fGfzY"
+      }
+    }
+  ]
+}
