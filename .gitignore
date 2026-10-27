@@ -16,3 +16,6 @@ data/reports/**/previous_active_cache/
 
 # Built by scripts/export_onnx_encoder.py; too large for git.
 models/
+
+# Raw Grok research batches (third-party post excerpts); only derived files are committed.
+data/curator/staging/
