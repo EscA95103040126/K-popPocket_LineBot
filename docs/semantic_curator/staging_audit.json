@@ -1,0 +1,6281 @@
+{
+  "status": "not_approved_for_runtime",
+  "files": {
+    "grok_songs.csv": {
+      "rows": 347,
+      "sha256": "869c3036ff41df82d166404fb4e80f823fe735527cafa830cb3780e263c9b8e4",
+      "missing_columns": [],
+      "coverage": {
+        "genre": 264,
+        "sound_features": 244,
+        "mood": 243,
+        "scenario": 71,
+        "vocal_traits": 109
+      },
+      "unique_urls": 446,
+      "evidence_items": 2270,
+      "evidence_items_with_url": 2270,
+      "source_tiers": {
+        "community": 245,
+        "press": 102
+      },
+      "artist_counts": {
+        "aespa": 20,
+        "IVE": 15,
+        "QWER": 5,
+        "KISS OF LIFE": 7,
+        "Hearts2Hearts": 6,
+        "MEOVV": 5,
+        "H1-KEY": 4,
+        "LE SSERAFIM": 17,
+        "BLACKPINK": 20,
+        "TWICE": 18,
+        "Red Velvet": 20,
+        "ITZY": 16,
+        "NMIXX": 15,
+        "BABYMONSTER": 9,
+        "i-dle": 20,
+        "ILLIT": 11,
+        "BTS": 19,
+        "EXO": 15,
+        "SEVENTEEN": 15,
+        "Stray Kids": 17,
+        "TXT": 15,
+        "ENHYPEN": 13,
+        "ATEEZ": 15,
+        "NCT": 15,
+        "RIIZE": 15
+      },
+      "metadata_only": 44
+    },
+    "grok_persona.csv": {
+      "rows": 154,
+      "sha256": "16048ae558bee7f0fa1487a142db7c64ca473884576dacd6368e86b6516d8f78",
+      "missing_columns": [],
+      "coverage": {
+        "offstage": 144,
+        "onstage": 95,
+        "contrast": 19,
+        "variety_traits": 80
+      },
+      "unique_urls": 241,
+      "evidence_items": 561,
+      "evidence_items_with_url": 559,
+      "source_tiers": {
+        "community_single": 77,
+        "community_multi": 71,
+        "press": 6
+      },
+      "contrast_labels": {
+        "有些反差": 3,
+        "insufficient_evidence": 135,
+        "明顯反差": 16
+      }
+    },
+    "grok_aliases.csv": {
+      "rows": 185,
+      "sha256": "0b79fbefc89a7339331afdf6c77fffa72d68455b36f35463c3246328c7785736",
+      "missing_columns": []
+    },
+    "idol_similarity_edges.csv": {
+      "rows": 46,
+      "sha256": "09fde7fb0e9e6267e389ebee8f32445659e8adb3747e2178949208b8a3179ca4",
+      "missing_columns": []
+    },
+    "idol_visual_profiles.csv": {
+      "rows": 26,
+      "sha256": "2d86647f7be8c885f095ee964adafaacc656db96ff9833b8ae95154cc04fa23e",
+      "missing_columns": []
+    },
+    "fandom_semantic_lexicon.csv": {
+      "rows": 55,
+      "sha256": "ef197612b6708082110bd1bb015ca0b210ec665f9dcbe9a747bb70fe65250319",
+      "missing_columns": []
+    }
+  },
+  "issues": [
+    {
+      "file": "grok_songs.csv",
+      "id": "ATEEZ",
+      "code": "pilot_core_coverage_shortfall",
+      "available": 2,
+      "target": 3
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "BABYMONSTER",
+      "code": "pilot_core_coverage_shortfall",
+      "available": 2,
+      "target": 3
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ENHYPEN",
+      "code": "pilot_core_coverage_shortfall",
+      "available": 2,
+      "target": 3
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "H1-KEY",
+      "code": "pilot_core_coverage_shortfall",
+      "available": 0,
+      "target": 3
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "Hearts2Hearts",
+      "code": "pilot_core_coverage_shortfall",
+      "available": 2,
+      "target": 3
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ILLIT",
+      "code": "pilot_core_coverage_shortfall",
+      "available": 2,
+      "target": 3
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "KISS OF LIFE",
+      "code": "pilot_core_coverage_shortfall",
+      "available": 1,
+      "target": 3
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "QWER",
+      "code": "pilot_core_coverage_shortfall",
+      "available": 0,
+      "target": 3
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "aespa-karina",
+      "code": "inferred_or_unlinked_evidence",
+      "label": "反差:由offstage/onstage兩項來源比較"
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "blackpink-jennie",
+      "code": "press_tier_without_direct_press_url"
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "twice-sana",
+      "code": "press_tier_without_direct_press_url"
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "twice-jihyo",
+      "code": "press_tier_without_direct_press_url"
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "twice-dahyun",
+      "code": "press_tier_without_direct_press_url"
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "nmixx-haewon",
+      "code": "press_tier_without_direct_press_url"
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "exo-kai",
+      "code": "press_tier_without_direct_press_url"
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "exo-sehun",
+      "code": "inferred_or_unlinked_evidence",
+      "label": "反差:由offstage/onstage兩項來源比較"
+    }
+  ],
+  "issue_counts": {
+    "pilot_core_coverage_shortfall": 8,
+    "inferred_or_unlinked_evidence": 2,
+    "press_tier_without_direct_press_url": 6
+  },
+  "content_review": [
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-black-mamba",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-next-level",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-savage",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-girls",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-spicy",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-better-things",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-drama",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-supernova",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-armageddon",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-whiplash",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-dirty-work",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-rich-man",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-forever",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-kiss-n-tell",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-wda-whole-different-animal",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-lemonade",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-up",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-hot-mess",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-welcome-to-my-world",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "aespa-thirsty",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ive-eleven",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ive-love-dive",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ive-after-like",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ive-kitsch",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ive-i-am",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ive-baddie",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ive-either-way",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ive-heya",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ive-supernova-love",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ive-attitude",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ive-xoxz",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ive-bang-bang",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ive-off-the-record",
+      "status": "pending_content_review",
+      "fields": [
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ive-accendio",
+      "status": "pending_content_review",
+      "fields": [
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ive-rebel-heart",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "qwer-discord",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "qwer-t-b-h",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "qwer-my-name-is-malguem",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "qwer-fake-idol",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "qwer-dear",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "kiss-of-life-shhh",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "kiss-of-life-bad-news",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "kiss-of-life-sticky",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "kiss-of-life-get-loud",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "kiss-of-life-igloo",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "kiss-of-life-lucky",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "kiss-of-life-midas-touch",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "hearts2hearts-the-chase",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "hearts2hearts-butterflies",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "hearts2hearts-style",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "hearts2hearts-focus",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "hearts2hearts-rude",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "hearts2hearts-pretty-please",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "meovv-meow",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "meovv-toxic",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "meovv-hands-up",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "meovv-go-hard",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "meovv-drop-top",
+      "status": "pending_content_review",
+      "fields": [
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "h1-key-rose-blossom",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "h1-key-athletic-girl",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "h1-key-thinkin-about-you",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "h1-key-summer-was-you",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-fearless",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-antifragile",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-unforgiven",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-eve-psyche-the-bluebeard-s-wife",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-easy",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-smart",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-crazy",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-hot",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-spaghetti",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-made-my-night",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-iconic-by-mistake",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-boompala",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-celebration",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-the-noise",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-different",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-come-over",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "le-sserafim-1-800-hot-n-fun",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-boombayah",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-whistle",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-playing-with-fire",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-stay",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-as-if-it-s-your-last",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-ddu-du-ddu-du",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-forever-young",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-kill-this-love",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-how-you-like-that",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-ice-cream",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-lovesick-girls",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-pink-venom",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-jump",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-flower",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-solo",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-lalisa",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-go",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-the-girls",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-typa-girl",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "blackpink-yeah-yeah-yeah",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-like-ooh-ahh",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-tt",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-knock-knock",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-signal",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-what-is-love",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-yes-or-yes",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-fancy",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-feel-special",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-the-feels",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-set-me-free",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-pop",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-killin-me-good",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-this-is-for",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-takedown",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-strategy",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-one-spark",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-i-got-you",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "twice-hare-hare",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-happiness",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-ice-cream-cake",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-dumb-dumb",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-red-flavor",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-peek-a-boo",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-bad-boy",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-power-up",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-psycho",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-feel-my-rhythm",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-birthday",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-chill-kill",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-monster",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-like-water",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-surfin-boy",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-cosmic",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-beautiful-christmas",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-pose",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-umpah-umpah",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-see-the-stars",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "red-velvet-zimzalabim",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "itzy-dalla-dalla",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "itzy-icy",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "itzy-wannabe",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "itzy-mafia-in-the-morning",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "itzy-loco",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "itzy-sneakers",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "itzy-cheshire",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "itzy-cake",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "itzy-untouchable",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "itzy-gold",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "itzy-motto",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "itzy-tunnel-vision",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "itzy-blah-blah-blah",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "itzy-boys-like-you",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "itzy-voltage",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "itzy-in-the-morning",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nmixx-o-o",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nmixx-love-me-like-this",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nmixx-dash",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nmixx-so-ar-breaker",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nmixx-see-that",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nmixx-know-about-me",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nmixx-blue-valentine",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nmixx-heavy-serenade",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nmixx-crescendo",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nmixx-high-horse",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nmixx-roller-coaster",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nmixx-young-dumb-stupid",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nmixx-funky-glitter-christmas",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nmixx-dice",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nmixx-party-o-clock",
+      "status": "pending_content_review",
+      "fields": [
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "babymonster-stuck-in-the-middle",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "babymonster-forever",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "babymonster-drip",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "babymonster-clik-clak",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "babymonster-batter-up",
+      "status": "pending_content_review",
+      "fields": [
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "babymonster-sheesh",
+      "status": "pending_content_review",
+      "fields": [
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "babymonster-like-that",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "babymonster-hot-sauce",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "babymonster-we-go-up",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-latata",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-hann-alone",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-uh-oh",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-lion",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-oh-my-god",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-tomboy",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-nxde",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-queencard",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-super-lady",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-klaxon",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-mono",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-wife",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-fate",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-i-want-that",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-i-do",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-allergy",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-dark-x-file",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-my-bag",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-last-dance",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "i-dle-moon",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "illit-cherish-my-love",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "illit-tick-tack",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "illit-almond-chocolate",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "illit-billyeoon-goyangi-do-the-dance",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "illit-not-cute-anymore",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "illit-iconic-by-mistake",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "illit-it-s-me",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "illit-toki-yo-tomare",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "illit-do-the-dance",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "illit-magnetic",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "illit-midnight-fiction",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-i-need-u",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-run",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-fire",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-spring-day",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-dna",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-idol",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-boy-with-luv",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-on",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-dynamite",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-life-goes-on",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-butter",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-permission-to-dance",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-seven",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-like-crazy",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-euphoria",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-normal",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-come-over",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-hooligan",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "bts-swim",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "exo-mama",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "exo-wolf",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "exo-growl",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "exo-lotto",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "exo-ko-ko-bop",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "exo-cream-soda",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "exo-candy",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "exo-crown",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "exo-let-me-in",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "exo-hear-me-out",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "exo-bird",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "exo-love-shot",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "exo-electric-kiss",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "exo-universe",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "exo-for-life",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "seventeen-very-nice",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "seventeen-clap",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "seventeen-left-right",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "seventeen-rock-with-you",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "seventeen-hot",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "seventeen-darl-ing",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "seventeen-super",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "seventeen-fighting",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "seventeen-thunder",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "seventeen-shohikigen",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "seventeen-love-money-fame",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "seventeen-fear",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "seventeen-adore-u",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "seventeen-mansae",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "seventeen-pretty-u",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-god-s-menu",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-maniac",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-case-143",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-s-class",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-lalalala",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-chk-chk-boom",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-walkin-on-water",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-ceremony",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-this-that",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-run-it",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-stay",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-in-the-dark",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-do-it",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-divine",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-hollow",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-giant",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "stray-kids-night",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "txt-crown",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "txt-lo-er-lo-er",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "txt-good-boy-gone-bad",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "txt-sugar-rush-ride",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "txt-chasing-that-feeling",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "txt-deja-vu",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "txt-over-the-moon",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "txt-love-language",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "txt-back-for-more",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "txt-do-it-like-that",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "txt-run-away",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "txt-can-t-you-see-me",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "txt-blue-hour",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "txt-0x1-lovesong",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "txt-anti-romantic",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "enhypen-drunk-dazed",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "enhypen-polaroid-love",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "enhypen-bite-me",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "enhypen-sweet-venom",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "enhypen-brought-the-heat-back",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "enhypen-bloody-paradise",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "enhypen-given-taken",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "enhypen-fever",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "enhypen-tamed-dashed",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "enhypen-future-perfect-pass-the-mic",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "enhypen-xo-only-if-you-say-yes",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "enhypen-no-doubt",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "enhypen-bad-desire-with-or-without-you",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ateez-crazy-form",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ateez-ice-on-my-teeth",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ateez-in-your-fantasy",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ateez-hush-hush",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ateez-pirate-king",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ateez-say-my-name",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ateez-wonderland",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ateez-answer",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ateez-inception",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ateez-fireworks-i-m-the-one",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ateez-deja-vu",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ateez-guerrilla",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ateez-halazia",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ateez-bouncy-k-hot-chilli-peppers",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "ateez-work",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nct-limitless",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nct-cherry-bomb",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nct-sticker",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nct-2-baddies",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nct-we-go-up",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nct-hot-sauce",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nct-glitch-mode",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nct-perfume",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nct-beatbox",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nct-universe-let-s-play-ball",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nct-favorite-vampire",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nct-ridin",
+      "status": "pending_content_review",
+      "fields": [
+        "genre"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nct-superhuman",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nct-fire-truck",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "nct-regular",
+      "status": "pending_content_review",
+      "fields": [
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "riize-get-a-guitar",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "riize-talk-saxy",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "riize-love-119",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "riize-siren",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "riize-impossible",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "riize-boom-boom-bass",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "riize-lucky",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "riize-fly-up",
+      "status": "pending_content_review",
+      "fields": [
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "riize-fame",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "riize-sunburst",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "scenario"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "riize-do-your-dance",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "riize-all-of-you",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "riize-combo",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "riize-memories",
+      "status": "pending_content_review",
+      "fields": [
+        "genre",
+        "sound_features",
+        "mood",
+        "vocal_traits"
+      ]
+    },
+    {
+      "file": "grok_songs.csv",
+      "id": "riize-odyssey",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "aespa-karina",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "aespa-giselle",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "aespa-winter",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "aespa-ningning",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "ive-yujin",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "ive-gaeul",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "ive-rei",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "ive-wonyoung",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "ive-liz",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "ive-leeseo",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "qwer-chodan",
+      "status": "pending_content_review",
+      "fields": [
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "qwer-magenta",
+      "status": "pending_content_review",
+      "fields": [
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "qwer-hina",
+      "status": "pending_content_review",
+      "fields": [
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "qwer-siyeon",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "kissoflife-julie",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "kissoflife-natty",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "kissoflife-belle",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "kissoflife-haneul",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "hearts2hearts-carmen",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "hearts2hearts-jiwoo",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "hearts2hearts-yuha",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "hearts2hearts-stella",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "hearts2hearts-juun",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "hearts2hearts-ana",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "hearts2hearts-ian",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "hearts2hearts-yeon",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "meovv-sooin",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "meovv-gawon",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "meovv-anna",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "meovv-narin",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "meovv-ella",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "h1key-seoi",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "h1key-riina",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "h1key-hwiseo",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "h1key-yel",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "lesserafim-sakura",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "lesserafim-chaewon",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "lesserafim-yunjin",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "lesserafim-kazuha",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "lesserafim-eunchae",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "blackpink-jisoo",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "blackpink-jennie",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "blackpink-rose",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "blackpink-lisa",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "twice-nayeon",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "twice-jeongyeon",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "twice-momo",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "twice-sana",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "twice-jihyo",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "twice-mina",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "twice-dahyun",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "twice-chaeyoung",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "twice-tzuyu",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "redvelvet-irene",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "redvelvet-seulgi",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "redvelvet-wendy",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "redvelvet-joy",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "redvelvet-yeri",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "itzy-yeji",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "itzy-lia",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "itzy-ryujin",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "itzy-chaeryeong",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "itzy-yuna",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "nmixx-lily",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "nmixx-haewon",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "nmixx-sullyoon",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "nmixx-bae",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "nmixx-jiwoo",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "nmixx-kyujin",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "babymonster-ruka",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "babymonster-pharita",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "babymonster-asa",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "babymonster-ahyeon",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "babymonster-rami",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "babymonster-rora",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "babymonster-chiquita",
+      "status": "pending_content_review",
+      "fields": []
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "idle-miyeon",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "idle-minnie",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "idle-soyeon",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "contrast"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "idle-yuqi",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "idle-shuhua",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "illit-yunah",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "illit-minju",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "illit-moka",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "illit-wonhee",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "illit-iroha",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "bts-rm",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "bts-jin",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "bts-suga",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "bts-jhope",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "bts-jimin",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "bts-v",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "bts-jungkook",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "exo-suho",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "exo-chanyeol",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "exo-do",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "exo-baekhyun",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "exo-kai",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "exo-sehun",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "seventeen-scoups",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "seventeen-jeonghan",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "seventeen-joshua",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "seventeen-jun",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "seventeen-hoshi",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "seventeen-wonwoo",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "seventeen-woozi",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "seventeen-the8",
+      "status": "pending_content_review",
+      "fields": [
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "seventeen-mingyu",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "seventeen-dk",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "seventeen-seungkwan",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "seventeen-vernon",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "seventeen-dino",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "straykids-bangchan",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "straykids-leeknow",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "straykids-changbin",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "straykids-hyunjin",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "straykids-han",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "straykids-felix",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "straykids-seungmin",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "straykids-in",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "txt-yeonjun",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "txt-soobin",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "txt-beomgyu",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "txt-taehyun",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "txt-hueningkai",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "enhypen-jungwon",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "enhypen-jay",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "enhypen-jake",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "enhypen-sunghoon",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "enhypen-sunoo",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "enhypen-niki",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "ateez-hongjoong",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "ateez-seonghwa",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "ateez-yunho",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "ateez-yeosang",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "ateez-san",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "ateez-mingi",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "contrast"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "ateez-wooyoung",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "ateez-jongho",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "nct-taeyong",
+      "status": "pending_content_review",
+      "fields": [
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "nct-doyoung",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "nct-ten",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "nct-jaehyun",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "nct-jeno",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "nct-haechan",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "nct-jaemin",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "nct-renjun",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "nct-jisung",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "riize-shotaro",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "riize-eunseok",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "riize-sungchan",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage",
+        "variety_traits"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "riize-wonbin",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "riize-sohee",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    },
+    {
+      "file": "grok_persona.csv",
+      "id": "riize-anton",
+      "status": "pending_content_review",
+      "fields": [
+        "offstage",
+        "onstage"
+      ]
+    }
+  ],
+  "pilot_candidates": [
+    {
+      "song_id": "ateez-ice-on-my-teeth",
+      "artist": "ATEEZ",
+      "song": "Ice on My Teeth",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "ateez-in-your-fantasy",
+      "artist": "ATEEZ",
+      "song": "In Your Fantasy",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "babymonster-forever",
+      "artist": "BABYMONSTER",
+      "song": "Forever",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "babymonster-drip",
+      "artist": "BABYMONSTER",
+      "song": "Drip",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "blackpink-boombayah",
+      "artist": "BLACKPINK",
+      "song": "Boombayah",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "blackpink-whistle",
+      "artist": "BLACKPINK",
+      "song": "Whistle",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "blackpink-stay",
+      "artist": "BLACKPINK",
+      "song": "Stay",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "bts-i-need-u",
+      "artist": "BTS",
+      "song": "I Need U",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "bts-run",
+      "artist": "BTS",
+      "song": "Run",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "bts-spring-day",
+      "artist": "BTS",
+      "song": "Spring Day",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "enhypen-drunk-dazed",
+      "artist": "ENHYPEN",
+      "song": "Drunk-Dazed",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "enhypen-sweet-venom",
+      "artist": "ENHYPEN",
+      "song": "Sweet Venom",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "exo-lotto",
+      "artist": "EXO",
+      "song": "Lotto",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "exo-ko-ko-bop",
+      "artist": "EXO",
+      "song": "Ko Ko Bop",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "exo-cream-soda",
+      "artist": "EXO",
+      "song": "Cream Soda",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "hearts2hearts-the-chase",
+      "artist": "Hearts2Hearts",
+      "song": "The Chase",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "hearts2hearts-rude",
+      "artist": "Hearts2Hearts",
+      "song": "Rude!",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "illit-not-cute-anymore",
+      "artist": "ILLIT",
+      "song": "Not Cute Anymore",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "illit-it-s-me",
+      "artist": "ILLIT",
+      "song": "It's Me",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "itzy-dalla-dalla",
+      "artist": "ITZY",
+      "song": "Dalla Dalla",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "itzy-wannabe",
+      "artist": "ITZY",
+      "song": "Wannabe",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "itzy-mafia-in-the-morning",
+      "artist": "ITZY",
+      "song": "Mafia in the Morning",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "ive-eleven",
+      "artist": "IVE",
+      "song": "Eleven",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "ive-love-dive",
+      "artist": "IVE",
+      "song": "Love Dive",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "ive-after-like",
+      "artist": "IVE",
+      "song": "After Like",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "kiss-of-life-bad-news",
+      "artist": "KISS OF LIFE",
+      "song": "Bad News",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "le-sserafim-fearless",
+      "artist": "LE SSERAFIM",
+      "song": "Fearless",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "le-sserafim-antifragile",
+      "artist": "LE SSERAFIM",
+      "song": "Antifragile",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "le-sserafim-unforgiven",
+      "artist": "LE SSERAFIM",
+      "song": "Unforgiven",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "meovv-meow",
+      "artist": "MEOVV",
+      "song": "Meow",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "meovv-toxic",
+      "artist": "MEOVV",
+      "song": "Toxic",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "meovv-hands-up",
+      "artist": "MEOVV",
+      "song": "Hands Up",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "nct-cherry-bomb",
+      "artist": "NCT",
+      "song": "Cherry Bomb",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "nct-sticker",
+      "artist": "NCT",
+      "song": "Sticker",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "nct-2-baddies",
+      "artist": "NCT",
+      "song": "2 Baddies",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "nmixx-o-o",
+      "artist": "NMIXX",
+      "song": "O.O",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "nmixx-love-me-like-this",
+      "artist": "NMIXX",
+      "song": "Love Me Like This",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "nmixx-dash",
+      "artist": "NMIXX",
+      "song": "Dash",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "riize-get-a-guitar",
+      "artist": "RIIZE",
+      "song": "Get a Guitar",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "riize-talk-saxy",
+      "artist": "RIIZE",
+      "song": "Talk Saxy",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "riize-love-119",
+      "artist": "RIIZE",
+      "song": "Love 119",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "red-velvet-happiness",
+      "artist": "Red Velvet",
+      "song": "Happiness",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "red-velvet-ice-cream-cake",
+      "artist": "Red Velvet",
+      "song": "Ice Cream Cake",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "red-velvet-dumb-dumb",
+      "artist": "Red Velvet",
+      "song": "Dumb Dumb",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "seventeen-clap",
+      "artist": "SEVENTEEN",
+      "song": "Clap",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "seventeen-left-right",
+      "artist": "SEVENTEEN",
+      "song": "Left & Right",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "seventeen-rock-with-you",
+      "artist": "SEVENTEEN",
+      "song": "Rock with You",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "stray-kids-maniac",
+      "artist": "Stray Kids",
+      "song": "Maniac",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "stray-kids-s-class",
+      "artist": "Stray Kids",
+      "song": "S-Class",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "stray-kids-lalalala",
+      "artist": "Stray Kids",
+      "song": "Lalalala",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "twice-tt",
+      "artist": "TWICE",
+      "song": "TT",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "twice-signal",
+      "artist": "TWICE",
+      "song": "Signal",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "twice-what-is-love",
+      "artist": "TWICE",
+      "song": "What Is Love?",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "txt-crown",
+      "artist": "TXT",
+      "song": "Crown",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "txt-back-for-more",
+      "artist": "TXT",
+      "song": "Back for More",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "txt-do-it-like-that",
+      "artist": "TXT",
+      "song": "Do It Like That",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "aespa-black-mamba",
+      "artist": "aespa",
+      "song": "Black Mamba",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "aespa-next-level",
+      "artist": "aespa",
+      "song": "Next Level",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "aespa-savage",
+      "artist": "aespa",
+      "song": "Savage",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "i-dle-latata",
+      "artist": "i-dle",
+      "song": "Latata",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "i-dle-hann-alone",
+      "artist": "i-dle",
+      "song": "Hann (Alone)",
+      "status": "pending_content_review"
+    },
+    {
+      "song_id": "i-dle-uh-oh",
+      "artist": "i-dle",
+      "song": "Uh-Oh",
+      "status": "pending_content_review"
+    }
+  ],
+  "profile_review_flags": [
+    {
+      "id": "aespa-giselle",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "GISELLE 擁有獨特的貓咪系外型，在 aespa 中擔任饒舌與歌唱角色。她散發著冷感與知性的氛圍，舞台上展現出強烈的個人風格，私下卻有著鮮明的反差魅力。她與粉絲互動時流露出的朋友感與戀愛感，讓她深受喜愛。適合喜歡個性鮮明、具備時尚感與獨特音樂品味，且欣賞知性氣質與反差萌的粉絲關注。",
+      "staging_offstage": "說話輕聲細語，卻常冷不防冒出笑點；私下反應大、笑聲大，偶爾直白吐槽，自稱性子急。",
+      "staging_onstage": "身材比例佳、核心穩，舞蹈線條乾淨俐落，在Next Level等曲目中表現受肯定。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "aespa-winter",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "WINTER 作為 aespa 的核心成員，兼具主唱與領舞實力，舞台表現力極佳。她擁有清冷且帶有神性的氣質，外型結合了小兔與貓咪的靈動感，常被粉絲視為心中的「白月光」。在團內她不僅是視覺擔當，更以強大的反差魅力著稱，私下氛圍治癒且親切。這類兼具實力與獨特空靈氣質的成員，非常適合喜愛舞台表現精準、追求高質感視覺享受，以及欣賞多面性偶像魅力的粉絲。",
+      "staging_offstage": "自認並被公認為團內氣氛製造者，愛搞笑、反應快，但其實相當怕生，也被選為最愛哭的成員。",
+      "staging_onstage": "主唱兼領舞，舞台上是能量最充沛的成員之一，現場唱功穩定，舞蹈細節多、學舞最快。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "aespa-ningning",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "作為 aespa 的忙內與全能型成員，NINGNING 擁有極具辨識度的厚實嗓音，帶有獨特的沙啞質感，在舞台上展現出強大的支配力與穩定唱功。外型精緻如貓咪的她，私下性格元氣活潑，與舞台上霸氣十足的模樣形成強烈反差。她既能駕馭強烈概念，也能展現甜美親和的一面，這種充滿層次感的魅力，非常適合喜歡實力派唱將、欣賞舞台表現力，以及被「反差萌」特質吸引的粉絲。",
+      "staging_offstage": "好奇心旺盛、活潑又有點脫線，表達直率；聲音與反應都大，常不小心爆雷，被稱很有綜藝感。",
+      "staging_onstage": "主唱之一，能做出高水準轉音與即興斷拍，現場饒舌也獲好評。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "ive-yujin",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "安兪真作為 IVE 的隊長，擁有全能型的舞台實力，無論是歌唱、舞蹈還是綜藝表現皆十分亮眼。她具備強大的舞台支配力，能完美消化多變風格，私下則展現出親切的「狗狗相」與元氣滿滿的姐系魅力。這種在舞台上的霸氣與私下的反差感，讓她深受喜愛。適合喜歡全能型偶像、欣賞隊長魅力，或是被開朗且具備綜藝感的成員所吸引的粉絲。",
+      "staging_offstage": "自稱「外向的內向人」；愛惡作劇、個性大剌剌，話很多被選為話最多成員，同時懂察言觀色、成熟。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "ive-rei",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "REI 是 IVE 中兼具饒舌與歌唱實力的成員，外型結合了小兔般的靈動與貓咪的慵懶氣質。她在團內展現出獨特的鄰家女孩氛圍，充滿元氣的個性與舞台上專業的表現形成迷人反差。REI 帶有強烈的親切感與朋友般的互動特質，非常適合喜歡甜美系偶像、追求戀愛感與療癒氛圍的粉絲。無論是舞台上的自信饒舌，還是私下古靈精怪的魅力，都讓她成為團內不可或缺的亮點。",
+      "staging_offstage": "被描述為安靜沉穩、做事有計畫，但對身邊人很會表達愛意、愛撒嬌，也帶動其他成員撒嬌。",
+      "staging_onstage": "長手長腳讓動作柔順，複雜編舞也能穩定完成，並搭配貼合曲風的表情管理。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "ive-liz",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 IVE 的主唱擔當，Liz 擁有極具辨識度的清亮嗓音，在舞台上展現出穩健且充滿情感的歌唱實力。她擁有如貓咪般精緻可愛的外型，氣質在甜美與反差感之間切換自如，既有鄰家女孩的親切感，又能帶給粉絲溫暖的治癒力量。Liz 散發著獨特的親近感與戀愛氛圍，非常適合喜歡溫柔甜美風格、追求音樂實力與療癒系偶像的粉絲關注。",
+      "staging_offstage": "怕生又容易害羞，出道初期被注目會臉紅；Gaeul說她很常獨處，Rei也稱她安靜。",
+      "staging_onstage": "以表情演技見長，編舞家稱讚她用表情撐起〈ELEVEN〉開場段落。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "ive-leeseo",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "作為 IVE 的忙內，LEESEO 擁有標誌性的小鹿般靈動外型，在舞台上展現出與年齡不符的強大氣場與舞蹈實力。她平時散發著元氣滿滿的甜美氣質，私下則帶有獨特的反差魅力，既有鄰家女孩的親切朋友感，又具備令人心動的白月光氛圍。LEESEO 在團內兼具 Vocal 與 Visual 擔當，非常適合喜愛活力四射、同時又擁有精緻偶像氣質的粉絲，是團體中不可或缺的活力來源。",
+      "staging_offstage": "典型ENFP，活潑愛玩、樂觀不鑽牛角尖，不怕生；在家也愛宅，該安靜時懂得收斂。",
+      "staging_onstage": "跳舞時充滿活力，搭配表情演技；直拍鏡頭貼臉仍不慌，展現穩定的表演能力。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "qwer-chodan",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "作為 QWER 的隊長與鼓手，CHODAN 展現出強大的舞台支配力。她擁有深厚的音樂底蘊，在團內擔任核心支柱，不僅具備專業的鼓技，更以霸氣十足的表演風格著稱。私下的她帶有親切的朋友感，與舞台上野性十足的形象形成強烈反差。這種兼具帥氣與親和力的特質，非常適合喜愛樂團文化、欣賞實力派偶像，以及被姐系魅力吸引的粉絲。無論是強勁的節奏掌控，還是充滿個性的個人風格，都讓她成為團體中不可或缺的靈魂人物。",
+      "staging_offstage": "insufficient_evidence",
+      "staging_onstage": "鼓手，練成甩鼓棒的招牌動作後，每次舞台都會表演；幾乎每場舞台都有直拍。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "qwer-magenta",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "MAGENTA 作為 QWER 的貝斯手，擁有極具辨識度的貓系與狐狸系外型，舞台上散發著冷感與痞帥並存的獨特氛圍。她不僅具備全能藝人的潛力，更在團內展現出強烈的個人風格，在冷豔氣質與親切的朋友感之間切換自如，充滿反差魅力。這類兼具視覺衝擊力與率性態度的成員，非常適合喜愛個性化舞台風格、追求獨特氛圍感，以及欣賞帶有叛逆帥氣特質的粉絲關注。",
+      "staging_offstage": "insufficient_evidence",
+      "staging_onstage": "貝斯手，演奏穩定後舞台上加入轉圈、兔子跳等表演，並研究直拍改善表情。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "qwer-siyeon",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "作為 QWER 的主唱與全能型成員，SIYEON 擁有極具辨識度的嗓音，在樂團中展現出強大的舞台支配力。她外型兼具狗狗般的親和力與小兔般的靈動感，氣質上完美融合了鄰家女孩的元氣與令人心動的白月光感。這種甜系外表與舞台上爆發力十足的反差魅力，讓她深受喜愛。無論是欣賞樂團現場演出的熱血樂迷，或是被她清新甜美氣質吸引的粉絲，都能在 SIYEON 的表演中感受到她作為全能偶像的獨特光芒。",
+      "staging_offstage": "insufficient_evidence",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "kissoflife-natty",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "NATTY 是 KISS OF LIFE 的全能型成員，在團內展現出強大的舞蹈實力與穩健的饒舌與歌唱表現。她擁有貓系與狐狸般的精緻外型，舞台風格極具支配力，能完美消化性感且霸氣的表演。私下則展現出迷人的反差魅力，既有成熟的姐系氣質，又帶有令人心動的戀愛感。非常適合喜愛舞台表現力強、風格鮮明且具備全方位實力偶像的粉絲，能輕易被她那種自信且充滿張力的舞台魅力所吸引。",
+      "staging_offstage": "insufficient_evidence",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "kissoflife-belle",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Belle 為 KISS OF LIFE 的核心成員，擁有極具辨識度的清亮嗓音，在團內擔任主唱與全能型角色。她外型兼具小鹿般的靈動與小兔般的甜美，氣質知性且帶有獨特的反差魅力，時而展現鄰家女孩的親切感，時而散發神性般的白月光氣息。Belle 的舞台風格細膩且充滿感染力，非常適合喜愛實力派唱將、欣賞知性美，以及偏好溫柔卻具備強大舞台張力的粉絲。",
+      "staging_offstage": "與都會冷豔外表相反，個性活潑、笑聲很大，有「笑音Belle」之稱；多才卻意外迷糊，被稱很會說話。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "hearts2hearts-carmen",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "CARMEN 是 Hearts2Hearts 團內的實力派 Vocal，擁有如同小鹿般清澈靈動的外型，氣質甜美且帶有獨特的鄰家女孩魅力。她在舞台上展現出治癒人心的歌聲，私下則散發著溫暖的朋友感與白月光般的純淨氣質，同時具備令人驚喜的反差魅力。CARMEN 非常適合喜愛清新治癒風格、追求溫柔唱腔以及欣賞鄰家親切感的粉絲，是團體中不可或缺的感性核心。",
+      "staging_offstage": "總是開朗正向，常被說像陽光；成員累時會笑著替大家打氣，被形容有溫暖的媽媽感。",
+      "staging_onstage": "表情演技突出，能把歌曲氛圍跳出來，搭配可愛外貌反應很好。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "hearts2hearts-jiwoo",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Hearts2Hearts 的隊長 Jiwoo 擁有小鹿般的清澈外型與知性氣質，身為團內的全能擔當，在舞蹈、饒舌與歌唱領域皆展現出深厚實力。她具備清冷與反差並存的獨特魅力，舞台上展現強大氣場，私下卻帶有親切的白月光感與朋友感。曾有多年芭蕾舞訓練背景，使她的肢體線條優美，表演極具氛圍感。適合喜歡全能型偶像、欣賞知性美，以及偏好清冷氣質中帶有溫暖反差感的粉絲。",
+      "staging_offstage": "自評誠實、謹慎、務實，自稱原則主義者；有領導力、做事俐落可靠，平時則偏害羞。",
+      "staging_onstage": "擅長細膩協調成員細節，帶出整體整齊的群舞。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "hearts2hearts-ana",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Hearts2Hearts 的 A-NA 擁有小兔與小鹿般的精緻外型，在團內擔任 Vocal 與 Visual。她的氣質獨特，完美融合了甜美親切的鄰家感與清冷的神性美，常帶有一種難以捉摸的白月光氛圍。A-NA 在舞台上展現出強烈的個人魅力，不僅歌聲動人，更以出眾的視覺表現力吸引目光。喜愛清新風格、追求舞台氛圍感，以及欣賞具備空靈氣質與反差魅力的粉絲，絕對會被 A-NA 的獨特氣場深深吸引。",
+      "staging_offstage": "天生會逗人笑，被成員選為最好笑的成員；kprofiles也形容她開朗外向、對陌生人怕生、最容易哭。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "hearts2hearts-ian",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "IAN 為 Hearts2Hearts 的全能型成員，擁有貓系與狐狸相結合的精緻外型，舞台上展現出強烈的性感氛圍與冷感氣質。作為團內的 Vocal 與門面擔當，她不僅具備穩定的歌唱實力，更以獨特的「神性」與「戀愛感」並存的魅力著稱。IAN 擅長透過反差萌吸引粉絲，適合喜愛高冷御姐風、追求舞台氛圍感，以及欣賞多才多藝偶像的粉絲關注。",
+      "staging_offstage": "出道前即被介紹為氣氛製造者，個性活潑開朗、愛惡作劇，成員說跟她在一起不會無聊；喜歡冷笑話。",
+      "staging_onstage": "表情演技出名，在The Chase與STYLE活動期以表情與舞蹈受到注目。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "meovv-narin",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "NARIN 是 MEOVV 的全能型成員，在團內展現出色的歌唱與饒舌實力。她擁有貓咪與狐狸混合的精緻外型，舞台上散發強大的支配感與霸氣，私下則流露親切的朋友感，展現迷人的反差魅力。NARIN 的表演風格充滿氛圍感與性感氣息，非常適合喜愛舞台表現力強、兼具冷豔與親和力特質的粉絲關注。",
+      "staging_offstage": "典型ENFP，活潑話多，是常在粉絲平台互動的成員之一。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "meovv-ella",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "ELLA 是 MEOVV 的成員，在團內擔任 Vocal 與 Visual。她擁有精緻的小鹿與狗狗相結合的外型，氣質清新甜美，帶有強烈的反差魅力。她給人一種如同白月光般的純淨感，同時具備親切的鄰家氣息，互動時流露出的朋友感十分討喜。ELLA 的舞台風格充滿元氣，非常適合喜愛甜美系偶像、追求清新氣質以及欣賞具備反差萌特質的粉絲關注。",
+      "staging_offstage": "insufficient_evidence",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "h1key-riina",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "RIINA 在 H1-KEY 中擔任主唱，擁有高挑的身材與出眾的舞台支配感。她的外型結合了貓咪的靈動與小鹿般的清冷氣質，在舞台上展現出獨特的氛圍感與性感魅力。RIINA 的表演風格多變，能在清冷與熱情之間切換自如，展現強大的反差魅力。無論是細膩的歌聲還是舞蹈表現，都極具個人特色。適合喜歡具備強烈舞台氣場、外型高冷卻帶有反差萌，且能駕馭多種風格偶像的粉絲關注。",
+      "staging_offstage": "愛笑、豪爽、精力充沛，口才好，負責團內談話與活動主持，被視為綜藝型成員。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "h1key-hwiseo",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Hwiseo 是 H1-KEY 的全能型成員，在團內展現出色的歌唱、饒舌與舞蹈實力。她擁有狐狸般精緻且帶有小鹿靈動感的外型，舞台風格極具支配力，能完美駕馭多種曲風。私下則展現出親切的朋友感，這種霸氣舞台與日常反差的氛圍，深受粉絲喜愛。適合喜歡全方位實力派偶像、欣賞姐系魅力以及被強大舞台氣場吸引的粉絲關注。",
+      "staging_offstage": "天真樂觀，初見怕生，熟了就露出古怪的4D個性；熟悉迷因、愛玩文字遊戲，不太會緊張。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "lesserafim-sakura",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "SAKURA 作為 LE SSERAFIM 的成員，擁有極高的舞台辨識度。她精緻的外型結合了貓咪與小鹿般的靈動氣質，在團內以 Vocal 與 Visual 定位展現多樣魅力。其風格遊走於清冷知性與親切朋友感之間，獨特的氛圍感營造出強烈的神性美。喜愛細膩表演風格、欣賞成熟藝人魅力，以及被知性氣質與反差萌吸引的粉絲，將會非常鍾情於 SAKURA 的舞台表現與個人特質。",
+      "staging_offstage": "自稱極度內向，MBTI測出I佔98%；Eunchae說她鏡頭前話多，實際上沉穩安靜，也很會寫文章。",
+      "staging_onstage": "〈FEARLESS〉直拍因實力大幅成長引發熱議，一天內YouTube破百萬觀看。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "lesserafim-eunchae",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 LE SSERAFIM 的忙內，Eunchae 擁有極具辨識度的小兔與狗狗相外型，散發出清新甜美的氣質。她在團內不僅展現出色的歌唱與舞蹈實力，更以充滿元氣的活力形象深受喜愛。Eunchae 帶有強烈的鄰家朋友感與白月光般的純真魅力，在舞台上與私下展現出的反差萌，讓她成為團體中的可愛擔當。非常適合喜歡元氣少女、欣賞忙內成長過程，以及偏好甜美治癒風格的粉絲關注。",
+      "staging_offstage": "自稱很怕生，練習生初期適應辛苦，主持節目見了許多來賓後才好轉；情感型、心思細膩。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "blackpink-jisoo",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Jisoo 作為 BLACKPINK 的門面擔當與領唱，擁有極具辨識度的清冷嗓音與精緻外型。她在舞台上展現出穩健的唱功與優雅氣質，私下則以獨特的 4D 個性與幽默感成為團內的氣氛製造者，展現出鄰家女孩般親切且反差的魅力。Jisoo 兼具甜美與神性的白月光氣質，深受喜愛優雅風格、欣賞個人魅力與綜藝感兼具的粉絲喜愛，是許多人心目中兼具顏值與實力的全能偶像。",
+      "staging_offstage": "與冷豔形象不同，愛笑開朗又迷糊，是BLACKPINK的氣氛製造者；自述本性其實安靜。",
+      "staging_onstage": "〈How You Like That〉現場安可直拍展現音量大又穩定的歌聲，舞蹈線條也變得柔和。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "blackpink-lisa",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 BLACKPINK 的全能舞擔與饒舌擔當，Lisa 擁有極強的舞台支配力，舉手投足間展現出霸氣又性感的魅力。她精湛的舞蹈實力與節奏感，讓她在舞台上總能成為視覺焦點。私底下的她則展現出親切可愛的反差萌，這種在舞台霸主與鄰家女孩間自由切換的特質，深受全球粉絲喜愛。無論是欣賞頂尖舞蹈表演，或是被她獨特的時尚氛圍與個人魅力吸引的粉絲，都能在 Lisa 身上找到強烈的共鳴。",
+      "staging_offstage": "凡事開朗正向，維持高昂情緒、言行可愛；Jennie說她是最自由的人，也是最常給反應的成員。",
+      "staging_onstage": "長手長腳打造漂亮舞線，兼具力量與節奏感，能用自己的風格重新詮釋編舞，表情運用出色。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "twice-nayeon",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "作為 TWICE 的核心成員，Nayeon 以標誌性的兔牙與甜美清新的外型廣為人知。她在團內擔任領唱與領舞，舞台風格充滿活力且穩定，總能展現出極具感染力的元氣感。Nayeon 兼具鄰家女孩的親切與舞台上的自信魅力，這種獨特的戀愛感與朋友感，讓她深受粉絲喜愛。無論是甜美可愛的風格，或是展現成熟魅力的反差面，她都能完美消化。適合喜歡充滿活力、笑容燦爛且具備強大舞台表現力偶像的粉絲。",
+      "staging_offstage": "自述學生時期個性活潑、和朋友毫無隔閡，六年都當班長；說話時習慣看著對方眼睛。",
+      "staging_onstage": "在TWICELAND〈REALLY REALLY〉翻跳舞台直拍破千萬觀看，模仿他團舞蹈也能抓到重點。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "twice-jeongyeon",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "TWICE 的定延擁有獨特且溫暖的低音音色，在團體中展現穩健的歌唱實力，常負責歌曲中低音段落，為音樂增添厚實感。她的舞台風格俐落帥氣，私下則散發出清冷與溫柔並存的反差魅力。定延在團內扮演著可靠的姐系角色，給人一種如同朋友般親近且充滿治癒感的氛圍。喜愛成熟穩重氣質、欣賞實力派唱功，或是喜歡這種帶有反差萌、能給予心靈慰藉的粉絲，會非常容易被她獨特的個人魅力所吸引。",
+      "staging_offstage": "負責宿舍整理與清潔，照顧成員、溫暖體貼，但打掃時毫不留情、會唸人。",
+      "staging_onstage": "雖非舞蹈擔當，卻有反應很好的直拍；口號是「魅力」。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "twice-momo",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Momo 是 TWICE 的主舞擔當，擁有極強的舞台支配力，以精準且充滿力道的舞蹈動作聞名。她外型神似貓咪，氣質兼具性感與霸氣，舞台上展現出強大的氣場與氛圍感，私下則流露親切的朋友感，形成強烈的反差魅力。這類能完美駕馭多種風格、在表演中展現極致專業與自信的成員，非常適合喜愛強烈舞台表現力、欣賞舞蹈實力派以及被反差萌吸引的粉絲。",
+      "staging_offstage": "個性單純溫和、言行可愛，但心理素質強，該說的話會直接說出口。",
+      "staging_onstage": "被稱「跳舞機器」，公認TWICE最強舞者，兼具力量、俐落、柔軟度與表情。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "twice-sana",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "TWICE 的 Sana 以甜美迷人的氣質著稱，在團內擔任 Vocal 與門面擔當。她擁有極具辨識度的外型，結合了小兔般的靈動與狐狸般的嫵媚，在舞台上展現出強烈的反差魅力。Sana 的表演風格充滿元氣，同時具備鄰家女孩的親切感與獨特的戀愛氛圍，總能輕易擄獲粉絲的心。非常適合喜歡甜美風格、享受舞台反差感，以及偏好充滿活力且具備親和力偶像的粉絲追隨。",
+      "staging_offstage": "可愛愛撒嬌、愛笑，反應好；以充滿活力、開朗的個性在韓國內外受到認可。",
+      "staging_onstage": "困難動作也能自然呈現，從力量到性感都能詮釋，在直拍中特別突出。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "twice-jihyo",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "TWICE 的隊長志效，擁有極具爆發力的主唱實力與精湛舞技，是團內公認的六邊形全能戰士。她在舞台上展現出強大的支配力，氣場十足且充滿自信，私下卻有著親切的鄰家姊姊感，這種霸氣與元氣兼具的反差魅力極具吸引力。志效的小鹿般靈動外型與穩健的台風，非常適合喜愛舞台表現力強、性格開朗且具備領袖風範偶像的粉絲，無論是欣賞其專業演出還是被她充滿活力的個人特質吸引，都能感受到她作為核心成員的獨特魅力。",
+      "staging_offstage": "綜藝中常負責收尾與帶口號，話最多、什麼都不推辭；也以擅長撒嬌聞名。",
+      "staging_onstage": "被評為實力派主唱，具備強大舞台存在感，懂得如何吸引觀眾視線。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "twice-dahyun",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "TWICE 的多賢以充滿元氣的鄰家形象著稱，在團內擔任饒舌與歌唱角色。她擁有獨特的甜美氣質與反差魅力，舞台上展現自信活力，私下則帶有親切的朋友感與白月光般的純淨氛圍。因外型神似小兔，給人靈動可愛的印象。非常適合喜歡充滿正能量、個性開朗且具備綜藝感，同時能感受到溫暖陪伴感的粉絲關注。",
+      "staging_offstage": "個性開朗、綜藝感極佳，練習生時期就以自信與反應快著稱，是JYP最常派上綜藝的成員。",
+      "staging_onstage": "身體柔軟，兼具魅力、多才與優秀的律動控制。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "redvelvet-seulgi",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Red Velvet 的 SEULGI 擁有貓系與狐狸相結合的精緻外型，是團內公認的實力派全能藝人。她在舞台上展現出強大的支配感與神性氛圍，舞蹈實力精湛且歌聲極具辨識度。SEULGI 的魅力在於霸氣舞台與私下反差萌之間的轉換，既能駕馭性感成熟的風格，也能展現獨特的藝術氣質。喜愛強烈舞台表現力、欣賞全方位實力派偶像，以及被獨特氛圍感所吸引的粉絲，絕對會深陷於她的魅力之中。",
+      "staging_offstage": "像少年漫畫主角，浪漫、對工作熱情、喜歡人但無法忍受不公；善良溫順體貼，情緒起伏小。",
+      "staging_onstage": "舞線出色，RBB活動時有報導稱她是台上舞蹈線條最突出的成員。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "redvelvet-wendy",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Red Velvet 的主唱 Wendy，擁有極具辨識度的清亮嗓音與紮實唱功，是團體中不可或缺的靈魂人物。她外型神似狗狗，散發著溫暖療癒的氣質，舞台上展現專業大氣的魅力，私下則充滿元氣與親和力，這種甜系與反差感讓她擁有極高的觀眾緣。Wendy 獨有的朋友感與戀愛感，讓粉絲在聆聽她的歌聲時能感受到滿滿的陪伴與慰藉，非常適合喜歡實力派唱將、嚮往陽光開朗性格，以及追求治癒系偶像的粉絲。",
+      "staging_offstage": "成員說她是節目與平時落差最大的人：節目上帶氣氛、不怕形象崩壞，Irene說她私下其實很沉穩。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "redvelvet-joy",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Red Velvet 的 Joy 以其獨特的甜美氣質與性感魅力並存的風格著稱，在團內擔任領饒舌與副唱。她擁有標誌性的小鹿般靈動外型，舞台上時而展現元氣滿滿的活力，時而散發成熟優雅的氛圍，這種強烈的反差感是她的一大特色。Joy 身上獨有的戀愛感與親切的朋友感，讓她深受粉絲喜愛。適合喜歡風格多變、兼具視覺魅力與舞台表現力，且能同時駕馭甜美與性感概念的粉絲關注。",
+      "staging_offstage": "成員說她個性成熟、很會傾聽；對團隊與成員非常有愛，被稱為Red Velvet的「成德」。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "redvelvet-yeri",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "YERI 作為 Red Velvet 的忙內，擁有標誌性的甜美小兔外型，在團內擔任 Rap 與 Vocal。她散發著元氣滿滿的少女感，同時具備獨特的反差魅力，時而俏皮可愛，時而展現成熟的一面。YERI 與粉絲之間有著強烈的親近感與朋友般的互動，那種清新脫俗的白月光氣質，特別適合喜愛活力充沛、個性鮮明且具備親和力偶像的粉絲。",
+      "staging_offstage": "忙內個性單純、開朗愛笑又愛玩，親和力很好；因形象總是開朗，曾在《認識的哥哥》談到壓力。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "itzy-yeji",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 ITZY 的隊長，Yeji 擁有極具辨識度的狐狸與貓咪相外型，舞台上展現出強大的支配感與神性氣場。作為團內的全能型成員，她在舞蹈、歌唱與饒舌方面皆有出色表現，舞台風格既霸氣又充滿爆發力。私下則展現出溫柔的反差魅力，這種「姐系」氛圍與專業的舞台實力，非常適合喜歡強烈表演風格、欣賞領袖魅力，以及被高冷外表下隱藏的溫暖性格所吸引的粉絲。",
+      "staging_offstage": "外表冷豔，個性卻圓融溫和，自尊心高、心態健康；常被妹妹們調侃，負責穩定團內氣氛。",
+      "staging_onstage": "即使受傷疼痛仍在正式舞台上完成力量型舞蹈，展現專業。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "itzy-chaeryeong",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "ITZY 的彩領擁有極佳的舞蹈實力，舞台上展現出精準且優雅的舞姿，氣質清冷而獨特。她不僅具備強大的舞台掌控力，私下溫柔治癒的性格更與舞台上的帥氣形成鮮明反差，帶給粉絲一種親切的「朋友感」。彩領那種帶有狐狸與小鹿般靈動的外型，結合沉穩內斂的氛圍，非常適合喜歡細膩表演、欣賞舞蹈美感，以及偏好溫暖療癒系偶像的粉絲。",
+      "staging_offstage": "溫順、說話輕柔，很會傾聽與安慰成員；與外表相反，幽默感十足，製造過「笑什麼？」名場面。",
+      "staging_onstage": "舞蹈與歌唱實力受朴軫永認可，團內負責表演魅力，台上表情演技也很到位。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "itzy-yuna",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Yuna 是 ITZY 的忙內，擁有亮眼的外型與高挑身材，在團內擔任 Rap、Dance 與 Visual。她的舞台風格極具支配力，能完美消化強烈且充滿自信的表演，同時又具備甜美清新的氣質，展現出強烈的反差魅力。Yuna 的元氣形象與舞台上的性感氣場完美融合，帶有獨特的白月光感，非常適合喜歡舞台表現力強、性格開朗且兼具甜美與帥氣風格的粉絲關注。",
+      "staging_offstage": "與JYP以往沉默的忙內不同，會向姊姊們撒嬌、活潑愛笑，受訪時說話也條理清楚。",
+      "staging_onstage": "跳舞時表情演技非常出色。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "nmixx-lily",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 NMIXX 的主唱，LILY 擁有極具辨識度的清亮嗓音與深厚的歌唱實力，是團體中不可或缺的核心。她外型甜美可愛，帶有狗狗般的親和力，但在舞台上卻能展現強大的支配感與霸氣，這種反差魅力令人印象深刻。除了精湛的唱功，她活潑元氣的性格與幽默的綜藝感，也讓她成為團內的氣氛製造者。喜愛實力派唱將、欣賞充滿活力且個性鮮明偶像的粉絲，絕對會被 LILY 的舞台魅力與真誠性格深深吸引。",
+      "staging_offstage": "心態正向、相信做了就會成，個性直率可愛、單純又細心，有禮貌也有點脫線。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "nmixx-haewon",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 NMIXX 的隊長與主唱，Haewon 擁有極具辨識度的清亮嗓音，在舞台上展現出強大的支配力與穩健的唱功。私底下的她性格幽默風趣，是團內的綜藝擔當，常以親切的「姐系」魅力與粉絲互動，營造出如同朋友般的輕鬆氛圍。她甜美可愛的外型與在綜藝節目中展現的機智反差，讓她深受喜愛。適合喜歡全能型偶像、欣賞紮實唱功，以及偏好性格開朗、具備領導魅力與幽默感成員的粉絲。",
+      "staging_offstage": "個性酷又大剌剌，是團內氣氛製造者之一；理性T型，也曾給出直接的建議。",
+      "staging_onstage": "直拍留言常說「以為是主唱，舞蹈也是主舞級」；音域寬，可用真聲唱到高音。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "nmixx-bae",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "BAE 是 NMIXX 中兼具 Vocal 與 Dance 實力的成員，外型在貓系與犬系氣質間自由切換，展現出獨特的魅力。她擁有清冷與反差並存的個人特質，既能駕馭帥氣的舞台風格，私下又散發著元氣滿滿的鄰家女孩感。BAE 的性格親切，與粉絲互動時充滿朋友般的自然感，非常適合喜歡個性鮮明、舞台表現力強且帶有親和力偶像的粉絲關注。",
+      "staging_offstage": "與Haewon並列團內搞笑擔當，被稱「JYP公開招募搞笑藝人1期」；ENFP。",
+      "staging_onstage": "自述舞台上最注重表情、視線與ending pose。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "nmixx-jiwoo",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "JIWOO 是 NMIXX 中兼具饒舌、舞蹈與歌唱實力的全能型成員。她擁有小兔般可愛的鄰家氣質，平時展現出元氣滿滿的親切感，但在舞台上卻能瞬間切換，展現出強大的舞台支配力與帥氣的反差魅力。這種甜美與酷勁並存的特質，讓她深受喜愛多元風格、欣賞舞台表現力以及追求親近感粉絲的青睞。無論是日常互動中的朋友感，還是表演時的專業氣場，都讓她在團體中顯得獨樹一格。",
+      "staging_offstage": "偶爾怕生，但活潑、親和力好；直率偶爾吐槽，難以預測又有點4D，被說比忙內還像忙內。",
+      "staging_onstage": "舞台上認真，練舞時連姊姊們的舞蹈細節都會抓出來。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "nmixx-kyujin",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 NMIXX 的忙內，Kyujin 擁有極具辨識度的貓咪系外型，在舞台上展現出超齡的霸氣與強大的舞蹈支配感，是團內不可或缺的全能型成員。她平時散發著元氣滿滿的活力，與舞台上冷豔的形象形成強烈反差，這種獨特的魅力讓她擁有極佳的觀眾緣。無論是喜歡強烈表演風格，或是欣賞忙內展現專業實力與親切朋友感的粉絲，都會被她多變的舞台魅力深深吸引。",
+      "staging_offstage": "成員說她最整潔、很會自我管理；有計畫、規律，隊長Haewon說她最俐落、責任感強。",
+      "staging_onstage": "舞台上舞蹈、歌唱、饒舌都無可挑剔的全能型，舞線生動柔和，能主導台上氣氛。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "babymonster-asa",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Asa 為 BABYMONSTER 的全能型成員，在團內展現出色的饒舌與舞蹈實力。她的舞台風格極具支配力，能完美駕馭強勢的嘻哈節奏，同時散發出獨特的性感氛圍。外型兼具小兔的靈動與狐狸的精緻感，私下則流露親切的朋友氣質，形成強烈的反差魅力。Asa 非常適合喜歡舞台表現力強、風格多變且具備專業實力偶像的粉絲，無論是帥氣的饒舌段落或是細膩的表演細節，都能讓人深陷其中。",
+      "staging_offstage": "出道前有完美主義傾向，曾為一句歌詞反覆練唱上百次；出道後心態較從容。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "babymonster-ahyeon",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "AHYEON 是 BABYMONSTER 中的全能型核心成員，具備極強的舞台支配力。她擁有精緻的小鹿般外型，在舞台上卻展現出強大的霸氣與性感魅力，能完美駕馭 Vocal、Rap 與舞蹈。這種強烈的反差感使她兼具姐系氣質與迷人的戀愛感，無論是爆發力十足的表演或細膩的詮釋皆游刃有餘。適合喜歡全能型 ACE、欣賞舞台氣場強大且具備多變風格的粉絲關注。",
+      "staging_offstage": "在Weverse上以長信與用心回覆粉絲聞名，被評為比同齡人成熟穩重、做事縝密。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "babymonster-rami",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "RAMI 為 BABYMONSTER 的核心主唱，以極具辨識度的嗓音與紮實的歌唱實力著稱。外型帶有小兔般的靈動氣質，舞台上展現強大爆發力，私下則散發鄰家女孩的治癒感與反差魅力。她具備獨特的白月光感與親切的朋友感，深受喜愛實力派唱將及溫暖系偶像的粉絲支持。自 2025 年 5 月起，RAMI 因健康因素暫停活動，目前團體以六人體制進行演藝活動，粉絲們持續給予她溫暖的應援與等待。",
+      "staging_offstage": "被視為團內搞笑擔當，個人技是模仿成員；團內唯一F型，容易感動、心思柔軟。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "babymonster-chiquita",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "CHIQUITA 是 BABYMONSTER 的忙內成員，擁有極具辨識度的甜美外型，神似貓咪與小兔的靈動氣質深受粉絲喜愛。在團內擔綱 Vocal 與 Dance，年紀雖小卻展現出驚人的舞台支配力，能完美消化多種風格。她平時散發出的元氣與親切的朋友感，與舞台上強大的表現力形成強烈反差。適合喜歡充滿活力、具備成長潛力，且能在甜美與帥氣風格間自由切換的偶像的粉絲。",
+      "staging_offstage": "insufficient_evidence",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "idle-minnie",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "MINNIE 為 i-dle 的主唱擔當，擁有極具辨識度的獨特嗓音。她的外型帶有貓咪般的靈動感，舞台風格遊走於清冷與性感之間，展現出強烈的個人氛圍。MINNIE 的氣質兼具神性與戀愛感，這種充滿反差的魅力，讓她能完美駕馭多變的音樂風格。喜愛獨特音色、追求舞台氛圍感，以及欣賞具備神秘氣質與細膩情感表達的粉絲，將會深深被她吸引。",
+      "staging_offstage": "成員說她最會撒嬌，本人起初否認後也承認；個性重感情，曾談到初到韓國時的孤單。",
+      "staging_onstage": "以醒目的眼神與強烈凝視感著稱；直拍被稱好看又容易扒舞。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "idle-yuqi",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 i-dle 的成員，YUQI 以獨特的低沉嗓音與全能實力著稱，在團內展現出色的歌唱與舞蹈表現。她擁有甜美可愛的外型，卻具備極大的反差魅力，舞台上氣場強大、支配力十足，私下則以元氣滿滿的綜藝感與親切的朋友感深受喜愛。YUQI 的多變風格既能駕馭帥氣曲風，也能展現俏皮的一面，非常適合喜歡舞台魅力與綜藝感兼具、欣賞反差萌偶像的粉絲追隨。",
+      "staging_offstage": "隨和、親和力好，是怕生成員中唯一的「社交達人」，很快就能交到朋友。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "idle-shuhua",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "舒華為 i-dle 的門面擔當與忙內，擁有清冷脫俗的外型，常被形容為帶有白月光感的氣質女神。她在舞台上展現出獨特的氛圍感，私下則流露真實自然的鄰家女孩氣質，這種反差魅力深受粉絲喜愛。舒華不矯揉造作的個性與直率的互動風格，讓她與粉絲之間建立起如同朋友般的親近感。適合喜歡清秀外貌、欣賞真性情且追求舞台氛圍美的粉絲關注。",
+      "staging_offstage": "與清純外表相反，是團內最調皮、脫線又4D的成員，常捉弄成員，興奮時聲音很大。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "illit-yunah",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Yunah 擁有狐狸與小鹿般的精緻外型，在團內展現出色的歌唱與舞蹈實力。舞台上的她具備強大的支配感，氣場霸氣且自信，私下卻有著元氣滿滿的親切感，這種「姐系」特質與反差萌讓她極具魅力。她既能駕馭帥氣俐落的風格，也能展現活潑開朗的一面，非常適合喜歡舞台表現力強、個性直率且帶有大姊姊照顧感偶像的粉絲。無論是強勢的舞台魅力還是私下可愛的互動，都讓她成為團體中不可或缺的亮點。",
+      "staging_offstage": "愛玩但該認真時很認真，說話真誠有深度；外表冷酷卻意外好笑，熱情又自信。",
+      "staging_onstage": "練習生時間長，唱跳都穩定，舞台掌控力出色。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "illit-moka",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "ILLIT 的 Moka 擁有標誌性的小兔外型，氣質甜美且帶有獨特的鄰家女孩感。她在團內兼具 Vocal 與 Dance 實力，舞台上展現出細膩的表現力，私下則散發治癒的白月光氛圍，充滿反差魅力。近期因健康因素，Moka 於 2026 年 4 月起暫停活動，期間雖曾短暫恢復部分行程，但 6 月再度進入休養狀態。她那溫柔且親切的特質，非常適合喜愛療癒系偶像、追求清新風格，以及欣賞細膩舞台演繹的粉絲關注。",
+      "staging_offstage": "隨性、說話正向又愛笑，細心照顧成員、讓人安心；有點健忘，常弄丟東西。",
+      "staging_onstage": "舞台表情演技常被討論，加上紮實舞蹈基本功，概念消化力強。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "illit-wonhee",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "WONHEE 是 ILLIT 的成員，擁有標誌性的小兔外型與甜美氣質。在團內擔任 Vocal 與 Visual，舞台上展現出充滿元氣的活力，同時具備鄰家女孩般的親切感。她獨特的白月光感與朋友般的互動氛圍，讓粉絲感到格外溫暖與親近。WONHEE 的魅力在於甜美外表下的反差感，非常適合喜愛清新、元氣風格，以及追求偶像與粉絲間有強烈共鳴感的聽眾。",
+      "staging_offstage": "愛撒嬌、像忙內，開朗正向愛玩；初見怕生，熟後很活潑，被練習生選為最4D的人。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "bts-rm",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "作為 BTS 的隊長與主饒舌，RM 展現出強大的舞台支配力與全能的音樂才華。他擁有獨特的狐狸系外型，氣質冷感且帶有霸氣，在舞台上總能精準掌控節奏。私下則散發著知性與深沉的氛圍，給人一種如同朋友般親近卻又充滿思想深度的反差感。非常適合喜歡具備領導魅力、音樂創作實力，且欣賞成熟知性風格的粉絲，能從他充滿哲理的音樂與言談中獲得共鳴與啟發。",
+      "staging_offstage": "成員說他除了工作外很迷糊，像《請回答1994》的垃圾；個性偏小心翼翼，會在意每則留言。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "bts-jin",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 BTS 的成員，Jin 以出眾的視覺外貌與穩定的歌唱實力著稱。他擁有如王子般的優雅氣質，同時具備甜系與反差萌的個人魅力，在團內常展現幽默風趣的綜藝感，與粉絲互動時帶有親切的「朋友感」與純淨的「白月光」氛圍。無論是舞台上深情演繹的 Vocal 表現，或是私下開朗活潑的性格，都深受喜愛。適合喜歡溫柔大哥哥形象、欣賞反差魅力以及享受輕鬆綜藝氛圍的粉絲關注。",
+      "staging_offstage": "自稱不太累積壓力、自尊感高；RM形容他溫和、有分寸。身為大哥刻意營造輕鬆明亮氣氛。",
+      "staging_onstage": "現場直拍留言常稱讚他的現場演唱，媒體也評價其舞台掌控力多才多藝。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "bts-suga",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "SUGA 身為 BTS 的饒舌擔當與全能型藝人，在舞台上展現強大的氣場與專業的音樂製作能力。他擁有標誌性的貓咪外型，氣質冷靜沉穩，帶有獨特的反差魅力，時而展現知性深沉的氛圍，時而流露出如同鄰家朋友般的親切感。這種在神性與人性間游移的特質，非常適合喜愛音樂深度、欣賞冷靜理性風格，以及容易被反差萌特質吸引的粉絲。",
+      "staging_offstage": "成員說他實際上木訥、酷又有點漫不經心；表面冷淡但很珍惜成員，弟弟們犯錯時由他負責訓話。",
+      "staging_onstage": "舞台表情演技非常多變。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "bts-jhope",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 BTS 的全能型成員，J-Hope 以精湛的舞蹈實力與穩健的饒舌功力著稱。他擁有如狗狗般親切可愛的陽光氣質，是團內的元氣擔當，總能透過開朗的形象感染周遭。在舞台上，他展現出強大的支配力與專業度，與私下親切的朋友感形成強烈反差。這種兼具甜系魅力與舞台霸氣的特質，非常適合喜愛充滿活力、具備強大表演感染力，且能同時展現親和力與專業實力的粉絲關注。",
+      "staging_offstage": "基本情緒高昂、開朗，親切好相處；外表活潑內心卻較敏感，受傷常藏在心裡不表現。",
+      "staging_onstage": "RM說他的舞台表演水準讓人安心；被稱在台上台下都是BTS表演的主軸。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "bts-v",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 BTS 的門面與副唱，V 擁有極具辨識度的低沈磁性嗓音，在舞台上展現出強大的感染力與多變的表演風格。他的外型兼具小鹿般的清澈與狐狸般的銳利，氣質遊走於冷感與溫暖之間，常帶有一種神祕的王子氛圍。這種獨特的反差感與強烈的戀愛感，非常適合喜愛深情演繹、追求舞台藝術感，以及欣賞具備強烈個人色彩與時尚品味的粉絲。",
+      "staging_offstage": "對所有人親切溫暖又體貼，RM多次說所有人都喜歡他；合作者稱他愛玩之中帶有獨特溫柔。",
+      "staging_onstage": "節奏感與強弱控制出色，直拍觀看數長年居前，被稱「直拍皇帝」。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "bts-jungkook",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "作為 BTS 的黃金忙內，Jungkook 擁有全能的舞台實力，無論是細膩的歌聲、精準的舞蹈還是饒舌表現皆游刃有餘。他外型帶有小兔般的清純甜美，但在舞台上卻能展現強大的支配感與性感魅力，這種極致的反差感是其核心魅力。身為團體的中心成員，他既有備受哥哥們寵愛的忙內特質，又具備獨當一面的霸氣，非常適合喜愛全能型偶像、追求舞台張力，以及容易被反差魅力吸引的粉絲。",
+      "staging_offstage": "出道初期安靜怕生，後來與熟人相處非常活潑；仍有點怕生，直率、好惡分明、勝負心強。",
+      "staging_onstage": "兼具歌唱、舞蹈與舞台掌控力，常被男偶像練習生視為榜樣。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "exo-chanyeol",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "燦烈在 EXO 中擔任主饒舌、副唱與門面擔當。他擁有標誌性的狗狗相外型，舞台上展現霸氣十足的饒舌實力，私下則散發陽光鄰家的親切氣質，這種強烈的反差感極具魅力。他既能駕馭強烈風格，也能展現溫柔細膩的音樂面貌，在團內常給人溫暖可靠的感覺。適合喜歡陽光大男孩形象、追求舞台反差魅力，以及偏好具備戀愛感與朋友感特質的粉絲關注。",
+      "staging_offstage": "自稱快樂病毒，個性非常正向積極又愛玩；很能忍住脾氣，很少發火。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "exo-do",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "EXO 的 D.O.（都敬秀）以極具辨識度的渾厚嗓音與紮實唱功，穩坐團內核心 Vocal 位置。他擁有「小兔」般的可愛外型，卻常展現出冷靜沉穩的氣質，這種強烈的反差感極具魅力。在舞台上，他專注且充滿氛圍感，私下則散發著一種溫潤的「白月光」神性與治癒氣息。適合喜愛實力派唱將、欣賞內斂深沉風格，以及容易被獨特反差魅力吸引的粉絲。",
+      "staging_offstage": "團內話少安靜，通常默默聽成員說話，不被點名就不主動發言；被說可愛時會害羞。",
+      "staging_onstage": "能輕鬆完成高難度動作，加上表情演技，手勢表現受好評；速度控制與律動基本功紮實。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "exo-baekhyun",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "BAEKHYUN 是 EXO 的核心主唱，擁有極具辨識度的清亮嗓音與精湛的演唱實力。他在舞台上展現出強大的感染力，私下則以元氣滿滿的個性與幽默感成為團內的綜藝擔當。BAEKHYUN 的氣質充滿反差，既有如小狗般甜美親和的一面，在詮釋歌曲時又能展現出迷人的戀愛感與神性氛圍。無論是喜愛頂尖唱功的音樂愛好者，還是被他活潑開朗性格吸引的粉絲，都能在他多變的魅力中找到共鳴。",
+      "staging_offstage": "家中老么，說話很愛撒嬌，在IG直播中可見平常語氣充滿撒嬌感。",
+      "staging_onstage": "懂得如何讓動作好看，視線處理到位，直拍沉浸感高；以舞台才氣聞名，常被後輩選為榜樣。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "seventeen-scoups",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 SEVENTEEN 的總隊長與嘻哈隊隊長，S.COUPS 在舞台上展現強大的支配力與霸氣，以穩健的饒舌與舞蹈實力引領團隊。私下則擁有如狗狗般的親切感，在霸氣外表下流露出的反差萌與治癒氛圍，讓他成為團內可靠的支柱。他既具備領袖的威嚴，又與成員及粉絲保持著如同朋友般的緊密連結。喜愛充滿責任感、具備領導魅力，同時又能在舞台與日常間展現溫柔反差的粉絲，將會深受他的個人特質吸引。",
+      "staging_offstage": "與強烈第一印象不同，愛撒嬌又愛玩；雖是團內大哥兼隊長，在家是老么，撒嬌已成習慣。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "seventeen-jeonghan",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "JEONGHAN 為 SEVENTEEN 的 Vocal Team 成員，擁有極具辨識度的清冷氣質與精緻外型，在團內展現出獨特的王子氛圍。他的舞台風格兼具優雅與反差感，時而展現神性般的空靈魅力，時而流露親切的戀愛感。JEONGHAN 擅長以細膩的歌聲詮釋歌曲，不僅是隊內的視覺擔當，更以其獨特的個人魅力吸引粉絲。喜愛溫柔優雅風格、欣賞具備反差魅力與強烈氛圍感偶像的粉絲，會非常容易被他深深吸引。",
+      "staging_offstage": "基本上溫柔體貼，不掩飾對成員的愛，在團內負責傾聽成員煩惱與心事。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "seventeen-woozi",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "WOOZI 是 SEVENTEEN 的核心製作人與 Vocal Team 隊長，展現出極高的音樂才華與全能實力。外型帶有貓咪般的精緻感，氣質上兼具冷靜知性的專業形象與私下反差的親和力。他在團內扮演著靈魂人物的角色，以獨特的氛圍感與神性般的音樂創造力著稱。適合喜歡音樂才子、欣賞專業製作人魅力，以及被那種外表冷靜卻內心細膩、帶有獨特個人風格的偶像所吸引的粉絲。",
+      "staging_offstage": "外表話少，個性卻體貼溫柔；Seungkwan多次稱他是不求回報的「SEVENTEEN媽媽」。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "seventeen-mingyu",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "MINGYU 為 SEVENTEEN 的 Hip-Hop Team 成員，擁有高挑外型與極具辨識度的視覺魅力。他在舞台上展現出強大的支配感與氣場，能完美消化多樣的表演風格，同時具備陽光且充滿氛圍感的個人特質。私下則展現出甜系狗狗般的親和力，這種在霸氣舞台與溫暖日常間的反差感，讓他擁有極高的戀愛感與魅力。非常適合喜歡兼具帥氣與親和力，且能在舞台上展現強烈存在感的粉絲關注。",
+      "staging_offstage": "天性活潑、凡事正向；喜歡肢體接觸，平時言行常帶撒嬌感。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "seventeen-dk",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "DK 是 SEVENTEEN 的主唱成員，擁有極具穿透力與爆發力的嗓音，總能在舞台上展現強大的支配感。他有著如狗狗般溫暖親切的氣質，私下性格元氣滿滿，是團內的綜藝擔當，常帶給粉絲歡樂。這種甜系外表與舞台上專業反差的魅力，非常適合喜歡陽光開朗、具備強大歌唱實力，且能同時享受舞台魅力與親切朋友感的粉絲。",
+      "staging_offstage": "天生愉快樂觀，至今常被選為團內最搞笑的成員，為團隊注入活力與正能量。",
+      "staging_onstage": "曾在〈漩渦〉回歸秀中把麥克風放在膝上飆出高音。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "seventeen-seungkwan",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 SEVENTEEN 的主唱成員，勝寛擁有極具辨識度的清亮嗓音與深厚的演唱實力。他在團內不僅是核心 Vocal，更是不可或缺的綜藝擔當，憑藉機智的口才與元氣滿滿的形象，為團體帶來無窮活力。外型結合了小兔與狗狗般的親切感，甜系氣質中帶有反差魅力，給人一種如同鄰家好友般的溫暖陪伴感。特別適合喜歡充滿幽默感、性格開朗且具備強大舞台感染力，同時又能展現細膩情感的粉絲關注。",
+      "staging_offstage": "團內數一數二的社交達人，非常活潑積極，曾主動到綜藝桌向製作人員打招呼爭取演出。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "seventeen-vernon",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 SEVENTEEN Hip-Hop Team 的成員，Vernon 擁有極具辨識度的外型，結合了小鹿般的靈動與貓咪般的慵懶氣質。他在舞台上展現出色的饒舌實力與獨特的節奏感，同時具備穩定的人聲表現。Vernon 的魅力在於其冷感外表與私下鄰家男孩般隨性氛圍的反差，既有帶有神祕感的藝術家氣息，又給人像朋友般親近的舒適感。適合喜歡獨特個人風格、欣賞饒舌與氛圍感音樂，以及偏好低調卻充滿個人魅力偶像的粉絲。",
+      "staging_offstage": "話少，通常順著對方節奏聊天而不主導；整體穩重，不太會說場面話或客套話。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "seventeen-dino",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Dino 是 SEVENTEEN 中充滿活力的忙內，身為全能型藝人，他在舞蹈、饒舌與歌唱領域皆有出色表現。舞台上的他展現出強大的支配力，舉手投足間充滿霸氣，與私下親切的朋友感形成強烈反差。他既有狐狸般的靈動，又帶有小兔的可愛氣質，這種元氣滿滿的特質讓他極具魅力。喜歡追求舞台細節、欣賞全能偶像，或是被充滿熱情與反差魅力的表演者所吸引的粉絲，絕對會深陷於 Dino 的舞台魅力之中。",
+      "staging_offstage": "非常有熱情，凡事積極努力，自述動力來自每天的小目標。",
+      "staging_onstage": "表情演技非常出色；分析認為讓他站在高潮段落中心是為了提升舞台掌控力。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "straykids-bangchan",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 Stray Kids 的隊長與製作核心，Bang Chan 展現出全方位的音樂才華，在演唱、饒舌與舞蹈領域皆有出色表現。舞台上的他擁有強大的支配感與霸氣，能完美駕馭各種強烈風格；私下則展現出知性、溫暖且具備朋友感的親和力，這種強烈的反差魅力深受粉絲喜愛。他不僅是團體的支柱，更以治癒的性格與對音樂的熱忱，成為粉絲心中可靠的領航者。適合喜歡全能型偶像、欣賞領袖魅力以及追求溫暖陪伴感的粉絲。",
+      "staging_offstage": "個性非常溫柔，很少生氣；總是照顧成員，像爸爸一樣，被粉絲稱為「方爸」。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "straykids-leeknow",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Lee Know 是 Stray Kids 的主舞與領唱，擁有極具辨識度的貓系精緻外型。他在舞台上展現出強大的舞蹈實力與冷靜的支配感，舉手投足間流露出一種難以捉摸的野性氛圍。私下性格則帶有獨特的反差萌，這種神祕又直率的魅力，非常適合喜愛舞台表現力強大、氣質冷冽卻又擁有幽默靈魂的粉絲。他不僅是團內的舞蹈核心，更以其獨特的個人風格在表演中佔據視覺焦點。",
+      "staging_offstage": "傲嬌，主見明確、想做的事再難也會做；看似冷淡，Han卻形容他柔軟可愛。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "straykids-changbin",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Changbin 是 Stray Kids 的全能型成員，同時擔任饒舌與製作角色。他在舞台上展現出強大的支配力與野性魅力，饒舌實力深厚且充滿爆發力。私下則展現出極具親和力的朋友感，以及充滿綜藝感的幽默性格，這種強烈的反差萌讓他極具個人魅力。他外型帶有狗狗般的親切感，非常適合喜歡舞台風格霸氣、私下個性開朗幽默，且欣賞音樂才華與反差魅力的粉絲。",
+      "staging_offstage": "與強勢外表和饒舌風格不同，其實傲嬌可愛、口才好又細心；團內最會撒嬌。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "straykids-hyunjin",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Hyunjin 為 Stray Kids 的核心舞者與門面擔當，擁有狐狸般精緻且具辨識度的外型。他在舞台上展現出強大的支配感，清冷與霸氣並存的氣質，常透過極具張力的舞蹈動作與神性氛圍，演繹出獨特的性感與野性美。Hyunjin 在團內不僅是視覺焦點，更以細膩的情感表達與舞台表現力著稱。非常適合喜愛強烈舞台風格、追求藝術感與氛圍感表演，以及欣賞成員在舞台上展現極致魅力與反差感的粉絲。",
+      "staging_offstage": "團內以極愛粉絲著稱，簽售會與官方活動中被粉絲公認粉絲服務最好，擅長與粉絲互動。",
+      "staging_onstage": "擅長運用表情，在直拍中依概念以個人氛圍壓制全場，能抓住大眾視線。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "straykids-han",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Stray Kids 的 HAN 是團內的全能型成員，身兼饒舌、歌唱與製作能力。他擁有極強的舞台支配感，能完美駕馭強烈節奏與細膩情感，展現出色的音樂才華。私下性格元氣滿滿且具備綜藝感，常展現出親切的朋友感，外型結合了小兔與貓咪的可愛特質，與舞台上的霸氣形成強烈反差。喜愛音樂創作、欣賞全能型藝人以及被他獨特反差魅力吸引的粉絲，絕對會深陷於 HAN 的知性與甜系魅力之中。",
+      "staging_offstage": "開朗正向又很圓滑，自尊與自信滿滿，平時負責帶動團隊氣氛。",
+      "staging_onstage": "團內直拍排名居前，適合華麗造型，台上展現多樣魅力。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "straykids-in",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "作為 Stray Kids 的忙內，I.N 擁有極具辨識度的狐狸相與清新氣質，在團內擔任 Vocal。他以甜美且具反差感的魅力著稱，既有鄰家男孩般的親切感，又能在舞台上展現成熟的音樂表現力。那種如白月光般純淨又帶點淘氣的特質，總能輕易擄獲粉絲的心。適合喜歡溫暖、清爽風格，且欣賞從可愛忙內蛻變為魅力主唱過程的粉絲關注。",
+      "staging_offstage": "團內忙內，但在家是次子，有點木訥果斷；被說成熟、不像忙內，不喜歡肢體接觸。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "txt-soobin",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 TXT 的隊長，Soobin 擁有標誌性的兔子外型與溫暖的酒窩，氣質純淨清新，常被形容為「花美男」。他在舞台上展現出穩定的歌唱實力與視覺魅力，私下則散發著鄰家男孩般的親切感與治癒氛圍。這種獨特的「白月光」氣質與溫柔反差，讓他成為許多粉絲心中溫暖的存在。特別適合喜歡溫柔可靠、具有朋友感與療癒系特質偶像的粉絲，能從他身上感受到如陽光般舒適的陪伴感。",
+      "staging_offstage": "外表柔和但有魄力，是外柔內剛型；團內最內向，與成員互相吐槽時卻不輸人。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "txt-beomgyu",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "BEOMGYU 擁有精緻的小鹿與狐狸相貌，舞台上展現強大的感染力，能完美消化多變的表演風格。他兼具清冷與反差魅力，既有令人心動的「白月光」氣質，私下又帶有親切的鄰家男孩感，在團內是不可或缺的視覺與表演核心。他那種在舞台上的專業與日常中的幽默感，非常適合喜歡氛圍感強、性格鮮明且具備多重魅力偶像的粉絲。",
+      "staging_offstage": "外表像純情漫畫主角，個性卻總是開朗活潑、愛聊天又有梗；但做事謹慎，Taehyun說他值得信賴。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "txt-hueningkai",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "作為 TXT 的忙內，Huening Kai 擁有標誌性的小鹿般清澈外型，氣質甜美且充滿元氣。他在團內擔任主唱與門面，舞台風格多變，既能展現清亮嗓音，也能駕馭強烈概念。他獨有的「白月光」感與親切的朋友氣質，總能帶給粉絲療癒與溫暖的感受。非常適合喜歡陽光開朗、具備反差魅力，且能從偶像身上感受到純粹快樂與正能量的粉絲關注。",
+      "staging_offstage": "團內最年輕，對哥哥們很會撒嬌，連同齡的Taehyun都疼他。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "enhypen-jungwon",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 ENHYPEN 的隊長，Jungwon 展現出色的全能實力，在歌唱與舞蹈方面皆有亮眼表現。他擁有貓咪般精緻可愛的外型，氣質甜美卻帶有反差感，在舞台上能精準切換氛圍，展現強大的舞台支配力。私下則散發親切的鄰家朋友感，既是團內的可靠支柱，也是充滿個人魅力的氛圍製造者。適合喜歡舞台表現力強、兼具可愛與成熟反差魅力，且欣賞穩重領導風格的粉絲。",
+      "staging_offstage": "自稱安靜但直率，不易有壓力、判斷快；很怕生，但熟了之後非常吵鬧活潑。",
+      "staging_onstage": "台上很會眨眼放電。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "enhypen-jay",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "JAY 擁有鮮明的狐狸相外型，在 ENHYPEN 中擔任 Vocal、Dance 與 Rap 的全能角色。他的舞台風格強烈且具備極佳的支配感，舉手投足間散發著霸氣與痞帥氣質。私下則展現出親切的朋友感，這種強烈的反差魅力是其核心特質。適合喜歡舞台表現力強大、兼具個性美與反轉魅力，且能欣賞他在表演中展現強烈氛圍感的粉絲。",
+      "staging_offstage": "自信又謙虛、判斷快，說話生硬但內心柔軟甜蜜；自認直率既是優點也是缺點。",
+      "staging_onstage": "選秀時擔任隊長，以細心與魅力營造和睦氣氛、幫助成員發揮，獲得好評。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "enhypen-jake",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "ENHYPEN 的 Jake 以溫暖的狗狗相外型著稱，在團內擔任 Vocal 與 Visual。他擁有鄰家男孩般的陽光氣質，舞台上展現出甜美與帥氣並存的反差魅力。Jake 散發著強烈的戀愛感與親切的朋友感，讓人感到容易親近。非常適合喜歡溫柔、開朗且具備親和力偶像的粉絲，他那充滿感染力的笑容與真誠的性格，總能輕易擄獲粉絲的心，是團體中不可或缺的溫暖存在。",
+      "staging_offstage": "愛玩，被成員選為相處最自在、最善良的成員第一名；很會照顧人，個性溫順。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "enhypen-sunoo",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "SUNOO 是 ENHYPEN 中的甜系擔當，擁有極具辨識度的狐狸與小兔相外型，散發著溫暖的鄰家男孩氣質。他在團內擔任主唱，舞台上展現出豐富的表情管理與元氣滿滿的魅力，私下則具備獨特的反差萌。SUNOO 的白月光感與親切的朋友感，非常適合喜歡清新甜美風格、或是被溫暖治癒系偶像吸引的粉絲。無論是舞台上的專業表現，還是日常互動中展現的開朗性格，都讓他成為團內不可或缺的視覺與情緒核心。",
+      "staging_offstage": "自評開朗有活力，總是笑臉迎人；善解人意、會安慰人，心軟愛哭、容易受傷。",
+      "staging_onstage": "表情演技突出。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "ateez-hongjoong",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 ATEEZ 的隊長與核心靈魂，Hongjoong 展現出強大的舞台支配力，以精湛的 Rap 實力與全能的音樂才華引領團體。他擁有狐狸般的靈動外型，氣質在霸氣與知性間自由切換，時而展現神性般的舞台張力，時而流露細膩的反差萌。作為團體的製作人與精神支柱，他對音樂的熱忱與獨特的時尚品味深受粉絲喜愛。適合喜歡強烈舞台風格、欣賞具備領導魅力與藝術家氣質，且能從多變面貌中感受到深厚音樂底蘊的粉絲。",
+      "staging_offstage": "很會照顧身邊的人、體貼周到，對自己的事卻偶爾很馬虎，成員說他意外地需要人照顧；淚點低。",
+      "staging_onstage": "以近乎瘋狂的表情演技在台上存在感極強；與嬌小外型相反，魅力與領導力出眾。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "ateez-seonghwa",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "ATEEZ 的門面擔當 Seonghwa，擁有精緻如小鹿與貓咪般的五官，在舞台上展現出強烈的氛圍感與王子氣質。他具備清冷的神性美，同時又帶有強烈的反差魅力，在團內擔任 Vocal 角色。Seonghwa 的表演風格細膩且充滿感染力，能完美消化多變的舞台概念。他那種既高冷又溫柔的戀愛感，非常適合喜歡精緻外型、舞台表現力強，且欣賞具備獨特氣質與反差萌偶像的粉絲。",
+      "staging_offstage": "與冷漠第一印象不同，溫順有禮又溫暖；團內像媽媽，大哥責任感強，最重視整潔，心軟易哭。",
+      "staging_onstage": "在台上傾向展現充滿魅力的形象。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "ateez-yunho",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "ATEEZ 的 Yunho 擁有極具辨識度的狗狗相外型，散發著陽光且親切的鄰家男孩氣質。在團內擔任領舞與歌手，他的舞台風格展現出強大的支配力，動作俐落且充滿能量，與平時溫和開朗的性格形成強烈反差。Yunho 總能以充滿感染力的笑容與自然的互動，帶給粉絲如同朋友般的親近感。無論是欣賞他精湛的舞蹈實力，或是被他那種在舞台霸氣與私下甜系之間切換自如的魅力所吸引，喜歡陽光活力型偶像的粉絲一定會深陷於他的個人魅力之中。",
+      "staging_offstage": "溫柔溫順又溫暖，成員辛苦時負責打氣、炒熱氣氛；不怕形象崩壞，很愛玩又有點脫線。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "ateez-san",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "ATEEZ 的 San 在團內擔任主舞與領唱，以極具張力的舞台支配感聞名。他擁有貓咪般的外型，卻能在表演中展現強烈的野性與性感氛圍，舞台風格霸氣且充滿爆發力。私下性格與舞台上的狂野形象形成鮮明反差，這種獨特的氣質與深厚的舞蹈實力，讓他在團內成為全能型成員。非常適合喜歡舞台表現力強大、能駕馭多變風格，且對反差魅力毫無抵抗力的粉絲。",
+      "staging_offstage": "內向，初見很怕生但喜歡人；只有成員在時情緒高昂，獨自直播時則沉穩低調；感性、同理心強。",
+      "staging_onstage": "常以壓倒性的表情演技搭配大而激烈的舞蹈動作，個人直拍尤其明顯。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "ateez-wooyoung",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "ATEEZ 的 Wooyoung 在團內擔任主舞與歌手，擁有極強的舞台支配力。他外型結合狐狸與貓咪的精緻感，展現出獨特的痞帥氣質，舞台上霸氣十足，私下則充滿元氣與反差魅力。他能精準駕馭強烈節奏的編舞，同時散發強烈的戀愛感。適合喜歡舞台表現力強、具備多變魅力與活潑性格偶像的粉絲，無論是帥氣的表演風格還是親切的互動感，都能讓人深陷其中。",
+      "staging_offstage": "調皮愛玩，是團內氣氛製造者；親和力好，非常活潑外向，笑聲像海豚。",
+      "staging_onstage": "曾減重14公斤改變舞線，並從基本功開始修正；台上善用三白眼營造頹廢氛圍。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "ateez-jongho",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 ATEEZ 的忙內與主唱，Jongho 擁有極具爆發力的嗓音，能輕鬆駕馭高難度的高音，展現出強大的舞台支配感。外型帶有狗狗般的親和力，但一站上舞台便展現出野性與霸氣，這種強烈的反差魅力是其標誌。身為團內的核心歌唱擔當，他以穩定的現場實力著稱，充滿神性的歌聲總能震撼聽眾。適合喜愛強烈舞台表演、欣賞頂尖唱功，以及被反差萌特質吸引的粉絲。",
+      "staging_offstage": "很怕生，容易被誤會為木訥；個性嚴肅認真、不像忙內，力氣又大，被稱「忙內on top」。",
+      "staging_onstage": "曾在《Kingdom》首輪競演中展示B5高音；表示會依激烈編舞調整舞台與錄音的發聲方式。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "nct-doyoung",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "道英（Doyoung）作為 NCT 的核心主唱，擁有極具辨識度的清澈嗓音與紮實的唱功。他外型清秀如小鹿，氣質清冷且帶有知性氛圍，在團內常展現出細膩與穩重的特質。舞台上的他展現出強大的情感渲染力，私下則有著反差的親和力，常被粉絲形容為「白月光」般的存在。他非常適合喜歡溫柔深情、具備神性美感，以及欣賞實力派唱將的粉絲，其知性的個人魅力總能帶給聽眾深刻的共鳴。",
+      "staging_offstage": "精明能幹，常被說「什麼都能做好、很可靠」；整體理性，卻意外地很愛哭。",
+      "staging_onstage": "曾說希望被記住為「在台上真心唱歌的人」。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "nct-ten",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "TEN 是 NCT 及 WayV 中極具代表性的全能型藝人，擁有極高的舞台支配力。他的外型結合了貓咪的靈動與狐狸的魅惑，在舞台上展現出強烈的神性與霸氣，舞蹈動作精準且充滿藝術感。TEN 的表演風格以極致的氛圍感與性感著稱，冷感氣質與私下反差萌形成鮮明對比。非常適合喜愛頂尖舞蹈實力、追求舞台藝術美感，以及欣賞獨特個人風格與強大表演張力的粉絲。",
+      "staging_offstage": "溫和樂觀、開朗愛笑；愛撒嬌又親切，表達愛意與親近毫不保留。",
+      "staging_onstage": "柔軟的身體與感受力讓他像天生舞者，但不斷練習與研究，追求台上完美。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "nct-jeno",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Jeno 為 NCT 的核心成員，在團內擔任饒舌、舞蹈與門面擔當。他擁有如小鹿般清澈的精緻外型，舞台上卻展現出強大的支配力與野性魅力，冷感氣質與私下溫和性格形成強烈反差。Jeno 擅長以俐落的舞蹈動作與充滿磁性的饒舌節奏抓住觀眾目光，其獨特的氛圍感與戀愛感，非常適合喜愛舞台表現力強、且能在高冷與親和之間感受到多樣魅力的粉絲。",
+      "staging_offstage": "以認真態度作為能力發展的基礎；綜藝中態度積極，始終保持沉穩。",
+      "staging_onstage": "力量型舞蹈受好評，以〈BOOM〉殺傷段落與最後副歌中心最具代表性。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "nct-haechan",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "Haechan 是 NCT 中極具辨識度的靈魂主唱，擁有獨特的音色與紮實的舞蹈實力。他在舞台上展現出強大的支配力，能完美消化多變的曲風，私下則以機智的綜藝感與元氣滿滿的形象著稱。他兼具甜美與調皮的反差魅力，給人一種親近的朋友感。無論是喜歡實力派唱將，還是偏好性格鮮活、充滿幽默感的偶像，都能輕易被 Haechan 的個人魅力所吸引，是團體中不可或缺的氣氛製造者。",
+      "staging_offstage": "自評像「八色鳥」，有很多面向；Johnny說他想得開、非常正向。",
+      "staging_onstage": "跳舞標準又有個人風格，基本功紮實、流暢自在，並會自己加入或改編編舞細節。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "nct-renjun",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 NCT 的核心主唱之一，RENJUN 擁有極具辨識度的清亮嗓音，在舞台上展現出細膩且穩定的歌唱實力。他外型融合了狐狸般的靈動與小鹿般的純淨，氣質清冷而獨特，常帶有一種神聖的白月光感。在團內他不僅是氛圍的營造者，更以治癒系的人格魅力著稱，時常展現出溫柔與堅毅並存的反差感。喜愛細膩音樂表現、追求獨特氛圍感，以及欣賞清冷美學與溫暖治癒特質的粉絲，將會深深被他的個人魅力所吸引。",
+      "staging_offstage": "細膩溫柔，對成員與粉絲的真心都寫在臉上；有話會直率表達，個性精明幹練。",
+      "staging_onstage": "出道初期以滑板等高難度編舞與輕盈舞線著稱，後來動作更有力，靠柔軟度處理細節。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "nct-jisung",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "身為 NCT DREAM 的成員，Jisung 以精湛的舞蹈實力著稱，在舞台上展現出強大的支配力與節奏感。他擁有清冷且獨特的氣質，在團內常展現出與外型反差的成熟魅力，既有細膩的歌聲，也能駕馭強烈的表演風格。這種兼具少年感與舞台張力的特質，非常適合喜愛觀察偶像成長軌跡、欣賞高水準舞蹈表演，以及被那種帶有白月光般純淨氛圍感所吸引的粉絲。",
+      "staging_offstage": "熟悉之前非常怕生，Jeno與Haechan說他剛進公司時害羞到讓人尷尬；出道初期話少。",
+      "staging_onstage": "2016年MAMA與2018年版本的〈Black on Black〉舞台中，以最年輕成員擔任NCT全體群舞中心。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "riize-shotaro",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "SHOTARO 為 RIIZE 的核心舞者，擁有極強的舞台支配力，能精準駕馭多種舞蹈風格。他具備甜美親切的鄰家氣質，標誌性的笑眼與元氣滿滿的性格，總能帶給粉絲溫暖的療癒感。在團內他展現出強烈的反差魅力，私下是可愛的小狗系男孩，一站上舞台則變身為充滿爆發力的表演者。適合喜歡舞台實力堅強、性格開朗且具有親和力偶像的粉絲，他那如朋友般自然且真誠的互動，總能輕易拉近與粉絲的距離。",
+      "staging_offstage": "外柔內剛，反應好又愛笑；不易發火，談到工作時會立刻專注認真。",
+      "staging_onstage": "insufficient_evidence",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "riize-sungchan",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "RIIZE 的成燦擁有出眾的視覺外型，兼具小鹿般的清澈氣質與狗狗般的親和力。在團內擔任饒舌擔當，舞台上展現俐落帥氣的表現力，私下則散發陽光鄰家的氛圍。他獨有的反差魅力與強烈的戀愛感，讓他成為許多粉絲心目中理想男友的代表。無論是喜歡清爽少年感，或是被他溫暖朋友感特質吸引的粉絲，都能在成燦身上找到極高的共鳴，是團體中極具辨識度與人氣的成員。",
+      "staging_offstage": "自評很怕生、容易害羞，但個性樂觀，偶爾迷糊。",
+      "staging_onstage": "雖非主舞，舞線俐落、動作有力。",
+      "staging_contrast": "insufficient_evidence"
+    },
+    {
+      "id": "riize-sohee",
+      "flags": [
+        "existing_contrast_not_supported_by_staging_label"
+      ],
+      "existing_profile": "RIIZE 的 Sohee 擁有極具辨識度的清亮嗓音，在團內擔任主唱，展現出色的歌唱實力。外型帶有小兔與狗狗般的親和氣質，給人一種鄰家男孩的溫暖與朋友般的親近感。他在舞台上展現甜美與反差魅力，時而清爽可愛，時而展現穩健的表演風格。這類具備白月光般純淨氣質，且在音樂表現上真誠投入的成員，非常適合喜歡清新風格、欣賞實力派主唱，以及偏好鄰家系偶像的粉絲關注。",
+      "staging_offstage": "成員說他各方面都有sense、懂得察言觀色；初見安靜害羞，熟後愛開玩笑。",
+      "staging_onstage": "直拍中聲音最大、最清晰的成員之一；在〈Love 119〉完美演唱後段即興，展現唱功。",
+      "staging_contrast": "insufficient_evidence"
+    }
+  ],
+  "out_of_scope": [
+    "長相相似",
+    "造型相似"
+  ],
+  "approved_runtime_claims": 0
+}
