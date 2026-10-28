@@ -133,3 +133,24 @@ def test_old_prompt_version_rows_are_regenerated(tmp_path, monkeypatch):
         ("gemma4", "別的模型", "v5-evidence-1"),
         ("taide", "有沒有很親切的女生成員", gen.PROMPT_VERSION),
     ]
+
+
+RAP = {"facet": "performance", "value": "粉絲視她為團內的饒舌擔當，但對她的饒舌實力意見分歧"}
+CONTRAST = {"facet": "contrast", "value": "社群說她舞臺上氣場強烈，舞臺外或綜藝裡卻爽朗、親切"}
+
+
+@pytest.mark.parametrize(
+    ("claim_row", "query", "kept"),
+    [
+        (RAP, "想找饒舌很有記憶點的女生", True),
+        # TAIDE 試跑實際寫出的句子：主唱、私下都不在證據裡。
+        (RAP, "有沒有團裡有主唱感覺，舞台上氣場超強，但私下又很chill的人？", False),
+        (RAP, "有沒有那種舞台上超幹練，但饒舌評價蠻兩極的表演者？", False),
+        (CONTRAST, "想找舞台超會演，但是私下很親切的女團成員～", True),
+        # 證據講的是綜藝裡親切，不是搞笑。
+        (CONTRAST, "想找舞台上氣勢超強，但綜藝裡超ㄎ一ㄤ的女生", False),
+        (CONTRAST, "有沒有人知道，有沒有那種公開跟私下反差很大的女生？", False),
+    ],
+)
+def test_queries_must_stay_on_the_sourced_trait(claim_row, query, kept):
+    assert gen.stays_on_trait(query, claim_row) is kept
