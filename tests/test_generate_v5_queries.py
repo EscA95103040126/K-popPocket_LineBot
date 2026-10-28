@@ -68,3 +68,68 @@ def test_prompt_names_the_trait_but_not_the_member():
     prompt = gen.build_prompt(claim("a"), MEMBERS["twice-sana"])
     assert "粉絲常說她親切又愛撒嬌" in prompt
     assert "SANA" not in prompt and "TWICE" not in prompt
+
+
+def test_queries_parse_from_object_or_bare_list():
+    assert gen._parse_queries('```json\n{"queries": ["甲句子", 3]}\n```') == ["甲句子"]
+    assert gen._parse_queries('["乙句子"]') == ["乙句子"]
+    assert gen._parse_queries("這是說明文字") == []
+
+
+def test_old_prompt_version_rows_are_regenerated(tmp_path, monkeypatch):
+    output = tmp_path / "q.csv"
+    gen._write_rows(
+        output,
+        [
+            {
+                "member_id": "twice-sana",
+                "evidence_id": "a",
+                "facet": "vibe",
+                "query": "舊句子",
+                "generator": "taide",
+                "prompt_version": "v5-evidence-1",
+            },
+            {
+                "member_id": "twice-sana",
+                "evidence_id": "a",
+                "facet": "vibe",
+                "query": "別的模型",
+                "generator": "gemma4",
+                "prompt_version": "v5-evidence-1",
+            },
+        ],
+    )
+    evidence = tmp_path / "e.csv"
+    gen._write_rows(evidence, [])
+    evidence.write_text(
+        "evidence_id,member_id,facet,perspective,value,source_count\n"
+        "a,twice-sana,vibe,fan_perception,粉絲常說她親切,3\n",
+        encoding="utf-8",
+    )
+    members = tmp_path / "m.csv"
+    members.write_text(
+        "id,artist,member,gender_group\ntwice-sana,TWICE,SANA,female\n", encoding="utf-8"
+    )
+    monkeypatch.setattr(gen, "_generate", lambda args, prompt: ["有沒有很親切的女生成員"])
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "gen",
+            "--model",
+            "taide",
+            "--evidence",
+            str(evidence),
+            "--members",
+            str(members),
+            "--aliases",
+            str(tmp_path / "none.csv"),
+            "--output",
+            str(output),
+        ],
+    )
+    gen.main()
+    rows = gen._read_csv(output)
+    assert [(r["generator"], r["query"], r["prompt_version"]) for r in rows] == [
+        ("gemma4", "別的模型", "v5-evidence-1"),
+        ("taide", "有沒有很親切的女生成員", gen.PROMPT_VERSION),
+    ]

@@ -34,7 +34,7 @@ MEMBERS_CSV = PROJECT_ROOT / "data" / "play_zone" / "bias_radar_members.csv"
 ALIASES_CSV = PROJECT_ROOT / "data" / "curator" / "grok_aliases.csv"
 DEFAULT_OUTPUT = PROJECT_ROOT / "data" / "curator" / "staging" / "v5_queries.csv"
 FIELDNAMES = ["member_id", "evidence_id", "facet", "query", "generator", "prompt_version"]
-PROMPT_VERSION = "v5-evidence-1"
+PROMPT_VERSION = "v5-evidence-2"
 QUERIES_PER_CLAIM = 6
 MAX_CLAIMS_PER_MEMBER = 4
 MIN_QUERY_CHARS = 8
@@ -57,9 +57,13 @@ def main() -> None:
     members = {row["id"]: row for row in _read_csv(args.members)}
     claims = select_claims(_read_csv(args.evidence), members)
     banned = banned_names(members, _read_csv(args.aliases) if args.aliases.exists() else [])
-    existing = _read_csv_if_exists(args.output)
-    if args.force:
-        existing = [row for row in existing if row["generator"] != args.model]
+    # 這個模型用舊版提示詞產生的問句一律重做，不和新版混在一起。
+    existing = [
+        row
+        for row in _read_csv_if_exists(args.output)
+        if row["generator"] != args.model
+        or (row.get("prompt_version") == PROMPT_VERSION and not args.force)
+    ]
     done = {(row["evidence_id"], row["generator"]) for row in existing}
     targets = [c for c in claims if (c["evidence_id"], args.model) not in done]
     if args.limit is not None:
@@ -120,11 +124,15 @@ def build_prompt(claim: dict[str, str], member: dict[str, str]) -> str:
 
 規則：
 - 繁體中文、台灣用語，口語，像真的在打字，長短不一（8 到 50 字）。
-- 每句都是在找「人」，例如「有沒有…的成員」「想找…的{gender}」「推一個…的」。不要問歌、專輯或團體。
-- 句子的核心就是上面這項{facet}，可以換說法、用粉絲常講的詞，但不要加上原文沒有的其他特質。
+- 每句都是直接傳給機器人、在找「人」，例如「有沒有…的成員」「想找…的{gender}」「推一個…的」。
+  不要寫成在論壇問別人（「有沒有人知道」「求大家」），也不要問歌、專輯或團體。
+- 只寫讓人想入坑的那一面。原文裡的爭議、負評、意見分歧、「但是…」的保留都不要寫進去。
+- 只能用原文裡的特質，可以換成意思相同的說法，不能換成別的特質。
+  例如原文說「私下爽朗、親切」，可以寫「私下很大方、不做作」，不能寫成「搞笑」「呆萌」「很ㄎㄧㄤ」。
+  原文講的是兩面反差，就照原文的兩面寫，不要自己換成其他兩面。
 - 不要出現任何人名、暱稱、團名、歌名或節目名。
 - 大約一半的句子提到想找{group}或{gender}，其他不提性別。
-- 只輸出 JSON 字串陣列，例如 ["…", "…"]，不要其他文字。"""
+- 只輸出 JSON 物件，格式是 {{"queries": ["…", "…"]}}，不要其他文字。"""
 
 
 def banned_names(members: dict[str, dict[str, str]], aliases: list[dict[str, str]]) -> set[str]:
@@ -168,16 +176,18 @@ def _generate(args: argparse.Namespace, prompt: str) -> list[str]:
                 json={
                     "model": args.model,
                     "messages": [{"role": "user", "content": prompt}],
-                    "temperature": 0.9,
+                    "temperature": 0.8,
                     "max_tokens": 800,
+                    # TAIDE 不加這個常常輸出說明文字而不是 JSON（試跑 3 條就重試 3 次）。
+                    "response_format": {"type": "json_object"},
                 },
                 timeout=300,
             )
             response.raise_for_status()
             text = response.json()["choices"][0]["message"]["content"]
-            if queries := _parse_json_list(text):
+            if queries := _parse_queries(text):
                 return queries
-            print("  ! no JSON list; retrying", flush=True)
+            print("  ! no JSON queries; retrying", flush=True)
         except Exception as error:  # noqa: BLE001 - keep going on per-claim failures
             print(f"  ! failed ({type(error).__name__}); retrying", flush=True)
         time.sleep(2 * attempt)
@@ -200,14 +210,18 @@ def _compact(text: str) -> str:
     return unicodedata.normalize("NFKC", text).casefold().replace(" ", "")
 
 
-def _parse_json_list(text: str) -> list[str]:
-    match = re.search(r"\[.*\]", text, re.DOTALL)
+def _parse_queries(text: str) -> list[str]:
+    """{"queries": [...]}，模型沒照做時也接受單純的字串陣列。"""
+
+    match = re.search(r"\{.*\}|\[.*\]", text, re.DOTALL)
     if not match:
         return []
     try:
         values = json.loads(match.group(0))
     except ValueError:
         return []
+    if isinstance(values, dict):
+        values = values.get("queries")
     return [v for v in values if isinstance(v, str)] if isinstance(values, list) else []
 
 
