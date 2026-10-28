@@ -15,16 +15,17 @@ v5 會用深度學習提高成員命中，但要先有一把對的尺：一批**
 - 特質：「想找溫柔又很會照顧人的男偶像」「有沒有個性大剌剌的女團成員」
 - 聲線／舞台：「推薦聲音沙啞、很有辨識度的成員」「想找跳舞很有力量的女生」
 - 綜藝感：「綜藝很好笑的 idol 推薦」
+- 長相／外型類型：「想找小狗相的男生」「有沒有清冷貓系長相的女團成員」「喜歡濃顏、很有攻擊性的長相」
 - 反差：「平常很呆萌、上台很帥的成員」
-- 像某人：「喜歡 Karina 那種氣質，還有誰像她」「像 Felix 一樣低音很重的人」
-- 混合條件：「男團、主唱、私下很搞笑」
+- 像某人：「我喜歡 MEOVV 的 ANNA，有沒有相似類型的推薦？」「喜歡 Karina 那種氣質，還有誰像她」「長得像 Wonyoung 那種的」「像 Felix 一樣低音很重的人」
+- 混合條件：「男團、主唱、私下很搞笑」「長相清冷但個性很暖」
 
 **不收**：
 
 - 找歌、找專輯、找 MV、找曲風（「類似〈Supernova〉的歌」）。
 - 只問團體、不問成員的（「推薦一個男團」）。發文者問團、但回覆幾乎都在推特定成員的，也不收，避免題意被改寫。
-- 問外貌、長相相似的（「長得像某某的人」）。
 - 八卦、戀愛傳聞、私生活猜測。
+- 長相題裡評論身材、整形猜測、性暗示的貼文或回覆；長相只收動物相、五官氣質、造型風格這類描述。
 
 ## 來源
 
@@ -57,11 +58,12 @@ v5 會用深度學習提高成員命中，但要先有一把對的尺：一批**
 
 ### requests.csv
 
-`request_id,platform,source_language,thread_url,post_date,original_request,query_zh,intent_type,reference_member_ids,gender,exclude_artists,reply_count_read,notes`
+`request_id,platform,source_language,thread_url,post_date,original_request,query_zh,intent_type,reference_member_ids,similar_aspect,gender,exclude_artists,reply_count_read,notes`
 
 - `request_id`：`mi-0001` 起編，穩定不重用。
-- `intent_type`：`trait`、`vocal`、`performance`、`variety`、`contrast`、`similar_to_member`、`mixed`，多個條件時用 `mixed` 並在 notes 列出。
+- `intent_type`：`trait`、`appearance`、`vocal`、`performance`、`variety`、`contrast`、`similar_to_member`、`mixed`，多個條件時用 `mixed` 並在 notes 列出。
 - `reference_member_ids`：「像某人」的那位（可多位，以 `|` 分隔）；沒有就空白。
+- `similar_aspect`：只在 `similar_to_member` 填，發文者想要哪方面相似：`appearance`、`vibe`、`vocal`、`performance`、`unspecified`（像 ANNA 那題只說「相似類型」）。依原文判斷，不要從回覆反推；原文沒說就填 `unspecified`。
 - `gender`：`female`、`male` 或空白（原文沒說）。
 - `exclude_artists`：原文明說不要的團，以 `|` 分隔。
 - `reply_count_read`：你實際讀過的回覆數，讓我們知道答案的完整度。
@@ -78,12 +80,12 @@ v5 會用深度學習提高成員命中，但要先有一把對的尺：一批**
 
 ### data_dictionary.md、research_log.md
 
-字典說明欄位與缺值寫法；日誌記錄搜尋關鍵字、讀過的串數、各來源讀取失敗、排除了哪些貼文與原因（找歌、只問團、外貌…各幾則）。
+字典說明欄位與缺值寫法；日誌記錄搜尋關鍵字、讀過的串數、各來源讀取失敗、排除了哪些貼文與原因（找歌、只問團、身材或整形評論…各幾則）。
 
 ## 數量與分批
 
 - **第一批先交 30 題**，涵蓋至少 4 種 intent_type、中英各有，讓我們先檢查格式和題意判斷。通過後再補到 **150～200 題**。
-- 每種 intent_type 不超過全部的 40%。`contrast` 與 `similar_to_member` 各至少 15 題。
+- 每種 intent_type 不超過全部的 40%。`appearance`、`contrast` 與 `similar_to_member` 各至少 15 題；`similar_to_member` 裡 `unspecified` 和 `appearance` 各至少 5 題。
 - 至少一半的題目要有 2 位以上回覆者推薦的目錄內成員；全部答案都在目錄外的題目可以交，但另外標註，不計入 150 題。
 
 ## 隱私
