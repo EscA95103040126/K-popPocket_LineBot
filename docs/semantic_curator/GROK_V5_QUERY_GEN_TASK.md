@@ -35,9 +35,10 @@
    ```
 
    ```bash
-   uv run --no-project --with requests --with opencc python scripts/generate_v5_queries.py --model gemma4
+   uv run --no-project --with requests --with opencc python scripts/generate_v5_queries.py --model gemma4 --no-think
    ```
 
+   Gemma 4 會先思考、答案不在一般欄位，所以一定要加 `--no-think`（改走 Ollama 原生 API 並關掉思考）。
 4. 兩個模型會寫進同一個檔案：`data/curator/staging/v5_queries.csv`。
 
 如果 Ollama 不在預設的 `http://127.0.0.1:11434`，用 `--base-url` 指定。如果模型名稱不同，用 `--model` 換成實際名稱，並在回報裡寫明。
