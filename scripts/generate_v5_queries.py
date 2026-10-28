@@ -216,29 +216,54 @@ def clean_queries(candidates: list[str], banned: set[str]) -> list[str]:
 def _generate(args: argparse.Namespace, prompt: str) -> list[str]:
     for attempt in range(1, MAX_ATTEMPTS + 1):
         try:
-            response = requests.post(
-                f"{args.base_url}/chat/completions",
-                json={
-                    "model": args.model,
-                    "messages": [{"role": "user", "content": prompt}],
-                    "temperature": 0.8,
-                    # 會先思考的模型（Gemma 4）把額度花在思考上時，content 會是空的。
-                    "max_tokens": 2000,
-                    # TAIDE 不加這個常常輸出說明文字而不是 JSON（試跑 3 條就重試 3 次）。
-                    "response_format": {"type": "json_object"},
-                },
-                timeout=300,
-            )
-            response.raise_for_status()
-            text = response.json()["choices"][0]["message"]["content"]
+            text = _chat_ollama_no_think(args, prompt) if args.no_think else _chat(args, prompt)
             if queries := _parse_queries(text):
                 return queries
             raw = " ".join((text or "").split())[:200]
             print(f"  ! no JSON queries; retrying. Model said: {raw or '(empty)'}", flush=True)
         except Exception as error:  # noqa: BLE001 - keep going on per-claim failures
-            print(f"  ! failed ({type(error).__name__}); retrying", flush=True)
+            body = getattr(getattr(error, "response", None), "text", "") or ""
+            detail = f": {' '.join(body.split())[:200]}" if body else ""
+            print(f"  ! failed ({type(error).__name__}{detail}); retrying", flush=True)
         time.sleep(2 * attempt)
     return []
+
+
+def _chat(args: argparse.Namespace, prompt: str) -> str:
+    response = requests.post(
+        f"{args.base_url}/chat/completions",
+        json={
+            "model": args.model,
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": 0.8,
+            "max_tokens": 2000,
+            # TAIDE 不加這個常常輸出說明文字而不是 JSON（試跑 3 條就重試 3 次）。
+            "response_format": {"type": "json_object"},
+        },
+        timeout=300,
+    )
+    response.raise_for_status()
+    return response.json()["choices"][0]["message"]["content"]
+
+
+def _chat_ollama_no_think(args: argparse.Namespace, prompt: str) -> str:
+    """Gemma 4 在 OpenAI 相容端點會先思考，答案不在 content；Ollama 原生 API 才能關掉思考。"""
+
+    root = args.base_url.removesuffix("/").removesuffix("/v1")
+    response = requests.post(
+        f"{root}/api/chat",
+        json={
+            "model": args.model,
+            "messages": [{"role": "user", "content": prompt}],
+            "stream": False,
+            "think": False,
+            "format": "json",
+            "options": {"temperature": 0.8, "num_predict": 2000},
+        },
+        timeout=300,
+    )
+    response.raise_for_status()
+    return response.json()["message"]["content"]
 
 
 @cache
@@ -299,6 +324,9 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--limit", type=int, default=None, help="只跑前 N 條證據")
     parser.add_argument("--force", action="store_true", help="重新產生這個模型的全部問句")
+    parser.add_argument(
+        "--no-think", action="store_true", help="用 Ollama 原生 API 關掉思考模式（Gemma 4 需要）"
+    )
     parser.add_argument("--dry-run", action="store_true", help="只印出，不寫檔")
     return parser.parse_args()
 
