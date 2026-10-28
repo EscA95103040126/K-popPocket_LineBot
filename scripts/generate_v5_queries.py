@@ -34,7 +34,7 @@ MEMBERS_CSV = PROJECT_ROOT / "data" / "play_zone" / "bias_radar_members.csv"
 ALIASES_CSV = PROJECT_ROOT / "data" / "curator" / "grok_aliases.csv"
 DEFAULT_OUTPUT = PROJECT_ROOT / "data" / "curator" / "staging" / "v5_queries.csv"
 FIELDNAMES = ["member_id", "evidence_id", "facet", "query", "generator", "prompt_version"]
-PROMPT_VERSION = "v5-evidence-3"
+PROMPT_VERSION = "v5-evidence-4"
 QUERIES_PER_CLAIM = 6
 # 多要幾句：檢查會刪掉偏離證據的句子，留下的才夠 QUERIES_PER_CLAIM。
 QUERIES_REQUESTED = 9
@@ -61,6 +61,8 @@ ASPECT_CUES = {
     "variety": ("綜藝", "節目", "主持", "實境"),
     # 「綜藝裡很親切」不等於「很搞笑」，搞笑要證據自己講到才行。
     "humor": ("搞笑", "好笑", "幽默", "ㄎㄧㄤ", "ㄎ一ㄤ", "有梗", "諧星", "呆萌", "搞怪", "笑點"),
+    # 「饒舌擔當」被寫成「氣場有點反差萌」：反差只能來自反差證據。
+    "contrast": ("反差", "落差", "兩面", "判若兩人", "變了一個人", "像變了"),
     "appearance": ("長相", "長得", "顏值", "外型", "外表", "五官", "臉"),
 }
 FACET_ASPECTS = {
@@ -71,7 +73,7 @@ FACET_ASPECTS = {
     "appearance": "appearance",
 }
 # 提示詞要求直接對機器人說話，模型仍會寫成論壇發問。
-FORUM_PHRASES = ("有沒有人知道", "有人知道", "求大家", "各位", "大家推薦")
+FORUM_PHRASES = ("有沒有人知道", "有人知道", "有人在推", "求大家", "各位", "大家推薦")
 # 證據原文帶保留（「意見分歧」）時，模型會把負評也寫進去；沒人想入坑「評價兩極」的人。
 NEGATIVE_PHRASES = ("兩極", "分歧", "爭議", "評價不一", "沒那麼", "不太穩", "被嫌", "黑粉")
 
@@ -220,7 +222,8 @@ def _generate(args: argparse.Namespace, prompt: str) -> list[str]:
                     "model": args.model,
                     "messages": [{"role": "user", "content": prompt}],
                     "temperature": 0.8,
-                    "max_tokens": 800,
+                    # 會先思考的模型（Gemma 4）把額度花在思考上時，content 會是空的。
+                    "max_tokens": 2000,
                     # TAIDE 不加這個常常輸出說明文字而不是 JSON（試跑 3 條就重試 3 次）。
                     "response_format": {"type": "json_object"},
                 },
@@ -230,7 +233,8 @@ def _generate(args: argparse.Namespace, prompt: str) -> list[str]:
             text = response.json()["choices"][0]["message"]["content"]
             if queries := _parse_queries(text):
                 return queries
-            print("  ! no JSON queries; retrying", flush=True)
+            raw = " ".join((text or "").split())[:200]
+            print(f"  ! no JSON queries; retrying. Model said: {raw or '(empty)'}", flush=True)
         except Exception as error:  # noqa: BLE001 - keep going on per-claim failures
             print(f"  ! failed ({type(error).__name__}); retrying", flush=True)
         time.sleep(2 * attempt)
