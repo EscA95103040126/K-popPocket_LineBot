@@ -10,7 +10,7 @@ def bias_radar_tag_text(raw_value: str) -> str:
 
 def display_member_name(member: str) -> str:
     cleaned = member.strip()
-    special_names = {"RM", "V", "DK", "D.O.", "I.N", "THE8"}
+    special_names = {"RM", "V", "DK", "D.O.", "I.N", "THE8", "ANYUJIN"}
     if cleaned.upper() in special_names:
         return cleaned.upper()
     if cleaned and cleaned == cleaned.upper():
