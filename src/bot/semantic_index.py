@@ -31,7 +31,6 @@ from src.bot.preference import (
     PreferenceParser,
     adjust_scores,
     filter_ranked,
-    load_aliases,
     load_trait_tags,
     tag_members,
 )
@@ -430,20 +429,21 @@ class SemanticMemberRanker:
         except Exception:
             logger.exception("Could not load the semantic curator; using v1 ranking.")
             return None
+        query_parser = CuratorQueryParser.load(base_dir, members)
         preferences = None
         if llm is not None and llm.enabled:
             preferences = PreferenceParser(
                 llm,
                 load_trait_tags(base_dir),
                 members,
-                load_aliases(base_dir),
+                query_parser,
                 PreferenceCache.load(base_dir / PREFERENCE_CACHE_PATH, llm.model),
             )
         return cls(
             index,
             members,
             load_member_notes(base_dir, members),
-            CuratorQueryParser.load(base_dir, members),
+            query_parser,
             load_member_evidence(base_dir),
             preferences=preferences,
         )

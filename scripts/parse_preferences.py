@@ -24,6 +24,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.bot.catalog import PlayZoneCatalog
+from src.bot.curator_query import CuratorQueryParser
 from src.bot.llm import GeminiTextClient
 from src.bot.preference import (
     PREFERENCE_CACHE_PATH,
@@ -31,7 +32,6 @@ from src.bot.preference import (
     PROMPT_VERSION,
     PreferenceCache,
     PreferenceParser,
-    load_aliases,
     load_trait_tags,
 )
 from src.config import Settings
@@ -73,7 +73,11 @@ def main() -> None:
     members = PlayZoneCatalog(PROJECT_ROOT).load_bias_radar_members()
     cache = PreferenceCache.load(PROJECT_ROOT / PREFERENCE_CACHE_PATH, PREFERENCE_MODEL)
     parser = PreferenceParser(
-        llm, load_trait_tags(PROJECT_ROOT), members, load_aliases(PROJECT_ROOT), cache
+        llm,
+        load_trait_tags(PROJECT_ROOT),
+        members,
+        CuratorQueryParser.load(PROJECT_ROOT, members),
+        cache,
     )
     queries = [q for split in args.split for q in _split_queries(split)]
     practice = _read_csv(PRACTICE_CSV) if args.practice else []
