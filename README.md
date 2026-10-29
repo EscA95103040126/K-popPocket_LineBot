@@ -1,5 +1,5 @@
 ---
-title: Kpop Agent
+title: Kpop Pocket
 sdk: docker
 app_port: 7860
 pinned: false
