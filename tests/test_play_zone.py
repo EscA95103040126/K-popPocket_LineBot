@@ -4,6 +4,7 @@ from io import BytesIO
 from pathlib import Path
 from types import SimpleNamespace
 
+import pytest
 from flask import Flask
 from PIL import Image
 
@@ -836,6 +837,77 @@ def test_ai_curator_reason_followup_gemini_failure_still_returns_link(
     assert response.status_code == 200
     assert payload["report"]
     assert "https://example.com/sullyoon-fancam" in payload["report"]
+
+
+def test_ai_curator_reason_followup_keeps_layout_with_gemini_sentences(
+    tmp_path: Path,
+) -> None:
+    llm = FakeLlm(
+        text=(
+            '["🔎 如果你吃小鹿那種清透感，Sullyoon 會很容易先對上，第一眼就很難移開。",'
+            ' "初戀感的距離讓人想慢慢靠近，入門可以先看能感受到聲線魅力的直拍。"]'
+        )
+    )
+    app = _use_ai_curator_reason_csv(
+        tmp_path,
+        daily_fancam_csv=(
+            "artist,title,member,url\n"
+            "NMIXX,Love Me Like This,Sullyoon,https://example.com/sullyoon-fancam\n"
+        ),
+        daily_mv_csv="artist,title,url\nNMIXX,DASH,https://example.com/nmixx-mv\n",
+        llm=llm,
+    )
+
+    report = (
+        app.test_client()
+        .post("/analyze", json={"message": "為什麼推薦 Sullyoon？"})
+        .get_json()["report"]
+    )
+
+    assert report == (
+        "✨ 我會先推 NMIXX Sullyoon。\n"
+        "🔎 如果你吃小鹿那種清透感，Sullyoon 會很容易先對上，第一眼就很難移開。\n"
+        "💫 初戀感的距離讓人想慢慢靠近，入門可以先看能感受到聲線魅力的直拍。\n"
+        "\n"
+        "🎬 先用這支直拍確認感覺：NMIXX Sullyoon - Love Me Like This\n"
+        "https://example.com/sullyoon-fancam"
+    )
+    assert "JSON" in llm.prompts[0]
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        "Sullyoon 是很適合入坑的成員，舞台和聲線都很穩，值得多看幾支直拍。",
+        '["只有一句，如果你吃小鹿那種清透感會很容易對上。"]',
+        '["如果你吃小鹿那種清透感會很容易對上。", "https://example.com 先看這支"]',
+    ],
+)
+def test_ai_curator_reason_followup_unusable_gemini_reply_uses_local_layout(
+    tmp_path: Path,
+    text: str,
+) -> None:
+    app = _use_ai_curator_reason_csv(
+        tmp_path,
+        daily_fancam_csv=(
+            "artist,title,member,url\n"
+            "NMIXX,Love Me Like This,Sullyoon,https://example.com/sullyoon-fancam\n"
+        ),
+        daily_mv_csv="artist,title,url\nNMIXX,DASH,https://example.com/nmixx-mv\n",
+        llm=FakeLlm(text=text),
+    )
+
+    report = (
+        app.test_client()
+        .post("/analyze", json={"message": "為什麼推薦 Sullyoon？"})
+        .get_json()["report"]
+    )
+
+    assert report.splitlines()[:3] == [
+        "✨ 我會先推 NMIXX Sullyoon。",
+        "🔎 如果你吃鹿那種第一眼的清透感，Sullyoon 會很容易先對上；再加上清冷的反差，會讓人想多看幾支舞台。",
+        "💫 初戀感的距離感很適合慢慢被圈進去，入門可以先看能感受到聲線魅力的直拍。",
+    ]
 
 
 def test_ai_curator_reason_followup_runs_after_fixed_analyze_routes() -> None:
