@@ -107,9 +107,17 @@ def test_parser_caches_by_query_and_falls_back_on_bad_json(tmp_path):
 
     cache.save()
     offline = PreferenceParser(
-        None, TAGS, MEMBERS, {}, PreferenceCache.load(tmp_path / "cache.json", ""), live=False
+        None,
+        TAGS,
+        MEMBERS,
+        {},
+        PreferenceCache.load(tmp_path / "cache.json", "test-model"),
+        live=False,
     )
     assert offline.parse("강아지상 남돌") == first
     assert offline.parse("沒解析過的句子") is None
+    # 換模型不能拿到別的模型的解析結果。
+    other = PreferenceCache.load(tmp_path / "cache.json", "other-model")
+    assert other.get("강아지상 남돌") is None
 
     assert PreferenceParser(FakeLlm("not json"), TAGS, MEMBERS, {}).parse("x") is None

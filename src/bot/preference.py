@@ -23,9 +23,9 @@ logger = logging.getLogger(__name__)
 TRAIT_TAGS_PATH = Path("data") / "curator" / "trait_tags.csv"
 PREFERENCE_CACHE_PATH = Path("data") / "curator" / "llm_pref_cache.json"
 PROMPT_VERSION = "pref-v3"
-# 練習集和權重都是用這個模型的解析結果調的，不跟著 GEMINI_MODEL 換（gemini-3.8-flash 在
-# 2026-10-29 連一個字的回覆都逾時）。
-PREFERENCE_MODEL = "gemini-3.1-flash-lite-preview"
+# 偏好解析固定用這個模型，不跟著 GEMINI_MODEL 換。test3（2026-10-29）用的是
+# gemini-3.1-flash-lite-preview；preview 版停用後改用穩定版，練習集上的比較見 RESULTS_v5.md。
+PREFERENCE_MODEL = "gemini-3.1-flash-lite"
 RANKING_PERSPECTIVES = ("fan_perception", "press", "other_person")
 # 程度詞對應的加權；分數單位是 v4 分數標準化後的標準差。
 WEIGHTS = {"high": 1.0, "mid": 0.6, "low": 0.3}
@@ -210,9 +210,9 @@ class PreferenceCache:
             cache.entries = stored.get("entries", {})
         return cache
 
-    @staticmethod
-    def key(query: str) -> str:
-        return hashlib.sha256(f"{PROMPT_VERSION}\n{query}".encode()).hexdigest()
+    def key(self, query: str) -> str:
+        # 模型也算進 key：換模型不能拿到別的模型的解析結果。
+        return hashlib.sha256(f"{PROMPT_VERSION}\n{self.model}\n{query}".encode()).hexdigest()
 
     def get(self, query: str) -> Preference | None:
         entry = self.entries.get(self.key(query))
