@@ -4,7 +4,7 @@ import csv
 
 import pytest
 
-from scripts.build_member_evidence import CLEAN_OVERLAY, collect
+from scripts.build_member_evidence import BATCHES, CLEAN_OVERLAY, STAFF_NAME_OVERLAY, collect
 from src.bot.catalog import PlayZoneCatalog
 from src.bot.member_evidence import load_member_evidence, pick_member_evidence, query_facets
 from tests.fakes import REPO_ROOT
@@ -35,9 +35,9 @@ def claim(claim_id, **overrides):
     return row | overrides
 
 
-def write_claims(folder, rows):
+def write_claims(folder, rows, name="member_claims.csv"):
     folder.mkdir(parents=True, exist_ok=True)
-    with (folder / "member_claims.csv").open("w", encoding="utf-8", newline="") as f:
+    with (folder / name).open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=CLAIM_FIELDS)
         writer.writeheader()
         writer.writerows(rows)
@@ -45,8 +45,9 @@ def write_claims(folder, rows):
 
 @pytest.fixture
 def staging(tmp_path):
-    for n in range(1, 11):
-        write_claims(tmp_path / f"member_evidence_v1_{n}", [])
+    for batch in BATCHES:
+        path = tmp_path / batch
+        write_claims(path.parent, [], path.name)
     return tmp_path
 
 
@@ -72,6 +73,36 @@ def test_later_batch_and_clean_overlay_win(staging):
     write_claims(staging / CLEAN_OVERLAY / "v1_2", [claim("b", value="粉絲常說她（清理版）")])
     rows = collect(staging, MEMBER_IDS)
     assert [(r["evidence_id"], r["value"]) for r in rows] == [("b", "粉絲常說她（清理版）")]
+
+
+def test_staff_name_overlay_wins_over_clean_overlay(staging):
+    write_claims(staging / "member_evidence_v1_1", [claim("a", value="原批次")])
+    write_claims(staging / CLEAN_OVERLAY / "v1_1", [claim("a", value="清理版")])
+    write_claims(staging / STAFF_NAME_OVERLAY / "v1_1", [claim("a", value="SM 職員版")])
+    assert [r["value"] for r in collect(staging, MEMBER_IDS)] == ["SM 職員版"]
+
+
+def test_versioned_recheck_replaces_the_original_claim(staging):
+    write_claims(staging / "appearance_v3", [claim("a"), claim("b"), claim("c")])
+    write_claims(
+        staging / "appearance_claims_v5_cafe_recheck",
+        [
+            claim("a-v5", verification_status="superseded"),
+            claim("c-v5", value="粉絲常說她（重核）"),
+        ],
+        "member_claims_v5_changes.csv",
+    )
+    write_claims(
+        staging / "appearance_claims_v6_source_recheck",
+        [claim("a-v5-v6")],
+        "member_claims_v6_changes.csv",
+    )
+    rows = collect(staging, MEMBER_IDS)
+    assert [(r["evidence_id"], r["value"]) for r in rows] == [
+        ("a-v5-v6", "粉絲常說她親切"),
+        ("b", "粉絲常說她親切"),
+        ("c-v5", "粉絲常說她（重核）"),
+    ]
 
 
 def test_unknown_member_stops_the_build(staging):

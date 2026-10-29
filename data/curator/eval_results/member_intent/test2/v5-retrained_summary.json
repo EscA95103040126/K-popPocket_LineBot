@@ -1,0 +1,382 @@
+{
+ "overall": {
+  "n": 44,
+  "lenient_hit@10": 0.5909090909090909,
+  "lenient_hit@3": 0.2727272727272727,
+  "lenient_mrr": 0.20173160173160173,
+  "strong_hit@10": 0.5357142857142857,
+  "strong_hit@3": 0.25,
+  "strong_mrr": 0.18035714285714285
+ },
+ "by_intent": {
+  "appearance": {
+   "n": 25,
+   "lenient_hit@10": 0.6,
+   "lenient_hit@3": 0.32,
+   "lenient_mrr": 0.22404761904761905,
+   "strong_hit@10": 0.5882352941176471,
+   "strong_hit@3": 0.35294117647058826,
+   "strong_mrr": 0.242156862745098
+  },
+  "contrast": {
+   "n": 1,
+   "lenient_hit@10": 1.0,
+   "lenient_hit@3": 1.0,
+   "lenient_mrr": 0.3333333333333333,
+   "strong_hit@10": 1.0,
+   "strong_hit@3": 0.0,
+   "strong_mrr": 0.1
+  },
+  "mixed": {
+   "n": 1,
+   "lenient_hit@10": 1.0,
+   "lenient_hit@3": 0.0,
+   "lenient_mrr": 0.25,
+   "strong_hit@10": 0.0,
+   "strong_hit@3": 0.0,
+   "strong_mrr": 0.0
+  },
+  "performance": {
+   "n": 1,
+   "lenient_hit@10": 1.0,
+   "lenient_hit@3": 0.0,
+   "lenient_mrr": 0.16666666666666666,
+   "strong_hit@10": 1.0,
+   "strong_hit@3": 0.0,
+   "strong_mrr": 0.16666666666666666
+  },
+  "similar_to_member": {
+   "n": 12,
+   "lenient_hit@10": 0.4166666666666667,
+   "lenient_hit@3": 0.16666666666666666,
+   "lenient_mrr": 0.13125,
+   "strong_hit@10": 0.25,
+   "strong_hit@3": 0.25,
+   "strong_mrr": 0.08333333333333333
+  },
+  "trait": {
+   "n": 2,
+   "lenient_hit@10": 0.5,
+   "lenient_hit@3": 0.5,
+   "lenient_mrr": 0.25,
+   "strong_hit@10": 0.0,
+   "strong_hit@3": 0.0,
+   "strong_mrr": 0.0
+  },
+  "vocal": {
+   "n": 2,
+   "lenient_hit@10": 1.0,
+   "lenient_hit@3": 0.0,
+   "lenient_mrr": 0.225,
+   "strong_hit@10": 1.0,
+   "strong_hit@3": 0.0,
+   "strong_mrr": 0.16666666666666666
+  }
+ },
+ "per_question": {
+  "mi2-0001": {
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0002": {
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0003": {
+   "strong_hit@3": 1.0,
+   "strong_hit@10": 1.0,
+   "strong_mrr": 0.5,
+   "lenient_hit@3": 1.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.5
+  },
+  "mi2-0004": {
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.16666666666666666
+  },
+  "mi2-0005": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 0.0,
+   "strong_mrr": 0.0,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.14285714285714285
+  },
+  "mi2-0006": {
+   "lenient_hit@3": 1.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.5
+  },
+  "mi2-0007": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 0.0,
+   "strong_mrr": 0.0,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0008": {
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.2
+  },
+  "mi2-0009": {
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0010": {
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.125
+  },
+  "mi2-0011": {
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0012": {
+   "strong_hit@3": 1.0,
+   "strong_hit@10": 1.0,
+   "strong_mrr": 0.3333333333333333,
+   "lenient_hit@3": 1.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.5
+  },
+  "mi2-0013": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 0.0,
+   "strong_mrr": 0.0,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0014": {
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0016": {
+   "strong_hit@3": 1.0,
+   "strong_hit@10": 1.0,
+   "strong_mrr": 0.3333333333333333,
+   "lenient_hit@3": 1.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.3333333333333333
+  },
+  "mi2-0017": {
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0018": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 0.0,
+   "strong_mrr": 0.0,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.25
+  },
+  "mi2-0019": {
+   "lenient_hit@3": 1.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.5
+  },
+  "mi2-0020": {
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.25
+  },
+  "mi2-0021": {
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0022": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 0.0,
+   "strong_mrr": 0.0,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0023": {
+   "strong_hit@3": 1.0,
+   "strong_hit@10": 1.0,
+   "strong_mrr": 0.5,
+   "lenient_hit@3": 1.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.5
+  },
+  "mi2-0024": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 0.0,
+   "strong_mrr": 0.0,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.25
+  },
+  "mi2-0026": {
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0027": {
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0028": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 0.0,
+   "strong_mrr": 0.0,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0029": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 1.0,
+   "strong_mrr": 0.16666666666666666,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.25
+  },
+  "mi2-0030": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 1.0,
+   "strong_mrr": 0.25,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.25
+  },
+  "mi2-0031": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 1.0,
+   "strong_mrr": 0.16666666666666666,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.16666666666666666
+  },
+  "mi2-0032": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 1.0,
+   "strong_mrr": 0.16666666666666666,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.2
+  },
+  "mi2-0033": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 0.0,
+   "strong_mrr": 0.0,
+   "lenient_hit@3": 1.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.5
+  },
+  "mi2-0034": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 1.0,
+   "strong_mrr": 0.16666666666666666,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.16666666666666666
+  },
+  "mi2-0035": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 1.0,
+   "strong_mrr": 0.16666666666666666,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.16666666666666666
+  },
+  "mi2-0036": {
+   "strong_hit@3": 1.0,
+   "strong_hit@10": 1.0,
+   "strong_mrr": 0.5,
+   "lenient_hit@3": 1.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.5
+  },
+  "mi2-0037": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 0.0,
+   "strong_mrr": 0.0,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0038": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 0.0,
+   "strong_mrr": 0.0,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0039": {
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.125
+  },
+  "mi2-0040": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 0.0,
+   "strong_mrr": 0.0,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0041": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 0.0,
+   "strong_mrr": 0.0,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0042": {
+   "strong_hit@3": 1.0,
+   "strong_hit@10": 1.0,
+   "strong_mrr": 0.5,
+   "lenient_hit@3": 1.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.5
+  },
+  "mi2-0043": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 0.0,
+   "strong_mrr": 0.0,
+   "lenient_hit@3": 0.0,
+   "lenient_hit@10": 0.0,
+   "lenient_mrr": 0.0
+  },
+  "mi2-0045": {
+   "strong_hit@3": 1.0,
+   "strong_hit@10": 1.0,
+   "strong_mrr": 1.0,
+   "lenient_hit@3": 1.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 1.0
+  },
+  "mi2-0046": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 1.0,
+   "strong_mrr": 0.1,
+   "lenient_hit@3": 1.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.3333333333333333
+  },
+  "mi2-0047": {
+   "strong_hit@3": 0.0,
+   "strong_hit@10": 1.0,
+   "strong_mrr": 0.2,
+   "lenient_hit@3": 1.0,
+   "lenient_hit@10": 1.0,
+   "lenient_mrr": 0.5
+  }
+ }
+}

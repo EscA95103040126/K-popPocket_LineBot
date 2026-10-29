@@ -7,7 +7,8 @@ while the stored digest does not match the current documents.
 
 Usage:
     python scripts/train_encoder.py            # once, then export it:
-    python scripts/export_onnx_encoder.py --source models/bge-m3-curator-v3
+    python scripts/export_onnx_encoder.py --source models/bge-m3-curator-v3 \
+        --out models/bge-m3-v3-int8
     python scripts/build_member_embeddings.py
 """
 

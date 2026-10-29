@@ -10,6 +10,8 @@ from src.agent import GEMINI_API_URL, GEMINI_NO_THINKING, GEMINI_REQUEST_TIMEOUT
 # The free-tier flash-lite preview answered AI 入坑 prompts in 2-18s, so the bot waits
 # longer than the 10s default; it must stay well under gunicorn's 30s worker timeout.
 BOT_GEMINI_TIMEOUT_SECONDS = 20
+# AI 入坑的偏好解析在產生回覆之前，逾時就照 v4 排序，所以等得比較短。
+PREFERENCE_TIMEOUT_SECONDS = 8
 # Gemini sheds load with fast 5xx replies (the Space logged HTTP 503) that usually clear
 # within a second. Retry once, and only after a quick failure, so the total wait still
 # fits the timeout; 429 means quota is gone and a retry would not help.
@@ -67,9 +69,10 @@ class GeminiTextClient:
         return data["candidates"][0]["content"]["parts"][0].get("text", "")
 
     def _post(self, payload: dict[str, Any]) -> requests.Response:
+        # 金鑰放在標頭，不放網址：HTTPError 的訊息會帶出完整網址。
         return requests.post(
             GEMINI_API_URL.format(model=self.model),
-            params={"key": self.api_key},
+            headers={"x-goog-api-key": self.api_key},
             json=payload,
             timeout=self.timeout_seconds,
         )

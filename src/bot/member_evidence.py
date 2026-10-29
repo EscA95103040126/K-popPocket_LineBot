@@ -1,4 +1,4 @@
-"""AI 入坑 v4：有來源的成員特質，只用來寫推薦理由，不影響排序。
+"""AI 入坑：有來源的成員特質。v4 只用來寫推薦理由；v5 起每條也各有一個向量參與排序。
 
 證據表由 scripts/build_member_evidence.py 從 Grok 批次產生，只收 supported 的主張。
 成員沒有某項證據不代表他沒有這個特質，只代表理由不能這樣寫。
@@ -23,6 +23,18 @@ FACET_CUES = {
     "performance": ("舞台", "舞臺", "舞蹈", "跳舞", "表演", "直拍", "饒舌", "rap", "dance"),
     "offstage_public": ("私下", "平常", "日常", "本人"),
     "vibe": ("氣質", "氛圍", "個性", "性格", "溫柔", "可愛", "清冷", "高冷", "開朗", "穩重"),
+    "appearance": (
+        "長相",
+        "長得",
+        "外貌",
+        "外型",
+        "顏值",
+        "五官",
+        "臉",
+        "狗狗相",
+        "小狗相",
+        "貓系",
+    ),
 }
 FACET_LABELS = {
     "contrast": "反差（台上台下或外表與個性的落差）",
@@ -31,6 +43,7 @@ FACET_LABELS = {
     "performance": "舞台表現",
     "offstage_public": "私下的樣子",
     "vibe": "個性氣質",
+    "appearance": "長相觀感",
 }
 # 粉絲觀感彙整最貼近「大家怎麼看這個人」；事件紀錄（主持過什麼）放最後。
 PERSPECTIVE_ORDER = {"fan_perception": 0, "press": 1, "other_person": 2, "event_record": 3}
