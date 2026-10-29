@@ -45,6 +45,7 @@ from src.bot.member_evidence import load_member_evidence
 from src.bot.photo_similarity import PhotoSimilarity
 from src.bot.preference import (
     PREFERENCE_CACHE_PATH,
+    PREFERENCE_MODEL,
     PreferenceCache,
     PreferenceParser,
     load_aliases,
@@ -77,6 +78,7 @@ def build_ranker(
     photos: bool = True,
     looks_signals: bool = False,
     preferences: bool = False,
+    preference_model: str = PREFERENCE_MODEL,
 ) -> Ranker:
     members = PlayZoneCatalog(PROJECT_ROOT).load_bias_radar_members()
     index = SemanticMemberIndex(
@@ -91,16 +93,16 @@ def build_ranker(
         CuratorQueryParser.load(PROJECT_ROOT, members, visual_similarity=looks_signals),
         load_member_evidence(PROJECT_ROOT),
         PhotoSimilarity.load(PROJECT_ROOT) if photos else None,
-        _cached_preferences(members) if preferences else None,
+        _cached_preferences(members, preference_model) if preferences else None,
         looks_signals=looks_signals,
     )
     return ranker.rank_ids
 
 
-def _cached_preferences(members) -> PreferenceParser:
+def _cached_preferences(members, model: str = PREFERENCE_MODEL) -> PreferenceParser:
     """只讀快取（scripts/parse_preferences.py 先填好），評分時不呼叫模型。"""
 
-    cache = PreferenceCache.load(PROJECT_ROOT / PREFERENCE_CACHE_PATH, model="")
+    cache = PreferenceCache.load(PROJECT_ROOT / PREFERENCE_CACHE_PATH, model)
     return PreferenceParser(
         None,
         load_trait_tags(PROJECT_ROOT),
@@ -120,6 +122,14 @@ RANKERS: dict[str, Callable[[], Ranker]] = {
     "v4-now": lambda: build_ranker(_v3(), evidence=False, photos=False),
     # v4 加上 LLM 偏好解析的特質分、否定降權和排除。
     "v4+pref": lambda: build_ranker(_v3(), evidence=False, photos=False, preferences=True),
+    # test3 登記時的解析模型（preview 版已停用），只用快取重現 test3 的分數。
+    "v4+pref@preview": lambda: build_ranker(
+        _v3(),
+        evidence=False,
+        photos=False,
+        preferences=True,
+        preference_model="gemini-3.1-flash-lite-preview",
+    ),
     # v5（test2 沒有通過）：長相題加上證據、參照成員和照片。
     "v5": lambda: build_ranker(_v3(), looks_signals=True),
     # 重新訓練的編碼器（第一輪封存測試沒有贏 v4），同樣的長相規則，只供參考。
