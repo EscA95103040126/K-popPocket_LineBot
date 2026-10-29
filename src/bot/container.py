@@ -16,7 +16,12 @@ from src.bot.features.daily_kpop import DailyKpopFeature
 from src.bot.features.member_quiz import MemberQuizFeature
 from src.bot.features.photo_card import PhotoCardFeature
 from src.bot.features.pocket import PocketFeature
-from src.bot.llm import BOT_GEMINI_TIMEOUT_SECONDS, GeminiTextClient
+from src.bot.llm import (
+    BOT_GEMINI_TIMEOUT_SECONDS,
+    PREFERENCE_TIMEOUT_SECONDS,
+    GeminiTextClient,
+)
+from src.bot.preference import PREFERENCE_MODEL
 from src.bot.routing import build_dispatcher, is_fixed_command
 from src.bot.semantic_index import SemanticMemberRanker
 from src.bot.sessions import InMemorySessionStore, SessionStore, build_session_store
@@ -93,7 +98,15 @@ def build_bot(deps: BotDeps) -> Bot:
             semantic_ranker_loader=(
                 (
                     lambda: SemanticMemberRanker.load(
-                        deps.settings.base_dir, catalog.load_bias_radar_members()
+                        deps.settings.base_dir,
+                        catalog.load_bias_radar_members(),
+                        # 偏好解析另開一個短逾時的連線：它和產生回覆的呼叫是接連發生的，
+                        # 兩個加起來要在 gunicorn 的 30 秒內。
+                        GeminiTextClient(
+                            deps.settings.gemini_api_key,
+                            PREFERENCE_MODEL,
+                            timeout_seconds=PREFERENCE_TIMEOUT_SECONDS,
+                        ),
                     )
                 )
                 if deps.semantic_curator

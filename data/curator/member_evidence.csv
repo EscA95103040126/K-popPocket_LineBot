@@ -1,67 +1,103 @@
 evidence_id,member_id,facet,perspective,value,source_count
 mc-aespa-giselle-performance-fan1,aespa-giselle,performance,fan_perception,粉絲視她為團內的饒舌擔當，但對她的饒舌實力意見分歧,4
+mc-aespa-karina-appearance-fan1-v5,aespa-karina,appearance,fan_perception,粉絲常說她是貓系長相（고양이상）,3
+mc-aespa-karina-appearance-fan2-v5,aespa-karina,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,4
 mc-aespa-karina-contrast-fan1,aespa-karina,contrast,fan_perception,社群說她舞臺上氣場強烈，舞臺外或綜藝裡卻爽朗、親切，兩者有落差,3
+mc-aespa-karina-variety-fan1,aespa-karina,variety,fan_perception,社群說她在綜藝裡有「허당미」（迷糊、出糗的可愛面），和舞臺上的強烈形象不同，帶來笑點,3
 mc-aespa-karina-vibe-fan1,aespa-karina,vibe,fan_perception,粉絲與社群常形容她個性爽朗、大剌剌（털털）,6
+mc-aespa-ningning-appearance-fan1,aespa-ningning,appearance,fan_perception,粉絲常說她是貓系長相（고양이상）,4
+mc-aespa-ningning-appearance-fan2-v5,aespa-ningning,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,4
 mc-aespa-ningning-vocal-fan1,aespa-ningning,vocal,fan_perception,社群常稱讚她有力的歌唱與高音,4
+mc-aespa-winter-appearance-fan1-v5,aespa-winter,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,6
+mc-aespa-winter-appearance-fan2-v5,aespa-winter,appearance,fan_perception,粉絲常說她是小狗相,4
 mc-aespa-winter-vocal-fan1,aespa-winter,vocal,fan_perception,社群常稱讚她的音色（清亮、有辨識度）,5
 mc-ateez-hongjoong-vibe-fan1,ateez-hongjoong,vibe,fan_perception,粉絲普遍以「隊長（Captain）」稱呼他、視他為團隊核心,4
 mc-ateez-jongho-vibe-fan1,ateez-jongho,vibe,fan_perception,粉絲常稱他是 ATEEZ 的「最強忙內」,4
 mc-ateez-jongho-vocal-fan1,ateez-jongho,vocal,fan_perception,粉絲普遍稱讚他有力、高音出色的主唱歌聲,7
 mc-ateez-mingi-performance-fan1,ateez-mingi,performance,fan_perception,粉絲普遍稱讚他低沉的嗓音與饒舌,7
+mc-ateez-san-appearance-fan1,ateez-san,appearance,fan_perception,粉絲常說他是清冷系帥哥（냉미남／차도남）長相,4
+mc-ateez-san-appearance-fan2,ateez-san,appearance,fan_perception,粉絲常說他是狐狸相（여우상）,3
 mc-ateez-san-contrast-fan1,ateez-san,contrast,fan_perception,粉絲說他舞臺上很有魄力，舞臺下卻溫和、有反差萌,3
 mc-ateez-san-performance-fan1,ateez-san,performance,fan_perception,粉絲稱他的個人直拍很有吸引力（「입덕 직캠」）,4
 mc-ateez-san-variety-1,ateez-san,variety,event_record,2026 年任《Boss in the Mirror》特別 MC,1
 mc-ateez-san-variety-fan1,ateez-san,variety,fan_perception,社群常提到他和 Wooyoung 的綜藝默契,3
 mc-ateez-san-vibe-fan1,ateez-san,vibe,fan_perception,粉絲常用「북부대공（北部大公）」暱稱他，指他舞臺上的威嚴氣場,4
+mc-ateez-seonghwa-appearance-fan1,ateez-seonghwa,appearance,fan_perception,粉絲常說他是清冷系帥哥（냉미남／차도남）長相,3
+mc-ateez-wooyoung-appearance-fan1,ateez-wooyoung,appearance,fan_perception,粉絲常說他是清冷系帥哥（냉미남／차도남）長相,3
 mc-ateez-wooyoung-performance-fan1,ateez-wooyoung,performance,fan_perception,社群常提到他舞蹈風格鮮明、表現力強,3
+mc-ateez-yeosang-appearance-fan1,ateez-yeosang,appearance,fan_perception,粉絲常說他是清純系（청순）長相,4
 mc-ateez-yeosang-vocal-fan1,ateez-yeosang,vocal,fan_perception,粉絲普遍喜愛他穩定、低沉的嗓音，並希望他有更多分量,6
+mc-ateez-yunho-appearance-fan1,ateez-yunho,appearance,fan_perception,粉絲常說他是小狗相（강아지상）,4
 mc-ateez-yunho-performance-fan1,ateez-yunho,performance,fan_perception,粉絲普遍視他為 ATEEZ 的主舞、舞蹈擔當,5
+mc-babymonster-ahyeon-appearance-fan2,babymonster-ahyeon,appearance,fan_perception,粉絲常說她是貓系長相（고양이상）,3
 mc-babymonster-ahyeon-vocal-fan1,babymonster-ahyeon,vocal,fan_perception,粉絲與樂評部落格常稱讚她的高音和爆發力,5
+mc-babymonster-asa-appearance-fan2,babymonster-asa,appearance,fan_perception,粉絲常說她是貓系長相（고양이상）,3
+mc-babymonster-asa-appearance-fan3,babymonster-asa,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,3
 mc-babymonster-asa-performance-fan1,babymonster-asa,performance,fan_perception,粉絲常稱讚她快速、咬字清楚的饒舌,6
 mc-babymonster-chiquita-vocal-fan1,babymonster-chiquita,vocal,fan_perception,粉絲普遍稱讚她歌聲清透、唱功穩定,4
 mc-babymonster-pharita-vocal-fan1,babymonster-pharita,vocal,fan_perception,粉絲常稱讚她清澈透明的高音,3
 mc-babymonster-rami-performance-fan1,babymonster-rami,performance,fan_perception,粉絲普遍稱讚她的歌聲與高音，視為團內 vocal 核心,7
+mc-babymonster-rora-appearance-fan1-v4,babymonster-rora,appearance,fan_perception,粉絲常說她是清純系（청순）長相,3
 mc-babymonster-rora-vocal-fan1,babymonster-rora,vocal,fan_perception,粉絲普遍稱讚她的歌聲有感情、很動人,5
 mc-babymonster-ruka-performance-fan1,babymonster-ruka,performance,fan_perception,社群稱讚她的舞臺能力（舞蹈線條、饒舌）,3
+mc-blackpink-jennie-appearance-fan2,blackpink-jennie,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,3
 mc-blackpink-jennie-vocal-fan1,blackpink-jennie,vocal,fan_perception,社群常稱讚她有魅力的中低音音色,3
+mc-blackpink-jisoo-appearance-fan1,blackpink-jisoo,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,3
 mc-blackpink-jisoo-vocal-fan1,blackpink-jisoo,vocal,fan_perception,粉絲常說她的音色有魅力（含中低音、轉音特色）,3
 mc-blackpink-lisa-performance-fan1,blackpink-lisa,performance,fan_perception,粉絲常稱讚她身為主舞的舞蹈與舞臺表演,4
 mc-blackpink-rose-vocal-fan1,blackpink-rose,vocal,fan_perception,粉絲常說她的嗓音很有魅力、有辨識度,5
 mc-bts-jhope-performance-fan1,bts-jhope,performance,fan_perception,粉絲普遍視他為 BTS 的舞蹈擔當／dance leader,4
+mc-bts-jimin-appearance-fan1-v5-v6,bts-jimin,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,9
 mc-bts-jimin-performance-fan1,bts-jimin,performance,fan_perception,粉絲常稱讚他細膩的舞蹈線條與表現力,4
+mc-bts-jin-appearance-fan1-v5,bts-jin,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,5
 mc-bts-jin-variety-fan1,bts-jin,variety,fan_perception,粉絲與社群普遍認為他綜藝感強、很好笑,3
 mc-bts-jin-vocal-fan1,bts-jin,vocal,fan_perception,社群常形容他的音色柔和、有感情,3
+mc-bts-jungkook-appearance-fan1-v5-v6,bts-jungkook,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,3
 mc-bts-jungkook-vibe-fan1,bts-jungkook,vibe,fan_perception,粉絲普遍稱他為無所不能的「黃金忙內」,4
 mc-bts-jungkook-vocal-fan1,bts-jungkook,vocal,fan_perception,社群常稱讚他乾淨的音色,3
 mc-bts-rm-offstage_public-fan1,bts-rm,offstage_public,fan_perception,粉絲常提到他「破壞神」的笨手笨腳綽號,3
 mc-bts-rm-vibe-fan1,bts-rm,vibe,fan_perception,粉絲普遍認為他是可靠、會守護成員與粉絲的隊長,5
+mc-bts-suga-appearance-fan1,bts-suga,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,5
 mc-bts-suga-performance-fan1,bts-suga,performance,fan_perception,粉絲普遍稱讚他的饒舌，尤其是快嘴,5
+mc-bts-v-appearance-fan1-v5,bts-v,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,3
 mc-bts-v-contrast-fan1,bts-v,contrast,fan_perception,粉絲常說他舞臺上有氣場，舞臺下卻像少年般親切、輕鬆,5
 mc-bts-v-vocal-fan1,bts-v,vocal,fan_perception,粉絲常稱讚他低沉的中低音嗓音,4
 mc-enhypen-jake-vibe-fan2,enhypen-jake,vibe,fan_perception,粉絲說他上綜藝很好笑,3
 mc-enhypen-jay-contrast-1,enhypen-jay,contrast,press,編輯觀察：現場一直跟著音樂律動，開拍瞬間眼神立刻改變,1
 mc-enhypen-jungwon-vibe-fan1,enhypen-jungwon,vibe,fan_perception,社群常說他是穩重可靠的隊長,3
 mc-enhypen-niki-performance-fan1,enhypen-niki,performance,fan_perception,粉絲普遍稱讚他壓倒性的舞蹈實力與表現力,5
+mc-enhypen-sunghoon-appearance-fan1,enhypen-sunghoon,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,3
+mc-enhypen-sunoo-appearance-fan1,enhypen-sunoo,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,8
 mc-enhypen-sunoo-vibe-fan1,enhypen-sunoo,vibe,fan_perception,粉絲常說他很會撒嬌（애교）,4
+mc-exo-baekhyun-appearance-fan2-v5-v6,exo-baekhyun,appearance,fan_perception,粉絲常說他是小狗相,7
 mc-exo-baekhyun-variety-fan1,exo-baekhyun,variety,fan_perception,粉絲常說他綜藝感好、很會開玩笑,5
 mc-exo-chanyeol-variety-1,exo-chanyeol,variety,event_record,2013 年參加《叢林的法則》密克羅尼西亞篇,1
 mc-exo-chanyeol-variety-2,exo-chanyeol,variety,event_record,2014 年《Roommate》第一季固定成員,1
 mc-exo-chanyeol-vibe-fan1,exo-chanyeol,vibe,fan_perception,粉絲稱他「해피바이러스（快樂病毒）」，也是 EXO「비글」活潑派的一員,6
 mc-exo-chanyeol-vocal-fan1,exo-chanyeol,vocal,fan_perception,粉絲常提到他低沉的嗓音,4
+mc-exo-do-variety-fan1,exo-do,variety,fan_perception,社群說他在綜藝（우주떡집）裡露出허당（迷糊出錯）的一面，和平時沉穩可靠的形象不同而好笑,4
 mc-exo-do-vocal-fan1,exo-do,vocal,fan_perception,粉絲與社群常稱讚他溫暖、有穩定感的音色,6
 mc-exo-kai-performance-fan1,exo-kai,performance,fan_perception,粉絲常稱讚他是團內的主舞、舞蹈很有魅力,4
+mc-exo-sehun-appearance-fan1,exo-sehun,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,9
 mc-exo-sehun-vibe-fan1,exo-sehun,vibe,fan_perception,粉絲常說他是 EXO 受寵、最強的忙內,4
 mc-exo-suho-vibe-fan1,exo-suho,vibe,fan_perception,粉絲常稱他是盡心照顧團隊的好隊長,3
 mc-h1key-seoi-vocal-fan1,h1key-seoi,vocal,fan_perception,粉絲與社群稱讚她的音色好聽、有辨識度,3
 mc-hearts2hearts-carmen-vocal-fan1,hearts2hearts-carmen,vocal,fan_perception,粉絲常稱讚她的歌唱，特別是高音,8
+mc-hearts2hearts-ian-appearance-fan1,hearts2hearts-ian,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,5
 mc-hearts2hearts-ian-performance-fan1,hearts2hearts-ian,performance,fan_perception,粉絲迷因「이안 행진곡」在社群流傳（與〈STYLE〉挑戰舞片段有關）,3
 mc-hearts2hearts-ian-performance-fan2,hearts2hearts-ian,performance,fan_perception,粉絲常稱讚她的表情演技和直拍表現,3
 mc-hearts2hearts-ian-variety-fan1,hearts2hearts-ian,variety,fan_perception,社群認為她綜藝感強，常講冷笑話,3
+mc-hearts2hearts-jiwoo-appearance-fan1,hearts2hearts-jiwoo,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,5
 mc-hearts2hearts-juun-performance-fan1,hearts2hearts-juun,performance,fan_perception,粉絲普遍稱讚她舞蹈出色，視為團內舞蹈擔當,7
+mc-hearts2hearts-stella-appearance-fan2-v5,hearts2hearts-stella,appearance,fan_perception,粉絲常說她是清純系長相（청순）,3
 mc-hearts2hearts-stella-performance-fan1,hearts2hearts-stella,performance,fan_perception,粉絲稱讚她的音色，特別是講英文時與 bridge 段落,3
 mc-idle-minnie-performance-fan1,idle-minnie,performance,fan_perception,粉絲普遍稱讚她獨特的音色，常稱她為「K-pop 的 siren voice」,6
 mc-idle-miyeon-vibe-fan1,idle-miyeon,vibe,fan_perception,粉絲常說她少根筋（허당）、反應好笑又古怪,3
+mc-idle-shuhua-appearance-fan1-v5,idle-shuhua,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,4
+mc-idle-shuhua-appearance-fan2-v5,idle-shuhua,appearance,fan_perception,粉絲常說她是清純系長相（청순）,3
+mc-idle-soyeon-appearance-fan1,idle-soyeon,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,3
 mc-idle-soyeon-performance-fan1,idle-soyeon,performance,fan_perception,社群常說她舞臺上很有氣場（카리스마）,3
+mc-idle-yuqi-appearance-fan2-v5,idle-yuqi,appearance,fan_perception,粉絲常說她是小狗相,3
 mc-idle-yuqi-contrast-fan1,idle-yuqi,contrast,fan_perception,粉絲常說她外表可愛，嗓音卻低沉沙啞（반전 보이스）,3
 mc-idle-yuqi-variety-1,idle-yuqi,variety,event_record,獨自擔任 30 集 Kakao TV 綜藝《Runway》MC,1
 mc-idle-yuqi-variety-4,idle-yuqi,variety,event_record,2019 年成為中國《奔跑吧》第七季固定成員,1
@@ -73,27 +109,37 @@ mc-illit-iroha-performance-fan1,illit-iroha,performance,fan_perception,粉絲普
 mc-illit-minju-vocal-fan1,illit-minju,vocal,fan_perception,社群常稱讚她的音色（夢幻、有辨識度）,5
 mc-illit-moka-performance-fan1,illit-moka,performance,fan_perception,粉絲常稱讚她的表情管理與舞臺表情演技,7
 mc-illit-wonhee-vibe-fan1,illit-wonhee,vibe,fan_perception,社群常形容她古怪又可愛（엉뚱）、自然不做作,5
+mc-illit-yunah-appearance-fan2,illit-yunah,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,4
 mc-illit-yunah-performance-fan1,illit-yunah,performance,fan_perception,粉絲說她舞臺表現穩定帥氣、唱跳全能,3
+mc-itzy-chaeryeong-appearance-fan1-v5,itzy-chaeryeong,appearance,fan_perception,粉絲常說她是狐狸相,3
 mc-itzy-lia-performance-fan1,itzy-lia,performance,fan_perception,粉絲稱讚她現場唱功與中低音音色,4
 mc-itzy-ryujin-performance-fan1,itzy-ryujin,performance,fan_perception,粉絲與社群常說她舞臺上很有氣場（카리스마）,3
 mc-itzy-yeji-contrast-fan1,itzy-yeji,contrast,fan_perception,粉絲常說她舞臺上氣場強、外表冷豔，私下卻溫順可愛（순둥），兩者有落差,4
 mc-itzy-yeji-vibe-fan1,itzy-yeji,vibe,fan_perception,社群常用「고양이상（貓系臉）」形容她的形象,3
 mc-itzy-yuna-vibe-fan1,itzy-yuna,vibe,fan_perception,粉絲常說她開朗、大剌剌又好笑,4
+mc-ive-gaeul-appearance-fan1-v4,ive-gaeul,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,3
+mc-ive-gaeul-appearance-fan2-v4,ive-gaeul,appearance,fan_perception,粉絲常說她是清純系（청순）長相,3
 mc-ive-gaeul-performance-fan1,ive-gaeul,performance,fan_perception,粉絲普遍稱讚她舞蹈俐落、是團內舞蹈擔當,5
+mc-ive-liz-appearance-fan1-v4,ive-liz,appearance,fan_perception,粉絲常說她是貓系長相（고양이상）,7
 mc-ive-liz-variety-2,ive-liz,variety,press,JTBC 官方剪輯標題稱《認識的哥哥》中「綜藝 Liz 更新」,1
 mc-ive-liz-vibe-fan1,ive-liz,vibe,fan_perception,粉絲給她的暱稱包括「치즈냥이」與「토마토」,3
 mc-ive-liz-vocal-fan1,ive-liz,vocal,fan_perception,粉絲常稱她「음색요정（音色精靈）」，說她的聲音甜美清亮,6
 mc-ive-rei-performance-fan1,ive-rei,performance,fan_perception,粉絲常說她的饒舌段落讓人印象深刻,4
+mc-ive-wonyoung-appearance-fan3,ive-wonyoung,appearance,fan_perception,粉絲常說她是兔子相（토끼상）,4
 mc-ive-wonyoung-vibe-fan1,ive-wonyoung,vibe,fan_perception,粉絲把她和「Lucky Vicky」正向思考連在一起,3
+mc-ive-yujin-appearance-fan3-v5,ive-yujin,appearance,fan_perception,粉絲常說她是小狗相,4
 mc-ive-yujin-variety-fan1,ive-yujin,variety,fan_perception,社群常說她綜藝感強、反應快,5
 mc-kissoflife-belle-vocal-fan1,kissoflife-belle,vocal,fan_perception,社群常稱讚她有特色的音色與穩定唱功,3
+mc-kissoflife-julie-appearance-fan1,kissoflife-julie,appearance,fan_perception,粉絲常說她是貓系長相（고양이상）,4
 mc-kissoflife-julie-performance-fan1,kissoflife-julie,performance,fan_perception,粉絲常稱讚她的饒舌,3
 mc-kissoflife-natty-performance-fan1,kissoflife-natty,performance,fan_perception,粉絲與社群常稱讚她的舞蹈與舞蹈線條（춤선）,4
 mc-lesserafim-chaewon-performance-fan1,lesserafim-chaewon,performance,fan_perception,粉絲稱讚她歌聲清楚好聽、唱跳兼備,4
 mc-lesserafim-eunchae-vibe-fan1,lesserafim-eunchae,vibe,fan_perception,粉絲喜歡她自然又有梗的忙內魅力,4
+mc-lesserafim-kazuha-appearance-fan1-v5,lesserafim-kazuha,appearance,fan_perception,粉絲常說她是清純系長相（청순）,3
 mc-lesserafim-kazuha-vocal-fan1,lesserafim-kazuha,vocal,fan_perception,社群常提到她低沉（중저음）、略帶沙啞的音色,3
 mc-lesserafim-yunjin-vocal-fan1,lesserafim-yunjin,vocal,fan_perception,社群常說她的嗓音有力、音色辨識度高,3
 mc-meovv-anna-performance-fan1,meovv-anna,performance,fan_perception,粉絲說她的舞臺表現力、舞蹈線條與表情越來越亮眼,4
+mc-meovv-ella-appearance-fan1-v5,meovv-ella,appearance,fan_perception,粉絲常說她是貓系長相（고양이상）,4
 mc-meovv-gawon-vocal-fan1,meovv-gawon,vocal,fan_perception,粉絲常說她的音色很有特色、帶有流行歌手感,3
 mc-meovv-narin-performance-fan1,meovv-narin,performance,fan_perception,粉絲稱讚她舞臺表現亮眼、唱跳饒舌樣樣都行,4
 mc-meovv-sooin-performance-fan1,meovv-sooin,performance,fan_perception,粉絲與社群稱讚她的舞蹈實力,3
@@ -103,15 +149,22 @@ mc-nct-doyoung-variety-2,nct-doyoung,variety,event_record,2022–2023《師父�
 mc-nct-doyoung-vibe-1,nct-doyoung,vibe,press,SM 윤희준點名為「有狠勁的偶像」之一,1
 mc-nct-doyoung-vocal-1,nct-doyoung,vocal,other_person,윤도현看了他《笑面人》謝幕影片後決定給他歌,1
 mc-nct-doyoung-vocal-fan1,nct-doyoung,vocal,fan_perception,粉絲常稱讚他的主唱實力與清亮音色,4
+mc-nct-haechan-appearance-fan1,nct-haechan,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,5
 mc-nct-haechan-vocal-fan1,nct-haechan,vocal,fan_perception,社群常說他的音色獨特、有辨識度,3
+mc-nct-jaehyun-appearance-fan1,nct-jaehyun,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,4
 mc-nct-jaehyun-vocal-fan1,nct-jaehyun,vocal,fan_perception,粉絲普遍喜愛他的嗓音與音色,4
+mc-nct-jeno-appearance-fan1-v5,nct-jeno,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,4
 mc-nct-jisung-performance-fan1,nct-jisung,performance,fan_perception,粉絲普遍稱讚他的舞蹈,5
 mc-nct-jisung-vibe-fan1,nct-jisung,vibe,fan_perception,粉絲普遍視他為 NCT「永遠的忙內」,5
 mc-nct-renjun-vibe-fan1,nct-renjun,vibe,fan_perception,粉絲常說他在綜藝內容裡很好笑,3
 mc-nct-renjun-vocal-fan1,nct-renjun,vocal,fan_perception,粉絲普遍稱讚他細膩美麗的歌聲,4
 mc-nct-taeyong-contrast-fan1,nct-taeyong,contrast,fan_perception,有粉絲說他舞臺上氣場強、饒舌帥，舞臺下卻纖細可愛、愛鬧,3
 mc-nct-taeyong-performance-fan1,nct-taeyong,performance,fan_perception,粉絲常稱讚他的饒舌很帥、很有辨識度,5
+mc-nmixx-bae-appearance-fan1,nmixx-bae,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,3
 mc-nmixx-bae-vocal-fan1,nmixx-bae,vocal,fan_perception,粉絲常稱讚她獨特的音色與高音即興,4
+mc-nmixx-haewon-appearance-fan1-v5,nmixx-haewon,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,4
+mc-nmixx-haewon-appearance-fan2-v5,nmixx-haewon,appearance,fan_perception,粉絲常說她是清純系長相（청순）,3
+mc-nmixx-haewon-appearance-fan3,nmixx-haewon,appearance,fan_perception,粉絲常說她是小狗相,3
 mc-nmixx-haewon-contrast-fan1,nmixx-haewon,contrast,fan_perception,社群認為她在綜藝裡搞笑親切，舞臺或正式造型時卻端莊優雅，兩者形成反差,3
 mc-nmixx-haewon-variety-2,nmixx-haewon,variety,event_record,擔任網路綜藝《Workdol》第二代 MC,1
 mc-nmixx-haewon-variety-3,nmixx-haewon,variety,event_record,第 61 屆百想藝術大賞女子綜藝賞入圍,1
@@ -120,7 +173,9 @@ mc-nmixx-haewon-vibe-1,nmixx-haewon,vibe,other_person,Jiwoo：比想像中更透
 mc-nmixx-haewon-vibe-fan1,nmixx-haewon,vibe,fan_perception,粉絲常用角色「농담곰」當她的暱稱，連結她親切逗趣的形象,3
 mc-nmixx-haewon-vocal-1,nmixx-haewon,vocal,other_person,Sullyoon：任何歌都能唱出自己的風格,1
 mc-nmixx-haewon-vocal-2,nmixx-haewon,vocal,event_record,《Begin Again Open Mic》獨唱三首不同類型歌曲,1
+mc-nmixx-jiwoo-appearance-fan1,nmixx-jiwoo,appearance,fan_perception,粉絲常說她是小狗相,3
 mc-nmixx-jiwoo-performance-fan1,nmixx-jiwoo,performance,fan_perception,粉絲普遍稱讚她的饒舌實力,5
+mc-nmixx-kyujin-appearance-fan1,nmixx-kyujin,appearance,fan_perception,粉絲常說她是貓系長相（고양이상）,3
 mc-nmixx-kyujin-performance-fan1,nmixx-kyujin,performance,fan_perception,粉絲普遍稱讚她跳舞有力，是團內舞蹈擔當,4
 mc-nmixx-lily-variety-fan1,nmixx-lily,variety,fan_perception,粉絲常說她天真又古怪、綜藝感出乎意料,4
 mc-nmixx-lily-vocal-fan1,nmixx-lily,vocal,fan_perception,粉絲常稱讚她的高音（真聲高音、即興）,4
@@ -128,26 +183,34 @@ mc-nmixx-sullyoon-vocal-fan1,nmixx-sullyoon,vocal,fan_perception,粉絲常形容
 mc-qwer-chodan-vocal-fan1,qwer-chodan,vocal,fan_perception,社群形容她的歌聲音色獨特（低而夢幻、清澈帶哀傷）,4
 mc-qwer-magenta-performance-fan1,qwer-magenta,performance,fan_perception,粉絲稱讚她的貝斯演奏與舞臺臺風,3
 mc-qwer-siyeon-vocal-fan1,qwer-siyeon,vocal,fan_perception,社群常稱讚她身為主唱的音色與清亮高音,3
+mc-redvelvet-irene-appearance-fan1-v5,redvelvet-irene,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,5
 mc-redvelvet-joy-contrast-fan1,redvelvet-joy,contrast,fan_perception,粉絲常說她舞臺上很強烈，日常／綜藝裡卻溫柔、愛玩又好笑,3
 mc-redvelvet-joy-vibe-fan1,redvelvet-joy,vibe,fan_perception,社群常說她開朗、大剌剌又有活力,3
 mc-redvelvet-seulgi-performance-fan1,redvelvet-seulgi,performance,fan_perception,粉絲常稱讚她舞蹈線條有力又精準、節奏感好,3
 mc-redvelvet-wendy-variety-2,redvelvet-wendy,variety,event_record,2021–2023 主持電臺《Wendy's Youngstreet》,1
 mc-redvelvet-wendy-vibe-fan1,redvelvet-wendy,vibe,fan_perception,社群常形容她開朗、正向，也有粉絲說她比想像中更爽朗（털털）,4
 mc-redvelvet-wendy-vocal-fan1,redvelvet-wendy,vocal,fan_perception,粉絲常說她唱功紮實、音色清亮，社群也稱她「보컬 퀸」,4
+mc-riize-anton-appearance-fan2,riize-anton,appearance,fan_perception,粉絲常說他是小狗相,3
 mc-riize-anton-vocal-fan1,riize-anton,vocal,fan_perception,粉絲說他的嗓音溫柔、很適合抒情與流行歌,3
+mc-riize-eunseok-appearance-fan1,riize-eunseok,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,3
+mc-riize-shotaro-appearance-fan1,riize-shotaro,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,4
 mc-riize-shotaro-performance-fan1,riize-shotaro,performance,fan_perception,粉絲稱讚他的舞蹈俐落時髦、對舞蹈要求嚴格,3
 mc-riize-sohee-vocal-fan1,riize-sohee,vocal,fan_perception,粉絲普遍稱讚他清透、獨一無二的歌聲,5
+mc-riize-sungchan-appearance-fan1,riize-sungchan,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,9
 mc-riize-wonbin-performance-1,riize-wonbin,performance,event_record,與 Shotaro 共同創作〈Love 119〉副歌編舞,1
 mc-riize-wonbin-performance-2,riize-wonbin,performance,event_record,擔任中心與（相對的）領舞,1
 mc-riize-wonbin-variety-fan1,riize-wonbin,variety,fan_perception,粉絲常說他其實很搞笑、有綜藝感,4
 mc-riize-wonbin-vibe-1,riize-wonbin,vibe,other_person,Eunseok：Wonbin 總是在說話,1
 mc-riize-wonbin-vibe-2,riize-wonbin,vibe,press,SM 윤희준 點名為「有狠勁的偶像」之一,1
 mc-riize-wonbin-vocal-fan1,riize-wonbin,vocal,fan_perception,粉絲喜歡他的音色,3
+mc-seventeen-dino-appearance-fan2,seventeen-dino,appearance,fan_perception,粉絲常說他是恐龍相（공룡상）,3
 mc-seventeen-dino-vibe-fan1,seventeen-dino,vibe,fan_perception,粉絲常說他是可靠、穩重的忙內,4
+mc-seventeen-dk-appearance-fan1,seventeen-dk,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,5
 mc-seventeen-dk-vibe-fan1,seventeen-dk,vibe,fan_perception,社群常說他個性開朗、充滿活力,3
 mc-seventeen-dk-vocal-fan1,seventeen-dk,vocal,fan_perception,粉絲常稱讚他爽朗延伸的高音與好聽的嗓音,5
 mc-seventeen-hoshi-performance-fan1,seventeen-hoshi,performance,fan_perception,社群常把他當作 SEVENTEEN 表演（퍼포먼스팀）的代表人物,4
 mc-seventeen-hoshi-vibe-fan1,seventeen-hoshi,vibe,fan_perception,粉絲以「호랑이（老虎）」作為他的代表暱稱與形象,4
+mc-seventeen-jeonghan-appearance-fan1,seventeen-jeonghan,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,3
 mc-seventeen-jeonghan-contrast-fan1,seventeen-jeonghan,contrast,fan_perception,粉絲常說他是 SEVENTEEN 的「天使」，卻又愛惡作劇、偶爾是「惡魔」,3
 mc-seventeen-joshua-vocal-fan1,seventeen-joshua,vocal,fan_perception,粉絲普遍稱讚他溫柔、柔和的歌聲,3
 mc-seventeen-mingyu-vibe-fan1,seventeen-mingyu,vibe,fan_perception,粉絲常形容他像大型犬／黃金獵犬般親人,7
@@ -158,12 +221,14 @@ mc-seventeen-seungkwan-performance-fan1,seventeen-seungkwan,performance,fan_perc
 mc-seventeen-seungkwan-vibe-fan1,seventeen-seungkwan,vibe,fan_perception,粉絲普遍認為他是團內的綜藝擔當、很好笑,4
 mc-seventeen-the8-performance-fan1,seventeen-the8,performance,fan_perception,粉絲喜愛他的舞蹈,4
 mc-seventeen-vernon-performance-fan1,seventeen-vernon,performance,fan_perception,粉絲在「喜好表」中普遍把他選為 SEVENTEEN 的最愛饒舌,6
+mc-seventeen-wonwoo-appearance-fan1-v5,seventeen-wonwoo,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,4
 mc-seventeen-wonwoo-vocal-fan1,seventeen-wonwoo,vocal,fan_perception,粉絲喜愛他的嗓音,3
 mc-seventeen-woozi-performance-fan1,seventeen-woozi,performance,fan_perception,粉絲普遍視他為 SEVENTEEN 的製作人、天才作曲家,5
 mc-seventeen-woozi-vocal-fan1,seventeen-woozi,vocal,fan_perception,粉絲喜愛他溫柔的歌聲與高音,4
 mc-straykids-bangchan-vibe-fan1,straykids-bangchan,vibe,fan_perception,粉絲常說他是會照顧成員的溫暖隊長,3
 mc-straykids-changbin-performance-fan1,straykids-changbin,performance,fan_perception,粉絲普遍稱讚他低沉有力的快嘴饒舌,6
 mc-straykids-changbin-vibe-fan1,straykids-changbin,vibe,fan_perception,有粉絲說他很好笑,3
+mc-straykids-felix-appearance-fan2-v5,straykids-felix,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,3
 mc-straykids-felix-contrast-fan1,straykids-felix,contrast,fan_perception,社群常說他溫柔的形象與低沉嗓音（동굴 저음）形成反差,4
 mc-straykids-felix-vocal-fan1,straykids-felix,vocal,fan_perception,粉絲常提到他極低的嗓音（동굴 저음）,4
 mc-straykids-han-performance-fan1,straykids-han,performance,fan_perception,粉絲常稱讚他的饒舌（快嘴、自由饒舌段落）,6
@@ -175,15 +240,20 @@ mc-straykids-hyunjin-variety-1,straykids-hyunjin,variety,event_record,2019–202
 mc-straykids-in-vibe-fan1,straykids-in,vibe,fan_perception,粉絲普遍說他是最可愛、最好的忙內,5
 mc-straykids-in-vocal-fan1,straykids-in,vocal,fan_perception,粉絲普遍稱讚他的嗓音獨特、帶懷舊感,5
 mc-straykids-leeknow-performance-fan1,straykids-leeknow,performance,fan_perception,粉絲普遍稱讚他是訓練紮實、完成度高的主舞,5
+mc-straykids-seungmin-appearance-fan1,straykids-seungmin,appearance,fan_perception,粉絲常說他是清冷系（냉미남／차도남）長相,5
 mc-straykids-seungmin-vocal-fan1,straykids-seungmin,vocal,fan_perception,粉絲普遍稱讚他歌聲清爽穩定，現場像音源,6
+mc-twice-dahyun-appearance-fan2-v5,twice-dahyun,appearance,fan_perception,粉絲常說她是淡顏（두부상）,4
 mc-twice-dahyun-variety-fan1,twice-dahyun,variety,fan_perception,粉絲與社群常說她綜藝感強、很會搞笑,6
 mc-twice-jeongyeon-vibe-fan1,twice-jeongyeon,vibe,fan_perception,粉絲與社群常形容她爽朗、大剌剌（털털），也很照顧人,5
 mc-twice-jihyo-vibe-fan1,twice-jihyo,vibe,fan_perception,粉絲普遍稱她是可靠的好隊長,4
 mc-twice-jihyo-vocal-fan1,twice-jihyo,vocal,fan_perception,粉絲普遍喜愛她有力量的歌聲,4
+mc-twice-mina-appearance-fan1,twice-mina,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,6
 mc-twice-mina-performance-fan1,twice-mina,performance,fan_perception,粉絲普遍提到她芭蕾出身、舞蹈功底好,4
 mc-twice-momo-contrast-fan1,twice-momo,contrast,fan_perception,粉絲常說她舞臺上很有氣場，平常卻是可愛又呆萌的樣子,3
 mc-twice-momo-performance-fan1,twice-momo,performance,fan_perception,粉絲與社群普遍稱讚她的舞蹈實力（主舞、「表演女王」）,4
+mc-twice-nayeon-appearance-fan2-v5,twice-nayeon,appearance,fan_perception,粉絲常說她是兔子相,3
 mc-twice-sana-vibe-fan1,twice-sana,vibe,fan_perception,社群常說她開朗、可愛又有愛嬌,4
+mc-twice-tzuyu-appearance-fan2-v5,twice-tzuyu,appearance,fan_perception,粉絲常說她是清冷系（냉미녀／차도녀）長相,3
 mc-txt-beomgyu-vibe-fan1,txt-beomgyu,vibe,fan_perception,粉絲與社群常形容他愛開玩笑、精力旺盛，是氣氛製造者,4
 mc-txt-soobin-vibe-fan1,txt-soobin,vibe,fan_perception,粉絲稱讚他是照顧成員、讓人安心的隊長,5
 mc-txt-taehyun-variety-fan1,txt-taehyun,variety,fan_perception,社群常說他綜藝感強、很會說話,3

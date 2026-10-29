@@ -128,10 +128,34 @@ def test_song_title_is_not_resolved_as_group_alias(parser):
     assert "〈MEOW〉" in parsed.search_query
 
 
-def test_visual_is_marked_out_of_scope(parser):
+@pytest.mark.parametrize(
+    ("query", "references"),
+    [
+        ("跟子瑜長得像的人", {"twice-tzuyu"}),
+        ("有沒有像 NCT 在玹、ENHYPEN Jay 那樣的貓咪相偶像", {"nct-jaehyun", "enhypen-jay"}),
+    ],
+)
+def test_looks_like_a_member_is_visual_similarity(query, references):
+    members = PlayZoneCatalog(REPO_ROOT).load_bias_radar_members()
+    parsed = CuratorQueryParser.load(REPO_ROOT, members, visual_similarity=True).parse(query)
+    assert parsed.mode == "visual_similarity"
+    assert parsed.reference_ids == references
+    assert parsed.excluded_ids >= references
+    assert not parsed.facets
+
+
+def test_looks_without_a_named_member_ranks_by_text():
+    members = PlayZoneCatalog(REPO_ROOT).load_bias_radar_members()
+    parser = CuratorQueryParser.load(REPO_ROOT, members, visual_similarity=True)
+    parsed = parser.parse("有哪些長得像小狗的男偶像")
+    assert parsed.mode == "general"
+    assert not parsed.reference_ids
+
+
+def test_default_parser_keeps_v4_looks_handling(parser):
     parsed = parser.parse("跟子瑜長得像的人")
     assert parsed.mode == "unsupported_visual"
-    assert not parsed.facets
+    assert not parsed.excluded_ids
 
 
 def test_alias_table_missing_or_invalid_falls_back(tmp_path):
