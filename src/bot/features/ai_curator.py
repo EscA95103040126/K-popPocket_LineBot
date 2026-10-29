@@ -61,6 +61,8 @@ AI_CURATOR_FREE_TEXT_MIN_CHARS = 6
 AI_CURATOR_ANSWER_MEMBERS = 3
 AI_CURATOR_REASON_MIN_CHINESE_CHARS = 6
 AI_CURATOR_REASON_MAX_CHARS = 60
+# 追問的 🔎／💫 兩句可以帶成員名和兩個特點，比主回覆的一句理由長。
+AI_CURATOR_FOLLOWUP_SENTENCE_MAX_CHARS = 80
 AI_CURATOR_ENTRY_TRIGGERS = {
     "我的雷達",
     "雷達",
@@ -444,7 +446,11 @@ def _build_ai_curator_prompt(query: str, context: dict) -> str:
 """
 
 
-def _parse_ai_curator_reasons(text: str, count: int) -> list[str | None]:
+def _parse_ai_curator_reasons(
+    text: str,
+    count: int,
+    max_chars: int = AI_CURATOR_REASON_MAX_CHARS,
+) -> list[str | None]:
     """One cleaned reason per member, None where Gemini's line is unusable."""
 
     match = re.search(r"\[.*\]", text, re.DOTALL)
@@ -457,13 +463,20 @@ def _parse_ai_curator_reasons(text: str, count: int) -> list[str | None]:
     reasons: list[str | None] = []
     for index in range(count):
         value = values[index] if index < len(values) else None
-        reasons.append(_clean_ai_curator_reason(value) if isinstance(value, str) else None)
+        reasons.append(
+            _clean_ai_curator_reason(value, max_chars) if isinstance(value, str) else None
+        )
     return reasons
 
 
-def _clean_ai_curator_reason(value: str) -> str | None:
+def _clean_ai_curator_reason(
+    value: str,
+    max_chars: int = AI_CURATOR_REASON_MAX_CHARS,
+) -> str | None:
     reason = re.sub(r"^\s*(?:\d+[.、．)]\s*)", "", " ".join(value.split())).strip()
-    if "http" in reason.casefold() or len(reason) > AI_CURATOR_REASON_MAX_CHARS:
+    # 版面的 emoji 由程式加，Gemini 自己帶的去掉，免得重複。
+    reason = reason.lstrip("✨🔎💫🎬📰 ").strip()
+    if not reason or "http" in reason.casefold() or len(reason) > max_chars:
         return None
     if _chinese_char_count(reason) < AI_CURATOR_REASON_MIN_CHINESE_CHARS:
         # Too short to say anything, or not Chinese at all.
@@ -481,14 +494,6 @@ def _llm_error(error: Exception) -> str:
 
 def _chinese_char_count(text: str) -> int:
     return len(re.findall(r"[一-鿿]", text))
-
-
-def _ascii_letter_ratio(text: str) -> float:
-    letters = [char for char in text if char.isalpha()]
-    if not letters:
-        return 0
-    ascii_letters = [char for char in letters if char.isascii()]
-    return len(ascii_letters) / len(letters)
 
 
 def _fallback_ai_curator_answer(query: str, context: dict) -> str:
@@ -615,18 +620,13 @@ def _join_chinese_list(values: list[str]) -> str:
     return "、".join(values[:-1]) + "和" + values[-1]
 
 
-def _clean_ai_curator_reason_answer(text: str) -> str:
-    cleaned = text.strip()
-    cleaned = re.sub(r"^```(?:text)?", "", cleaned).strip()
-    cleaned = re.sub(r"```$", "", cleaned).strip()
-    if len(cleaned) < 20 or "http" in cleaned.casefold():
-        return ""
-    suspicious_markers = ("not explicitly", "let'", "let's", "candidate", "closest")
-    if any(marker in cleaned.casefold() for marker in suspicious_markers):
-        return ""
-    if _ascii_letter_ratio(cleaned) > 0.45:
-        return ""
-    return fit_line_text(cleaned, limit=900)
+def _parse_ai_curator_reason_sentences(text: str) -> list[str] | None:
+    """Gemini 寫的 🔎、💫 兩句；任一句不能用就整段改用本地版本，不和本地句子混著拼。"""
+
+    sentences = _parse_ai_curator_reasons(text, 2, AI_CURATOR_FOLLOWUP_SENTENCE_MAX_CHARS)
+    if any(sentence is None for sentence in sentences):
+        return None
+    return [f"🔎 {sentences[0]}", f"💫 {sentences[1]}"]
 
 
 def _format_fancam_link(row: dict[str, str], prefix: str) -> str:
@@ -1322,10 +1322,20 @@ class AiCuratorFeature:
         return self.catalog.load_cached_csv_rows(csv_path, _ai_curator_reason_member_is_usable)
 
     def _fallback_ai_curator_reason_answer(self, member_row: dict[str, str]) -> str:
+        member = display_member_name(member_row.get("member", ""))
+        return self._render_ai_curator_reason_answer(
+            member_row, _ai_curator_reason_sentences(member_row, member)
+        )
+
+    def _render_ai_curator_reason_answer(
+        self,
+        member_row: dict[str, str],
+        reason_sentences: list[str],
+    ) -> str:
+        """追問回覆的固定版面：✨ 推誰、🔎／💫 理由、📰 團體近況；🎬 直拍由呼叫端接在後面。"""
+
         artist = member_row.get("artist", "").strip()
         member = display_member_name(member_row.get("member", ""))
-        reason_sentences = _ai_curator_reason_sentences(member_row, member)
-
         lines = [f"✨ 我會先推 {artist} {member}。"]
         if reason_sentences:
             lines.extend(reason_sentences)
@@ -1348,23 +1358,31 @@ class AiCuratorFeature:
         try:
             prompt = self._build_ai_curator_reason_prompt(message, member_row)
             text = self.llm.generate(prompt, temperature=0.35, max_output_tokens=260)
-            return _clean_ai_curator_reason_answer(text) or fallback
         except Exception as error:
             logger.warning(
                 "AI curator reason Gemini response failed (%s); using fallback.", _llm_error(error)
             )
             return fallback
+        sentences = _parse_ai_curator_reason_sentences(text)
+        if sentences is None:
+            logger.warning("AI curator reason Gemini reply unusable; using fallback.")
+            return fallback
+        return self._render_ai_curator_reason_answer(member_row, sentences)
 
     def _build_ai_curator_reason_prompt(self, message: str, member_row: dict[str, str]) -> str:
+        """Gemini 只寫 🔎、💫 兩句，開頭、團體近況和直拍由程式照固定版面補上。"""
+
         artist = member_row.get("artist", "").strip()
         member = display_member_name(member_row.get("member", ""))
-        summary_text = _ai_curator_artist_summary_text(self._load_ai_curator_artist_summary(artist))
-        return f"""你是 K-pop AI 入坑推薦理由助理，請用繁體中文回答使用者追問。
-    只能根據下方本地 CSV 欄位與快取摘要回答，不要捏造沒有列出的資料。
-    回答 6 行以內，不要附網址，最後的推薦影片會由系統另外補上。
-    語氣要像自然推坑，不要逐欄列出資料表，不要寫「本地資料裡有幾個明確標籤」。
-    不要直接說「外貌、定位、氣質、關係感、資料、標籤、欄位」，要把可用線索揉進自然句子。
-    可以自然使用 2-4 個 emoji，但不要每句都塞滿。
+        return f"""你是 K-pop AI 入坑推薦理由助理，請用繁體中文（台灣用語）回答使用者追問。
+    只能根據下方本地成員資料寫，不要捏造沒有列出的特點。
+    請寫兩句推坑理由，每句 25 到 60 字：
+    - 第一句：第一眼會被什麼吸引（長相、氣質），可以用「如果你吃…」開頭，並帶出 {member}。
+    - 第二句：為什麼會想慢慢陷進去（關係感、反差），最後說入門可以先看能感受到哪種魅力的直拍。
+    語氣要像自然推坑，不要逐欄列出資料表。
+    不要直接說「外貌、定位、氣質、關係感、資料、標籤、欄位」，要把線索揉進自然句子。
+    不要加 emoji、網址或編號（版面和直拍連結由系統另外補上）。
+    只輸出 JSON 字串陣列，例如 ["第一句", "第二句"]。
 
     使用者追問：
     {message}
@@ -1376,9 +1394,6 @@ class AiCuratorFeature:
     - position: {bias_radar_tag_text(member_row.get("position", "")) or "無"}
     - vibe: {bias_radar_tag_text(member_row.get("vibe", "")) or "無"}
     - relationship: {bias_radar_tag_text(member_row.get("relationship", "")) or "無"}
-
-    快取摘要：
-    {summary_text or "無"}
     """
 
     def _find_recommendation_link_for_member(self, member_row: dict[str, str]) -> str:
