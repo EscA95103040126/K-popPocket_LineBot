@@ -15,14 +15,19 @@ import hashlib
 import json
 import logging
 import re
-from dataclasses import dataclass, field
+import time
+from dataclasses import dataclass, field, replace
 from pathlib import Path
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from src.bot.curator_query import CuratorQueryParser
 
 logger = logging.getLogger(__name__)
 
 TRAIT_TAGS_PATH = Path("data") / "curator" / "trait_tags.csv"
 PREFERENCE_CACHE_PATH = Path("data") / "curator" / "llm_pref_cache.json"
-PROMPT_VERSION = "pref-v3"
+PROMPT_VERSION = "pref-v5"
 # 偏好解析固定用這個模型，不跟著 GEMINI_MODEL 換。test3（2026-10-29）用的是
 # gemini-3.1-flash-lite-preview；preview 版停用後改用穩定版，練習集上的比較見 RESULTS_v5.md。
 PREFERENCE_MODEL = "gemini-3.1-flash-lite"
@@ -201,18 +206,21 @@ class PreferenceCache:
     path: Path
     model: str
     entries: dict[str, dict] = field(default_factory=dict)
+    # 讀舊版提示詞的結果時指定（例如重現 test3 的 pref-v3）。
+    prompt_version: str = PROMPT_VERSION
 
     @classmethod
-    def load(cls, path: Path, model: str) -> PreferenceCache:
-        cache = cls(path, model)
+    def load(cls, path: Path, model: str, prompt_version: str = PROMPT_VERSION) -> PreferenceCache:
+        cache = cls(path, model, prompt_version=prompt_version)
         if path.exists():
             stored = json.loads(path.read_text(encoding="utf-8"))
             cache.entries = stored.get("entries", {})
         return cache
 
     def key(self, query: str) -> str:
-        # 模型也算進 key：換模型不能拿到別的模型的解析結果。
-        return hashlib.sha256(f"{PROMPT_VERSION}\n{self.model}\n{query}".encode()).hexdigest()
+        # 提示詞版本和模型都算進 key：換了任一個都不能拿到別的版本的解析結果。
+        payload = f"{self.prompt_version}\n{self.model}\n{query}"
+        return hashlib.sha256(payload.encode()).hexdigest()
 
     def get(self, query: str) -> Preference | None:
         entry = self.entries.get(self.key(query))
@@ -220,17 +228,14 @@ class PreferenceCache:
 
     def put(self, query: str, preference: Preference) -> None:
         self.entries[self.key(query)] = {
-            "prompt_version": PROMPT_VERSION,
+            "prompt_version": self.prompt_version,
             "model": self.model,
             "preference": preference.to_json(),
         }
 
     def save(self) -> None:
-        # 只留目前提示詞版本的結果，舊版的 key 不會再被查到。
-        self.entries = {
-            k: v for k, v in self.entries.items() if v["prompt_version"] == PROMPT_VERSION
-        }
-        payload = {"prompt_version": PROMPT_VERSION, "model": self.model, "entries": self.entries}
+        # 舊版提示詞的結果也留著，test3 要用 pref-v3 的結果重現。
+        payload = {"entries": self.entries}
         self.path.write_text(
             json.dumps(payload, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8"
         )
@@ -240,14 +245,20 @@ class PreferenceCache:
 
 
 class PreferenceParser:
-    """問句 → 偏好。先查快取；live=False 時快取沒有就不解析（評估用）。"""
+    """問句 → 偏好。先查快取；live=False 時快取沒有就不解析（評估用）。
+
+    提示詞不附成員表（pref-v5）：Gemini 只判斷特質、否定、程度、性別、是不是長相題，並照原文
+    列出提到的人名、團名和是不是負向參照；本機再用別名表整個名字精確比對。對不上、團名不符、
+    同名分不清或目錄外的人一律不算參照成員（pref-v4 在問句裡找子字串，韓文常把「한」「진」
+    這類字誤認成成員）。
+    """
 
     def __init__(
         self,
         llm,
         tags: list[TraitTag],
         members: list[dict[str, str]],
-        aliases: dict[str, list[str]],
+        names: CuratorQueryParser | None = None,
         cache: PreferenceCache | None = None,
         *,
         live: bool = True,
@@ -255,7 +266,7 @@ class PreferenceParser:
         self.llm = llm
         self.tags = tags
         self.members_by_id = {m["id"]: m for m in members}
-        self.aliases = aliases
+        self.names = names
         self.cache = cache
         self.live = live
 
@@ -264,11 +275,13 @@ class PreferenceParser:
             return cached
         if not self.live or not self.llm or not self.llm.enabled:
             return None
+        prompt = self.prompt(query)
+        started = time.monotonic()
         try:
             text = self.llm.generate(
-                self.prompt(query),
+                prompt,
                 temperature=0.0,
-                max_output_tokens=800,
+                max_output_tokens=400,
                 response_mime_type="application/json",
             )
             data = json.loads(text)
@@ -277,42 +290,55 @@ class PreferenceParser:
                 data = data[0]
             preference = validate(data, self.tags, self.members_by_id)
         except Exception:
-            logger.exception("Preference parsing failed; ranking with v4 only.")
+            logger.exception(
+                "Preference parsing failed after %.1fs (prompt %d chars); ranking with v4 only.",
+                time.monotonic() - started,
+                len(prompt),
+            )
             return None
+        logger.info(
+            "Preference parsed in %.1fs (prompt %d chars).", time.monotonic() - started, len(prompt)
+        )
+        references, outside, negative = self.resolve_people(data.get("people"))
+        preference = replace(
+            preference,
+            reference_member_ids=references,
+            reference_out_of_catalog=outside,
+            non_trait_constraints=(*preference.non_trait_constraints, *negative),
+        )
         if self.cache:
             self.cache.put(query, preference)
         return preference
+
+    def resolve_people(self, people) -> tuple[tuple[str, ...], tuple[str, ...], tuple[str, ...]]:
+        """Gemini 列出的人名 → (參照成員, 對不上或分不清的原文, 負向參照)。"""
+
+        references, outside, negative = [], [], []
+        for person in people if isinstance(people, list) else []:
+            if not isinstance(person, dict) or not str(person.get("name", "")).strip():
+                continue
+            name = str(person["name"]).strip()
+            if person.get("negative") is True:
+                negative.append(f"negative_reference: {name}")
+                continue
+            group = person.get("group") if isinstance(person.get("group"), str) else None
+            ids = self.names.lookup_member(name, group) if self.names else frozenset()
+            if len(ids) == 1:
+                references.append(next(iter(ids)))
+            else:
+                outside.append(f"{name}（{group}）" if group else name)
+        return (
+            tuple(dict.fromkeys(references)),
+            tuple(dict.fromkeys(outside)),
+            tuple(dict.fromkeys(negative)),
+        )
 
     def prompt(self, query: str) -> str:
         tags = "\n".join(
             f"- {t.tag}（{'長相' if 'appearance' in t.facets else '個性／聲音／舞台'}）：{t.label}"
             for t in self.tags
         )
-        members = "\n".join(
-            f"- {member_id}：{m['artist']} {m['member']}"
-            + (
-                f"（{'、'.join(self.aliases.get(member_id, [])[:4])}）"
-                if member_id in self.aliases
-                else ""
-            )
-            for member_id, m in self.members_by_id.items()
-        )
-        artists = "、".join(sorted({m["artist"] for m in self.members_by_id.values()}))
-        return PROMPT_TEMPLATE.format(
-            tags=tags, members=members, artists=artists, examples=FEW_SHOT, query=query
-        )
-
-
-def load_aliases(base_dir: Path) -> dict[str, list[str]]:
-    path = base_dir / "data" / "curator" / "grok_aliases.csv"
-    if not path.exists():
-        return {}
-    with path.open(encoding="utf-8", newline="") as file:
-        return {
-            row["canonical"]: [a for a in row["aliases"].split("|") if a]
-            for row in csv.DictReader(file)
-            if row["entity_type"] == "member"
-        }
+        return PROMPT_TEMPLATE.format(tags=tags, examples=FEW_SHOT, query=query)
 
 
 def _strings(value) -> list[str]:
@@ -321,11 +347,11 @@ def _strings(value) -> list[str]:
     return [str(v).strip() for v in value if str(v).strip()]
 
 
-PROMPT_TEMPLATE = """你是 K-pop 推坑助理的偏好解析器。把粉絲的一句話（韓文、中文或英文）解析成 JSON，只輸出 JSON。
+PROMPT_TEMPLATE = """你是 K-pop 推坑助理的偏好解析器。把粉絲的一句話（韓文、中文或英文）解析成 JSON，只輸出 JSON。人名只要照原文列出。
 
 欄位：
 - is_appearance：是否在問長相、外貌、臉型、某種「相」或顏值（只問個性、歌聲、舞蹈時是 false）
-- gender：想找女偶像 "female"、男偶像 "male"（여돌／걸그룹／女團／girl group 是 female；남돌／보이그룹／男團／boy group 是 male）；沒有明說時，如果參照的人都是同一性別就用那個性別，否則 null
+- gender：想找女偶像 "female"、男偶像 "male"（여돌／걸그룹／女團／girl group 是 female；남돌／보이그룹／男團／boy group 是 male）；沒有明說時，如果提到的人都是同一性別就用那個性別，否則 null
 - traits：粉絲想要或不想要的特質，每個是 {{"tag", "raw", "polarity", "weight"}}
   - tag 只能從下面的特質表選；表裡沒有的說法不要放進 traits，改寫成 non_trait_constraints 的英文短語
   - 只有意思相同才對應，不要找「差不多」的特質硬套：
@@ -336,18 +362,14 @@ PROMPT_TEMPLATE = """你是 K-pop 推坑助理的偏好解析器。把粉絲的�
   - raw：原文裡對應的詞
   - polarity："+" 想要；"-" 不想要（不要、別、말고、별로、not too、…以外、不是我的菜）
   - weight："high"（超、最、真的、ㄹㅇ、개、엄청、진짜、very、most、一定要），"low"（有點、약간、살짝、좀、a bit），其他 "mid"
-- reference_member_ids：粉絲說「像誰」「跟誰一樣」的成員，只能填下面成員表的 id；說不喜歡的人不要放這裡，寫進 non_trait_constraints（negative_reference: 名字）
-- reference_out_of_catalog：「像誰」但不在成員表、或同名分不清是誰的人，原文名字
-- exclude_artists：粉絲明說不要的團，用下面團名表的寫法
 - non_trait_constraints：其他條件的英文短語，例如 group_size<=6、rookie、not_too_famous、tall
+- people：粉絲提到的偶像，每個是 {{"name", "group", "negative"}}
+  - name：原文寫的名字，去掉님、씨、桑、醬這類稱呼，不要翻譯或改寫成別的語言
+  - group：原文有寫團名才填（照原文），沒寫就 null；不要自己猜他是哪一團
+  - negative：粉絲說不喜歡、不是他的菜、不要像他時是 true，其他 false
 
 特質表：
 {tags}
-
-團名表：{artists}
-
-成員表（id：團 名字（別名））：
-{members}
 
 範例：
 {examples}
@@ -356,11 +378,14 @@ PROMPT_TEMPLATE = """你是 K-pop 推坑助理的偏好解析器。把粉絲的�
 """
 
 FEW_SHOT = """粉絲的話：카리나님 처럼 고양이상이나 여우상 좋아합니다. 츄님같은 귀여운..이미지는 별로
-{"is_appearance": true, "gender": "female", "traits": [{"tag": "cat_face", "raw": "고양이상", "polarity": "+", "weight": "mid"}, {"tag": "fox_face", "raw": "여우상", "polarity": "+", "weight": "mid"}], "reference_member_ids": ["aespa-karina"], "reference_out_of_catalog": [], "exclude_artists": [], "non_trait_constraints": ["negative_reference: 츄", "not_cute_image"]}
+{"is_appearance": true, "gender": "female", "traits": [{"tag": "cat_face", "raw": "고양이상", "polarity": "+", "weight": "mid"}, {"tag": "fox_face", "raw": "여우상", "polarity": "+", "weight": "mid"}], "non_trait_constraints": ["not_cute_image"], "people": [{"name": "카리나", "group": null, "negative": false}, {"name": "츄", "group": null, "negative": true}]}
 
 粉絲的話：想找有點清冷、但不要太像兔子的女團成員，BLACKPINK 以外
-{"is_appearance": true, "gender": "female", "traits": [{"tag": "cold_chic", "raw": "清冷", "polarity": "+", "weight": "low"}, {"tag": "rabbit_face", "raw": "像兔子", "polarity": "-", "weight": "mid"}], "reference_member_ids": [], "reference_out_of_catalog": [], "exclude_artists": ["BLACKPINK"], "non_trait_constraints": []}
+{"is_appearance": true, "gender": "female", "traits": [{"tag": "cold_chic", "raw": "清冷", "polarity": "+", "weight": "low"}, {"tag": "rabbit_face", "raw": "像兔子", "polarity": "-", "weight": "mid"}], "non_trait_constraints": [], "people": []}
 
 粉絲的話：any boy group members with a really deep voice? not looking for main dancers
-{"is_appearance": false, "gender": "male", "traits": [{"tag": "low_voice", "raw": "really deep voice", "polarity": "+", "weight": "high"}, {"tag": "main_dancer", "raw": "main dancers", "polarity": "-", "weight": "mid"}], "reference_member_ids": [], "reference_out_of_catalog": [], "exclude_artists": [], "non_trait_constraints": []}
+{"is_appearance": false, "gender": "male", "traits": [{"tag": "low_voice", "raw": "really deep voice", "polarity": "+", "weight": "high"}, {"tag": "main_dancer", "raw": "main dancers", "polarity": "-", "weight": "mid"}], "non_trait_constraints": [], "people": []}
+
+粉絲的話：喜歡安兪真那種清純感，WINNER 宋旻浩那樣的男生也可以，張元英不是我的菜
+{"is_appearance": true, "gender": null, "traits": [{"tag": "innocent_pure", "raw": "清純感", "polarity": "+", "weight": "mid"}], "non_trait_constraints": [], "people": [{"name": "安兪真", "group": null, "negative": false}, {"name": "宋旻浩", "group": "WINNER", "negative": false}, {"name": "張元英", "group": null, "negative": true}]}
 """

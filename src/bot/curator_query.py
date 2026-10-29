@@ -146,6 +146,15 @@ class CuratorQueryParser:
             logger.warning("無法讀取別名表，使用目錄中的標準名字。")
             return cls(members, visual_similarity=visual_similarity)
 
+    def lookup_member(self, name: str, group: str | None = None) -> frozenset[str]:
+        """整個名字精確比對別名表，不找子字串；有團名時只留那團的成員，團名不在目錄裡就是空的。"""
+
+        ids = set(self.names.get(("member", _normalize(name.strip())), ()))
+        if group:
+            artists = self.names.get(("group", _normalize(group.strip())), set())
+            ids = {i for i in ids if self.members[i]["artist"] in artists}
+        return frozenset(ids)
+
     def parse(self, query: str) -> CuratorQuery:
         text = _normalize(query)
         raw = unicodedata.normalize("NFKC", query)
