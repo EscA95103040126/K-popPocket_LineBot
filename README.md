@@ -89,9 +89,11 @@ Bot 會優先讀取離線產生的 ABSA cache，回傳包含以下內容的分�
 目前支援分析的藝人：
 
 ```text
-aespa, IVE, BABYMONSTER, NMIXX, ILLIT, NCT,
+aespa, IVE, BABYMONSTER, NMIXX, Hearts2Hearts, NCT,
 ZEROBASEONE, TXT, ENHYPEN, BOYNEXTDOOR
 ```
+
+Hearts2Hearts 也支援 `分析 H2H`、`分析 하츠투하츠`，並使用和其他藝人相同的五面向 ABSA 與 LINE 分析卡片。ILLIT 已退出此分析名單；每日推薦、收藏與 AI 入坑的 ILLIT 資料仍可使用。
 
 ### 3. AI 入坑
 
@@ -141,6 +143,23 @@ real-dev（116 題，只用來調整規則）：團體命中 @3 從 v3 的 33.6%
 uv run python scripts/build_member_evidence.py
 ```
 
+#### v5：v4 加上 LLM 偏好解析（目前上線）
+
+v5 不改 v4 的編碼器和排序，在上面多一層 Gemini 偏好解析（`src/bot/preference.py`）：
+
+1. **解析偏好**：Gemini 把粉絲的話（中文、韓文或英文）解析成 JSON：想要或不想要的特質、程度（超、有點…）、性別、是不是在問長相。特質只能從 `data/curator/trait_tags.csv` 的 18 個標籤裡選，每個標籤有哪些成員完全由證據表裡**有來源的主張**決定，模型不能替成員補特質；對應不到的說法不參與排序。
+2. **人名整名比對**：Gemini 只照原文列出提到的人名、團名和是不是負向參照；本機再用別名表整個名字精確比對，不找子字串。團名不符、同名分不清或目錄外的人一律不算參照成員。提示詞不附成員表，約 3,000 字。
+3. **重排**：v4 分數標準化後，符合正向特質的成員加分、符合否定特質的往後排（不刪除），排除指定的團和參照成員本人，性別不合的往後排。
+4. **失敗就退回 v4**：偏好解析另用一個 8 秒逾時的 Gemini 連線；逾時、格式錯誤或沒有金鑰時直接照 v4 排序，不影響回覆。偏好解析的模型固定在程式裡（`PREFERENCE_MODEL`，目前是 `gemini-3.1-flash-lite`），不跟著 `GEMINI_MODEL` 換。每則 AI 入坑會用 2 次 Gemini（解析 1 次、產生回覆 1 次）。
+
+在 Space 上量的偏好解析延遲（20 次）：中位數 1.79 秒、p90 4.34 秒、最慢 14.47 秒。需要重量時設定 Space 變數 `PREFERENCE_PROBE_RUNS=20`，啟動後背景量測、結果寫進 log，量完再刪掉變數。
+
+評估（詳見 [`docs/semantic_curator/RESULTS_v5.md`](docs/semantic_curator/RESULTS_v5.md)）：
+
+- 第三份封存測試 test3（Grok 蒐集的真實推坑串，40 題，事前登記、只跑一次）：外貌子集 hit@3 從 v4 的 0.300 升到 0.400，全體 strong hit@3 持平 0.579，兩項登記標準都通過；進步 3 題、退步 0 題，樣本小，不顯著。
+- test3 測的是 **pref-v3**（提示詞附成員表，由 Gemini 直接填成員 id）。上線的 **pref-v5** 改成本機整名比對，只在練習集和已用過的 137 題上驗證過：練習集參照成員 98%、特質 precision 0.88、recall 0.88；137 題上整體 strong hit@3 和 v4 持平，外貌子集 lenient hit@3 0.325 → 0.388。
+- 重新訓練編碼器、證據向量和照片相似度（v5 第一版）在前兩次封存測試都沒有贏 v4，程式留著但預設關閉。
+
 訊息路由：點「AI 入坑」後 10 分鐘內的文字都視為偏好；沒點入口時，其他功能都沒接走、且含有「喜歡、想找、推薦、有沒有」等字眼的訊息，也會交給 AI 入坑。
 
 模型不放進 GitHub，只以 LFS 放進 Hugging Face Space 的儲存庫（在 Space 建置時量化會記憶體不足）。`models/bge-m3-v3-int8/` 內含 int8 模型和預先算好的成員向量，執行時只需要 onnxruntime、tokenizers 和 numpy。找不到這個資料夾，或成員向量和目前描述不一致時，會自動退回 v1；所以修改 `data/curator/` 後，要重跑 `build_member_embeddings.py` 再部署。本機重建 v3：
@@ -150,7 +169,7 @@ uv run --group curator python scripts/train_encoder.py
 ```
 
 ```bash
-uv run --group curator python scripts/export_onnx_encoder.py --source models/bge-m3-curator-v3
+uv run --group curator python scripts/export_onnx_encoder.py --source models/bge-m3-curator-v3 --out models/bge-m3-v3-int8
 ```
 
 ```bash
@@ -262,6 +281,12 @@ fandom / public_opinion
 LINE Bot 收到 `分析 aespa`、`分析 IVE` 等完整藝人分析指令時，會先讀 `data/cache/absa/{artist}.json`。若 ABSA cache 不存在或 schema 無效，才回到既有 `data/cache/artists/{artist}.json` / 本地 fallback 流程。
 
 ## 按月份更新藝人分析
+
+2026/10/28 回歸更新包含 BABYMONSTER《DESERVE》、IVE《Looks Can Kill》、NMIXX《Strange Muse》／〈Birthday Wish（긴 소원）〉，並將 Hearts2Hearts 納入 ABSA。針對回歸作品可限制影片發布日期，避免採樣到先前作品的影片：
+
+```bash
+uv run python scripts/refresh_monthly_analysis.py --month 2026-10 --as-of 2026-10-28 --artists BABYMONSTER IVE NMIXX Hearts2Hearts --comments-per-artist 200 --video-published-after 2026-10-12 --publish-local
+```
 
 需要分析指定月份時，使用有日期與來源紀錄的更新流程：
 
