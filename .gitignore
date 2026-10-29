@@ -19,3 +19,6 @@ models/
 
 # Raw Grok research batches (third-party post excerpts); only derived files are committed.
 data/curator/staging/
+
+# AI 入坑偏好解析快取：含粉絲原文片段（raw），只留本機重現評估用，不進 git。
+data/curator/llm_pref_cache.json

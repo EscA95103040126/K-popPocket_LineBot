@@ -5,7 +5,9 @@ import numpy
 import pytest
 
 from src.bot.catalog import PlayZoneCatalog
+from src.bot.curator_query import CuratorQueryParser
 from src.bot.features.ai_curator import AiCuratorFeature
+from src.bot.photo_similarity import PhotoSimilarity
 from src.bot.semantic_index import (
     MEMBER_EMBEDDINGS_FILENAME,
     ONNX_ENCODER_DIR,
@@ -138,6 +140,66 @@ def test_semantic_index_group_weight_lifts_members_of_matching_group() -> None:
     scores = index.scores("冷", group_weight=0.5)
 
     assert scores["aespa-karina"] > scores["twice-sana"]
+
+
+def test_evidence_lifts_a_member_whose_document_misses_the_trait() -> None:
+    documents = {"aespa-karina": "冷", "twice-sana": "低沉"}
+    evidence = [("twice-sana", "女團成員，粉絲常說她甜")]
+    plain = SemanticMemberIndex(FakeEncoder(), documents)
+    with_evidence = SemanticMemberIndex(FakeEncoder(), documents, evidence=evidence)
+
+    assert plain.scores("甜")["twice-sana"] == pytest.approx(plain.scores("甜")["aespa-karina"])
+    assert with_evidence.rank("甜")[0] == "twice-sana"
+    # 證據只會往前推：跟問句無關的證據不會讓成員分數變低。
+    assert with_evidence.scores("低沉")["twice-sana"] == pytest.approx(
+        plain.scores("低沉")["twice-sana"]
+    )
+
+
+def test_ranker_uses_evidence_only_for_looks_questions() -> None:
+    members = [MEMBERS["aespa-karina"], MEMBERS["twice-sana"]]
+    index = SemanticMemberIndex(
+        FakeEncoder(),
+        {"aespa-karina": "冷甜", "twice-sana": "低沉"},
+        evidence=[("twice-sana", "女團成員，粉絲常說她長相甜")],
+        evidence_weight=1.0,
+    )
+    ranker = SemanticMemberRanker(
+        index, members, {}, CuratorQueryParser.load(REPO_ROOT, members), looks_signals=True
+    )
+
+    # 其他題目照 v4 只看文件；開了 v5 訊號、問長相時才加上證據。
+    assert ranker.rank_ids("想找甜甜的人")[0] == "aespa-karina"
+    assert ranker.rank_ids("想找長相甜甜的人")[0] == "twice-sana"
+
+
+def test_photo_similarity_averages_over_references() -> None:
+    photos = PhotoSimilarity(["a", "b", "c"], numpy.array([[1.0, 0.0], [0.8, 0.6], [0.0, 1.0]]))
+
+    scores = photos.scores({"a", "missing"})
+
+    assert scores["b"] > scores["c"]
+    assert photos.scores({"missing"}) == {}
+
+
+def test_looks_like_a_member_ranks_by_photos_and_skips_the_reference() -> None:
+    members = list(MEMBERS.values())
+    # 三份文件一樣，排序只能靠照片：SANA 的照片最像 KARINA。
+    index = SemanticMemberIndex(FakeEncoder(), {m["id"]: "冷" for m in members})
+    photos = PhotoSimilarity(
+        ["aespa-karina", "twice-sana", "bts-v"],
+        numpy.array([[1.0, 0.0], [0.9, 0.1], [0.0, 1.0]]),
+    )
+    ranker = SemanticMemberRanker(
+        index,
+        members,
+        {},
+        CuratorQueryParser(members, visual_similarity=True),
+        photos=photos,
+        looks_signals=True,
+    )
+
+    assert ranker.rank_ids("跟 KARINA 長得像的人")[:2] == ["twice-sana", "bts-v"]
 
 
 def test_ranker_load_returns_none_without_model(tmp_path: Path) -> None:
