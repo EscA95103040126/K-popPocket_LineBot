@@ -37,6 +37,12 @@ jobs:
       - name: Check formatting
         run: uv run --no-sync ruff format --check .
 
+      # The Play Zone CSVs are private (not in git); most bot tests read them.
+      - name: Fetch private data
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: uv run --no-sync python scripts/fetch_private_data.py
+
       - name: Test with coverage
         run: uv run --no-sync pytest --cov --cov-report=term
 

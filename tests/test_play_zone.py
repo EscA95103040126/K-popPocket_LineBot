@@ -780,6 +780,42 @@ def test_ai_curator_reason_followup_uses_last_ai_context_for_duplicate_member_na
     assert "https://example.com/h2h-jiwoo" not in payload["report"]
 
 
+def test_ai_curator_reason_followup_draws_random_member_fancam_despite_name_spelling(
+    tmp_path: Path,
+) -> None:
+    app = _use_ai_curator_reason_csv(
+        tmp_path,
+        bias_members_csv=(
+            "id,artist,member,gender_group,group_type,appearance,position,vibe,relationship,url,source_url\n"
+            "1,EXO,D.O.,男團,group,企鵝,Vocal,溫柔,反差,,\n"
+            "2,EXO,KAI,男團,group,貓咪,Dance,性感,反差,,\n"
+        ),
+        daily_fancam_csv=(
+            "artist,title,member,url\n"
+            "EXO,Love Shot,D.O,https://example.com/do-1\n"
+            "EXO,Tempo,D.O.,https://example.com/do-2\n"
+            "EXO,Monster,D. O.,https://example.com/do-3\n"
+            "EXO,Love Shot,KAI,https://example.com/kai-1\n"
+        ),
+        daily_mv_csv="artist,title,url\nEXO,Growl,https://example.com/exo-mv\n",
+    )
+    client = app.test_client()
+
+    urls = set()
+    for _ in range(30):
+        report = client.post("/analyze", json={"message": "為什麼推薦 EXO D.O.？"}).get_json()[
+            "report"
+        ]
+        assert "🎬 先用這支直拍確認感覺：EXO D.O." in report
+        urls.update(url for url in report.split() if url.startswith("https://example.com/"))
+
+    assert urls == {
+        "https://example.com/do-1",
+        "https://example.com/do-2",
+        "https://example.com/do-3",
+    }
+
+
 def test_ai_curator_reason_followup_prefers_member_fancam_csv(tmp_path: Path) -> None:
     app = _use_ai_curator_reason_csv(
         tmp_path,

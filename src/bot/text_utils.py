@@ -31,6 +31,16 @@ def same_lookup_name(left: str, right: str) -> bool:
     return _lookup_text(left) == _lookup_text(right)
 
 
+def same_compact_name(left: str, right: str) -> bool:
+    """Like same_lookup_name, but also ignores spaces and punctuation (D.O / D.O., THE 8 / THE8)."""
+    left_compact = _compact_lookup_text(left)
+    return bool(left_compact) and left_compact == _compact_lookup_text(right)
+
+
+def _compact_lookup_text(value: str) -> str:
+    return re.sub(r"[\W_]+", "", _lookup_text(value))
+
+
 def _lookup_text(value: str) -> str:
     normalized = unicodedata.normalize("NFKD", value).casefold()
     without_marks = "".join(

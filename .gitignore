@@ -22,3 +22,10 @@ data/curator/staging/
 
 # AI 入坑偏好解析快取：含粉絲原文片段（raw），只留本機重現評估用，不進 git。
 data/curator/llm_pref_cache.json
+
+# 私人 Play Zone 資料：放在私人 HF Dataset，Space 啟動時和 CI 用 scripts/fetch_private_data.py 下載。
+data/play_zone/bias_radar_members.csv
+data/play_zone/daily_fancam.csv
+data/play_zone/daily_mv.csv
+data/play_zone/daily_stage.csv
+data/play_zone/member_quiz.csv

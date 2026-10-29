@@ -184,7 +184,7 @@ uv run python scripts/build_member_embeddings.py
 | 類型 | 資料來源 |
 | --- | --- |
 | 每日 MV | `data/play_zone/daily_mv.csv` / Supabase `kpop_items` |
-| 每日直拍 | `data/play_zone/daily_fancam.csv` |
+| 每日直拍 | `data/play_zone/daily_fancam.csv`（私人資料，見下方「私人資料」） |
 | 每日舞台 | `data/play_zone/daily_stage.csv` |
 
 抽取結果會回傳純文字連結，讓 LINE 自動產生 YouTube 預覽，並附上可再次抽取的 Flex Message。
@@ -454,6 +454,8 @@ cp .env.example .env
 | `DATABASE_PATH` | SQLite 資料庫位置 | 預設可用 |
 | `MOCK_DATA_DIR` | mock data 位置 | 預設可用 |
 | `PORT` | Flask port | HF 使用 `7860` |
+| `HF_TOKEN` | 讀取私人 HF Dataset 的 token（只要 read 權限），Space Secret 和 GitHub Actions Secret 都要設 | 部署和 CI 必填 |
+| `PRIVATE_DATA_REPO` | 私人資料的 Dataset repo，預設 `EscA95103040126/kpop-agent-private-data` | 選填 |
 | `KPOP_AGENT_ENV_FILE` | 改讀其他 env 檔；設為空字串則不讀任何 env 檔（測試用） | 選填 |
 
 若部分 API key 未設定，系統會使用 mock data 或本地 fallback，避免整個 Bot 中斷。
@@ -541,6 +543,24 @@ uv run python scripts/import_kpop_items.py
 
 # 僅檢查匯入資料數量，不寫入 Supabase
 uv run python scripts/import_kpop_items.py --dry-run
+```
+
+## 私人資料
+
+`data/play_zone/` 下這五份 CSV 不進 git，放在私人 Hugging Face Dataset（`PRIVATE_DATA_REPO`）：
+
+- `bias_radar_members.csv`
+- `daily_fancam.csv`
+- `daily_mv.csv`
+- `daily_stage.csv`
+- `member_quiz.csv`
+
+Space 啟動時和 GitHub CI 跑測試前，會用 `HF_TOKEN` 執行 `scripts/fetch_private_data.py`，把它們下載到原本的路徑。本機開發直接用自己電腦上的檔案；沒設 `HF_TOKEN` 時這支腳本不會動本機檔案。
+
+更新資料：改完本機 CSV 後上傳到 Dataset，再重啟 Space。
+
+```bash
+hf upload EscA95103040126/kpop-agent-private-data data/play_zone/daily_fancam.csv data/play_zone/daily_fancam.csv --repo-type dataset
 ```
 
 ## 測試與程式碼品質

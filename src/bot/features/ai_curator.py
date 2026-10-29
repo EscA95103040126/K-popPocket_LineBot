@@ -18,6 +18,7 @@ from src.bot.text_utils import (
     contains_lookup_name,
     display_member_name,
     join_nonempty_blocks,
+    same_compact_name,
     same_lookup_name,
     split_bias_radar_tags,
 )
@@ -1401,16 +1402,19 @@ class AiCuratorFeature:
         artist = member_row.get("artist", "").strip()
         fancams = self.catalog.load_daily_kpop_rows("直拍")
 
+        # 直拍表的名字寫法可能和成員表不同（D.O / D.O.），顯示時統一用成員表的寫法。
         member_fancams = [
-            row
+            {**row, "member": member}
             for row in fancams
             if same_lookup_name(row.get("artist", ""), artist)
-            and same_lookup_name(row.get("member", ""), member)
+            and same_compact_name(row.get("member", ""), member)
         ]
         if member_fancams:
             return _format_fancam_link(self.rng.choice(member_fancams), "🎬 先用這支直拍確認感覺：")
 
-        member_fancams = [row for row in fancams if same_lookup_name(row.get("member", ""), member)]
+        member_fancams = [
+            row for row in fancams if same_compact_name(row.get("member", ""), member)
+        ]
         if member_fancams:
             return _format_fancam_link(
                 self.rng.choice(member_fancams),

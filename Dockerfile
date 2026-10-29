@@ -32,4 +32,6 @@ RUN python scripts/init_db.py && \
 
 EXPOSE 7860
 
-CMD ["sh", "-c", "gunicorn -b 0.0.0.0:${PORT:-7860} app:app"]
+# The private Play Zone CSVs are not in the image; fetch them at start with the HF_TOKEN
+# Space secret. If that fails the bot still starts, and the error is in the run log.
+CMD ["sh", "-c", "python scripts/fetch_private_data.py; exec gunicorn -b 0.0.0.0:${PORT:-7860} app:app"]
