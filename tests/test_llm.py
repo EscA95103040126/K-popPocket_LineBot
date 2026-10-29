@@ -10,8 +10,9 @@ def test_generate_switches_off_thinking(monkeypatch) -> None:
     # A thinking model spent 344 of 360 output tokens on thoughts and answered in 19 chars.
     sent = {}
 
-    def fake_post(url, params, json, timeout):
+    def fake_post(url, headers, json, timeout):
         sent.update(json)
+        sent["url"], sent["headers"] = url, headers
         return SimpleNamespace(
             status_code=200,
             raise_for_status=lambda: None,
@@ -26,6 +27,9 @@ def test_generate_switches_off_thinking(monkeypatch) -> None:
 
     assert sent["generationConfig"]["thinkingConfig"] == {"thinkingBudget": 0}
     assert sent["generationConfig"]["maxOutputTokens"] == 360
+    # 金鑰不能出現在網址裡（錯誤訊息會印出網址）。
+    assert "key" not in sent["url"]
+    assert sent["headers"] == {"x-goog-api-key": "key"}
 
 
 def _response(status: int, text: str = "好"):

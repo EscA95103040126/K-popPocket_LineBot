@@ -1,0 +1,19 @@
+tag,label_zh,facets,pattern
+cold_chic,清冷系,appearance,清冷|냉미|차도
+cat_face,貓系長相,appearance|vibe,貓系|고양이상
+puppy_face,小狗相,appearance,小狗相|강아지상
+innocent_pure,清純系,appearance,清純|청순
+fox_face,狐狸相,appearance,狐狸相|여우상
+rabbit_face,兔子相,appearance,兔子相|토끼상
+dinosaur_face,恐龍相,appearance,恐龍相|공룡상
+tofu_face,淡顏,appearance,淡顏|두부상
+cute_personality,個性可愛、愛撒嬌,vibe|contrast,可愛|애교|撒嬌|순둥
+bright_cheerful,開朗爽朗,vibe,開朗|爽朗|털털|活力|快樂病毒|活潑
+funny,綜藝感、好笑,vibe|variety,好笑|搞笑|綜藝感|綜藝擔當|開玩笑|冷笑話|허당
+reliable_leader,可靠的隊長,vibe,隊長|可靠|穩重|Captain
+stage_charisma,舞台氣場,performance|contrast|vibe,氣場|카리스마|魄力|威嚴|狠勁
+gap_contrast,台上台下反差,contrast,反差|落差|卻
+low_voice,低沉嗓音,vocal|performance|contrast,低沉|저음|沙啞
+high_notes,高音,vocal|performance,高音|爆發力
+main_dancer,舞蹈擔當,performance,主舞|舞蹈擔當|dance leader|舞蹈實力|舞蹈出色|舞蹈線條
+rapper,饒舌,performance,饒舌

@@ -13,8 +13,8 @@ ships the v3 export (models/bge-m3-v3-int8/, see src/bot/semantic_index.py).
 Usage:
     python scripts/export_onnx_encoder.py                 # writes models/bge-m3-int8/
     python scripts/export_onnx_encoder.py --out some/dir
-    python scripts/export_onnx_encoder.py --source models/bge-m3-curator-v3 \
-        --out models/bge-m3-v3-int8
+    python scripts/export_onnx_encoder.py --source models/bge-m3-curator-v5 \
+        --out models/bge-m3-v5-int8
 
 Needs the `encoder-build` dependency group (huggingface_hub, onnx); --source also
 needs `curator` (torch, sentence-transformers).

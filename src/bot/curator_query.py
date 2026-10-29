@@ -1,4 +1,8 @@
-"""AI 入坑 v4：別名消歧與保守的意圖約束，不新增成員事實。"""
+"""AI 入坑 v4：別名消歧與保守的意圖約束，不新增成員事實。
+
+v5（visual_similarity=True）：點名成員又提到長相的問句是 visual_similarity，排序時再加上
+照片相似度。預設照 v4：問長相一律是 unsupported_visual，不排除參照成員。
+"""
 
 from __future__ import annotations
 
@@ -10,6 +14,26 @@ from dataclasses import dataclass
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
+
+# 有這些字就是在問長相；「長得」也涵蓋「長得像」。
+APPEARANCE_CUES = (
+    "長得",
+    "長相",
+    "臉像",
+    "臉蛋",
+    "外貌",
+    "外型",
+    "五官",
+    "顏值",
+    "貓咪相",
+    "貓相",
+    "狗狗相",
+    "小狗相",
+    "狐狸相",
+    "兔子相",
+)
+SIMILARITY_MODES = ("similarity", "visual_similarity")
+V4_VISUAL_CUES = ("長得像", "長相相似", "臉像", "外貌相似")
 
 
 def _normalize(text: str) -> str:
@@ -40,6 +64,7 @@ class CuratorQuery:
     excluded_artists: frozenset[str]
     preferred_artists: frozenset[str]
     reference_artists: frozenset[str]
+    reference_ids: frozenset[str] = frozenset()
 
 
 # 這些短字／常用字需要團名、明確偶像語境，或原文大寫才能作人名。
@@ -72,8 +97,11 @@ COMMON_ALIASES = {
 
 
 class CuratorQueryParser:
-    def __init__(self, members: list[dict[str, str]], alias_rows=()) -> None:
+    def __init__(
+        self, members: list[dict[str, str]], alias_rows=(), *, visual_similarity: bool = False
+    ) -> None:
         self.members = {m["id"]: m for m in members}
+        self.visual_similarity = visual_similarity
         artists = {m["artist"] for m in members}
         self.names: dict[tuple[str, str], set[str]] = {}
 
@@ -102,7 +130,9 @@ class CuratorQueryParser:
                 add(kind, name, target)
 
     @classmethod
-    def load(cls, base_dir: Path, members: list[dict[str, str]]) -> CuratorQueryParser:
+    def load(
+        cls, base_dir: Path, members: list[dict[str, str]], *, visual_similarity: bool = False
+    ) -> CuratorQueryParser:
         path = alias_table_path(base_dir)
         try:
             with path.open(encoding="utf-8-sig", newline="") as f:
@@ -111,10 +141,19 @@ class CuratorQueryParser:
                     reader.fieldnames or ()
                 ):
                     raise ValueError("別名表缺少必要欄位")
-                return cls(members, list(reader))
+                return cls(members, list(reader), visual_similarity=visual_similarity)
         except (OSError, ValueError, csv.Error):
             logger.warning("無法讀取別名表，使用目錄中的標準名字。")
-            return cls(members)
+            return cls(members, visual_similarity=visual_similarity)
+
+    def lookup_member(self, name: str, group: str | None = None) -> frozenset[str]:
+        """整個名字精確比對別名表，不找子字串；有團名時只留那團的成員，團名不在目錄裡就是空的。"""
+
+        ids = set(self.names.get(("member", _normalize(name.strip())), ()))
+        if group:
+            artists = self.names.get(("group", _normalize(group.strip())), set())
+            ids = {i for i in ids if self.members[i]["artist"] in artists}
+        return frozenset(ids)
 
     def parse(self, query: str) -> CuratorQuery:
         text = _normalize(query)
@@ -183,7 +222,10 @@ class CuratorQueryParser:
             )
             if any(cue in text for cue in cues)
         )
-        visual = any(cue in text for cue in ("長得像", "長相相似", "臉像", "外貌相似"))
+        visual = any(cue in text for cue in APPEARANCE_CUES)
+        reference_ids = frozenset(
+            e.candidates[0] for e in resolved if e.kind == "member" and len(e.candidates) == 1
+        )
         other = any(
             cue in text
             for cue in (
@@ -229,10 +271,12 @@ class CuratorQueryParser:
             )
         # 純作品參照不代表排除原團；歌曲層到位後再處理作品相似性。
         song_reference = "〈" in text or "《" in text
-        mode = "general"
-        if visual:
-            mode = "unsupported_visual"
-        elif refs:
+        if self.visual_similarity:
+            visual_mode = "visual_similarity" if visual and reference_ids else None
+        else:
+            visual_mode = "unsupported_visual" if any(c in text for c in V4_VISUAL_CUES) else None
+        mode = visual_mode or "general"
+        if not visual_mode and refs:
             if same:
                 mode = "same_artist"
             elif song_reference and not other and similar:
@@ -254,7 +298,9 @@ class CuratorQueryParser:
                     excluded_ids.update(e.candidates)
                 else:
                     excluded_artists.add(e.artist)
-            if (mode == "similarity" or (mode == "same_artist" and similar)) and e.kind == "member":
+            if (
+                mode in SIMILARITY_MODES or (mode == "same_artist" and similar)
+            ) and e.kind == "member":
                 excluded_ids.update(e.candidates)
             # 「像某團」常常原團就是好答案；只有明說其他團才硬排除。
             if mode == "similarity" and other:
@@ -275,6 +321,7 @@ class CuratorQueryParser:
             frozenset(excluded_artists),
             frozenset(preferred),
             refs,
+            reference_ids if mode in SIMILARITY_MODES else frozenset(),
         )
 
     def constrain(self, parsed: CuratorQuery, ranked: list[str]) -> list[str]:
@@ -288,7 +335,7 @@ class CuratorQueryParser:
             return sorted(
                 result, key=lambda i: self.members[i]["artist"] not in parsed.preferred_artists
             )
-        if parsed.mode == "similarity":
+        if parsed.mode in SIMILARITY_MODES:
             # 參照團只保留排名最前的一位，其餘往後，讓前三名有其他團可認識。
             kept: list[str] = []
             later: list[str] = []
