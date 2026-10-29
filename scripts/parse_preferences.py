@@ -38,8 +38,8 @@ from src.config import Settings
 
 PRACTICE_CSV = PROJECT_ROOT / "data/curator/staging/grok/llm_pref_practice_v1/practice_queries.csv"
 EVAL_DIR = PROJECT_ROOT / "data/curator/member_intent"
-# 範例用到 pp-0002 的句子，不算進準確度。
-FEW_SHOT_IDS = {"pp-0002"}
+# 當作提示詞範例的練習題不算進準確度（pref-v6 起範例都是自己寫的，沒有）。
+FEW_SHOT_IDS: set[str] = set()
 # 練習集的特質名稱是 Grok 建議的，和特質表同義的對應過來，其他的本來就不該進 traits。
 PRACTICE_TAGS = {
     "cat_face": "cat_face",

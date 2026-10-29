@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 
 TRAIT_TAGS_PATH = Path("data") / "curator" / "trait_tags.csv"
 PREFERENCE_CACHE_PATH = Path("data") / "curator" / "llm_pref_cache.json"
-PROMPT_VERSION = "pref-v5"
+PROMPT_VERSION = "pref-v6"
 # 偏好解析固定用這個模型，不跟著 GEMINI_MODEL 換。test3（2026-10-29）用的是
 # gemini-3.1-flash-lite-preview；preview 版停用後改用穩定版，練習集上的比較見 RESULTS_v5.md。
 PREFERENCE_MODEL = "gemini-3.1-flash-lite"
@@ -247,7 +247,7 @@ class PreferenceCache:
 class PreferenceParser:
     """問句 → 偏好。先查快取；live=False 時快取沒有就不解析（評估用）。
 
-    提示詞不附成員表（pref-v5）：Gemini 只判斷特質、否定、程度、性別、是不是長相題，並照原文
+    提示詞不附成員表（pref-v5 起；pref-v6 只把範例換成自己寫的句子，不再用粉絲貼文）：Gemini 只判斷特質、否定、程度、性別、是不是長相題，並照原文
     列出提到的人名、團名和是不是負向參照；本機再用別名表整個名字精確比對。對不上、團名不符、
     同名分不清或目錄外的人一律不算參照成員（pref-v4 在問句裡找子字串，韓文常把「한」「진」
     這類字誤認成成員）。
@@ -377,8 +377,8 @@ PROMPT_TEMPLATE = """你是 K-pop 推坑助理的偏好解析器。把粉絲的�
 粉絲的話：{query}
 """
 
-FEW_SHOT = """粉絲的話：카리나님 처럼 고양이상이나 여우상 좋아합니다. 츄님같은 귀여운..이미지는 별로
-{"is_appearance": true, "gender": "female", "traits": [{"tag": "cat_face", "raw": "고양이상", "polarity": "+", "weight": "mid"}, {"tag": "fox_face", "raw": "여우상", "polarity": "+", "weight": "mid"}], "non_trait_constraints": ["not_cute_image"], "people": [{"name": "카리나", "group": null, "negative": false}, {"name": "츄", "group": null, "negative": true}]}
+FEW_SHOT = """粉絲的話：윈터처럼 차도녀 느낌 나는 여돌 있을까요? 여우상이면 더 좋고, 해원 같은 귀여운 이미지는 제 취향 아니에요
+{"is_appearance": true, "gender": "female", "traits": [{"tag": "cold_chic", "raw": "차도녀", "polarity": "+", "weight": "mid"}, {"tag": "fox_face", "raw": "여우상", "polarity": "+", "weight": "mid"}], "non_trait_constraints": ["not_cute_image"], "people": [{"name": "윈터", "group": null, "negative": false}, {"name": "해원", "group": null, "negative": true}]}
 
 粉絲的話：想找有點清冷、但不要太像兔子的女團成員，BLACKPINK 以外
 {"is_appearance": true, "gender": "female", "traits": [{"tag": "cold_chic", "raw": "清冷", "polarity": "+", "weight": "low"}, {"tag": "rabbit_face", "raw": "像兔子", "polarity": "-", "weight": "mid"}], "non_trait_constraints": [], "people": []}
