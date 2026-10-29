@@ -259,7 +259,27 @@ HTTP 呼叫端 ─────────────────────�
 
 - **單一路由表**：`src/bot/routing.py` 是唯一決定「哪則訊息由哪個功能處理」的地方，順序就是優先順序。
 - **依賴注入**：`create_app(deps)` 接收 `BotDeps`（設定、分析 agent、Supabase repo、Gemini client、亂數、時鐘）。正式環境由 `BotDeps.from_settings()` 建立；測試則注入假物件，不用 monkeypatch 全域變數。
-- **狀態跟著實例走**：本命雷達進度、AI 入坑追問脈絡、抽卡佇列都存在各功能物件裡，每個 app 實例各自獨立。
+- **狀態跟著實例走**：抽卡佇列等暫時狀態存在各功能物件裡，每個 app 實例各自獨立。
+- **對話狀態可以撐過重啟**：本命雷達的作答進度和 AI 入坑的追問脈絡透過 `SessionStore`（`src/bot/sessions.py`）存取，見下方「對話狀態保存」。
+
+### 對話狀態保存
+
+`SessionStore` 是一個小介面（`get` / `set` / `delete`，每筆資料都有 TTL），有三種實作：
+
+| 實作 | 用途 |
+| --- | --- |
+| `InMemorySessionStore` | 本機開發與測試；資料只存在這個 process 裡 |
+| `SupabaseSessionStore` | 寫進 Supabase 的 `bot_sessions` 資料表，Space 重啟後仍在 |
+| `CachedSessionStore` | 正式環境的組合：讀取先查記憶體，寫入同時寫進 Supabase |
+
+有設定 Supabase 時，`BotDeps.from_settings()` 會使用 `CachedSessionStore`：
+
+- 同一個 process 寫入的資料，之後都直接從記憶體讀，不必每次訊息都打 Supabase；只有重啟後第一次讀取才會向 Supabase 查詢。
+- 查不到資料的結果也會快取 5 分鐘，所以一般聊天訊息不會每則都多一次查詢。
+- Supabase 出錯時只記一筆警告，bot 會繼續用記憶體運作，不會因此回覆失敗。
+- 這個設計假設只有一個 bot process（Hugging Face Space 就是這樣）；如果要同時跑多個 process，需要改用不在本機快取的寫法。
+
+啟用前要先在 Supabase SQL editor 執行 `supabase/bot_sessions_schema.sql`。`/health` 的 `session_store` 欄位會顯示目前用的是哪種實作，以及 `bot_sessions` 能不能存取（`ok`）。
 
 ## 專案結構
 
@@ -286,6 +306,7 @@ HTTP 呼叫端 ─────────────────────�
 │   │   ├── catalog.py             # Play Zone CSV 資料讀取與快取
 │   │   ├── flex_common.py         # 共用 Flex 元件與配色
 │   │   ├── text_utils.py          # 名稱比對等文字工具
+│   │   ├── sessions.py            # SessionStore：對話狀態（記憶體 / Supabase）
 │   │   └── features/              # 各功能模組
 │   │       ├── menus.py           # 選單、使用說明、選擇藝人
 │   │       ├── artist_report.py   # 藝人分析報告
@@ -325,7 +346,8 @@ HTTP 呼叫端 ─────────────────────�
 │   ├── sample_comments.csv        # 留言情感資料
 │   └── play_zone/                 # Play Zone CSV、JSON 與圖片素材
 ├── supabase/
-│   └── kpop_radar_schema.sql      # K-pop 口袋 Supabase schema
+│   ├── kpop_radar_schema.sql      # K-pop 口袋 Supabase schema
+│   └── bot_sessions_schema.sql    # 對話狀態 bot_sessions 資料表
 └── tests/
     ├── conftest.py                # 讓測試不讀 .env、不帶任何金鑰
     ├── fakes.py                   # 假依賴與 make_app() / make_deps()
@@ -352,8 +374,8 @@ cp .env.example .env
 | `GEMINI_API_KEY` | Gemini API key | 使用 AI 生成時填 |
 | `GEMINI_MODEL` | Gemini model name | 選填 |
 | `YOUTUBE_API_KEY` | YouTube Data API key | 抓留言時填 |
-| `SUPABASE_URL` | Supabase project URL | 啟用 K-pop 口袋與每日 MV 個人化時填 |
-| `SUPABASE_SERVICE_ROLE_KEY` | Supabase service role key | 啟用 K-pop 口袋與每日 MV 個人化時填 |
+| `SUPABASE_URL` | Supabase project URL | 啟用 K-pop 口袋、每日 MV 個人化與對話狀態保存時填 |
+| `SUPABASE_SERVICE_ROLE_KEY` | Supabase service role key | 同上 |
 | `DATABASE_PATH` | SQLite 資料庫位置 | 預設可用 |
 | `MOCK_DATA_DIR` | mock data 位置 | 預設可用 |
 | `PORT` | Flask port | HF 使用 `7860` |
