@@ -4,7 +4,7 @@ import csv
 
 import pytest
 
-from scripts.build_member_evidence import BATCHES, CLEAN_OVERLAY, collect
+from scripts.build_member_evidence import BATCHES, CLEAN_OVERLAY, STAFF_NAME_OVERLAY, collect
 from src.bot.catalog import PlayZoneCatalog
 from src.bot.member_evidence import load_member_evidence, pick_member_evidence, query_facets
 from tests.fakes import REPO_ROOT
@@ -73,6 +73,13 @@ def test_later_batch_and_clean_overlay_win(staging):
     write_claims(staging / CLEAN_OVERLAY / "v1_2", [claim("b", value="粉絲常說她（清理版）")])
     rows = collect(staging, MEMBER_IDS)
     assert [(r["evidence_id"], r["value"]) for r in rows] == [("b", "粉絲常說她（清理版）")]
+
+
+def test_staff_name_overlay_wins_over_clean_overlay(staging):
+    write_claims(staging / "member_evidence_v1_1", [claim("a", value="原批次")])
+    write_claims(staging / CLEAN_OVERLAY / "v1_1", [claim("a", value="清理版")])
+    write_claims(staging / STAFF_NAME_OVERLAY / "v1_1", [claim("a", value="SM 職員版")])
+    assert [r["value"] for r in collect(staging, MEMBER_IDS)] == ["SM 職員版"]
 
 
 def test_versioned_recheck_replaces_the_original_claim(staging):
