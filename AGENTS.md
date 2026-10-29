@@ -20,3 +20,6 @@ AI 入坑 v4 / v5 由 Codex 主導，交接文件：`docs/semantic_curator/hando
 - 這五份放在私人 HF Dataset `EscA95103040126/kpop-agent-private-data`。Space 啟動時會用 `HF_TOKEN` Secret 執行 `scripts/fetch_private_data.py` 下載。
 - 本機改了這些 CSV 之後，要上傳到 Dataset（指令見 README「私人資料」），再重啟 Space。
 - 部署到 Space 時只上傳 commit 改到的檔案，不要整個工作目錄上傳；上傳前確認清單裡沒有這五份 CSV。
+- 2026-10-30 已改寫 GitHub 全部分支的歷史，拿掉上面五份 CSV，所有 commit SHA 都換了。舊 SHA（例如 `2606ba5`、`a47f269`）不要再拿來 rebase、cherry-pick 或 push。
+- 本機這幾個分支仍帶著舊歷史，**不要 push**：`deploy-absa`、`deploy-hf`、`hf-deploy`、`hf-deploy-cache-fixes`、`feature/curator-followup-layout`。要繼續用就先 rebase 到新的 `origin/main`。
+- 其他地方的 clone 或 worktree 請重新 clone，或 `git fetch` 後 reset 到新的 origin 分支。
