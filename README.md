@@ -1,15 +1,15 @@
 ---
-title: Kpop Agent
+title: Kpop Pocket
 sdk: docker
 app_port: 7860
 pinned: false
 ---
 
-# K-pop Agent
+# Kpop Pocket
 
 [![CI](https://github.com/EscA95103040126/K-popPocket_LineBot/actions/workflows/ci.yml/badge.svg)](https://github.com/EscA95103040126/K-popPocket_LineBot/actions/workflows/ci.yml)
 
-K-pop Agent 是一個已部署至 Hugging Face Space 的 LINE Bot 專案，將 K-pop 榜單資料、Naver 新聞、YouTube 留言情感分析、Gemini 文字生成、SQLite 快取與 LINE Flex Message 整合成可互動的 K-pop 分析與遊玩型機器人。
+Kpop Pocket 是一個已部署至 Hugging Face Space 的 LINE Bot 專案，將 K-pop 榜單資料、Naver 新聞、YouTube 留言情感分析、Gemini 文字生成、SQLite 快取與 LINE Flex Message 整合成可互動的 K-pop 分析與遊玩型機器人。
 
 - Hugging Face Space: <https://huggingface.co/spaces/EscA95103040126/kpop-agent>
 - GitHub Repo: <https://github.com/EscA95103040126/K-popPocket_LineBot>
