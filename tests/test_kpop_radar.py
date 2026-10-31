@@ -301,3 +301,35 @@ def _top_level_button_actions(flex: dict) -> list[dict]:
     return [
         content["action"] for content in flex["body"]["contents"] if content["type"] == "button"
     ]
+
+
+class DailyMvSupabaseClient:
+    def __init__(self, items: list[dict], saved_ids: set[str], drawn_ids: set[str]) -> None:
+        self.items = items
+        self.saved_ids = saved_ids
+        self.drawn_ids = drawn_ids
+
+    def request(self, method: str, table: str, *, params=None, **kwargs):
+        if method != "GET":
+            return []
+        if table == "kpop_items":
+            return self.items
+        if table == "user_saved_items":
+            return [{"item_id": item_id} for item_id in self.saved_ids]
+        if table == "user_draw_history":
+            return [{"item_id": item_id} for item_id in self.drawn_ids]
+        return []
+
+
+def test_daily_mv_excludes_saved_items_but_not_previous_draws(monkeypatch) -> None:
+    items = [
+        {"id": "saved", "item_type": "mv"},
+        {"id": "drawn", "item_type": "mv"},
+    ]
+    client = DailyMvSupabaseClient(items, saved_ids={"saved"}, drawn_ids={"drawn"})
+    repo = KpopRadarRepository(client=client)
+    monkeypatch.setattr("src.tools.kpop_radar.random.choice", lambda candidates: candidates[0])
+
+    item = repo.recommend_daily_mv("mv-user")
+
+    assert item["id"] == "drawn"

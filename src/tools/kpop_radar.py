@@ -261,10 +261,10 @@ class KpopRadarRepository:
         if not all_items:
             return None
 
-        excluded_ids = set(self._saved_item_ids(line_user_id))
-        excluded_ids.update(self._drawn_item_ids(line_user_id, DAILY_MV_SOURCE_FEATURE))
+        # 只排除收藏過的；抽過的照樣可以再抽到（2026-10-31 使用者要求）。
+        saved_ids = set(self._saved_item_ids(line_user_id))
         candidates = [
-            item for item in all_items if str(item.get("id")) not in excluded_ids
+            item for item in all_items if str(item.get("id")) not in saved_ids
         ] or all_items
         item = random.choice(candidates)
         self._record_draw(line_user_id, item, DAILY_MV_SOURCE_FEATURE)
@@ -407,18 +407,6 @@ class KpopRadarRepository:
             params={
                 "select": "item_id",
                 "line_user_id": f"eq.{line_user_id}",
-            },
-        )
-        return [str(row["item_id"]) for row in rows or [] if row.get("item_id")]
-
-    def _drawn_item_ids(self, line_user_id: str, source_feature: str) -> list[str]:
-        rows = self.client.request(
-            "GET",
-            "user_draw_history",
-            params={
-                "select": "item_id",
-                "line_user_id": f"eq.{line_user_id}",
-                "source_feature": f"eq.{source_feature}",
             },
         )
         return [str(row["item_id"]) for row in rows or [] if row.get("item_id")]
