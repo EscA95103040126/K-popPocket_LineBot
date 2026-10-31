@@ -34,4 +34,6 @@ EXPOSE 7860
 
 # The private Play Zone CSVs are not in the image; fetch them at start with the HF_TOKEN
 # Space secret. If that fails the bot still starts, and the error is in the run log.
-CMD ["sh", "-c", "python scripts/fetch_private_data.py; exec gunicorn -b 0.0.0.0:${PORT:-7860} app:app"]
+# --threads 8 (gthread worker): one sync worker made concurrent users queue behind slow
+# Supabase / Gemini calls. Threads share the ONNX model, so memory stays the same.
+CMD ["sh", "-c", "python scripts/fetch_private_data.py; exec gunicorn -b 0.0.0.0:${PORT:-7860} --threads 8 app:app"]

@@ -3,6 +3,7 @@ from __future__ import annotations
 import logging
 import random
 import re
+import threading
 from pathlib import Path
 from typing import TYPE_CHECKING
 from urllib.parse import quote
@@ -250,6 +251,8 @@ class MemberQuizFeature:
         self.rng = rng
         self.member_quiz_queue: list[dict[str, str]] = []
         self.member_quiz_source_key: tuple[tuple[str, str, str, str, str, str], ...] = ()
+        # gunicorn runs several threads; refill-then-pop must not interleave.
+        self._queue_lock = threading.Lock()
 
     def member_quiz_answer_reply(self, context: MessageContext) -> Reply:
         response = self._member_quiz_answer_response(context.text)
@@ -306,11 +309,12 @@ class MemberQuizFeature:
             return None
 
         source_key = _member_quiz_source_key(rows)
-        if not self.member_quiz_queue or self.member_quiz_source_key != source_key:
-            self.member_quiz_queue = rows[:]
-            self.rng.shuffle(self.member_quiz_queue)
-            self.member_quiz_source_key = source_key
-        return self.member_quiz_queue.pop()
+        with self._queue_lock:
+            if not self.member_quiz_queue or self.member_quiz_source_key != source_key:
+                self.member_quiz_queue = rows[:]
+                self.rng.shuffle(self.member_quiz_queue)
+                self.member_quiz_source_key = source_key
+            return self.member_quiz_queue.pop()
 
     def _load_member_quiz_rows(self) -> list[dict[str, str]]:
         csv_path = self.catalog.base_dir / "data" / "play_zone" / "member_quiz.csv"

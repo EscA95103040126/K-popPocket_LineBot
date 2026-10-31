@@ -255,7 +255,7 @@ class KpopRadarRepository:
     def recommend_daily_mv(self, line_user_id: str) -> dict[str, Any] | None:
         if not self.client:
             return None
-        self.ensure_user(line_user_id)
+        # get_preference already calls ensure_user; calling it here too cost two extra round trips.
         preferred_gender = self.get_preference(line_user_id)
         all_items = self._list_recommendable_mv_items(preferred_gender)
         if not all_items:

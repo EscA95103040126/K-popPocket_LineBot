@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 import random
+import threading
 from typing import TYPE_CHECKING
 
 from src.bot.catalog import daily_kpop_csv_label
@@ -159,6 +160,8 @@ class DailyKpopFeature:
         self.rng = rng
         self.daily_kpop_queues: dict[str, list[dict[str, str]]] = {}
         self.daily_kpop_source_keys: dict[str, tuple[tuple[str, str, str, str], ...]] = {}
+        # gunicorn runs several threads; refill-then-pop must not interleave.
+        self._queue_lock = threading.Lock()
 
     def daily_kpop_category_reply(self, context: MessageContext) -> Reply:
         response = self._daily_kpop_response(context.text, user_id=context.user_id)
@@ -216,10 +219,11 @@ class DailyKpopFeature:
             return None
 
         source_key = _daily_kpop_source_key(rows)
-        queue = self.daily_kpop_queues.get(category, [])
-        if not queue or self.daily_kpop_source_keys.get(category) != source_key:
-            queue = rows[:]
-            self.rng.shuffle(queue)
-            self.daily_kpop_queues[category] = queue
-            self.daily_kpop_source_keys[category] = source_key
-        return self.daily_kpop_queues[category].pop()
+        with self._queue_lock:
+            queue = self.daily_kpop_queues.get(category, [])
+            if not queue or self.daily_kpop_source_keys.get(category) != source_key:
+                queue = rows[:]
+                self.rng.shuffle(queue)
+                self.daily_kpop_queues[category] = queue
+                self.daily_kpop_source_keys[category] = source_key
+            return self.daily_kpop_queues[category].pop()

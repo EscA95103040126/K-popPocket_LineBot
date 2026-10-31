@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import random
+import threading
 from typing import TYPE_CHECKING
 
 from src.bot.dispatcher import MessageContext
@@ -132,6 +133,8 @@ class PhotoCardFeature:
         self.rng = rng
         self.photo_card_queue: list[dict[str, str]] = []
         self.photo_card_source_key: tuple[tuple[str, str, str], ...] = ()
+        # gunicorn runs several threads; refill-then-pop must not interleave.
+        self._queue_lock = threading.Lock()
 
     def photo_card_reply(self, context: MessageContext) -> Reply:
         response = self._photo_card_response()
@@ -166,11 +169,12 @@ class PhotoCardFeature:
             return None
 
         source_key = _photo_card_source_key(rows)
-        if not self.photo_card_queue or self.photo_card_source_key != source_key:
-            self.photo_card_queue = rows[:]
-            self.rng.shuffle(self.photo_card_queue)
-            self.photo_card_source_key = source_key
-        return self.photo_card_queue.pop()
+        with self._queue_lock:
+            if not self.photo_card_queue or self.photo_card_source_key != source_key:
+                self.photo_card_queue = rows[:]
+                self.rng.shuffle(self.photo_card_queue)
+                self.photo_card_source_key = source_key
+            return self.photo_card_queue.pop()
 
     def _load_photo_card_rows(self) -> list[dict[str, str]]:
         csv_path = self.catalog.base_dir / "data" / "play_zone" / "photo_cards.csv"
